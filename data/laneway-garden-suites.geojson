@@ -62,6 +62,7 @@
 { "type": "Feature", "properties": { "PERMIT_NUM": "20 195738 BLD", "year": "2022" }, "geometry": { "type": "Point", "coordinates": [ -79.421597, 43.680361 ] } },
 { "type": "Feature", "properties": { "PERMIT_NUM": "20 196282 BLD", "year": "2022" }, "geometry": { "type": "Point", "coordinates": [ -79.42167, 43.680348 ] } },
 { "type": "Feature", "properties": { "PERMIT_NUM": "20 196379 BLD", "year": "2022" }, "geometry": { "type": "Point", "coordinates": [ -79.425782, 43.644838 ] } },
+{ "type": "Feature", "properties": { "PERMIT_NUM": "20 206333 BLD", "year": "2022" }, "geometry": { "type": "Point", "coordinates": [ -79.390454, 43.683321 ] } },
 { "type": "Feature", "properties": { "PERMIT_NUM": "20 213993 BLD", "year": "2022" }, "geometry": { "type": "Point", "coordinates": [ -79.429588, 43.657693 ] } },
 { "type": "Feature", "properties": { "PERMIT_NUM": "20 225601 BLD", "year": "2022" }, "geometry": { "type": "Point", "coordinates": [ -79.36734, 43.664719 ] } },
 { "type": "Feature", "properties": { "PERMIT_NUM": "21 104148 BLD", "year": "2022" }, "geometry": { "type": "Point", "coordinates": [ -79.339493, 43.666315 ] } },
