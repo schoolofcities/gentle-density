@@ -16,7 +16,7 @@ def geocode(street_num, street_name, street_type, street_dir):
 
 def read_permit_data_by_year(year):
 
-    file_name = "building-permits/clearedpermits" + year + "_csv.csv"
+    file_name = "building-permits/clearedpermits" + year + ".csv"
 
     df = pd.read_csv(file_name)
 
@@ -29,13 +29,25 @@ def read_permit_data_by_year(year):
 
     for index, row in df.iterrows():
 
+        street_type = row["STREET_TYPE"]
+
+        if street_type == "CRCL":
+            street_type = "CIRCLE"
+
+        if street_type == "GRV":
+            street_type = "GROVE"
+
+        if street_type == "GT":
+            street_type = "GATE"
+        
+
         if row["PERMIT_NUM"] not in unique_permits:
 
             try:
 
                 unique_permits.append(row["PERMIT_NUM"])
 
-                xy = geocode(row["STREET_NUM"], row["STREET_NAME"], row["STREET_TYPE"], row["STREET_DIRECTION"])
+                xy = geocode(row["STREET_NUM"], row["STREET_NAME"], street_type, row["STREET_DIRECTION"])
 
                 coords.append([row["PERMIT_NUM"], round(xy[0], 6), round(xy[1], 6), year])
 
@@ -60,7 +72,9 @@ def read_permit_data_by_year(year):
 df_table = []
 df_geo = []
 
-for year in ["2018", "2019", "2020", "2021", "2022"]:
+for year in ["2013","2014","2015","2016","2017","2018", "2019", "2020", "2021", "2022"]:
+
+    print(year)
 
     df, dfc = read_permit_data_by_year(year)
 
