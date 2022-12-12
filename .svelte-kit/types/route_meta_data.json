@@ -1,0 +1,9 @@
+{
+	"/": [
+		"src/routes/+layout.js"
+	],
+	"/toronto-building-permits": [
+		"src/routes/toronto-building-permits/+page.js",
+		"src/routes/+layout.js"
+	]
+}
