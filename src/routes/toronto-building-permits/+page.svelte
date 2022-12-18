@@ -10,12 +10,13 @@
 <svelte:head>
 
 	<link
-		href="https://fonts.googleapis.com/css2?family=Bitter&family=Playfair+Display&display=swap"
-		rel="stylesheet"
-	/>
-	<link
 		href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro&display=swap"
 		rel="stylesheet"
+	/>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/> 
+
+	<link 
+		href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&display=swap" rel="stylesheet"
 	/>
 	<meta
 		name="viewport"
@@ -48,16 +49,43 @@
 
 <main>
 
-	<div class="title">
-		<h1>
-			Toronto Building Permits
-		</h1>
+	<div class="blueprint">
+
+		<div class="title">
+			<h1>
+				Tracking <span class="italic">Gentle Density</span> in Toronto
+			</h1>
+			<h2>
+				An Analysis Building Permit Data
+			</h2>
+			<p><a href="https://jamaps.github.io">Jeff Allen</a></p>
+		</div>
+
 	</div>
 
-	<div class="text">
-		<p>
-			Hello world!
-		</p>		
+	<div class="background-white">
+
+		<div class="arrow">
+			<p>▼</p>
+		</div>
+
+		<div class="text">
+			<p>
+				At the lower end of the “missing middle” is the opportunity to add <span class="italic">gentle density</span> to a single-family home and optimize its single parcel of land. This could include converting a basement, retrofitting a garage, building a garden suite or laneway house, adding one or more units to a principal dwelling, and/or subdividing and converting a principal dwelling into a duplex or triplex or more.  
+			</p>
+			<p>
+				In Toronto, secondary suites, laneway/garden suites.
+
+				Closed building permits have. Building permits can either be active, cancelled, or closed. Those that are closed, we can assume the work has finished. In the building permit data, we thus query by type of work and if they are closed. Then we can see development over time blah a
+			</p>		
+		</div>
+	</div>
+
+	<div class="line-chart">
+		meow
+
+		
+
 	</div>
 
 </main>
