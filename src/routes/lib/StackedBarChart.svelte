@@ -1,15 +1,20 @@
 <script>
 
+    import {rollup} from 'd3-array';
+
     import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
 
     import suitesSecondary from '../assets/secondary-suites.geo.json';
 
     let divWidth;
     
-    $: svgWidth = divWidth - 22
+    $: svgWidth = divWidth - 22;
 
-    $: console.log(divWidth);
+    let yearCountsSecondary =  Object.fromEntries(rollup(suitesSecondary.features, v => v.length, d => d.properties.year));
 
+    let yearCountsLaneway =  Object.fromEntries(rollup(suitesLaneway.features, v => v.length, d => d.properties.year));
+    
+    
 
 </script>
 
