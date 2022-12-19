@@ -1,5 +1,6 @@
 <script>
 
+	import StackedBarChart from "../lib/StackedBarChart.svelte";
 	import Top from "../lib/TopSofC.svelte";
 	import '../styles.css';
 
@@ -74,17 +75,16 @@
 				At the lower end of the “missing middle” is the opportunity to add <span class="italic">gentle density</span> to a single-family home and optimize its single parcel of land. This could include converting a basement, retrofitting a garage, building a garden suite or laneway house, adding one or more units to a principal dwelling, and/or subdividing and converting a principal dwelling into a duplex or triplex or more.  
 			</p>
 			<p>
-				In Toronto, secondary suites, laneway/garden suites.
+				In Toronto, <span class="textSecondary">secondary suites</span>, <span class="textLaneway">laneway/garden</span> suites.
 
 				Closed building permits have. Building permits can either be active, cancelled, or closed. Those that are closed, we can assume the work has finished. In the building permit data, we thus query by type of work and if they are closed. Then we can see development over time blah a
-			</p>		
+			</p>
 		</div>
 	</div>
 
 	<div class="line-chart">
-		meow
-
 		
+		<StackedBarChart/>
 
 	</div>
 

@@ -6,8 +6,9 @@
     font-family: Roboto, sans-serif;
     --brandDarkBlue: #1470AF;
     --brandLightBlue: #8EB6DC;
-    --brandRed: #DC4633; 
+    --brandRed: #AB1368; 
     --brandYellow: #F1C500;
+    --brandGreen: #00a150;
 }
 
 body {
@@ -51,13 +52,25 @@ main {
 .line-chart {
     width: 100%;
     border-top: solid 1px var(--brandLightBlue);
-    background-color: white;
-    height: 420px;
+    opacity: 1;
+    background-color: var(--brandDarkBlue);
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .italic {
     font-weight: 700;
     font-style: italic;
+}
+
+.textSecondary {
+    color: var(--brandRed);
+    text-decoration: underline;
+}
+
+.textLaneway {
+    color: var(--brandGreen);
+    text-decoration: underline;
 }
 
 .title {
@@ -118,7 +131,7 @@ main {
 }
 
 .text {
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
     color: var(--brandDarkBlue);
     font-family:  'Ubuntu Mono', monospace;
@@ -126,5 +139,7 @@ main {
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
