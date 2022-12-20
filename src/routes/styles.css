@@ -54,6 +54,8 @@ main {
     border-top: solid 1px var(--brandLightBlue);
     opacity: 1;
     background-color: var(--brandDarkBlue);
+    background-size: 13px 13px;
+    background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
     padding-top: 25px;
     padding-bottom: 25px;
 }

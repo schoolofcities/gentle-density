@@ -1,6 +1,6 @@
 <script>
 
-	import StackedBarChart from "../lib/StackedBarChart.svelte";
+	import BarChartSecondary from "../lib/BarChartSecondary.svelte";
 	import Top from "../lib/TopSofC.svelte";
 	import '../styles.css';
 
@@ -84,7 +84,9 @@
 
 	<div class="line-chart">
 		
-		<StackedBarChart/>
+		<BarChartSecondary/>
+
+		<BarChartSecondary/>
 
 	</div>
 

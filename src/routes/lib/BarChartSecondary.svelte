@@ -41,15 +41,25 @@
 
     <svg height=320 width={svgWidth} id="svgChart">
 
+        <text 
+            x="60" 
+            y="35"
+            id="title"
+        >Number of Closed "Second Suite (New)"</text>
+        <text 
+            x="60" 
+            y="55"
+            id="title"
+        >Building Permits by Year</text>
+
+
         <pattern id="pattern-lines" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
             <!-- Now let's draw the circle -->
             <!-- We're going to define the `fill` in the CSS for flexible use -->
             
             <rect x="0" y="0" height="10" width="10" style="fill:#AB1368;" />
             <line x1="0" y1="0" x2="10" y2="10" style="stroke:white;stroke-width:1" />
-        </pattern>
-
-        
+        </pattern>        
 
         {#each years as year}
 
@@ -168,6 +178,13 @@
         #yearLabelMobile {
             opacity: 1;
         }
+    }
+
+    #title {
+        font-size: 17px;
+        font-family: 'Ubuntu Mono', monospace;
+        font-weight: 700;
+        fill: rgba(255, 255, 255, 0.803);
     }
 
     #svgChart {
