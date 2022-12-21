@@ -90,7 +90,7 @@
                 'layout': {},
                 'paint': {
                     'circle-radius': 4,
-                    'circle-color': '#fff'
+                    'circle-color': '#fff',
                 }
             });
             map.addLayer({
@@ -100,7 +100,7 @@
                 'layout': {},
                 'paint': {
                     'circle-radius': 3,
-                    'circle-color': '#AB1368'
+                    'circle-color': '#AB1368',
                 }
             });  
             
@@ -175,8 +175,28 @@
     <div id="options">
         
         <div id="pointLayers">
+            
+            <div id="lanewayButton">
+                <svg width=20 height=10>
+                    <circle
+                        style="fill:#00a150;stroke-width:2;stroke:#fff"
+                        cx="15"
+                        cy="5"
+                        r="4" />
+                </svg>
+                Laneway & Garden Suites
+            </div>
 
-            <div id=""></div>
+            <div id="secondaryButton">
+                <svg width=20 height=10>
+                    <circle
+                        style="fill:#AB1368;stroke-width:2;stroke:#fff"
+                        cx="15"
+                        cy="5"
+                        r="4" />
+                </svg>
+                Secondary Suites
+            </div>
 
         </div>
 
@@ -197,6 +217,8 @@
         width: 100%;
         height: 100px;
         background-color: var(--brandDarkBlue);
+        background-size: 13px 13px;
+        background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
     }
 
     #options {
@@ -204,4 +226,37 @@
         width: 100%;
         max-width: 650px;
     }
+
+    #pointLayers {
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        font-family: 'Ubuntu Mono', monospace;
+        font-weight: 400;
+        overflow: hidden;
+        
+    }
+
+    #lanewayButton {
+        float: left;
+        margin-right: 20px;
+        width: 290px;
+        border: solid 1px var(--brandLightBlue);
+        padding: 4px;
+        margin-bottom: 10px;
+        background-color: var(--brandDarkBlue);
+        cursor: pointer;
+    }
+
+    #secondaryButton {
+        overflow: hidden;
+        width: 290px;
+        border: solid 1px var(--brandLightBlue);
+        padding: 4px;
+        margin-bottom: 10px;
+        background-color: var(--brandDarkBlue);
+        cursor: pointer;
+        opacity: 0.5;
+    }
+
 </style>
