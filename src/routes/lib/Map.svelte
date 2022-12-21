@@ -2,12 +2,16 @@
     
     import { onMount } from 'svelte';
     import mapboxgl from "mapbox-gl";
+    import RangeSlider from "svelte-range-slider-pips";
+
     import torontoBoundary from '../assets/toronto-boundary.geo.json';
     import laneways from '../assets/laneways.geo.json';
     import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
     import suitesSecondary from '../assets/secondary-suites.geo.json';
 
     console.log(torontoBoundary);
+
+    let values = [2020,2022];
 
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2w2Z2xhOXprMTYzczNlcHNjMnNvdGlmNCJ9.lOgVHrajc1L-LlU0as2i2A';
     
@@ -200,6 +204,8 @@
 
         </div>
 
+        <RangeSlider bind:values range pips all='label' step={1} min={2013} max={2022} hoverable={false}/>
+
     </div>
 
 </div>
@@ -215,7 +221,7 @@
 
     #options-wrapper {
         width: 100%;
-        height: 100px;
+        height: 150px;
         background-color: var(--brandDarkBlue);
         background-size: 13px 13px;
         background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
@@ -230,6 +236,7 @@
     #pointLayers {
         color: white;
         padding: 10px;
+        padding-left: 16px;
         font-size: 17px;
         font-family: 'Ubuntu Mono', monospace;
         font-weight: 400;
@@ -241,22 +248,34 @@
         float: left;
         margin-right: 20px;
         width: 290px;
-        border: solid 1px var(--brandLightBlue);
+        border: solid 1px #fff;
         padding: 4px;
         margin-bottom: 10px;
-        background-color: var(--brandDarkBlue);
+        background-color: #2a5e89;
         cursor: pointer;
     }
 
     #secondaryButton {
         overflow: hidden;
         width: 290px;
-        border: solid 1px var(--brandLightBlue);
+        border: solid 1px #fff;
         padding: 4px;
         margin-bottom: 10px;
-        background-color: var(--brandDarkBlue);
+        background-color: #2a5e89;
         cursor: pointer;
-        opacity: 0.5;
+        opacity: 0.42;
     }
 
+    #lanewayButton:hover {
+        opacity: 1;
+        background-color: var(--brandDarkBlue);
+    }
+
+    #secondaryButton:hover {
+        opacity: 1;
+        background-color: var(--brandDarkBlue);
+    }
+
+    
+    
 </style>

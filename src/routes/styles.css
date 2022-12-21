@@ -8,7 +8,17 @@
     --brandLightBlue: #8EB6DC;
     --brandRed: #AB1368; 
     --brandYellow: #F1C500;
-    --brandGreen: #00a150;
+
+    --range-slider:          #8EB6DC; /* slider main background color */
+    --range-handle-inactive: #ffffff; /* inactive handle color */
+    --range-handle:          #ffffff; /* non-focussed handle color */
+    --range-handle-focus:    #ffffff; /* focussed handle color */
+    --range-handle-border:   var(--range-handle);
+    --range-range-inactive:  var(--range-handle-inactive); /* inactive range bar background color */
+    --range-range:           var(--range-handle-focus); /* active range bar background color */
+    --range-float-inactive:  var(--range-handle-inactive); /* inactive floating label background color */
+    --range-float:           var(--range-handle-focus); /* floating label background color */
+    --range-float-text:      white; /* text color on floating label */
 }
 
 body {
@@ -147,3 +157,52 @@ main {
     padding-right: 20px;
 }
 
+.rangeSlider {
+    height: 2px;
+    font-family:  'Ubuntu Mono', monospace;
+    font-weight: 400px;
+    font-size: 15px;
+}
+
+.rangeSlider .rangeBar {
+    height: 4px;
+    transform: translateY(-1px);
+}
+
+.rangeSlider .rangeHandle {
+    /* height: 10px; */
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.rangeSlider > .rangeHandle {
+    transform: translateY(-39%) translateX(-21%);
+}
+
+.rangeSlider > .rangeHandle:hover {
+    cursor: pointer;
+}
+
+.rangeSlider > .rangeHandle > .rangeNub {
+    border-radius: 0px;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+}
+
+.rangeSlider > .rangePips > .pip {
+    background-color: var(--brandLightBlue);
+}
+
+.rangeSlider > .rangePips > .pip > .pipVal {
+    color: var(--brandLightBlue);
+}  
+
+.rangeSlider > .rangePips > .pip.in-range > .pipVal {
+    color: white;
+}  
+
+.rangeSlider > .rangePips > .pip.selected > .pipVal {
+    color: white;
+}  

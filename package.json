@@ -21,7 +21,8 @@
 	"dependencies": {
 		"d3-array": "^3.2.1",
 		"d3-scale": "^4.0.2",
-		"mapbox-gl": "^2.10.0"
+		"mapbox-gl": "^2.10.0",
+		"svelte-range-slider-pips": "^2.1.1"
 	},
 	"type": "module"
 }
