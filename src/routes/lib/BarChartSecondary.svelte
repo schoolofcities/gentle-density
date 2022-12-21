@@ -3,8 +3,6 @@
     import {rollup} from 'd3-array';
     import {scaleBand} from 'd3-scale';
 
-    import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
-
     import suitesSecondary from '../assets/secondary-suites.geo.json';
     
     let divWidth;
@@ -12,8 +10,6 @@
     $: svgWidth = divWidth - 22;
 
     let yearCountsSecondary =  Object.fromEntries(rollup(suitesSecondary.features, v => v.length, d => d.properties.year));
-
-    let yearCountsLaneway =  Object.fromEntries(rollup(suitesLaneway.features, v => v.length, d => d.properties.year));
 
     let years = ["2013","2014","2015","2016","2017","2018","2019","2020","2021","2022"];
 
@@ -183,7 +179,7 @@
         font-size: 17px;
         font-family: 'Ubuntu Mono', monospace;
         font-weight: 700;
-        fill: rgba(255, 255, 255, 0.803);
+        fill: rgba(255, 255, 255, 0.99);
     }
 
     #svgChart {

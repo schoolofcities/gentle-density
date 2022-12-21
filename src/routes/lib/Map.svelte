@@ -2,16 +2,22 @@
     
     import { onMount } from 'svelte';
     import mapboxgl from "mapbox-gl";
-    
+    import torontoBoundary from '../assets/toronto-boundary.geo.json';
+    import laneways from '../assets/laneways.geo.json';
+    import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
+    import suitesSecondary from '../assets/secondary-suites.geo.json';
+
+    console.log(torontoBoundary);
+
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2w2Z2xhOXprMTYzczNlcHNjMnNvdGlmNCJ9.lOgVHrajc1L-LlU0as2i2A';
     
     let pageHeight;
     let pageWidth;
-    let mapHeight = 800;
+    let mapHeight = 760;
     $: if (pageHeight < 800) {
         mapHeight = pageHeight - 200;
     } else {
-        mapHeight = 800
+        mapHeight = 760
     }
     
     const layerOpacity = 0.69;
@@ -27,7 +33,7 @@
 			style: 'mapbox://styles/schoolofcities/clbxv21c4000414n2hcio6l5o',
 			center: [-79.37, 43.715],
 			zoom: 10,
-			maxZoom: 17,
+			maxZoom: 16,
 			minZoom: 8.5,
 			bearing: -17.1,
 			projection: 'globe',
@@ -40,9 +46,91 @@
         map.scrollZoom.disable();
 
         map.on('load', function() {
+
+            map.addSource('torontoBoundary', {
+                'type': 'geojson',
+                'data': torontoBoundary
+            });
+            map.addLayer({
+                'id': 'torontoBoundary',
+                'type': 'line',
+                'source': 'torontoBoundary',
+                'layout': {},
+                'paint': {
+                    'line-color': '#fff',
+                    'line-width': 1,
+                    'line-opacity': 1
+                }
+            }, 'admin-0-boundary-disputed');
+
+            map.addSource('laneways', {
+                'type': 'geojson',
+                'data': laneways
+            });
+            map.addLayer({
+                'id': 'laneways',
+                'type': 'line',
+                'source': 'laneways',
+                'layout': {},
+                'paint': {
+                    'line-color': '#8EB6DC',
+                    'line-width': 1,
+                    'line-opacity': 1
+                }
+            }, 'admin-0-boundary-disputed');
+
+            map.addSource('suitesSecondary', {
+                'type': 'geojson',
+                'data': suitesSecondary
+            }); 
+            map.addLayer({
+                'id': 'suitesSecondaryWhite',
+                'type': 'circle',
+                'source': 'suitesSecondary',
+                'layout': {},
+                'paint': {
+                    'circle-radius': 4,
+                    'circle-color': '#fff'
+                }
+            });
+            map.addLayer({
+                'id': 'suitesSecondary',
+                'type': 'circle',
+                'source': 'suitesSecondary',
+                'layout': {},
+                'paint': {
+                    'circle-radius': 3,
+                    'circle-color': '#AB1368'
+                }
+            });  
+            
+            map.addSource('suitesLaneway', {
+                'type': 'geojson',
+                'data': suitesLaneway
+            }); 
+            map.addLayer({
+                'id': 'suitesLanewayWhite',
+                'type': 'circle',
+                'source': 'suitesLaneway',
+                'layout': {},
+                'paint': {
+                    'circle-radius': 4,
+                    'circle-color': '#fff'
+                }
+            });
+            map.addLayer({
+                'id': 'suitesLaneway',
+                'type': 'circle',
+                'source': 'suitesLaneway',
+                'layout': {},
+                'paint': {
+                    'circle-radius': 3,
+                    'circle-color': '#00a150'
+                }
+            }); 
             
             if (pageHeight > 700 && pageWidth > 800) {
-                map.zoomTo(11)
+                map.zoomTo(10.75)
             }
         });
         
@@ -82,15 +170,38 @@
 
 <div id="map" style="height: {mapHeight}px"></div>
 
+<div id="options-wrapper">
+    
+    <div id="options">
+        
+        <div id="pointLayers">
 
+            <div id=""></div>
 
+        </div>
+
+    </div>
+
+</div>
 
 
 
 <style>
-    .map {
+    #map {
 		width: 100%;
-        border-top: 1px solid grey;
-        border-bottom: 1px solid grey;
+        border-top: 1px solid var(--brandLightBlue);
+        border-bottom: 1px solid var(--brandLightBlue);
 	}
+
+    #options-wrapper {
+        width: 100%;
+        height: 100px;
+        background-color: var(--brandDarkBlue);
+    }
+
+    #options {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 650px;
+    }
 </style>

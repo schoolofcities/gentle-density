@@ -172,7 +172,7 @@
         font-size: 17px;
         font-family: 'Ubuntu Mono', monospace;
         font-weight: 700;
-        fill: rgba(255, 255, 255, 0.803);
+        fill: rgba(255, 255, 255, 0.99);
     }
 
     #svgChart {
