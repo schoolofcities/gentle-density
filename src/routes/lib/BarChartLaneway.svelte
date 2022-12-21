@@ -4,14 +4,10 @@
     import {scaleBand} from 'd3-scale';
 
     import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
-
-    import suitesSecondary from '../assets/secondary-suites.geo.json';
     
     let divWidth;
     
     $: svgWidth = divWidth - 22;
-
-    let yearCountsSecondary =  Object.fromEntries(rollup(suitesSecondary.features, v => v.length, d => d.properties.year));
 
     let yearCountsLaneway =  Object.fromEntries(rollup(suitesLaneway.features, v => v.length, d => d.properties.year));
 
@@ -22,7 +18,7 @@
     }
 
     function barY(amount) {
-        return 270 - barHeight(amount)
+        return 270 * 0.25 - barHeight(amount)
     }
 
     $: xScale = scaleBand()
@@ -30,6 +26,8 @@
         .range([0, svgWidth - 50])
         .paddingInner(0.37)
         .paddingOuter(0.37);
+        // .align(0.6);
+
     
 </script>
 
@@ -37,13 +35,13 @@
 
 <div id="barChart" bind:offsetWidth={divWidth}>
 
-    <svg height=370 width={svgWidth} id="svgChart">
+    <svg height=160 width={svgWidth} id="svgChart">
 
         <text 
             x="50" 
             y="10"
             id="title"
-        >Closed "Second Suite (New)"</text>
+        >Closed "Laneway / Rear Yard Suite"</text>
         <text 
             x="50" 
             y="30"
@@ -51,73 +49,63 @@
         >Building Permits by Year</text>
 
 
-        <pattern id="pattern-lines" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+        <pattern id="pattern-lines-green" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
             <!-- Now let's draw the circle -->
             <!-- We're going to define the `fill` in the CSS for flexible use -->
             
-            <rect x="0" y="0" height="10" width="10" style="fill:#AB1368;" />
+            <rect x="0" y="0" height="10" width="10" style="fill:#00a150;" />
             <line x1="0" y1="0" x2="10" y2="10" style="stroke:white;stroke-width:1" />
-        </pattern>        
+        </pattern>
 
         {#each years as year}
 
-            {console.log(barHeight(yearCountsSecondary[year]))}
+            {console.log(barHeight(yearCountsLaneway[year]))}
         
             <rect 
                 id="bar" 
                 x="{50 + xScale(year)}" 
-                y="{60 + barY(yearCountsSecondary[year])}" width="{xScale.bandwidth()}" height="{barHeight(yearCountsSecondary[year])}" 
-                fill="url(#pattern-lines)"
+                y="{60 + barY(yearCountsLaneway[year])}" width="{xScale.bandwidth()}" height="{barHeight(yearCountsLaneway[year])}" 
+                fill="url(#pattern-lines-green)"
             />
 
             <line
                 x1="{50 + xScale(year) + xScale.bandwidth() / 2}"
                 x2="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-                y1="330"
-                y2="333"
+                y1="127.5"
+                y2="130.5"
                 style="stroke:white;stroke-width:1"
             />
 
             <text 
                 x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-                y="{57 + barY(yearCountsSecondary[year])}"
+                y="{57 + barY(yearCountsLaneway[year])}"
                 id="labelBar"
                 text-anchor="middle" 
-            >{yearCountsSecondary[year]}</text>
+            >{yearCountsLaneway[year]}</text>
 
             <text 
                 x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-                y="345"
+                y="142.5"
                 id="yearLabelWeb"
                 text-anchor="middle"
             >{year}</text>
 
             <text 
                 x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-                y="345"
+                y="142.5"
                 id="yearLabelMobile"
                 text-anchor="middle"
-                transform="rotate(-45,{57 + xScale(year) + xScale.bandwidth() / 2},354)"
+                transform="rotate(-45,{57 + xScale(year) + xScale.bandwidth() / 2},151)"
             >{year}</text>
             
         {/each}
 
-        <line x1="50" y1="330" x2="{svgWidth}" y2="330" style="stroke:white;stroke-width:1" />
-        <text x=40 y=333 id="label">0</text>
 
-        <line x1="50" y1="262.5" x2="{svgWidth}" y2="262.5" style="stroke:white;stroke-width:1;opacity:0.3" />
-        <text x=33 y=266 id="label">50</text>
-
-        <line x1="50" y1="195" x2="{svgWidth}" y2="195" style="stroke:white;stroke-width:1;opacity:0.3" />
-        <text x=25 y=200 id="label">100</text>
-
-        <line x1="50" y1="127.5" x2="{svgWidth}" y2="127.5" style="stroke:white;stroke-width:1;opacity:0.3" />
-        <text x=25 y=132 id="label">150</text>
+        <line x1="50" y1="127.5" x2="{svgWidth}" y2="127.5" style="stroke:white;stroke-width:1;opacity:1" />
+        <text x=40 y=132 id="label">0</text>
 
         <line x1="50" y1="50" x2="{svgWidth}" y2="50" style="stroke:white;stroke-width:1;opacity:0.3" />
-        <text x=25 y=55 id="label">200</text>
-
-        
+        <text x=33 y=55 id="label">50</text>
 
     </svg>
 
@@ -130,11 +118,12 @@
     #barChart {
         padding: 10px;
         padding-left: 0px;
+        padding-top: 40px;
         margin: 0 auto;
         width: calc(100% - 30px);
         max-width: 650px;
-        height: 370px;
-        /* border: solid 1px var(--brandLightBlue); */
+        height: 160px;
+        min-width: 375px;
     }
 
     #bar {

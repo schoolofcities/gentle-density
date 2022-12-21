@@ -4,7 +4,7 @@
 }
 :root {
     font-family: Roboto, sans-serif;
-    --brandDarkBlue: #1470AF;
+    --brandDarkBlue: #1470ad;
     --brandLightBlue: #8EB6DC;
     --brandRed: #AB1368; 
     --brandYellow: #F1C500;
@@ -58,6 +58,8 @@ main {
     background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
     padding-top: 25px;
     padding-bottom: 25px;
+    min-width: 375px;
+
 }
 
 .italic {

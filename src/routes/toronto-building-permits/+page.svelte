@@ -1,6 +1,9 @@
 <script>
 
 	import BarChartSecondary from "../lib/BarChartSecondary.svelte";
+	import BarChartLaneway from "../lib/BarChartLaneway.svelte";
+	import Map from "../lib/Map.svelte";
+
 	import Top from "../lib/TopSofC.svelte";
 	import '../styles.css';
 
@@ -23,6 +26,8 @@
 		name="viewport"
 		content="width=device-width, initial-scale=1, minimum-scale=1"
 	/>
+
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- <title>Place and Politics in Toronto</title>
     <meta name="description" content="Place and Politics in Toronto">
@@ -86,8 +91,30 @@
 		
 		<BarChartSecondary/>
 
-		<BarChartSecondary/>
+		<BarChartLaneway/>
 
+	</div>
+
+	<div class="background-white">
+
+		<div class="text">
+			<p>
+				At the lower end of the “missing middle” is the opportunity to add <span class="italic">gentle density</span> to a single-family home and optimize its single parcel of land. This could include converting a basement, retrofitting a garage, building a garden suite or laneway house, adding one or more units to a principal dwelling, and/or subdividing and converting a principal dwelling into a duplex or triplex or more.  
+			</p>
+		</div>
+		
+	</div>
+
+	<Map/>
+
+	<div class="background-white">
+
+		<div class="text">
+			<p>
+				At the lower end of the “missing middle” is the opportunity to add <span class="italic">gentle density</span> to a single-family home and optimize its single parcel of land. This could include converting a basement, retrofitting a garage, building a garden suite or laneway house, adding one or more units to a principal dwelling, and/or subdividing and converting a principal dwelling into a duplex or triplex or more.  
+			</p>
+		</div>
+		
 	</div>
 
 </main>
