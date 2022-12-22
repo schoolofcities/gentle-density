@@ -97,7 +97,15 @@
                 'source': 'suitesSecondary',
                 'layout': {},
                 'paint': {
-                    'circle-radius': 4,
+                    'circle-radius': [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        11,
+                        4,
+                        16,
+                        15
+                        ],
                     'circle-color': '#fff',
                 }
             });
@@ -107,7 +115,15 @@
                 'source': 'suitesSecondary',
                 'layout': {},
                 'paint': {
-                    'circle-radius': 3,
+                    'circle-radius': [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        11,
+                        3,
+                        16,
+                        10
+                        ],
                     'circle-color': '#AB1368',
                 }
             });  
@@ -122,7 +138,15 @@
                 'source': 'suitesLaneway',
                 'layout': {},
                 'paint': {
-                    'circle-radius': 4,
+                    'circle-radius': [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        11,
+                        4,
+                        16,
+                        15
+                        ],
                     'circle-color': '#fff'
                 }
             });
@@ -132,7 +156,15 @@
                 'source': 'suitesLaneway',
                 'layout': {},
                 'paint': {
-                    'circle-radius': 3,
+                    'circle-radius': [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        11,
+                        3,
+                        16,
+                        10
+                        ],
                     'circle-color': '#00a150',
                 }
             }); 
