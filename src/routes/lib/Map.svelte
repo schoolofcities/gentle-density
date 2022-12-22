@@ -124,7 +124,7 @@
                         16,
                         10
                         ],
-                    'circle-color': '#AB1368',
+                    'circle-color': '#ba005a',
                 }
             });  
             
@@ -165,7 +165,7 @@
                         16,
                         10
                         ],
-                    'circle-color': '#00a150',
+                    'circle-color': '#84f000',
                 }
             }); 
 

@@ -62,7 +62,7 @@
 				Tracking <span class="italic">Gentle Density</span> in Toronto
 			</h1>
 			<h2>
-				An Analysis Building Permit Data
+				Via Visualizing Building Permit Data
 			</h2>
 			<p><a href="https://jamaps.github.io">Jeff Allen</a></p>
 		</div>
