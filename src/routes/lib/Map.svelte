@@ -9,9 +9,11 @@
     import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
     import suitesSecondary from '../assets/secondary-suites.geo.json';
 
-    console.log(torontoBoundary);
 
     let values = [2020,2022];
+
+    let load = 0;
+
 
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2w2Z2xhOXprMTYzczNlcHNjMnNvdGlmNCJ9.lOgVHrajc1L-LlU0as2i2A';
     
@@ -23,15 +25,17 @@
     } else {
         mapHeight = 760
     }
-    
+
     const layerOpacity = 0.69;
     let message = " ";    
-    let map;
+    let map = null;
     const maxBounds = [
 		[-79.6772, 43.4400], // SW coords
 		[-79.04763, 44.03074] // NE coords
 	];
     onMount(() => {
+        
+
         map = new mapboxgl.Map({
 			container: "map", 
 			style: 'mapbox://styles/schoolofcities/clbxv21c4000414n2hcio6l5o',
@@ -67,21 +71,21 @@
                 }
             }, 'admin-0-boundary-disputed');
 
-            map.addSource('laneways', {
-                'type': 'geojson',
-                'data': laneways
-            });
-            map.addLayer({
-                'id': 'laneways',
-                'type': 'line',
-                'source': 'laneways',
-                'layout': {},
-                'paint': {
-                    'line-color': '#8EB6DC',
-                    'line-width': 1,
-                    'line-opacity': 1
-                }
-            }, 'admin-0-boundary-disputed');
+            // map.addSource('laneways', {
+            //     'type': 'geojson',
+            //     'data': laneways
+            // });
+            // map.addLayer({
+            //     'id': 'laneways',
+            //     'type': 'line',
+            //     'source': 'laneways',
+            //     'layout': {},
+            //     'paint': {
+            //         'line-color': '#8EB6DC',
+            //         'line-width': 1,
+            //         'line-opacity': 1
+            //     }
+            // }, 'admin-0-boundary-disputed');
 
             map.addSource('suitesSecondary', {
                 'type': 'geojson',
@@ -132,10 +136,34 @@
                     'circle-color': '#00a150'
                 }
             }); 
+
+            // function filterSecondary(years) {
+
+            //     map.setFilter('suitesSecondary',[
+            //         "all",
+            //         ['>=', ['get', 'year'], years[0].toString()],
+            //         ['<=', ['get', 'year'], years[1].toString()]
+            //     ]);
+            //     map.setFilter('suitesSecondaryWhite',[
+            //         "all",
+            //         ['>=', ['get', 'year'], years[0].toString()],
+            //         ['<=', ['get', 'year'], years[1].toString()]
+            //     ]);
+
+            // };
+
+            // filterSecondary(values);
+
             
             if (pageHeight > 700 && pageWidth > 800) {
                 map.zoomTo(10.75)
             }
+
+            load = 1
+            filterPoints(values)
+
+
+
         });
         
         // map.on('mousemove', 'VotingSubDivisionsFill', (e) => {
@@ -164,7 +192,41 @@
         // map.on('mouseleave', 'VotingSubDivisionsFill', () => {
         //     message = " "
         // });
+
+        
+
     });
+
+    function filterPoints(years) {
+
+        if (load > 0) {
+            map.setFilter('suitesSecondary',[
+            "all",
+            ['>=', ['get', 'year'], years[0].toString()],
+            ['<=', ['get', 'year'], years[1].toString()]
+        ]);
+            map.setFilter('suitesSecondaryWhite',[
+                "all",
+                ['>=', ['get', 'year'], years[0].toString()],
+                ['<=', ['get', 'year'], years[1].toString()]
+            ]);
+            map.setFilter('suitesLaneway',[
+            "all",
+            ['>=', ['get', 'year'], years[0].toString()],
+            ['<=', ['get', 'year'], years[1].toString()]
+        ]);
+            map.setFilter('suitesLanewayWhite',[
+                "all",
+                ['>=', ['get', 'year'], years[0].toString()],
+                ['<=', ['get', 'year'], years[1].toString()]
+            ]);
+        }
+    };
+    
+    $: filterPoints(values)
+    
+
+    
 
 </script>
 
@@ -229,6 +291,7 @@
 
     #options {
         margin: 0 auto;
+        padding-top: 7px;
         width: 100%;
         max-width: 650px;
     }
