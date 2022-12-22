@@ -133,7 +133,7 @@
                 'layout': {},
                 'paint': {
                     'circle-radius': 3,
-                    'circle-color': '#00a150'
+                    'circle-color': '#00a150',
                 }
             }); 
 
@@ -225,6 +225,33 @@
     
     $: filterPoints(values)
     
+    let onLaneway = true
+    function filterLaneway() {
+        if (onLaneway) {
+            // circle-opacity
+            map.setPaintProperty('suitesLaneway', 'circle-opacity', 0);
+            map.setPaintProperty('suitesLanewayWhite', 'circle-opacity', 0);
+            onLaneway = false
+        } else {
+            map.setPaintProperty('suitesLaneway', 'circle-opacity', 1);
+            map.setPaintProperty('suitesLanewayWhite', 'circle-opacity', 1);
+            onLaneway = true
+        }
+    }
+
+    let onSecondary = true
+    function filterSecondary() {
+        if (onSecondary) {
+            // circle-opacity
+            map.setPaintProperty('suitesSecondary', 'circle-opacity', 0);
+            map.setPaintProperty('suitesSecondaryWhite', 'circle-opacity', 0);
+            onSecondary = false
+        } else {
+            map.setPaintProperty('suitesSecondary', 'circle-opacity', 1);
+            map.setPaintProperty('suitesSecondaryWhite', 'circle-opacity', 1);
+            onSecondary = true
+        }
+    }
 
     
 
@@ -242,7 +269,7 @@
         
         <div id="pointLayers">
             
-            <div id="lanewayButton">
+            <div id="lanewayButton" on:click={filterLaneway} class="{onLaneway ? 'layerOn' : 'layerOff'}" >
                 <svg width=20 height=10>
                     <circle
                         style="fill:#00a150;stroke-width:2;stroke:#fff"
@@ -253,7 +280,7 @@
                 Laneway & Garden Suites
             </div>
 
-            <div id="secondaryButton">
+            <div id="secondaryButton"  on:click={filterSecondary} class="{onSecondary ? 'layerOn' : 'layerOff'}">
                 <svg width=20 height=10>
                     <circle
                         style="fill:#AB1368;stroke-width:2;stroke:#fff"
@@ -326,13 +353,20 @@
         margin-bottom: 10px;
         background-color: #2a5e89;
         cursor: pointer;
-        opacity: 0.42;
     }
 
     #lanewayButton:hover {
         opacity: 1;
         background-color: var(--brandDarkBlue);
     }
+
+    .layerOn {
+        opacity: 1;
+    }
+    .layerOff {
+        opacity: 0.42;
+    }
+
 
     #secondaryButton:hover {
         opacity: 1;
