@@ -6,8 +6,8 @@
     font-family: Roboto, sans-serif;
     --brandDarkBlue: #1470ad;
     --brandLightBlue: #8EB6DC;
-    --brandRed: #AB1368; 
-    --brandYellow: #F1C500;
+    --brandRed: #ba005a; 
+    --brandYellow: #84f000;
 
     --range-slider:          #8EB6DC; /* slider main background color */
     --range-handle-inactive: #ffffff; /* inactive handle color */
@@ -36,6 +36,16 @@ main {
     max-width: 1920px;
     position: relative;
 }
+
+a {
+    color: #2e14ad;
+    font-weight: bold;
+    opacity: 0.8;
+}
+a:hover {
+    opacity: 1;
+}
+
 
 .blueprint {
     background-image: url("./blueprint-background.png");
@@ -79,12 +89,12 @@ main {
 
 .textSecondary {
     color: var(--brandRed);
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .textLaneway {
     color: var(--brandGreen);
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .title {
@@ -145,12 +155,12 @@ main {
 }
 
 .text {
-    max-width: 640px;
+    max-width: 700px;
     margin: 0 auto;
     color: var(--brandDarkBlue);
     font-family:  'Ubuntu Mono', monospace;
     font-weight: 400px;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 30px;
     padding-bottom: 20px;
     padding-left: 20px;

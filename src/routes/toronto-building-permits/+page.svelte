@@ -77,26 +77,25 @@
 
 		<div class="text">
 			<p>
-				Toronto, like many cities, i. 
+				Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/">Yellowbelt</a>). There has been a big push among housing advcoates, academics, and planners to increase housing supply in these neighbourhoods. 
 				
-				Yellowbelt, areas zoned 
+				At the lower end of the missing middle is the opportunity to add <span class="italic">gentle density</span> to a single-family home neighbourhoods. 
 				
-				
-				At the lower end of the “missing middle” is the opportunity to add <span class="italic">gentle density</span> to a single-family home neighbourhoods.
-				
-				and optimize its single parcel of land. This could include converting a basement, retrofitting a garage, building a garden suite or laneway house, adding one or more units to a principal dwelling, and/or subdividing and converting a principal dwelling into a duplex or triplex or more.  
+				Gentle density refers to building additional dwellings to existing parcels of land with single-family homes, scaling up the density of a neighbourhood incrementally at the parcel level. This can involve subdividing an existing dwelling (e.g. renovating a basement into a separate apartment, converting from a duplex to a triplex, etc.), or constructing separate dwellings on the same property (e.g. building a garden suite, converting a garage into an accessory dwelling, etc.). 
 			</p>
 			<p>
-				In Toronto, <span class="textSecondary">secondary suites</span>, <span class="textLaneway">laneway/garden</span> suites.
-
-				Building permits can either be active (i.e. in progress), cancelled, or closed. Those that are closed, we can assume the construction has finished. In the building permit data, we thus query by type of work and if they are closed. Then we can see development over time blah a
+				We've looked at 10 years of building permit data in the City of Toronto (01/2013 to 12/2022) to see how and where forms of gentle density have (or have not) been built across the city.
+				The City of Toronto shares building permits as open data. Building permits can either be active (i.e. in progress), cancelled, or closed. Those that are closed, we can assume the construction has finished. We queried closed building permits by their year for the following two types of gentle density construction to track how they're increasing over time.
 			</p>
 			
-				<ul>
-					<li>Secondary Suites - These are renovations to an existing residential structures where separate dwelling unit is added.  The most common form is converting a basement into a separate apartment, but can include other types of conversions (e.g. converting from a duplex to a triplex). They may or may not include building additions (i.e. expanding the volume) of the dwelling.</li>
-					<li>Rear-Yard Suites - </li>
-				  </ul> 
-				
+			<p><span class="textSecondary">"Second Suite (New)"</span></p>
+			<p>
+				These are renovations to an existing residential structures where separate dwelling unit is added. The most common form is converting a basement into a separate apartment, but can include other types of conversions (e.g. converting from a duplex to a triplex). They may or may not include building additions (i.e. expanding the volume) of the dwelling.
+			</p>
+			<p>"Second Suite (New)"</p>
+			<p>
+				"Laneway / Rear Yard Suite" - Often called Accessory Dwelling Units (ADUs) in other cities. Toronto legalized separate dwellings that abut laneways in ??/2018 and Garden Suites in all other residentially zoned neighbourhoods in ??/2022
+			</p> 	
 
 		</div>
 	</div>
