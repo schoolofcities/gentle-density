@@ -102,9 +102,9 @@
                         ["linear"],
                         ["zoom"],
                         11,
-                        4,
+                        5,
                         16,
-                        15
+                        14
                         ],
                     'circle-color': '#fff',
                 }
@@ -120,11 +120,11 @@
                         ["linear"],
                         ["zoom"],
                         11,
-                        3,
+                        4,
                         16,
                         10
                         ],
-                    'circle-color': '#ba005a',
+                    'circle-color': '#AB1368',
                 }
             });  
             
@@ -143,9 +143,9 @@
                         ["linear"],
                         ["zoom"],
                         11,
-                        4,
+                        5,
                         16,
-                        15
+                        14
                         ],
                     'circle-color': '#fff'
                 }
@@ -161,11 +161,11 @@
                         ["linear"],
                         ["zoom"],
                         11,
-                        3,
+                        4,
                         16,
                         10
                         ],
-                    'circle-color': '#84f000',
+                    'circle-color': '#F1C500',
                 }
             }); 
 

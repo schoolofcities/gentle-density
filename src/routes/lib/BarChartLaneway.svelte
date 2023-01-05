@@ -53,7 +53,7 @@
             <!-- Now let's draw the circle -->
             <!-- We're going to define the `fill` in the CSS for flexible use -->
             
-            <rect x="0" y="0" height="10" width="10" style="fill:#84f000;" />
+            <rect x="0" y="0" height="10" width="10" style="fill:#F1C500;" />
             <line x1="0" y1="0" x2="10" y2="10" style="stroke:white;stroke-width:1" />
         </pattern>
 

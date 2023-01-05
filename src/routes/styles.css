@@ -6,8 +6,8 @@
     font-family: Roboto, sans-serif;
     --brandDarkBlue: #1470ad;
     --brandLightBlue: #8EB6DC;
-    --brandRed: #ba005a; 
-    --brandYellow: #84f000;
+    --brandRed: #AB1368; 
+    --brandYellow: #F1C500;
 
     --range-slider:          #8EB6DC; /* slider main background color */
     --range-handle-inactive: #ffffff; /* inactive handle color */
@@ -90,11 +90,13 @@ a:hover {
 .textSecondary {
     color: var(--brandRed);
     font-weight: bold;
+    background-color: var(--brandDarkBlue);
 }
 
 .textLaneway {
-    color: var(--brandGreen);
+    color: var(--brandYellow);
     font-weight: bold;
+    background-color: var(--brandDarkBlue);
 }
 
 .title {
@@ -155,7 +157,7 @@ a:hover {
 }
 
 .text {
-    max-width: 700px;
+    max-width: 720px;
     margin: 0 auto;
     color: var(--brandDarkBlue);
     font-family:  'Ubuntu Mono', monospace;

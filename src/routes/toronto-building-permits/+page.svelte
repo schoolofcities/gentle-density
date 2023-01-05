@@ -77,24 +77,25 @@
 
 		<div class="text">
 			<p>
-				Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/">Yellowbelt</a>). There has been a big push among housing advcoates, academics, and planners to increase housing supply in these neighbourhoods. 
-				
-				At the lower end of the missing middle is the opportunity to add <span class="italic">gentle density</span> to a single-family home neighbourhoods. 
-				
-				Gentle density refers to building additional dwellings to existing parcels of land with single-family homes, scaling up the density of a neighbourhood incrementally at the parcel level. This can involve subdividing an existing dwelling (e.g. renovating a basement into a separate apartment, converting from a duplex to a triplex, etc.), or constructing separate dwellings on the same property (e.g. building a garden suite, converting a garage into an accessory dwelling, etc.). 
+				Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/">Yellowbelt</a>). There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via buidling <a href="https://missingmiddlehousing.com/">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims make our urban areas more affordable, inclusive, and sustainable. 
 			</p>
 			<p>
-				We've looked at 10 years of building permit data in the City of Toronto (01/2013 to 12/2022) to see how and where forms of gentle density have (or have not) been built across the city.
-				The City of Toronto shares building permits as open data. Building permits can either be active (i.e. in progress), cancelled, or closed. Those that are closed, we can assume the construction has finished. We queried closed building permits by their year for the following two types of gentle density construction to track how they're increasing over time.
+				At the smaller-scale of the missing middle are 
+				<a href="https://www.gentledensity.ca/">gentle density</a> strategies, which refers to owner-led efforts to build additional dwellings within their existing parcel of land. These can increase property value and provide supplmentary income, but importantly, in aggregate, can incrementally scale up the density of a neighbourhood and provide needed housing.
+				Relative to larger developments (e.g. larger multi-unit apartments and condominiums), gentle density is designed to be more compatible with the scale and character of existing neighborhoods. Gentle density development is often seen as a way to increase the housing supply in a way that is less disruptive to existing communities and can help to create more walkable, livable neighborhoods.
+			</p>
+			<p>
+				We've looked at 10 years of building permit data in the City of Toronto (01/2013 to 12/2022) to see how and where forms of gentle density have (or have not) been built across the city during this period. At any point in time, building permits can either be active (i.e. build in progress), cancelled, or closed. Those that are closed, we can assume construction has finished. We counted building permits by the year they were closed for the following two types of gentle density construction, to track their trends over time.
 			</p>
 			
-			<p><span class="textSecondary">"Second Suite (New)"</span></p>
+			<p><span class="textSecondary">Secondary Suites</span></p>
 			<p>
-				These are renovations to an existing residential structures where separate dwelling unit is added. The most common form is converting a basement into a separate apartment, but can include other types of conversions (e.g. converting from a duplex to a triplex). They may or may not include building additions (i.e. expanding the volume) of the dwelling.
+				Sub-dividing an existing residential structure to adding an dwelling unit. The most common form is converting a basement into a separate apartment, but this can include other types of conversions as well (e.g. converting from a duplex to a triplex). These conversions may or may not include building additions (i.e. expanding the volume) of the structure.
+
 			</p>
-			<p>"Second Suite (New)"</p>
+			<p><span class="textLaneway">Rear Yard Suites</span></p>
 			<p>
-				"Laneway / Rear Yard Suite" - Often called Accessory Dwelling Units (ADUs) in other cities. Toronto legalized separate dwellings that abut laneways in ??/2018 and Garden Suites in all other residentially zoned neighbourhoods in ??/2022
+				Building a small detached dwelling unit that is located on the same property as a single-family home. They are often called Accessory Dwelling Units (ADUs) or Garden Suites. Toronto legalized rear year suites that abut laneways in ??/2018 (some are garage conversions) and then in all other residentially zoned neighbourhoods in ??/2022 (i.e. for residential properties without laneways).
 			</p> 	
 
 		</div>
@@ -112,8 +113,19 @@
 
 		<div class="text">
 			<p>
-				At the lower end of the “missing middle” is the opportunity to add <span class="italic">gentle density</span> to a single-family home and optimize its single parcel of land. This could include converting a basement, retrofitting a garage, building a garden suite or laneway house, adding one or more units to a principal dwelling, and/or subdividing and converting a principal dwelling into a duplex or triplex or more.  
+				Secondary suites ...
 			</p>
+			<p>
+				While Laneway suites were legalized in 2018, none were completed according to building permit data until 2020 and only a few dozen since. With the allowance of Garden Suites across the city in 2022, it will be important to continue to track development going forward.
+			</p>
+			<p>
+				For reference, the City of Toronto has QQQQQ parcels of land in low-density residential zones. In sum, only 
+
+			</p>
+			<p>
+				Below we also map where gentle density is being built in the city.
+			</p>
+			
 		</div>
 		
 	</div>
