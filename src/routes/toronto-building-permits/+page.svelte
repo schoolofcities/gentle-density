@@ -7,6 +7,10 @@
 	import Top from "../lib/TopSofC.svelte";
 	import '../styles.css';
 
+	import isometricSecondary from '../assets/isometric-secondary.svg';
+	import isometricLaneway from '../assets/isometric-laneway.svg';
+
+
 </script>
 
 
@@ -88,15 +92,31 @@
 				We've looked at 10 years of building permit data in the City of Toronto (01/2013 to 12/2022) to see how and where forms of gentle density have (or have not) been built across the city during this period. At any point in time, building permits can either be active (i.e. build in progress), cancelled, or closed. Those that are closed, we can assume construction has finished. We counted building permits by the year they were closed for the following two types of gentle density construction, to track their trends over time.
 			</p>
 			
-			<p><span class="textSecondary">Secondary Suites</span></p>
-			<p>
-				Sub-dividing an existing residential structure to adding an dwelling unit. The most common form is converting a basement into a separate apartment, but this can include other types of conversions as well (e.g. converting from a duplex to a triplex). These conversions may or may not include building additions (i.e. expanding the volume) of the structure.
+			<h3><span class="textSecondary">Secondary Suites</span></h3>
 
-			</p>
-			<p><span class="textLaneway">Rear Yard Suites</span></p>
-			<p>
-				Building a small detached dwelling unit that is located on the same property as a single-family home. They are often called Accessory Dwelling Units (ADUs) or Garden Suites. Toronto legalized rear year suites that abut laneways in ??/2018 (some are garage conversions) and then in all other residentially zoned neighbourhoods in ??/2022 (i.e. for residential properties without laneways).
-			</p> 	
+			<div class="typeWrapper">
+
+				<div class="typeText"><p>
+					Sub-dividing an existing residential structure to adding an dwelling unit. The most common form is converting a basement into a separate apartment, but this can include other types of conversions as well (e.g. converting from a duplex to a triplex). These conversions may or may not include building additions (i.e. expanding the volume) of the structure.
+				</p></div>
+
+				<div class="isometric"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
+
+			</div>
+
+			<h3><span class="textLaneway">Rear Yard Suites</span></h3>
+			
+
+			<div class="typeWrapper">
+
+				<div class="typeText"><p>
+					Building a small detached dwelling unit that is located on the same property as a single-family home. They are often called Accessory Dwelling Units (ADUs) or Garden Suites. Toronto legalized rear year suites that abut laneways in ??/2018 (some are garage conversions) and then in all other residentially zoned neighbourhoods in ??/2022 (i.e. for residential properties without laneways).
+				</p></div>
+
+				<div class="isometric"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
+
+			</div>
+	
 
 		</div>
 	</div>
