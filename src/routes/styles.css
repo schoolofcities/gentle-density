@@ -57,10 +57,15 @@ a:hover {
     max-width: 1920px;
     height: calc(100vh - 20px);
     max-height: 1080px;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media only screen and (max-width: 1920px) {
+    .blueprint {
+        background-attachment: fixed;
+    }
 }
 
 .background-white {
