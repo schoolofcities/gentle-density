@@ -24,9 +24,13 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-color: white;
     /* background-color: #e5e5f7; */
     /* opacity: 0.8; */
+    background-color: #ffffff;
+    opacity: 1;
+    background-size: 13px 13px;
+    background-image: repeating-linear-gradient(45deg, #eaf5ff 0, #eaf5ff 1.3px, #ffffff 0, #ffffff 50%);
+    border-top: solid 1px var(--brandLightBlue);
 }
 
 main {

@@ -137,17 +137,22 @@
 
 		<div class="text">
 			<p>
-				Secondary suites ...
+				The construction of secondary suites hovered between 100 and 120 per year, and then jumped in 2020. Why?
 			</p>
 			<p>
-				While Laneway suites were legalized in 2018, none were completed according to building permit data until 2020 and only a few dozen since. With the allowance of Garden Suites across the city in 2022, it will be important to continue to track development going forward.
+				While Laneway suites were legalized in 2018, none were completed according to building permit data until 2020 and only a few dozen since then. With the allowance of Garden Suites across the city in 2022, it will be important to continue to track development going forward.
 			</p>
 			<p>
-				For reference, the City of Toronto has QQQQQ parcels of land in low-density residential zones. In sum, only 
-
+				Despite this slow uptake, the City of Toronto has QQQQQ parcels of land in low-density residential zones. Development charges have been cited as a burdensome disincentive for home owners. (CITATION).
 			</p>
 			<p>
-				Below we also map where gentle density is being built in the city.
+				To explore further, we map where secondary suites and rear year suites have been built in the city from 2013 to 2022. 
+			</p>
+			<p>	
+				These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. All rear yard suites cluster in these neighbourhoods since these are where the majority of the City's laneways are located (post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing). 
+			</p>
+			<p>
+				There is far less gentle density construction in the centre of the city, despite this area mostly consisting of single-detached homes. This part is home to some of the city's wealthiest neighbourhoods. 
 			</p>
 			
 		</div>
