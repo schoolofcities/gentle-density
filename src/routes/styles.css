@@ -40,7 +40,7 @@ main {
 a {
     color: #2e14ad;
     font-weight: bold;
-    opacity: 0.8;
+    opacity: 0.75;
 }
 a:hover {
     opacity: 1;
@@ -128,13 +128,13 @@ a:hover {
     color: var(--brandDarkBlue);
 }
 
-.title a {
+/* .title a {
     color: var(--brandDarkBlue);
 }
 
 .title a:hover {
     color: var(--brandRed);
-}
+} */
 
 .arrow {
     width: 100%;
@@ -167,11 +167,35 @@ a:hover {
     float: left;
     width: 300px;
 }
+.isometric-mobile {
+    display: none;
+    width: 300px;
+}
 
 .typeText {
     float: left;
     max-width: 500px;
 
+}
+
+@media only screen and (max-width: 692px) {
+    .typeWrapper {
+        overflow: hidden;
+        display: contents;
+    }
+    
+    .isometric {
+        display: none;
+    }
+    .isometric-mobile {
+        display: contents
+    }
+    
+    .typeText {
+        float: none;
+        max-width: 700px;
+    
+    }
 }
 
 .rangeSlider {
