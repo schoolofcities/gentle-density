@@ -71,21 +71,21 @@
                 }
             }, 'admin-0-boundary-disputed');
 
-            // map.addSource('laneways', {
-            //     'type': 'geojson',
-            //     'data': laneways
-            // });
-            // map.addLayer({
-            //     'id': 'laneways',
-            //     'type': 'line',
-            //     'source': 'laneways',
-            //     'layout': {},
-            //     'paint': {
-            //         'line-color': '#8EB6DC',
-            //         'line-width': 1,
-            //         'line-opacity': 1
-            //     }
-            // }, 'admin-0-boundary-disputed');
+            map.addSource('laneways', {
+                'type': 'geojson',
+                'data': laneways
+            });
+            map.addLayer({
+                'id': 'laneways',
+                'type': 'line',
+                'source': 'laneways',
+                'layout': {},
+                'paint': {
+                    'line-color': '#fff',
+                    'line-width': 1,
+                    'line-opacity': 0.87
+                }
+            }, 'admin-0-boundary-disputed');
 
             map.addSource('suitesSecondary', {
                 'type': 'geojson',
@@ -302,13 +302,15 @@
 <div id="options-wrapper">
     
     <div id="options">
+
+        <p>Closed (i.e. Cleared) Building Permits</p>
         
         <div id="pointLayers">
             
             <div id="lanewayButton" on:click={filterLaneway} class="{onLaneway ? 'layerOn' : 'layerOff'}" >
                 <svg width=20 height=10>
                     <circle
-                        style="fill:#00a150;stroke-width:2;stroke:#fff"
+                        style="fill:#F1C500;stroke-width:2;stroke:#fff"
                         cx="15"
                         cy="5"
                         r="4" />
@@ -319,7 +321,7 @@
             <div id="secondaryButton"  on:click={filterSecondary} class="{onSecondary ? 'layerOn' : 'layerOff'}">
                 <svg width=20 height=10>
                     <circle
-                        style="fill:#AB1368;stroke-width:2;stroke:#fff"
+                        style="fill:#ab1269;stroke-width:2;stroke:#fff"
                         cx="15"
                         cy="5"
                         r="4" />
@@ -330,6 +332,11 @@
         </div>
 
         <RangeSlider bind:values range pips all='label' step={1} min={2013} max={2022} hoverable={false}/>
+
+        <p>Open (i.e. Active) Building Permits</p>
+
+
+        <p>Reference Layers</p>
 
     </div>
 
@@ -345,29 +352,32 @@
 	}
 
     #top-bar {
-        width: 100%;
-        height: 28px;
+        width: calc(100% - 36px);
         background-color: var(--brandDarkBlue);
         background-size: 13px 13px;
         background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
         color: white;
         font-size: 17px;
         font-family: 'Ubuntu Mono', monospace;
+        padding: 18px;
         padding-top: 28px;
+        padding-bottom: 8px;
         font-weight: bold;
     }
     #top-bar p {
         max-width: 720px;
+        width: 100%;
         margin: 0 auto;
     }
 
     #options-wrapper {
         width: 100%;
-        height: 150px;
+        height: 250px;
         background-color: var(--brandDarkBlue);
         background-size: 13px 13px;
         background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
     }
+    
 
     #options {
         margin: 0 auto;
@@ -375,11 +385,23 @@
         width: 100%;
         max-width: 650px;
     }
+    #options p {
+        color: white;
+        font-size: 17px;
+        font-family: 'Ubuntu Mono', monospace;
+        max-width: 620px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 18px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
 
     #pointLayers {
         color: white;
         padding: 10px;
         padding-left: 16px;
+        padding-bottom: 1px;
         font-size: 17px;
         font-family: 'Ubuntu Mono', monospace;
         font-weight: 400;
