@@ -293,6 +293,10 @@
 
 <svelte:window bind:innerHeight={pageHeight} bind:innerWidth={pageWidth}/>
 
+<div id="top-bar">
+    <p>Location of Gentle Density cleared building permits in Toronto:</p>
+</div>
+
 <div id="map" style="height: {mapHeight}px"></div>
 
 <div id="options-wrapper">
@@ -340,6 +344,23 @@
         border-bottom: 1px solid var(--brandLightBlue);
 	}
 
+    #top-bar {
+        width: 100%;
+        height: 28px;
+        background-color: var(--brandDarkBlue);
+        background-size: 13px 13px;
+        background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
+        color: white;
+        font-size: 17px;
+        font-family: 'Ubuntu Mono', monospace;
+        padding-top: 28px;
+        font-weight: bold;
+    }
+    #top-bar p {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
     #options-wrapper {
         width: 100%;
         height: 150px;
@@ -363,7 +384,6 @@
         font-family: 'Ubuntu Mono', monospace;
         font-weight: 400;
         overflow: hidden;
-        
     }
 
     #lanewayButton {
