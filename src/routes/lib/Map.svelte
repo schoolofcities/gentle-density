@@ -83,7 +83,7 @@
                 'paint': {
                     'line-color': '#fff',
                     'line-width': 1,
-                    'line-opacity': 0.87
+                    'line-opacity': 0
                 }
             }, 'admin-0-boundary-disputed');
 
@@ -257,17 +257,17 @@
     
     $: filterPoints(values)
     
-    let onLaneway = true
-    function filterLaneway() {
-        if (onLaneway) {
+    let onRearYard = true
+    function filterRearYard() {
+        if (onRearYard) {
             // circle-opacity
             map.setPaintProperty('suitesLaneway', 'circle-opacity', 0);
             map.setPaintProperty('suitesLanewayWhite', 'circle-opacity', 0);
-            onLaneway = false
+            onRearYard = false
         } else {
             map.setPaintProperty('suitesLaneway', 'circle-opacity', 1);
             map.setPaintProperty('suitesLanewayWhite', 'circle-opacity', 1);
-            onLaneway = true
+            onRearYard = true
         }
     }
 
@@ -282,6 +282,18 @@
             map.setPaintProperty('suitesSecondary', 'circle-opacity', 1);
             map.setPaintProperty('suitesSecondaryWhite', 'circle-opacity', 1);
             onSecondary = true
+        }
+    }
+
+    let onLaneway = false
+    function filterLaneway() {
+        if (onLaneway) {
+            // circle-opacity
+            map.setPaintProperty('laneways', 'line-opacity', 0);
+            onLaneway = false
+        } else {
+            map.setPaintProperty('laneways', 'line-opacity', 0.87);
+            onLaneway = true
         }
     }
 
@@ -307,7 +319,7 @@
         
         <div id="pointLayers">
             
-            <div id="lanewayButton" on:click={filterLaneway} class="{onLaneway ? 'layerOn' : 'layerOff'}" >
+            <div id="rearYardButton" on:click={filterRearYard} class="{onRearYard ? 'layerOn' : 'layerOff'}" >
                 <svg width=20 height=10>
                     <circle
                         style="fill:#F1C500;stroke-width:2;stroke:#fff"
@@ -335,8 +347,26 @@
 
         <p>Open (i.e. Active) Building Permits</p>
 
+        
+
 
         <p>Reference Layers</p>
+
+        <div id="pointLayers">
+            
+            <div id="lanewayButton" on:click={filterLaneway} class="{onLaneway ? 'layerOn' : 'layerOff'}" >
+                <svg width=20 height=10>
+                    <line
+                        style="stroke-width:1.5;stroke:#fff"
+                        x1=5
+                        x2=20
+                        y1=5
+                        y2=5/>
+                </svg>
+                Laneways
+            </div>
+
+        </div>
 
     </div>
 
@@ -408,7 +438,7 @@
         overflow: hidden;
     }
 
-    #lanewayButton {
+    #rearYardButton {
         float: left;
         margin-right: 20px;
         width: 290px;
@@ -429,10 +459,31 @@
         cursor: pointer;
     }
 
+    #lanewayButton {
+        overflow: hidden;
+        width: 290px;
+        border: solid 1px #fff;
+        padding: 4px;
+        margin-bottom: 10px;
+        background-color: #2a5e89;
+        cursor: pointer;
+    }
+
+    #rearYardButton:hover {
+        opacity: 1;
+        background-color: var(--brandDarkBlue);
+    }
+
+    #secondaryButton:hover {
+        opacity: 1;
+        background-color: var(--brandDarkBlue);
+    }
+
     #lanewayButton:hover {
         opacity: 1;
         background-color: var(--brandDarkBlue);
     }
+
 
     .layerOn {
         opacity: 1;
@@ -442,11 +493,7 @@
     }
 
 
-    #secondaryButton:hover {
-        opacity: 1;
-        background-color: var(--brandDarkBlue);
-    }
-
+    
     
     
 </style>
