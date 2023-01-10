@@ -315,7 +315,7 @@
     
     <div id="options">
 
-        <p>Closed (i.e. Cleared) Building Permits</p>
+        <p>Closed (i.e. Cleared) Building Permits:</p>
         
         <div id="pointLayers">
             
@@ -327,7 +327,7 @@
                         cy="5"
                         r="4" />
                 </svg>
-                Laneway & Garden Suites
+                Rear Yard Suites
             </div>
 
             <div id="secondaryButton"  on:click={filterSecondary} class="{onSecondary ? 'layerOn' : 'layerOff'}">
@@ -345,12 +345,12 @@
 
         <RangeSlider bind:values range pips all='label' step={1} min={2013} max={2022} hoverable={false}/>
 
-        <p>Open (i.e. Active) Building Permits</p>
+        <p>Open (i.e. Active) Building Permits:</p>
 
         
 
 
-        <p>Reference Layers</p>
+        <p>Reference Layers:</p>
 
         <div id="pointLayers">
             
@@ -425,6 +425,8 @@
         padding: 18px;
         padding-top: 7px;
         padding-bottom: 7px;
+        text-decoration: underline;
+        text-decoration-color: #8EB6DC; 
     }
 
     #pointLayers {
