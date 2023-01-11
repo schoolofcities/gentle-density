@@ -8,7 +8,8 @@
     import laneways from '../assets/laneways.geo.json';
     import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
     import suitesSecondary from '../assets/secondary-suites.geo.json';
-
+    import zoneYellowRes from '../assets/zone-yellow.geo.json'
+    import zoneOtherRes from '../assets/zone-otherres.geo.json'
 
     let values = [2020,2022];
 
@@ -86,6 +87,38 @@
                     'line-opacity': 0
                 }
             }, 'admin-0-boundary-disputed');
+
+
+            map.addSource('zoneYellowRes', {
+                'type': 'geojson',
+                'data': zoneYellowRes
+            });
+            map.addLayer({
+                'id': 'zoneYellowRes',
+                'type': 'fill',
+                'source': 'zoneYellowRes',
+                'layout': {},
+                'paint': {
+                    'fill-color': '#1a2d3b',
+                    'fill-opacity': 1
+                }
+            }, 'land-structure-line');
+
+            map.addSource('zoneOtherRes', {
+                'type': 'geojson',
+                'data': zoneOtherRes
+            });
+            map.addLayer({
+                'id': 'zoneOtherRes',
+                'type': 'fill',
+                'source': 'zoneOtherRes',
+                'layout': {},
+                'paint': {
+                    'fill-color': '#2e4e66',
+                    'fill-opacity': 1
+                }
+            }, 'land-structure-line');
+
 
             map.addSource('suitesSecondary', {
                 'type': 'geojson',
@@ -297,6 +330,18 @@
         }
     }
 
+    let onResYellow = true
+    function filterResYellow() {
+        if (onResYellow) {
+            // circle-opacity
+            map.setPaintProperty('zoneYellowRes', 'fill-opacity', 0);
+            onResYellow = false
+        } else {
+            map.setPaintProperty('zoneYellowRes', 'fill-opacity', 1);
+            onResYellow = true
+        }
+    }
+
     
 
 </script>
@@ -354,6 +399,22 @@
 
         <div id="pointLayers">
             
+            <div id="resYellowButton" on:click={filterResYellow} class="{onResYellow ? 'layerOn' : 'layerOff'}" >
+                <svg width=15 height=10>
+                    <rect
+                        style="fill:#000"
+                        x=5
+                        y=0
+                        width=10
+                        height=10/>
+                </svg>
+                Res. Zones (Single Detached)
+            </div>
+
+        </div>
+
+        <div id="pointLayers">
+            
             <div id="lanewayButton" on:click={filterLaneway} class="{onLaneway ? 'layerOn' : 'layerOff'}" >
                 <svg width=20 height=10>
                     <line
@@ -402,12 +463,11 @@
 
     #options-wrapper {
         width: 100%;
-        height: 250px;
+        height: 300px;
         background-color: var(--brandDarkBlue);
         background-size: 13px 13px;
         background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
-    }
-    
+    }    
 
     #options {
         margin: 0 auto;
@@ -471,6 +531,16 @@
         cursor: pointer;
     }
 
+    #resYellowButton {
+        overflow: hidden;
+        width: 290px;
+        border: solid 1px #fff;
+        padding: 4px;
+        margin-bottom: 10px;
+        background-color: #2a5e89;
+        cursor: pointer;
+    }
+
     #rearYardButton:hover {
         opacity: 1;
         background-color: var(--brandDarkBlue);
@@ -482,6 +552,11 @@
     }
 
     #lanewayButton:hover {
+        opacity: 1;
+        background-color: var(--brandDarkBlue);
+    }
+
+    #resYellowButton:hover {
         opacity: 1;
         background-color: var(--brandDarkBlue);
     }
