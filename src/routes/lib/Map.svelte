@@ -16,7 +16,6 @@
 
     let load = 0;
 
-
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2w2Z2xhOXprMTYzczNlcHNjMnNvdGlmNCJ9.lOgVHrajc1L-LlU0as2i2A';
     
     let pageHeight;
@@ -131,7 +130,7 @@
                 'layout': {},
                 'paint': {
                     'fill-color': ["step",["get","i"],"#506b80",75000,"#2e4e66",100000,"#1a2d3b"],
-                    'fill-opacity': 1
+                    'fill-opacity': 0
                 }
             }, 'land-structure-line');
 
@@ -217,24 +216,6 @@
                     'circle-color': '#F1C500',
                 }
             }); 
-
-            // function filterSecondary(years) {
-
-            //     map.setFilter('suitesSecondary',[
-            //         "all",
-            //         ['>=', ['get', 'year'], years[0].toString()],
-            //         ['<=', ['get', 'year'], years[1].toString()]
-            //     ]);
-            //     map.setFilter('suitesSecondaryWhite',[
-            //         "all",
-            //         ['>=', ['get', 'year'], years[0].toString()],
-            //         ['<=', ['get', 'year'], years[1].toString()]
-            //     ]);
-
-            // };
-
-            // filterSecondary(values);
-
             
             if (pageHeight > 700 && pageWidth > 800) {
                 map.zoomTo(10.75)
@@ -358,18 +339,18 @@
         }
     }
 
-    let onLaneway = true;
+    let onLaneway = false;
     function filterLaneway() {
         if (onLaneway) {
-            map.setPaintProperty('laneways', 'fill-opacity', 0);
-            onLaneway = false
+            map.setPaintProperty('laneways', 'line-opacity', 0);
+            onLaneway = false;
         } else {
-            map.setPaintProperty('laneways', 'fill-opacity', 1);
-            onLaneway = true
+            map.setPaintProperty('laneways', 'line-opacity', 1);
+            onLaneway = true;
         }
     }
 
-    let onIncome = true;
+    let onIncome = false;
     function filterIncome() {
         map.setPaintProperty('zoneOtherRes', 'fill-opacity', 0);
         onResOther = false;
@@ -379,7 +360,7 @@
             map.setPaintProperty('income2020', 'fill-opacity', 0);
             onIncome = false;
         } else {
-            map.setPaintProperty('income2020', 'fill-opacity', 0.7);
+            map.setPaintProperty('income2020', 'fill-opacity', 0.97);
             onIncome = true;
         }
     }
@@ -463,7 +444,7 @@
                         width=10
                         height=10/>
                 </svg>
-                Other Low-Density*
+                Other Low-Density
             </div>
 
 
@@ -486,17 +467,36 @@
             </div>
 
             <div id="incomeButton" on:click={filterIncome} class="{onIncome ? 'layerOn' : 'layerOff'}" >
-                <svg width=20 height=10>
-                    <line
-                        style="stroke-width:1.5;stroke:#fff"
-                        x1=5
-                        x2=20
-                        y1=5
-                        y2=5/>
+                <svg width=0 height=10></svg>
+                Income: Low
+                <svg width=10 height=10>
+                    <rect
+                    style="fill:#506b80;stroke-width:1;stroke:#8EB6DC"
+                    x=0
+                    y=0
+                    width=10
+                    height=10/>
+                </svg>,
+                Medium
+                <svg width=10 height=10>
+                    <rect
+                    style="fill:#2e4e66;stroke-width:1;stroke:#8EB6DC"
+                    x=0
+                    y=0
+                    width=10
+                    height=10/>
+                </svg>,
+                High
+                <svg width=10 height=10>
+                    <rect
+                    style="fill:#1a2d3b;stroke-width:1;stroke:#8EB6DC"
+                    x=0
+                    y=0
+                    width=10
+                    height=10/>
                 </svg>
-                Median Household Income
-            </div>
-
+            </div> 
+            <!-- "#506b80",75000,"#2e4e66",100000,"#1a2d3b" -->
         </div>
 
     </div>
@@ -533,7 +533,7 @@
 
     #options-wrapper {
         width: 100%;
-        height: 340px;
+        /* height: 340px; */
         background-color: var(--brandDarkBlue);
         background-size: 13px 13px;
         background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
