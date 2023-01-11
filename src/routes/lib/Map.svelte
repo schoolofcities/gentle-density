@@ -10,7 +10,7 @@
     import suitesSecondary from '../assets/secondary-suites.geo.json';
     import zoneYellowRes from '../assets/zone-yellow.geo.json';
     import zoneOtherRes from '../assets/zone-otherres.geo.json';
-    // import income2020 from '../assets/2020.geo.json';
+    import income2020 from '../assets/2020.geo.json';
 
     let values = [2020,2022];
 
@@ -117,6 +117,21 @@
                 'paint': {
                     'fill-color': '#2e4e66',
                     'fill-opacity': 0
+                }
+            }, 'land-structure-line');
+
+            map.addSource('income2020', {
+                'type': 'geojson',
+                'data': income2020
+            });
+            map.addLayer({
+                'id': 'income2020',
+                'type': 'fill',
+                'source': 'income2020',
+                'layout': {},
+                'paint': {
+                    'fill-color': ["step",["get","i"],"#506b80",75000,"#2e4e66",100000,"#1a2d3b"],
+                    'fill-opacity': 1
                 }
             }, 'land-structure-line');
 
@@ -294,7 +309,6 @@
     let onRearYard = true;
     function filterRearYard() {
         if (onRearYard) {
-            // circle-opacity
             map.setPaintProperty('suitesLaneway', 'circle-opacity', 0);
             map.setPaintProperty('suitesLanewayWhite', 'circle-opacity', 0);
             onRearYard = false
@@ -308,7 +322,6 @@
     let onSecondary = true;
     function filterSecondary() {
         if (onSecondary) {
-            // circle-opacity
             map.setPaintProperty('suitesSecondary', 'circle-opacity', 0);
             map.setPaintProperty('suitesSecondaryWhite', 'circle-opacity', 0);
             onSecondary = false
@@ -319,22 +332,11 @@
         }
     }
 
-    let onLaneway = false;
-    function filterLaneway() {
-        if (onLaneway) {
-            // circle-opacity
-            map.setPaintProperty('laneways', 'line-opacity', 0);
-            onLaneway = false
-        } else {
-            map.setPaintProperty('laneways', 'line-opacity', 0.87);
-            onLaneway = true
-        }
-    }
-
     let onResYellow = false;
     function filterResYellow() {
+        map.setPaintProperty('income2020', 'fill-opacity', 0);
+        onIncome = false;
         if (onResYellow) {
-            // circle-opacity
             map.setPaintProperty('zoneYellowRes', 'fill-opacity', 0);
             onResYellow = false
         } else {
@@ -345,8 +347,9 @@
 
     let onResOther = false;
     function filterResOther() {
+        map.setPaintProperty('income2020', 'fill-opacity', 0);
+        onIncome = false;
         if (onResOther) {
-            // circle-opacity
             map.setPaintProperty('zoneOtherRes', 'fill-opacity', 0);
             onResOther = false
         } else {
@@ -354,6 +357,33 @@
             onResOther = true
         }
     }
+
+    let onLaneway = true;
+    function filterLaneway() {
+        if (onLaneway) {
+            map.setPaintProperty('laneways', 'fill-opacity', 0);
+            onLaneway = false
+        } else {
+            map.setPaintProperty('laneways', 'fill-opacity', 1);
+            onLaneway = true
+        }
+    }
+
+    let onIncome = true;
+    function filterIncome() {
+        map.setPaintProperty('zoneOtherRes', 'fill-opacity', 0);
+        onResOther = false;
+        map.setPaintProperty('zoneYellowRes', 'fill-opacity', 0);
+        onResYellow = false;
+        if (onIncome) {
+            map.setPaintProperty('income2020', 'fill-opacity', 0);
+            onIncome = false;
+        } else {
+            map.setPaintProperty('income2020', 'fill-opacity', 0.7);
+            onIncome = true;
+        }
+    }
+
 
     
 
@@ -455,6 +485,18 @@
                 Laneways
             </div>
 
+            <div id="incomeButton" on:click={filterIncome} class="{onIncome ? 'layerOn' : 'layerOff'}" >
+                <svg width=20 height=10>
+                    <line
+                        style="stroke-width:1.5;stroke:#fff"
+                        x1=5
+                        x2=20
+                        y1=5
+                        y2=5/>
+                </svg>
+                Median Household Income
+            </div>
+
         </div>
 
     </div>
@@ -550,6 +592,17 @@
     }
 
     #lanewayButton {
+        float: left;
+        margin-right: 20px;
+        width: 290px;
+        border: solid 1px #fff;
+        padding: 4px;
+        margin-bottom: 10px;
+        background-color: #2a5e89;
+        cursor: pointer;
+    }
+    
+    #incomeButton {
         overflow: hidden;
         width: 290px;
         border: solid 1px #fff;
@@ -590,11 +643,6 @@
         background-color: var(--brandDarkBlue);
     }
 
-    #lanewayButton:hover {
-        opacity: 1;
-        background-color: var(--brandDarkBlue);
-    }
-
     #resYellowButton:hover {
         opacity: 1;
         background-color: var(--brandDarkBlue);
@@ -605,6 +653,15 @@
         background-color: var(--brandDarkBlue);
     }
 
+    #lanewayButton:hover {
+        opacity: 1;
+        background-color: var(--brandDarkBlue);
+    }
+    
+    #incomeButton:hover {
+        opacity: 1;
+        background-color: var(--brandDarkBlue);
+    }
 
     .layerOn {
         opacity: 1;
