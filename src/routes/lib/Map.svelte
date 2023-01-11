@@ -8,8 +8,9 @@
     import laneways from '../assets/laneways.geo.json';
     import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
     import suitesSecondary from '../assets/secondary-suites.geo.json';
-    import zoneYellowRes from '../assets/zone-yellow.geo.json'
-    import zoneOtherRes from '../assets/zone-otherres.geo.json'
+    import zoneYellowRes from '../assets/zone-yellow.geo.json';
+    import zoneOtherRes from '../assets/zone-otherres.geo.json';
+    // import income2020 from '../assets/2020.geo.json';
 
     let values = [2020,2022];
 
@@ -100,7 +101,7 @@
                 'layout': {},
                 'paint': {
                     'fill-color': '#1a2d3b',
-                    'fill-opacity': 1
+                    'fill-opacity': 0
                 }
             }, 'land-structure-line');
 
@@ -115,7 +116,7 @@
                 'layout': {},
                 'paint': {
                     'fill-color': '#2e4e66',
-                    'fill-opacity': 1
+                    'fill-opacity': 0
                 }
             }, 'land-structure-line');
 
@@ -290,7 +291,7 @@
     
     $: filterPoints(values)
     
-    let onRearYard = true
+    let onRearYard = true;
     function filterRearYard() {
         if (onRearYard) {
             // circle-opacity
@@ -304,7 +305,7 @@
         }
     }
 
-    let onSecondary = true
+    let onSecondary = true;
     function filterSecondary() {
         if (onSecondary) {
             // circle-opacity
@@ -318,7 +319,7 @@
         }
     }
 
-    let onLaneway = false
+    let onLaneway = false;
     function filterLaneway() {
         if (onLaneway) {
             // circle-opacity
@@ -330,7 +331,7 @@
         }
     }
 
-    let onResYellow = true
+    let onResYellow = false;
     function filterResYellow() {
         if (onResYellow) {
             // circle-opacity
@@ -339,6 +340,18 @@
         } else {
             map.setPaintProperty('zoneYellowRes', 'fill-opacity', 1);
             onResYellow = true
+        }
+    }
+
+    let onResOther = false;
+    function filterResOther() {
+        if (onResOther) {
+            // circle-opacity
+            map.setPaintProperty('zoneOtherRes', 'fill-opacity', 0);
+            onResOther = false
+        } else {
+            map.setPaintProperty('zoneOtherRes', 'fill-opacity', 1);
+            onResOther = true
         }
     }
 
@@ -395,23 +408,38 @@
         
 
 
-        <p>Reference Layers:</p>
+        <p>Residential Zoning:</p>
 
         <div id="pointLayers">
             
             <div id="resYellowButton" on:click={filterResYellow} class="{onResYellow ? 'layerOn' : 'layerOff'}" >
                 <svg width=15 height=10>
                     <rect
-                        style="fill:#000"
+                        style="fill:#1a2d3b"
                         x=5
                         y=0
                         width=10
                         height=10/>
                 </svg>
-                Res. Zones (Single Detached)
+                Single-Detached Only
             </div>
 
+            <div id="resOtherButton" on:click={filterResOther} class="{onResOther ? 'layerOn' : 'layerOff'}" >
+                <svg width=15 height=10>
+                    <rect
+                        style="fill:#2e4e66"
+                        x=5
+                        y=0
+                        width=10
+                        height=10/>
+                </svg>
+                Other Low-Density*
+            </div>
+
+
         </div>
+
+        <p>Reference Layers:</p>
 
         <div id="pointLayers">
             
@@ -463,7 +491,7 @@
 
     #options-wrapper {
         width: 100%;
-        height: 300px;
+        height: 340px;
         background-color: var(--brandDarkBlue);
         background-size: 13px 13px;
         background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
@@ -532,6 +560,17 @@
     }
 
     #resYellowButton {
+        float: left;
+        margin-right: 20px;
+        width: 290px;
+        border: solid 1px #fff;
+        padding: 4px;
+        margin-bottom: 10px;
+        background-color: #2a5e89;
+        cursor: pointer;
+    }
+
+    #resOtherButton {
         overflow: hidden;
         width: 290px;
         border: solid 1px #fff;
@@ -557,6 +596,11 @@
     }
 
     #resYellowButton:hover {
+        opacity: 1;
+        background-color: var(--brandDarkBlue);
+    }
+
+    #resOtherButton:hover {
         opacity: 1;
         background-color: var(--brandDarkBlue);
     }
