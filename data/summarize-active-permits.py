@@ -47,3 +47,4 @@ dfe.loc['Other'] = other
 
 print(dfe)
 
+dfe.to_json("active-summary.json")
