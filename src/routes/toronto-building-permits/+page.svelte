@@ -80,6 +80,7 @@
 		</div>
 
 		<div class="text">
+
 			<p>
 				Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/">Yellowbelt</a>). There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via buidling <a href="https://missingmiddlehousing.com/">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims make our urban areas more affordable, inclusive, and sustainable. 
 			</p>
@@ -93,58 +94,56 @@
 			</p>
 			
 			<h3><span class="textSecondary">Secondary Suites</span></h3>
-
 			<div class="typeWrapper">
-
 				<div class="isometric-mobile"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
-
 				<div class="typeText"><p>
 					Sub-dividing an existing residential structure creating one or more additional dwelling units. The most common form is converting a basement into a separate apartment, but this can include other types of conversions as well (e.g. converting from a duplex to a triplex). These conversions may or may not include building additions (i.e. expanding the volume) of the structure.
 				</p></div>
-
 				<div class="isometric"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
-
 			</div>
 
 			<h3><span class="textLaneway">Rear Yard Suites</span></h3>
-			
-
 			<div class="typeWrapper">
-
 				<div class="isometric-mobile"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
-
 				<div class="typeText"><p>
 					Building a small detached dwelling unit that is located on the same property as a single-family home. They are often called Accessory Dwelling Units (ADUs) or Garden Suites. Toronto legalized rear year suites that abut laneways in ??/2018 (these can include garage conversions) and then in all other residentially zoned neighbourhoods in ??/2022 (i.e. for residential properties without laneways).
 				</p></div>
-
 				<div class="isometric"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
-
 			</div>
-	
 
 		</div>
 	</div>
 
 	<div class="line-chart">
-		
 		<BarChartSecondary/>
-
 		<BarChartLaneway/>
+	</div>
+
+	<div class="background-white">
+
+		<div class="text">
+
+			<p>
+				The construction of secondary suites hovered between 100 and 120 per year, and then jumped in 2020.
+			</p>
+			<p>
+				While Laneway suites were legalized in 2018, none were completed according to building permit data until 2020 and only a few dozen since then. Almost all concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street). 
+			</p>
+			<p>
+				The completion of secondary suites and rear-year suites is quite lackluster given the need for housing in Toronto. Summing the bars above, only QQQ secondary suites and QQQQ rear-yard suites have been built in Toronto in this 10 year period. Recent QQQQ that Toronto needs to build QQQ more dwelling units in the next QQQQ years. 
+			</p>
+			<p>
+				There are QQQ number of gentle density projects in process though. There are . These are at various stages 
+			</p>
+
+		</div>
 
 	</div>
 
 	<div class="background-white">
 
 		<div class="text">
-			<p>
-				The construction of secondary suites hovered between 100 and 120 per year, and then jumped in 2020. Why?
-			</p>
-			<p>
-				While Laneway suites were legalized in 2018, none were completed according to building permit data until 2020 and only a few dozen since then. With the allowance of Garden Suites across the city in 2022, it will be important to continue to track development going forward.
-			</p>
-			<p>
-				Despite this slow uptake, the City of Toronto has QQQQQ parcels of land in low-density residential zones. Development charges have been cited as a burdensome disincentive for home owners. (CITATION).
-			</p>
+			
 			<p>
 				To explore further, we map where secondary suites and rear year suites have been built in the city from 2013 to 2022. 
 			</p>

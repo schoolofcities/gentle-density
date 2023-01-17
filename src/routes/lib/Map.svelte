@@ -224,8 +224,6 @@
             load = 1
             filterPoints(values)
 
-
-
         });
         
         // map.on('mousemove', 'VotingSubDivisionsFill', (e) => {
