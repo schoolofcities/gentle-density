@@ -258,7 +258,6 @@
     });
 
     function filterPoints(years) {
-
         if (load > 0) {
             map.setFilter('suitesSecondary',[
             "all",
@@ -373,7 +372,7 @@
 <svelte:window bind:innerHeight={pageHeight} bind:innerWidth={pageWidth}/>
 
 <div id="top-bar">
-    <p>Location of Gentle Density cleared building permits in Toronto:</p>
+    <p>Location of rear-yeard and secondary suite building permits in Toronto:</p>
 </div>
 
 <div id="map" style="height: {mapHeight}px"></div>

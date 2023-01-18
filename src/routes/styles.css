@@ -50,6 +50,10 @@ a:hover {
     opacity: 1;
 }
 
+b {
+    color: #1a2d3b;
+}
+
 
 .blueprint {
     background-image: url("./blueprint-background.png");

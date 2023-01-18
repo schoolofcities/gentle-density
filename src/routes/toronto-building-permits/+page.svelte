@@ -133,17 +133,8 @@
 				The completion of secondary suites and rear-year suites is quite lackluster given the need for housing in Toronto. Summing the bars above, only QQQ secondary suites and QQQQ rear-yard suites have been built in Toronto in this 10 year period. Recent QQQQ that Toronto needs to build QQQ more dwelling units in the next QQQQ years. 
 			</p>
 			<p>
-				There are QQQ number of gentle density projects in process though. There are . These are at various stages 
+				Despite this tipid uptake to date, there are a number of projects ongoing. As of January 1, 2023 there were <b>575</b> secondary suite and <b>458</b> rear-yard suite building permits that were "active" (i.e. open and ongoing) and having an application date from the five year period of 2018 to 2022.
 			</p>
-
-		</div>
-
-	</div>
-
-	<div class="background-white">
-
-		<div class="text">
-			
 			<p>
 				To explore further, we map where secondary suites and rear year suites have been built in the city from 2013 to 2022. 
 			</p>
@@ -151,7 +142,7 @@
 				These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. All rear yard suites cluster in these neighbourhoods since these are where the majority of the City's laneways are located (post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing). 
 			</p>
 			<p>
-				There is far less gentle density construction in the centre of the city, despite this area mostly consisting of single-detached homes. This part is home to some of the city's wealthiest neighbourhoods. 
+				There is far less gentle density construction in the centre of the city, despite this area mostly consisting of single-detached homes. This part is home to some of the city's wealthiest neighbourhoods (toggle on the income layer to see). 
 			</p>
 			
 		</div>
@@ -163,8 +154,9 @@
 	<div class="background-white">
 
 		<div class="text">
+			<h4>Data & Code</h4>
 			<p>
-				More text?
+				Data on the location, type, and status of building permits comes form the City of Toronto's Open Data portal. 
 			</p>
 		</div>
 		

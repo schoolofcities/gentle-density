@@ -38,6 +38,8 @@ dfs = pd.merge(statusLaneway,statusSecondary, left_index=True, right_index = Tru
 
 dfssum = dfs.sum()
 
+print(dfssum)
+
 dfe = dfs.head(6)
 dfesum = dfe.sum()
 
