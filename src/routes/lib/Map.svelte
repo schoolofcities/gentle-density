@@ -8,6 +8,8 @@
     import laneways from '../assets/laneways.geo.json';
     import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
     import suitesSecondary from '../assets/secondary-suites.geo.json';
+    import suitesLanewayActive from '../assets/laneway-suites-active-subset.geo.json';
+    import suitesSecondaryActive from '../assets/secondary-suites-active-subset.geo.json';
     import zoneYellowRes from '../assets/zone-yellow.geo.json';
     import zoneOtherRes from '../assets/zone-otherres.geo.json';
     import income2020 from '../assets/2020.geo.json';
@@ -216,6 +218,47 @@
                     'circle-color': '#F1C500',
                 }
             }); 
+
+            map.addSource('suitesSecondaryActive', {
+                'type': 'geojson',
+                'data': suitesSecondaryActive
+            }); 
+            map.addLayer({
+                'id': 'suitesSecondaryActiveWhite',
+                'type': 'circle',
+                'source': 'suitesSecondaryActive',
+                'layout': {},
+                'paint': {
+                    'circle-radius': [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        11,
+                        5,
+                        16,
+                        14
+                        ],
+                    'circle-color': '#fff',
+                }
+            });
+            map.addLayer({
+                'id': 'suitesSecondaryActive',
+                'type': 'circle',
+                'source': 'suitesSecondaryActive',
+                'layout': {},
+                'paint': {
+                    'circle-radius': [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        11,
+                        4,
+                        16,
+                        10
+                        ],
+                    'circle-color': '#AB1368',
+                }
+            });  
             
             if (pageHeight > 700 && pageWidth > 800) {
                 map.zoomTo(10.75)

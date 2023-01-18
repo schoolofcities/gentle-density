@@ -159,7 +159,7 @@
 				Data on the location, type, and status of building permits comes form the City of Toronto's Open Data portal. 
 			</p>
 			<p>
-				The residential zoning layer is also from the City's Open Data portal. The single-detached only zones are those classified as <code>[RD]</code> while the other low-density zones are classified as <code>[R, RA, RM, RS, RS]</code>. The latter also include semi-detached, townhouses, and smaller multi-unit dwellings, depending on the zone classification.
+				The residential zoning layer is also from the City's Open Data portal. The single-detached only zones are those classified as [RD] while the other low-density zones are classified as <code>[R, RA, RM, RS, RS]. The latter also include semi-detached, townhouses, and smaller multi-unit dwellings, depending on the zone classification.
 			</p>
 			<p>
 				The location of laneways is also from the City of Toronto's Open Data portal.
