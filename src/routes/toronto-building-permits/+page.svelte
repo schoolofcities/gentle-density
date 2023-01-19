@@ -10,7 +10,6 @@
 	import isometricSecondary from '../assets/isometric-secondary.svg';
 	import isometricLaneway from '../assets/isometric-laneway.svg';
 
-	console.log(isometricLaneway);
 
 
 </script>
@@ -88,18 +87,21 @@
 			</p>
 			<p>
 				At the smaller-scale of the missing middle are 
-				<a href="https://www.gentledensity.ca/">gentle density</a> strategies, which refers to owner-led efforts to build additional dwellings within their existing parcel of land. These can increase property value and provide supplmentary income, but importantly, in aggregate, can incrementally scale up the density of a neighbourhood and provide needed housing, particularly for those unaable to afford larger home.
-				Relative to larger developments (e.g. larger multi-unit apartments and condominiums), gentle density is more compatible with the scale and character of existing neighborhoods. Gentle density development is thus often seen as a way to increase the housing supply in a way that is less disruptive to existing communities and can help to create more walkable, livable neighborhoods.
+				<a href="https://www.gentledensity.ca/">gentle density</a> (or "missing little") strategies, which refers to owner-led efforts to build additional dwellings within their existing parcel of land. These can increase property value and provide supplmentary income, but importantly, in aggregate, can incrementally scale up the density of a neighbourhood and provide needed housing, particularly for those unaable to afford larger home.
+				Relative to larger developments (e.g. larger multi-unit apartments and condominiums), gentle density is more compatible with the scale and character of existing neighborhoods. Gentle density development is thus often seen as a way to increase the housing supply in a way that is less disruptive to existing communities but can still help create more walkable, livable neighborhoods.
 			</p>
 			<p>
-				We've looked at 10 years of <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits-prior-years/">building permit data</a> in the City of Toronto (from 01/2013 to 12/2022) to see how and where forms of gentle density have (or have not) been built across the city during this period. At any point in time, building permits can either be active (i.e. build in progress), cancelled, or closed. Those that are closed, we can assume construction has finished. We first counted building permits by the year they were closed for the following two types of gentle density construction, to then chart their trends over time.
+				But to what is the recent uptake in gentle density housing in the City of Toronto?
+			</p>
+			<p>	
+				To answer this, we've looked at 10 years of <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits-prior-years/">building permit data</a> in the City of Toronto (from 01/2013 to 12/2022) to see how and where forms of gentle density have (or have not) been built across the city during this period. At any point in time, building permits can either be active (i.e. build in progress), cancelled, or closed. Those that are closed, we can assume construction has finished. We first counted building permits by the year they were closed for the following two types of gentle density construction, to then chart their trends over time.
 			</p>
 			
 			<h3><span class="textSecondary">Secondary Suites</span></h3>
 			<div class="typeWrapper">
 				<div class="isometric-mobile"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
 				<div class="typeText"><p>
-					Sub-dividing an existing residential structure creating one or more additional dwelling units. The most common form is converting a basement into a separate apartment, but this can include other types of conversions as well (e.g. converting from a duplex to a triplex). These conversions may or may not include building additions (i.e. expanding the volume) of the structure.
+					Sub-dividing an existing residential structure creating one or more additional dwelling units. The most common form is converting a basement into a separate apartment, but this can include other types of conversions as well (e.g. converting from a duplex to a triplex). These conversions may or may not include building additions (i.e. expanding the volume) of the structure. They have been permitted since 2000 city-wide, with some restrictions.
 				</p></div>
 				<div class="isometric"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
 			</div>
@@ -108,7 +110,7 @@
 			<div class="typeWrapper">
 				<div class="isometric-mobile"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
 				<div class="typeText"><p>
-					Building a small detached dwelling unit that is located on the same property as a single-family home. They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, or Laneway Houses. Toronto legalized rear year suites that abut laneways in ??/2018 (these can also include garage conversions) and then in all other residentially zoned neighbourhoods in ??/2022 (i.e. for residential properties without laneways).
+					Building a small detached dwelling unit that is located on the same property as a single-family home. They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, or Laneway Houses. Toronto legalized rear year suites that abut laneways in 06/2018 (these can also include garage conversions) and then in all other residentially zoned neighbourhoods in 02/2022 (i.e. for residential properties without laneways).
 				</p></div>
 				<div class="isometric"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
 			</div>
@@ -126,13 +128,10 @@
 		<div class="text">
 
 			<p>
-				The construction of secondary suites hovered between 100 and 120 per year, and then jumped in 2020.
+				The construction of secondary suites hovered between 100 and 120 per year up until 2019, and then jumped in 2020 and then plateaued again. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020 and only a few dozen since then. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street). 
 			</p>
 			<p>
-				While Laneway suites were legalized in 2018, none were completed according to building permit data until 2020 and only a few dozen since then. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street).
-			</p>
-			<p>
-				The completion of secondary suites and rear-year suites is quite lackluster given the need for housing in Toronto. Summing the bars above, only QQQ secondary suites and QQQQ rear-yard suites have been built in Toronto in this 10 year period. Recent QQQQ that Toronto needs to build QQQ more dwelling units in the next QQQQ years. 
+				The completion of secondary suites and rear-year suites is quite lackluster given the need for housing in Toronto. Summing the bars above, only QQQ secondary suites and QQQQ rear-yard suites have been built in Toronto in this 10 year period. These are quite small numbers given the need for new housing supply in the region.
 			</p>
 			<p>
 				Despite this turpid uptake to date, there are a number of ongoing projects. As of January 1, 2023 there were 575 secondary suite and 458 rear yard suite building permits that were "active" (i.e. open and ongoing). (These totals are based on those with unique addresses and had an application date from the five year period of 2018 to 2022).
@@ -158,19 +157,19 @@
 		<div class="text">
 			<h4>Data & Code</h4>
 			<p>
-				Data on the location, type, and status of building permits comes form the City of Toronto's Open Data portal. 
+				Data on the location, type, and status of <a href="https://open.toronto.ca/catalogue/?search=building%20permits&sort=score%20desc">building permits</a> are form the City of Toronto's Open Data portal. 
 			</p>
 			<p>
-				The residential zoning layer is also from the City's Open Data portal. The single-detached only zones are those classified as [RD] while the other low-density zones are classified as [R, RA, RM, RS, RS]. The latter also include semi-detached, townhouses, and smaller multi-unit dwellings, depending on the zone classification.
+				The residential <a href="https://open.toronto.ca/dataset/zoning-by-law/">zoning layer</a> is also from the City's Open Data portal. The single-detached only zones are those classified as [RD] while the other low-density zones are classified as [R, RA, RM, RS, RS]. The latter also include semi-detached, townhouses, and smaller multi-unit dwellings, depending on the zone classification.
 			</p>
 			<p>
-				The location of laneways is also from the City of Toronto's Open Data portal.
+				The location of laneways is also from the City of Toronto's Open Data portal. It was filtered and extracted from the City's <a href="https://open.toronto.ca/dataset/toronto-centreline-tcl/">Centreline</a> dataset
 			</p>
 			<p>
-				The income layer is from the 2021 Canadian census. The low category are census tracts with a median after-tax household income of less then $75,000, the medium range is between $75,000 and $100,000, and the high is above $100,000.
+				The <a href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/index-eng.cfm">income data</a> is from the 2021 Canadian census. The low category are census tracts with a median after-tax household income of less then $75,000, the medium range is between $75,000 and $100,000, and the high is above $100,000.
 			</p>
 			<p>
-				All code used to analyze this data and make this website and its graphics are on GitHub.
+				All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>.
 			</p>
 		</div>
 		

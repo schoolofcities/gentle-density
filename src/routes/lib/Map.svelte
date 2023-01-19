@@ -624,6 +624,7 @@
 
     #options-wrapper {
         width: 100%;
+        padding-bottom: 15px;
         /* height: 340px; */
         background-color: var(--brandDarkBlue);
         background-size: 13px 13px;
