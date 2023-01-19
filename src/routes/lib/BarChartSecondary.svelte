@@ -57,8 +57,6 @@
 
         {#each years as year}
 
-            {console.log(barHeight(yearCountsSecondary[year]))}
-        
             <rect 
                 id="bar" 
                 x="{50 + xScale(year)}" 

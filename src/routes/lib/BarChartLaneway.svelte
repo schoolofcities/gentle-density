@@ -59,8 +59,6 @@
 
         {#each years as year}
 
-            {console.log(barHeight(yearCountsLaneway[year]))}
-        
             <rect 
                 id="bar" 
                 x="{50 + xScale(year)}" 

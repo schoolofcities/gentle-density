@@ -14,6 +14,9 @@
     import zoneOtherRes from '../assets/zone-otherres.geo.json';
     import income2020 from '../assets/2020.geo.json';
 
+    import xSecondary from '../assets/x-secondary.svg';
+    import xRearYard from '../assets/x-rearyard.svg';
+
     let values = [2020,2022];
 
     let load = 0;
@@ -37,7 +40,6 @@
 		[-79.04763, 44.03074] // NE coords
 	];
     onMount(() => {
-        
 
         map = new mapboxgl.Map({
 			container: "map", 
@@ -136,6 +138,61 @@
                 }
             }, 'land-structure-line');
 
+            map.addSource('suitesSecondaryActive', {
+                'type': 'geojson',
+                'data': suitesSecondaryActive
+            }); 
+            map.addLayer({
+                'id': 'suitesSecondaryActive',
+                'type': 'symbol',
+                'source': 'suitesSecondaryActive',
+                'layout': {
+                    "icon-image": 'x-secondary',
+                    "icon-size": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        11,
+                        0.45,
+                        16,
+                        1.3
+                        ],
+                    "icon-allow-overlap": true   
+                },
+                'paint': {
+                    'icon-color': '#fff',
+                    'icon-opacity': 0
+
+                }
+            });
+    
+            map.addSource('suitesLanewayActive', {
+                'type': 'geojson',
+                'data': suitesLanewayActive
+            }); 
+            map.addLayer({
+                'id': 'suitesLanewayActive',
+                'type': 'symbol',
+                'source': 'suitesLanewayActive',
+                'layout': {
+                    "icon-image": 'x-rearyard',
+                    "icon-size": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        11,
+                        0.45,
+                        16,
+                        1.3
+                        ],
+                    "icon-allow-overlap": true
+                },
+                'paint': {
+                    'icon-color': '#fff',
+                    'icon-opacity': 0
+                }
+            });
+
 
             map.addSource('suitesSecondary', {
                 'type': 'geojson',
@@ -218,47 +275,6 @@
                     'circle-color': '#F1C500',
                 }
             }); 
-
-            map.addSource('suitesSecondaryActive', {
-                'type': 'geojson',
-                'data': suitesSecondaryActive
-            }); 
-            map.addLayer({
-                'id': 'suitesSecondaryActiveWhite',
-                'type': 'circle',
-                'source': 'suitesSecondaryActive',
-                'layout': {},
-                'paint': {
-                    'circle-radius': [
-                        "interpolate",
-                        ["linear"],
-                        ["zoom"],
-                        11,
-                        5,
-                        16,
-                        14
-                        ],
-                    'circle-color': '#fff',
-                }
-            });
-            map.addLayer({
-                'id': 'suitesSecondaryActive',
-                'type': 'circle',
-                'source': 'suitesSecondaryActive',
-                'layout': {},
-                'paint': {
-                    'circle-radius': [
-                        "interpolate",
-                        ["linear"],
-                        ["zoom"],
-                        11,
-                        4,
-                        16,
-                        10
-                        ],
-                    'circle-color': '#AB1368',
-                }
-            });  
             
             if (pageHeight > 700 && pageWidth > 800) {
                 map.zoomTo(10.75)
@@ -352,6 +368,29 @@
             onSecondary = true
         }
     }
+
+    let onActiveRearYard = false;
+    function filterActiveRearYard() {
+        if (onActiveRearYard) {
+            map.setPaintProperty('suitesLanewayActive', 'icon-opacity', 0);
+            onActiveRearYard = false;
+        } else {
+            map.setPaintProperty('suitesLanewayActive', 'icon-opacity', 1);
+            onActiveRearYard = true;
+        }
+    }
+
+    let onActiveSecondary = false;
+    function filterActiveSecondary() {
+        if (onActiveSecondary) {
+            map.setPaintProperty('suitesSecondaryActive', 'icon-opacity', 0);
+            onActiveSecondary = false;
+        } else {
+            map.setPaintProperty('suitesSecondaryActive', 'icon-opacity', 1);
+            onActiveSecondary = true;
+        }
+    }
+
 
     let onResYellow = false;
     function filterResYellow() {
@@ -456,7 +495,19 @@
 
         <p>Open (i.e. Active) Building Permits:</p>
 
-        
+        <div id="pointLayers">
+            
+            <div id="rearYardButton" on:click={filterActiveRearYard} class="{onActiveRearYard ? 'layerOn' : 'layerOff'}" >
+                <img height=11px width=11px src = {xRearYard} alt="xRearYard" style="padding-left: 4px"/>
+                Rear Yard Suites
+            </div>
+
+            <div id="secondaryButton"  on:click={filterActiveSecondary} class="{onActiveSecondary ? 'layerOn' : 'layerOff'}">
+                <img height=11px width=11px src = {xSecondary} alt="xSecondary" style="padding-left: 4px"/>
+                Secondary Suites
+            </div>
+
+        </div>
 
 
         <p>Residential Zoning:</p>
