@@ -37,6 +37,7 @@ declare module '$env/static/private' {
 	export const CONDA_SHLVL: string;
 	export const DESKTOP_SESSION: string;
 	export const npm_package_json: string;
+	export const NODE_OPTIONS: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
 	export const GTK_MODULES: string;
 	export const npm_config_userconfig: string;
@@ -139,6 +140,7 @@ declare module '$env/dynamic/private' {
 		CONDA_SHLVL: string;
 		DESKTOP_SESSION: string;
 		npm_package_json: string;
+		NODE_OPTIONS: string;
 		GNOME_SHELL_SESSION_MODE: string;
 		GTK_MODULES: string;
 		npm_config_userconfig: string;
