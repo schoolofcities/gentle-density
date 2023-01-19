@@ -42,12 +42,13 @@ main {
 }
 
 a {
-    color: #2e14ad;
+    color: #1E3765;
     font-weight: bold;
-    opacity: 0.75;
+    opacity: 0.85;
 }
 a:hover {
     opacity: 1;
+    color: var(--brandRed);
 }
 
 b {
