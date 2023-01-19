@@ -1,0 +1,144 @@
+{
+  "src/routes/assets/isometric-secondary.svg": {
+    "file": "_app/immutable/assets/isometric-secondary-3d24ae8f.svg",
+    "src": "src/routes/assets/isometric-secondary.svg"
+  },
+  "src/routes/assets/isometric-laneway.svg": {
+    "file": "_app/immutable/assets/isometric-laneway-16b82c84.svg",
+    "src": "src/routes/assets/isometric-laneway.svg"
+  },
+  "src/routes/assets/x-secondary.svg": {
+    "file": "_app/immutable/assets/x-secondary-5d09d70d.svg",
+    "src": "src/routes/assets/x-secondary.svg"
+  },
+  "src/routes/assets/x-rearyard.svg": {
+    "file": "_app/immutable/assets/x-rearyard-41c3e78f.svg",
+    "src": "src/routes/assets/x-rearyard.svg"
+  },
+  "src/routes/assets/top-logo.svg": {
+    "file": "_app/immutable/assets/top-logo-1f7d60e9.svg",
+    "src": "src/routes/assets/top-logo.svg"
+  },
+  "src/routes/assets/Trade Gothic LT Bold.ttf": {
+    "file": "_app/immutable/assets/Trade Gothic LT Bold-d851713b.ttf",
+    "src": "src/routes/assets/Trade Gothic LT Bold.ttf"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-46f5382d.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-359d1197.js",
+      "_singletons-cf63893c.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte": {
+    "file": "_app/immutable/components/layout.svelte-713e0f45.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-359d1197.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-cc9fc33d.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-359d1197.js",
+      "_singletons-cf63893c.js"
+    ]
+  },
+  "src/routes/toronto-building-permits/+page.svelte": {
+    "file": "_app/immutable/components/pages/toronto-building-permits/_page.svelte-9c1f3c6e.js",
+    "src": "src/routes/toronto-building-permits/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-359d1197.js",
+      "_index-4b83e0f7.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-57ad0113.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/x-secondary-5d09d70d.svg",
+      "_app/immutable/assets/x-rearyard-41c3e78f.svg",
+      "_app/immutable/assets/top-logo-1f7d60e9.svg",
+      "_app/immutable/assets/isometric-secondary-3d24ae8f.svg",
+      "_app/immutable/assets/isometric-laneway-16b82c84.svg",
+      "_app/immutable/assets/Trade Gothic LT Bold-d851713b.ttf"
+    ]
+  },
+  "src/routes/+layout.js": {
+    "file": "_app/immutable/modules/pages/_layout.js-f2b8fde1.js",
+    "src": "src/routes/+layout.js",
+    "isEntry": true,
+    "imports": [
+      "__layout-c2780a85.js"
+    ]
+  },
+  "src/routes/toronto-building-permits/+page.js": {
+    "file": "_app/immutable/modules/pages/toronto-building-permits/_page.js-765955de.js",
+    "src": "src/routes/toronto-building-permits/+page.js",
+    "isEntry": true,
+    "imports": [
+      "__page-f015c9b7.js"
+    ]
+  },
+  "_singletons-cf63893c.js": {
+    "file": "_app/immutable/chunks/singletons-cf63893c.js",
+    "imports": [
+      "_index-4b83e0f7.js"
+    ]
+  },
+  "_index-359d1197.js": {
+    "file": "_app/immutable/chunks/index-359d1197.js"
+  },
+  "_index-4b83e0f7.js": {
+    "file": "_app/immutable/chunks/index-4b83e0f7.js",
+    "imports": [
+      "_index-359d1197.js"
+    ]
+  },
+  "__layout-c2780a85.js": {
+    "file": "_app/immutable/chunks/_layout-c2780a85.js"
+  },
+  "__page-f015c9b7.js": {
+    "file": "_app/immutable/chunks/_page-f015c9b7.js"
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-dd7bec28.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__layout-c2780a85.js",
+      "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-d604855b.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-81234554.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-f015c9b7.js",
+      "src/routes/toronto-building-permits/+page.svelte"
+    ]
+  },
+  "src/routes/toronto-building-permits/+page.css": {
+    "file": "_app/immutable/assets/_page-57ad0113.css",
+    "src": "src/routes/toronto-building-permits/+page.css"
+  }
+}
