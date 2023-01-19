@@ -106,7 +106,7 @@
 				<div class="isometric"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
 			</div>
 
-			<h3><span class="textLaneway">Rear Yard Suites</span></h3>
+			<h3><span class="textLaneway">Rear-Yard Suites</span></h3>
 			<div class="typeWrapper">
 				<div class="isometric-mobile"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
 				<div class="typeText"><p>
@@ -128,22 +128,22 @@
 		<div class="text">
 
 			<p>
-				The construction of secondary suites hovered between 100 and 120 per year up until 2019, and then jumped in 2020 and then plateaued again. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020 and only a few dozen since then. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street). 
+				The construction of secondary suites hovered between 100 and 120 per year up until 2019, and then jumped in 2020 to just under 200. While rear-yeard suites next to laneways were legalized in 2018, none were completed according to building permit data until 2020, and only a few dozen since then. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street). 
 			</p>
 			<p>
-				The completion of secondary suites and rear-year suites is quite lackluster given the need for housing in Toronto. Summing the bars above, only QQQ secondary suites and QQQQ rear-yard suites have been built in Toronto in this 10 year period. These are quite small numbers given the need for new housing supply in the region.
+				Overall, the completion of secondary suites and rear-year suites is quite lackluster given the need for housing in Toronto (expected population growth of about 500,000 from 2023 to 2030). Summing the bars above, only QQQ secondary suites and QQQQ rear-yard suites have been built in Toronto between 2013 and 2022.  
 			</p>
 			<p>
-				Despite this turpid uptake to date, there are a number of ongoing projects. As of January 1, 2023 there were 575 secondary suite and 458 rear yard suite building permits that were "active" (i.e. open and ongoing). (These totals are based on those with unique addresses and had an application date from the five year period of 2018 to 2022).
+				Despite this sluggish uptake to date, there are a number of ongoing projects. As of January 1, 2023 there were 575 secondary suite and 458 rear-yard suite building permits that were open and ongoing. (These totals are based on counting building permits with unique addresses and had an initial or revised application date from the five year period from 2018 to 2022).
 			</p>
 			<p>
-				To explore further, we map where secondary suites and rear year suites have been built in the city from 2013 to 2022, as well as the location of active building permits. 
+				To explore further, we have also mapped where secondary suites and rear year suites have been built in the city from 2013 to 2022, as well as the location of active building permits. 
 			</p>
 			<p>	
-				These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. All rear yard suites cluster in these neighbourhoods since these are where the majority of the City's laneways are located (post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing). However, there are now several active permits for rear yard suites popping up elsewhere in more suburban neighbourhoods.
+				These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. All completed rear-yard suites cluster in these neighbourhoods since these are where the majority of the City's laneways are located (post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing). Looking at the active permits, there are now several popping up elsewhere in more suburban neighbourhoods.
 			</p>
 			<p>
-				One notable pattern is that there is far less gentle density construction in the centre of the city, despite this area mostly consisting of single-detached homes. This part is home to some of the city's wealthiest neighbourhoods (toggle on the income layer to see). 
+				One notable pattern is that there is far less gentle density construction in the centre of the city, despite this area mostly consisting of single-detached homes. This part is home to some of the city's wealthiest neighbourhoods (toggle on the income layer to check this out). 
 			</p>
 			
 		</div>
@@ -155,7 +155,7 @@
 	<div class="background-white">
 
 		<div class="text">
-			<h4>Data & Code</h4>
+			<h3>Data & Code</h3>
 			<p>
 				Data on the location, type, and status of <a href="https://open.toronto.ca/catalogue/?search=building%20permits&sort=score%20desc">building permits</a> are form the City of Toronto's Open Data portal. 
 			</p>
@@ -169,7 +169,7 @@
 				The <a href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/index-eng.cfm">income data</a> is from the 2021 Canadian census. The low category are census tracts with a median after-tax household income of less then $75,000, the medium range is between $75,000 and $100,000, and the high is above $100,000.
 			</p>
 			<p>
-				All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>.
+				All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python (pandas, geopandas), Svelte, Mapbox, and D3.
 			</p>
 		</div>
 		

@@ -475,7 +475,7 @@
                         cy="5"
                         r="4" />
                 </svg>
-                Rear Yard Suites
+                Rear-Yard Suites
             </div>
 
             <div id="secondaryButton"  on:click={filterSecondary} class="{onSecondary ? 'layerOn' : 'layerOff'}">
@@ -499,7 +499,7 @@
             
             <div id="rearYardButton" on:click={filterActiveRearYard} class="{onActiveRearYard ? 'layerOn' : 'layerOff'}" >
                 <img height=11px width=11px src = {xRearYard} alt="xRearYard" style="padding-left: 4px"/>
-                Rear Yard Suites
+                Rear-Yard Suites
             </div>
 
             <div id="secondaryButton"  on:click={filterActiveSecondary} class="{onActiveSecondary ? 'layerOn' : 'layerOff'}">
