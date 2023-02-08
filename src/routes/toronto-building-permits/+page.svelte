@@ -39,7 +39,7 @@
     <meta name="author" content="Jeff Allen">
 
 	<!-- <meta property="og:title" content="Place and Politics in Toronto" />
-    <meta name="og:description" content="Mapping Toryland and Ford Nation" />
+    <meta property="og:description" content="Mapping Toryland and Ford Nation" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://schoolofcities.github.io/place-and-politics-toronto/torontos-two-rights" />
     <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/place-and-politics-toronto/sveltekit/src/routes/assets/web-card-2.png" />
