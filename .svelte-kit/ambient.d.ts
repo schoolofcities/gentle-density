@@ -27,6 +27,7 @@
  */
 declare module '$env/static/private' {
 	export const LESSOPEN: string;
+	export const CONDA_PROMPT_MODIFIER: string;
 	export const USER: string;
 	export const npm_config_user_agent: string;
 	export const XDG_SESSION_TYPE: string;
@@ -38,8 +39,10 @@ declare module '$env/static/private' {
 	export const OLDPWD: string;
 	export const DESKTOP_SESSION: string;
 	export const npm_package_json: string;
+	export const NODE_OPTIONS: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
 	export const GTK_MODULES: string;
+	export const CPL_ZIP_ENCODING: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
 	export const SYSTEMD_EXEC_PID: string;
@@ -62,6 +65,7 @@ declare module '$env/static/private' {
 	export const npm_config_node_gyp: string;
 	export const PATH: string;
 	export const SESSION_MANAGER: string;
+	export const PROJ_NETWORK: string;
 	export const NODE: string;
 	export const npm_package_name: string;
 	export const XDG_MENU_PREFIX: string;
@@ -79,26 +83,34 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_script: string;
 	export const SSH_AGENT_LAUNCHER: string;
 	export const SSH_AUTH_SOCK: string;
+	export const GSETTINGS_SCHEMA_DIR: string;
 	export const CONDA_PYTHON_EXE: string;
 	export const SHELL: string;
+	export const GDAL_DRIVER_PATH: string;
 	export const npm_package_version: string;
 	export const npm_lifecycle_event: string;
 	export const QT_ACCESSIBILITY: string;
 	export const GDMSESSION: string;
 	export const LESSCLOSE: string;
+	export const CONDA_DEFAULT_ENV: string;
 	export const QT_IM_MODULE: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_init_module: string;
 	export const PWD: string;
+	export const PROJ_LIB: string;
 	export const npm_execpath: string;
 	export const XDG_CONFIG_DIRS: string;
 	export const CONDA_EXE: string;
 	export const XDG_DATA_DIRS: string;
 	export const npm_config_global_prefix: string;
 	export const npm_command: string;
+	export const CONDA_PREFIX: string;
+	export const GSETTINGS_SCHEMA_DIR_CONDA_BACKUP: string;
 	export const VTE_VERSION: string;
+	export const GDAL_DATA: string;
 	export const INIT_CWD: string;
 	export const EDITOR: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -129,6 +141,7 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		LESSOPEN: string;
+		CONDA_PROMPT_MODIFIER: string;
 		USER: string;
 		npm_config_user_agent: string;
 		XDG_SESSION_TYPE: string;
@@ -140,8 +153,10 @@ declare module '$env/dynamic/private' {
 		OLDPWD: string;
 		DESKTOP_SESSION: string;
 		npm_package_json: string;
+		NODE_OPTIONS: string;
 		GNOME_SHELL_SESSION_MODE: string;
 		GTK_MODULES: string;
+		CPL_ZIP_ENCODING: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
 		SYSTEMD_EXEC_PID: string;
@@ -164,6 +179,7 @@ declare module '$env/dynamic/private' {
 		npm_config_node_gyp: string;
 		PATH: string;
 		SESSION_MANAGER: string;
+		PROJ_NETWORK: string;
 		NODE: string;
 		npm_package_name: string;
 		XDG_MENU_PREFIX: string;
@@ -181,26 +197,34 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_script: string;
 		SSH_AGENT_LAUNCHER: string;
 		SSH_AUTH_SOCK: string;
+		GSETTINGS_SCHEMA_DIR: string;
 		CONDA_PYTHON_EXE: string;
 		SHELL: string;
+		GDAL_DRIVER_PATH: string;
 		npm_package_version: string;
 		npm_lifecycle_event: string;
 		QT_ACCESSIBILITY: string;
 		GDMSESSION: string;
 		LESSCLOSE: string;
+		CONDA_DEFAULT_ENV: string;
 		QT_IM_MODULE: string;
 		npm_config_globalconfig: string;
 		npm_config_init_module: string;
 		PWD: string;
+		PROJ_LIB: string;
 		npm_execpath: string;
 		XDG_CONFIG_DIRS: string;
 		CONDA_EXE: string;
 		XDG_DATA_DIRS: string;
 		npm_config_global_prefix: string;
 		npm_command: string;
+		CONDA_PREFIX: string;
+		GSETTINGS_SCHEMA_DIR_CONDA_BACKUP: string;
 		VTE_VERSION: string;
+		GDAL_DATA: string;
 		INIT_CWD: string;
 		EDITOR: string;
+		NODE_ENV: string;
 		[key: string]: string | undefined;
 	}
 }
