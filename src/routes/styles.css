@@ -125,8 +125,11 @@ b {
 }
 
 .title h2 {
+    padding-top: 20px;
+    margin: 0 auto;
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
+    max-width: 450px;
     font-size: 28px;
     color: var(--brandDarkBlue);
 }

@@ -34,23 +34,23 @@
 
 	<link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
 
-    <title>Gentle Density Building Permits</title>
-    <meta name="description" content="Mapping 10 years (2013 to 2022) of secondary suite and rear-yard suite building permits in Toronto">
+    <title>Tracking Gentle Density in Toronto</title>
+    <meta name="description" content="Visualizing 10 years (2013 to 2022) of Secondary Suite and Laneway / Garden Suite building permits in Toronto">
     <meta name="author" content="Jeff Allen">
 
-	<!-- <meta property="og:title" content="Place and Politics in Toronto" />
-    <meta property="og:description" content="Mapping Toryland and Ford Nation" />
+	<meta property="og:title" content="Tracking Gentle Density in Toronto" />
+    <meta property="og:description" content="Visualizing 10 years (2013 to 2022) of Secondary Suite and Laneway / Garden Suite building permits in Toronto" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://schoolofcities.github.io/place-and-politics-toronto/torontos-two-rights" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/place-and-politics-toronto/sveltekit/src/routes/assets/web-card-2.png" />
+    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-building-permits" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card.png" />
     <meta property="og:locale" content="en_CA">
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="https://schoolofcities.github.io/place-and-politics-toronto/torontos-two-rights" />
+    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-building-permits" />
     <meta name="twitter:creator" content="@JeffAllenMaps" />
-    <meta name="twitter:title" content="Place and Politics in Toronto" />
-    <meta name="twitter:description" content="Mapping Toryland and Ford Nation" />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/place-and-politics-toronto/sveltekit/src/routes/assets/web-card-2.png" />  -->
+    <meta name="twitter:title" content="Tracking Gentle Density in Toronto" />
+    <meta name="twitter:description" content="Visualizing 10 years (2013 to 2022) of Secondary Suite and Laneway / Garden Suite building permits in Toronto" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card.png" /> 
 
 </svelte:head>
 
@@ -67,7 +67,10 @@
 				Tracking <span class="italic">Gentle Density</span> in Toronto
 			</h1>
 			<h2>
-				Via Visualizing Building Permit Data
+				Visualizing Building Permit Data From 2013 To 2022
+			</h2>
+			<h2>
+				
 			</h2>
 			<p><a href="https://jamaps.github.io">Jeff Allen</a> and <a href="https://www.linkedin.com/in/ahmad-al-musa/">Ahmad Al-Musa</a></p>
 			<p>February 2023</p>
@@ -84,7 +87,7 @@
 		<div class="text">
 
 			<p>
-				Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/">Yellowbelt</a>). There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via building <a href="https://missingmiddlehousing.com/">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims to provide more housing options and to make our urban areas more affordable, inclusive, and sustainable. Around 2018 - 2019 the City of Toronto started taking accelerating actions to increase the Missing Middle housing supply, In what is now the <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/">Expanding Housing Options</a> program. 
+				Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/">Yellowbelt</a>). There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via building <a href="https://missingmiddlehousing.com/">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims to provide more housing options and to make our urban areas more affordable, inclusive, and sustainable. Around 2018 - 2019 the City of Toronto started taking accelerating actions to increase the Missing Middle housing supply, in what is now the <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/">Expanding Housing Options</a> program. 
 				<!-- (you can check out this story for a regulatory historical timeline and real examples of the smallest tier of the Missing Middle housing) -->
 			</p>
 			<p>
@@ -133,11 +136,11 @@
 				The construction of secondary suites hovered between 100 and 120 per year up until 2019, and then increased in 2021 to just under 200. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020, and only a few dozen since then. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street). 
 			</p>
 			<p>
-				Overall, the completion of secondary suites and rear-yard suites are quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. Summing the bars above, only 1,282 secondary suites and 90 rear-yard suites have been built in Toronto between 2013 and 2022. 
+				Overall, the completion of secondary suites and rear-yard suites are quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,282 secondary suites and 90 rear-yard suites have been built in Toronto between 2013 and 2022</b>. 
 				<!-- In comparison cities like California that permitted ADUs at almost the same time as Toronto, currently have more than 63,000 permitted ADUs. -->
 			</p>
 			<p>
-				Despite this sluggish uptake to date, there are a number of ongoing projects. As of January 1, 2023 there were 575 secondary suite and 458 rear-yard suite building permits that were open and ongoing. These totals are based on counting building permits with unique addresses and an initial or revised application date from the five-year period from 2018 to 2022.
+				Despite this sluggish uptake to date, there are a number of ongoing projects. <b>As of January 1, 2023 there were 575 secondary suite and 458 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and an initial or revised application date from the five-year period from 2018 to 2022.
 			</p>
 			<p>
 				To explore further, we have also mapped where secondary suites and rear-yard suites have been built in the city from 2013 to 2022, as well as the location of active building permits. 
