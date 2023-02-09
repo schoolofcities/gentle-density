@@ -496,7 +496,7 @@
 <svelte:window bind:innerHeight={pageHeight} bind:innerWidth={pageWidth}/>
 
 <div id="top-bar">
-    <p>Location of rear-yeard and secondary suite building permits in Toronto:</p>
+    <p>Location of rear-yard and secondary suite building permits in Toronto:</p>
 </div>
 
 <div id="map" style="height: {mapHeight}px"></div>
