@@ -83,6 +83,7 @@ b {
 }
 
 .line-chart {
+    margin: auto 0;
     width: 100%;
     border-top: solid 1px var(--brandLightBlue);
     opacity: 1;
@@ -132,6 +133,15 @@ b {
     max-width: 450px;
     font-size: 28px;
     color: var(--brandDarkBlue);
+}
+
+@media only screen and (max-width: 920px) {
+    .title h1 {
+        font-size: 38px;
+    }
+    .title h2 {
+        font-size: 24px;
+    }
 }
 
 .title p {

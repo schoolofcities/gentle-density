@@ -10,8 +10,6 @@
 	import isometricSecondary from '../assets/isometric-secondary.svg';
 	import isometricLaneway from '../assets/isometric-laneway.svg';
 
-
-
 </script>
 
 
@@ -87,7 +85,7 @@
 		<div class="text">
 
 			<p>
-				Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/">Yellowbelt</a>). There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via building <a href="https://missingmiddlehousing.com/">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims to provide more housing options and to make our urban areas more affordable, inclusive, and sustainable. Around 2018 - 2019 the City of Toronto started taking accelerating actions to increase the Missing Middle housing supply, in what is now the <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/">Expanding Housing Options</a> program. 
+				Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/">Yellowbelt</a>). There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via building <a href="https://missingmiddlehousing.com/">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims to provide more housing options and to make our urban areas more affordable, inclusive, and sustainable. Around 2018 - 2019 the City of Toronto started taking accelerating actions to increase the Missing Middle housing supply, in what is now the <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/">Expanding Housing Options</a> program.
 				<!-- (you can check out this story for a regulatory historical timeline and real examples of the smallest tier of the Missing Middle housing) -->
 			</p>
 			<p>

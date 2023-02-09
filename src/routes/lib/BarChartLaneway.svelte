@@ -43,7 +43,7 @@
             x="50" 
             y="10"
             id="title"
-        >Closed "Laneway / Rear Yard Suite"</text>
+        >Closed "New Laneway / Rear Yard Suite"</text>
         <text 
             x="50" 
             y="30"
@@ -112,20 +112,20 @@
 
 <style>
 
-    #barChart {
+     #barChart {
         padding: 10px;
         padding-left: 0px;
-        padding-top: 40px;
         margin: 0 auto;
         width: calc(100% - 30px);
         max-width: 650px;
-        height: 160px;
-        min-width: 375px;
+        height: 170px;
+        /* border: solid 1px var(--brandLightBlue); */
     }
 
     #bar {
         stroke: white;
         stroke-width:1;
+        opacity: 1;
     }
 
     #label {
@@ -175,5 +175,6 @@
     #svgChart {
         /* border: solid 1px white; */
     }
+
 
 </style>

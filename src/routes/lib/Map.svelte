@@ -684,9 +684,10 @@
         font-size: 17px;
         font-family: 'Ubuntu Mono', monospace;
         max-width: 620px;
-        width: 100%;
+        width: inheret;
         margin: 0 auto;
-        padding: 18px;
+        padding-right: 0px;
+        padding-left: 18px;
         padding-top: 7px;
         padding-bottom: 7px;
         text-decoration: underline;

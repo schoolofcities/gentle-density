@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set([".nojekyll","blueprint-background.png","favicon.svg","web-card.png"]),
 	mimeTypes: {".png":"image/png",".svg":"image/svg+xml"},
 	_: {
-		entry: {"file":"_app/immutable/start-2bf51f92.js","imports":["_app/immutable/start-2bf51f92.js","_app/immutable/chunks/index-359d1197.js","_app/immutable/chunks/singletons-0be9369c.js","_app/immutable/chunks/index-4b83e0f7.js"],"stylesheets":[]},
+		entry: {"file":"_app/immutable/start-16aa2b9b.js","imports":["_app/immutable/start-16aa2b9b.js","_app/immutable/chunks/index-359d1197.js","_app/immutable/chunks/singletons-69474465.js","_app/immutable/chunks/index-4b83e0f7.js"],"stylesheets":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),

@@ -19263,7 +19263,7 @@ const suitesLaneway = {
 };
 const BarChartLaneway_svelte_svelte_type_style_lang = "";
 const css$4 = {
-  code: "#barChart.svelte-1m9soq0{padding:10px;padding-left:0px;padding-top:40px;margin:0 auto;width:calc(100% - 30px);max-width:650px;height:160px;min-width:375px}#bar.svelte-1m9soq0{stroke:white;stroke-width:1}#label.svelte-1m9soq0{font-size:15px;font-family:'Ubuntu Mono', monospace;font-weight:400;fill:rgba(255, 255, 255, 0.803)}#labelBar.svelte-1m9soq0{font-size:15px;font-family:'Ubuntu Mono', monospace;font-weight:400;fill:rgba(255, 255, 255, 0.803)}#yearLabelWeb.svelte-1m9soq0{font-size:15px;font-family:'Ubuntu Mono', monospace;font-weight:400;fill:rgba(255, 255, 255, 0.803)}#yearLabelMobile.svelte-1m9soq0{font-size:15px;font-family:'Ubuntu Mono', monospace;font-weight:400;fill:rgba(255, 255, 255, 0.803);opacity:0}@media(max-width: 500px){#yearLabelWeb.svelte-1m9soq0{opacity:0\n        }#yearLabelMobile.svelte-1m9soq0{opacity:1}}#title.svelte-1m9soq0{font-size:17px;font-family:'Ubuntu Mono', monospace;font-weight:700;fill:rgba(255, 255, 255, 0.99)}",
+  code: "#barChart.svelte-1xh900h{padding:10px;padding-left:0px;margin:0 auto;width:calc(100% - 30px);max-width:650px;height:170px}#bar.svelte-1xh900h{stroke:white;stroke-width:1;opacity:1}#label.svelte-1xh900h{font-size:15px;font-family:'Ubuntu Mono', monospace;font-weight:400;fill:rgba(255, 255, 255, 0.803)}#labelBar.svelte-1xh900h{font-size:15px;font-family:'Ubuntu Mono', monospace;font-weight:400;fill:rgba(255, 255, 255, 0.803)}#yearLabelWeb.svelte-1xh900h{font-size:15px;font-family:'Ubuntu Mono', monospace;font-weight:400;fill:rgba(255, 255, 255, 0.803)}#yearLabelMobile.svelte-1xh900h{font-size:15px;font-family:'Ubuntu Mono', monospace;font-weight:400;fill:rgba(255, 255, 255, 0.803);opacity:0}@media(max-width: 500px){#yearLabelWeb.svelte-1xh900h{opacity:0\n        }#yearLabelMobile.svelte-1xh900h{opacity:1}}#title.svelte-1xh900h{font-size:17px;font-family:'Ubuntu Mono', monospace;font-weight:700;fill:rgba(255, 255, 255, 0.99)}",
   map: null
 };
 function barHeight(amount) {
@@ -19283,17 +19283,17 @@ const BarChartLaneway = create_ssr_component(($$result, $$props, $$bindings, slo
   $$result.css.add(css$4);
   svgWidth = divWidth - 22;
   xScale = scaleBand().domain(years).range([0, svgWidth - 50]).paddingInner(0.37).paddingOuter(0.37);
-  return `<div id="${"barChart"}" class="${"svelte-1m9soq0"}"><svg height="${"160"}"${add_attribute("width", svgWidth, 0)} id="${"svgChart"}" class="${"svelte-1m9soq0"}"><text x="${"50"}" y="${"10"}" id="${"title"}" class="${"svelte-1m9soq0"}">Closed &quot;Laneway / Rear Yard Suite&quot;</text><text x="${"50"}" y="${"30"}" id="${"title"}" class="${"svelte-1m9soq0"}">Building Permits by Year</text><pattern id="${"pattern-lines-green"}" x="${"0"}" y="${"0"}" width="${"10"}" height="${"10"}" patternUnits="${"userSpaceOnUse"}"><rect x="${"0"}" y="${"0"}" height="${"10"}" width="${"10"}" style="${"fill:#F1C500;"}"></rect><line x1="${"0"}" y1="${"0"}" x2="${"10"}" y2="${"10"}" style="${"stroke:white;stroke-width:1"}"></line></pattern>${each(years, (year) => {
-    return `<rect id="${"bar"}"${add_attribute("x", 50 + xScale(year), 0)}${add_attribute("y", 60 + barY(yearCountsLaneway[year]), 0)}${add_attribute("width", xScale.bandwidth(), 0)}${add_attribute("height", barHeight(yearCountsLaneway[year]), 0)} fill="${"url(#pattern-lines-green)"}" class="${"svelte-1m9soq0"}"></rect>
+  return `<div id="${"barChart"}" class="${"svelte-1xh900h"}"><svg height="${"160"}"${add_attribute("width", svgWidth, 0)} id="${"svgChart"}" class="${"svelte-1xh900h"}"><text x="${"50"}" y="${"10"}" id="${"title"}" class="${"svelte-1xh900h"}">Closed &quot;New Laneway / Rear Yard Suite&quot;</text><text x="${"50"}" y="${"30"}" id="${"title"}" class="${"svelte-1xh900h"}">Building Permits by Year</text><pattern id="${"pattern-lines-green"}" x="${"0"}" y="${"0"}" width="${"10"}" height="${"10"}" patternUnits="${"userSpaceOnUse"}"><rect x="${"0"}" y="${"0"}" height="${"10"}" width="${"10"}" style="${"fill:#F1C500;"}"></rect><line x1="${"0"}" y1="${"0"}" x2="${"10"}" y2="${"10"}" style="${"stroke:white;stroke-width:1"}"></line></pattern>${each(years, (year) => {
+    return `<rect id="${"bar"}"${add_attribute("x", 50 + xScale(year), 0)}${add_attribute("y", 60 + barY(yearCountsLaneway[year]), 0)}${add_attribute("width", xScale.bandwidth(), 0)}${add_attribute("height", barHeight(yearCountsLaneway[year]), 0)} fill="${"url(#pattern-lines-green)"}" class="${"svelte-1xh900h"}"></rect>
 
             <line${add_attribute("x1", 50 + xScale(year) + xScale.bandwidth() / 2, 0)}${add_attribute("x2", 50 + xScale(year) + xScale.bandwidth() / 2, 0)} y1="${"127.5"}" y2="${"130.5"}" style="${"stroke:white;stroke-width:1"}"></line>
 
-            <text${add_attribute("x", 50 + xScale(year) + xScale.bandwidth() / 2, 0)}${add_attribute("y", 57 + barY(yearCountsLaneway[year]), 0)} id="${"labelBar"}" text-anchor="${"middle"}" class="${"svelte-1m9soq0"}">${escape(yearCountsLaneway[year])}</text>
+            <text${add_attribute("x", 50 + xScale(year) + xScale.bandwidth() / 2, 0)}${add_attribute("y", 57 + barY(yearCountsLaneway[year]), 0)} id="${"labelBar"}" text-anchor="${"middle"}" class="${"svelte-1xh900h"}">${escape(yearCountsLaneway[year])}</text>
 
-            <text${add_attribute("x", 50 + xScale(year) + xScale.bandwidth() / 2, 0)} y="${"142.5"}" id="${"yearLabelWeb"}" text-anchor="${"middle"}" class="${"svelte-1m9soq0"}">${escape(year)}</text>
+            <text${add_attribute("x", 50 + xScale(year) + xScale.bandwidth() / 2, 0)} y="${"142.5"}" id="${"yearLabelWeb"}" text-anchor="${"middle"}" class="${"svelte-1xh900h"}">${escape(year)}</text>
 
-            <text${add_attribute("x", 50 + xScale(year) + xScale.bandwidth() / 2, 0)} y="${"142.5"}" id="${"yearLabelMobile"}" text-anchor="${"middle"}" transform="${"rotate(-45," + escape(57 + xScale(year) + xScale.bandwidth() / 2, true) + ",151)"}" class="${"svelte-1m9soq0"}">${escape(year)}</text>`;
-  })}<line x1="${"50"}" y1="${"127.5"}"${add_attribute("x2", svgWidth, 0)} y2="${"127.5"}" style="${"stroke:white;stroke-width:1;opacity:1"}"></line><text x="${"40"}" y="${"132"}" id="${"label"}" class="${"svelte-1m9soq0"}">0</text><line x1="${"50"}" y1="${"50"}"${add_attribute("x2", svgWidth, 0)} y2="${"50"}" style="${"stroke:white;stroke-width:1;opacity:0.3"}"></line><text x="${"33"}" y="${"55"}" id="${"label"}" class="${"svelte-1m9soq0"}">50</text></svg>
+            <text${add_attribute("x", 50 + xScale(year) + xScale.bandwidth() / 2, 0)} y="${"142.5"}" id="${"yearLabelMobile"}" text-anchor="${"middle"}" transform="${"rotate(-45," + escape(57 + xScale(year) + xScale.bandwidth() / 2, true) + ",151)"}" class="${"svelte-1xh900h"}">${escape(year)}</text>`;
+  })}<line x1="${"50"}" y1="${"127.5"}"${add_attribute("x2", svgWidth, 0)} y2="${"127.5"}" style="${"stroke:white;stroke-width:1;opacity:1"}"></line><text x="${"40"}" y="${"132"}" id="${"label"}" class="${"svelte-1xh900h"}">0</text><line x1="${"50"}" y1="${"50"}"${add_attribute("x2", svgWidth, 0)} y2="${"50"}" style="${"stroke:white;stroke-width:1;opacity:0.3"}"></line><text x="${"33"}" y="${"55"}" id="${"label"}" class="${"svelte-1xh900h"}">50</text></svg>
 
 </div>`;
 });
@@ -19765,7 +19765,7 @@ const xSecondary = "/gentle-density/_app/immutable/assets/x-secondary-5d09d70d.s
 const xRearYard = "/gentle-density/_app/immutable/assets/x-rearyard-41c3e78f.svg";
 const Map_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "#map.svelte-11w4gto.svelte-11w4gto{width:100%;border-top:1px solid var(--brandLightBlue);border-bottom:1px solid var(--brandLightBlue)}#top-bar.svelte-11w4gto.svelte-11w4gto{width:calc(100% - 36px);background-color:var(--brandDarkBlue);background-size:13px 13px;background-image:repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);color:white;font-size:17px;font-family:'Ubuntu Mono', monospace;padding:18px;padding-top:28px;padding-bottom:8px;font-weight:bold}#top-bar.svelte-11w4gto p.svelte-11w4gto{max-width:720px;width:100%;margin:0 auto}#options-wrapper.svelte-11w4gto.svelte-11w4gto{width:100%;padding-bottom:15px;background-color:var(--brandDarkBlue);background-size:13px 13px;background-image:repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%)}#options.svelte-11w4gto.svelte-11w4gto{margin:0 auto;padding-top:7px;width:100%;max-width:650px}#options.svelte-11w4gto p.svelte-11w4gto{color:white;font-size:17px;font-family:'Ubuntu Mono', monospace;max-width:620px;width:100%;margin:0 auto;padding:18px;padding-top:7px;padding-bottom:7px;text-decoration:underline;text-decoration-color:#8EB6DC}#pointLayers.svelte-11w4gto.svelte-11w4gto{color:white;padding:10px;padding-left:16px;padding-bottom:1px;font-size:17px;font-family:'Ubuntu Mono', monospace;font-weight:400;overflow:hidden}#rearYardButton.svelte-11w4gto.svelte-11w4gto{float:left;margin-right:20px;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#secondaryButton.svelte-11w4gto.svelte-11w4gto{overflow:hidden;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#lanewayButton.svelte-11w4gto.svelte-11w4gto{float:left;margin-right:20px;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#incomeButton.svelte-11w4gto.svelte-11w4gto{overflow:hidden;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#resYellowButton.svelte-11w4gto.svelte-11w4gto{float:left;margin-right:20px;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#resOtherButton.svelte-11w4gto.svelte-11w4gto{overflow:hidden;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#rearYardButton.svelte-11w4gto.svelte-11w4gto:hover{opacity:1;background-color:var(--brandDarkBlue)}#secondaryButton.svelte-11w4gto.svelte-11w4gto:hover{opacity:1;background-color:var(--brandDarkBlue)}#resYellowButton.svelte-11w4gto.svelte-11w4gto:hover{opacity:1;background-color:var(--brandDarkBlue)}#resOtherButton.svelte-11w4gto.svelte-11w4gto:hover{opacity:1;background-color:var(--brandDarkBlue)}#lanewayButton.svelte-11w4gto.svelte-11w4gto:hover{opacity:1;background-color:var(--brandDarkBlue)}#incomeButton.svelte-11w4gto.svelte-11w4gto:hover{opacity:1;background-color:var(--brandDarkBlue)}.layerOn.svelte-11w4gto.svelte-11w4gto{opacity:1}.layerOff.svelte-11w4gto.svelte-11w4gto{opacity:0.42}",
+  code: "#map.svelte-1vzqokm.svelte-1vzqokm{width:100%;border-top:1px solid var(--brandLightBlue);border-bottom:1px solid var(--brandLightBlue)}#top-bar.svelte-1vzqokm.svelte-1vzqokm{width:calc(100% - 36px);background-color:var(--brandDarkBlue);background-size:13px 13px;background-image:repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);color:white;font-size:17px;font-family:'Ubuntu Mono', monospace;padding:18px;padding-top:28px;padding-bottom:8px;font-weight:bold}#top-bar.svelte-1vzqokm p.svelte-1vzqokm{max-width:720px;width:100%;margin:0 auto}#options-wrapper.svelte-1vzqokm.svelte-1vzqokm{width:100%;padding-bottom:15px;background-color:var(--brandDarkBlue);background-size:13px 13px;background-image:repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%)}#options.svelte-1vzqokm.svelte-1vzqokm{margin:0 auto;padding-top:7px;width:100%;max-width:650px}#options.svelte-1vzqokm p.svelte-1vzqokm{color:white;font-size:17px;font-family:'Ubuntu Mono', monospace;max-width:620px;width:inheret;margin:0 auto;padding-right:0px;padding-left:18px;padding-top:7px;padding-bottom:7px;text-decoration:underline;text-decoration-color:#8EB6DC}#pointLayers.svelte-1vzqokm.svelte-1vzqokm{color:white;padding:10px;padding-left:16px;padding-bottom:1px;font-size:17px;font-family:'Ubuntu Mono', monospace;font-weight:400;overflow:hidden}#rearYardButton.svelte-1vzqokm.svelte-1vzqokm{float:left;margin-right:20px;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#secondaryButton.svelte-1vzqokm.svelte-1vzqokm{overflow:hidden;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#lanewayButton.svelte-1vzqokm.svelte-1vzqokm{float:left;margin-right:20px;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#incomeButton.svelte-1vzqokm.svelte-1vzqokm{overflow:hidden;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#resYellowButton.svelte-1vzqokm.svelte-1vzqokm{float:left;margin-right:20px;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#resOtherButton.svelte-1vzqokm.svelte-1vzqokm{overflow:hidden;width:290px;border:solid 1px #fff;padding:4px;margin-bottom:10px;background-color:#2a5e89;cursor:pointer}#rearYardButton.svelte-1vzqokm.svelte-1vzqokm:hover{opacity:1;background-color:var(--brandDarkBlue)}#secondaryButton.svelte-1vzqokm.svelte-1vzqokm:hover{opacity:1;background-color:var(--brandDarkBlue)}#resYellowButton.svelte-1vzqokm.svelte-1vzqokm:hover{opacity:1;background-color:var(--brandDarkBlue)}#resOtherButton.svelte-1vzqokm.svelte-1vzqokm:hover{opacity:1;background-color:var(--brandDarkBlue)}#lanewayButton.svelte-1vzqokm.svelte-1vzqokm:hover{opacity:1;background-color:var(--brandDarkBlue)}#incomeButton.svelte-1vzqokm.svelte-1vzqokm:hover{opacity:1;background-color:var(--brandDarkBlue)}.layerOn.svelte-1vzqokm.svelte-1vzqokm{opacity:1}.layerOff.svelte-1vzqokm.svelte-1vzqokm{opacity:0.42}",
   map: null
 };
 const Map = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -19784,17 +19784,17 @@ const Map = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
     $$rendered = `
 
-<div id="${"top-bar"}" class="${"svelte-11w4gto"}"><p class="${"svelte-11w4gto"}">Location of rear-yeard and secondary suite building permits in Toronto:</p></div>
+<div id="${"top-bar"}" class="${"svelte-1vzqokm"}"><p class="${"svelte-1vzqokm"}">Location of rear-yeard and secondary suite building permits in Toronto:</p></div>
 
-<div id="${"map"}" style="${"height: " + escape(mapHeight, true) + "px"}" class="${"svelte-11w4gto"}"></div>
+<div id="${"map"}" style="${"height: " + escape(mapHeight, true) + "px"}" class="${"svelte-1vzqokm"}"></div>
 
-<div id="${"options-wrapper"}" class="${"svelte-11w4gto"}"><div id="${"options"}" class="${"svelte-11w4gto"}"><p class="${"svelte-11w4gto"}">Closed (i.e. Cleared) Building Permits:</p>
+<div id="${"options-wrapper"}" class="${"svelte-1vzqokm"}"><div id="${"options"}" class="${"svelte-1vzqokm"}"><p class="${"svelte-1vzqokm"}">Closed (i.e. Cleared) Building Permits:</p>
         
-        <div id="${"pointLayers"}" class="${"svelte-11w4gto"}"><div id="${"rearYardButton"}" class="${escape(null_to_empty("layerOn"), true) + " svelte-11w4gto"}"><svg width="${"20"}" height="${"10"}"><circle style="${"fill:#F1C500;stroke-width:2;stroke:#fff"}" cx="${"15"}" cy="${"5"}" r="${"4"}"></circle></svg>
+        <div id="${"pointLayers"}" class="${"svelte-1vzqokm"}"><div id="${"rearYardButton"}" class="${escape(null_to_empty("layerOn"), true) + " svelte-1vzqokm"}"><svg width="${"20"}" height="${"10"}"><circle style="${"fill:#F1C500;stroke-width:2;stroke:#fff"}" cx="${"15"}" cy="${"5"}" r="${"4"}"></circle></svg>
                 Rear-Yard Suites
             </div>
 
-            <div id="${"secondaryButton"}" class="${escape(null_to_empty("layerOn"), true) + " svelte-11w4gto"}"><svg width="${"20"}" height="${"10"}"><circle style="${"fill:#ab1269;stroke-width:2;stroke:#fff"}" cx="${"15"}" cy="${"5"}" r="${"4"}"></circle></svg>
+            <div id="${"secondaryButton"}" class="${escape(null_to_empty("layerOn"), true) + " svelte-1vzqokm"}"><svg width="${"20"}" height="${"10"}"><circle style="${"fill:#ab1269;stroke-width:2;stroke:#fff"}" cx="${"15"}" cy="${"5"}" r="${"4"}"></circle></svg>
                 Secondary Suites
             </div></div>
 
@@ -19819,34 +19819,34 @@ const Map = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       {}
     )}
 
-        <p class="${"svelte-11w4gto"}">Open (i.e. Active) Building Permits:</p>
+        <p class="${"svelte-1vzqokm"}">Open (i.e. Active) Building Permits:</p>
 
-        <div id="${"pointLayers"}" class="${"svelte-11w4gto"}"><div id="${"rearYardButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-11w4gto"}"><img height="${"11px"}" width="${"11px"}"${add_attribute("src", xRearYard, 0)} alt="${"xRearYard"}" style="${"padding-left: 4px"}">
+        <div id="${"pointLayers"}" class="${"svelte-1vzqokm"}"><div id="${"rearYardButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-1vzqokm"}"><img height="${"11px"}" width="${"11px"}"${add_attribute("src", xRearYard, 0)} alt="${"xRearYard"}" style="${"padding-left: 4px"}">
                 Rear-Yard Suites
             </div>
 
-            <div id="${"secondaryButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-11w4gto"}"><img height="${"11px"}" width="${"11px"}"${add_attribute("src", xSecondary, 0)} alt="${"xSecondary"}" style="${"padding-left: 4px"}">
+            <div id="${"secondaryButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-1vzqokm"}"><img height="${"11px"}" width="${"11px"}"${add_attribute("src", xSecondary, 0)} alt="${"xSecondary"}" style="${"padding-left: 4px"}">
                 Secondary Suites
             </div></div>
 
 
-        <p class="${"svelte-11w4gto"}">Residential Zoning:</p>
+        <p class="${"svelte-1vzqokm"}">Residential Zoning:</p>
 
-        <div id="${"pointLayers"}" class="${"svelte-11w4gto"}"><div id="${"resYellowButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-11w4gto"}"><svg width="${"15"}" height="${"10"}"><rect style="${"fill:#1a2d3b"}" x="${"5"}" y="${"0"}" width="${"10"}" height="${"10"}"></rect></svg>
+        <div id="${"pointLayers"}" class="${"svelte-1vzqokm"}"><div id="${"resYellowButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-1vzqokm"}"><svg width="${"15"}" height="${"10"}"><rect style="${"fill:#1a2d3b"}" x="${"5"}" y="${"0"}" width="${"10"}" height="${"10"}"></rect></svg>
                 Single-Detached Only
             </div>
 
-            <div id="${"resOtherButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-11w4gto"}"><svg width="${"15"}" height="${"10"}"><rect style="${"fill:#2e4e66"}" x="${"5"}" y="${"0"}" width="${"10"}" height="${"10"}"></rect></svg>
+            <div id="${"resOtherButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-1vzqokm"}"><svg width="${"15"}" height="${"10"}"><rect style="${"fill:#2e4e66"}" x="${"5"}" y="${"0"}" width="${"10"}" height="${"10"}"></rect></svg>
                 Other Low-Density
             </div></div>
 
-        <p class="${"svelte-11w4gto"}">Reference Layers:</p>
+        <p class="${"svelte-1vzqokm"}">Reference Layers:</p>
 
-        <div id="${"pointLayers"}" class="${"svelte-11w4gto"}"><div id="${"lanewayButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-11w4gto"}"><svg width="${"20"}" height="${"10"}"><line style="${"stroke-width:1.5;stroke:#fff"}" x1="${"5"}" x2="${"20"}" y1="${"5"}" y2="${"5"}"></line></svg>
+        <div id="${"pointLayers"}" class="${"svelte-1vzqokm"}"><div id="${"lanewayButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-1vzqokm"}"><svg width="${"20"}" height="${"10"}"><line style="${"stroke-width:1.5;stroke:#fff"}" x1="${"5"}" x2="${"20"}" y1="${"5"}" y2="${"5"}"></line></svg>
                 Laneways
             </div>
 
-            <div id="${"incomeButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-11w4gto"}"><svg width="${"0"}" height="${"10"}"></svg>
+            <div id="${"incomeButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-1vzqokm"}"><svg width="${"0"}" height="${"10"}"></svg>
                 Income: Low
                 <svg width="${"10"}" height="${"10"}"><rect style="${"fill:#506b80;stroke-width:1;stroke:#8EB6DC"}" x="${"0"}" y="${"0"}" width="${"10"}" height="${"10"}"></rect></svg>,
                 Medium
@@ -19891,7 +19891,7 @@ ${validate_component(TopSofC, "Top").$$render($$result, {}, {}, {})}
 
 	<div class="${"background-white"}"><div class="${"arrow"}"><p>\u25BC</p></div>
 
-		<div class="${"text"}"><p>Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="${"https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/"}">Yellowbelt</a>). There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via building <a href="${"https://missingmiddlehousing.com/"}">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims to provide more housing options and to make our urban areas more affordable, inclusive, and sustainable. Around 2018 - 2019 the City of Toronto started taking accelerating actions to increase the Missing Middle housing supply, in what is now the <a href="${"https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/"}">Expanding Housing Options</a> program. 
+		<div class="${"text"}"><p>Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="${"https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/"}">Yellowbelt</a>). There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via building <a href="${"https://missingmiddlehousing.com/"}">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims to provide more housing options and to make our urban areas more affordable, inclusive, and sustainable. Around 2018 - 2019 the City of Toronto started taking accelerating actions to increase the Missing Middle housing supply, in what is now the <a href="${"https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/"}">Expanding Housing Options</a> program.
 				</p>
 			<p>At the smaller-scale of the missing middle are 
 				<a href="${"https://affordablemissingmiddle.ca/"}">gentle density</a> (or &quot;missing little&quot;) strategies, which refers to owner-led efforts to build additional dwellings within their existing parcel of land as citizen developers. These can increase property value and provide supplementary income, but importantly, in aggregate, can incrementally scale up the density of a neighbourhood, allow for intergenerational living, and provide needed housing, particularly for those unable to afford larger homes.

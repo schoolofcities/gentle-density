@@ -24,12 +24,12 @@
     "src": "src/routes/assets/Trade Gothic LT Bold.ttf"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-2bf51f92.js",
+    "file": "_app/immutable/start-16aa2b9b.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
-      "_singletons-0be9369c.js"
+      "_singletons-69474465.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -46,16 +46,16 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-d8052299.js",
+    "file": "_app/immutable/components/error.svelte-3ab0b3d6.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
-      "_singletons-0be9369c.js"
+      "_singletons-69474465.js"
     ]
   },
   "src/routes/toronto-building-permits/+page.svelte": {
-    "file": "_app/immutable/components/pages/toronto-building-permits/_page.svelte-16e3887f.js",
+    "file": "_app/immutable/components/pages/toronto-building-permits/_page.svelte-0025464b.js",
     "src": "src/routes/toronto-building-permits/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -63,7 +63,7 @@
       "_index-4b83e0f7.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-75f45a05.css"
+      "_app/immutable/assets/_page-2a0d1bc6.css"
     ],
     "assets": [
       "_app/immutable/assets/x-secondary-5d09d70d.svg",
@@ -90,8 +90,8 @@
       "__page-f015c9b7.js"
     ]
   },
-  "_singletons-0be9369c.js": {
-    "file": "_app/immutable/chunks/singletons-0be9369c.js",
+  "_singletons-69474465.js": {
+    "file": "_app/immutable/chunks/singletons-69474465.js",
     "imports": [
       "_index-4b83e0f7.js"
     ]
@@ -121,7 +121,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-86e39595.js",
+    "file": "_app/immutable/chunks/1-ef7f77e4.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -129,7 +129,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-f6b84778.js",
+    "file": "_app/immutable/chunks/2-6a7bc3be.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -138,7 +138,7 @@
     ]
   },
   "src/routes/toronto-building-permits/+page.css": {
-    "file": "_app/immutable/assets/_page-75f45a05.css",
+    "file": "_app/immutable/assets/_page-2a0d1bc6.css",
     "src": "src/routes/toronto-building-permits/+page.css"
   }
 }
