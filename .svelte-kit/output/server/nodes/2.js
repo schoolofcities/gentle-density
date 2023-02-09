@@ -5,4 +5,4 @@ export const component = async () => (await import('../entries/pages/toronto-bui
 export const file = '_app/immutable/components/pages/toronto-building-permits/_page.svelte-0025464b.js';
 export { shared };
 export const imports = ["_app/immutable/components/pages/toronto-building-permits/_page.svelte-0025464b.js","_app/immutable/chunks/index-359d1197.js","_app/immutable/chunks/index-4b83e0f7.js","_app/immutable/modules/pages/toronto-building-permits/_page.js-765955de.js","_app/immutable/chunks/_page-f015c9b7.js"];
-export const stylesheets = ["_app/immutable/assets/_page-2a0d1bc6.css"];
+export const stylesheets = ["_app/immutable/assets/_page-548122da.css"];

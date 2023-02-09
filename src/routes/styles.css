@@ -132,15 +132,17 @@ b {
     font-weight: 400;
     max-width: 450px;
     font-size: 28px;
+    line-height: 30px;
     color: var(--brandDarkBlue);
 }
 
 @media only screen and (max-width: 920px) {
     .title h1 {
-        font-size: 38px;
+        font-size: 42px;
     }
     .title h2 {
-        font-size: 24px;
+        font-size: 18px;
+        line-height: 30px;
     }
 }
 
