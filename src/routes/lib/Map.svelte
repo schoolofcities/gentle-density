@@ -6,6 +6,7 @@
 
     import torontoBoundary from '../assets/toronto-boundary.geo.json';
     import laneways from '../assets/laneways.geo.json';
+    import transitLines from '../assets/transitLines.geo.json';
     import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
     import suitesSecondary from '../assets/secondary-suites.geo.json';
     import suitesLanewayActive from '../assets/laneway-suites-active-subset.geo.json';
@@ -89,6 +90,22 @@
                     'line-color': '#fff',
                     'line-width': 1,
                     'line-opacity': 0
+                }
+            }, 'admin-0-boundary-disputed');
+
+            map.addSource('transitLines', {
+                'type': 'geojson',
+                'data': transitLines
+            });
+            map.addLayer({
+                'id': 'transitLines',
+                'type': 'line',
+                'source': 'transitLines',
+                'layout': {},
+                'paint': {
+                    'line-color': '#fff',
+                    'line-width': 1,
+                    'line-opacity': 1
                 }
             }, 'admin-0-boundary-disputed');
 
@@ -311,8 +328,6 @@
         // map.on('mouseleave', 'VotingSubDivisionsFill', () => {
         //     message = " "
         // });
-
-        
 
     });
 

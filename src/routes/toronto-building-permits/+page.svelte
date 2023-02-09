@@ -132,7 +132,7 @@
 				The construction of secondary suites hovered between 100 and 120 per year up until 2019, and then increased in 2021 to just under 200. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020, and only a few dozen since then. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street). 
 			</p>
 			<p>
-				Overall, the completion of secondary suites and rear-yard suites are quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. Summing the bars above, only QQQ secondary suites and QQQQ rear-yard suites have been built in Toronto between 2013 and 2022. 
+				Overall, the completion of secondary suites and rear-yard suites are quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. Summing the bars above, only 1,282 secondary suites and 90 rear-yard suites have been built in Toronto between 2013 and 2022. 
 				<!-- In comparison cities like California that permitted ADUs at almost the same time as Toronto, currently have more than 63,000 permitted ADUs. -->
 			</p>
 			<p>
@@ -156,7 +156,7 @@
 
 	<div class="text">
 		<p>
-			According to ADUsearch.ca the estimated number of properties within Toronto that could add internal or external ADUs range between 370,000 to 390,000 lots. This emphasizes the fact that with the current uptake of a humble QQQQ, Toronto is barely scratching the surface of hidden housing supply within its existing neighbourhoods. Practical steps need to be taken by all stakeholders to remove the various barriers and to find solutions to make best use of this opportunity to easily provide much-needed dwelling units during the current housing crisis.  
+			According to <a href="https://adusearch.ca/">ADUsearch.ca</a> the estimated number of properties within Toronto that could add internal or external ADUs range between 370,000 to 390,000 lots. This emphasizes the fact that with the current uptake of a humble 1372, Toronto is barely scratching the surface of hidden housing supply within its existing neighbourhoods. Practical steps need to be taken by all stakeholders to remove the various barriers and to find solutions to make best use of this opportunity to easily provide much-needed dwelling units during the current housing crisis.  
 		</p>
 	</div>
 

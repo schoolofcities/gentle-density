@@ -4,8 +4,11 @@ from geopy.geocoders import Nominatim
 
 geolocator = Nominatim(user_agent="geocoder2")
 
-typename = "secondary-suites"
-typecode = "Second Suite (New)"
+# typename = "secondary-suites"
+# typecode = "Second Suite (New)"
+
+typename = "laneway-garden-suites"
+typecode = "New Laneway / Rear Yard Suite"
 
 
 def geocode(street_num, street_name, street_type, street_dir):
@@ -85,4 +88,4 @@ df_table = pd.concat(df_table)
 df_geo =  gpd.GeoDataFrame(pd.concat(df_geo))
 
 df_table.to_csv(typename + ".csv")
-df_geo.to_file(typename + ".geojson")
+df_geo.to_file(typename + ".geojson", driver="GeoJSON")

@@ -11,6 +11,9 @@
 
     let yearCountsLaneway =  Object.fromEntries(rollup(suitesLaneway.features, v => v.length, d => d.properties.year));
 
+    const sumValues = obj => Object.values(obj).reduce((a, b) => a + b, 0);
+    console.log(sumValues(yearCountsLaneway));
+
     let years = ["2013","2014","2015","2016","2017","2018","2019","2020","2021","2022"];
 
     function barHeight(amount) {
