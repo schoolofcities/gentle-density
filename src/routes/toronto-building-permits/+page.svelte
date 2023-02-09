@@ -69,7 +69,8 @@
 			<h2>
 				Via Visualizing Building Permit Data
 			</h2>
-			<p><a href="https://jamaps.github.io">Jeff Allen</a></p>
+			<p><a href="https://jamaps.github.io">Jeff Allen</a> and <a href="https://www.linkedin.com/in/ahmad-al-musa/">Ahmad Al-Musa</a></p>
+			<p>February 2023</p>
 		</div>
 
 	</div>
@@ -168,10 +169,10 @@
 				Data on the location, type, and status of <a href="https://open.toronto.ca/catalogue/?search=building%20permits&sort=score%20desc">building permits</a> are from the City of Toronto's Open Data portal. 
 			</p>
 			<p>
-				The residential <a href="https://open.toronto.ca/dataset/zoning-by-law/">zoning layer</a> is also from the City's Open Data portal. The single-detached only zones are those classified as [RD] while the other low-density zones are classified as [R, RA, RM, RS, RS]. The latter also include semi-detached, townhouses, and smaller multi-unit dwellings, depending on the zone classification.
+				The residential <a href="https://open.toronto.ca/dataset/zoning-by-law/">zoning layer</a> is also from the City's Open Data portal. The single-detached only zones are those classified as [RD] while the other low-density zones are classified as [R, RM, RS, RT]. The latter also include semi-detached, townhouses, and smaller multi-unit dwellings, depending on the zone classification.
 			</p>
 			<p>
-				The location of laneways is also from the City of Toronto's Open Data portal. It was filtered and extracted from the City's <a href="https://open.toronto.ca/dataset/toronto-centreline-tcl/">Centreline</a> dataset
+				The location of laneways is also from the City of Toronto's Open Data portal. It was filtered and extracted from the City's <a href="https://open.toronto.ca/dataset/toronto-centreline-tcl/">Centreline</a> dataset.
 			</p>
 			<p>
 				The <a href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/index-eng.cfm">income data</a> is from the 2021 Canadian census. The low category are census tracts with a median after-tax household income of less then $75,000, the medium range is between $75,000 and $100,000, and the high is above $100,000.

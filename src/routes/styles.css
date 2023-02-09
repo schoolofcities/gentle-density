@@ -136,18 +136,11 @@ b {
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
     font-size: 18px;
-    width: 200px;
+    width: 280px;
     text-align: center;
     color: var(--brandDarkBlue);
+    line-height: 30px;
 }
-
-/* .title a {
-    color: var(--brandDarkBlue);
-}
-
-.title a:hover {
-    color: var(--brandRed);
-} */
 
 .arrow {
     width: 100%;
