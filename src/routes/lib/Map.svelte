@@ -7,6 +7,7 @@
     import torontoBoundary from '../assets/toronto-boundary.geo.json';
     import laneways from '../assets/laneways.geo.json';
     import transitLines from '../assets/transitLines.geo.json';
+    import transitStops from '../assets/transitStops.geo.json';
     import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
     import suitesSecondary from '../assets/secondary-suites.geo.json';
     import suitesLanewayActive from '../assets/laneway-suites-active-subset.geo.json';
@@ -61,21 +62,7 @@
 
         map.on('load', function() {
 
-            map.addSource('torontoBoundary', {
-                'type': 'geojson',
-                'data': torontoBoundary
-            });
-            map.addLayer({
-                'id': 'torontoBoundary',
-                'type': 'line',
-                'source': 'torontoBoundary',
-                'layout': {},
-                'paint': {
-                    'line-color': '#fff',
-                    'line-width': 1,
-                    'line-opacity': 1
-                }
-            }, 'admin-0-boundary-disputed');
+            
 
             map.addSource('laneways', {
                 'type': 'geojson',
@@ -103,12 +90,52 @@
                 'source': 'transitLines',
                 'layout': {},
                 'paint': {
+                    'line-color': '#1d4667',
+                    'line-width': 2,
+                    'line-opacity': 1
+                }
+            }, 'admin-0-boundary-disputed');
+
+            map.addSource('transitStops', {
+                'type': 'geojson',
+                'data': transitStops
+            });
+            map.addLayer({
+                'id': 'transitStops',
+                'type': 'circle',
+                'source': 'transitStops',
+                'layout': {},
+                'paint': {
+                    'circle-color': '#1d4667'
+                }
+            }, 'admin-0-boundary-disputed');
+            map.addLayer({
+                'id': 'transitStopsWhite',
+                'type': 'circle',
+                'source': 'transitStops',
+                'layout': {},
+                'paint': {
+                    'circle-color': '#fff',
+                    'circle-radius': 2,
+                    'circle-opacity': 0.42
+                }
+            }, 'admin-0-boundary-disputed');
+
+            map.addSource('torontoBoundary', {
+                'type': 'geojson',
+                'data': torontoBoundary
+            });
+            map.addLayer({
+                'id': 'torontoBoundary',
+                'type': 'line',
+                'source': 'torontoBoundary',
+                'layout': {},
+                'paint': {
                     'line-color': '#fff',
                     'line-width': 1,
                     'line-opacity': 1
                 }
             }, 'admin-0-boundary-disputed');
-
 
             map.addSource('zoneYellowRes', {
                 'type': 'geojson',
