@@ -42,9 +42,9 @@ main {
 }
 
 a {
-    color: #1E3765;
+    color: #002b8f;
     font-weight: bold;
-    opacity: 0.85;
+    opacity: 0.95;
 }
 a:hover {
     opacity: 1;

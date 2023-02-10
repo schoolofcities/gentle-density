@@ -94,7 +94,7 @@
 				Relative to larger developments (e.g. larger multi-unit apartments and condominiums), gentle density is more compatible with the scale and character of existing neighbourhoods. Gentle density development is thus often seen as an approach to increase the housing supply in a way that is less disruptive to existing communities but can still help create more walkable, liveable neighbourhoods, utilizing existing infrastructure and services, which saves tax payers' money and reduces harmful urban sprawl.
 			</p>
 			<p>
-				But what is the recent uptake in gentle density housing in the City of Toronto?
+				<b>But what is the recent uptake in gentle density housing in the City of Toronto?</b>
 			</p>
 			<p>	
 				To answer this, we've looked at 10 years of <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits-prior-years/">building permit data</a> in the City of Toronto (from 01/2013 to 12/2022) to see how and where forms of gentle density have (or have not) been built across the city during this period. At any point in time, building permits can either be active (i.e. building in progress), cancelled, or closed. Those that are closed, we can assume construction has finished. We first counted building permits by the year they were closed for the following two types of gentle density construction, to then chart their trends over time.
@@ -135,10 +135,9 @@
 			</p>
 			<p>
 				Overall, the completion of secondary suites and rear-yard suites are quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,282 secondary suites and 90 rear-yard suites have been built in Toronto between 2013 and 2022</b>. 
-				<!-- In comparison cities like California that permitted ADUs at almost the same time as Toronto, currently have more than 63,000 permitted ADUs. -->
 			</p>
 			<p>
-				Despite this sluggish uptake to date, there are a number of ongoing projects. <b>As of January 1, 2023 there were 575 secondary suite and 458 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and an initial or revised application date from the five-year period from 2018 to 2022.
+				Despite this sluggish uptake to date in Toronto, there are an increasing number of ongoing projects. <b>As of January 1, 2023 there were 575 secondary suite and 458 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and an initial or revised application date from the five-year period from 2018 to 2022. However, these numbers are still quite low compared to uptake elsewhere. In comparison, the <a href="https://xtown.la/2022/09/20/adus-los-angeles-housing-numbers/">City of Los Angeles</a> issued permits for over 25,000 ADUs from 2017 to 2021.
 			</p>
 			<p>
 				To explore further, we have also mapped below where secondary suites and rear-yard suites have been built in the city from 2013 to 2022, as well as the location of active building permits. 
