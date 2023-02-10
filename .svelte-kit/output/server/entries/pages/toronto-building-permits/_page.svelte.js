@@ -18551,8 +18551,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.321237,
-        43.649934
+        -79.33319,
+        43.670428
       ]
     }
   },
