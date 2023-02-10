@@ -19784,7 +19784,7 @@ const Map = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
     $$rendered = `
 
-<div id="${"top-bar"}" class="${"svelte-1vzqokm"}"><p class="${"svelte-1vzqokm"}">Location of rear-yeard and secondary suite building permits in Toronto:</p></div>
+<div id="${"top-bar"}" class="${"svelte-1vzqokm"}"><p class="${"svelte-1vzqokm"}">Location of rear-yard and secondary suite building permits in Toronto:</p></div>
 
 <div id="${"map"}" style="${"height: " + escape(mapHeight, true) + "px"}" class="${"svelte-1vzqokm"}"></div>
 
@@ -19923,7 +19923,7 @@ ${validate_component(TopSofC, "Top").$$render($$result, {}, {}, {})}
 				</p>
 			<p>Despite this sluggish uptake to date, there are a number of ongoing projects. <b>As of January 1, 2023 there were 575 secondary suite and 458 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and an initial or revised application date from the five-year period from 2018 to 2022.
 			</p>
-			<p>To explore further, we have also mapped where secondary suites and rear-yard suites have been built in the city from 2013 to 2022, as well as the location of active building permits. 
+			<p>To explore further, we have also mapped below where secondary suites and rear-yard suites have been built in the city from 2013 to 2022, as well as the location of active building permits. 
 			</p>
 			<p>These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. All completed rear-yard suites cluster in these neighbourhoods since these are where the majority of the City&#39;s laneways are located since post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing. Looking at the active permits, there are now several popping up elsewhere in more suburban neighbourhoods.
 			</p>
