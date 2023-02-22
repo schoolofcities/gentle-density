@@ -85,13 +85,13 @@
 		<div class="text">
 
 			<p>
-				Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/">Yellowbelt</a>). There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via building <a href="https://missingmiddlehousing.com/">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims to provide more housing options and to make our urban areas more affordable, inclusive, and sustainable. Around 2018 - 2019 the City of Toronto started taking accelerating actions to increase the Missing Middle housing supply, in what is now the <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/">Expanding Housing Options</a> program.
+				Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/">Yellowbelt</a>). There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via building <a href="https://missingmiddlehousing.com/">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims to provide more housing options and to make our urban areas more affordable, inclusive, and sustainable. Around 2018-2019, the City of Toronto started taking accelerating actions to increase missing middle housing supply, in what is now the <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/">Expanding Housing Options</a> program.
 				<!-- (you can check out this story for a regulatory historical timeline and real examples of the smallest tier of the Missing Middle housing) -->
 			</p>
 			<p>
 				At the smaller-scale of the missing middle are 
 				<a href="https://affordablemissingmiddle.ca/">gentle density</a> (or "missing little") strategies, which refers to owner-led efforts to build additional dwellings within their existing parcel of land as citizen developers. These can increase property value and provide supplementary income, but importantly, in aggregate, can incrementally scale up the density of a neighbourhood, allow for intergenerational living, and provide needed housing, particularly for those unable to afford larger homes.
-				Relative to larger developments (e.g. larger multi-unit apartments and condominiums), gentle density is more compatible with the scale and character of existing neighbourhoods. Gentle density development is thus often seen as an approach to increase the housing supply in a way that is less disruptive to existing communities but can still help create more walkable, liveable neighbourhoods, utilizing existing infrastructure and services, which saves tax payers' money and reduces harmful urban sprawl.
+				Relative to larger developments (e.g. larger multi-unit apartments and condominiums), gentle density is more compatible with the scale and character of existing neighbourhoods. Gentle density development is thus often seen as an approach to increase the housing supply in a way that is less disruptive to existing communities but can still help create more walkable, liveable neighbourhoods, that use existing infrastructure and services, which can save tax payers' money and reduce harmful urban sprawl.
 			</p>
 			<p>
 				<b>But what is the recent uptake in gentle density housing in the City of Toronto?</b>
@@ -113,7 +113,7 @@
 			<div class="typeWrapper">
 				<div class="isometric-mobile"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
 				<div class="typeText"><p>
-					Building a small detached dwelling unit that is located on the same property as a single-family home. They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, or Laneway Houses. Toronto legalized rear yard suites that abut laneways in 06/2018, called Laneway Suites in city bylaws (these are often garage conversions), and then legalized them in all other residential zones in 02/2022 without the need to abut a laneway. These are called Garden Suites. 
+					Building a small detached dwelling unit that is located on the same property as a single-family home. They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, or Laneway Houses. Toronto legalized rear yard suites that abut laneways in 06/2018, called Laneway Suites in city bylaws (these are often garage conversions), and then legalized them in all other residential zones in 02/2022 without the need to abut a laneway. The latter are often called Garden Suites. 
 				</p></div>
 				<div class="isometric"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
 			</div>
@@ -131,7 +131,7 @@
 		<div class="text">
 
 			<p>
-				The construction of secondary suites hovered between 100 and 120 per year up until 2019, and then increased in 2021 to just under 200. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020, and only a few dozen since then. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street). 
+				The construction of secondary suites hovered between 100 and 120 per year up until 2019. It has since increased, in 2022 to just over 200. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020, and only a few dozen since then. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street). 
 			</p>
 			<p>
 				Overall, the completion of secondary suites and rear-yard suites are quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,282 secondary suites and 90 rear-yard suites have been built in Toronto between 2013 and 2022</b>. 
@@ -146,7 +146,7 @@
 				These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. All completed rear-yard suites cluster in these neighbourhoods since these are where the majority of the City's laneways are located since post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing. Looking at the active permits, there are now several popping up elsewhere in more suburban neighbourhoods.
 			</p>
 			<p>
-				One notable pattern is that there is far less gentle density construction in and around North Toronto, despite this area mostly consisting of single-detached homes. This part is home to some of the city's wealthiest neighbourhoods (toggle on the income layer to check this out). Downtown Toronto also only has a few projects, but this is because it is mostly zoned for higher density development.
+				One notable pattern is that there is far less gentle density construction in and around North Toronto, despite this area mostly consisting of single-detached homes. This area is home to some of the city's wealthiest neighbourhoods (toggle on the income layer to check this out). Downtown Toronto also only has a few projects, but this is because it is mostly zoned for higher density development.
 			</p>
 			
 		</div>
