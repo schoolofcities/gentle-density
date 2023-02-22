@@ -19859,15 +19859,15 @@ const Map = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   } while (!$$settled);
   return $$rendered;
 });
-const logo = "/gentle-density/_app/immutable/assets/top-logo-1f7d60e9.svg";
+const logo = "/gentle-density/_app/immutable/assets/top-logo-full-e60044c8.svg";
 const TopSofC_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "#bar.svelte-y3d596{position:fixed;overflow:hidden;top:0px;height:50px;background-color:var(--brandDarkBlue);margin-bottom:20px;border-bottom:1px solid var(--brandLightBlue);width:100%;min-width:200px;padding-left:0px;padding-right:0px;z-index:5;opacity:0.92}#logo.svelte-y3d596{margin:auto;max-width:142px}a.svelte-y3d596{color:black}a.svelte-y3d596:hover{opacity:0.7}img.svelte-y3d596{color:blue}img.svelte-y3d596:hover{opacity:0.5;cursor:pointer}",
+  code: "#bar.svelte-18tuflt{position:fixed;overflow:hidden;top:0px;height:50px;background-color:var(--brandDarkBlue);margin-bottom:20px;border-bottom:1px solid var(--brandLightBlue);width:100%;min-width:200px;padding-left:0px;padding-right:0px;z-index:5;opacity:0.92}#logo.svelte-18tuflt{margin:auto;max-width:230px;height:50px}a.svelte-18tuflt{color:black}a.svelte-18tuflt:hover{opacity:0.7}img.svelte-18tuflt{height:50px;color:blue}img.svelte-18tuflt:hover{height:50px;opacity:0.5;cursor:pointer}",
   map: null
 };
 const TopSofC = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div id="${"bar"}" class="${"svelte-y3d596"}"><div id="${"logo"}" class="${"svelte-y3d596"}"><a href="${"https://www.schoolofcities.utoronto.ca/"}" class="${"svelte-y3d596"}"><img${add_attribute("src", logo, 0)} alt="${"School of Cities"}" class="${"svelte-y3d596"}"></a></div>
+  return `<div id="${"bar"}" class="${"svelte-18tuflt"}"><div id="${"logo"}" class="${"svelte-18tuflt"}"><a href="${"https://www.schoolofcities.utoronto.ca/"}" class="${"svelte-18tuflt"}"><img${add_attribute("src", logo, 0)} alt="${"School of Cities"}" class="${"svelte-18tuflt"}"></a></div>
 
 </div>`;
 });
