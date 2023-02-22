@@ -40,12 +40,12 @@
 
         <text 
             x="50" 
-            y="10"
+            y="13"
             id="title"
         >Closed "Second Suite (New)"</text>
         <text 
             x="50" 
-            y="30"
+            y="33"
             id="title"
         >Building Permits by Year</text>
 

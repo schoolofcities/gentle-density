@@ -41,14 +41,14 @@
 
         <text 
             x="50" 
-            y="10"
+            y="13"
             id="title"
-        >Closed "New Laneway / Rear Yard Suite"</text>
+        >Closed "New Laneway / Rear Yard</text>
         <text 
             x="50" 
-            y="30"
+            y="33"
             id="title"
-        >Building Permits by Year</text>
+        >Suite" Building Permits by Year</text>
 
 
         <pattern id="pattern-lines-green" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">            
