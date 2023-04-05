@@ -9,7 +9,7 @@
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    sodipodi:docname="site-maps.svg"
-   inkscape:export-filename="/home/ja/Dropbox/sofc/projects/gentle-density/data/site-maps/e-martin-grove.png"
+   inkscape:export-filename="/home/ja/Dropbox/sofc/projects/gentle-density/data/site-maps/e-huron.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -30,9 +30,9 @@
      units="px"
      width="400px"
      inkscape:snap-page="true"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="241.83052"
-     inkscape:cy="279.30718"
+     inkscape:zoom="1"
+     inkscape:cx="275"
+     inkscape:cy="176.5"
      inkscape:window-width="1540"
      inkscape:window-height="1134"
      inkscape:window-x="26"
@@ -59,6 +59,30 @@
        x="-2.8421709e-14"
        y="66.145836" />
     <image
+       width="92.604164"
+       height="92.604164"
+       preserveAspectRatio="none"
+       xlink:href="q-huron.png"
+       id="image2074"
+       x="6.6145835"
+       y="72.760414" />
+    <image
+       width="92.604172"
+       height="92.604172"
+       preserveAspectRatio="none"
+       xlink:href="q-palmerston.png"
+       id="image1723"
+       x="6.6145835"
+       y="-120.09" />
+    <image
+       width="92.604164"
+       height="92.604164"
+       preserveAspectRatio="none"
+       xlink:href="q-fuller.png"
+       id="image1418"
+       x="6.6145835"
+       y="247.83191" />
+    <image
        width="105.83334"
        height="66.145836"
        preserveAspectRatio="none"
@@ -72,7 +96,7 @@
        preserveAspectRatio="none"
        xlink:href="q-martin-grove.png"
        id="image15339"
-       x="6.6145844"
+       x="-115.69756"
        y="72.760414" />
     <image
        width="92.604164"
@@ -89,29 +113,56 @@
     <circle
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#1772b0;stroke-width:0.230732;stroke-linecap:round;stroke-opacity:1"
        id="path1811"
-       cx="52.916695"
+       cx="-69.395447"
        cy="119.0625"
+       r="46.146404" />
+    <circle
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#1772b0;stroke-width:0.230732;stroke-linecap:round;stroke-opacity:1"
+       id="path1811-62"
+       cx="52.923126"
+       cy="294.14407"
        r="46.146404" />
     <circle
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#1772b0;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1811-6"
-       cx="11.908445"
+       cx="-110.40369"
        cy="33.362698"
        r="1.4583294" />
     <path
        style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 11.855356,34.789348 V 66.145833"
+       d="M -110.45678,34.789348 V 66.145833"
        id="path31279"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 52.916677,66.145833 v 6.614583"
+       d="m -69.395464,66.145833 v 6.614583"
        id="path31279-7"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 52.916677,66.145833 H 11.837156"
+       d="M -69.395464,66.145833 H -110.47498"
        id="path31281"
+       sodipodi:nodetypes="cc" />
+    <circle
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#1772b0;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1811-6-8"
+       cx="33.635578"
+       cy="220.62564"
+       r="1.4583294" />
+    <path
+       style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 33.63291,221.89224 v 19.32508"
+       id="path31279-9"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 52.916666,241.21732 v 6.61458"
+       id="path31279-7-60"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 52.916666,241.21732 H 33.63291"
+       id="path31281-7"
        sodipodi:nodetypes="cc" />
     <circle
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#1772b0;stroke-width:0.230732;stroke-linecap:round;stroke-opacity:1"
@@ -154,14 +205,14 @@
     <text
        xml:space="preserve"
        style="font-size:2.82222px;line-height:1.3;font-family:sans-serif;fill:#4d4d4d;stroke-width:0.264583"
-       x="36.923954"
-       y="42.587696"
+       x="45.06015"
+       y="44.193542"
        id="text41428-7"><tspan
          sodipodi:role="line"
          id="tspan41426-2"
          style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.82222px;font-family:'Work Sans';-inkscape-font-specification:'Work Sans, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4d4d4d;stroke-width:0.264583"
-         x="36.923954"
-         y="42.587696">Toronto</tspan></text>
+         x="45.06015"
+         y="44.193542">Toronto</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:2.82222px;line-height:1.3;font-family:sans-serif;stroke-width:0.264583;fill:#666666"
@@ -184,5 +235,59 @@
          style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.82222px;font-family:'Work Sans';-inkscape-font-specification:'Work Sans, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;stroke-width:0.264583"
          x="73.399048"
          y="26.480289">Scarborough</tspan></text>
+    <circle
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#1772b0;stroke-width:0.230732;stroke-linecap:round;stroke-opacity:1"
+       id="path1811-62-7"
+       cx="52.923126"
+       cy="-73.777824"
+       r="46.146404" />
+    <circle
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#1772b0;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1811-6-8-7"
+       cx="37.780945"
+       cy="-155.64984"
+       r="1.4583294" />
+    <path
+       style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 37.77112,-154.35049 v 27.64591"
+       id="path31279-9-2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 52.916666,-126.70458 V -120.09"
+       id="path31279-7-60-6"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 52.916666,-126.70458 H 37.776784"
+       id="path31281-7-4"
+       sodipodi:nodetypes="cc" />
+    <circle
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#1772b0;stroke-width:0.230732;stroke-linecap:round;stroke-opacity:1"
+       id="path1811-62-7-5"
+       cx="52.923126"
+       cy="119.07259"
+       r="46.146404" />
+    <circle
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#1772b0;stroke-width:0.529167;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1811-6-8-7-2"
+       cx="40.77895"
+       cy="40.167702"
+       r="1.4583294" />
+    <path
+       style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 40.745615,41.54018 0,24.605653"
+       id="path31279-9-2-0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 52.916666,66.145836 v 6.61458"
+       id="path31279-7-60-6-2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#1772b0;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 52.916666,66.145836 -12.148612,0"
+       id="path31281-7-4-9"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>
