@@ -19770,7 +19770,7 @@ const css$1 = {
 };
 const Map = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let values = [2020, 2022];
-  mapboxgl.accessToken = "pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2w2Z2xhOXprMTYzczNlcHNjMnNvdGlmNCJ9.lOgVHrajc1L-LlU0as2i2A";
+  mapboxgl.accessToken = "pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xqOG0zbTQ1MTAzdTNkbnY2OGluMHJ0byJ9.yX_EB8JqRsIRufOOu8LjeQ";
   let mapHeight = 760;
   $$result.css.add(css$1);
   let $$settled;

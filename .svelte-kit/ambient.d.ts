@@ -35,6 +35,7 @@ declare module '$env/static/private' {
 	export const npm_config_noproxy: string;
 	export const HOME: string;
 	export const CONDA_SHLVL: string;
+	export const OLDPWD: string;
 	export const DESKTOP_SESSION: string;
 	export const npm_package_json: string;
 	export const NODE_OPTIONS: string;
@@ -138,6 +139,7 @@ declare module '$env/dynamic/private' {
 		npm_config_noproxy: string;
 		HOME: string;
 		CONDA_SHLVL: string;
+		OLDPWD: string;
 		DESKTOP_SESSION: string;
 		npm_package_json: string;
 		NODE_OPTIONS: string;
