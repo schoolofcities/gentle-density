@@ -3,7 +3,7 @@
     import {rollup} from 'd3-array';
     import {scaleBand} from 'd3-scale';
 
-    import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
+    import suitesLaneway from '../assets/laneway-garden-suites-072023update.geo.json';
     
     let divWidth;
     
@@ -14,7 +14,7 @@
     const sumValues = obj => Object.values(obj).reduce((a, b) => a + b, 0);
     console.log(sumValues(yearCountsLaneway));
 
-    let years = ["2013","2014","2015","2016","2017","2018","2019","2020","2021","2022"];
+    let years = ["2013","2014","2015","2016","2017","2018","2019","2020","2021","2022", "2023"];
 
     function barHeight(amount) {
         return amount * 270 / 200

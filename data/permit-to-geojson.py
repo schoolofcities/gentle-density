@@ -4,11 +4,11 @@ from geopy.geocoders import Nominatim
 
 geolocator = Nominatim(user_agent="geocoder2")
 
-# typename = "secondary-suites"
-# typecode = "Second Suite (New)"
+typename = "secondary-suites"
+typecode = "Second Suite (New)"
 
-typename = "laneway-garden-suites"
-typecode = "New Laneway / Rear Yard Suite"
+# typename = "laneway-garden-suites"
+# typecode = "New Laneway / Rear Yard Suite"
 
 
 def geocode(street_num, street_name, street_type, street_dir):
@@ -75,7 +75,9 @@ def read_permit_data_by_year(year):
 df_table = []
 df_geo = []
 
-for year in ["2013","2014","2015","2016","2017","2018", "2019", "2020", "2021", "2022"]:
+# for year in ["2013","2014","2015","2016","2017","2018", "2019", "2020", "2021", "2022"]:
+
+for year in ["2023"]:
 
     print(year)
 
@@ -87,5 +89,5 @@ for year in ["2013","2014","2015","2016","2017","2018", "2019", "2020", "2021", 
 df_table = pd.concat(df_table)
 df_geo =  gpd.GeoDataFrame(pd.concat(df_geo))
 
-df_table.to_csv(typename + ".csv")
-df_geo.to_file(typename + ".geojson", driver="GeoJSON")
+df_table.to_csv(typename + "2023.csv")
+df_geo.to_file(typename + "2023.geojson", driver="GeoJSON")

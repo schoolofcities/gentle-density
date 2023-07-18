@@ -35,10 +35,8 @@ declare module '$env/static/private' {
 	export const npm_config_noproxy: string;
 	export const HOME: string;
 	export const CONDA_SHLVL: string;
-	export const OLDPWD: string;
 	export const DESKTOP_SESSION: string;
 	export const npm_package_json: string;
-	export const NODE_OPTIONS: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
 	export const GTK_MODULES: string;
 	export const npm_config_userconfig: string;
@@ -100,7 +98,6 @@ declare module '$env/static/private' {
 	export const VTE_VERSION: string;
 	export const INIT_CWD: string;
 	export const EDITOR: string;
-	export const NODE_ENV: string;
 }
 
 /**
@@ -139,10 +136,8 @@ declare module '$env/dynamic/private' {
 		npm_config_noproxy: string;
 		HOME: string;
 		CONDA_SHLVL: string;
-		OLDPWD: string;
 		DESKTOP_SESSION: string;
 		npm_package_json: string;
-		NODE_OPTIONS: string;
 		GNOME_SHELL_SESSION_MODE: string;
 		GTK_MODULES: string;
 		npm_config_userconfig: string;
@@ -204,7 +199,6 @@ declare module '$env/dynamic/private' {
 		VTE_VERSION: string;
 		INIT_CWD: string;
 		EDITOR: string;
-		NODE_ENV: string;
 		[key: string]: string | undefined;
 	}
 }

@@ -8,8 +8,8 @@
     import laneways from '../assets/laneways.geo.json';
     import transitLines from '../assets/transitLines.geo.json';
     import transitStops from '../assets/transitStops.geo.json';
-    import suitesLaneway from '../assets/laneway-garden-suites.geo.json';
-    import suitesSecondary from '../assets/secondary-suites.geo.json';
+    import suitesLaneway from '../assets/laneway-garden-suites-072023update.geo.json';
+    import suitesSecondary from '../assets/secondary-suites-072023update.geo.json';
     import suitesLanewayActive from '../assets/laneway-suites-active-subset.geo.json';
     import suitesSecondaryActive from '../assets/secondary-suites-active-subset.geo.json';
     import zoneYellowRes from '../assets/zone-yellow.geo.json';
