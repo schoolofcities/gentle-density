@@ -19,7 +19,7 @@
     import xSecondary from '../assets/x-secondary.svg';
     import xRearYard from '../assets/x-rearyard.svg';
 
-    let values = [2020,2022];
+    let values = [2020,2023];
 
     let load = 0;
 
@@ -533,7 +533,7 @@
 
         </div>
 
-        <RangeSlider bind:values range pips all='label' step={1} min={2013} max={2022} hoverable={false}/>
+        <RangeSlider bind:values range pips all='label' step={1} min={2013} max={2023} hoverable={false}/>
 
         <p>Open (i.e. Active) Building Permits:</p>
 
