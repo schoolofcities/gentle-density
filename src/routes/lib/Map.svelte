@@ -10,8 +10,8 @@
     import transitStops from '../assets/transitStops.geo.json';
     import suitesLaneway from '../assets/laneway-garden-suites-072023update.geo.json';
     import suitesSecondary from '../assets/secondary-suites-072023update.geo.json';
-    import suitesLanewayActive from '../assets/laneway-suites-active-subset.geo.json';
-    import suitesSecondaryActive from '../assets/secondary-suites-active-subset.geo.json';
+    import suitesLanewayActive from '../assets/laneway-suites-active-subset-072023update.geo.json';
+    import suitesSecondaryActive from '../assets/secondary-suites-active-subset-072023update.geo.json';
     import zoneYellowRes from '../assets/zone-yellow.geo.json';
     import zoneOtherRes from '../assets/zone-otherres.geo.json';
     import income2020 from '../assets/2020.geo.json';
