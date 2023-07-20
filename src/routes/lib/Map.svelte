@@ -552,7 +552,7 @@
         </div>
 
 
-        <p>Residential Zoning:</p>
+        <p>Historical Residential Zoning (prior to May 10, 2023)</p>
 
         <div id="pointLayers">
             
