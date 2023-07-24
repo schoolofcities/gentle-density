@@ -4,6 +4,13 @@ import { scaleBand } from "d3-scale";
 import mapboxgl from "mapbox-gl";
 import { w as writable } from "../../../chunks/index2.js";
 const type$1 = "FeatureCollection";
+const name$1 = "secondary-suites-v2";
+const crs$1 = {
+  type: "name",
+  properties: {
+    name: "urn:ogc:def:crs:OGC:1.3:CRS84"
+  }
+};
 const features$1 = [
   {
     type: "Feature",
@@ -14,8 +21,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.476823,
-        43.656462
+        -79.47682,
+        43.65646
       ]
     }
   },
@@ -28,8 +35,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.417248,
-        43.664594
+        -79.41725,
+        43.66459
       ]
     }
   },
@@ -42,8 +49,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.315603,
-        43.820612
+        -79.3156,
+        43.82061
       ]
     }
   },
@@ -56,8 +63,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.221754,
-        43.781871
+        -79.22175,
+        43.78187
       ]
     }
   },
@@ -70,8 +77,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.291277,
-        43.713873
+        -79.29128,
+        43.71387
       ]
     }
   },
@@ -84,8 +91,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.238595,
-        43.770813
+        -79.2386,
+        43.77081
       ]
     }
   },
@@ -98,8 +105,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.317807,
-        43.733747
+        -79.31781,
+        43.73375
       ]
     }
   },
@@ -112,8 +119,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.348211,
-        43.672928
+        -79.34821,
+        43.67293
       ]
     }
   },
@@ -140,8 +147,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.295145,
-        43.713853
+        -79.29515,
+        43.71385
       ]
     }
   },
@@ -154,8 +161,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.227605,
-        43.798306
+        -79.2276,
+        43.79831
       ]
     }
   },
@@ -168,8 +175,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.298789,
-        43.690749
+        -79.29879,
+        43.69075
       ]
     }
   },
@@ -182,8 +189,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.302631,
-        43.794496
+        -79.30263,
+        43.7945
       ]
     }
   },
@@ -196,8 +203,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.329761,
-        43.766931
+        -79.32976,
+        43.76693
       ]
     }
   },
@@ -211,7 +218,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.17419,
-        43.756997
+        43.757
       ]
     }
   },
@@ -224,8 +231,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.183079,
-        43.795437
+        -79.18308,
+        43.79544
       ]
     }
   },
@@ -238,8 +245,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.243279,
-        43.754028
+        -79.24328,
+        43.75403
       ]
     }
   },
@@ -252,8 +259,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.294198,
-        43.776669
+        -79.2942,
+        43.77667
       ]
     }
   },
@@ -266,8 +273,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.290792,
-        43.815443
+        -79.29079,
+        43.81544
       ]
     }
   },
@@ -280,8 +287,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.412017,
-        43.657589
+        -79.41202,
+        43.65759
       ]
     }
   },
@@ -294,8 +301,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.417216,
-        43.769195
+        -79.41722,
+        43.7692
       ]
     }
   },
@@ -308,8 +315,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.447729,
-        43.661799
+        -79.44773,
+        43.6618
       ]
     }
   },
@@ -322,8 +329,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.265053,
-        43.688303
+        -79.26505,
+        43.6883
       ]
     }
   },
@@ -336,8 +343,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.467258,
-        43.657694
+        -79.46726,
+        43.65769
       ]
     }
   },
@@ -350,8 +357,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.283078,
-        43.685785
+        -79.28308,
+        43.68579
       ]
     }
   },
@@ -364,8 +371,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.463467,
-        43.663339
+        -79.46347,
+        43.66334
       ]
     }
   },
@@ -379,7 +386,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.21619,
-        43.799207
+        43.79921
       ]
     }
   },
@@ -393,7 +400,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.41011,
-        43.788469
+        43.78847
       ]
     }
   },
@@ -406,8 +413,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.439207,
-        43.658716
+        -79.43921,
+        43.65872
       ]
     }
   },
@@ -420,8 +427,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.185779,
-        43.785714
+        -79.18578,
+        43.78571
       ]
     }
   },
@@ -434,8 +441,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.365028,
-        43.665561
+        -79.36503,
+        43.66556
       ]
     }
   },
@@ -448,8 +455,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.347459,
-        43.661646
+        -79.34746,
+        43.66165
       ]
     }
   },
@@ -462,8 +469,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.274784,
-        43.813583
+        -79.27478,
+        43.81358
       ]
     }
   },
@@ -476,8 +483,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.209792,
-        43.738817
+        -79.20979,
+        43.73882
       ]
     }
   },
@@ -490,8 +497,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.502402,
-        43.712612
+        -79.5024,
+        43.71261
       ]
     }
   },
@@ -504,8 +511,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.306028,
-        43.746709
+        -79.30603,
+        43.74671
       ]
     }
   },
@@ -518,8 +525,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.370994,
-        43.773948
+        -79.37099,
+        43.77395
       ]
     }
   },
@@ -532,8 +539,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.162527,
-        43.792379
+        -79.16253,
+        43.79238
       ]
     }
   },
@@ -546,8 +553,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.566993,
-        43.640931
+        -79.56699,
+        43.64093
       ]
     }
   },
@@ -560,8 +567,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.598887,
-        43.745629
+        -79.59889,
+        43.74563
       ]
     }
   },
@@ -574,8 +581,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.531665,
-        43.605024
+        -79.53167,
+        43.60502
       ]
     }
   },
@@ -588,8 +595,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.613338,
-        43.732721
+        -79.61334,
+        43.73272
       ]
     }
   },
@@ -603,7 +610,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.32024,
-        43.778416
+        43.77842
       ]
     }
   },
@@ -616,8 +623,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.362655,
-        43.700067
+        -79.36266,
+        43.70007
       ]
     }
   },
@@ -630,8 +637,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.212971,
-        43.748787
+        -79.21297,
+        43.74879
       ]
     }
   },
@@ -644,8 +651,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.404272,
-        43.671225
+        -79.40427,
+        43.67122
       ]
     }
   },
@@ -658,8 +665,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.293019,
-        43.743848
+        -79.29302,
+        43.74385
       ]
     }
   },
@@ -672,8 +679,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.277443,
-        43.803058
+        -79.27744,
+        43.80306
       ]
     }
   },
@@ -686,8 +693,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.299821,
-        43.718405
+        -79.29982,
+        43.7184
       ]
     }
   },
@@ -700,8 +707,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.244653,
-        43.749182
+        -79.24465,
+        43.74918
       ]
     }
   },
@@ -714,8 +721,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.457527,
-        43.680851
+        -79.45753,
+        43.68085
       ]
     }
   },
@@ -728,8 +735,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.304624,
-        43.793455
+        -79.30462,
+        43.79346
       ]
     }
   },
@@ -742,8 +749,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.320519,
-        43.668865
+        -79.32052,
+        43.66886
       ]
     }
   },
@@ -756,7 +763,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.455892,
+        -79.45589,
         43.67849
       ]
     }
@@ -770,8 +777,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.440724,
-        43.677828
+        -79.44072,
+        43.67783
       ]
     }
   },
@@ -784,8 +791,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.425897,
-        43.651819
+        -79.4259,
+        43.65182
       ]
     }
   },
@@ -798,8 +805,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.247576,
-        43.701853
+        -79.24758,
+        43.70185
       ]
     }
   },
@@ -812,8 +819,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.178877,
-        43.754588
+        -79.17888,
+        43.75459
       ]
     }
   },
@@ -826,8 +833,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.595928,
-        43.731725
+        -79.59593,
+        43.73172
       ]
     }
   },
@@ -840,8 +847,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.307249,
-        43.756243
+        -79.30725,
+        43.75624
       ]
     }
   },
@@ -854,8 +861,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.287404,
-        43.820276
+        -79.2874,
+        43.82028
       ]
     }
   },
@@ -868,7 +875,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.472214,
+        -79.47221,
         43.64466
       ]
     }
@@ -882,8 +889,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.440844,
-        43.791161
+        -79.44084,
+        43.79116
       ]
     }
   },
@@ -896,8 +903,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.182056,
-        43.807736
+        -79.18206,
+        43.80774
       ]
     }
   },
@@ -910,8 +917,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.262894,
-        43.745155
+        -79.26289,
+        43.74515
       ]
     }
   },
@@ -924,8 +931,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.187751,
-        43.776702
+        -79.18775,
+        43.7767
       ]
     }
   },
@@ -938,8 +945,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.217984,
-        43.774429
+        -79.21798,
+        43.77443
       ]
     }
   },
@@ -952,8 +959,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.481774,
-        43.683464
+        -79.48177,
+        43.68346
       ]
     }
   },
@@ -966,8 +973,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.289971,
-        43.819469
+        -79.28997,
+        43.81947
       ]
     }
   },
@@ -980,8 +987,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.424729,
-        43.651754
+        -79.42473,
+        43.65175
       ]
     }
   },
@@ -994,8 +1001,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.426168,
-        43.647574
+        -79.42617,
+        43.64757
       ]
     }
   },
@@ -1008,8 +1015,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.498508,
-        43.680255
+        -79.49851,
+        43.68026
       ]
     }
   },
@@ -1022,8 +1029,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.219956,
-        43.768945
+        -79.21996,
+        43.76895
       ]
     }
   },
@@ -1036,8 +1043,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.502615,
-        43.678344
+        -79.50262,
+        43.67834
       ]
     }
   },
@@ -1050,8 +1057,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.292383,
-        43.742006
+        -79.29238,
+        43.74201
       ]
     }
   },
@@ -1064,8 +1071,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.214416,
-        43.760258
+        -79.21442,
+        43.76026
       ]
     }
   },
@@ -1078,8 +1085,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.540339,
-        43.610654
+        -79.54034,
+        43.61065
       ]
     }
   },
@@ -1092,8 +1099,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.312652,
-        43.674714
+        -79.31265,
+        43.67471
       ]
     }
   },
@@ -1106,8 +1113,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.428837,
-        43.674129
+        -79.42884,
+        43.67413
       ]
     }
   },
@@ -1120,8 +1127,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.411707,
-        43.670077
+        -79.41171,
+        43.67008
       ]
     }
   },
@@ -1134,8 +1141,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.381201,
-        43.660708
+        -79.3812,
+        43.66071
       ]
     }
   },
@@ -1148,8 +1155,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.263227,
-        43.739545
+        -79.26323,
+        43.73954
       ]
     }
   },
@@ -1162,8 +1169,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.288902,
-        43.704765
+        -79.2889,
+        43.70477
       ]
     }
   },
@@ -1176,8 +1183,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.349273,
-        43.697165
+        -79.34927,
+        43.69716
       ]
     }
   },
@@ -1190,8 +1197,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.176608,
-        43.789234
+        -79.17661,
+        43.78923
       ]
     }
   },
@@ -1204,8 +1211,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.136692,
-        43.775539
+        -79.13669,
+        43.77554
       ]
     }
   },
@@ -1218,8 +1225,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.432481,
-        43.698832
+        -79.43248,
+        43.69883
       ]
     }
   },
@@ -1233,7 +1240,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.29265,
-        43.740696
+        43.7407
       ]
     }
   },
@@ -1246,8 +1253,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.219674,
-        43.764481
+        -79.21967,
+        43.76448
       ]
     }
   },
@@ -1260,8 +1267,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.446108,
-        43.675599
+        -79.44611,
+        43.6756
       ]
     }
   },
@@ -1274,7 +1281,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.325688,
+        -79.32569,
         43.66827
       ]
     }
@@ -1288,8 +1295,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.430235,
-        43.650116
+        -79.43023,
+        43.65012
       ]
     }
   },
@@ -1302,7 +1309,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.417232,
+        -79.41723,
         43.65315
       ]
     }
@@ -1316,8 +1323,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.497036,
-        43.765851
+        -79.49704,
+        43.76585
       ]
     }
   },
@@ -1330,7 +1337,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.256716,
+        -79.25672,
         43.7667
       ]
     }
@@ -1344,7 +1351,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.426628,
+        -79.42663,
         43.65113
       ]
     }
@@ -1358,8 +1365,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.255222,
-        43.747694
+        -79.25522,
+        43.74769
       ]
     }
   },
@@ -1372,7 +1379,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.356999,
+        -79.357,
         43.77364
       ]
     }
@@ -1386,8 +1393,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.501151,
-        43.767674
+        -79.50115,
+        43.76767
       ]
     }
   },
@@ -1400,8 +1407,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.215582,
-        43.774451
+        -79.21558,
+        43.77445
       ]
     }
   },
@@ -1414,7 +1421,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.321343,
+        -79.32134,
         43.78067
       ]
     }
@@ -1429,7 +1436,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.44179,
-        43.663055
+        43.66305
       ]
     }
   },
@@ -1442,8 +1449,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.318014,
-        43.683517
+        -79.31801,
+        43.68352
       ]
     }
   },
@@ -1456,8 +1463,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.335469,
-        43.675934
+        -79.33547,
+        43.67593
       ]
     }
   },
@@ -1470,8 +1477,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.260303,
-        43.766659
+        -79.2603,
+        43.76666
       ]
     }
   },
@@ -1484,7 +1491,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.448853,
+        -79.44885,
         43.66287
       ]
     }
@@ -1498,8 +1505,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.341943,
-        43.799298
+        -79.34194,
+        43.7993
       ]
     }
   },
@@ -1512,8 +1519,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.243881,
-        43.767128
+        -79.24388,
+        43.76713
       ]
     }
   },
@@ -1526,8 +1533,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.189376,
-        43.761674
+        -79.18938,
+        43.76167
       ]
     }
   },
@@ -1540,8 +1547,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.451469,
-        43.640292
+        -79.45147,
+        43.64029
       ]
     }
   },
@@ -1554,8 +1561,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.614977,
-        43.733552
+        -79.61498,
+        43.73355
       ]
     }
   },
@@ -1568,8 +1575,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.435462,
-        43.673365
+        -79.43546,
+        43.67336
       ]
     }
   },
@@ -1582,7 +1589,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.315133,
+        -79.31513,
         43.77298
       ]
     }
@@ -1596,8 +1603,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.436745,
-        43.660659
+        -79.43675,
+        43.66066
       ]
     }
   },
@@ -1610,8 +1617,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.313648,
-        43.776328
+        -79.31365,
+        43.77633
       ]
     }
   },
@@ -1624,8 +1631,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.293434,
-        43.795726
+        -79.29343,
+        43.79573
       ]
     }
   },
@@ -1638,8 +1645,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.406338,
-        43.655996
+        -79.40634,
+        43.656
       ]
     }
   },
@@ -1652,8 +1659,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.580307,
-        43.719949
+        -79.58031,
+        43.71995
       ]
     }
   },
@@ -1666,8 +1673,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.253796,
-        43.750246
+        -79.2538,
+        43.75025
       ]
     }
   },
@@ -1680,8 +1687,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.495697,
-        43.767071
+        -79.4957,
+        43.76707
       ]
     }
   },
@@ -1694,8 +1701,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.286934,
-        43.761765
+        -79.28693,
+        43.76176
       ]
     }
   },
@@ -1708,8 +1715,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.336095,
-        43.673491
+        -79.3361,
+        43.67349
       ]
     }
   },
@@ -1722,7 +1729,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.152971,
+        -79.15297,
         43.78099
       ]
     }
@@ -1736,8 +1743,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.324373,
-        43.670216
+        -79.32437,
+        43.67022
       ]
     }
   },
@@ -1750,8 +1757,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.497318,
-        43.769079
+        -79.49732,
+        43.76908
       ]
     }
   },
@@ -1764,8 +1771,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.286479,
-        43.827438
+        -79.28648,
+        43.82744
       ]
     }
   },
@@ -1778,8 +1785,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.442424,
-        43.643859
+        -79.44242,
+        43.64386
       ]
     }
   },
@@ -1792,8 +1799,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.408528,
-        43.655514
+        -79.40853,
+        43.65551
       ]
     }
   },
@@ -1806,8 +1813,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.228166,
-        43.753224
+        -79.22817,
+        43.75322
       ]
     }
   },
@@ -1820,8 +1827,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.449466,
-        43.641995
+        -79.44947,
+        43.642
       ]
     }
   },
@@ -1835,7 +1842,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.47723,
-        43.718634
+        43.71863
       ]
     }
   },
@@ -1848,8 +1855,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.444245,
-        43.710692
+        -79.44424,
+        43.71069
       ]
     }
   },
@@ -1862,7 +1869,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.203986,
+        -79.20399,
         43.79163
       ]
     }
@@ -1876,8 +1883,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.370469,
-        43.730018
+        -79.37047,
+        43.73002
       ]
     }
   },
@@ -1890,7 +1897,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.411766,
+        -79.41177,
         43.67051
       ]
     }
@@ -1904,8 +1911,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.333266,
-        43.685716
+        -79.33327,
+        43.68572
       ]
     }
   },
@@ -1918,8 +1925,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.482217,
-        43.653925
+        -79.48222,
+        43.65393
       ]
     }
   },
@@ -1932,8 +1939,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.487808,
-        43.634115
+        -79.48781,
+        43.63412
       ]
     }
   },
@@ -1946,8 +1953,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.321019,
-        43.790037
+        -79.32102,
+        43.79004
       ]
     }
   },
@@ -1960,8 +1967,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.162221,
-        43.795339
+        -79.16222,
+        43.79534
       ]
     }
   },
@@ -1974,8 +1981,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.601601,
-        43.724066
+        -79.6016,
+        43.72407
       ]
     }
   },
@@ -1988,8 +1995,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.289455,
-        43.709565
+        -79.28946,
+        43.70956
       ]
     }
   },
@@ -2003,7 +2010,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.59503,
-        43.728102
+        43.7281
       ]
     }
   },
@@ -2030,8 +2037,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.160272,
-        43.771781
+        -79.16027,
+        43.77178
       ]
     }
   },
@@ -2059,7 +2066,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.43095,
-        43.671936
+        43.67194
       ]
     }
   },
@@ -2072,8 +2079,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.483309,
-        43.678868
+        -79.48331,
+        43.67887
       ]
     }
   },
@@ -2086,8 +2093,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.502147,
-        43.628963
+        -79.50215,
+        43.62896
       ]
     }
   },
@@ -2100,8 +2107,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.441044,
-        43.659874
+        -79.44104,
+        43.65987
       ]
     }
   },
@@ -2114,8 +2121,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.540787,
-        43.649891
+        -79.54079,
+        43.64989
       ]
     }
   },
@@ -2129,7 +2136,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.26316,
-        43.761786
+        43.76179
       ]
     }
   },
@@ -2142,8 +2149,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.436879,
-        43.660381
+        -79.43688,
+        43.66038
       ]
     }
   },
@@ -2156,8 +2163,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.595246,
-        43.729008
+        -79.59525,
+        43.72901
       ]
     }
   },
@@ -2170,8 +2177,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.172041,
-        43.775669
+        -79.17204,
+        43.77567
       ]
     }
   },
@@ -2184,8 +2191,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.155284,
-        43.782484
+        -79.15528,
+        43.78248
       ]
     }
   },
@@ -2198,8 +2205,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.553719,
-        43.717162
+        -79.55372,
+        43.71716
       ]
     }
   },
@@ -2212,7 +2219,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.335221,
+        -79.33522,
         43.66159
       ]
     }
@@ -2226,8 +2233,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.503629,
-        43.615758
+        -79.50363,
+        43.61576
       ]
     }
   },
@@ -2240,8 +2247,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.423742,
-        43.668664
+        -79.42374,
+        43.66866
       ]
     }
   },
@@ -2254,8 +2261,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.566022,
-        43.721853
+        -79.56602,
+        43.72185
       ]
     }
   },
@@ -2268,8 +2275,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.500994,
-        43.629302
+        -79.50099,
+        43.6293
       ]
     }
   },
@@ -2282,8 +2289,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.224311,
-        43.777614
+        -79.22431,
+        43.77761
       ]
     }
   },
@@ -2296,8 +2303,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.265952,
-        43.704821
+        -79.26595,
+        43.70482
       ]
     }
   },
@@ -2310,8 +2317,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.509924,
-        43.702279
+        -79.50992,
+        43.70228
       ]
     }
   },
@@ -2324,8 +2331,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.168652,
-        43.771504
+        -79.16865,
+        43.7715
       ]
     }
   },
@@ -2338,8 +2345,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.420032,
-        43.776349
+        -79.42003,
+        43.77635
       ]
     }
   },
@@ -2352,8 +2359,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.429001,
-        43.792655
+        -79.429,
+        43.79266
       ]
     }
   },
@@ -2366,8 +2373,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.241682,
-        43.771855
+        -79.24168,
+        43.77186
       ]
     }
   },
@@ -2380,8 +2387,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.293877,
-        43.683534
+        -79.29388,
+        43.68353
       ]
     }
   },
@@ -2394,8 +2401,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.328058,
-        43.802976
+        -79.32806,
+        43.80298
       ]
     }
   },
@@ -2408,7 +2415,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.421299,
+        -79.4213,
         43.67002
       ]
     }
@@ -2436,8 +2443,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.365498,
-        43.789366
+        -79.3655,
+        43.78937
       ]
     }
   },
@@ -2450,7 +2457,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.214072,
+        -79.21407,
         43.75745
       ]
     }
@@ -2464,7 +2471,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.486269,
+        -79.48627,
         43.632
       ]
     }
@@ -2478,8 +2485,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.439756,
-        43.696184
+        -79.43976,
+        43.69618
       ]
     }
   },
@@ -2492,8 +2499,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.422067,
-        43.659993
+        -79.42207,
+        43.65999
       ]
     }
   },
@@ -2506,8 +2513,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.443111,
-        43.686695
+        -79.44311,
+        43.6867
       ]
     }
   },
@@ -2520,8 +2527,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.395943,
-        43.654346
+        -79.39594,
+        43.65435
       ]
     }
   },
@@ -2534,8 +2541,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.307408,
-        43.817303
+        -79.30741,
+        43.8173
       ]
     }
   },
@@ -2548,7 +2555,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.185449,
+        -79.18545,
         43.78705
       ]
     }
@@ -2562,8 +2569,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.325748,
-        43.790013
+        -79.32575,
+        43.79001
       ]
     }
   },
@@ -2576,8 +2583,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.245687,
-        43.764167
+        -79.24569,
+        43.76417
       ]
     }
   },
@@ -2590,8 +2597,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.446913,
-        43.684495
+        -79.44691,
+        43.68449
       ]
     }
   },
@@ -2604,8 +2611,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.290585,
-        43.794976
+        -79.29058,
+        43.79498
       ]
     }
   },
@@ -2618,8 +2625,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.319403,
-        43.757652
+        -79.3194,
+        43.75765
       ]
     }
   },
@@ -2632,8 +2639,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.614262,
-        43.733159
+        -79.61426,
+        43.73316
       ]
     }
   },
@@ -2646,8 +2653,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.542911,
-        43.596123
+        -79.54291,
+        43.59612
       ]
     }
   },
@@ -2660,8 +2667,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.282952,
-        43.795457
+        -79.28295,
+        43.79546
       ]
     }
   },
@@ -2674,8 +2681,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.406199,
-        43.761542
+        -79.4062,
+        43.76154
       ]
     }
   },
@@ -2688,8 +2695,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.225849,
-        43.769964
+        -79.22585,
+        43.76996
       ]
     }
   },
@@ -2702,7 +2709,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.611586,
+        -79.61159,
         43.73326
       ]
     }
@@ -2716,8 +2723,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.442281,
-        43.642637
+        -79.44228,
+        43.64264
       ]
     }
   },
@@ -2730,8 +2737,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.204276,
-        43.803877
+        -79.20428,
+        43.80388
       ]
     }
   },
@@ -2744,7 +2751,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.245195,
+        -79.24519,
         43.75029
       ]
     }
@@ -2758,8 +2765,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.274557,
-        43.696102
+        -79.27456,
+        43.6961
       ]
     }
   },
@@ -2772,8 +2779,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.533688,
-        43.607505
+        -79.53369,
+        43.60751
       ]
     }
   },
@@ -2786,8 +2793,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.336611,
-        43.690769
+        -79.33661,
+        43.69077
       ]
     }
   },
@@ -2800,8 +2807,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.394586,
-        43.677189
+        -79.39459,
+        43.67719
       ]
     }
   },
@@ -2814,8 +2821,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418059,
-        43.645908
+        -79.41806,
+        43.64591
       ]
     }
   },
@@ -2828,8 +2835,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418059,
-        43.645908
+        -79.41806,
+        43.64591
       ]
     }
   },
@@ -2842,8 +2849,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418059,
-        43.645908
+        -79.41806,
+        43.64591
       ]
     }
   },
@@ -2856,8 +2863,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418059,
-        43.645908
+        -79.41806,
+        43.64591
       ]
     }
   },
@@ -2871,7 +2878,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.42039,
-        43.775325
+        43.77533
       ]
     }
   },
@@ -2884,8 +2891,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.410494,
-        43.666391
+        -79.41049,
+        43.66639
       ]
     }
   },
@@ -2898,8 +2905,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.242127,
-        43.764188
+        -79.24213,
+        43.76419
       ]
     }
   },
@@ -2912,8 +2919,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.327074,
-        43.687043
+        -79.32707,
+        43.68704
       ]
     }
   },
@@ -2926,8 +2933,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.438496,
-        43.671161
+        -79.4385,
+        43.67116
       ]
     }
   },
@@ -2940,8 +2947,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.476949,
-        43.666446
+        -79.47695,
+        43.66645
       ]
     }
   },
@@ -2954,8 +2961,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.181634,
-        43.787501
+        -79.18163,
+        43.7875
       ]
     }
   },
@@ -2968,7 +2975,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.433637,
+        -79.43364,
         43.6484
       ]
     }
@@ -2982,8 +2989,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.341731,
-        43.671848
+        -79.34173,
+        43.67185
       ]
     }
   },
@@ -2996,8 +3003,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.338429,
-        43.666326
+        -79.33843,
+        43.66633
       ]
     }
   },
@@ -3010,7 +3017,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.460634,
+        -79.46063,
         43.70927
       ]
     }
@@ -3024,8 +3031,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.320169,
-        43.675065
+        -79.32017,
+        43.67506
       ]
     }
   },
@@ -3038,8 +3045,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.445265,
-        43.640668
+        -79.44527,
+        43.64067
       ]
     }
   },
@@ -3052,8 +3059,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.230888,
-        43.814128
+        -79.23089,
+        43.81413
       ]
     }
   },
@@ -3066,8 +3073,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.519182,
-        43.651381
+        -79.51918,
+        43.65138
       ]
     }
   },
@@ -3081,7 +3088,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.39107,
-        43.715206
+        43.71521
       ]
     }
   },
@@ -3094,8 +3101,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.397286,
-        43.694168
+        -79.39729,
+        43.69417
       ]
     }
   },
@@ -3108,8 +3115,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.423227,
-        43.658666
+        -79.42323,
+        43.65867
       ]
     }
   },
@@ -3122,8 +3129,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.593513,
-        43.752823
+        -79.59351,
+        43.75282
       ]
     }
   },
@@ -3136,8 +3143,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.338273,
-        43.787439
+        -79.33827,
+        43.78744
       ]
     }
   },
@@ -3150,8 +3157,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.502062,
-        43.766959
+        -79.50206,
+        43.76696
       ]
     }
   },
@@ -3164,8 +3171,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.431833,
-        43.675859
+        -79.43183,
+        43.67586
       ]
     }
   },
@@ -3178,8 +3185,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.234123,
-        43.760242
+        -79.23412,
+        43.76024
       ]
     }
   },
@@ -3192,8 +3199,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.404382,
-        43.674062
+        -79.40438,
+        43.67406
       ]
     }
   },
@@ -3207,7 +3214,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.4015,
-        43.645452
+        43.64545
       ]
     }
   },
@@ -3220,8 +3227,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.404195,
-        43.674225
+        -79.4042,
+        43.67422
       ]
     }
   },
@@ -3234,8 +3241,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.433649,
-        43.684669
+        -79.43365,
+        43.68467
       ]
     }
   },
@@ -3248,8 +3255,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.436277,
-        43.684111
+        -79.43628,
+        43.68411
       ]
     }
   },
@@ -3262,8 +3269,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.573178,
-        43.659248
+        -79.57318,
+        43.65925
       ]
     }
   },
@@ -3276,8 +3283,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.573776,
-        43.724668
+        -79.57378,
+        43.72467
       ]
     }
   },
@@ -3291,7 +3298,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.26179,
-        43.763221
+        43.76322
       ]
     }
   },
@@ -3304,8 +3311,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.432026,
-        43.676341
+        -79.43203,
+        43.67634
       ]
     }
   },
@@ -3318,8 +3325,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.543077,
-        43.660579
+        -79.54308,
+        43.66058
       ]
     }
   },
@@ -3332,8 +3339,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.347165,
-        43.793497
+        -79.34717,
+        43.7935
       ]
     }
   },
@@ -3346,7 +3353,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.615188,
+        -79.61519,
         43.73245
       ]
     }
@@ -3360,8 +3367,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.390333,
-        43.682321
+        -79.39033,
+        43.68232
       ]
     }
   },
@@ -3374,8 +3381,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.407234,
-        43.701963
+        -79.40723,
+        43.70196
       ]
     }
   },
@@ -3388,8 +3395,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.196869,
-        43.770513
+        -79.19687,
+        43.77051
       ]
     }
   },
@@ -3403,7 +3410,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.24703,
-        43.772351
+        43.77235
       ]
     }
   },
@@ -3416,8 +3423,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.423228,
-        43.718841
+        -79.42323,
+        43.71884
       ]
     }
   },
@@ -3430,8 +3437,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.439733,
-        43.751858
+        -79.43973,
+        43.75186
       ]
     }
   },
@@ -3444,8 +3451,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.495767,
-        43.766873
+        -79.49577,
+        43.76687
       ]
     }
   },
@@ -3458,8 +3465,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.238551,
-        43.760988
+        -79.23855,
+        43.76099
       ]
     }
   },
@@ -3472,8 +3479,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.237787,
-        43.761238
+        -79.23779,
+        43.76124
       ]
     }
   },
@@ -3486,7 +3493,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.565424,
+        -79.56542,
         43.72139
       ]
     }
@@ -3500,8 +3507,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.259367,
-        43.764267
+        -79.25937,
+        43.76427
       ]
     }
   },
@@ -3514,8 +3521,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.406211,
-        43.760005
+        -79.40621,
+        43.76
       ]
     }
   },
@@ -3528,7 +3535,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.300335,
+        -79.30034,
         43.69962
       ]
     }
@@ -3542,8 +3549,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.363472,
-        43.663806
+        -79.36347,
+        43.66381
       ]
     }
   },
@@ -3556,8 +3563,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.405798,
-        43.761633
+        -79.4058,
+        43.76163
       ]
     }
   },
@@ -3570,8 +3577,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.308866,
-        43.676711
+        -79.30887,
+        43.67671
       ]
     }
   },
@@ -3584,8 +3591,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.434068,
-        43.674495
+        -79.43407,
+        43.6745
       ]
     }
   },
@@ -3598,8 +3605,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.434022,
-        43.674538
+        -79.43402,
+        43.67454
       ]
     }
   },
@@ -3612,8 +3619,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.507407,
-        43.636586
+        -79.50741,
+        43.63659
       ]
     }
   },
@@ -3626,8 +3633,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.248581,
-        43.704924
+        -79.24858,
+        43.70492
       ]
     }
   },
@@ -3640,8 +3647,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.286303,
-        43.825128
+        -79.2863,
+        43.82513
       ]
     }
   },
@@ -3654,8 +3661,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.217369,
-        43.767752
+        -79.21737,
+        43.76775
       ]
     }
   },
@@ -3668,8 +3675,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.460826,
-        43.680031
+        -79.46083,
+        43.68003
       ]
     }
   },
@@ -3682,8 +3689,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.385559,
-        43.707322
+        -79.38556,
+        43.70732
       ]
     }
   },
@@ -3697,7 +3704,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.29937,
-        43.792958
+        43.79296
       ]
     }
   },
@@ -3710,8 +3717,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.406063,
-        43.645859
+        -79.40606,
+        43.64586
       ]
     }
   },
@@ -3724,8 +3731,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.568139,
-        43.728192
+        -79.56814,
+        43.72819
       ]
     }
   },
@@ -3738,8 +3745,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.583802,
-        43.723466
+        -79.5838,
+        43.72347
       ]
     }
   },
@@ -3752,7 +3759,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.333834,
+        -79.33383,
         43.69157
       ]
     }
@@ -3766,8 +3773,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.181895,
-        43.794804
+        -79.18189,
+        43.7948
       ]
     }
   },
@@ -3780,8 +3787,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.451262,
-        43.686044
+        -79.45126,
+        43.68604
       ]
     }
   },
@@ -3794,7 +3801,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.304422,
+        -79.30442,
         43.66584
       ]
     }
@@ -3808,8 +3815,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.395605,
-        43.654606
+        -79.39561,
+        43.65461
       ]
     }
   },
@@ -3822,8 +3829,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.262555,
-        43.764951
+        -79.26256,
+        43.76495
       ]
     }
   },
@@ -3836,8 +3843,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.316531,
-        43.697479
+        -79.31653,
+        43.69748
       ]
     }
   },
@@ -3850,8 +3857,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.431479,
-        43.662937
+        -79.43148,
+        43.66294
       ]
     }
   },
@@ -3864,8 +3871,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.170856,
-        43.788622
+        -79.17086,
+        43.78862
       ]
     }
   },
@@ -3878,8 +3885,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.445136,
-        43.639609
+        -79.44514,
+        43.63961
       ]
     }
   },
@@ -3892,8 +3899,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.340511,
-        43.682615
+        -79.34051,
+        43.68261
       ]
     }
   },
@@ -3906,8 +3913,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.235236,
-        43.753793
+        -79.23524,
+        43.75379
       ]
     }
   },
@@ -3920,8 +3927,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.329796,
-        43.665061
+        -79.3298,
+        43.66506
       ]
     }
   },
@@ -3934,8 +3941,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.434953,
-        43.695846
+        -79.43495,
+        43.69585
       ]
     }
   },
@@ -3948,7 +3955,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.535021,
+        -79.53502,
         43.66191
       ]
     }
@@ -3962,8 +3969,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.412612,
-        43.645344
+        -79.41261,
+        43.64534
       ]
     }
   },
@@ -3976,8 +3983,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.433719,
-        43.662686
+        -79.43372,
+        43.66269
       ]
     }
   },
@@ -3990,8 +3997,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.337206,
-        43.673519
+        -79.33721,
+        43.67352
       ]
     }
   },
@@ -4004,8 +4011,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.305542,
-        43.694101
+        -79.30554,
+        43.6941
       ]
     }
   },
@@ -4018,8 +4025,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.600334,
-        43.745539
+        -79.60033,
+        43.74554
       ]
     }
   },
@@ -4032,8 +4039,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.311928,
-        43.688682
+        -79.31193,
+        43.68868
       ]
     }
   },
@@ -4046,8 +4053,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.422225,
-        43.677057
+        -79.42222,
+        43.67706
       ]
     }
   },
@@ -4060,8 +4067,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.312483,
-        43.776773
+        -79.31248,
+        43.77677
       ]
     }
   },
@@ -4074,8 +4081,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.416323,
-        43.680975
+        -79.41632,
+        43.68097
       ]
     }
   },
@@ -4089,7 +4096,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.40765,
-        43.699489
+        43.69949
       ]
     }
   },
@@ -4102,8 +4109,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.316247,
-        43.805591
+        -79.31625,
+        43.80559
       ]
     }
   },
@@ -4116,7 +4123,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.179364,
+        -79.17936,
         43.77624
       ]
     }
@@ -4130,8 +4137,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.404189,
-        43.662528
+        -79.40419,
+        43.66253
       ]
     }
   },
@@ -4144,8 +4151,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.444662,
-        43.681471
+        -79.44466,
+        43.68147
       ]
     }
   },
@@ -4158,8 +4165,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.211406,
-        43.749127
+        -79.21141,
+        43.74913
       ]
     }
   },
@@ -4172,8 +4179,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.415669,
-        43.645872
+        -79.41567,
+        43.64587
       ]
     }
   },
@@ -4186,8 +4193,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.578485,
-        43.737655
+        -79.57849,
+        43.73765
       ]
     }
   },
@@ -4200,8 +4207,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.221745,
-        43.736492
+        -79.22174,
+        43.73649
       ]
     }
   },
@@ -4214,8 +4221,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.261986,
-        43.747377
+        -79.26199,
+        43.74738
       ]
     }
   },
@@ -4228,8 +4235,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.533988,
-        43.726074
+        -79.53399,
+        43.72607
       ]
     }
   },
@@ -4242,7 +4249,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.462085,
+        -79.46209,
         43.66341
       ]
     }
@@ -4256,8 +4263,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.455685,
-        43.693028
+        -79.45569,
+        43.69303
       ]
     }
   },
@@ -4270,8 +4277,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.408835,
-        43.659662
+        -79.40883,
+        43.65966
       ]
     }
   },
@@ -4284,8 +4291,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.408227,
-        43.717885
+        -79.40823,
+        43.71789
       ]
     }
   },
@@ -4298,8 +4305,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.298077,
-        43.736237
+        -79.29808,
+        43.73624
       ]
     }
   },
@@ -4312,8 +4319,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.570656,
-        43.762164
+        -79.57066,
+        43.76216
       ]
     }
   },
@@ -4326,8 +4333,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.463042,
-        43.727913
+        -79.46304,
+        43.72791
       ]
     }
   },
@@ -4340,8 +4347,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.307089,
-        43.757125
+        -79.30709,
+        43.75713
       ]
     }
   },
@@ -4354,8 +4361,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.416933,
-        43.698237
+        -79.41693,
+        43.69824
       ]
     }
   },
@@ -4368,8 +4375,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.248952,
-        43.739532
+        -79.24895,
+        43.73953
       ]
     }
   },
@@ -4396,8 +4403,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.407112,
-        43.658598
+        -79.40711,
+        43.6586
       ]
     }
   },
@@ -4410,8 +4417,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.409765,
-        43.645636
+        -79.40976,
+        43.64564
       ]
     }
   },
@@ -4424,8 +4431,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.560705,
-        43.726443
+        -79.5607,
+        43.72644
       ]
     }
   },
@@ -4438,8 +4445,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.298248,
-        43.679985
+        -79.29825,
+        43.67999
       ]
     }
   },
@@ -4452,8 +4459,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.421609,
-        43.673978
+        -79.42161,
+        43.67398
       ]
     }
   },
@@ -4466,8 +4473,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.196213,
-        43.750996
+        -79.19621,
+        43.751
       ]
     }
   },
@@ -4480,8 +4487,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.404578,
-        43.657919
+        -79.40458,
+        43.65792
       ]
     }
   },
@@ -4494,8 +4501,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.417696,
-        43.664711
+        -79.4177,
+        43.66471
       ]
     }
   },
@@ -4508,8 +4515,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.190363,
-        43.773101
+        -79.19036,
+        43.7731
       ]
     }
   },
@@ -4522,7 +4529,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.333426,
+        -79.33343,
         43.79346
       ]
     }
@@ -4536,8 +4543,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.613149,
-        43.733539
+        -79.61315,
+        43.73354
       ]
     }
   },
@@ -4550,8 +4557,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.326959,
-        43.762026
+        -79.32696,
+        43.76203
       ]
     }
   },
@@ -4564,8 +4571,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.428412,
-        43.634176
+        -79.42841,
+        43.63418
       ]
     }
   },
@@ -4578,8 +4585,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.415524,
-        43.659952
+        -79.41552,
+        43.65995
       ]
     }
   },
@@ -4592,8 +4599,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.312869,
-        43.769354
+        -79.31287,
+        43.76935
       ]
     }
   },
@@ -4606,8 +4613,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.230877,
-        43.733996
+        -79.23088,
+        43.734
       ]
     }
   },
@@ -4621,7 +4628,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.32018,
-        43.778879
+        43.77888
       ]
     }
   },
@@ -4634,8 +4641,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.165735,
-        43.788387
+        -79.16573,
+        43.78839
       ]
     }
   },
@@ -4648,8 +4655,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.283658,
-        43.753175
+        -79.28366,
+        43.75317
       ]
     }
   },
@@ -4662,8 +4669,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.455685,
-        43.693028
+        -79.45569,
+        43.69303
       ]
     }
   },
@@ -4676,8 +4683,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.611788,
-        43.733056
+        -79.61179,
+        43.73306
       ]
     }
   },
@@ -4690,8 +4697,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.371691,
-        43.659584
+        -79.37169,
+        43.65958
       ]
     }
   },
@@ -4704,8 +4711,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.471739,
-        43.713044
+        -79.47174,
+        43.71304
       ]
     }
   },
@@ -4718,8 +4725,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.232913,
-        43.724326
+        -79.23291,
+        43.72433
       ]
     }
   },
@@ -4732,8 +4739,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.255696,
-        43.768119
+        -79.2557,
+        43.76812
       ]
     }
   },
@@ -4746,8 +4753,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.407019,
-        43.647504
+        -79.40702,
+        43.6475
       ]
     }
   },
@@ -4760,8 +4767,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.335956,
-        43.673525
+        -79.33596,
+        43.67352
       ]
     }
   },
@@ -4774,8 +4781,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.332553,
-        43.693008
+        -79.33255,
+        43.69301
       ]
     }
   },
@@ -4788,8 +4795,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.313152,
-        43.673342
+        -79.31315,
+        43.67334
       ]
     }
   },
@@ -4802,8 +4809,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.433642,
-        43.649249
+        -79.43364,
+        43.64925
       ]
     }
   },
@@ -4817,7 +4824,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.4402,
-        43.690767
+        43.69077
       ]
     }
   },
@@ -4830,8 +4837,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.460294,
-        43.688848
+        -79.46029,
+        43.68885
       ]
     }
   },
@@ -4844,8 +4851,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.408569,
-        43.652341
+        -79.40857,
+        43.65234
       ]
     }
   },
@@ -4858,8 +4865,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.321011,
-        43.676594
+        -79.32101,
+        43.67659
       ]
     }
   },
@@ -4872,8 +4879,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.482563,
-        43.655657
+        -79.48256,
+        43.65566
       ]
     }
   },
@@ -4886,8 +4893,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.425044,
-        43.650798
+        -79.42504,
+        43.6508
       ]
     }
   },
@@ -4900,8 +4907,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.363984,
-        43.699922
+        -79.36398,
+        43.69992
       ]
     }
   },
@@ -4914,7 +4921,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.571628,
+        -79.57163,
         43.74395
       ]
     }
@@ -4928,8 +4935,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.308022,
-        43.705474
+        -79.30802,
+        43.70547
       ]
     }
   },
@@ -4942,8 +4949,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.336116,
-        43.735498
+        -79.33612,
+        43.7355
       ]
     }
   },
@@ -4956,8 +4963,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.248209,
-        43.739685
+        -79.24821,
+        43.73969
       ]
     }
   },
@@ -4970,8 +4977,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.425791,
-        43.662761
+        -79.42579,
+        43.66276
       ]
     }
   },
@@ -4984,8 +4991,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.598421,
-        43.751076
+        -79.59842,
+        43.75108
       ]
     }
   },
@@ -4998,8 +5005,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.442367,
-        43.665745
+        -79.44237,
+        43.66575
       ]
     }
   },
@@ -5012,7 +5019,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.597303,
+        -79.5973,
         43.73415
       ]
     }
@@ -5026,8 +5033,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.295337,
-        43.688391
+        -79.29534,
+        43.68839
       ]
     }
   },
@@ -5040,7 +5047,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.439788,
+        -79.43979,
         43.658
       ]
     }
@@ -5054,8 +5061,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.261693,
-        43.766941
+        -79.26169,
+        43.76694
       ]
     }
   },
@@ -5068,8 +5075,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.367123,
-        43.808488
+        -79.36712,
+        43.80849
       ]
     }
   },
@@ -5083,7 +5090,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.32251,
-        43.674226
+        43.67423
       ]
     }
   },
@@ -5096,8 +5103,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.456795,
-        43.671488
+        -79.45679,
+        43.67149
       ]
     }
   },
@@ -5110,8 +5117,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.334155,
-        43.673662
+        -79.33415,
+        43.67366
       ]
     }
   },
@@ -5124,8 +5131,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.222698,
-        43.782473
+        -79.2227,
+        43.78247
       ]
     }
   },
@@ -5138,8 +5145,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.270797,
-        43.766536
+        -79.2708,
+        43.76654
       ]
     }
   },
@@ -5153,7 +5160,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.59432,
-        43.732392
+        43.73239
       ]
     }
   },
@@ -5166,8 +5173,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.611188,
-        43.731945
+        -79.61119,
+        43.73195
       ]
     }
   },
@@ -5180,8 +5187,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.478914,
-        43.653257
+        -79.47891,
+        43.65326
       ]
     }
   },
@@ -5194,8 +5201,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.211717,
-        43.764966
+        -79.21172,
+        43.76497
       ]
     }
   },
@@ -5208,8 +5215,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.480069,
-        43.678262
+        -79.48007,
+        43.67826
       ]
     }
   },
@@ -5222,8 +5229,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.429111,
-        43.650667
+        -79.42911,
+        43.65067
       ]
     }
   },
@@ -5236,8 +5243,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.447729,
-        43.675205
+        -79.44773,
+        43.6752
       ]
     }
   },
@@ -5250,8 +5257,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.421428,
-        43.668203
+        -79.42143,
+        43.6682
       ]
     }
   },
@@ -5264,8 +5271,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.441935,
-        43.664901
+        -79.44194,
+        43.6649
       ]
     }
   },
@@ -5278,8 +5285,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.399974,
-        43.768397
+        -79.39997,
+        43.7684
       ]
     }
   },
@@ -5292,8 +5299,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.173981,
-        43.781883
+        -79.17398,
+        43.78188
       ]
     }
   },
@@ -5306,8 +5313,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.465822,
-        43.659239
+        -79.46582,
+        43.65924
       ]
     }
   },
@@ -5320,8 +5327,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.508584,
-        43.725958
+        -79.50858,
+        43.72596
       ]
     }
   },
@@ -5348,8 +5355,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.436103,
-        43.668452
+        -79.4361,
+        43.66845
       ]
     }
   },
@@ -5362,8 +5369,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.212549,
-        43.766081
+        -79.21255,
+        43.76608
       ]
     }
   },
@@ -5376,8 +5383,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.317438,
-        43.766602
+        -79.31744,
+        43.7666
       ]
     }
   },
@@ -5390,8 +5397,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.176681,
-        43.786856
+        -79.17668,
+        43.78686
       ]
     }
   },
@@ -5404,8 +5411,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.345081,
-        43.671435
+        -79.34508,
+        43.67144
       ]
     }
   },
@@ -5418,8 +5425,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.307617,
-        43.670479
+        -79.30762,
+        43.67048
       ]
     }
   },
@@ -5432,8 +5439,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.208074,
-        43.772383
+        -79.20807,
+        43.77238
       ]
     }
   },
@@ -5446,8 +5453,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.233989,
-        43.754481
+        -79.23399,
+        43.75448
       ]
     }
   },
@@ -5460,8 +5467,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.276231,
-        43.802661
+        -79.27623,
+        43.80266
       ]
     }
   },
@@ -5475,7 +5482,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.4385,
-        43.650917
+        43.65092
       ]
     }
   },
@@ -5488,8 +5495,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.464516,
-        43.685571
+        -79.46452,
+        43.68557
       ]
     }
   },
@@ -5503,7 +5510,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.61203,
-        43.733906
+        43.73391
       ]
     }
   },
@@ -5517,7 +5524,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.42639,
-        43.635886
+        43.63589
       ]
     }
   },
@@ -5530,8 +5537,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.443256,
-        43.676924
+        -79.44326,
+        43.67692
       ]
     }
   },
@@ -5544,8 +5551,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.293293,
-        43.668613
+        -79.29329,
+        43.66861
       ]
     }
   },
@@ -5558,8 +5565,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.518477,
-        43.633657
+        -79.51848,
+        43.63366
       ]
     }
   },
@@ -5572,8 +5579,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.436158,
-        43.677682
+        -79.43616,
+        43.67768
       ]
     }
   },
@@ -5586,8 +5593,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.495585,
-        43.767095
+        -79.49559,
+        43.76709
       ]
     }
   },
@@ -5600,8 +5607,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.185353,
-        43.806755
+        -79.18535,
+        43.80676
       ]
     }
   },
@@ -5614,8 +5621,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.404873,
-        43.649811
+        -79.40487,
+        43.64981
       ]
     }
   },
@@ -5628,8 +5635,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.431042,
-        43.657727
+        -79.43104,
+        43.65773
       ]
     }
   },
@@ -5642,8 +5649,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.430761,
-        43.634008
+        -79.43076,
+        43.63401
       ]
     }
   },
@@ -5656,8 +5663,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.299773,
-        43.712553
+        -79.29977,
+        43.71255
       ]
     }
   },
@@ -5670,8 +5677,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.579311,
-        43.644602
+        -79.57931,
+        43.6446
       ]
     }
   },
@@ -5684,8 +5691,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.619587,
-        43.724157
+        -79.61959,
+        43.72416
       ]
     }
   },
@@ -5698,8 +5705,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.416858,
-        43.645659
+        -79.41686,
+        43.64566
       ]
     }
   },
@@ -5712,8 +5719,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.433513,
-        43.638885
+        -79.43351,
+        43.63889
       ]
     }
   },
@@ -5726,7 +5733,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.419345,
+        -79.41935,
         43.6584
       ]
     }
@@ -5740,8 +5747,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.613098,
-        43.732696
+        -79.6131,
+        43.7327
       ]
     }
   },
@@ -5754,8 +5761,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.411434,
-        43.655851
+        -79.41143,
+        43.65585
       ]
     }
   },
@@ -5768,8 +5775,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.408337,
-        43.651135
+        -79.40834,
+        43.65113
       ]
     }
   },
@@ -5782,8 +5789,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.437618,
-        43.792097
+        -79.43762,
+        43.7921
       ]
     }
   },
@@ -5796,8 +5803,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.575563,
-        43.735942
+        -79.57556,
+        43.73594
       ]
     }
   },
@@ -5810,8 +5817,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.305004,
-        43.674926
+        -79.305,
+        43.67493
       ]
     }
   },
@@ -5824,8 +5831,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.308567,
-        43.672233
+        -79.30857,
+        43.67223
       ]
     }
   },
@@ -5838,8 +5845,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.319334,
-        43.670412
+        -79.31933,
+        43.67041
       ]
     }
   },
@@ -5852,8 +5859,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.306762,
-        43.690467
+        -79.30676,
+        43.69047
       ]
     }
   },
@@ -5866,8 +5873,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.411073,
-        43.671023
+        -79.41107,
+        43.67102
       ]
     }
   },
@@ -5880,7 +5887,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.425238,
+        -79.42524,
         43.66142
       ]
     }
@@ -5894,8 +5901,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.475347,
-        43.666255
+        -79.47535,
+        43.66625
       ]
     }
   },
@@ -5908,8 +5915,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.578139,
-        43.726094
+        -79.57814,
+        43.72609
       ]
     }
   },
@@ -5922,7 +5929,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.296599,
+        -79.2966,
         43.75557
       ]
     }
@@ -5936,8 +5943,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.394027,
-        43.652713
+        -79.39403,
+        43.65271
       ]
     }
   },
@@ -5950,8 +5957,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.256001,
-        43.764746
+        -79.256,
+        43.76475
       ]
     }
   },
@@ -5964,7 +5971,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.435336,
+        -79.43534,
         43.65181
       ]
     }
@@ -5978,8 +5985,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.424241,
-        43.782899
+        -79.42424,
+        43.7829
       ]
     }
   },
@@ -5992,8 +5999,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.163808,
-        43.784425
+        -79.16381,
+        43.78442
       ]
     }
   },
@@ -6006,8 +6013,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.583363,
-        43.631524
+        -79.58336,
+        43.63152
       ]
     }
   },
@@ -6021,7 +6028,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.43433,
-        43.657845
+        43.65785
       ]
     }
   },
@@ -6035,7 +6042,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.21668,
-        43.776352
+        43.77635
       ]
     }
   },
@@ -6048,7 +6055,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.553304,
+        -79.5533,
         43.74786
       ]
     }
@@ -6062,8 +6069,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.425593,
-        43.644322
+        -79.42559,
+        43.64432
       ]
     }
   },
@@ -6076,8 +6083,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.311054,
-        43.684098
+        -79.31105,
+        43.6841
       ]
     }
   },
@@ -6091,7 +6098,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.4043,
-        43.661723
+        43.66172
       ]
     }
   },
@@ -6105,7 +6112,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.53211,
-        43.690647
+        43.69065
       ]
     }
   },
@@ -6118,8 +6125,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.492484,
-        43.669699
+        -79.49248,
+        43.6697
       ]
     }
   },
@@ -6132,8 +6139,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.584526,
-        43.725769
+        -79.58453,
+        43.72577
       ]
     }
   },
@@ -6146,8 +6153,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.274369,
-        43.747314
+        -79.27437,
+        43.74731
       ]
     }
   },
@@ -6160,8 +6167,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.284208,
-        43.707047
+        -79.28421,
+        43.70705
       ]
     }
   },
@@ -6174,8 +6181,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.453068,
-        43.694247
+        -79.45307,
+        43.69425
       ]
     }
   },
@@ -6188,8 +6195,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.554127,
-        43.703398
+        -79.55413,
+        43.7034
       ]
     }
   },
@@ -6202,8 +6209,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.260098,
-        43.748518
+        -79.2601,
+        43.74852
       ]
     }
   },
@@ -6216,8 +6223,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.549559,
-        43.604199
+        -79.54956,
+        43.6042
       ]
     }
   },
@@ -6230,8 +6237,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.417552,
-        43.656116
+        -79.41755,
+        43.65612
       ]
     }
   },
@@ -6244,8 +6251,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.419979,
-        43.657987
+        -79.41998,
+        43.65799
       ]
     }
   },
@@ -6258,8 +6265,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.225466,
-        43.767961
+        -79.22547,
+        43.76796
       ]
     }
   },
@@ -6272,8 +6279,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.261849,
-        43.766194
+        -79.26185,
+        43.76619
       ]
     }
   },
@@ -6300,8 +6307,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.249518,
-        43.738487
+        -79.24952,
+        43.73849
       ]
     }
   },
@@ -6314,8 +6321,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.590027,
-        43.729715
+        -79.59003,
+        43.72971
       ]
     }
   },
@@ -6328,8 +6335,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.555049,
-        43.703178
+        -79.55505,
+        43.70318
       ]
     }
   },
@@ -6342,8 +6349,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.272919,
-        43.717588
+        -79.27292,
+        43.71759
       ]
     }
   },
@@ -6356,8 +6363,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.591855,
-        43.729279
+        -79.59185,
+        43.72928
       ]
     }
   },
@@ -6370,8 +6377,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.475016,
-        43.711194
+        -79.47502,
+        43.71119
       ]
     }
   },
@@ -6385,7 +6392,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.26386,
-        43.746506
+        43.74651
       ]
     }
   },
@@ -6398,8 +6405,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.457925,
-        43.683328
+        -79.45793,
+        43.68333
       ]
     }
   },
@@ -6412,7 +6419,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.313692,
+        -79.31369,
         43.6842
       ]
     }
@@ -6426,8 +6433,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.571395,
-        43.643452
+        -79.57139,
+        43.64345
       ]
     }
   },
@@ -6440,8 +6447,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.182526,
-        43.760059
+        -79.18253,
+        43.76006
       ]
     }
   },
@@ -6454,8 +6461,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.533659,
-        43.690506
+        -79.53366,
+        43.69051
       ]
     }
   },
@@ -6468,8 +6475,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.536126,
-        43.606967
+        -79.53613,
+        43.60697
       ]
     }
   },
@@ -6482,8 +6489,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.221495,
-        43.815358
+        -79.2215,
+        43.81536
       ]
     }
   },
@@ -6496,8 +6503,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.442534,
-        43.662596
+        -79.44253,
+        43.6626
       ]
     }
   },
@@ -6511,7 +6518,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.40032,
-        43.649373
+        43.64937
       ]
     }
   },
@@ -6524,8 +6531,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.293842,
-        43.742684
+        -79.29384,
+        43.74268
       ]
     }
   },
@@ -6538,8 +6545,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.596852,
-        43.732333
+        -79.59685,
+        43.73233
       ]
     }
   },
@@ -6552,8 +6559,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.457955,
-        43.695911
+        -79.45795,
+        43.69591
       ]
     }
   },
@@ -6566,8 +6573,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.502952,
-        43.766389
+        -79.50295,
+        43.76639
       ]
     }
   },
@@ -6580,8 +6587,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.427849,
-        43.667844
+        -79.42785,
+        43.66784
       ]
     }
   },
@@ -6594,8 +6601,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.595511,
-        43.729485
+        -79.59551,
+        43.72948
       ]
     }
   },
@@ -6608,7 +6615,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.488814,
+        -79.48881,
         43.67137
       ]
     }
@@ -6622,8 +6629,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.602481,
-        43.746701
+        -79.60248,
+        43.7467
       ]
     }
   },
@@ -6636,8 +6643,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.217445,
-        43.771582
+        -79.21744,
+        43.77158
       ]
     }
   },
@@ -6650,8 +6657,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.439269,
-        43.649971
+        -79.43927,
+        43.64997
       ]
     }
   },
@@ -6664,8 +6671,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.485834,
-        43.708247
+        -79.48583,
+        43.70825
       ]
     }
   },
@@ -6678,8 +6685,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.502401,
-        43.767171
+        -79.5024,
+        43.76717
       ]
     }
   },
@@ -6692,8 +6699,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.272276,
-        43.736551
+        -79.27228,
+        43.73655
       ]
     }
   },
@@ -6706,8 +6713,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.447124,
-        43.685019
+        -79.44712,
+        43.68502
       ]
     }
   },
@@ -6720,8 +6727,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.222479,
-        43.781628
+        -79.22248,
+        43.78163
       ]
     }
   },
@@ -6734,8 +6741,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.414375,
-        43.757156
+        -79.41438,
+        43.75716
       ]
     }
   },
@@ -6748,7 +6755,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.451043,
+        -79.45104,
         43.69001
       ]
     }
@@ -6762,8 +6769,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.599616,
-        43.745231
+        -79.59962,
+        43.74523
       ]
     }
   },
@@ -6776,8 +6783,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.211767,
-        43.769796
+        -79.21177,
+        43.7698
       ]
     }
   },
@@ -6790,8 +6797,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.582921,
-        43.662841
+        -79.58292,
+        43.66284
       ]
     }
   },
@@ -6804,8 +6811,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.229631,
-        43.831767
+        -79.22963,
+        43.83177
       ]
     }
   },
@@ -6818,8 +6825,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.437277,
-        43.668764
+        -79.43728,
+        43.66876
       ]
     }
   },
@@ -6833,7 +6840,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.27388,
-        43.691091
+        43.69109
       ]
     }
   },
@@ -6846,8 +6853,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.259114,
-        43.725887
+        -79.25911,
+        43.72589
       ]
     }
   },
@@ -6860,8 +6867,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.299468,
-        43.674326
+        -79.29947,
+        43.67433
       ]
     }
   },
@@ -6874,8 +6881,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.187737,
-        43.807784
+        -79.18774,
+        43.80778
       ]
     }
   },
@@ -6888,8 +6895,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.288762,
-        43.681582
+        -79.28876,
+        43.68158
       ]
     }
   },
@@ -6902,8 +6909,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.305403,
-        43.763075
+        -79.3054,
+        43.76308
       ]
     }
   },
@@ -6916,8 +6923,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.453196,
-        43.695807
+        -79.4532,
+        43.69581
       ]
     }
   },
@@ -6930,8 +6937,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.293583,
-        43.754911
+        -79.29358,
+        43.75491
       ]
     }
   },
@@ -6944,8 +6951,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.430545,
-        43.652725
+        -79.43054,
+        43.65272
       ]
     }
   },
@@ -6958,8 +6965,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.428037,
-        43.648802
+        -79.42804,
+        43.6488
       ]
     }
   },
@@ -6972,8 +6979,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.204387,
-        43.802808
+        -79.20439,
+        43.80281
       ]
     }
   },
@@ -6986,8 +6993,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.560834,
-        43.738383
+        -79.56083,
+        43.73838
       ]
     }
   },
@@ -7000,8 +7007,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.368753,
-        43.710675
+        -79.36875,
+        43.71068
       ]
     }
   },
@@ -7014,8 +7021,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.622597,
-        43.726933
+        -79.6226,
+        43.72693
       ]
     }
   },
@@ -7029,7 +7036,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.45769,
-        43.652055
+        43.65205
       ]
     }
   },
@@ -7042,8 +7049,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.273522,
-        43.700835
+        -79.27352,
+        43.70083
       ]
     }
   },
@@ -7056,8 +7063,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.178335,
-        43.790714
+        -79.17834,
+        43.79071
       ]
     }
   },
@@ -7070,8 +7077,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.494754,
-        43.756572
+        -79.49475,
+        43.75657
       ]
     }
   },
@@ -7084,8 +7091,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.249722,
-        43.712104
+        -79.24972,
+        43.7121
       ]
     }
   },
@@ -7098,8 +7105,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.304361,
-        43.700818
+        -79.30436,
+        43.70082
       ]
     }
   },
@@ -7113,7 +7120,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.28968,
-        43.778179
+        43.77818
       ]
     }
   },
@@ -7126,8 +7133,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.421942,
-        43.646623
+        -79.42194,
+        43.64662
       ]
     }
   },
@@ -7140,8 +7147,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.454282,
-        43.677804
+        -79.45428,
+        43.6778
       ]
     }
   },
@@ -7154,8 +7161,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.410123,
-        43.658853
+        -79.41012,
+        43.65885
       ]
     }
   },
@@ -7169,7 +7176,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.21527,
-        43.736319
+        43.73632
       ]
     }
   },
@@ -7182,8 +7189,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.157408,
-        43.795291
+        -79.15741,
+        43.79529
       ]
     }
   },
@@ -7196,8 +7203,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.421072,
-        43.736494
+        -79.42107,
+        43.73649
       ]
     }
   },
@@ -7210,8 +7217,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.612036,
-        43.733727
+        -79.61204,
+        43.73373
       ]
     }
   },
@@ -7224,8 +7231,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.408629,
-        43.644882
+        -79.40863,
+        43.64488
       ]
     }
   },
@@ -7238,8 +7245,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.339484,
-        43.658417
+        -79.33948,
+        43.65842
       ]
     }
   },
@@ -7253,7 +7260,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.28569,
-        43.681689
+        43.68169
       ]
     }
   },
@@ -7267,7 +7274,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.41805,
-        43.657444
+        43.65744
       ]
     }
   },
@@ -7280,8 +7287,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.428149,
-        43.644684
+        -79.42815,
+        43.64468
       ]
     }
   },
@@ -7294,8 +7301,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.355133,
-        43.675373
+        -79.35513,
+        43.67537
       ]
     }
   },
@@ -7308,8 +7315,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.423355,
-        43.650214
+        -79.42336,
+        43.65021
       ]
     }
   },
@@ -7322,8 +7329,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.149242,
-        43.788087
+        -79.14924,
+        43.78809
       ]
     }
   },
@@ -7336,8 +7343,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.324155,
-        43.732834
+        -79.32416,
+        43.73283
       ]
     }
   },
@@ -7350,8 +7357,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.566019,
-        43.729676
+        -79.56602,
+        43.72968
       ]
     }
   },
@@ -7365,7 +7372,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.25136,
-        43.730274
+        43.73027
       ]
     }
   },
@@ -7378,8 +7385,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.441963,
-        43.703934
+        -79.44196,
+        43.70393
       ]
     }
   },
@@ -7392,8 +7399,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.353718,
-        43.778803
+        -79.35372,
+        43.7788
       ]
     }
   },
@@ -7406,8 +7413,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.406884,
-        43.658059
+        -79.40688,
+        43.65806
       ]
     }
   },
@@ -7420,8 +7427,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.543031,
-        43.642948
+        -79.54303,
+        43.64295
       ]
     }
   },
@@ -7434,8 +7441,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.440259,
-        43.645089
+        -79.44026,
+        43.64509
       ]
     }
   },
@@ -7448,8 +7455,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.258125,
-        43.762162
+        -79.25813,
+        43.76216
       ]
     }
   },
@@ -7462,8 +7469,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.181231,
-        43.796051
+        -79.18123,
+        43.79605
       ]
     }
   },
@@ -7476,8 +7483,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.264671,
-        43.739019
+        -79.26467,
+        43.73902
       ]
     }
   },
@@ -7490,8 +7497,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.455056,
-        43.652621
+        -79.45506,
+        43.65262
       ]
     }
   },
@@ -7504,8 +7511,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.412004,
-        43.667664
+        -79.412,
+        43.66766
       ]
     }
   },
@@ -7518,8 +7525,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.584975,
-        43.664904
+        -79.58498,
+        43.6649
       ]
     }
   },
@@ -7532,8 +7539,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.433714,
-        43.698653
+        -79.43371,
+        43.69865
       ]
     }
   },
@@ -7546,8 +7553,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.455303,
-        43.721706
+        -79.4553,
+        43.72171
       ]
     }
   },
@@ -7560,8 +7567,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.447669,
-        43.662784
+        -79.44767,
+        43.66278
       ]
     }
   },
@@ -7574,8 +7581,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.440719,
-        43.665137
+        -79.44072,
+        43.66514
       ]
     }
   },
@@ -7588,8 +7595,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.346546,
-        43.668528
+        -79.34655,
+        43.66853
       ]
     }
   },
@@ -7602,8 +7609,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.403439,
-        43.772466
+        -79.40344,
+        43.77247
       ]
     }
   },
@@ -7616,7 +7623,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.247249,
+        -79.24725,
         43.74777
       ]
     }
@@ -7630,8 +7637,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.228229,
-        43.735665
+        -79.22823,
+        43.73566
       ]
     }
   },
@@ -7644,8 +7651,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.476265,
-        43.714551
+        -79.47626,
+        43.71455
       ]
     }
   },
@@ -7658,7 +7665,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.157513,
+        -79.15751,
         43.80082
       ]
     }
@@ -7672,7 +7679,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.271921,
+        -79.27192,
         43.73363
       ]
     }
@@ -7686,8 +7693,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.369184,
-        43.657572
+        -79.36918,
+        43.65757
       ]
     }
   },
@@ -7700,8 +7707,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.435004,
-        43.643926
+        -79.435,
+        43.64393
       ]
     }
   },
@@ -7714,8 +7721,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.311986,
-        43.684255
+        -79.31199,
+        43.68426
       ]
     }
   },
@@ -7728,8 +7735,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.449271,
-        43.664178
+        -79.44927,
+        43.66418
       ]
     }
   },
@@ -7742,8 +7749,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.500219,
-        43.768042
+        -79.50022,
+        43.76804
       ]
     }
   },
@@ -7756,8 +7763,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.598758,
-        43.757295
+        -79.59876,
+        43.75729
       ]
     }
   },
@@ -7770,8 +7777,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.312879,
-        43.773253
+        -79.31288,
+        43.77325
       ]
     }
   },
@@ -7784,7 +7791,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.330436,
+        -79.33044,
         43.67051
       ]
     }
@@ -7798,8 +7805,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.587572,
-        43.752374
+        -79.58757,
+        43.75237
       ]
     }
   },
@@ -7812,7 +7819,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.425221,
+        -79.42522,
         43.68811
       ]
     }
@@ -7826,8 +7833,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.621895,
-        43.730643
+        -79.62189,
+        43.73064
       ]
     }
   },
@@ -7840,8 +7847,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.136271,
-        43.775553
+        -79.13627,
+        43.77555
       ]
     }
   },
@@ -7854,8 +7861,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.325647,
-        43.673685
+        -79.32565,
+        43.67368
       ]
     }
   },
@@ -7868,8 +7875,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.492766,
-        43.677901
+        -79.49277,
+        43.6779
       ]
     }
   },
@@ -7882,8 +7889,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.441834,
-        43.691003
+        -79.44183,
+        43.691
       ]
     }
   },
@@ -7896,8 +7903,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.531668,
-        43.694196
+        -79.53167,
+        43.6942
       ]
     }
   },
@@ -7910,8 +7917,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.251917,
-        43.769535
+        -79.25192,
+        43.76953
       ]
     }
   },
@@ -7924,8 +7931,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.502706,
-        43.767904
+        -79.50271,
+        43.7679
       ]
     }
   },
@@ -7938,7 +7945,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.450859,
+        -79.45086,
         43.64415
       ]
     }
@@ -7952,8 +7959,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.621063,
-        43.722468
+        -79.62106,
+        43.72247
       ]
     }
   },
@@ -7966,8 +7973,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.506408,
-        43.729384
+        -79.50641,
+        43.72938
       ]
     }
   },
@@ -7980,8 +7987,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.537679,
-        43.610094
+        -79.53768,
+        43.61009
       ]
     }
   },
@@ -7994,8 +8001,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.448204,
-        43.674169
+        -79.4482,
+        43.67417
       ]
     }
   },
@@ -8008,8 +8015,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.456609,
-        43.650699
+        -79.45661,
+        43.6507
       ]
     }
   },
@@ -8022,8 +8029,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.439392,
-        43.643628
+        -79.43939,
+        43.64363
       ]
     }
   },
@@ -8037,7 +8044,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.53689,
-        43.722754
+        43.72275
       ]
     }
   },
@@ -8051,7 +8058,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.59927,
-        43.739266
+        43.73927
       ]
     }
   },
@@ -8064,8 +8071,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.478568,
-        43.705102
+        -79.47857,
+        43.7051
       ]
     }
   },
@@ -8079,7 +8086,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.14567,
-        43.784143
+        43.78414
       ]
     }
   },
@@ -8092,7 +8099,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.325389,
+        -79.32539,
         43.80248
       ]
     }
@@ -8106,8 +8113,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.226579,
-        43.801868
+        -79.22658,
+        43.80187
       ]
     }
   },
@@ -8120,8 +8127,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.297325,
-        43.711618
+        -79.29733,
+        43.71162
       ]
     }
   },
@@ -8134,8 +8141,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.207143,
-        43.819187
+        -79.20714,
+        43.81919
       ]
     }
   },
@@ -8148,8 +8155,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.202752,
-        43.745573
+        -79.20275,
+        43.74557
       ]
     }
   },
@@ -8163,7 +8170,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.5021,
-        43.599617
+        43.59962
       ]
     }
   },
@@ -8176,8 +8183,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.282311,
-        43.753065
+        -79.28231,
+        43.75306
       ]
     }
   },
@@ -8190,8 +8197,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.500524,
-        43.609726
+        -79.50052,
+        43.60973
       ]
     }
   },
@@ -8204,8 +8211,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.502994,
-        43.722102
+        -79.50299,
+        43.7221
       ]
     }
   },
@@ -8218,8 +8225,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.615209,
-        43.733611
+        -79.61521,
+        43.73361
       ]
     }
   },
@@ -8232,8 +8239,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.453185,
-        43.721469
+        -79.45319,
+        43.72147
       ]
     }
   },
@@ -8246,8 +8253,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.419523,
-        43.666725
+        -79.41952,
+        43.66672
       ]
     }
   },
@@ -8260,8 +8267,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.304397,
-        43.722891
+        -79.3044,
+        43.72289
       ]
     }
   },
@@ -8274,8 +8281,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.613186,
-        43.732316
+        -79.61319,
+        43.73232
       ]
     }
   },
@@ -8288,8 +8295,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.503102,
-        43.766138
+        -79.5031,
+        43.76614
       ]
     }
   },
@@ -8302,7 +8309,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.496696,
+        -79.4967,
         43.681
       ]
     }
@@ -8316,8 +8323,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.306073,
-        43.819114
+        -79.30607,
+        43.81911
       ]
     }
   },
@@ -8331,7 +8338,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.44085,
-        43.791235
+        43.79124
       ]
     }
   },
@@ -8344,8 +8351,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.585212,
-        43.725604
+        -79.58521,
+        43.7256
       ]
     }
   },
@@ -8372,8 +8379,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.282371,
-        43.753214
+        -79.28237,
+        43.75321
       ]
     }
   },
@@ -8386,8 +8393,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.483266,
-        43.650123
+        -79.48327,
+        43.65012
       ]
     }
   },
@@ -8401,7 +8408,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.27533,
-        43.804786
+        43.80479
       ]
     }
   },
@@ -8414,8 +8421,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.440768,
-        43.644958
+        -79.44077,
+        43.64496
       ]
     }
   },
@@ -8428,8 +8435,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.493756,
-        43.617162
+        -79.49376,
+        43.61716
       ]
     }
   },
@@ -8442,8 +8449,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.157463,
-        43.795412
+        -79.15746,
+        43.79541
       ]
     }
   },
@@ -8456,8 +8463,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.307256,
-        43.759066
+        -79.30726,
+        43.75907
       ]
     }
   },
@@ -8471,7 +8478,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.52987,
-        43.722209
+        43.72221
       ]
     }
   },
@@ -8484,8 +8491,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.503113,
-        43.727301
+        -79.50311,
+        43.7273
       ]
     }
   },
@@ -8498,8 +8505,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.437586,
-        43.675446
+        -79.43759,
+        43.67545
       ]
     }
   },
@@ -8512,8 +8519,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.315119,
-        43.686223
+        -79.31512,
+        43.68622
       ]
     }
   },
@@ -8526,8 +8533,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.330921,
-        43.692653
+        -79.33092,
+        43.69265
       ]
     }
   },
@@ -8540,8 +8547,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.499532,
-        43.768423
+        -79.49953,
+        43.76842
       ]
     }
   },
@@ -8554,8 +8561,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.427117,
-        43.652237
+        -79.42712,
+        43.65224
       ]
     }
   },
@@ -8568,8 +8575,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.427589,
-        43.657267
+        -79.42759,
+        43.65727
       ]
     }
   },
@@ -8582,8 +8589,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.313985,
-        43.674322
+        -79.31399,
+        43.67432
       ]
     }
   },
@@ -8596,8 +8603,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.296666,
-        43.709997
+        -79.29667,
+        43.71
       ]
     }
   },
@@ -8610,8 +8617,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.413603,
-        43.653267
+        -79.4136,
+        43.65327
       ]
     }
   },
@@ -8624,8 +8631,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.416644,
-        43.646156
+        -79.41664,
+        43.64616
       ]
     }
   },
@@ -8638,8 +8645,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.241583,
-        43.764296
+        -79.24158,
+        43.7643
       ]
     }
   },
@@ -8652,8 +8659,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.407158,
-        43.667687
+        -79.40716,
+        43.66769
       ]
     }
   },
@@ -8666,8 +8673,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.450214,
-        43.681071
+        -79.45021,
+        43.68107
       ]
     }
   },
@@ -8680,8 +8687,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.445162,
-        43.666277
+        -79.44516,
+        43.66628
       ]
     }
   },
@@ -8694,8 +8701,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.254065,
-        43.731131
+        -79.25406,
+        43.73113
       ]
     }
   },
@@ -8708,8 +8715,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.395314,
-        43.703782
+        -79.39531,
+        43.70378
       ]
     }
   },
@@ -8722,8 +8729,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.329007,
-        43.672719
+        -79.32901,
+        43.67272
       ]
     }
   },
@@ -8736,8 +8743,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.434963,
-        43.668345
+        -79.43496,
+        43.66835
       ]
     }
   },
@@ -8750,8 +8757,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.332655,
-        43.786585
+        -79.33266,
+        43.78659
       ]
     }
   },
@@ -8765,7 +8772,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.43046,
-        43.636747
+        43.63675
       ]
     }
   },
@@ -8778,8 +8785,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.429733,
-        43.665279
+        -79.42973,
+        43.66528
       ]
     }
   },
@@ -8792,8 +8799,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.286775,
-        43.694784
+        -79.28678,
+        43.69478
       ]
     }
   },
@@ -8806,8 +8813,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.411915,
-        43.669964
+        -79.41191,
+        43.66996
       ]
     }
   },
@@ -8820,8 +8827,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.332492,
-        43.661167
+        -79.33249,
+        43.66117
       ]
     }
   },
@@ -8834,7 +8841,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.442157,
+        -79.44216,
         43.64354
       ]
     }
@@ -8848,8 +8855,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.421636,
-        43.662049
+        -79.42164,
+        43.66205
       ]
     }
   },
@@ -8862,8 +8869,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.513099,
-        43.599874
+        -79.5131,
+        43.59987
       ]
     }
   },
@@ -8876,8 +8883,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.372963,
-        43.659236
+        -79.37296,
+        43.65924
       ]
     }
   },
@@ -8890,8 +8897,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.372992,
-        43.659305
+        -79.37299,
+        43.65931
       ]
     }
   },
@@ -8904,8 +8911,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.435845,
-        43.661477
+        -79.43585,
+        43.66148
       ]
     }
   },
@@ -8918,8 +8925,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.339592,
-        43.679092
+        -79.33959,
+        43.67909
       ]
     }
   },
@@ -8932,8 +8939,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.332469,
-        43.801364
+        -79.33247,
+        43.80136
       ]
     }
   },
@@ -8946,8 +8953,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.293943,
-        43.747951
+        -79.29394,
+        43.74795
       ]
     }
   },
@@ -8960,8 +8967,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.253411,
-        43.732804
+        -79.25341,
+        43.7328
       ]
     }
   },
@@ -8974,8 +8981,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.578495,
-        43.730484
+        -79.5785,
+        43.73048
       ]
     }
   },
@@ -8988,8 +8995,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.224453,
-        43.737751
+        -79.22445,
+        43.73775
       ]
     }
   },
@@ -9002,8 +9009,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.423536,
-        43.647037
+        -79.42354,
+        43.64704
       ]
     }
   },
@@ -9016,8 +9023,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.549405,
-        43.633212
+        -79.5494,
+        43.63321
       ]
     }
   },
@@ -9031,7 +9038,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.47765,
-        43.656822
+        43.65682
       ]
     }
   },
@@ -9044,8 +9051,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.428279,
-        43.779826
+        -79.42828,
+        43.77983
       ]
     }
   },
@@ -9058,8 +9065,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.496913,
-        43.635143
+        -79.49691,
+        43.63514
       ]
     }
   },
@@ -9073,7 +9080,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.29944,
-        43.681676
+        43.68168
       ]
     }
   },
@@ -9087,7 +9094,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.41842,
-        43.653984
+        43.65398
       ]
     }
   },
@@ -9100,8 +9107,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.321626,
-        43.694806
+        -79.32163,
+        43.69481
       ]
     }
   },
@@ -9114,8 +9121,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.294626,
-        43.756473
+        -79.29463,
+        43.75647
       ]
     }
   },
@@ -9128,8 +9135,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.294167,
-        43.739793
+        -79.29417,
+        43.73979
       ]
     }
   },
@@ -9142,8 +9149,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.472898,
-        43.677797
+        -79.4729,
+        43.6778
       ]
     }
   },
@@ -9156,8 +9163,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.316541,
-        43.675506
+        -79.31654,
+        43.67551
       ]
     }
   },
@@ -9170,8 +9177,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.454479,
-        43.666472
+        -79.45448,
+        43.66647
       ]
     }
   },
@@ -9184,8 +9191,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.257459,
-        43.741296
+        -79.25746,
+        43.7413
       ]
     }
   },
@@ -9198,8 +9205,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.404293,
-        43.664114
+        -79.40429,
+        43.66411
       ]
     }
   },
@@ -9213,7 +9220,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.62392,
-        43.728166
+        43.72817
       ]
     }
   },
@@ -9226,8 +9233,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.454233,
-        43.669654
+        -79.45423,
+        43.66965
       ]
     }
   },
@@ -9240,7 +9247,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.535699,
+        -79.5357,
         43.73117
       ]
     }
@@ -9254,8 +9261,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.563681,
-        43.753503
+        -79.56368,
+        43.7535
       ]
     }
   },
@@ -9268,8 +9275,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.275815,
-        43.702514
+        -79.27581,
+        43.70251
       ]
     }
   },
@@ -9282,8 +9289,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.620363,
-        43.724239
+        -79.62036,
+        43.72424
       ]
     }
   },
@@ -9296,8 +9303,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.283773,
-        43.709222
+        -79.28377,
+        43.70922
       ]
     }
   },
@@ -9310,8 +9317,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.430558,
-        43.664888
+        -79.43056,
+        43.66489
       ]
     }
   },
@@ -9324,8 +9331,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.588825,
-        43.721343
+        -79.58882,
+        43.72134
       ]
     }
   },
@@ -9338,7 +9345,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.403213,
+        -79.40321,
         43.7666
       ]
     }
@@ -9352,8 +9359,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.318304,
-        43.735905
+        -79.3183,
+        43.73591
       ]
     }
   },
@@ -9366,8 +9373,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.595919,
-        43.734277
+        -79.59592,
+        43.73428
       ]
     }
   },
@@ -9380,8 +9387,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.567615,
-        43.636284
+        -79.56762,
+        43.63628
       ]
     }
   },
@@ -9394,8 +9401,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.588744,
-        43.751817
+        -79.58874,
+        43.75182
       ]
     }
   },
@@ -9408,7 +9415,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.300775,
+        -79.30078,
         43.80874
       ]
     }
@@ -9422,8 +9429,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.334837,
-        43.798343
+        -79.33484,
+        43.79834
       ]
     }
   },
@@ -9436,8 +9443,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.502604,
-        43.616475
+        -79.5026,
+        43.61648
       ]
     }
   },
@@ -9450,8 +9457,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.576515,
-        43.660193
+        -79.57652,
+        43.66019
       ]
     }
   },
@@ -9464,7 +9471,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.284405,
+        -79.28441,
         43.78851
       ]
     }
@@ -9478,8 +9485,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.415623,
-        43.643508
+        -79.41562,
+        43.64351
       ]
     }
   },
@@ -9492,8 +9499,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.466793,
-        43.687581
+        -79.46679,
+        43.68758
       ]
     }
   },
@@ -9506,8 +9513,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.343837,
-        43.681685
+        -79.34384,
+        43.68169
       ]
     }
   },
@@ -9520,8 +9527,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.401537,
-        43.660877
+        -79.40154,
+        43.66088
       ]
     }
   },
@@ -9534,8 +9541,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.169942,
-        43.796447
+        -79.16994,
+        43.79645
       ]
     }
   },
@@ -9548,8 +9555,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.357763,
-        43.743653
+        -79.35776,
+        43.74365
       ]
     }
   },
@@ -9563,7 +9570,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.4285,
-        43.790711
+        43.79071
       ]
     }
   },
@@ -9576,8 +9583,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.560723,
-        43.749497
+        -79.56072,
+        43.7495
       ]
     }
   },
@@ -9590,8 +9597,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.421236,
-        43.661039
+        -79.42124,
+        43.66104
       ]
     }
   },
@@ -9604,8 +9611,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.302006,
-        43.711118
+        -79.30201,
+        43.71112
       ]
     }
   },
@@ -9619,7 +9626,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.31016,
-        43.781706
+        43.78171
       ]
     }
   },
@@ -9632,8 +9639,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.281691,
-        43.697171
+        -79.28169,
+        43.69717
       ]
     }
   },
@@ -9646,8 +9653,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.408699,
-        43.655312
+        -79.4087,
+        43.65531
       ]
     }
   },
@@ -9660,8 +9667,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.540383,
-        43.589817
+        -79.54038,
+        43.58982
       ]
     }
   },
@@ -9674,8 +9681,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.410266,
-        43.648162
+        -79.41027,
+        43.64816
       ]
     }
   },
@@ -9688,7 +9695,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.436743,
+        -79.43674,
         43.66358
       ]
     }
@@ -9716,8 +9723,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.286609,
-        43.705744
+        -79.28661,
+        43.70574
       ]
     }
   },
@@ -9730,8 +9737,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.285004,
-        43.748609
+        -79.285,
+        43.74861
       ]
     }
   },
@@ -9744,8 +9751,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.600583,
-        43.757661
+        -79.60058,
+        43.75766
       ]
     }
   },
@@ -9759,7 +9766,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.62349,
-        43.726306
+        43.72631
       ]
     }
   },
@@ -9772,8 +9779,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.388209,
-        43.707286
+        -79.38821,
+        43.70729
       ]
     }
   },
@@ -9786,8 +9793,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.507893,
-        43.702755
+        -79.50789,
+        43.70276
       ]
     }
   },
@@ -9800,8 +9807,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.569733,
-        43.642061
+        -79.56973,
+        43.64206
       ]
     }
   },
@@ -9814,8 +9821,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.428844,
-        43.654339
+        -79.42884,
+        43.65434
       ]
     }
   },
@@ -9829,7 +9836,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.57144,
-        43.742038
+        43.74204
       ]
     }
   },
@@ -9842,8 +9849,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.342695,
-        43.785183
+        -79.3427,
+        43.78518
       ]
     }
   },
@@ -9856,8 +9863,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.176773,
-        43.784947
+        -79.17677,
+        43.78495
       ]
     }
   },
@@ -9870,8 +9877,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.350162,
-        43.793298
+        -79.35016,
+        43.7933
       ]
     }
   },
@@ -9884,8 +9891,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.406649,
-        43.663332
+        -79.40665,
+        43.66333
       ]
     }
   },
@@ -9898,8 +9905,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.427964,
-        43.656883
+        -79.42796,
+        43.65688
       ]
     }
   },
@@ -9912,8 +9919,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.599354,
-        43.744111
+        -79.59935,
+        43.74411
       ]
     }
   },
@@ -9926,8 +9933,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.292531,
-        43.706259
+        -79.29253,
+        43.70626
       ]
     }
   },
@@ -9940,8 +9947,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.595578,
-        43.731036
+        -79.59558,
+        43.73104
       ]
     }
   },
@@ -9954,7 +9961,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.620352,
+        -79.62035,
         43.73338
       ]
     }
@@ -9969,7 +9976,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.61215,
-        43.733917
+        43.73392
       ]
     }
   },
@@ -9982,8 +9989,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.497747,
-        43.608024
+        -79.49775,
+        43.60802
       ]
     }
   },
@@ -9996,8 +10003,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.365307,
-        43.666256
+        -79.36531,
+        43.66626
       ]
     }
   },
@@ -10011,7 +10018,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.48629,
-        43.634474
+        43.63447
       ]
     }
   },
@@ -10024,8 +10031,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.593987,
-        43.729869
+        -79.59399,
+        43.72987
       ]
     }
   },
@@ -10038,7 +10045,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.310596,
+        -79.3106,
         43.66579
       ]
     }
@@ -10053,7 +10060,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.30194,
-        43.672056
+        43.67206
       ]
     }
   },
@@ -10066,8 +10073,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.364661,
-        43.664497
+        -79.36466,
+        43.6645
       ]
     }
   },
@@ -10080,8 +10087,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.216427,
-        43.745368
+        -79.21643,
+        43.74537
       ]
     }
   },
@@ -10094,8 +10101,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.434576,
-        43.652972
+        -79.43458,
+        43.65297
       ]
     }
   },
@@ -10108,7 +10115,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.407944,
+        -79.40794,
         43.64502
       ]
     }
@@ -10122,8 +10129,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.247568,
-        43.710049
+        -79.24757,
+        43.71005
       ]
     }
   },
@@ -10137,7 +10144,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.42688,
-        43.644522
+        43.64452
       ]
     }
   },
@@ -10150,8 +10157,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.504875,
-        43.715571
+        -79.50487,
+        43.71557
       ]
     }
   },
@@ -10165,7 +10172,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.45853,
-        43.672984
+        43.67298
       ]
     }
   },
@@ -10178,8 +10185,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.377229,
-        43.671196
+        -79.37723,
+        43.6712
       ]
     }
   },
@@ -10192,8 +10199,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.251621,
-        43.703977
+        -79.25162,
+        43.70398
       ]
     }
   },
@@ -10206,8 +10213,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.423159,
-        43.661789
+        -79.42316,
+        43.66179
       ]
     }
   },
@@ -10220,8 +10227,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.373529,
-        43.790657
+        -79.37353,
+        43.79066
       ]
     }
   },
@@ -10234,8 +10241,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.266291,
-        43.694221
+        -79.26629,
+        43.69422
       ]
     }
   },
@@ -10248,7 +10255,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.399405,
+        -79.39941,
         43.76763
       ]
     }
@@ -10262,8 +10269,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.345698,
-        43.687081
+        -79.3457,
+        43.68708
       ]
     }
   },
@@ -10276,8 +10283,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.445587,
-        43.681839
+        -79.44559,
+        43.68184
       ]
     }
   },
@@ -10290,8 +10297,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.329789,
-        43.688074
+        -79.32979,
+        43.68807
       ]
     }
   },
@@ -10304,8 +10311,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.182658,
-        43.786861
+        -79.18266,
+        43.78686
       ]
     }
   },
@@ -10318,8 +10325,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.445521,
-        43.644351
+        -79.44552,
+        43.64435
       ]
     }
   },
@@ -10332,8 +10339,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.261759,
-        43.813587
+        -79.26176,
+        43.81359
       ]
     }
   },
@@ -10346,8 +10353,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.164648,
-        43.792078
+        -79.16465,
+        43.79208
       ]
     }
   },
@@ -10360,8 +10367,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.420435,
-        43.662124
+        -79.42043,
+        43.66212
       ]
     }
   },
@@ -10375,7 +10382,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.54693,
-        43.648322
+        43.64832
       ]
     }
   },
@@ -10388,8 +10395,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.144452,
-        43.793427
+        -79.14445,
+        43.79343
       ]
     }
   },
@@ -10402,8 +10409,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.450745,
-        43.681609
+        -79.45074,
+        43.68161
       ]
     }
   },
@@ -10416,8 +10423,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.424582,
-        43.790636
+        -79.42458,
+        43.79064
       ]
     }
   },
@@ -10430,8 +10437,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.257141,
-        43.768541
+        -79.25714,
+        43.76854
       ]
     }
   },
@@ -10444,8 +10451,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.310714,
-        43.755936
+        -79.31071,
+        43.75594
       ]
     }
   },
@@ -10458,8 +10465,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.303502,
-        43.795645
+        -79.3035,
+        43.79565
       ]
     }
   },
@@ -10472,8 +10479,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418684,
-        43.646975
+        -79.41868,
+        43.64697
       ]
     }
   },
@@ -10486,8 +10493,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.397617,
-        43.693772
+        -79.39762,
+        43.69377
       ]
     }
   },
@@ -10500,8 +10507,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.413861,
-        43.662173
+        -79.41386,
+        43.66217
       ]
     }
   },
@@ -10514,8 +10521,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.364902,
-        43.800787
+        -79.3649,
+        43.80079
       ]
     }
   },
@@ -10528,8 +10535,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.308009,
-        43.688194
+        -79.30801,
+        43.68819
       ]
     }
   },
@@ -10542,8 +10549,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.517758,
-        43.704203
+        -79.51776,
+        43.7042
       ]
     }
   },
@@ -10556,8 +10563,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.396218,
-        43.650298
+        -79.39622,
+        43.6503
       ]
     }
   },
@@ -10570,8 +10577,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.499029,
-        43.767538
+        -79.49903,
+        43.76754
       ]
     }
   },
@@ -10584,8 +10591,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.274354,
-        43.695608
+        -79.27435,
+        43.69561
       ]
     }
   },
@@ -10598,8 +10605,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.447017,
-        43.660882
+        -79.44702,
+        43.66088
       ]
     }
   },
@@ -10612,8 +10619,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.230546,
-        43.835129
+        -79.23055,
+        43.83513
       ]
     }
   },
@@ -10626,8 +10633,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.517758,
-        43.704203
+        -79.51776,
+        43.7042
       ]
     }
   },
@@ -10640,8 +10647,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.376746,
-        43.709474
+        -79.37675,
+        43.70947
       ]
     }
   },
@@ -10654,8 +10661,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.440496,
-        43.636241
+        -79.4405,
+        43.63624
       ]
     }
   },
@@ -10668,8 +10675,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.290007,
-        43.766343
+        -79.29001,
+        43.76634
       ]
     }
   },
@@ -10682,8 +10689,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.566615,
-        43.716083
+        -79.56661,
+        43.71608
       ]
     }
   },
@@ -10696,8 +10703,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.294882,
-        43.741473
+        -79.29488,
+        43.74147
       ]
     }
   },
@@ -10711,7 +10718,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.41259,
-        43.654899
+        43.6549
       ]
     }
   },
@@ -10724,8 +10731,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.284339,
-        43.685735
+        -79.28434,
+        43.68574
       ]
     }
   },
@@ -10738,7 +10745,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.294013,
+        -79.29401,
         43.77683
       ]
     }
@@ -10752,8 +10759,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.444554,
-        43.644547
+        -79.44455,
+        43.64455
       ]
     }
   },
@@ -10767,7 +10774,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.54931,
-        43.659974
+        43.65997
       ]
     }
   },
@@ -10780,8 +10787,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.253081,
-        43.708215
+        -79.25308,
+        43.70822
       ]
     }
   },
@@ -10794,8 +10801,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.389696,
-        43.701342
+        -79.3897,
+        43.70134
       ]
     }
   },
@@ -10808,8 +10815,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.294469,
-        43.756103
+        -79.29447,
+        43.7561
       ]
     }
   },
@@ -10822,8 +10829,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.216637,
-        43.816689
+        -79.21664,
+        43.81669
       ]
     }
   },
@@ -10836,8 +10843,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.461452,
-        43.787172
+        -79.46145,
+        43.78717
       ]
     }
   },
@@ -10850,8 +10857,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.525318,
-        43.713104
+        -79.52532,
+        43.7131
       ]
     }
   },
@@ -10864,8 +10871,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.322236,
-        43.684723
+        -79.32224,
+        43.68472
       ]
     }
   },
@@ -10878,7 +10885,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.343563,
+        -79.34356,
         43.67006
       ]
     }
@@ -10892,8 +10899,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.350132,
-        43.667721
+        -79.35013,
+        43.66772
       ]
     }
   },
@@ -10906,8 +10913,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.420536,
-        43.669508
+        -79.42054,
+        43.66951
       ]
     }
   },
@@ -10920,8 +10927,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.590763,
-        43.747696
+        -79.59076,
+        43.7477
       ]
     }
   },
@@ -10934,8 +10941,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.213762,
-        43.776803
+        -79.21376,
+        43.7768
       ]
     }
   },
@@ -10948,8 +10955,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.417679,
-        43.647895
+        -79.41768,
+        43.64789
       ]
     }
   },
@@ -10962,8 +10969,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.171319,
-        43.776889
+        -79.17132,
+        43.77689
       ]
     }
   },
@@ -10976,7 +10983,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.620079,
+        -79.62008,
         43.72252
       ]
     }
@@ -10990,8 +10997,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.209707,
-        43.768445
+        -79.20971,
+        43.76844
       ]
     }
   },
@@ -11004,8 +11011,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.436227,
-        43.662375
+        -79.43623,
+        43.66237
       ]
     }
   },
@@ -11018,8 +11025,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.575035,
-        43.756156
+        -79.57503,
+        43.75616
       ]
     }
   },
@@ -11032,8 +11039,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.395142,
-        43.745859
+        -79.39514,
+        43.74586
       ]
     }
   },
@@ -11046,8 +11053,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.175123,
-        43.756484
+        -79.17512,
+        43.75648
       ]
     }
   },
@@ -11060,8 +11067,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.520974,
-        43.730462
+        -79.52097,
+        43.73046
       ]
     }
   },
@@ -11074,7 +11081,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.284917,
+        -79.28492,
         43.69531
       ]
     }
@@ -11088,8 +11095,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.419264,
-        43.669341
+        -79.41926,
+        43.66934
       ]
     }
   },
@@ -11102,8 +11109,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.309855,
-        43.681061
+        -79.30985,
+        43.68106
       ]
     }
   },
@@ -11116,8 +11123,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.596211,
-        43.734397
+        -79.59621,
+        43.7344
       ]
     }
   },
@@ -11130,8 +11137,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.579884,
-        43.743987
+        -79.57988,
+        43.74399
       ]
     }
   },
@@ -11144,8 +11151,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.440245,
-        43.659743
+        -79.44025,
+        43.65974
       ]
     }
   },
@@ -11158,8 +11165,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.226651,
-        43.733836
+        -79.22665,
+        43.73384
       ]
     }
   },
@@ -11172,7 +11179,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.346598,
+        -79.3466,
         43.80187
       ]
     }
@@ -11186,8 +11193,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.574521,
-        43.659682
+        -79.57452,
+        43.65968
       ]
     }
   },
@@ -11200,8 +11207,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.321127,
-        43.674718
+        -79.32113,
+        43.67472
       ]
     }
   },
@@ -11214,8 +11221,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.469664,
-        43.695237
+        -79.46966,
+        43.69524
       ]
     }
   },
@@ -11228,8 +11235,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.465635,
-        43.689375
+        -79.46564,
+        43.68937
       ]
     }
   },
@@ -11242,7 +11249,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.349656,
+        -79.34966,
         43.68264
       ]
     }
@@ -11256,8 +11263,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.427425,
-        43.667401
+        -79.42742,
+        43.6674
       ]
     }
   },
@@ -11270,8 +11277,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.444442,
-        43.667284
+        -79.44444,
+        43.66728
       ]
     }
   },
@@ -11284,7 +11291,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.438067,
+        -79.43807,
         43.68368
       ]
     }
@@ -11298,8 +11305,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.298507,
-        43.779145
+        -79.29851,
+        43.77914
       ]
     }
   },
@@ -11312,8 +11319,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.504762,
-        43.690601
+        -79.50476,
+        43.6906
       ]
     }
   },
@@ -11326,8 +11333,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.413164,
-        43.653461
+        -79.41316,
+        43.65346
       ]
     }
   },
@@ -11340,8 +11347,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.307255,
-        43.771582
+        -79.30725,
+        43.77158
       ]
     }
   },
@@ -11354,7 +11361,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.457271,
+        -79.45727,
         43.75581
       ]
     }
@@ -11368,8 +11375,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.260682,
-        43.781114
+        -79.26068,
+        43.78111
       ]
     }
   },
@@ -11382,8 +11389,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.315822,
-        43.774819
+        -79.31582,
+        43.77482
       ]
     }
   },
@@ -11396,7 +11403,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.290077,
+        -79.29008,
         43.79132
       ]
     }
@@ -11410,7 +11417,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.432294,
+        -79.43229,
         43.75924
       ]
     }
@@ -11424,8 +11431,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.597584,
-        43.738793
+        -79.59758,
+        43.73879
       ]
     }
   },
@@ -11439,7 +11446,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.40955,
-        43.650841
+        43.65084
       ]
     }
   },
@@ -11452,8 +11459,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.435075,
-        43.662688
+        -79.43507,
+        43.66269
       ]
     }
   },
@@ -11466,8 +11473,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.357599,
-        43.675581
+        -79.3576,
+        43.67558
       ]
     }
   },
@@ -11480,8 +11487,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.577546,
-        43.658587
+        -79.57755,
+        43.65859
       ]
     }
   },
@@ -11494,8 +11501,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.228651,
-        43.746238
+        -79.22865,
+        43.74624
       ]
     }
   },
@@ -11508,8 +11515,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.223964,
-        43.730952
+        -79.22396,
+        43.73095
       ]
     }
   },
@@ -11522,7 +11529,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.226658,
+        -79.22666,
         43.83267
       ]
     }
@@ -11536,8 +11543,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.524473,
-        43.596993
+        -79.52447,
+        43.59699
       ]
     }
   },
@@ -11550,8 +11557,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.459505,
-        43.656325
+        -79.4595,
+        43.65633
       ]
     }
   },
@@ -11564,7 +11571,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.246995,
+        -79.24699,
         43.73168
       ]
     }
@@ -11578,8 +11585,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.201168,
-        43.816029
+        -79.20117,
+        43.81603
       ]
     }
   },
@@ -11606,8 +11613,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.541928,
-        43.608508
+        -79.54193,
+        43.60851
       ]
     }
   },
@@ -11620,8 +11627,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.520374,
-        43.638314
+        -79.52037,
+        43.63831
       ]
     }
   },
@@ -11634,8 +11641,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.471315,
-        43.692697
+        -79.47132,
+        43.6927
       ]
     }
   },
@@ -11648,8 +11655,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.572313,
-        43.684723
+        -79.57231,
+        43.68472
       ]
     }
   },
@@ -11662,8 +11669,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.595026,
-        43.736919
+        -79.59503,
+        43.73692
       ]
     }
   },
@@ -11676,8 +11683,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.466902,
-        43.673185
+        -79.4669,
+        43.67318
       ]
     }
   },
@@ -11690,8 +11697,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.131628,
-        43.785232
+        -79.13163,
+        43.78523
       ]
     }
   },
@@ -11704,8 +11711,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.598916,
-        43.744463
+        -79.59892,
+        43.74446
       ]
     }
   },
@@ -11718,8 +11725,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.200911,
-        43.815391
+        -79.20091,
+        43.81539
       ]
     }
   },
@@ -11732,8 +11739,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.615456,
-        43.721446
+        -79.61546,
+        43.72145
       ]
     }
   },
@@ -11746,7 +11753,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.503469,
+        -79.50347,
         43.76687
       ]
     }
@@ -11760,8 +11767,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.592349,
-        43.749713
+        -79.59235,
+        43.74971
       ]
     }
   },
@@ -11774,8 +11781,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.164361,
-        43.789842
+        -79.16436,
+        43.78984
       ]
     }
   },
@@ -11788,8 +11795,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.164974,
-        43.791174
+        -79.16497,
+        43.79117
       ]
     }
   },
@@ -11802,8 +11809,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.553258,
-        43.734467
+        -79.55326,
+        43.73447
       ]
     }
   },
@@ -11817,7 +11824,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.2474,
-        43.752335
+        43.75234
       ]
     }
   },
@@ -11830,8 +11837,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.310611,
-        43.732408
+        -79.31061,
+        43.73241
       ]
     }
   },
@@ -11844,8 +11851,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.465398,
-        43.658235
+        -79.4654,
+        43.65823
       ]
     }
   },
@@ -11858,8 +11865,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.219956,
-        43.824823
+        -79.21996,
+        43.82482
       ]
     }
   },
@@ -11872,8 +11879,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.496616,
-        43.726723
+        -79.49662,
+        43.72672
       ]
     }
   },
@@ -11886,8 +11893,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.568218,
-        43.740059
+        -79.56822,
+        43.74006
       ]
     }
   },
@@ -11900,8 +11907,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.334648,
-        43.790984
+        -79.33465,
+        43.79098
       ]
     }
   },
@@ -11914,8 +11921,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.333309,
-        43.795499
+        -79.33331,
+        43.7955
       ]
     }
   },
@@ -11928,7 +11935,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.585495,
+        -79.58549,
         43.73729
       ]
     }
@@ -11943,7 +11950,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.29873,
-        43.754809
+        43.75481
       ]
     }
   },
@@ -11956,8 +11963,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.456969,
-        43.660086
+        -79.45697,
+        43.66009
       ]
     }
   },
@@ -11970,8 +11977,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.449178,
-        43.681762
+        -79.44918,
+        43.68176
       ]
     }
   },
@@ -11984,8 +11991,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.233878,
-        43.831946
+        -79.23388,
+        43.83195
       ]
     }
   },
@@ -11998,7 +12005,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.564374,
+        -79.56437,
         43.71242
       ]
     }
@@ -12012,8 +12019,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.424804,
-        43.665733
+        -79.4248,
+        43.66573
       ]
     }
   },
@@ -12026,8 +12033,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.596559,
-        43.751255
+        -79.59656,
+        43.75126
       ]
     }
   },
@@ -12040,8 +12047,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.574982,
-        43.727382
+        -79.57498,
+        43.72738
       ]
     }
   },
@@ -12054,8 +12061,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.493301,
-        43.635083
+        -79.4933,
+        43.63508
       ]
     }
   },
@@ -12068,8 +12075,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.348957,
-        43.690527
+        -79.34896,
+        43.69053
       ]
     }
   },
@@ -12082,8 +12089,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.415342,
-        43.694456
+        -79.41534,
+        43.69446
       ]
     }
   },
@@ -12096,7 +12103,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.441542,
+        -79.44154,
         43.65547
       ]
     }
@@ -12110,8 +12117,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.566784,
-        43.718886
+        -79.56678,
+        43.71889
       ]
     }
   },
@@ -12124,8 +12131,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.548629,
-        43.605017
+        -79.54863,
+        43.60502
       ]
     }
   },
@@ -12138,8 +12145,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.438615,
-        43.693379
+        -79.43861,
+        43.69338
       ]
     }
   },
@@ -12152,8 +12159,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.272974,
-        43.709282
+        -79.27297,
+        43.70928
       ]
     }
   },
@@ -12166,8 +12173,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.285427,
-        43.710384
+        -79.28543,
+        43.71038
       ]
     }
   },
@@ -12180,7 +12187,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.564669,
+        -79.56467,
         43.6353
       ]
     }
@@ -12194,8 +12201,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.221008,
-        43.819778
+        -79.22101,
+        43.81978
       ]
     }
   },
@@ -12208,8 +12215,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.561693,
-        43.687911
+        -79.56169,
+        43.68791
       ]
     }
   },
@@ -12223,7 +12230,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.34265,
-        43.785372
+        43.78537
       ]
     }
   },
@@ -12236,8 +12243,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.437371,
-        43.653857
+        -79.43737,
+        43.65386
       ]
     }
   },
@@ -12250,8 +12257,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.317467,
-        43.758096
+        -79.31747,
+        43.7581
       ]
     }
   },
@@ -12264,8 +12271,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.587796,
-        43.753513
+        -79.5878,
+        43.75351
       ]
     }
   },
@@ -12278,7 +12285,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.601475,
+        -79.60147,
         43.7236
       ]
     }
@@ -12292,8 +12299,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.373071,
-        43.801486
+        -79.37307,
+        43.80149
       ]
     }
   },
@@ -12306,8 +12313,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.415186,
-        43.665648
+        -79.41519,
+        43.66565
       ]
     }
   },
@@ -12320,8 +12327,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.214793,
-        43.811143
+        -79.21479,
+        43.81114
       ]
     }
   },
@@ -12334,8 +12341,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.580727,
-        43.655939
+        -79.58073,
+        43.65594
       ]
     }
   },
@@ -12363,7 +12370,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.26998,
-        43.819045
+        43.81905
       ]
     }
   },
@@ -12376,8 +12383,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.459814,
-        43.694241
+        -79.45981,
+        43.69424
       ]
     }
   },
@@ -12390,8 +12397,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.449456,
-        43.693306
+        -79.44946,
+        43.69331
       ]
     }
   },
@@ -12404,8 +12411,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.405661,
-        43.717499
+        -79.40566,
+        43.7175
       ]
     }
   },
@@ -12418,8 +12425,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.236324,
-        43.830737
+        -79.23632,
+        43.83074
       ]
     }
   },
@@ -12432,8 +12439,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.146459,
-        43.788281
+        -79.14646,
+        43.78828
       ]
     }
   },
@@ -12446,7 +12453,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.481009,
+        -79.48101,
         43.65245
       ]
     }
@@ -12460,8 +12467,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.438546,
-        43.641336
+        -79.43855,
+        43.64134
       ]
     }
   },
@@ -12474,8 +12481,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.383184,
-        43.778033
+        -79.38318,
+        43.77803
       ]
     }
   },
@@ -12488,8 +12495,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.568813,
-        43.663205
+        -79.56881,
+        43.6632
       ]
     }
   },
@@ -12502,8 +12509,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.356385,
-        43.675635
+        -79.35639,
+        43.67563
       ]
     }
   },
@@ -12516,8 +12523,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.371499,
-        43.662945
+        -79.3715,
+        43.66295
       ]
     }
   },
@@ -12530,8 +12537,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.242897,
-        43.747718
+        -79.2429,
+        43.74772
       ]
     }
   },
@@ -12544,8 +12551,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.228436,
-        43.733444
+        -79.22844,
+        43.73344
       ]
     }
   },
@@ -12558,8 +12565,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.313281,
-        43.695919
+        -79.31328,
+        43.69592
       ]
     }
   },
@@ -12572,8 +12579,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.548747,
-        43.637039
+        -79.54875,
+        43.63704
       ]
     }
   },
@@ -12586,8 +12593,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.174629,
-        43.783422
+        -79.17463,
+        43.78342
       ]
     }
   },
@@ -12600,8 +12607,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.399699,
-        43.785611
+        -79.3997,
+        43.78561
       ]
     }
   },
@@ -12614,8 +12621,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.222578,
-        43.749366
+        -79.22258,
+        43.74937
       ]
     }
   },
@@ -12628,8 +12635,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.423286,
-        43.645248
+        -79.42329,
+        43.64525
       ]
     }
   },
@@ -12642,8 +12649,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.438692,
-        43.657349
+        -79.43869,
+        43.65735
       ]
     }
   },
@@ -12656,8 +12663,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.419687,
-        43.651124
+        -79.41969,
+        43.65112
       ]
     }
   },
@@ -12670,8 +12677,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.496722,
-        43.768548
+        -79.49672,
+        43.76855
       ]
     }
   },
@@ -12684,8 +12691,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.422915,
-        43.647099
+        -79.42292,
+        43.6471
       ]
     }
   },
@@ -12698,8 +12705,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.603749,
-        43.755907
+        -79.60375,
+        43.75591
       ]
     }
   },
@@ -12713,7 +12720,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.40925,
-        43.769925
+        43.76993
       ]
     }
   },
@@ -12726,8 +12733,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.409192,
-        43.645277
+        -79.40919,
+        43.64528
       ]
     }
   },
@@ -12740,7 +12747,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.620027,
+        -79.62003,
         43.72237
       ]
     }
@@ -12754,8 +12761,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.429155,
-        43.651613
+        -79.42915,
+        43.65161
       ]
     }
   },
@@ -12768,8 +12775,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.405651,
-        43.657805
+        -79.40565,
+        43.65781
       ]
     }
   },
@@ -12782,8 +12789,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.491218,
-        43.676613
+        -79.49122,
+        43.67661
       ]
     }
   },
@@ -12796,8 +12803,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.341481,
-        43.756834
+        -79.34148,
+        43.75683
       ]
     }
   },
@@ -12811,7 +12818,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.34668,
-        43.791763
+        43.79176
       ]
     }
   },
@@ -12824,8 +12831,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.497503,
-        43.714774
+        -79.4975,
+        43.71477
       ]
     }
   },
@@ -12838,8 +12845,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.317328,
-        43.673187
+        -79.31733,
+        43.67319
       ]
     }
   },
@@ -12852,8 +12859,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.189256,
-        43.751735
+        -79.18926,
+        43.75173
       ]
     }
   },
@@ -12867,7 +12874,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.25131,
-        43.766855
+        43.76685
       ]
     }
   },
@@ -12880,8 +12887,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.583269,
-        43.725041
+        -79.58327,
+        43.72504
       ]
     }
   },
@@ -12894,8 +12901,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.334279,
-        43.790128
+        -79.33428,
+        43.79013
       ]
     }
   },
@@ -12908,8 +12915,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.298152,
-        43.706185
+        -79.29815,
+        43.70618
       ]
     }
   },
@@ -12923,7 +12930,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.18457,
-        43.793666
+        43.79367
       ]
     }
   },
@@ -12936,8 +12943,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.228156,
-        43.836565
+        -79.22816,
+        43.83657
       ]
     }
   },
@@ -12950,8 +12957,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.552596,
-        43.714866
+        -79.5526,
+        43.71487
       ]
     }
   },
@@ -12964,8 +12971,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.565338,
-        43.671975
+        -79.56534,
+        43.67198
       ]
     }
   },
@@ -12992,8 +12999,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.457624,
-        43.755731
+        -79.45762,
+        43.75573
       ]
     }
   },
@@ -13007,7 +13014,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.33949,
-        43.685296
+        43.6853
       ]
     }
   },
@@ -13020,8 +13027,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.225192,
-        43.782264
+        -79.22519,
+        43.78226
       ]
     }
   },
@@ -13034,8 +13041,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.455096,
-        43.676617
+        -79.4551,
+        43.67662
       ]
     }
   },
@@ -13048,8 +13055,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.175959,
-        43.784314
+        -79.17596,
+        43.78431
       ]
     }
   },
@@ -13062,8 +13069,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.331948,
-        43.761701
+        -79.33195,
+        43.7617
       ]
     }
   },
@@ -13076,8 +13083,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.329461,
-        43.775451
+        -79.32946,
+        43.77545
       ]
     }
   },
@@ -13090,8 +13097,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.490756,
-        43.630806
+        -79.49076,
+        43.63081
       ]
     }
   },
@@ -13104,8 +13111,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.494414,
-        43.667237
+        -79.49441,
+        43.66724
       ]
     }
   },
@@ -13118,8 +13125,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.454666,
-        43.714042
+        -79.45467,
+        43.71404
       ]
     }
   },
@@ -13133,7 +13140,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.47693,
-        43.645105
+        43.64511
       ]
     }
   },
@@ -13146,8 +13153,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.436686,
-        43.653284
+        -79.43669,
+        43.65328
       ]
     }
   },
@@ -13160,8 +13167,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.525609,
-        43.599544
+        -79.52561,
+        43.59954
       ]
     }
   },
@@ -13188,8 +13195,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.600997,
-        43.732144
+        -79.601,
+        43.73214
       ]
     }
   },
@@ -13202,7 +13209,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.523398,
+        -79.5234,
         43.71073
       ]
     }
@@ -13216,8 +13223,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.346336,
-        43.679644
+        -79.34634,
+        43.67964
       ]
     }
   },
@@ -13230,7 +13237,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.601152,
+        -79.60115,
         43.74768
       ]
     }
@@ -13244,8 +13251,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418468,
-        43.679918
+        -79.41847,
+        43.67992
       ]
     }
   },
@@ -13258,8 +13265,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.279016,
-        43.755249
+        -79.27902,
+        43.75525
       ]
     }
   },
@@ -13272,7 +13279,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.236701,
+        -79.2367,
         43.76764
       ]
     }
@@ -13286,8 +13293,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.341712,
-        43.685926
+        -79.34171,
+        43.68593
       ]
     }
   },
@@ -13300,8 +13307,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.487885,
-        43.734604
+        -79.48789,
+        43.7346
       ]
     }
   },
@@ -13314,8 +13321,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.318387,
-        43.674605
+        -79.31839,
+        43.6746
       ]
     }
   },
@@ -13328,8 +13335,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.533457,
-        43.606966
+        -79.53346,
+        43.60697
       ]
     }
   },
@@ -13342,8 +13349,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.478338,
-        43.677968
+        -79.47834,
+        43.67797
       ]
     }
   },
@@ -13356,8 +13363,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.311941,
-        43.762735
+        -79.31194,
+        43.76273
       ]
     }
   },
@@ -13370,8 +13377,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.335031,
-        43.763177
+        -79.33503,
+        43.76318
       ]
     }
   },
@@ -13384,7 +13391,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.237073,
+        -79.23707,
         43.77173
       ]
     }
@@ -13398,8 +13405,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.425058,
-        43.761521
+        -79.42506,
+        43.76152
       ]
     }
   },
@@ -13412,8 +13419,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.234476,
-        43.728398
+        -79.23448,
+        43.7284
       ]
     }
   },
@@ -13426,8 +13433,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.398936,
-        43.684575
+        -79.39894,
+        43.68458
       ]
     }
   },
@@ -13440,8 +13447,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.593484,
-        43.736916
+        -79.59348,
+        43.73692
       ]
     }
   },
@@ -13454,7 +13461,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.575408,
+        -79.57541,
         43.7546
       ]
     }
@@ -13468,8 +13475,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.575566,
-        43.754591
+        -79.57557,
+        43.75459
       ]
     }
   },
@@ -13482,8 +13489,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.331133,
-        43.671406
+        -79.33113,
+        43.67141
       ]
     }
   },
@@ -13496,8 +13503,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.312926,
-        43.769523
+        -79.31293,
+        43.76952
       ]
     }
   },
@@ -13510,7 +13517,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.591363,
+        -79.59136,
         43.73016
       ]
     }
@@ -13524,8 +13531,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.563798,
-        43.724276
+        -79.5638,
+        43.72428
       ]
     }
   },
@@ -13538,8 +13545,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.225738,
-        43.745267
+        -79.22574,
+        43.74527
       ]
     }
   },
@@ -13552,8 +13559,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.571518,
-        43.732073
+        -79.57152,
+        43.73207
       ]
     }
   },
@@ -13566,8 +13573,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.303923,
-        43.746712
+        -79.30392,
+        43.74671
       ]
     }
   },
@@ -13580,8 +13587,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.422469,
-        43.767276
+        -79.42247,
+        43.76728
       ]
     }
   },
@@ -13594,8 +13601,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.356953,
-        43.680907
+        -79.35695,
+        43.68091
       ]
     }
   },
@@ -13608,8 +13615,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.249306,
-        43.708605
+        -79.24931,
+        43.7086
       ]
     }
   },
@@ -13622,8 +13629,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.521492,
-        43.706588
+        -79.52149,
+        43.70659
       ]
     }
   },
@@ -13636,8 +13643,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.540294,
-        43.698884
+        -79.54029,
+        43.69888
       ]
     }
   },
@@ -13650,8 +13657,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.340073,
-        43.789779
+        -79.34007,
+        43.78978
       ]
     }
   },
@@ -13664,8 +13671,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.444721,
-        43.681617
+        -79.44472,
+        43.68162
       ]
     }
   },
@@ -13678,8 +13685,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.572564,
-        43.629626
+        -79.57256,
+        43.62963
       ]
     }
   },
@@ -13692,8 +13699,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.490998,
-        43.730038
+        -79.491,
+        43.73004
       ]
     }
   },
@@ -13706,8 +13713,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.152803,
-        43.782546
+        -79.1528,
+        43.78255
       ]
     }
   },
@@ -13720,8 +13727,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.409388,
-        43.654397
+        -79.40939,
+        43.6544
       ]
     }
   },
@@ -13734,8 +13741,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.204994,
-        43.792096
+        -79.20499,
+        43.7921
       ]
     }
   },
@@ -13748,8 +13755,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.225002,
-        43.808035
+        -79.225,
+        43.80803
       ]
     }
   },
@@ -13762,8 +13769,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.367854,
-        43.764118
+        -79.36785,
+        43.76412
       ]
     }
   },
@@ -13776,8 +13783,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.439774,
-        43.681129
+        -79.43977,
+        43.68113
       ]
     }
   },
@@ -13790,8 +13797,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.604042,
-        43.754859
+        -79.60404,
+        43.75486
       ]
     }
   },
@@ -13804,8 +13811,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.503629,
-        43.703057
+        -79.50363,
+        43.70306
       ]
     }
   },
@@ -13818,8 +13825,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.250842,
-        43.764963
+        -79.25084,
+        43.76496
       ]
     }
   },
@@ -13832,8 +13839,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.453214,
-        43.647202
+        -79.45321,
+        43.6472
       ]
     }
   },
@@ -13846,8 +13853,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.204994,
-        43.792096
+        -79.20499,
+        43.7921
       ]
     }
   },
@@ -13860,8 +13867,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.580042,
-        43.659408
+        -79.58004,
+        43.65941
       ]
     }
   },
@@ -13874,8 +13881,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.345573,
-        43.688923
+        -79.34557,
+        43.68892
       ]
     }
   },
@@ -13889,7 +13896,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.58583,
-        43.657795
+        43.6578
       ]
     }
   },
@@ -13902,8 +13909,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.274426,
-        43.699901
+        -79.27443,
+        43.6999
       ]
     }
   },
@@ -13916,8 +13923,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.327291,
-        43.669657
+        -79.32729,
+        43.66966
       ]
     }
   },
@@ -13931,7 +13938,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.48542,
-        43.651154
+        43.65115
       ]
     }
   },
@@ -13944,8 +13951,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.588953,
-        43.754071
+        -79.58895,
+        43.75407
       ]
     }
   },
@@ -13958,8 +13965,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.277225,
-        43.744047
+        -79.27723,
+        43.74405
       ]
     }
   },
@@ -13972,8 +13979,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.451024,
-        43.661747
+        -79.45102,
+        43.66175
       ]
     }
   },
@@ -13986,8 +13993,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.597804,
-        43.751201
+        -79.5978,
+        43.7512
       ]
     }
   },
@@ -14000,8 +14007,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.431397,
-        43.681226
+        -79.4314,
+        43.68123
       ]
     }
   },
@@ -14015,7 +14022,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.49671,
-        43.628161
+        43.62816
       ]
     }
   },
@@ -14028,8 +14035,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.501847,
-        43.768049
+        -79.50185,
+        43.76805
       ]
     }
   },
@@ -14042,8 +14049,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.475764,
-        43.692571
+        -79.47576,
+        43.69257
       ]
     }
   },
@@ -14056,8 +14063,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.412964,
-        43.676968
+        -79.41296,
+        43.67697
       ]
     }
   },
@@ -14070,8 +14077,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.565727,
-        43.670695
+        -79.56573,
+        43.6707
       ]
     }
   },
@@ -14084,8 +14091,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.181582,
-        43.783941
+        -79.18158,
+        43.78394
       ]
     }
   },
@@ -14098,8 +14105,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.481994,
-        43.703644
+        -79.48199,
+        43.70364
       ]
     }
   },
@@ -14112,7 +14119,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.496601,
+        -79.4966,
         43.6357
       ]
     }
@@ -14126,8 +14133,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.449477,
-        43.693357
+        -79.44948,
+        43.69336
       ]
     }
   },
@@ -14140,8 +14147,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.403302,
-        43.653786
+        -79.4033,
+        43.65379
       ]
     }
   },
@@ -14154,8 +14161,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.432097,
-        43.675887
+        -79.4321,
+        43.67589
       ]
     }
   },
@@ -14168,8 +14175,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.136696,
-        43.784122
+        -79.1367,
+        43.78412
       ]
     }
   },
@@ -14182,8 +14189,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.313791,
-        43.697021
+        -79.31379,
+        43.69702
       ]
     }
   },
@@ -14196,8 +14203,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.313791,
-        43.697021
+        -79.31379,
+        43.69702
       ]
     }
   },
@@ -14210,8 +14217,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.226567,
-        43.822813
+        -79.22657,
+        43.82281
       ]
     }
   },
@@ -14224,8 +14231,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.402284,
-        43.789069
+        -79.40228,
+        43.78907
       ]
     }
   },
@@ -14238,8 +14245,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.248604,
-        43.770087
+        -79.2486,
+        43.77009
       ]
     }
   },
@@ -14252,8 +14259,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.417499,
-        43.654503
+        -79.4175,
+        43.6545
       ]
     }
   },
@@ -14266,7 +14273,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.425366,
+        -79.42537,
         43.65057
       ]
     }
@@ -14280,8 +14287,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.441254,
-        43.662418
+        -79.44125,
+        43.66242
       ]
     }
   },
@@ -14294,8 +14301,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.343783,
-        43.661109
+        -79.34378,
+        43.66111
       ]
     }
   },
@@ -14308,8 +14315,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.295859,
-        43.683065
+        -79.29586,
+        43.68306
       ]
     }
   },
@@ -14322,8 +14329,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.465579,
-        43.668247
+        -79.46558,
+        43.66825
       ]
     }
   },
@@ -14337,7 +14344,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.26797,
-        43.709964
+        43.70996
       ]
     }
   },
@@ -14350,8 +14357,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.459867,
-        43.756928
+        -79.45987,
+        43.75693
       ]
     }
   },
@@ -14364,8 +14371,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.432481,
-        43.688663
+        -79.43248,
+        43.68866
       ]
     }
   },
@@ -14378,8 +14385,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.274301,
-        43.791383
+        -79.2743,
+        43.79138
       ]
     }
   },
@@ -14392,8 +14399,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.491354,
-        43.725831
+        -79.49135,
+        43.72583
       ]
     }
   },
@@ -14406,8 +14413,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.305217,
-        43.689646
+        -79.30522,
+        43.68965
       ]
     }
   },
@@ -14420,7 +14427,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.559418,
+        -79.55942,
         43.73114
       ]
     }
@@ -14434,8 +14441,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.368608,
-        43.675116
+        -79.36861,
+        43.67512
       ]
     }
   },
@@ -14448,8 +14455,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.302237,
-        43.795556
+        -79.30224,
+        43.79556
       ]
     }
   },
@@ -14462,8 +14469,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.331021,
-        43.743624
+        -79.33102,
+        43.74362
       ]
     }
   },
@@ -14476,8 +14483,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.441287,
-        43.665966
+        -79.44129,
+        43.66597
       ]
     }
   },
@@ -14490,8 +14497,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.345685,
-        43.790901
+        -79.34569,
+        43.7909
       ]
     }
   },
@@ -14504,8 +14511,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.424997,
-        43.644201
+        -79.425,
+        43.6442
       ]
     }
   },
@@ -14518,8 +14525,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.397413,
-        43.657024
+        -79.39741,
+        43.65702
       ]
     }
   },
@@ -14532,7 +14539,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.263266,
+        -79.26327,
         43.69305
       ]
     }
@@ -14547,7 +14554,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.41741,
-        43.659227
+        43.65923
       ]
     }
   },
@@ -14560,8 +14567,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.187301,
-        43.792123
+        -79.1873,
+        43.79212
       ]
     }
   },
@@ -14574,8 +14581,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.393702,
-        43.732496
+        -79.3937,
+        43.7325
       ]
     }
   },
@@ -14588,8 +14595,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.311714,
-        43.765177
+        -79.31171,
+        43.76518
       ]
     }
   },
@@ -14602,8 +14609,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.480389,
-        43.700173
+        -79.48039,
+        43.70017
       ]
     }
   },
@@ -14616,8 +14623,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.551485,
-        43.669549
+        -79.55148,
+        43.66955
       ]
     }
   },
@@ -14630,8 +14637,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.577857,
-        43.757717
+        -79.57786,
+        43.75772
       ]
     }
   },
@@ -14644,8 +14651,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.582802,
-        43.726786
+        -79.5828,
+        43.72679
       ]
     }
   },
@@ -14658,8 +14665,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.432093,
-        43.671572
+        -79.43209,
+        43.67157
       ]
     }
   },
@@ -14672,8 +14679,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.405781,
-        43.703707
+        -79.40578,
+        43.70371
       ]
     }
   },
@@ -14686,7 +14693,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.483871,
+        -79.48387,
         43.67022
       ]
     }
@@ -14700,8 +14707,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.251903,
-        43.743603
+        -79.2519,
+        43.7436
       ]
     }
   },
@@ -14714,8 +14721,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.256895,
-        43.720074
+        -79.2569,
+        43.72007
       ]
     }
   },
@@ -14728,8 +14735,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.251374,
-        43.703732
+        -79.25137,
+        43.70373
       ]
     }
   },
@@ -14742,8 +14749,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.427298,
-        43.770232
+        -79.4273,
+        43.77023
       ]
     }
   },
@@ -14756,8 +14763,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.543619,
-        43.594507
+        -79.54362,
+        43.59451
       ]
     }
   },
@@ -14771,7 +14778,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.53077,
-        43.605196
+        43.6052
       ]
     }
   },
@@ -14784,7 +14791,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.462923,
+        -79.46292,
         43.65791
       ]
     }
@@ -14798,8 +14805,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.228927,
-        43.831253
+        -79.22893,
+        43.83125
       ]
     }
   },
@@ -14812,8 +14819,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.349278,
-        43.680577
+        -79.34928,
+        43.68058
       ]
     }
   },
@@ -14826,8 +14833,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.224553,
-        43.776298
+        -79.22455,
+        43.7763
       ]
     }
   },
@@ -14840,8 +14847,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.353731,
-        43.681966
+        -79.35373,
+        43.68197
       ]
     }
   },
@@ -14854,8 +14861,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.460391,
-        43.685666
+        -79.46039,
+        43.68567
       ]
     }
   },
@@ -14868,8 +14875,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.297426,
-        43.719748
+        -79.29743,
+        43.71975
       ]
     }
   },
@@ -14882,7 +14889,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.258426,
+        -79.25843,
         43.71062
       ]
     }
@@ -14896,8 +14903,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.231162,
-        43.797387
+        -79.23116,
+        43.79739
       ]
     }
   },
@@ -14910,8 +14917,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.419916,
-        43.651081
+        -79.41992,
+        43.65108
       ]
     }
   },
@@ -14924,8 +14931,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.477952,
-        43.707392
+        -79.47795,
+        43.70739
       ]
     }
   },
@@ -14938,8 +14945,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.452863,
-        43.643129
+        -79.45286,
+        43.64313
       ]
     }
   },
@@ -14952,8 +14959,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.568732,
-        43.755052
+        -79.56873,
+        43.75505
       ]
     }
   },
@@ -14966,8 +14973,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.471829,
-        43.662458
+        -79.47183,
+        43.66246
       ]
     }
   },
@@ -14980,7 +14987,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.284293,
+        -79.28429,
         43.68724
       ]
     }
@@ -14994,8 +15001,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.404362,
-        43.663566
+        -79.40436,
+        43.66357
       ]
     }
   },
@@ -15008,8 +15015,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.306747,
-        43.691269
+        -79.30675,
+        43.69127
       ]
     }
   },
@@ -15022,8 +15029,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.257744,
-        43.730546
+        -79.25774,
+        43.73055
       ]
     }
   },
@@ -15036,8 +15043,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.225272,
-        43.770276
+        -79.22527,
+        43.77028
       ]
     }
   },
@@ -15050,8 +15057,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.224293,
-        43.822358
+        -79.22429,
+        43.82236
       ]
     }
   },
@@ -15064,8 +15071,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.342478,
-        43.797367
+        -79.34248,
+        43.79737
       ]
     }
   },
@@ -15078,8 +15085,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.429565,
-        43.653969
+        -79.42956,
+        43.65397
       ]
     }
   },
@@ -15092,8 +15099,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.488164,
-        43.619502
+        -79.48816,
+        43.6195
       ]
     }
   },
@@ -15106,8 +15113,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.177804,
-        43.756548
+        -79.1778,
+        43.75655
       ]
     }
   },
@@ -15120,8 +15127,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.481354,
-        43.663129
+        -79.48135,
+        43.66313
       ]
     }
   },
@@ -15134,8 +15141,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.353335,
-        43.691485
+        -79.35334,
+        43.69149
       ]
     }
   },
@@ -15148,8 +15155,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.252645,
-        43.766397
+        -79.25265,
+        43.7664
       ]
     }
   },
@@ -15162,8 +15169,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.270353,
-        43.697698
+        -79.27035,
+        43.6977
       ]
     }
   },
@@ -15176,8 +15183,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.446491,
-        43.658389
+        -79.44649,
+        43.65839
       ]
     }
   },
@@ -15190,8 +15197,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.561462,
-        43.669796
+        -79.56146,
+        43.6698
       ]
     }
   },
@@ -15204,8 +15211,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.375454,
-        43.710121
+        -79.37545,
+        43.71012
       ]
     }
   },
@@ -15218,8 +15225,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.456025,
-        43.647004
+        -79.45602,
+        43.647
       ]
     }
   },
@@ -15232,8 +15239,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.612222,
-        43.732252
+        -79.61222,
+        43.73225
       ]
     }
   },
@@ -15246,8 +15253,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.323604,
-        43.684916
+        -79.3236,
+        43.68492
       ]
     }
   },
@@ -15261,7 +15268,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.48793,
-        43.670725
+        43.67072
       ]
     }
   },
@@ -15274,8 +15281,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.463213,
-        43.730561
+        -79.46321,
+        43.73056
       ]
     }
   },
@@ -15288,8 +15295,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.412551,
-        43.653765
+        -79.41255,
+        43.65376
       ]
     }
   },
@@ -15302,8 +15309,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.412137,
-        43.652241
+        -79.41214,
+        43.65224
       ]
     }
   },
@@ -15316,8 +15323,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.465492,
-        43.679289
+        -79.46549,
+        43.67929
       ]
     }
   },
@@ -15330,7 +15337,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.181572,
+        -79.18157,
         43.81169
       ]
     }
@@ -15344,8 +15351,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.495872,
-        43.633928
+        -79.49587,
+        43.63393
       ]
     }
   },
@@ -15358,8 +15365,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.215396,
-        43.824344
+        -79.2154,
+        43.82434
       ]
     }
   },
@@ -15372,8 +15379,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.356946,
-        43.686199
+        -79.35695,
+        43.6862
       ]
     }
   },
@@ -15386,8 +15393,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.553081,
-        43.642799
+        -79.55308,
+        43.6428
       ]
     }
   },
@@ -15400,7 +15407,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.578066,
+        -79.57807,
         43.64539
       ]
     }
@@ -15415,7 +15422,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.4438,
-        43.789245
+        43.78925
       ]
     }
   },
@@ -15428,8 +15435,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.557922,
-        43.691062
+        -79.55792,
+        43.69106
       ]
     }
   },
@@ -15442,8 +15449,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.417393,
-        43.667278
+        -79.41739,
+        43.66728
       ]
     }
   },
@@ -15456,8 +15463,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.454524,
-        43.643202
+        -79.45452,
+        43.6432
       ]
     }
   },
@@ -15470,8 +15477,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.366191,
-        43.668466
+        -79.36619,
+        43.66847
       ]
     }
   },
@@ -15484,8 +15491,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.224835,
-        43.808164
+        -79.22483,
+        43.80816
       ]
     }
   },
@@ -15498,8 +15505,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.426185,
-        43.652561
+        -79.42619,
+        43.65256
       ]
     }
   },
@@ -15512,8 +15519,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.433356,
-        43.788856
+        -79.43336,
+        43.78886
       ]
     }
   },
@@ -15526,8 +15533,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.255398,
-        43.731114
+        -79.2554,
+        43.73111
       ]
     }
   },
@@ -15540,8 +15547,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.339386,
-        43.666063
+        -79.33939,
+        43.66606
       ]
     }
   },
@@ -15555,7 +15562,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.49512,
-        43.625674
+        43.62567
       ]
     }
   },
@@ -15568,8 +15575,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.247636,
-        43.763776
+        -79.24764,
+        43.76378
       ]
     }
   },
@@ -15582,8 +15589,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.556203,
-        43.720849
+        -79.5562,
+        43.72085
       ]
     }
   },
@@ -15596,8 +15603,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.254789,
-        43.743442
+        -79.25479,
+        43.74344
       ]
     }
   },
@@ -15610,8 +15617,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.310421,
-        43.685237
+        -79.31042,
+        43.68524
       ]
     }
   },
@@ -15624,8 +15631,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.439483,
-        43.661775
+        -79.43948,
+        43.66177
       ]
     }
   },
@@ -15638,8 +15645,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.423967,
-        43.664785
+        -79.42397,
+        43.66479
       ]
     }
   },
@@ -15653,7 +15660,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.42439,
-        43.645819
+        43.64582
       ]
     }
   },
@@ -15667,7 +15674,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.59914,
-        43.753447
+        43.75345
       ]
     }
   },
@@ -15680,8 +15687,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.221069,
-        43.764155
+        -79.22107,
+        43.76416
       ]
     }
   },
@@ -15694,8 +15701,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.250007,
-        43.715086
+        -79.25001,
+        43.71509
       ]
     }
   },
@@ -15708,8 +15715,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.185467,
-        43.793053
+        -79.18547,
+        43.79305
       ]
     }
   },
@@ -15722,8 +15729,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.425998,
-        43.668517
+        -79.426,
+        43.66852
       ]
     }
   },
@@ -15736,8 +15743,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.444653,
-        43.667238
+        -79.44465,
+        43.66724
       ]
     }
   },
@@ -15750,8 +15757,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.327286,
-        43.782608
+        -79.32729,
+        43.78261
       ]
     }
   },
@@ -15765,7 +15772,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.45544,
-        43.669083
+        43.66908
       ]
     }
   },
@@ -15778,8 +15785,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.450075,
-        43.660178
+        -79.45007,
+        43.66018
       ]
     }
   },
@@ -15792,8 +15799,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.180782,
-        43.782943
+        -79.18078,
+        43.78294
       ]
     }
   },
@@ -15806,8 +15813,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.423586,
-        43.775547
+        -79.42359,
+        43.77555
       ]
     }
   },
@@ -15820,8 +15827,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.571471,
-        43.742934
+        -79.57147,
+        43.74293
       ]
     }
   },
@@ -15834,8 +15841,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.209213,
-        43.783842
+        -79.20921,
+        43.78384
       ]
     }
   },
@@ -15848,8 +15855,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.303384,
-        43.667994
+        -79.30338,
+        43.66799
       ]
     }
   },
@@ -15862,8 +15869,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.526722,
-        43.641749
+        -79.52672,
+        43.64175
       ]
     }
   },
@@ -15876,8 +15883,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.395457,
-        43.685304
+        -79.39546,
+        43.6853
       ]
     }
   },
@@ -15890,8 +15897,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.177965,
-        43.797788
+        -79.17797,
+        43.79779
       ]
     }
   },
@@ -15905,7 +15912,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.56867,
-        43.636029
+        43.63603
       ]
     }
   },
@@ -15918,8 +15925,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.538755,
-        43.603805
+        -79.53875,
+        43.60381
       ]
     }
   },
@@ -15932,8 +15939,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.520916,
-        43.625593
+        -79.52092,
+        43.62559
       ]
     }
   },
@@ -15946,8 +15953,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.240192,
-        43.754073
+        -79.24019,
+        43.75407
       ]
     }
   },
@@ -15960,8 +15967,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.325629,
-        43.673642
+        -79.32563,
+        43.67364
       ]
     }
   },
@@ -15974,8 +15981,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418307,
-        43.762578
+        -79.41831,
+        43.76258
       ]
     }
   },
@@ -15989,7 +15996,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.28829,
-        43.781047
+        43.78105
       ]
     }
   },
@@ -16002,8 +16009,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.513423,
-        43.628102
+        -79.51342,
+        43.6281
       ]
     }
   },
@@ -16016,8 +16023,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.285136,
-        43.748771
+        -79.28514,
+        43.74877
       ]
     }
   },
@@ -16030,8 +16037,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.228733,
-        43.824906
+        -79.22873,
+        43.82491
       ]
     }
   },
@@ -16044,8 +16051,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.560456,
-        43.689687
+        -79.56046,
+        43.68969
       ]
     }
   },
@@ -16058,8 +16065,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.430367,
-        43.639116
+        -79.43037,
+        43.63912
       ]
     }
   },
@@ -16072,8 +16079,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.482045,
-        43.664668
+        -79.48204,
+        43.66467
       ]
     }
   },
@@ -16086,8 +16093,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.320688,
-        43.779867
+        -79.32069,
+        43.77987
       ]
     }
   },
@@ -16100,8 +16107,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.352295,
-        43.678123
+        -79.35229,
+        43.67812
       ]
     }
   },
@@ -16114,8 +16121,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.429753,
-        43.786157
+        -79.42975,
+        43.78616
       ]
     }
   },
@@ -16128,8 +16135,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.364192,
-        43.807829
+        -79.36419,
+        43.80783
       ]
     }
   },
@@ -16142,8 +16149,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.568408,
-        43.716132
+        -79.56841,
+        43.71613
       ]
     }
   },
@@ -16156,8 +16163,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.492131,
-        43.737178
+        -79.49213,
+        43.73718
       ]
     }
   },
@@ -16170,8 +16177,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.443141,
-        43.661549
+        -79.44314,
+        43.66155
       ]
     }
   },
@@ -16184,8 +16191,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.513533,
-        43.703672
+        -79.51353,
+        43.70367
       ]
     }
   },
@@ -16198,8 +16205,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418676,
-        43.776462
+        -79.41868,
+        43.77646
       ]
     }
   },
@@ -16212,8 +16219,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.164834,
-        43.790249
+        -79.16483,
+        43.79025
       ]
     }
   },
@@ -16226,8 +16233,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.549377,
-        43.633095
+        -79.54938,
+        43.63309
       ]
     }
   },
@@ -16240,8 +16247,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.173787,
-        43.756525
+        -79.17379,
+        43.75653
       ]
     }
   },
@@ -16255,7 +16262,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.25531,
-        43.764196
+        43.7642
       ]
     }
   },
@@ -16268,8 +16275,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.444045,
-        43.697973
+        -79.44405,
+        43.69797
       ]
     }
   },
@@ -16282,8 +16289,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.350511,
-        43.743357
+        -79.35051,
+        43.74336
       ]
     }
   },
@@ -16296,8 +16303,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.450711,
-        43.694633
+        -79.45071,
+        43.69463
       ]
     }
   },
@@ -16310,8 +16317,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.613979,
-        43.733328
+        -79.61398,
+        43.73333
       ]
     }
   },
@@ -16324,8 +16331,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.189238,
-        43.776516
+        -79.18924,
+        43.77652
       ]
     }
   },
@@ -16338,8 +16345,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.233476,
-        43.769896
+        -79.23348,
+        43.7699
       ]
     }
   },
@@ -16352,8 +16359,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.545904,
-        43.610326
+        -79.5459,
+        43.61033
       ]
     }
   },
@@ -16366,8 +16373,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.234222,
-        43.747871
+        -79.23422,
+        43.74787
       ]
     }
   },
@@ -16380,8 +16387,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.211765,
-        43.791855
+        -79.21176,
+        43.79185
       ]
     }
   },
@@ -16394,8 +16401,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.442255,
-        43.782649
+        -79.44226,
+        43.78265
       ]
     }
   },
@@ -16408,8 +16415,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.563793,
-        43.721626
+        -79.56379,
+        43.72163
       ]
     }
   },
@@ -16422,8 +16429,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.176297,
-        43.794335
+        -79.1763,
+        43.79433
       ]
     }
   },
@@ -16436,8 +16443,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.448709,
-        43.683026
+        -79.44871,
+        43.68303
       ]
     }
   },
@@ -16450,8 +16457,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.307004,
-        43.682241
+        -79.307,
+        43.68224
       ]
     }
   },
@@ -16464,7 +16471,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.257758,
+        -79.25776,
         43.76573
       ]
     }
@@ -16478,8 +16485,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.320945,
-        43.743616
+        -79.32094,
+        43.74362
       ]
     }
   },
@@ -16492,7 +16499,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.427453,
+        -79.42745,
         43.76611
       ]
     }
@@ -16506,8 +16513,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.548543,
-        43.664128
+        -79.54854,
+        43.66413
       ]
     }
   },
@@ -16520,8 +16527,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.416224,
-        43.796285
+        -79.41622,
+        43.79628
       ]
     }
   },
@@ -16534,8 +16541,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.172865,
-        43.804054
+        -79.17287,
+        43.80405
       ]
     }
   },
@@ -16548,8 +16555,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.165741,
-        43.787611
+        -79.16574,
+        43.78761
       ]
     }
   },
@@ -16562,8 +16569,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.435233,
-        43.663194
+        -79.43523,
+        43.66319
       ]
     }
   },
@@ -16576,8 +16583,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.326347,
-        43.765927
+        -79.32635,
+        43.76593
       ]
     }
   },
@@ -16590,8 +16597,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.521816,
-        43.592065
+        -79.52182,
+        43.59206
       ]
     }
   },
@@ -16605,7 +16612,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.43391,
-        43.672965
+        43.67296
       ]
     }
   },
@@ -16618,8 +16625,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.582599,
-        43.738745
+        -79.5826,
+        43.73875
       ]
     }
   },
@@ -16632,8 +16639,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.277651,
-        43.695501
+        -79.27765,
+        43.6955
       ]
     }
   },
@@ -16646,8 +16653,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.183034,
-        43.793889
+        -79.18303,
+        43.79389
       ]
     }
   },
@@ -16660,8 +16667,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.339807,
-        43.795546
+        -79.33981,
+        43.79555
       ]
     }
   },
@@ -16674,8 +16681,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.280918,
-        43.758213
+        -79.28092,
+        43.75821
       ]
     }
   },
@@ -16688,8 +16695,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.167823,
-        43.773824
+        -79.16782,
+        43.77382
       ]
     }
   },
@@ -16702,8 +16709,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.600903,
-        43.754246
+        -79.6009,
+        43.75425
       ]
     }
   },
@@ -16717,7 +16724,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.30222,
-        43.762682
+        43.76268
       ]
     }
   },
@@ -16730,8 +16737,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.222041,
-        43.761351
+        -79.22204,
+        43.76135
       ]
     }
   },
@@ -16744,7 +16751,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.584785,
+        -79.58478,
         43.73067
       ]
     }
@@ -16758,8 +16765,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.274344,
-        43.814787
+        -79.27434,
+        43.81479
       ]
     }
   },
@@ -16772,8 +16779,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.461994,
-        43.692032
+        -79.46199,
+        43.69203
       ]
     }
   },
@@ -16786,8 +16793,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.583806,
-        43.738789
+        -79.58381,
+        43.73879
       ]
     }
   },
@@ -16800,8 +16807,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.272979,
-        43.708381
+        -79.27298,
+        43.70838
       ]
     }
   },
@@ -16814,8 +16821,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.247962,
-        43.721489
+        -79.24796,
+        43.72149
       ]
     }
   },
@@ -16828,8 +16835,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.307462,
-        43.746882
+        -79.30746,
+        43.74688
       ]
     }
   },
@@ -16842,7 +16849,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.223875,
+        -79.22388,
         43.76984
       ]
     }
@@ -16856,8 +16863,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.575386,
-        43.727713
+        -79.57539,
+        43.72771
       ]
     }
   },
@@ -16870,8 +16877,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.304025,
-        43.732297
+        -79.30402,
+        43.7323
       ]
     }
   },
@@ -16884,8 +16891,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.614375,
-        43.732609
+        -79.61437,
+        43.73261
       ]
     }
   },
@@ -16898,8 +16905,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.271148,
-        43.724241
+        -79.27115,
+        43.72424
       ]
     }
   },
@@ -16912,8 +16919,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.598088,
-        43.736754
+        -79.59809,
+        43.73675
       ]
     }
   },
@@ -16926,8 +16933,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.432817,
-        43.793801
+        -79.43282,
+        43.7938
       ]
     }
   },
@@ -16941,7 +16948,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.42002,
-        43.644563
+        43.64456
       ]
     }
   },
@@ -16954,8 +16961,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.430243,
-        43.726777
+        -79.43024,
+        43.72678
       ]
     }
   },
@@ -16968,7 +16975,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.333422,
+        -79.33342,
         43.72161
       ]
     }
@@ -16982,8 +16989,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.458958,
-        43.721183
+        -79.45896,
+        43.72118
       ]
     }
   },
@@ -16996,8 +17003,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.333233,
-        43.800444
+        -79.33323,
+        43.80044
       ]
     }
   },
@@ -17010,8 +17017,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.350116,
-        43.679505
+        -79.35012,
+        43.6795
       ]
     }
   },
@@ -17024,8 +17031,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.552127,
-        43.747938
+        -79.55213,
+        43.74794
       ]
     }
   },
@@ -17038,8 +17045,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.179453,
-        43.756203
+        -79.17945,
+        43.7562
       ]
     }
   },
@@ -17052,8 +17059,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.453101,
-        43.697352
+        -79.4531,
+        43.69735
       ]
     }
   },
@@ -17066,8 +17073,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.278544,
-        43.751202
+        -79.27854,
+        43.7512
       ]
     }
   },
@@ -17080,8 +17087,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.595038,
-        43.756107
+        -79.59504,
+        43.75611
       ]
     }
   },
@@ -17094,7 +17101,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.224336,
+        -79.22434,
         43.83016
       ]
     }
@@ -17109,7 +17116,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.5263,
-        43.712022
+        43.71202
       ]
     }
   },
@@ -17122,8 +17129,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.446964,
-        43.673263
+        -79.44696,
+        43.67326
       ]
     }
   },
@@ -17136,8 +17143,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.620795,
-        43.722049
+        -79.6208,
+        43.72205
       ]
     }
   },
@@ -17150,8 +17157,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.408595,
-        43.670839
+        -79.4086,
+        43.67084
       ]
     }
   },
@@ -17164,8 +17171,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.167606,
-        43.790149
+        -79.16761,
+        43.79015
       ]
     }
   },
@@ -17178,8 +17185,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.134894,
-        43.784353
+        -79.13489,
+        43.78435
       ]
     }
   },
@@ -17193,7 +17200,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.56565,
-        43.687105
+        43.68711
       ]
     }
   },
@@ -17206,8 +17213,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.145562,
-        43.783186
+        -79.14556,
+        43.78319
       ]
     }
   },
@@ -17220,8 +17227,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.576092,
-        43.740428
+        -79.57609,
+        43.74043
       ]
     }
   },
@@ -17234,8 +17241,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.264446,
-        43.786235
+        -79.26445,
+        43.78623
       ]
     }
   },
@@ -17248,8 +17255,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.456842,
-        43.659497
+        -79.45684,
+        43.6595
       ]
     }
   },
@@ -17263,7 +17270,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.22536,
-        43.750436
+        43.75044
       ]
     }
   },
@@ -17276,8 +17283,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.566275,
-        43.677312
+        -79.56628,
+        43.67731
       ]
     }
   },
@@ -17290,8 +17297,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.425302,
-        43.657073
+        -79.4253,
+        43.65707
       ]
     }
   },
@@ -17304,8 +17311,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.304263,
-        43.722923
+        -79.30426,
+        43.72292
       ]
     }
   },
@@ -17318,8 +17325,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.550705,
-        43.653471
+        -79.5507,
+        43.65347
       ]
     }
   },
@@ -17332,8 +17339,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.276057,
-        43.802851
+        -79.27606,
+        43.80285
       ]
     }
   },
@@ -17346,8 +17353,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.327868,
-        43.800102
+        -79.32787,
+        43.8001
       ]
     }
   },
@@ -17360,7 +17367,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.519459,
+        -79.51946,
         43.62374
       ]
     }
@@ -17374,8 +17381,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.544512,
-        43.688352
+        -79.54451,
+        43.68835
       ]
     }
   },
@@ -17388,8 +17395,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.590138,
-        43.753789
+        -79.59014,
+        43.75379
       ]
     }
   },
@@ -17403,7 +17410,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.46307,
-        43.762323
+        43.76232
       ]
     }
   },
@@ -17416,8 +17423,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.326775,
-        43.798491
+        -79.32677,
+        43.79849
       ]
     }
   },
@@ -17430,8 +17437,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.488795,
-        43.729588
+        -79.48879,
+        43.72959
       ]
     }
   },
@@ -17444,8 +17451,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.256795,
-        43.740778
+        -79.25679,
+        43.74078
       ]
     }
   },
@@ -17458,8 +17465,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.503467,
-        43.737333
+        -79.50347,
+        43.73733
       ]
     }
   },
@@ -17472,8 +17479,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.560727,
-        43.724678
+        -79.56073,
+        43.72468
       ]
     }
   },
@@ -17486,7 +17493,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.434716,
+        -79.43472,
         43.64699
       ]
     }
@@ -17500,8 +17507,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.458902,
-        43.763492
+        -79.4589,
+        43.76349
       ]
     }
   },
@@ -17515,7 +17522,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.44761,
-        43.681281
+        43.68128
       ]
     }
   },
@@ -17529,7 +17536,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.56446,
-        43.635388
+        43.63539
       ]
     }
   },
@@ -17543,7 +17550,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.22294,
-        43.763616
+        43.76362
       ]
     }
   },
@@ -17556,8 +17563,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.574254,
-        43.728087
+        -79.57425,
+        43.72809
       ]
     }
   },
@@ -17570,8 +17577,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.252861,
-        43.713663
+        -79.25286,
+        43.71366
       ]
     }
   },
@@ -17585,7 +17592,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.4613,
-        43.764395
+        43.7644
       ]
     }
   },
@@ -17598,8 +17605,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.348428,
-        43.799541
+        -79.34843,
+        43.79954
       ]
     }
   },
@@ -17612,8 +17619,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.232676,
-        43.840559
+        -79.23268,
+        43.84056
       ]
     }
   },
@@ -17626,7 +17633,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.501766,
+        -79.50177,
         43.67791
       ]
     }
@@ -17654,8 +17661,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.485691,
-        43.683046
+        -79.48569,
+        43.68305
       ]
     }
   },
@@ -17668,7 +17675,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.175542,
+        -79.17554,
         43.76566
       ]
     }
@@ -17682,7 +17689,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418549,
+        -79.41855,
         43.67099
       ]
     }
@@ -17696,8 +17703,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.204994,
-        43.792096
+        -79.20499,
+        43.7921
       ]
     }
   },
@@ -17710,8 +17717,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.256938,
-        43.708149
+        -79.25694,
+        43.70815
       ]
     }
   },
@@ -17724,8 +17731,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.528994,
-        43.605493
+        -79.52899,
+        43.60549
       ]
     }
   },
@@ -17738,8 +17745,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.432276,
-        43.643477
+        -79.43228,
+        43.64348
       ]
     }
   },
@@ -17752,8 +17759,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.443063,
-        43.661348
+        -79.44306,
+        43.66135
       ]
     }
   },
@@ -17766,8 +17773,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.550479,
-        43.665312
+        -79.55048,
+        43.66531
       ]
     }
   },
@@ -17780,8 +17787,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.204994,
-        43.792096
+        -79.20499,
+        43.7921
       ]
     }
   },
@@ -17795,7 +17802,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.45154,
-        43.786786
+        43.78679
       ]
     }
   },
@@ -17809,7 +17816,7 @@ const features$1 = [
       type: "Point",
       coordinates: [
         -79.45725,
-        43.684887
+        43.68489
       ]
     }
   },
@@ -17822,7 +17829,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.434484,
+        -79.43448,
         43.65382
       ]
     }
@@ -17836,8 +17843,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.293304,
-        43.715927
+        -79.2933,
+        43.71593
       ]
     }
   },
@@ -17850,7 +17857,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.342927,
+        -79.34293,
         43.78688
       ]
     }
@@ -17864,8 +17871,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.288657,
-        43.827631
+        -79.28866,
+        43.82763
       ]
     }
   },
@@ -17878,8 +17885,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.447136,
-        43.671175
+        -79.44714,
+        43.67117
       ]
     }
   },
@@ -17892,7 +17899,7 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.316675,
+        -79.31668,
         43.69646
       ]
     }
@@ -17906,8 +17913,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.369754,
-        43.793677
+        -79.36975,
+        43.79368
       ]
     }
   },
@@ -17920,8 +17927,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.435619,
-        43.653607
+        -79.43562,
+        43.65361
       ]
     }
   },
@@ -17934,8 +17941,8 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.435683,
-        43.653595
+        -79.43568,
+        43.6536
       ]
     }
   },
@@ -17948,14 +17955,1696 @@ const features$1 = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418629,
-        43.661833
+        -79.41863,
+        43.66183
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 241741 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.29347,
+        43.7427
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 145316 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.37364,
+        43.66666
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 184077 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.23443,
+        43.83909
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 192598 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.57205,
+        43.64643
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 174928 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.53467,
+        43.69387
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 202775 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.40101,
+        43.65558
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 206128 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.3103,
+        43.74433
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "19 127246 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.38582,
+        43.72825
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 104688 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.36912,
+        43.65804
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 212326 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.28891,
+        43.67306
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 210933 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.23402,
+        43.74958
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 242872 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.2143,
+        43.81524
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 172758 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.15787,
+        43.79949
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 112685 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.58375,
+        43.72644
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 205764 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.27414,
+        43.74444
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 188872 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.22713,
+        43.79806
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 149396 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.34994,
+        43.68484
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 154441 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44891,
+        43.68029
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "18 233398 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.3283,
+        43.77856
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 186635 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.32414,
+        43.66373
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 241977 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.39405,
+        43.65772
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 175208 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.21373,
+        43.76332
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 207228 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.46256,
+        43.70789
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 207335 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.38481,
+        43.7059
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 241938 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.15437,
+        43.79923
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 179009 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.29577,
+        43.77358
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 178511 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.30206,
+        43.79816
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 172812 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.18265,
+        43.8117
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 181282 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.41463,
+        43.66045
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 139564 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.43063,
+        43.67529
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 180243 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.39636,
+        43.76742
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 222768 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.54966,
+        43.60595
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 145484 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44168,
+        43.65463
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "16 214585 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44366,
+        43.70336
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 145105 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.49414,
+        43.6786
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 182422 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.5081,
+        43.70363
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 191195 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.29613,
+        43.75445
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 134177 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.5825,
+        43.7227
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 177992 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.5734,
+        43.66314
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 234777 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.34762,
+        43.787
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 223895 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.30992,
+        43.76068
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 144409 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.50297,
+        43.74993
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 191733 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.2553,
+        43.74648
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 207886 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.40815,
+        43.66735
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 145798 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.29399,
+        43.75214
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 151473 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.55624,
+        43.73838
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 249506 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.50633,
+        43.60379
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 200975 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.25419,
+        43.77049
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 205864 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.22222,
+        43.76654
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 217187 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.32327,
+        43.74846
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 208939 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.45139,
+        43.76321
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 194787 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.31493,
+        43.76512
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 147469 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.56909,
+        43.63921
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 177202 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.29237,
+        43.77626
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 193273 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44916,
+        43.75926
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 203365 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.24355,
+        43.75059
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 215292 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.32367,
+        43.79977
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 192680 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.2211,
+        43.75646
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 229646 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.30907,
+        43.68489
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 214633 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.25387,
+        43.77046
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 181552 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.2392,
+        43.76093
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 116215 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.3597,
+        43.74761
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 212580 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.43904,
+        43.6642
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 212266 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.43293,
+        43.67358
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 111393 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.34911,
+        43.69075
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 237582 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.41339,
+        43.75973
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 217227 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.16111,
+        43.79519
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 172687 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.21859,
+        43.76757
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "03 103317 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.33838,
+        43.68256
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 220918 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.42604,
+        43.69886
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 224642 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.30265,
+        43.7301
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 230526 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.54326,
+        43.6025
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 243144 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.49079,
+        43.61259
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 226176 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.23056,
+        43.83372
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 137395 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.45416,
+        43.75573
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 120592 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.48883,
+        43.6815
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 230957 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.3259,
+        43.67369
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 224410 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.58127,
+        43.72104
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 135041 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44991,
+        43.64443
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 237162 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.13138,
+        43.79541
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "19 201185 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.48716,
+        43.72819
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 230507 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.24579,
+        43.71517
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 161899 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.47576,
+        43.72263
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 194121 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.22704,
+        43.76881
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 214566 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.25839,
+        43.74577
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 214120 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.41287,
+        43.67697
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 100263 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.54663,
+        43.66457
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 125371 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.58931,
+        43.7538
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 111245 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.57122,
+        43.73403
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 171920 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.42244,
+        43.77375
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 166550 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.42095,
+        43.67945
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 169538 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.32598,
+        43.67445
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 128071 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.41341,
+        43.64341
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 128553 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.38329,
+        43.77289
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "15 134799 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.40729,
+        43.66255
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "15 129910 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44042,
+        43.64124
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 224578 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.17084,
+        43.78948
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 239129 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.1962,
+        43.75566
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 203037 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.35763,
+        43.77587
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 104051 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.17826,
+        43.76043
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 148336 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.15257,
+        43.80073
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 121200 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.33619,
+        43.78525
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 136847 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.42931,
+        43.64043
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "17 189958 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.30332,
+        43.73945
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 118395 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.17588,
+        43.79027
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "17 120065 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.59067,
+        43.72957
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 112737 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.57378,
+        43.64629
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 189273 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.32504,
+        43.79113
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 116757 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.2478,
+        43.71852
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 216347 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.22343,
+        43.74913
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 227624 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.62493,
+        43.72877
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "16 144765 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.40347,
+        43.7705
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 108046 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.17678,
+        43.77652
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 226822 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.57687,
+        43.72347
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 115390 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.31203,
+        43.73193
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 101467 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.33398,
+        43.6891
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 233832 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44423,
+        43.78564
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 144819 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.29749,
+        43.73731
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 121664 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.40275,
+        43.66029
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 115060 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.32806,
+        43.77661
       ]
     }
   }
 ];
 const suitesSecondary = {
   type: type$1,
+  name: name$1,
+  crs: crs$1,
   features: features$1
 };
 const BarChartSecondary_svelte_svelte_type_style_lang = "";
@@ -17976,7 +19665,19 @@ const BarChartSecondary = create_ssr_component(($$result, $$props, $$bindings, s
   let yearCountsSecondary = Object.fromEntries(rollup(suitesSecondary.features, (v) => v.length, (d) => d.properties.year));
   const sumValues = (obj) => Object.values(obj).reduce((a, b) => a + b, 0);
   console.log(sumValues(yearCountsSecondary));
-  let years = ["2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"];
+  let years = [
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+  ];
   $$result.css.add(css$5);
   svgWidth = divWidth - 22;
   xScale = scaleBand().domain(years).range([0, svgWidth - 50]).paddingInner(0.37).paddingOuter(0.37);
@@ -17995,6 +19696,13 @@ const BarChartSecondary = create_ssr_component(($$result, $$props, $$bindings, s
 </div>`;
 });
 const type = "FeatureCollection";
+const name = "laneway-garden-suites-072023update";
+const crs = {
+  type: "name",
+  properties: {
+    name: "urn:ogc:def:crs:OGC:1.3:CRS84"
+  }
+};
 const features = [
   {
     type: "Feature",
@@ -18005,8 +19713,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.341939,
-        43.683076
+        -79.34194,
+        43.68308
       ]
     }
   },
@@ -18020,7 +19728,7 @@ const features = [
       type: "Point",
       coordinates: [
         -79.42679,
-        43.645349
+        43.64535
       ]
     }
   },
@@ -18033,8 +19741,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.430219,
-        43.667367
+        -79.43022,
+        43.66737
       ]
     }
   },
@@ -18047,8 +19755,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.422721,
-        43.658507
+        -79.42272,
+        43.65851
       ]
     }
   },
@@ -18061,8 +19769,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.422147,
-        43.642299
+        -79.42215,
+        43.6423
       ]
     }
   },
@@ -18075,8 +19783,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.328252,
-        43.679155
+        -79.32825,
+        43.67916
       ]
     }
   },
@@ -18089,8 +19797,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.302746,
-        43.690654
+        -79.30275,
+        43.69065
       ]
     }
   },
@@ -18103,8 +19811,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.408468,
-        43.651787
+        -79.40847,
+        43.65179
       ]
     }
   },
@@ -18117,8 +19825,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.423247,
-        43.682931
+        -79.42325,
+        43.68293
       ]
     }
   },
@@ -18131,8 +19839,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.426489,
-        43.682087
+        -79.42649,
+        43.68209
       ]
     }
   },
@@ -18145,8 +19853,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.407131,
-        43.661502
+        -79.40713,
+        43.6615
       ]
     }
   },
@@ -18159,8 +19867,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.342692,
-        43.682401
+        -79.34269,
+        43.6824
       ]
     }
   },
@@ -18173,7 +19881,7 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.442439,
+        -79.44244,
         43.66573
       ]
     }
@@ -18187,8 +19895,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418258,
-        43.658006
+        -79.41826,
+        43.65801
       ]
     }
   },
@@ -18201,7 +19909,7 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.315822,
+        -79.31582,
         43.68263
       ]
     }
@@ -18215,8 +19923,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.340124,
-        43.681542
+        -79.34012,
+        43.68154
       ]
     }
   },
@@ -18229,8 +19937,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.310222,
-        43.685517
+        -79.31022,
+        43.68552
       ]
     }
   },
@@ -18243,8 +19951,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.321916,
-        43.667156
+        -79.32192,
+        43.66716
       ]
     }
   },
@@ -18257,8 +19965,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.442529,
-        43.660592
+        -79.44253,
+        43.66059
       ]
     }
   },
@@ -18271,8 +19979,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.465706,
-        43.679638
+        -79.46571,
+        43.67964
       ]
     }
   },
@@ -18285,8 +19993,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.332396,
-        43.681077
+        -79.3324,
+        43.68108
       ]
     }
   },
@@ -18313,8 +20021,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.449994,
-        43.678899
+        -79.44999,
+        43.6789
       ]
     }
   },
@@ -18327,8 +20035,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.296945,
-        43.678388
+        -79.29694,
+        43.67839
       ]
     }
   },
@@ -18341,8 +20049,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.444807,
-        43.642235
+        -79.44481,
+        43.64223
       ]
     }
   },
@@ -18355,8 +20063,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.340897,
-        43.680275
+        -79.3409,
+        43.68028
       ]
     }
   },
@@ -18369,8 +20077,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.422054,
-        43.683227
+        -79.42205,
+        43.68323
       ]
     }
   },
@@ -18383,8 +20091,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.465741,
-        43.679685
+        -79.46574,
+        43.67968
       ]
     }
   },
@@ -18397,8 +20105,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.449866,
-        43.678928
+        -79.44987,
+        43.67893
       ]
     }
   },
@@ -18411,8 +20119,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418206,
-        43.662271
+        -79.41821,
+        43.66227
       ]
     }
   },
@@ -18425,7 +20133,7 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.441542,
+        -79.44154,
         43.65547
       ]
     }
@@ -18439,8 +20147,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.350116,
-        43.679505
+        -79.35012,
+        43.6795
       ]
     }
   },
@@ -18454,7 +20162,7 @@ const features = [
       type: "Point",
       coordinates: [
         -79.42631,
-        43.670369
+        43.67037
       ]
     }
   },
@@ -18467,8 +20175,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.451364,
-        43.663323
+        -79.45136,
+        43.66332
       ]
     }
   },
@@ -18481,8 +20189,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.420371,
-        43.661298
+        -79.42037,
+        43.6613
       ]
     }
   },
@@ -18496,7 +20204,7 @@ const features = [
       type: "Point",
       coordinates: [
         -79.35228,
-        43.670948
+        43.67095
       ]
     }
   },
@@ -18509,8 +20217,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.346336,
-        43.679644
+        -79.34634,
+        43.67964
       ]
     }
   },
@@ -18523,8 +20231,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.419264,
-        43.668676
+        -79.41926,
+        43.66868
       ]
     }
   },
@@ -18537,7 +20245,7 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.338205,
+        -79.33821,
         43.6796
       ]
     }
@@ -18552,7 +20260,7 @@ const features = [
       type: "Point",
       coordinates: [
         -79.33319,
-        43.670428
+        43.67043
       ]
     }
   },
@@ -18565,8 +20273,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.406256,
-        43.643806
+        -79.40626,
+        43.64381
       ]
     }
   },
@@ -18579,8 +20287,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.343687,
-        43.677283
+        -79.34369,
+        43.67728
       ]
     }
   },
@@ -18593,8 +20301,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.338875,
-        43.667241
+        -79.33888,
+        43.66724
       ]
     }
   },
@@ -18607,8 +20315,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418982,
-        43.671476
+        -79.41898,
+        43.67148
       ]
     }
   },
@@ -18621,8 +20329,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.411506,
-        43.659788
+        -79.41151,
+        43.65979
       ]
     }
   },
@@ -18635,8 +20343,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.347485,
-        43.669923
+        -79.34749,
+        43.66992
       ]
     }
   },
@@ -18649,8 +20357,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.450496,
-        43.648577
+        -79.4505,
+        43.64858
       ]
     }
   },
@@ -18663,8 +20371,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.397016,
-        43.654302
+        -79.39702,
+        43.6543
       ]
     }
   },
@@ -18677,8 +20385,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.428454,
-        43.668236
+        -79.42845,
+        43.66824
       ]
     }
   },
@@ -18691,8 +20399,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.441475,
-        43.640522
+        -79.44147,
+        43.64052
       ]
     }
   },
@@ -18705,8 +20413,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.439699,
-        43.642239
+        -79.4397,
+        43.64224
       ]
     }
   },
@@ -18719,8 +20427,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.342139,
-        43.692752
+        -79.34214,
+        43.69275
       ]
     }
   },
@@ -18733,8 +20441,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.393015,
-        43.651453
+        -79.39302,
+        43.65145
       ]
     }
   },
@@ -18747,7 +20455,7 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418965,
+        -79.41897,
         43.67143
       ]
     }
@@ -18761,8 +20469,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.430795,
-        43.664549
+        -79.4308,
+        43.66455
       ]
     }
   },
@@ -18775,8 +20483,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.444554,
-        43.644547
+        -79.44455,
+        43.64455
       ]
     }
   },
@@ -18789,8 +20497,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.415397,
-        43.671903
+        -79.4154,
+        43.6719
       ]
     }
   },
@@ -18803,8 +20511,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.489897,
-        43.668241
+        -79.4899,
+        43.66824
       ]
     }
   },
@@ -18817,8 +20525,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.432225,
-        43.671889
+        -79.43223,
+        43.67189
       ]
     }
   },
@@ -18831,8 +20539,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.421597,
-        43.680361
+        -79.4216,
+        43.68036
       ]
     }
   },
@@ -18846,7 +20554,7 @@ const features = [
       type: "Point",
       coordinates: [
         -79.42167,
-        43.680348
+        43.68035
       ]
     }
   },
@@ -18859,8 +20567,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.425782,
-        43.644838
+        -79.42578,
+        43.64484
       ]
     }
   },
@@ -18873,8 +20581,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.390454,
-        43.683321
+        -79.39045,
+        43.68332
       ]
     }
   },
@@ -18887,8 +20595,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.429588,
-        43.657693
+        -79.42959,
+        43.65769
       ]
     }
   },
@@ -18902,7 +20610,7 @@ const features = [
       type: "Point",
       coordinates: [
         -79.36734,
-        43.664719
+        43.66472
       ]
     }
   },
@@ -18915,8 +20623,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.339493,
-        43.666315
+        -79.33949,
+        43.66631
       ]
     }
   },
@@ -18930,7 +20638,7 @@ const features = [
       type: "Point",
       coordinates: [
         -79.43225,
-        43.661766
+        43.66177
       ]
     }
   },
@@ -18943,8 +20651,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.338857,
-        43.678984
+        -79.33886,
+        43.67898
       ]
     }
   },
@@ -18957,7 +20665,7 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.315995,
+        -79.316,
         43.68214
       ]
     }
@@ -18972,7 +20680,7 @@ const features = [
       type: "Point",
       coordinates: [
         -79.44911,
-        43.648335
+        43.64834
       ]
     }
   },
@@ -18985,8 +20693,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.434956,
-        43.664975
+        -79.43496,
+        43.66497
       ]
     }
   },
@@ -18999,8 +20707,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.347885,
-        43.657631
+        -79.34789,
+        43.65763
       ]
     }
   },
@@ -19013,8 +20721,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.424137,
-        43.645138
+        -79.42414,
+        43.64514
       ]
     }
   },
@@ -19027,8 +20735,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.467723,
-        43.686954
+        -79.46772,
+        43.68695
       ]
     }
   },
@@ -19042,7 +20750,7 @@ const features = [
       type: "Point",
       coordinates: [
         -79.42039,
-        43.669123
+        43.66912
       ]
     }
   },
@@ -19055,8 +20763,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.452054,
-        43.670491
+        -79.45205,
+        43.67049
       ]
     }
   },
@@ -19069,8 +20777,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.423264,
-        43.682997
+        -79.42326,
+        43.683
       ]
     }
   },
@@ -19084,7 +20792,7 @@ const features = [
       type: "Point",
       coordinates: [
         -79.43536,
-        43.672317
+        43.67232
       ]
     }
   },
@@ -19097,8 +20805,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.411894,
-        43.657277
+        -79.41189,
+        43.65728
       ]
     }
   },
@@ -19111,8 +20819,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.291646,
-        43.684737
+        -79.29165,
+        43.68474
       ]
     }
   },
@@ -19125,7 +20833,7 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.431203,
+        -79.4312,
         43.66715
       ]
     }
@@ -19139,7 +20847,7 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.418115,
+        -79.41812,
         43.66578
       ]
     }
@@ -19153,8 +20861,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.413124,
-        43.663798
+        -79.41312,
+        43.6638
       ]
     }
   },
@@ -19167,8 +20875,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.420651,
-        43.679506
+        -79.42065,
+        43.67951
       ]
     }
   },
@@ -19181,8 +20889,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.343219,
-        43.659719
+        -79.34322,
+        43.65972
       ]
     }
   },
@@ -19195,7 +20903,7 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.387885,
+        -79.38788,
         43.70436
       ]
     }
@@ -19209,7 +20917,7 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.313969,
+        -79.31397,
         43.68484
       ]
     }
@@ -19223,8 +20931,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.344663,
-        43.676276
+        -79.34466,
+        43.67628
       ]
     }
   },
@@ -19237,8 +20945,8 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.449968,
-        43.650689
+        -79.44997,
+        43.65069
       ]
     }
   },
@@ -19251,14 +20959,688 @@ const features = [
     geometry: {
       type: "Point",
       coordinates: [
-        -79.433846,
-        43.645819
+        -79.43385,
+        43.64582
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 185670 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.37322,
+        43.65985
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 249621 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.48188,
+        43.66097
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 197266 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.36998,
+        43.66595
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 203532 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.40229,
+        43.65266
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 189446 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.4581,
+        43.67691
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 102957 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.40682,
+        43.66074
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 135543 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.45698,
+        43.66534
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 160421 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.45332,
+        43.66611
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 147550 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.41407,
+        43.6516
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 250938 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44527,
+        43.64625
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 243859 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.42552,
+        43.6587
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 167921 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.36794,
+        43.6662
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 134148 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.4379,
+        43.64847
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 159667 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44643,
+        43.67623
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 120719 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.40419,
+        43.66038
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "19 207174 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.36306,
+        43.66641
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 205021 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.41046,
+        43.65049
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 214146 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44135,
+        43.69683
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 184922 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.42355,
+        43.67468
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 221005 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.34284,
+        43.67113
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 113763 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.33896,
+        43.66081
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "19 255117 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.33533,
+        43.68163
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 209366 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.41301,
+        43.67622
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 209376 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.4088,
+        43.66605
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 122924 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44871,
+        43.65918
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 248486 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.29648,
+        43.68186
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 205593 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.4392,
+        43.65997
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 181065 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.321,
+        43.69197
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 140335 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.32066,
+        43.69226
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 111052 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.48653,
+        43.65682
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 154516 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.4595,
+        43.65633
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 125186 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.33716,
+        43.67523
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 155673 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.51712,
+        43.70612
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "19 243644 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.43047,
+        43.67311
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 127657 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.45346,
+        43.68566
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 165772 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.42218,
+        43.64239
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 128247 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.36361,
+        43.7071
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 129016 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.35373,
+        43.67668
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 209999 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.34145,
+        43.65846
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 210057 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.34143,
+        43.65843
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 146413 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.44774,
+        43.68373
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 169109 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.48341,
+        43.65871
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "20 209706 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.4062,
+        43.65918
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 130718 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.4883,
+        43.65703
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 168985 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.353,
+        43.67079
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "22 119548 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.32962,
+        43.66708
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "23 116840 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.36324,
+        43.71571
+      ]
+    }
+  },
+  {
+    type: "Feature",
+    properties: {
+      PERMIT_NUM: "21 194808 BLD",
+      year: "2023"
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [
+        -79.42327,
+        43.67917
       ]
     }
   }
 ];
 const suitesLaneway = {
   type,
+  name,
+  crs,
   features
 };
 const BarChartLaneway_svelte_svelte_type_style_lang = "";
@@ -19279,7 +21661,19 @@ const BarChartLaneway = create_ssr_component(($$result, $$props, $$bindings, slo
   let yearCountsLaneway = Object.fromEntries(rollup(suitesLaneway.features, (v) => v.length, (d) => d.properties.year));
   const sumValues = (obj) => Object.values(obj).reduce((a, b) => a + b, 0);
   console.log(sumValues(yearCountsLaneway));
-  let years = ["2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"];
+  let years = [
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+  ];
   $$result.css.add(css$4);
   svgWidth = divWidth - 22;
   xScale = scaleBand().domain(years).range([0, svgWidth - 50]).paddingInner(0.37).paddingOuter(0.37);
@@ -19769,7 +22163,7 @@ const css$1 = {
   map: null
 };
 const Map = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let values = [2020, 2022];
+  let values = [2020, 2023];
   mapboxgl.accessToken = "pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xqOG0zbTQ1MTAzdTNkbnY2OGluMHJ0byJ9.yX_EB8JqRsIRufOOu8LjeQ";
   let mapHeight = 760;
   $$result.css.add(css$1);
@@ -19806,7 +22200,7 @@ const Map = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         all: "label",
         step: 1,
         min: 2013,
-        max: 2022,
+        max: 2023,
         hoverable: false,
         values
       },
@@ -19830,7 +22224,7 @@ const Map = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             </div></div>
 
 
-        <p class="${"svelte-1vzqokm"}">Residential Zoning:</p>
+        <p class="${"svelte-1vzqokm"}">Historical Residential Zoning (prior to May 10, 2023)</p>
 
         <div id="${"pointLayers"}" class="${"svelte-1vzqokm"}"><div id="${"resYellowButton"}" class="${escape(null_to_empty("layerOff"), true) + " svelte-1vzqokm"}"><svg width="${"15"}" height="${"10"}"><rect style="${"fill:#1a2d3b"}" x="${"5"}" y="${"0"}" width="${"10"}" height="${"10"}"></rect></svg>
                 Single-Detached Only
@@ -19883,61 +22277,75 @@ ${validate_component(TopSofC, "Top").$$render($$result, {}, {}, {})}
 
 <main><div class="${"blueprint"}" style="${"background-image: url('https://schoolofcities.github.io/gentle-density/blueprint-background.png');"}"><div class="${"title"}"><h1>Tracking <span class="${"italic"}">Gentle Density</span> in Toronto
 			</h1>
-			<h2>Visualizing Building Permit Data From 2013 To 2022
+			<h2>Visualizing Building Permit Data From 2013 To 2023
 			</h2>
 			<h2></h2>
 			<p><a href="${"https://jamaps.github.io"}">Jeff Allen</a> and <a href="${"https://www.linkedin.com/in/ahmad-al-musa/"}">Ahmad Al-Musa</a></p>
-			<p>February 2023</p></div></div>
+			<p>Created February 2023</p>
+			<p>Updated July 2023</p></div></div>
 
 	<div class="${"background-white"}"><div class="${"arrow"}"><p>\u25BC</p></div>
 
-		<div class="${"text"}"><p>Swaths of Toronto consists of land only zoned for low-density single family homes (often called the <a href="${"https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/"}">Yellowbelt</a>). There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via building <a href="${"https://missingmiddlehousing.com/"}">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims to provide more housing options and to make our urban areas more affordable, inclusive, and sustainable. Around 2018-2019, the City of Toronto started taking accelerating actions to increase missing middle housing supply, in what is now the <a href="${"https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/"}">Expanding Housing Options</a> program.
-				</p>
-			<p>At the smaller-scale of the missing middle are 
-				<a href="${"https://affordablemissingmiddle.ca/"}">gentle density</a> (or &quot;missing little&quot;) strategies, which refers to owner-led efforts to build additional dwellings within their existing parcel of land as citizen developers. These can increase property value and provide supplementary income, but importantly, in aggregate, can incrementally scale up the density of a neighbourhood, allow for intergenerational living, and provide needed housing, particularly for those unable to afford larger homes.
-				Relative to larger developments (e.g. larger multi-unit apartments and condominiums), gentle density is more compatible with the scale and character of existing neighbourhoods. Gentle density development is thus often seen as an approach to increase the housing supply in a way that is less disruptive to existing communities but can still help create more walkable, liveable neighbourhoods, that use existing infrastructure and services, which can save tax payers&#39; money and reduce harmful urban sprawl.
+		<div class="${"text"}"><p>Swaths of Toronto consists of low-density single family homes (these lands are often called the <a href="${"https://schoolofcities.github.io/yellowbelt-canadian-cities-2022/"}">Yellowbelt</a> due to the historical exclusionary zoning of these neighbourhoods). 
+				There has been a big push among housing advocates, academics, and planners to increase housing supply in these neighbourhoods via building <a href="${"https://missingmiddlehousing.com/"}">missing middle</a> housing (a range of housing types that fall between single-family homes and high-rise apartments), in aims to provide more housing options and to make our urban areas more affordable, inclusive, and sustainable. 
+			</p>
+			<p>Around 2018-2019, the City of Toronto started taking accelerating actions to increase missing middle housing supply, in what is now the <a href="${"https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/"}">Expanding Housing Options</a> program. 
+
+				At the smaller-scale of the missing middle are 
+				<a href="${"https://affordablemissingmiddle.ca/"}">gentle density</a> (or &quot;missing little&quot;) strategies, which refers to owner-led efforts to build additional dwellings within their existing parcel of land as citizen developers. 
+				Some of these accelerated actions addressed Secondary Suites, allowed Laneway Suites and Garden Suites, and most recently starting May 2023, allowed multiplexes across the City\u2019s residential zones. You can read more about the regulatory timeline, along with implementation stories <a href="${"https://affordablemissingmiddle.ca/missing-little-toronto"}">here</a>.
+			</p>
+			<p>Gentle density can increase property value and provide supplementary income for owners, but importantly, in aggregate, can incrementally scale up the density of a neighbourhood, allow for intergenerational living, and provide needed housing, particularly for those unable to afford larger homes. Relative to larger developments (e.g. larger multi-unit apartments and condominiums), gentle density is more compatible with the scale and character of existing neighbourhoods. Gentle density development is thus often seen as an approach to increase the housing supply in a way that is less disruptive to existing communities but can still help create more walkable, liveable neighbourhoods, that use existing infrastructure and services, which can save tax payers&#39; money and reduce harmful urban sprawl.
 			</p>
 			<p><b>But what is the recent uptake in gentle density housing in the City of Toronto?</b></p>
-			<p>To answer this, we&#39;ve looked at 10 years of <a href="${"https://open.toronto.ca/dataset/building-permits-cleared-permits-prior-years/"}">building permit data</a> in the City of Toronto (from 01/2013 to 12/2022) to see how and where forms of gentle density have (or have not) been built across the city during this period. At any point in time, building permits can either be active (i.e. building in progress), cancelled, or closed. Those that are closed, we can assume construction has finished. We first counted building permits by the year they were closed for the following two types of gentle density construction, to then chart their trends over time.
+			<p>To answer this, we&#39;ve looked at 10+ years of <a href="${"https://open.toronto.ca/dataset/building-permits-cleared-permits-prior-years/"}">building permit data</a> in the City of Toronto (from 01/2013 to 07/2023) to see how and where forms of gentle density have (or have not) been built across the city during this period. At any point in time, building permits can either be active (i.e. building in progress), cancelled, or closed. Those that are closed, we can assume construction has finished. We first counted building permits by the year they were closed for the following two types of gentle density construction, to then chart their trends over time. 
 			</p>
 			
 			<h3><span class="${"textSecondary"}">Secondary Suites</span></h3>
 			<div class="${"typeWrapper"}"><div class="${"isometric-mobile"}"><img${add_attribute("src", isometricSecondary, 0)} alt="${"isometricSecondary"}"></div>
-				<div class="${"typeText"}"><p>Sub-dividing an existing residential structure creating one or more additional dwelling units. The most common form is converting a basement into a separate apartment, but this can include other types of conversions as well (e.g. converting from a duplex to a triplex). These conversions may or may not include building additions (i.e. expanding the volume) of the structure. They have been permitted since 2000 city-wide, with some restrictions.
+				<div class="${"typeText"}"><p>Are \u201Cself-contained living accommodation for an additional person or persons living together as a separate single housekeeping unit, in which both food preparation and sanitary facilities are provided for the exclusive use of the occupants of the suite, located in and subordinate to a dwelling unit.\u201D (Click <a href="${"https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/secondary-suites/overview-secondary-suites/"}">here</a> for further information from the City of Toronto)
 				</p></div>
 				<div class="${"isometric"}"><img${add_attribute("src", isometricSecondary, 0)} alt="${"isometricSecondary"}"></div></div>
 
+			<p>The most common form is converting a basement into a Secondary Suite separate apartment, but this can include other types of conversions as well (e.g. carving out a Secondary Suite within the main dwelling unit of a Single Detached, Semi Detached or a Townhouse  converting from a duplex to a triplex). The creation of these suites ese conversions may or may not include building additions (i.e. expanding the volume) of the structure. They have been permitted since 2000 city-wide, with some restrictions. It is noteworthy that under the new multiplex bylaw, Secondary Suites are not allowed in the semi-detached or townhouse portion of a converted four-unit multiplex.
+			</p>
+
+			<p>(While allowing for multiplexes was passed in May 2023, at the time of writing, it is too early to track their completion from building permit data. We are planning on updating this website, including tracking multiplexes, in early 2024).
+			</p>
+
 			<h3><span class="${"textLaneway"}">Rear-Yard Suites</span></h3>
 			<div class="${"typeWrapper"}"><div class="${"isometric-mobile"}"><img${add_attribute("src", isometricLaneway, 0)} alt="${"isometricLaneway"}"></div>
-				<div class="${"typeText"}"><p>Building a small detached dwelling unit that is located on the same property as a single-family home. They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, or Laneway Houses. Toronto legalized rear yard suites that abut laneways in 06/2018, called Laneway Suites in city bylaws (these are often garage conversions), and then legalized them in all other residential zones in 02/2022 without the need to abut a laneway. The latter are often called Garden Suites. 
+				<div class="${"typeText"}"><p>Building a small detached dwelling unit that is located on the same property as a single-family home. They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, or Laneway Houses. Toronto legalized rear yard suites that abut laneways in 06/2018, called Laneway Suites in city bylaws (these are often garage conversions), and then legalized them in all other residential zones in 02/2022 without the need to abut a laneway. The latter are often called Garden Suites.
+ 
 				</p></div>
 				<div class="${"isometric"}"><img${add_attribute("src", isometricLaneway, 0)} alt="${"isometricLaneway"}"></div></div></div></div>
 
 	<div class="${"line-chart"}">${validate_component(BarChartSecondary, "BarChartSecondary").$$render($$result, {}, {}, {})}
 		${validate_component(BarChartLaneway, "BarChartLaneway").$$render($$result, {}, {}, {})}</div>
 
-	<div class="${"background-white"}"><div class="${"text"}"><p>The construction of secondary suites hovered between 100 and 120 per year up until 2019. It has since increased, in 2022 to just over 200. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020, and only a few dozen since then. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street). 
+	<div class="${"background-white"}"><div class="${"text"}"><p>The construction of secondary suites hovered between 100 and 120 per year up until 2019. It has since increased, in 2022 to just over 200. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020, and only a few dozen since then. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street). However, by July 2023, there were already more rear-yard suites built in 2023 than any year prior.
 			</p>
-			<p>Overall, the completion of secondary suites and rear-yard suites are quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,282 secondary suites and 90 rear-yard suites have been built in Toronto between 2013 and 2022</b>. 
+			<p>Overall, the completion of secondary suites and rear-yard suites are quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,402 secondary suites and 138 rear-yard suites have been built in Toronto from January 2013 to mid-July 2023</b>. 
 			</p>
-			<p>Despite this sluggish uptake to date in Toronto, there are an increasing number of ongoing projects. <b>As of January 1, 2023 there were 575 secondary suite and 458 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and an initial or revised application date from the five-year period from 2018 to 2022. However, these numbers are still quite low compared to uptake in other cities like <a href="${"https://xtown.la/2022/09/20/adus-los-angeles-housing-numbers/"}">Los Angeles</a>, where the number of issued ADU permits from 2017 to 2021 was over 25,000.
+			<p>Despite this sluggish uptake to date in Toronto, there are an increasing number of ongoing projects. <b>As of July 15, 2023 there were 643 secondary suite and 558 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and that have an initial or revised application date from the period from January 2018 to July 2023. However, these numbers are still quite low compared to uptake in other cities like <a href="${"https://xtown.la/2022/09/20/adus-los-angeles-housing-numbers/"}">Los Angeles</a>, where the number of issued ADU permits from 2017 to 2021 was over 25,000.
 			</p>
-			<p>To explore further, we have also mapped below where secondary suites and rear-yard suites have been built in the city from 2013 to 2022, as well as the location of active building permits. 
+			<p>To explore further, we have also mapped below where secondary suites and rear-yard suites have been built in the city from 2013 to 2023, as well as the location of active building permits.
 			</p>
-			<p>These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. All completed rear-yard suites cluster in these neighbourhoods since these are where the majority of the City&#39;s laneways are located since post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing. Looking at the active permits, there are now several popping up elsewhere in more suburban neighbourhoods.
+			<p>These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. All completed rear-yard suites cluster in these neighbourhoods since these are where the majority of the City&#39;s laneways are located. Post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing. Looking at the active permits, there are now several popping up elsewhere in more suburban neighbourhoods.
 			</p>
 			<p>One notable pattern is that there is far less gentle density construction in and around North Toronto, despite this area mostly consisting of single-detached homes. This area is home to some of the city&#39;s wealthiest neighbourhoods (toggle on the income layer to check this out). Downtown Toronto also only has a few projects, but this is because it is mostly zoned for higher density development.
 			</p></div></div>
 
 	${validate_component(Map, "Map").$$render($$result, {}, {}, {})}
 
-	<div class="${"text"}"><p>According to <a href="${"https://adusearch.ca/"}">ADUsearch.ca</a> the estimated number of properties within Toronto that could add internal or external ADUs range between 370,000 to 390,000 lots. This emphasizes the fact that with the current uptake of a humble 1372, Toronto is barely scratching the surface of hidden housing supply within its existing neighbourhoods. Practical steps need to be taken by all stakeholders to remove the various barriers and to find solutions to make best use of this opportunity to easily provide much-needed dwelling units during the current housing crisis.  
+	<div class="${"text"}"><p>According to <a href="${"https://adusearch.ca/"}">ADUsearch.ca</a> the estimated number of properties within Toronto that could add internal or external ADUs range between 370,000 to 390,000 lots. This emphasizes the fact that with the current uptake of a humble 1,540, Toronto is barely scratching the surface of hidden housing supply within its existing neighbourhoods. Practical steps need to be taken by all stakeholders to remove the various barriers and to find solutions to make best use of this opportunity to easily provide much-needed dwelling units during the current housing crisis.
+ 
 		</p></div>
 
 	<div class="${"background-white"}"><div class="${"text"}"><h3>Data &amp; Code</h3>
-			<p>Data on the location, type, and status of <a href="${"https://open.toronto.ca/catalogue/?search=building%20permits&sort=score%20desc"}">building permits</a> are from the City of Toronto&#39;s Open Data portal. 
+			<p>Data on the location, type, and status of <a href="${"https://open.toronto.ca/catalogue/?search=building%20permits&sort=score%20desc"}">building permits</a> are from the City of Toronto&#39;s Open Data portal. To create these charts and maps, we filtered for all permits that were classified as &quot;Second Suite (New)&quot; and &quot;New Laneway / Rear YardSuite&quot; while being careful not to double count permits that had revisions. However, there may be some error if building permits were misclassified.
 			</p>
-			<p>The residential <a href="${"https://open.toronto.ca/dataset/zoning-by-law/"}">zoning layer</a> is also from the City&#39;s Open Data portal. The single-detached only zones are those classified as [RD] while the other low-density zones are classified as [R, RM, RS, RT]. The latter also include semi-detached, townhouses, and smaller multi-unit dwellings, depending on the zone classification.
+			<p>The historical residential <a href="${"https://open.toronto.ca/dataset/zoning-by-law/"}">zoning layer</a> is also from the City&#39;s Open Data portal. The single-detached only zones are those classified as [RD] while the other low-density zones are classified as [R, RM, RS, RT]. The latter also include semi-detached, townhouses, and smaller multi-unit dwellings, depending on the zone classification.
 			</p>
 			<p>The location of laneways is also from the City of Toronto&#39;s Open Data portal. It was filtered and extracted from the City&#39;s <a href="${"https://open.toronto.ca/dataset/toronto-centreline-tcl/"}">Centreline</a> dataset.
 			</p>
