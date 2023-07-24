@@ -155,13 +155,13 @@
 				Overall, the completion of secondary suites and rear-yard suites are quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,402 secondary suites and 138 rear-yard suites have been built in Toronto from January 2013 to mid-July 2023</b>. 
 			</p>
 			<p>
-				Despite this sluggish uptake to date in Toronto, there are an increasing number of ongoing projects. <b> As of July 15, 2023 there were 643 secondary suite and 558 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and an initial or revised application date from the period from January 2018 to July 2023. However, these numbers are still quite low compared to uptake in other cities like <a href="https://xtown.la/2022/09/20/adus-los-angeles-housing-numbers/"> Los Angeles</a>, where the number of issued ADU permits from 2017 to 2021 was over 25,000.
+				Despite this sluggish uptake to date in Toronto, there are an increasing number of ongoing projects. <b> As of July 15, 2023 there were 643 secondary suite and 558 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and that have an initial or revised application date from the period from January 2018 to July 2023. However, these numbers are still quite low compared to uptake in other cities like <a href="https://xtown.la/2022/09/20/adus-los-angeles-housing-numbers/"> Los Angeles</a>, where the number of issued ADU permits from 2017 to 2021 was over 25,000.
 			</p>
 			<p>
 				To explore further, we have also mapped below where secondary suites and rear-yard suites have been built in the city from 2013 to 2023, as well as the location of active building permits.
 			</p>
 			<p>	
-				These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. All completed rear-yard suites cluster in these neighbourhoods since these are where the majority of the City's laneways are located since post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing. Looking at the active permits, there are now several popping up elsewhere in more suburban neighbourhoods.
+				These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. All completed rear-yard suites cluster in these neighbourhoods since these are where the majority of the City's laneways are located. Post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing. Looking at the active permits, there are now several popping up elsewhere in more suburban neighbourhoods.
 			</p>
 			<p>
 				One notable pattern is that there is far less gentle density construction in and around North Toronto, despite this area mostly consisting of single-detached homes. This area is home to some of the city's wealthiest neighbourhoods (toggle on the income layer to check this out). Downtown Toronto also only has a few projects, but this is because it is mostly zoned for higher density development.
@@ -175,7 +175,7 @@
 
 	<div class="text">
 		<p>
-			According to <a href="https://adusearch.ca/">ADUsearch.ca</a> the estimated number of properties within Toronto that could add internal or external ADUs range between 370,000 to 390,000 lots. This emphasizes the fact that with the current uptake of a humble 1550, Toronto is barely scratching the surface of hidden housing supply within its existing neighbourhoods. Practical steps need to be taken by all stakeholders to remove the various barriers and to find solutions to make best use of this opportunity to easily provide much-needed dwelling units during the current housing crisis.
+			According to <a href="https://adusearch.ca/">ADUsearch.ca</a> the estimated number of properties within Toronto that could add internal or external ADUs range between 370,000 to 390,000 lots. This emphasizes the fact that with the current uptake of a humble 1,540, Toronto is barely scratching the surface of hidden housing supply within its existing neighbourhoods. Practical steps need to be taken by all stakeholders to remove the various barriers and to find solutions to make best use of this opportunity to easily provide much-needed dwelling units during the current housing crisis.
  
 		</p>
 	</div>
