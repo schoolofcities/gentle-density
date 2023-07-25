@@ -117,11 +117,7 @@
 			</div>
 
 			<p>	
-				The most common form is converting a basement into a Secondary Suite separate apartment, but this can include other types of conversions as well (e.g. carving out a Secondary Suite within the main dwelling unit of a Single Detached, Semi Detached or a Townhouse  converting from a duplex to a triplex). The creation of these suites ese conversions may or may not include building additions (i.e. expanding the volume) of the structure. They have been permitted since 2000 city-wide, with some restrictions. It is noteworthy that under the new multiplex bylaw, Secondary Suites are not allowed in the semi-detached or townhouse portion of a converted four-unit multiplex.
-			</p>
-
-			<p>
-				(While allowing for multiplexes was passed in May 2023, at the time of writing, it is too early to track their completion from building permit data. We are planning on updating this website, including tracking multiplexes, in early 2024).
+				The most common form is converting a basement into a Secondary Suite separate apartment, but this can include other types of conversions as well (e.g. carving out a Secondary Suite within the main dwelling unit of a Single Detached, Semi Detached or a Townhouse  converting from a duplex to a triplex). The creation of these suites ese conversions may or may not include building additions (i.e. expanding the volume) of the structure. They have been permitted since 2000 city-wide, with some restrictions. It is noteworthy that under the new Multiplex bylaw, Secondary Suites are not allowed in the semi-detached or townhouse portion of a converted four-unit multiplex.
 			</p>
 
 			<h3><span class="textLaneway">Rear-Yard Suites</span></h3>
@@ -133,6 +129,11 @@
 				</p></div>
 				<div class="isometric"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
 			</div>
+
+			<h3><span class="textLaneway">Multiplexes</span></h3>
+			<p>
+				Allowing for multiplexes was passed in May 2023 in neighbourhoods city-wide. However, at the time of writing, it is too early to track their completion from building permit data. We are planning on updating this website, including tracking multiplex development across the city, in early 2024.
+			</p>
 
 			
 
@@ -185,7 +186,7 @@
 		<div class="text">
 			<h3>Data & Code</h3>
 			<p>
-				Data on the location, type, and status of <a href="https://open.toronto.ca/catalogue/?search=building%20permits&sort=score%20desc">building permits</a> are from the City of Toronto's Open Data portal. To create these charts and maps, we filtered for all permits that were classified as "Second Suite (New)" and "New Laneway / Rear YardSuite" while being careful not to double count permits that had revisions. However, there may be some error if building permits were misclassified.
+				Data on the location, type, and status of <a href="https://open.toronto.ca/catalogue/?search=building%20permits&sort=score%20desc">building permits</a> are from the City of Toronto's Open Data portal. To create these charts and maps, we filtered for all permits that were classified as "Second Suite (New)" and "New Laneway / Rear Yard Suite" while being careful not to double count permits that had revisions. However, there may be some error if building permits were misclassified.
 			</p>
 			<p>
 				The historical residential <a href="https://open.toronto.ca/dataset/zoning-by-law/">zoning layer</a> is also from the City's Open Data portal. The single-detached only zones are those classified as [RD] while the other low-density zones are classified as [R, RM, RS, RT]. The latter also include semi-detached, townhouses, and smaller multi-unit dwellings, depending on the zone classification.

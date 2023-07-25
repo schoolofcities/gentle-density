@@ -24,12 +24,12 @@
     "src": "src/routes/assets/Trade Gothic LT Bold.ttf"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-0030e6a4.js",
+    "file": "_app/immutable/start-9a0fb1e3.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
-      "_singletons-e830f1e9.js"
+      "_singletons-3bca4f38.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -46,16 +46,16 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-cf346d45.js",
+    "file": "_app/immutable/components/error.svelte-7d6b2e20.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
-      "_singletons-e830f1e9.js"
+      "_singletons-3bca4f38.js"
     ]
   },
   "src/routes/toronto-building-permits/+page.svelte": {
-    "file": "_app/immutable/components/pages/toronto-building-permits/_page.svelte-8f15aa9e.js",
+    "file": "_app/immutable/components/pages/toronto-building-permits/_page.svelte-cf1c1577.js",
     "src": "src/routes/toronto-building-permits/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -90,8 +90,8 @@
       "__page-f015c9b7.js"
     ]
   },
-  "_singletons-e830f1e9.js": {
-    "file": "_app/immutable/chunks/singletons-e830f1e9.js",
+  "_singletons-3bca4f38.js": {
+    "file": "_app/immutable/chunks/singletons-3bca4f38.js",
     "imports": [
       "_index-4b83e0f7.js"
     ]
@@ -121,7 +121,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-bb37e4ed.js",
+    "file": "_app/immutable/chunks/1-a4c45b98.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -129,7 +129,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-7fcfbdfc.js",
+    "file": "_app/immutable/chunks/2-f7f691e0.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
