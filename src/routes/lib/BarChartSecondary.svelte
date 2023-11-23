@@ -3,7 +3,7 @@
     import {rollup} from 'd3-array';
     import {scaleBand} from 'd3-scale';
 
-    import suitesSecondary from '../assets/secondary-suites-072023update.geo.json';
+    import suitesSecondary from '../assets/toronto/secondary-suites-072023update.geo.json';
     
     let divWidth;
     

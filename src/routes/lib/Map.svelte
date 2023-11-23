@@ -4,20 +4,20 @@
     import mapboxgl from "mapbox-gl";
     import RangeSlider from "svelte-range-slider-pips";
 
-    import torontoBoundary from '../assets/toronto-boundary.geo.json';
-    import laneways from '../assets/laneways.geo.json';
-    import transitLines from '../assets/transitLines.geo.json';
-    import transitStops from '../assets/transitStops.geo.json';
-    import suitesLaneway from '../assets/laneway-garden-suites-072023update.geo.json';
-    import suitesSecondary from '../assets/secondary-suites-072023update.geo.json';
-    import suitesLanewayActive from '../assets/laneway-suites-active-subset-072023update.geo.json';
-    import suitesSecondaryActive from '../assets/secondary-suites-active-subset-072023update.geo.json';
-    import zoneYellowRes from '../assets/zone-yellow.geo.json';
-    import zoneOtherRes from '../assets/zone-otherres.geo.json';
-    import income2020 from '../assets/2020.geo.json';
+    import torontoBoundary from '../assets/toronto/toronto-boundary.geo.json';
+    import laneways from '../assets/toronto/laneways.geo.json';
+    import transitLines from '../assets/toronto/transitLines.geo.json';
+    import transitStops from '../assets/toronto/transitStops.geo.json';
+    import suitesLaneway from '../assets/toronto/laneway-garden-suites-072023update.geo.json';
+    import suitesSecondary from '../assets/toronto/secondary-suites-072023update.geo.json';
+    import suitesLanewayActive from '../assets/toronto/laneway-suites-active-subset-072023update.geo.json';
+    import suitesSecondaryActive from '../assets/toronto/secondary-suites-active-subset-072023update.geo.json';
+    import zoneYellowRes from '../assets/toronto/zone-yellow.geo.json';
+    import zoneOtherRes from '../assets/toronto/zone-otherres.geo.json';
+    import income2020 from '../assets/toronto/2020.geo.json';
 
-    import xSecondary from '../assets/x-secondary.svg';
-    import xRearYard from '../assets/x-rearyard.svg';
+    import xSecondary from '../assets/toronto/x-secondary.svg';
+    import xRearYard from '../assets/toronto/x-rearyard.svg';
 
     let values = [2020,2023];
 
