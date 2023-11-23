@@ -152,7 +152,7 @@ b {
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
     font-size: 18px;
-    width: 280px;
+    width: 380px;
     text-align: center;
     color: var(--brandDarkBlue);
     line-height: 30px;
@@ -180,45 +180,6 @@ b {
     padding-right: 20px;
 }
 
-.typeWrapper {
-    overflow: hidden;
-    display: flex;
-}
-
-.isometric {
-    float: left;
-    width: 300px;
-}
-.isometric-mobile {
-    display: none;
-    width: 300px;
-}
-
-.typeText {
-    float: left;
-    max-width: 500px;
-
-}
-
-@media only screen and (max-width: 692px) {
-    .typeWrapper {
-        overflow: hidden;
-        display: contents;
-    }
-    
-    .isometric {
-        display: none;
-    }
-    .isometric-mobile {
-        display: contents
-    }
-    
-    .typeText {
-        float: none;
-        max-width: 700px;
-    
-    }
-}
 
 .rangeSlider {
     height: 2px;
@@ -269,3 +230,5 @@ b {
 .rangeSlider > .rangePips > .pip.selected > .pipVal {
     color: white;
 }  
+
+

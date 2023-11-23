@@ -5,7 +5,7 @@
 	import Map from "../lib/Map.svelte";
 
 	import Top from "../lib/TopSofC.svelte";
-	import '../styles.css';
+	import '../assets/styles.css';
 
 	import isometricSecondary from '../assets/isometric-secondary.svg';
 	import isometricLaneway from '../assets/isometric-laneway.svg';
@@ -205,3 +205,49 @@
 	</div>
 
 </main>
+
+
+
+<style>
+	
+	.typeWrapper {
+		overflow: hidden;
+		display: flex;
+	}
+
+	.isometric {
+		float: left;
+		width: 300px;
+	}
+	.isometric-mobile {
+		display: none;
+		width: 300px;
+	}
+
+	.typeText {
+		float: left;
+		max-width: 500px;
+
+	}
+
+	@media only screen and (max-width: 692px) {
+		.typeWrapper {
+			overflow: hidden;
+			display: contents;
+		}
+		
+		.isometric {
+			display: none;
+		}
+		.isometric-mobile {
+			display: contents
+		}
+		
+		.typeText {
+			float: none;
+			max-width: 700px;
+		
+		}
+	}
+
+</style>

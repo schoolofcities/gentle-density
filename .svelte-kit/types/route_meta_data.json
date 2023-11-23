@@ -5,5 +5,9 @@
 	"/toronto-building-permits": [
 		"src/routes/toronto-building-permits/+page.js",
 		"src/routes/+layout.js"
+	],
+	"/toronto-loss-of-gentle-density": [
+		"src/routes/toronto-loss-of-gentle-density/+page.js",
+		"src/routes/+layout.js"
 	]
 }
