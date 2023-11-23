@@ -1,6 +1,9 @@
 data/building-permits
+data/toronto/building-permits
 data/video
-node_modules
+data/toronto/video
 data/site-maps/data
+data/toronto/site-maps/data
+node_modules
 .svelte-kit
 
