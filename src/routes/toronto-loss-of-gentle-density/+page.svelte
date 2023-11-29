@@ -4,6 +4,8 @@
 
 	import Top from "../lib/TopSofC.svelte";
 
+	import BarChartLoss from "../lib/BarChartLoss.svelte";
+
 
 
 </script>
@@ -63,13 +65,13 @@
 		<div class="text">
 
 			<p>
-				Importance to gentle density, particularly duplexes, triplexes, etc.
+				High level on the importance of gentle density and diverse forms of housing in a neighbourhood, particularly duplexes, triplexes, etc.
 			</p>
 			<p>
 				But how often is a city losing dwelling units due to conversion of small multi-family structures such as duplexes and triplexes into single-family homes?
 			</p>
 			<p>
-				
+				To try to answer this, we looked at building permit application data in Toronto, flagging all records where a multi-family residential strucutre was converted into a structure with fewer dwelling units. For example a duplex being converted into a single-family home or a triplex being converted into a duplex. 
 			</p>
 			<p>
 				Describe data, filtering process, and limitations, what could be missing, etc.
@@ -92,6 +94,16 @@
 
 		<!-- Describ -->
 
+	</div>
+
+	<div class="line-chart">
+		<BarChartLoss/>
+	</div>
+
+	<div class="text">
+		<p>
+			Hello I am some text describing the above chart
+		</p>
 	</div>
 
 </main>
