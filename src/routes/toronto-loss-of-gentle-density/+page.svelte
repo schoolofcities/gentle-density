@@ -66,6 +66,10 @@
 		<div class="text">
 
 			<p>
+				UNDER CONSTRUCTION! PLEASE DO NOT SHARE WITHOUT PERMISSION :)
+			</p>
+
+			<p>
 				High level on the importance of gentle density and diverse forms of housing in a neighbourhood, particularly duplexes, triplexes, etc.
 			</p>
 			<p>
@@ -110,6 +114,13 @@
 	</div>
 
 	<Map/>
+
+	<div class="text">
+		<p>
+			Hello I am some text describing the map above and such
+		</p>
+	</div>
+
 
 </main>
 
