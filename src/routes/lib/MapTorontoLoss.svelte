@@ -13,14 +13,13 @@
 
 	let map;
 
-	let unitAddress = "";
-	let unitPrevious = "";
-	let unitProposed = "";
-	let unitDateIssued = "";
-	let unitDateCompleted = "";
-	let unitDescription = "";
-
-	let load = 0;
+	let unitPermit = "_";
+	let unitAddress = "_";
+	let unitPrevious = "_";
+	let unitProposed = "_";
+	let unitDateIssued = "_";
+	let unitDateCompleted = "_";
+	let unitDescription = "_";
 
 	mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xqOG0zbTQ1MTAzdTNkbnY2OGluMHJ0byJ9.yX_EB8JqRsIRufOOu8LjeQ';
 	
@@ -157,16 +156,47 @@
 					'circle-color': '#DC4633',
 				}
 			}); 
+
+			map.addLayer({
+				'id': 'lostDwellingsSelected',
+				'type': 'circle',
+				'source': 'lostDwellings',
+				'layout': {},
+				'paint': {
+					'circle-radius': [
+						"interpolate",
+						["linear"],
+						["zoom"],
+						11,
+						4,
+						16,
+						10
+						],
+					'circle-color': '#F1C500',
+				}
+			});
+			map.setFilter('lostDwellingsSelected', ['==', ['get', '_id'], '']);
 			
 			if (pageHeight > 700 && pageWidth > 800) {
 				map.zoomTo(10.75)
 			}
 
-			load = 1
 
 		});
 
+
+		map.on('mouseenter', 'lostDwellingsWhite', () => {
+			map.getCanvas().style.cursor = 'pointer';
+		});
+
+		map.on('mouseleave', 'lostDwellingsWhite', () => {
+			map.getCanvas().style.cursor = '';
+		});
+
+
 		map.on('click', 'lostDwellingsWhite', (e) => {
+
+			$: unitPermit = e.features[0].properties.PERMIT_NUM;
 
 			$: unitAddress = e.features[0].properties.STREET_NUM + " " + e.features[0].properties.STREET_NAME + " " + e.features[0].properties.STREET_TYPE + " " + e.features[0].properties.STREET_DIRECTION;
 
@@ -179,6 +209,8 @@
 			$: unitDateCompleted = e.features[0].properties.COMPLETED_DATE;
 
 			$: unitDescription = e.features[0].properties.DESCRIPTION;
+
+			map.setFilter('lostDwellingsSelected', ['==', ['get', '_id'], e.features[0].properties._id]);
 
 		});
 
@@ -199,6 +231,7 @@
 <div id="map" style="height: {mapHeight}px"></div>
 
 <div id="top-bar">
+	<p><span class="category">Permit Number:</span> {unitPermit}</p>
 	<p><span class="category">Address:</span> {unitAddress}</p>
 	<p><span class="category">Issued Date:</span> {unitDateIssued}</p>
 	<p><span class="category">Completed Date:</span> {unitDateCompleted}</p>
