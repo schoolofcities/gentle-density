@@ -5,6 +5,7 @@
 	import Top from "../lib/TopSofC.svelte";
 
 	import BarChartLoss from "../lib/BarChartLoss.svelte";
+	import Map from "../lib/MapTorontoLoss.svelte";
 
 
 
@@ -104,9 +105,14 @@
 		<p>
 			Hello I am some text describing the above chart
 		</p>
+		<p>
+			We've also plotted them on a map!
 	</div>
 
+	<Map/>
+
 </main>
+
 
 
 
