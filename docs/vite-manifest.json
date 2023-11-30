@@ -7,34 +7,31 @@
     "file": "_app/immutable/assets/isometric-laneway-16b82c84.svg",
     "src": "src/routes/assets/isometric-laneway.svg"
   },
-  "src/routes/assets/x-secondary.svg": {
-    "file": "_app/immutable/assets/x-secondary-5d09d70d.svg",
-    "src": "src/routes/assets/x-secondary.svg"
-  },
-  "src/routes/assets/x-rearyard.svg": {
-    "file": "_app/immutable/assets/x-rearyard-41c3e78f.svg",
-    "src": "src/routes/assets/x-rearyard.svg"
-  },
   "src/routes/assets/top-logo-full.svg": {
     "file": "_app/immutable/assets/top-logo-full-e60044c8.svg",
     "src": "src/routes/assets/top-logo-full.svg"
   },
-  "src/routes/assets/Trade Gothic LT Bold.ttf": {
-    "file": "_app/immutable/assets/Trade Gothic LT Bold-d851713b.ttf",
-    "src": "src/routes/assets/Trade Gothic LT Bold.ttf"
+  "src/routes/assets/toronto/x-secondary.svg": {
+    "file": "_app/immutable/assets/x-secondary-5d09d70d.svg",
+    "src": "src/routes/assets/toronto/x-secondary.svg"
+  },
+  "src/routes/assets/toronto/x-rearyard.svg": {
+    "file": "_app/immutable/assets/x-rearyard-41c3e78f.svg",
+    "src": "src/routes/assets/toronto/x-rearyard.svg"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-9a0fb1e3.js",
+    "file": "_app/immutable/start-8a128409.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
-      "_singletons-3bca4f38.js"
+      "_singletons-1f5c190c.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
       ".svelte-kit/generated/nodes/1.js",
-      ".svelte-kit/generated/nodes/2.js"
+      ".svelte-kit/generated/nodes/2.js",
+      ".svelte-kit/generated/nodes/3.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte": {
@@ -46,32 +43,43 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-7d6b2e20.js",
+    "file": "_app/immutable/components/error.svelte-0e96df3a.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
-      "_singletons-3bca4f38.js"
+      "_singletons-1f5c190c.js"
     ]
   },
   "src/routes/toronto-building-permits/+page.svelte": {
-    "file": "_app/immutable/components/pages/toronto-building-permits/_page.svelte-cf1c1577.js",
+    "file": "_app/immutable/components/pages/toronto-building-permits/_page.svelte-a8befc31.js",
     "src": "src/routes/toronto-building-permits/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
+      "_styles-32fa64da.js",
       "_index-4b83e0f7.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-91a33019.css"
+      "_app/immutable/assets/_page-ba42a577.css"
     ],
     "assets": [
       "_app/immutable/assets/x-secondary-5d09d70d.svg",
       "_app/immutable/assets/x-rearyard-41c3e78f.svg",
-      "_app/immutable/assets/top-logo-full-e60044c8.svg",
       "_app/immutable/assets/isometric-secondary-3d24ae8f.svg",
-      "_app/immutable/assets/isometric-laneway-16b82c84.svg",
-      "_app/immutable/assets/Trade Gothic LT Bold-d851713b.ttf"
+      "_app/immutable/assets/isometric-laneway-16b82c84.svg"
+    ]
+  },
+  "src/routes/toronto-loss-of-gentle-density/+page.svelte": {
+    "file": "_app/immutable/components/pages/toronto-loss-of-gentle-density/_page.svelte-5e47b113.js",
+    "src": "src/routes/toronto-loss-of-gentle-density/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-359d1197.js",
+      "_styles-32fa64da.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-50341b5c.css"
     ]
   },
   "src/routes/+layout.js": {
@@ -90,8 +98,16 @@
       "__page-f015c9b7.js"
     ]
   },
-  "_singletons-3bca4f38.js": {
-    "file": "_app/immutable/chunks/singletons-3bca4f38.js",
+  "src/routes/toronto-loss-of-gentle-density/+page.js": {
+    "file": "_app/immutable/modules/pages/toronto-loss-of-gentle-density/_page.js-85ad3e8a.js",
+    "src": "src/routes/toronto-loss-of-gentle-density/+page.js",
+    "isEntry": true,
+    "imports": [
+      "__page-c90c143b.js"
+    ]
+  },
+  "_singletons-1f5c190c.js": {
+    "file": "_app/immutable/chunks/singletons-1f5c190c.js",
     "imports": [
       "_index-4b83e0f7.js"
     ]
@@ -108,8 +124,23 @@
   "__layout-c2780a85.js": {
     "file": "_app/immutable/chunks/_layout-c2780a85.js"
   },
+  "_styles-32fa64da.js": {
+    "file": "_app/immutable/chunks/styles-32fa64da.js",
+    "imports": [
+      "_index-359d1197.js"
+    ],
+    "css": [
+      "_app/immutable/assets/styles-a104563c.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/top-logo-full-e60044c8.svg"
+    ]
+  },
   "__page-f015c9b7.js": {
     "file": "_app/immutable/chunks/_page-f015c9b7.js"
+  },
+  "__page-c90c143b.js": {
+    "file": "_app/immutable/chunks/_page-c90c143b.js"
   },
   ".svelte-kit/generated/nodes/0.js": {
     "file": "_app/immutable/chunks/0-dd7bec28.js",
@@ -121,7 +152,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-a4c45b98.js",
+    "file": "_app/immutable/chunks/1-c940f1e4.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -129,7 +160,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-f7f691e0.js",
+    "file": "_app/immutable/chunks/2-64e669e6.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -137,8 +168,25 @@
       "src/routes/toronto-building-permits/+page.svelte"
     ]
   },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-a0acbbe9.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-c90c143b.js",
+      "src/routes/toronto-loss-of-gentle-density/+page.svelte"
+    ]
+  },
+  "src/routes/toronto-loss-of-gentle-density/+page.css": {
+    "file": "_app/immutable/assets/_page-50341b5c.css",
+    "src": "src/routes/toronto-loss-of-gentle-density/+page.css"
+  },
+  "styles.css": {
+    "file": "_app/immutable/assets/styles-a104563c.css",
+    "src": "styles.css"
+  },
   "src/routes/toronto-building-permits/+page.css": {
-    "file": "_app/immutable/assets/_page-91a33019.css",
+    "file": "_app/immutable/assets/_page-ba42a577.css",
     "src": "src/routes/toronto-building-permits/+page.css"
   }
 }
