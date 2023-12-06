@@ -56,12 +56,12 @@
 			x="50" 
 			y="13"
 			id="title"
-		>Lost Gentle Density Units</text>
+		>Reno-ductions in Toronto identified</text>
 		<text 
 			x="50" 
 			y="33"
 			id="title"
-		>via Building Permits by Year</text>
+		>from building permit data by year</text>
 
 		<pattern id="pattern-lines" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
 			<rect x="0" y="0" height="10" width="10" style="fill:#DC4633;" />
