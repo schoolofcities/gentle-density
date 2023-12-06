@@ -39,7 +39,7 @@
 
 <main>
 
-	<div class="blueprint" style="background-image: url('https://schoolofcities.github.io/gentle-density/blueprint-background.png');">
+	<div class="blueprint" style="background-image: url('../gentle-density/blueprint-background-loss.png');">
 
 		<div class="title">
 			<h1>
@@ -79,7 +79,7 @@
 				Such changes came into place in response to the current housing crisis, and as an easy and fast way to provide more housing supply that answers to the diverse housing needs. In addition to providing fast supply, such changes also provide units with less carbon footprint by utilizing existing buildings and infrastructure and by using less new materials to create more units. Gentle density reduces sprawl, uses urban space more efficiently, and creates more walkable, and connected neighborhoods.  In other words, gently densifying neighbourhoods can provide more sustainable communities and can create more inclusive, diverse, and resilient community fabric, all while striking the balance between growth and preservation.   
 			</p>
 			<p>
-				But how often is the opposite happening? how often is a city losing dwelling units due to conversion of small multi-family structures such as duplexes and triplexes into single-family homes? 
+				<b>But how often is the opposite happening? how often is a city losing dwelling units due to <u>reno-ductions</u> of small multi-family structures such as duplexes and triplexes into single-family homes? </b>
 			</p>
 			<p>
 				To try to answer this, we looked at building permit application data in Toronto, flagging all records where a multi-family residential structure was converted into a structure with fewer dwelling units. For example, a duplex being converted into a single-family home or a triplex being converted into a duplex… 
