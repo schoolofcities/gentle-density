@@ -20,12 +20,12 @@
     "src": "src/routes/assets/toronto/x-rearyard.svg"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-8a128409.js",
+    "file": "_app/immutable/start-54b829b9.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
-      "_singletons-1f5c190c.js"
+      "_singletons-b5b7f1a4.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -43,12 +43,12 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-0e96df3a.js",
+    "file": "_app/immutable/components/error.svelte-c5045065.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
-      "_singletons-1f5c190c.js"
+      "_singletons-b5b7f1a4.js"
     ]
   },
   "src/routes/toronto-building-permits/+page.svelte": {
@@ -70,9 +70,9 @@
       "_app/immutable/assets/isometric-laneway-16b82c84.svg"
     ]
   },
-  "src/routes/toronto-loss-of-gentle-density/+page.svelte": {
-    "file": "_app/immutable/components/pages/toronto-loss-of-gentle-density/_page.svelte-5e47b113.js",
-    "src": "src/routes/toronto-loss-of-gentle-density/+page.svelte",
+  "src/routes/toronto-renoductions/+page.svelte": {
+    "file": "_app/immutable/components/pages/toronto-renoductions/_page.svelte-e545864d.js",
+    "src": "src/routes/toronto-renoductions/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
@@ -98,16 +98,16 @@
       "__page-f015c9b7.js"
     ]
   },
-  "src/routes/toronto-loss-of-gentle-density/+page.js": {
-    "file": "_app/immutable/modules/pages/toronto-loss-of-gentle-density/_page.js-85ad3e8a.js",
-    "src": "src/routes/toronto-loss-of-gentle-density/+page.js",
+  "src/routes/toronto-renoductions/+page.js": {
+    "file": "_app/immutable/modules/pages/toronto-renoductions/_page.js-bed5cb8f.js",
+    "src": "src/routes/toronto-renoductions/+page.js",
     "isEntry": true,
     "imports": [
-      "__page-c90c143b.js"
+      "__page-0701c8a9.js"
     ]
   },
-  "_singletons-1f5c190c.js": {
-    "file": "_app/immutable/chunks/singletons-1f5c190c.js",
+  "_singletons-b5b7f1a4.js": {
+    "file": "_app/immutable/chunks/singletons-b5b7f1a4.js",
     "imports": [
       "_index-4b83e0f7.js"
     ]
@@ -139,8 +139,8 @@
   "__page-f015c9b7.js": {
     "file": "_app/immutable/chunks/_page-f015c9b7.js"
   },
-  "__page-c90c143b.js": {
-    "file": "_app/immutable/chunks/_page-c90c143b.js"
+  "__page-0701c8a9.js": {
+    "file": "_app/immutable/chunks/_page-0701c8a9.js"
   },
   ".svelte-kit/generated/nodes/0.js": {
     "file": "_app/immutable/chunks/0-dd7bec28.js",
@@ -152,7 +152,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-c940f1e4.js",
+    "file": "_app/immutable/chunks/1-3c77ebe2.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -169,24 +169,24 @@
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-a0acbbe9.js",
+    "file": "_app/immutable/chunks/3-147a9762.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-c90c143b.js",
-      "src/routes/toronto-loss-of-gentle-density/+page.svelte"
+      "__page-0701c8a9.js",
+      "src/routes/toronto-renoductions/+page.svelte"
     ]
   },
-  "src/routes/toronto-loss-of-gentle-density/+page.css": {
+  "src/routes/toronto-renoductions/+page.css": {
     "file": "_app/immutable/assets/_page-50341b5c.css",
-    "src": "src/routes/toronto-loss-of-gentle-density/+page.css"
-  },
-  "styles.css": {
-    "file": "_app/immutable/assets/styles-a104563c.css",
-    "src": "styles.css"
+    "src": "src/routes/toronto-renoductions/+page.css"
   },
   "src/routes/toronto-building-permits/+page.css": {
     "file": "_app/immutable/assets/_page-ba42a577.css",
     "src": "src/routes/toronto-building-permits/+page.css"
+  },
+  "styles.css": {
+    "file": "_app/immutable/assets/styles-a104563c.css",
+    "src": "styles.css"
   }
 }
