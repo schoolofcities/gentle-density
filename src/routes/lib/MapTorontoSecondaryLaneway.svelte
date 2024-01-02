@@ -10,8 +10,8 @@
 	import transitStops from '../assets/toronto/transitStops.geo.json';
 	import suitesLaneway from '../assets/toronto/laneway-garden-suites-072023update.geo.json';
 	import suitesSecondary from '../assets/toronto/secondary-suites-072023update.geo.json';
-	import suitesLanewayActive from '../assets/toronto/laneway-suites-active-subset-072023update.geo.json';
-	import suitesSecondaryActive from '../assets/toronto/secondary-suites-active-subset-072023update.geo.json';
+	import suitesLanewayActive from '../assets/toronto/laneway-suites-active-subset-012024update.geo.json';
+	import suitesSecondaryActive from '../assets/toronto/secondary-suites-active-subset-012024update.geo.json';
 	import zoneYellowRes from '../assets/toronto/zone-yellow.geo.json';
 	import zoneOtherRes from '../assets/toronto/zone-otherres.geo.json';
 	import income2020 from '../assets/toronto/2020.geo.json';

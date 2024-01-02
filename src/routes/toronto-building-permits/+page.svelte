@@ -132,7 +132,7 @@
 
 			<h3><span class="textLaneway">Multiplexes</span></h3>
 			<p>
-				Allowing for multiplexes was passed in May 2023 in neighbourhoods city-wide. However, at the time of writing, it is too early to track their completion from building permit data. We are planning on updating this website, including tracking multiplex development across the city, in early 2024.
+				Allowing for multiplexes was passed in May 2023 in neighbourhoods city-wide. However, at the time of writing, it is too early to track their completion from building permit data. We are planning on updating this website, including tracking multiplex development across the city, in mid-2024.
 			</p>
 
 			
@@ -156,7 +156,7 @@
 				Overall, the completion of secondary suites and rear-yard suites are quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,402 secondary suites and 138 rear-yard suites have been built in Toronto from January 2013 to mid-July 2023</b>. 
 			</p>
 			<p>
-				Despite this sluggish uptake to date in Toronto, there are an increasing number of ongoing projects. <b> As of July 15, 2023 there were 643 secondary suite and 558 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and that have an initial or revised application date from the period from January 2018 to July 2023. However, these numbers are still quite low compared to uptake in other cities like <a href="https://xtown.la/2022/09/20/adus-los-angeles-housing-numbers/"> Los Angeles</a>, where the number of issued ADU permits from 2017 to 2021 was over 25,000.
+				Despite this sluggish uptake to date in Toronto, there are an increasing number of ongoing projects. <b> As of July 15, 2023 there were 684 secondary suite and 706 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and that have an initial or revised application date from the six year period of January 2018 to December 2023. However, these numbers are still quite low compared to uptake in other cities like <a href="https://xtown.la/2022/09/20/adus-los-angeles-housing-numbers/"> Los Angeles</a>, where the number of issued ADU permits from 2017 to 2021 was over 25,000.
 			</p>
 			<p>
 				To explore further, we have also mapped below where secondary suites and rear-yard suites have been built in the city from 2013 to 2023, as well as the location of active building permits.

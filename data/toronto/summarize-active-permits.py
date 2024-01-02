@@ -13,7 +13,7 @@ df = df[df["APPLICATION_DATE"].astype(str).str[:4].isin(["2018","2019","2020","2
 
 gdf = gdf[gdf["PERMIT_NUM"].isin(df["PERMIT_NUM"])]
 
-gdf.to_file(typename + "-active-subset-012024.geojson", driver="GeoJSON")
+gdf.to_file(typename + "-active-subset-012024update.geojson", driver="GeoJSON")
 
 statusLaneway = pd.DataFrame(df.groupby(["STATUS"]).size()).rename(columns = {0:'rearyard'})
 
@@ -30,7 +30,7 @@ df = df[df["APPLICATION_DATE"].astype(str).str[:4].isin(["2018","2019","2020","2
 
 gdf = gdf[gdf["PERMIT_NUM"].isin(df["PERMIT_NUM"])]
 
-gdf.to_file(typename + "-active-subset-072023update.geojson", driver="GeoJSON")
+gdf.to_file(typename + "-active-subset-012024update.geojson", driver="GeoJSON")
 
 statusSecondary = pd.DataFrame(df.groupby(["STATUS"]).size()).rename(columns = {0:'secondary'})
 
