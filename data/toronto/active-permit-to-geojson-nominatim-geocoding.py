@@ -46,7 +46,7 @@ def geocode(address):
     
 
 
-file_name = "building-permits/activepermits_june152023.csv"
+file_name = "building-permits/activepermits_jan22024.csv"
 
 df = pd.read_csv(file_name)
 
@@ -104,5 +104,5 @@ dfc = dfc[["PERMIT_NUM", 'X', 'Y',"geometry"]]
 
 print(dfc)
 
-df.to_csv(typename + "-active-072023update-v3.csv")
-dfc.to_file(typename + "-active-072023update-v3.geojson", driver="GeoJSON")
+df.to_csv(typename + "-active-012024update.csv")
+dfc.to_file(typename + "-active-012024update.geojson", driver="GeoJSON")
