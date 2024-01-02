@@ -72,7 +72,7 @@
 			</h2>
 			<p><a href="https://jamaps.github.io">Jeff Allen</a> and <a href="https://www.linkedin.com/in/ahmad-al-musa/">Ahmad Al-Musa</a></p>
 			<p>Created February 2023</p>
-			<p>Updated July 2023</p>
+			<p>Updated January 2024</p>
 		</div>
 
 	</div>
@@ -103,7 +103,7 @@
 				<b>But what is the recent uptake in gentle density housing in the City of Toronto?</b>
 			</p>
 			<p>	
-				To answer this, we've looked at 10+ years of <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits/">building permit data</a> in the City of Toronto (from 01/2013 to 07/2023) to see how and where forms of gentle density have (or have not) been built across the city during this period. At any point in time, building permits can either be active (i.e. building in progress), cancelled, or closed. Those that are closed, we can assume construction has finished. We first counted building permits by the year they were closed for the following two types of gentle density construction, to then chart their trends over time. 
+				To answer this, we've looked at 10+ years of <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits/">building permit data</a> in the City of Toronto (from 01/2013 to 01/2024) to see how and where forms of gentle density have (or have not) been built across the city during this period. At any point in time, building permits can either be active (i.e. building in progress), cancelled, or closed. Those that are closed, we can assume construction has finished. We first counted building permits by the year they were closed for the following two types of gentle density construction, to then chart their trends over time. 
 			</p>
 			
 			<h3><span class="textSecondary">Secondary Suites</span></h3>
@@ -150,10 +150,10 @@
 		<div class="text">
 
 			<p>
-				The construction of secondary suites hovered between 100 and 120 per year up until 2019. It has since increased, in 2022 to just over 200. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020, and only a few dozen since then. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street). However, by July 2023, there were already more rear-yard suites built in 2023 than any year prior.
+				The construction of secondary suites hovered between 100 and 120 per year up until 2019. It has since increased steadily, up to 243 new units in 2023. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020. While uptake was slow initially, it has since increased as well. In 2023 there were 102 new laneway and garden suites constructed, more than all prior years combined. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street).
 			</p>
 			<p>
-				Overall, the completion of secondary suites and rear-yard suites are quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,402 secondary suites and 138 rear-yard suites have been built in Toronto from January 2013 to mid-July 2023</b>. 
+				Overall, the completion of secondary suites and rear-yard suites are still quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,525 secondary suites and 192 rear-yard suites have been built in Toronto from January 2013 to mid-July 2023</b>. 
 			</p>
 			<p>
 				Despite this sluggish uptake to date in Toronto, there are an increasing number of ongoing projects. <b> As of July 15, 2023 there were 684 secondary suite and 706 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and that have an initial or revised application date from the six year period of January 2018 to December 2023. However, these numbers are still quite low compared to uptake in other cities like <a href="https://xtown.la/2022/09/20/adus-los-angeles-housing-numbers/"> Los Angeles</a>, where the number of issued ADU permits from 2017 to 2021 was over 25,000.
@@ -176,7 +176,7 @@
 
 	<div class="text">
 		<p>
-			According to <a href="https://adusearch.ca/">ADUsearch.ca</a> the estimated number of properties within Toronto that could add internal or external ADUs range between 370,000 to 390,000 lots. This emphasizes the fact that with the current uptake of a humble 1,540, Toronto is barely scratching the surface of hidden housing supply within its existing neighbourhoods. Practical steps need to be taken by all stakeholders to remove the various barriers and to find solutions to make best use of this opportunity to easily provide much-needed dwelling units during the current housing crisis.
+			According to <a href="https://adusearch.ca/">ADUsearch.ca</a> the estimated number of properties within Toronto that could add internal or external ADUs range between 370,000 to 390,000 lots. This emphasizes the fact that with the current uptake of a humble 1,717, Toronto is barely scratching the surface of hidden housing supply within its existing neighbourhoods. Practical steps need to be taken by all stakeholders to remove the various barriers and to find solutions to make best use of this opportunity to easily provide much-needed dwelling units during the current housing crisis.
  
 		</p>
 	</div>
@@ -186,7 +186,7 @@
 		<div class="text">
 			<h3>Data & Code</h3>
 			<p>
-				Data on the location, type, and status of <a href="https://open.toronto.ca/catalogue/?search=building%20permits&sort=score%20desc">building permits</a> are from the City of Toronto's Open Data portal. To create these charts and maps, we filtered for all permits that were classified as "Second Suite (New)" and "New Laneway / Rear Yard Suite" while being careful not to double count permits that had revisions. However, there may be some error if building permits were misclassified.
+				Data on the location, type, and status of <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits/">building permits</a> are from the City of Toronto's Open Data portal. To create these charts and maps, we filtered for all permits that were classified as "Second Suite (New)" and "New Laneway / Rear Yard Suite" while being careful not to double count permits that had revisions. However, there may be some error if building permits were misclassified.
 			</p>
 			<p>
 				The historical residential <a href="https://open.toronto.ca/dataset/zoning-by-law/">zoning layer</a> is also from the City's Open Data portal. The single-detached only zones are those classified as [RD] while the other low-density zones are classified as [R, RM, RS, RT]. The latter also include semi-detached, townhouses, and smaller multi-unit dwellings, depending on the zone classification.
