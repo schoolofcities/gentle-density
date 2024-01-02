@@ -150,7 +150,7 @@
 		<div class="text">
 
 			<p>
-				The construction of secondary suites hovered between 100 and 120 per year up until 2019. It has since increased steadily, up to 243 new units in 2023. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020. While uptake was slow initially, it has since increased as well. In 2023 there were 102 new laneway and garden suites constructed, more than all prior years combined. Almost all of these are concentrated in pre-war Toronto, where most of the laneways in the city are located (post-war neighbourhoods tend to not have laneways with garages facing the street).
+				The construction of secondary suites hovered between 100 and 130 per year from 2015 up until 2019. It has since increased steadily, to up to 243 new units created in 2023. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020. While uptake was slow initially, it has since increased. In 2023 there were 102 new laneway and garden suites constructed, more than all prior years combined. 
 			</p>
 			<p>
 				Overall, the completion of secondary suites and rear-yard suites are still quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,525 secondary suites and 192 rear-yard suites have been built in Toronto from January 2013 to mid-July 2023</b>. 
@@ -162,7 +162,7 @@
 				To explore further, we have also mapped below where secondary suites and rear-yard suites have been built in the city from 2013 to 2023, as well as the location of active building permits.
 			</p>
 			<p>	
-				These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. All completed rear-yard suites cluster in these neighbourhoods since these are where the majority of the City's laneways are located. Post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing. Looking at the active permits, there are now several popping up elsewhere in more suburban neighbourhoods.
+				These highlight clustering of development in pre-war neighbourhoods just east and particularly west of the downtown core. Almost all completed rear-yard suites cluster in these neighbourhoods since these are where the majority of the City's laneways are located. Post-war development focused garage construction towards the street rather than to a back laneway like pre-war housing. Looking at the active permits, there are now several popping up elsewhere in more suburban neighbourhoods.
 			</p>
 			<p>
 				One notable pattern is that there is far less gentle density construction in and around North Toronto, despite this area mostly consisting of single-detached homes. This area is home to some of the city's wealthiest neighbourhoods (toggle on the income layer to check this out). Downtown Toronto also only has a few projects, but this is because it is mostly zoned for higher density development.

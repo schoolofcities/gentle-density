@@ -36,7 +36,7 @@
 
 <div id="barChart" bind:offsetWidth={divWidth}>
 
-	<svg height=370 width={svgWidth} id="svgChart">
+	<svg height=400 width={svgWidth} id="svgChart">
 
 		<text 
 			x="50" 
@@ -87,8 +87,8 @@
 			>{year}</text>
 
 			<text 
-				x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-				y="365"
+				x="{35 + xScale(year) + xScale.bandwidth() / 2}" 
+				y="360"
 				id="yearLabelMobile"
 				text-anchor="middle"
 				transform="rotate(-45,{57 + xScale(year) + xScale.bandwidth() / 2},354)"
@@ -125,7 +125,7 @@
 		margin: 0 auto;
 		width: calc(100% - 30px);
 		max-width: 650px;
-		height: 370px;
+		height: 400px;
 		/* border: solid 1px var(--brandLightBlue); */
 	}
 

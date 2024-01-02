@@ -88,8 +88,8 @@
             >{year}</text>
 
             <text 
-                x="{45 + xScale(year) + xScale.bandwidth() / 2}" 
-                y="212.5"
+                x="{7 + xScale(year) + xScale.bandwidth() / 2}" 
+                y="185"
                 id="yearLabelMobile"
                 text-anchor="middle"
                 transform="rotate(-45,{57 + xScale(year) + xScale.bandwidth() / 2},151)"
