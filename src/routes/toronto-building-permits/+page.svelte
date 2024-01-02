@@ -103,7 +103,7 @@
 				<b>But what is the recent uptake in gentle density housing in the City of Toronto?</b>
 			</p>
 			<p>	
-				To answer this, we've looked at 10+ years of <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits-prior-years/">building permit data</a> in the City of Toronto (from 01/2013 to 07/2023) to see how and where forms of gentle density have (or have not) been built across the city during this period. At any point in time, building permits can either be active (i.e. building in progress), cancelled, or closed. Those that are closed, we can assume construction has finished. We first counted building permits by the year they were closed for the following two types of gentle density construction, to then chart their trends over time. 
+				To answer this, we've looked at 10+ years of <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits/">building permit data</a> in the City of Toronto (from 01/2013 to 07/2023) to see how and where forms of gentle density have (or have not) been built across the city during this period. At any point in time, building permits can either be active (i.e. building in progress), cancelled, or closed. Those that are closed, we can assume construction has finished. We first counted building permits by the year they were closed for the following two types of gentle density construction, to then chart their trends over time. 
 			</p>
 			
 			<h3><span class="textSecondary">Secondary Suites</span></h3>

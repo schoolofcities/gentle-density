@@ -3,7 +3,7 @@
 	import {rollup} from 'd3-array';
 	import {scaleBand} from 'd3-scale';
 
-	import suitesSecondary from '../assets/toronto/secondary-suites-072023update.geo.json';
+	import suitesSecondary from '../assets/toronto/secondary-suites.geo.json';
 	
 	let divWidth;
 	
@@ -60,35 +60,35 @@
 			<rect 
 				id="bar" 
 				x="{50 + xScale(year)}" 
-				y="{60 + barY(yearCountsSecondary[year])}" width="{xScale.bandwidth()}" height="{barHeight(yearCountsSecondary[year])}" 
+				y="{80 + barY(yearCountsSecondary[year])}" width="{xScale.bandwidth()}" height="{barHeight(yearCountsSecondary[year])}" 
 				fill="url(#pattern-lines)"
 			/>
 
 			<line
 				x1="{50 + xScale(year) + xScale.bandwidth() / 2}"
 				x2="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-				y1="330"
-				y2="333"
+				y1="350"
+				y2="353"
 				style="stroke:white;stroke-width:1"
 			/>
 
 			<text 
 				x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-				y="{57 + barY(yearCountsSecondary[year])}"
+				y="{77 + barY(yearCountsSecondary[year])}"
 				id="labelBar"
 				text-anchor="middle" 
 			>{yearCountsSecondary[year]}</text>
 
 			<text 
 				x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-				y="345"
+				y="365"
 				id="yearLabelWeb"
 				text-anchor="middle"
 			>{year}</text>
 
 			<text 
 				x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-				y="345"
+				y="365"
 				id="yearLabelMobile"
 				text-anchor="middle"
 				transform="rotate(-45,{57 + xScale(year) + xScale.bandwidth() / 2},354)"
@@ -96,22 +96,20 @@
 			
 		{/each}
 
-		<line x1="50" y1="330" x2="{svgWidth}" y2="330" style="stroke:white;stroke-width:1" />
-		<text x=40 y=333 id="label">0</text>
+		<line x1="50" y1="350" x2="{svgWidth}" y2="350" style="stroke:white;stroke-width:1" />
+		<text x=40 y=353 id="label">0</text>
 
-		<line x1="50" y1="262.5" x2="{svgWidth}" y2="262.5" style="stroke:white;stroke-width:1;opacity:0.3" />
-		<text x=33 y=266 id="label">50</text>
+		<line x1="50" y1="282.5" x2="{svgWidth}" y2="282.5" style="stroke:white;stroke-width:1;opacity:0.3" />
+		<text x=33 y=286 id="label">50</text>
 
-		<line x1="50" y1="195" x2="{svgWidth}" y2="195" style="stroke:white;stroke-width:1;opacity:0.3" />
-		<text x=25 y=200 id="label">100</text>
+		<line x1="50" y1="215" x2="{svgWidth}" y2="215" style="stroke:white;stroke-width:1;opacity:0.3" />
+		<text x=25 y=220 id="label">100</text>
 
-		<line x1="50" y1="127.5" x2="{svgWidth}" y2="127.5" style="stroke:white;stroke-width:1;opacity:0.3" />
-		<text x=25 y=132 id="label">150</text>
+		<line x1="50" y1="147.5" x2="{svgWidth}" y2="147.5" style="stroke:white;stroke-width:1;opacity:0.3" />
+		<text x=25 y=152 id="label">150</text>
 
-		<line x1="50" y1="50" x2="{svgWidth}" y2="50" style="stroke:white;stroke-width:1;opacity:0.3" />
-		<text x=25 y=55 id="label">200</text>
-
-		
+		<line x1="50" y1="70" x2="{svgWidth}" y2="70" style="stroke:white;stroke-width:1;opacity:0.3" />
+		<text x=25 y=75 id="label">200</text>
 
 	</svg>
 

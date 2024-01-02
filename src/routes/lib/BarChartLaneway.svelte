@@ -3,7 +3,7 @@
     import {rollup} from 'd3-array';
     import {scaleBand} from 'd3-scale';
 
-    import suitesLaneway from '../assets/toronto/laneway-garden-suites-072023update.geo.json';
+    import suitesLaneway from '../assets/toronto/laneway-garden-suites.geo.json';
     
     let divWidth;
     
@@ -12,7 +12,7 @@
     let yearCountsLaneway =  Object.fromEntries(rollup(suitesLaneway.features, v => v.length, d => d.properties.year));
 
     const sumValues = obj => Object.values(obj).reduce((a, b) => a + b, 0);
-    console.log(sumValues(yearCountsLaneway));
+    console.log(yearCountsLaneway);
 
     let years = ["2013","2014","2015","2016","2017","2018","2019","2020","2021","2022", "2023"];
 
@@ -37,7 +37,7 @@
 
 <div id="barChart" bind:offsetWidth={divWidth}>
 
-    <svg height=160 width={svgWidth} id="svgChart">
+    <svg height=260 width={svgWidth} id="svgChart">
 
         <text 
             x="50" 
@@ -61,35 +61,35 @@
             <rect 
                 id="bar" 
                 x="{50 + xScale(year)}" 
-                y="{60 + barY(yearCountsLaneway[year])}" width="{xScale.bandwidth()}" height="{barHeight(yearCountsLaneway[year])}" 
+                y="{120 + barY(yearCountsLaneway[year])}" width="{xScale.bandwidth()}" height="{barHeight(yearCountsLaneway[year])}" 
                 fill="url(#pattern-lines-green)"
             />
 
             <line
                 x1="{50 + xScale(year) + xScale.bandwidth() / 2}"
                 x2="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-                y1="127.5"
-                y2="130.5"
+                y1="187.5"
+                y2="190.5"
                 style="stroke:white;stroke-width:1"
             />
 
             <text 
                 x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-                y="{57 + barY(yearCountsLaneway[year])}"
+                y="{117 + barY(yearCountsLaneway[year])}"
                 id="labelBar"
                 text-anchor="middle" 
             >{yearCountsLaneway[year]}</text>
 
             <text 
                 x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-                y="142.5"
+                y="202.5"
                 id="yearLabelWeb"
                 text-anchor="middle"
             >{year}</text>
 
             <text 
-                x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-                y="142.5"
+                x="{45 + xScale(year) + xScale.bandwidth() / 2}" 
+                y="212.5"
                 id="yearLabelMobile"
                 text-anchor="middle"
                 transform="rotate(-45,{57 + xScale(year) + xScale.bandwidth() / 2},151)"
@@ -98,11 +98,16 @@
         {/each}
 
 
-        <line x1="50" y1="127.5" x2="{svgWidth}" y2="127.5" style="stroke:white;stroke-width:1;opacity:1" />
-        <text x=40 y=132 id="label">0</text>
+        <line x1="50" y1="188" x2="{svgWidth}" y2="188" style="stroke:white;stroke-width:1;opacity:1" />
+        <text x=40 y=192 id="label">0</text>
 
-        <line x1="50" y1="50" x2="{svgWidth}" y2="50" style="stroke:white;stroke-width:1;opacity:0.3" />
-        <text x=33 y=55 id="label">50</text>
+        <line x1="50" y1="120" x2="{svgWidth}" y2="120" style="stroke:white;stroke-width:1;opacity:0.3" />
+        <text x=33 y=124 id="label">50</text>
+
+        <line x1="50" y1="52" x2="{svgWidth}" y2="52" style="stroke:white;stroke-width:1;opacity:0.3" />
+        <text x=26 y=56 id="label">100</text>
+
+        
 
     </svg>
 
@@ -118,7 +123,7 @@
         margin: 0 auto;
         width: calc(100% - 30px);
         max-width: 650px;
-        height: 170px;
+        height: 210px;
         /* border: solid 1px var(--brandLightBlue); */
     }
 
