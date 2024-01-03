@@ -117,7 +117,7 @@
 			</div>
 
 			<p>	
-				The most common form is converting a basement into a Secondary Suite separate apartment, but this can include other types of conversions as well (e.g. carving out a Secondary Suite within the main dwelling unit of a Single Detached, Semi Detached or a Townhouse  converting from a duplex to a triplex). The creation of these suites ese conversions may or may not include building additions (i.e. expanding the volume) of the structure. They have been permitted since 2000 city-wide, with some restrictions. It is noteworthy that under the new Multiplex bylaw, Secondary Suites are not allowed in the semi-detached or townhouse portion of a converted four-unit multiplex.
+				The most common form is converting a basement into a Secondary Suite separate apartment, but this can include other types of conversions as well (e.g. carving out a Secondary Suite within the main dwelling unit of a Single Detached, Semi Detached or a Townhouse  converting from a duplex to a triplex). The creation of these suites through conversions may or may not include building additions (i.e. expanding the volume) of the structure. They have been permitted since 2000 city-wide, with some restrictions. It is noteworthy that under the new Multiplex bylaw, Secondary Suites are not allowed in the semi-detached or townhouse portion of a converted four-unit multiplex.
 			</p>
 
 			<h3><span class="textLaneway">Rear-Yard Suites</span></h3>
@@ -153,10 +153,10 @@
 				The construction of secondary suites hovered between 100 and 130 per year from 2015 up until 2019. It has since increased steadily, to up to 243 new units created in 2023. While laneway suites were legalized in 2018, none were completed according to building permit data until 2020. While uptake was slow initially, it has since increased. In 2023 there were 102 new laneway and garden suites constructed, more than all prior years combined. 
 			</p>
 			<p>
-				Overall, the completion of secondary suites and rear-yard suites are still quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,525 secondary suites and 192 rear-yard suites have been built in Toronto from January 2013 to mid-July 2023</b>. 
+				Overall, the completion of secondary suites and rear-yard suites are still quite lacklustre given the need for housing in Toronto, where the expected population growth is about 500,000 from 2023 to 2030. <b>Summing the bars above, only 1,525 secondary suites and 192 rear-yard suites have been built in Toronto from January 2013 to December 2023</b>. 
 			</p>
 			<p>
-				Despite this sluggish uptake to date in Toronto, there are an increasing number of ongoing projects. <b> As of July 15, 2023 there were 684 secondary suite and 706 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and that have an initial or revised application date from the six year period of January 2018 to December 2023. However, these numbers are still quite low compared to uptake in other cities like <a href="https://xtown.la/2022/09/20/adus-los-angeles-housing-numbers/"> Los Angeles</a>, where the number of issued ADU permits from 2017 to 2021 was over 25,000.
+				Despite this sluggish uptake to date in Toronto, there are an increasing number of ongoing projects. <b> As of December 31, 2023 there were 684 secondary suite and 706 rear-yard suite building permits that were open and ongoing</b>. These totals are based on counting building permits with unique addresses and that have an initial or revised application date from the six year period of January 2018 to December 2023. However, these numbers are still quite low compared to uptake in other cities like <a href="https://xtown.la/2022/09/20/adus-los-angeles-housing-numbers/"> Los Angeles</a>, where the number of issued ADU permits from 2017 to 2021 was over 25,000.
 			</p>
 			<p>
 				To explore further, we have also mapped below where secondary suites and rear-yard suites have been built in the city from 2013 to 2023, as well as the location of active building permits.
