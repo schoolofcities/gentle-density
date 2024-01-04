@@ -60,7 +60,7 @@
 			<rect 
 				id="bar" 
 				x="{50 + xScale(year)}" 
-				y="{80 + barY(yearCountsSecondary[year])}" width="{xScale.bandwidth()}" height="{barHeight(yearCountsSecondary[year])}" 
+				y="{82 + barY(yearCountsSecondary[year])}" width="{xScale.bandwidth()}" height="{barHeight(yearCountsSecondary[year])}" 
 				fill="url(#pattern-lines)"
 			/>
 
@@ -96,20 +96,23 @@
 			
 		{/each}
 
-		<line x1="50" y1="350" x2="{svgWidth}" y2="350" style="stroke:white;stroke-width:1" />
-		<text x=40 y=353 id="label">0</text>
 
-		<line x1="50" y1="282.5" x2="{svgWidth}" y2="282.5" style="stroke:white;stroke-width:1;opacity:0.3" />
-		<text x=33 y=286 id="label">50</text>
+		<line x1="50" y1="352" x2="{svgWidth}" y2="352" style="stroke:white;stroke-width:1" />
+		<text x=40 y=356 id="label">0</text>
 
-		<line x1="50" y1="215" x2="{svgWidth}" y2="215" style="stroke:white;stroke-width:1;opacity:0.3" />
+		<line x1="50" y1="284" x2="{svgWidth}" y2="284" style="stroke:white;stroke-width:1;opacity:0.3" />
+		<text x=33 y=288 id="label">50</text>
+
+		<line x1="50" y1="216" x2="{svgWidth}" y2="216" style="stroke:white;stroke-width:1;opacity:0.3" />
 		<text x=25 y=220 id="label">100</text>
 
-		<line x1="50" y1="147.5" x2="{svgWidth}" y2="147.5" style="stroke:white;stroke-width:1;opacity:0.3" />
+		<line x1="50" y1="148" x2="{svgWidth}" y2="148" style="stroke:white;stroke-width:1;opacity:0.3" />
 		<text x=25 y=152 id="label">150</text>
 
-		<line x1="50" y1="70" x2="{svgWidth}" y2="70" style="stroke:white;stroke-width:1;opacity:0.3" />
-		<text x=25 y=75 id="label">200</text>
+		<line x1="50" y1="80" x2="{svgWidth}" y2="80" style="stroke:white;stroke-width:1;opacity:0.3" />
+		<text x=25 y=84 id="label">200</text>
+
+		<line x1="300" y1="12" x2="{svgWidth}" y2="12" style="stroke:white;stroke-width:1;opacity:0.3" />
 
 	</svg>
 
