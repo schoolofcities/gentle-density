@@ -60,7 +60,7 @@
 			<rect 
 				id="bar" 
 				x="{50 + xScale(year)}" 
-				y="{82 + barY(yearCountsSecondary[year])}" width="{xScale.bandwidth()}" height="{barHeight(yearCountsSecondary[year])}" 
+				y="{81 + barY(yearCountsSecondary[year])}" width="{xScale.bandwidth()}" height="{barHeight(yearCountsSecondary[year])}" 
 				fill="url(#pattern-lines)"
 			/>
 
