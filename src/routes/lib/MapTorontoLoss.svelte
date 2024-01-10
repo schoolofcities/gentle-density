@@ -2,10 +2,8 @@
 	
 	import { onMount } from 'svelte';
 	import mapboxgl from "mapbox-gl";
-	import RangeSlider from "svelte-range-slider-pips";
 
 	import torontoBoundary from '../assets/toronto/toronto-boundary.geo.json';
-	import laneways from '../assets/toronto/laneways.geo.json';
 	import transitLines from '../assets/toronto/transitLines.geo.json';
 	import transitStops from '../assets/toronto/transitStops.geo.json';
 	import lostDwellings from '../assets/toronto/lost-units-2017-2023.geo.json';
@@ -131,9 +129,9 @@
 						["linear"],
 						["zoom"],
 						11,
-						5,
+						6,
 						16,
-						14
+						18
 						],
 					'circle-color': '#fff'
 				}
@@ -149,9 +147,9 @@
 						["linear"],
 						["zoom"],
 						11,
-						4,
+						5,
 						16,
-						10
+						12
 						],
 					'circle-color': '#DC4633',
 				}
@@ -168,9 +166,9 @@
 						["linear"],
 						["zoom"],
 						11,
-						4,
+						5,
 						16,
-						10
+						12
 						],
 					'circle-color': '#F1C500',
 				}
