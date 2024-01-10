@@ -31,6 +31,24 @@
 
 	<link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
 
+	<title>Reno-ductions: Loss of Gentle Density in Toronto</title>
+    <meta name="description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes">
+    <meta name="author" content="Jeff Allen">
+
+	<meta property="og:title" content="Reno-ductions: Loss of Gentle Density in Toronto" />
+    <meta property="og:description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card.png" />
+    <meta property="og:locale" content="en_CA">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />
+    <meta name="twitter:creator" content="@JeffAllenMaps" />
+    <meta name="twitter:title" content="Reno-ductions: Loss of Gentle Density in Toronto" />
+    <meta name="twitter:description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-renoductions-toronto.png" /> 
+
 </svelte:head>
 
 
