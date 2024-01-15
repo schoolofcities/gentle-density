@@ -70,7 +70,7 @@
 				
 			</h2>
 			<p><a href="https://jamaps.github.io" target="_blank">Jeff Allen</a>, <a href="">Remus Herteg</a>,  <a href="https://www.linkedin.com/in/ahmad-al-musa/" target="_blank">Ahmad Al-Musa</a></p>
-			<p>January 2023</p>
+			<p>January 2024</p>
 		</div>
 
 	</div>
@@ -84,22 +84,22 @@
 		<div class="text">
 
 			<p>
-				Many Canadian cities are changing their bylaws to allow for more gentle density. For example, the City of Toronto now allows up to four units per lot in residential zones, as of right. Hamilton allows the conversion of single-family homes into up to four units. On the West Coast, cities like Victoria allows between four and six units per lot. Vancouver also allows up to six units per lot, and that number could be increased up to eight units for purpose-built rentals.  
+				Many Canadian cities are changing their bylaws to allow for more gentle density. For example, the City of Toronto now allows up to four units per lot in residential zones. Hamilton allows the conversion of single-family homes into up to four units. On the West Coast, cities like Victoria allows between four and six units per lot. Vancouver also allows up to six units per lot, and that number could be increased to up to eight units for purpose-built rentals.  
 			</p>
 			<p>
 				Why are cities making these changes, and why are they targeting more gentle density?  
 			</p>
 			<p>
-				Such changes came into place in response to the current housing crisis, and as an easy and fast way to provide more housing supply that answers to the diverse housing needs. In addition to providing fast supply, such changes also provide units with less carbon footprint by utilizing existing buildings and infrastructure and by using less new materials to create more units. Gentle density reduces sprawl, uses urban space more efficiently, and creates more walkable, and connected neighborhoods.  In other words, gently densifying neighbourhoods can provide more sustainable communities and can create more inclusive, diverse, and resilient community fabric, all while striking the balance between growth and preservation.   
+				Such changes came into place in response to the current housing crisis, and as relatively easy and fast way to provide more housing supply that answers to the diverse housing needs. In addition to providing fast supply, such changes also generate less of a carbon footprint by utilizing existing buildings and infrastructure and by using fewer new materials to create more units. Gentle density reduces sprawl, uses urban space more efficiently, and creates more walkable, and connected neighborhoods.  In other words, gently densifying neighbourhoods can provide more sustainable communities and can create more inclusive, diverse, and resilient community fabric, all while striking the balance between growth and preservation.   
 			</p>
 			<p>
-				<b>But how often is the opposite happening? how often is a city losing dwelling units due to <u><span class="red">reno-ductions</span></u> of small multi-family structures such as duplexes and triplexes being converted into single-family homes? </b>
+				<b>But how often is the opposite happening? How often is a city losing dwelling units due to <u><span class="red">reno-ductions</span></u> of small multi-family structures such as duplexes and triplexes, into single-family homes? </b>
 			</p>
 			<p>
-				To try to answer this, we looked at <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits/" target="_blank">building permit application data</a> in Toronto, flagging all records where a multi-family residential structure was converted into a structure with fewer dwelling units. For example, a duplex being converted into a single-family home or a triplex being converted into a duplex. Specifically we filtered only for residential projects and then compared two columns, "CURRENT_USE" and "PROPOSED_USE". We also tried to validate our findings by looking at the "DESCRIPTION" column of each filtered record, which describes in varying level of detail the work being done.
+				To try to answer this, we looked at <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits/" target="_blank">building permit application data</a> in Toronto, flagging all records where a multi-family residential structure was converted into a structure with fewer dwelling units - for example, a duplex being converted into a single-family home or a triplex being converted into a duplex. Specifically, we first filtered only for residential projects, and then compared two columns; "CURRENT_USE" and "PROPOSED_USE". We also tried to validate our findings by looking at the "DESCRIPTION" column of each filtered record, which describes in varying levels of detail the work being done. 
 			</p>
 			<p>
-				The main limitation with the City of Toronto's building permit data is that the inputs for the "CURRENT_USE" and "PROPOSED_USE" columns are not standardized, i.e. it seems like applicants are able input whatever they want when they apply for a building permit and the data are not classified when being inputted into this database. There are 100s of unique values in each of these two columns, many pertaining to the same type of use, but with different spellings (e.g. "Detached SFD", "Detached-Sfd", "Sfd - Detached", etc.). So it is likely that we are under reporting the true number of reno-ductions due to a combination of applicants inputting incorrect information and our own error of missing some records (we tried our best!). But therefore, the following results should be thought of as more of an exploratory analysis rather than exact numbers.
+				The main limitation with the City of Toronto's building permit data is that the inputs for the "CURRENT_USE" and "PROPOSED_USE" columns are not standardized: i.e. it would appear that permit applicants are able to include whatever information they want when they apply for a building permit, and the data are not classified when being inputted into the database. There are hundreds of unique values in each of these two columns, many pertaining to the same type of use but with different spellings (e.g. "Detached SFD", "Detached-Sfd", "Sfd - Detached", etc.). So it is likely that we are underreporting the true number of reno-ductions, as a result of incorrectly-inputted information and records missed by us during the analysis (we tried our best!). The following results should therefore be thought of as more of an exploratory analysis rather than exact numbers. 
 			</p>
 			
 		</div>
@@ -112,23 +112,26 @@
 
 	<div class="text">
 		<p>
-			Based on this building permit data, we find that between 2017 and 2023 the City of Toronto has lost at least 200 units due to converting multi-family homes into single-family homes, with an average of 28 units per year. The trend seems to have dropped down in 2021 then it picked up again over the past three years. There has been an increase in reno-ductions from just 22 in 2021 to 43 in 2023, almost doubling in this two year period. These numbers are still quite a bit lower than <a href="https://schoolofcities.github.io/gentle-density/toronto-building-permits" target="_blank">the number of rear-yard and secondary suites built in Toronto</a> during the same time period. 
+			Based on this building permit data, we conclude that between 2017 and 2023 the City of Toronto has lost at least 200 units due to the conversion of multi-family homes into single-family homes, an average of 28 units per year. The trend seems to have dropped in 2021, then picked up again over the past two years. There has been an increase in reno-ductions from just 22 in 2021 to 43 in 2023, almost doubling in this two year period. These numbers are quite a bit lower than <a href="https://schoolofcities.github.io/gentle-density/toronto-building-permits" target="_blank">the number of rear-yard and secondary suites built in Toronto</a> during the same time period. 
 		</p>
 		<p>
-			We've also plotted each reno-duction that we've identified on a map of Toronto. Each point is reno-duction that occurred between 2017 and 2023. Clicking on a point will print out below the details of the building permit and the change that occurred.
+			We've also plotted each reno-duction identified by us on a map of Toronto. Each point is a reno-duction that occurred between 2017 and 2023. Clicking on a point will display below the details of the building permit and the change that occurred.
 	</div>
 
 	<Map/>
 
 	<div class="text">
 		<p>
-			There is a clear concentration of reno-ductions that have occurred in the south-central part of the City, the older part of Toronto, that historically have allowed for multi-family dwellings (rather than only single-family homes). Only until recently have multi-plexes been allowed in much of the City's low-density residential neighbourhoods. Many of these central areas that we see greater clustering of reno-ductions have gentrified / are gentrifying. They have also undergone <a href="https://schoolofcities.github.io/urban-growth-canada/1996-to-2021#population" target="_blank">population loss</a> over longer periods of time.
+			There is a clear concentration of reno-ductions in the south-central part of the city – an area that historically has allowed for multi-family dwellings (many of the city's low-density residential neighbourhoods have only recently been permitted for multiplexes). Many of the central areas where we are seeing a greater clustering of reno-ductions have gentrified / are gentrifying, and have undergone <a href="https://schoolofcities.github.io/urban-growth-canada/1996-to-2021#population" target="_blank">population loss</a> over long periods of time.
 		</p>
 	</div>
 	<div class="text">
 		<h3>Data & Methods</h3>
 		<p>
-			Our filtered dataset can be downloaded <a href="./lost-units-2017-2023.geojson" target="_blank">here</a>. The code used to create this webpage is on <a href="https://github.com/schoolofcities/gentle-density" target="_blank">GitHub</a>. It was built with the help of Python (pandas, geopandas), Svelte, Mapbox, and D3.
+			Our filtered building permit dataset can be downloaded <a href="./lost-units-2017-2023.geojson" target="_blank">here</a>. The code used to create this webpage is on <a href="https://github.com/schoolofcities/gentle-density" target="_blank">GitHub</a>. It was built with the help of Python (pandas, geopandas), Svelte, Mapbox, and D3.
+		</p>
+		<p>
+			The data filtering process was conducted as follows: After taking the original permit data, it was filtered out through Python to only show residential units. Since many buildings had several permits for the same project, all multiples were removed to only show one permit per project. To identify loss in units we used the current and proposed use columns in the permits file. These columns don't seem to have a system to them so it proved difficult to write a script to identify them. For this reason we had to manually go through each row and look at whether or not the permit changed into anything else, and if that change led to a loss in units. For example, a permit may have a current use as “triplex” but its proposed use is “single family home”, in this case there was a loss of 2 units. A new column was also added to show the apparent decrease in units, and all other permits that did not have a loss of units were then removed. There was a column already in the dataset noting change in units, but it was very sparse and unreliable upon initial inspection, so we created our own.
 		</p>
 	</div>
 
