@@ -2,6 +2,19 @@
     font-family: TradeGothicBold;
     src: url("./assets/Trade Gothic LT Bold.ttf");
 }
+@font-face {
+    font-family: UbuntuMonoRegular;
+    src: url("./assets/UbuntuMono-Regular.ttf"); 
+}
+@font-face {
+    font-family: UbuntuMonoItalic;
+    src: url("./assets/UbuntuMono-Italic.ttf"); 
+}
+@font-face {
+    font-family: UbuntuMonoBold;
+    src: url("./assets/UbuntuMono-Bold.ttf"); 
+}
+
 :root {
     font-family: Roboto, sans-serif;
     --brandDarkBlue: #1470ad;

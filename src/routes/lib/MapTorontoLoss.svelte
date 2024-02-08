@@ -1,15 +1,22 @@
 <script>
 	
 	import { onMount } from 'svelte';
-	import mapboxgl from "mapbox-gl";
-
+	// import mapboxgl from "mapbox-gl";
+    import maplibregl from 'maplibre-gl';
+    import * as pmtiles from 'pmtiles';
 	import torontoBoundary from '../assets/toronto/toronto-boundary.geo.json';
 	import transitLines from '../assets/toronto/transitLines.geo.json';
 	import transitStops from '../assets/toronto/transitStops.geo.json';
 	import lostDwellings from '../assets/toronto/lost-units-2017-2023.geo.json';
+	import BaseLayer from "../assets/toronto/toronto.json";
+
 
 
 	let map;
+	let PMTILES_URL = "/gentle-density/toronto.pmtiles";
+
+	let protocol = new pmtiles.Protocol();
+	maplibregl.addProtocol('pmtiles', protocol.tile);
 
 	let unitPermit = "_";
 	let unitAddress = "_";
@@ -19,8 +26,9 @@
 	let unitDateCompleted = "_";
 	let unitDescription = "_";
 
-	mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xqOG0zbTQ1MTAzdTNkbnY2OGluMHJ0byJ9.yX_EB8JqRsIRufOOu8LjeQ';
+	// mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xqOG0zbTQ1MTAzdTNkbnY2OGluMHJ0byJ9.yX_EB8JqRsIRufOOu8LjeQ';
 	
+
 	let pageHeight;
 	let pageWidth;
 	let mapHeight = 650;
@@ -37,10 +45,23 @@
 		[-79.04763, 44.03074] // NE coords
 	];
 	onMount(() => {
-
-		map = new mapboxgl.Map({
+		map = new maplibregl.Map({
 			container: "map", 
-			style: 'mapbox://styles/schoolofcities/clbxv21c4000414n2hcio6l5o',
+			style: {
+					"version": 8,
+					"name": "Empty",
+					"glyphs": "https://schoolofcities.github.io/fonts/fonts/{fontstack}/{range}.pbf",
+					"sources": {},
+					"layers": [
+						{
+							"id": "background",
+							"type": "background",
+							"paint": {
+								"background-color": "rgba(0,0,0,0)"
+							}
+						}
+					]
+				},
 			center: [-79.37, 43.715],
 			zoom: 10,
 			maxZoom: 16,
@@ -51,15 +72,27 @@
 			maxBounds: maxBounds,
 			attributionControl: true
 		});
-		map.addControl(new mapboxgl.NavigationControl(), 'top-left');
-		map.addControl(new mapboxgl.ScaleControl(), 'bottom-left');
+		map.addControl(new maplibregl.NavigationControl(), 'top-left');
+		map.addControl(new maplibregl.ScaleControl(), 'bottom-left');
 		map.scrollZoom.disable();
+
+		let protoLayers = BaseLayer;
+
 
 		map.on('load', function() {
 
+			map.addSource('protomaps', {
+				type: "vector",
+				url: "pmtiles://" + PMTILES_URL,
+			});
+
+			protoLayers.forEach(e => {
+				map.addLayer(e);
+			});
+
 			map.addSource('transitLines', {
 				'type': 'geojson',
-				'data': transitLines
+				'data': transitLines,
 			});
 			map.addLayer({
 				'id': 'transitLines',
@@ -71,11 +104,11 @@
 					'line-width': 2,
 					'line-opacity': 1
 				}
-			}, 'admin-0-boundary-disputed');
+			});
 
 			map.addSource('transitStops', {
 				'type': 'geojson',
-				'data': transitStops
+				'data': transitStops,
 			});
 			map.addLayer({
 				'id': 'transitStops',
@@ -85,7 +118,7 @@
 				'paint': {
 					'circle-color': '#1d4667'
 				}
-			}, 'admin-0-boundary-disputed');
+			});
 			map.addLayer({
 				'id': 'transitStopsWhite',
 				'type': 'circle',
@@ -96,7 +129,7 @@
 					'circle-radius': 2,
 					'circle-opacity': 0.42
 				}
-			}, 'admin-0-boundary-disputed');
+			});
 
 			map.addSource('torontoBoundary', {
 				'type': 'geojson',
@@ -112,7 +145,7 @@
 					'line-width': 1,
 					'line-opacity': 1
 				}
-			}, 'admin-0-boundary-disputed');
+			});
 			
 			map.addSource('lostDwellings', {
 				'type': 'geojson',
@@ -252,7 +285,7 @@
 		background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
 		color: white;
 		font-size: 17px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: UbuntuMonoRegular, monospace;
 		padding: 18px;
 		padding-top: 28px;
 		padding-bottom: 8px;

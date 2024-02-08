@@ -1,8 +1,11 @@
 <script>
 	
 	import { onMount } from 'svelte';
-	import mapboxgl from "mapbox-gl";
+	// import mapboxgl from "mapbox-gl";
 	import RangeSlider from "svelte-range-slider-pips";
+    import maplibregl from 'maplibre-gl';
+    import * as pmtiles from 'pmtiles';
+	import BaseLayer from "../assets/toronto/toronto.json";
 
 	import torontoBoundary from '../assets/toronto/toronto-boundary.geo.json';
 	import laneways from '../assets/toronto/laneways.geo.json';
@@ -22,8 +25,14 @@
 	let values = [2020,2023];
 
 	let load = 0;
+	
+	// mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xqOG0zbTQ1MTAzdTNkbnY2OGluMHJ0byJ9.yX_EB8JqRsIRufOOu8LjeQ';
+	let map;
+	let PMTILES_URL = "/gentle-density/toronto.pmtiles";
 
-	mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xqOG0zbTQ1MTAzdTNkbnY2OGluMHJ0byJ9.yX_EB8JqRsIRufOOu8LjeQ';
+	let protocol = new pmtiles.Protocol();
+	maplibregl.addProtocol('pmtiles', protocol.tile);
+
 	
 	let pageHeight;
 	let pageWidth;
@@ -36,16 +45,30 @@
 
 	const layerOpacity = 0.69;
 	let message = " ";    
-	let map = null;
+	// let map = null;
 	const maxBounds = [
 		[-79.6772, 43.4400], // SW coords
 		[-79.04763, 44.03074] // NE coords
 	];
 	onMount(() => {
 
-		map = new mapboxgl.Map({
+		map = new maplibregl.Map({
 			container: "map", 
-			style: 'mapbox://styles/schoolofcities/clbxv21c4000414n2hcio6l5o',
+			style: {
+					"version": 8,
+					"name": "Empty",
+					"glyphs": "https://schoolofcities.github.io/fonts/fonts/{fontstack}/{range}.pbf",
+					"sources": {},
+					"layers": [
+						{
+							"id": "background",
+							"type": "background",
+							"paint": {
+								"background-color": "rgba(0,0,0,0)"
+							}
+						}
+					]
+				},
 			center: [-79.37, 43.715],
 			zoom: 10,
 			maxZoom: 16,
@@ -56,13 +79,22 @@
 			maxBounds: maxBounds,
 			attributionControl: true
 		});
-		map.addControl(new mapboxgl.NavigationControl(), 'top-left');
-		map.addControl(new mapboxgl.ScaleControl(), 'bottom-left');
+		map.addControl(new maplibregl.NavigationControl(), 'top-left');
+		map.addControl(new maplibregl.ScaleControl(), 'bottom-left');
 		map.scrollZoom.disable();
+
+		let protoLayers = BaseLayer;
 
 		map.on('load', function() {
 
-			
+			map.addSource('protomaps', {
+				type: "vector",
+				url: "pmtiles://" + PMTILES_URL,
+			});
+
+			protoLayers.forEach(e => {
+				map.addLayer(e);
+			});
 
 			map.addSource('laneways', {
 				'type': 'geojson',
@@ -328,33 +360,6 @@
 			filterPoints(values)
 
 		});
-		
-		// map.on('mousemove', 'VotingSubDivisionsFill', (e) => {
-		//     if (candidate === "margin") {
-		//         message = "Ward: " + e.features[0].properties.ward + " --- Poll: " + e.features[0].properties.vsd + " --- Margin: " + Math.round(100 * e.features[0].properties[candidates[candidate].column]) + "%"
-		//     } else if (candidate === "race") {
-		//         let name = "1) Tory 2) Peñalosa"
-		//         if (e.features[0].properties.contest === "Tory-Brown") {
-		//             name = "1) Tory 2) Brown"
-		//         }
-		//         if (e.features[0].properties.contest === "Penalosa-Brown") {
-		//             name = "1) Peñalosa 2) Brown"
-		//         }
-		//         if (e.features[0].properties.contest === "Penalosa-Tory") {
-		//             name = "1) Peñalosa 2) Tory"
-		//         }
-		//         if (e.features[0].properties.contest === "Brown-Penalosa") {
-		//             name = "1) Brown 2) Peñalosa"
-		//         }
-		//         message = "Ward: " + e.features[0].properties.ward + " --- Poll: " + e.features[0].properties.vsd + " --- Top-two finishers: " + name
-		//     } else {
-		//         message = "Ward: " + e.features[0].properties.ward + " --- Poll: " + e.features[0].properties.vsd + " --- Total Votes: " + e.features[0].properties.total + " --- Votes for " + candidates[candidate].name + ": " + e.features[0].properties[candidates[candidate].column] +  " --- % for " + candidates[candidate].name + ": " + Math.round(100 * e.features[0].properties[candidates[candidate].column] / e.features[0].properties.total) + "%"  
-		//     }
-				  
-		// });
-		// map.on('mouseleave', 'VotingSubDivisionsFill', () => {
-		//     message = " "
-		// });
 
 	});
 
@@ -652,7 +657,7 @@
 		background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
 		color: white;
 		font-size: 17px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: UbuntuMonoRegular, monospace;
 		padding: 18px;
 		padding-top: 28px;
 		padding-bottom: 8px;
@@ -682,7 +687,7 @@
 	#options p {
 		color: white;
 		font-size: 17px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: UbuntuMonoRegular, monospace;
 		max-width: 620px;
 		width: inheret;
 		margin: 0 auto;
@@ -700,7 +705,7 @@
 		padding-left: 16px;
 		padding-bottom: 1px;
 		font-size: 17px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: UbuntuMonoRegular, monospace;
 		font-weight: 400;
 		overflow: hidden;
 	}
