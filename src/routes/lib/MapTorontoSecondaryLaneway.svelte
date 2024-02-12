@@ -1,7 +1,6 @@
 <script>
 	
 	import { onMount } from 'svelte';
-	// import mapboxgl from "mapbox-gl";
 	import RangeSlider from "svelte-range-slider-pips";
     import maplibregl from 'maplibre-gl';
     import * as pmtiles from 'pmtiles';
@@ -26,7 +25,6 @@
 
 	let load = 0;
 	
-	// mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xqOG0zbTQ1MTAzdTNkbnY2OGluMHJ0byJ9.yX_EB8JqRsIRufOOu8LjeQ';
 	let map;
 	let PMTILES_URL = "/gentle-density/toronto.pmtiles";
 
