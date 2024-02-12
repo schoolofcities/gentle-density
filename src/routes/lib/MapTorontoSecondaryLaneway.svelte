@@ -110,48 +110,7 @@
 					'line-width': 1,
 					'line-opacity': 0
 				}
-			}, 'admin-0-boundary-disputed');
-
-			map.addSource('transitLines', {
-				'type': 'geojson',
-				'data': transitLines
 			});
-			map.addLayer({
-				'id': 'transitLines',
-				'type': 'line',
-				'source': 'transitLines',
-				'layout': {},
-				'paint': {
-					'line-color': '#1d4667',
-					'line-width': 2,
-					'line-opacity': 1
-				}
-			}, 'admin-0-boundary-disputed');
-
-			map.addSource('transitStops', {
-				'type': 'geojson',
-				'data': transitStops
-			});
-			map.addLayer({
-				'id': 'transitStops',
-				'type': 'circle',
-				'source': 'transitStops',
-				'layout': {},
-				'paint': {
-					'circle-color': '#1d4667'
-				}
-			}, 'admin-0-boundary-disputed');
-			map.addLayer({
-				'id': 'transitStopsWhite',
-				'type': 'circle',
-				'source': 'transitStops',
-				'layout': {},
-				'paint': {
-					'circle-color': '#fff',
-					'circle-radius': 2,
-					'circle-opacity': 0.42
-				}
-			}, 'admin-0-boundary-disputed');
 
 			map.addSource('torontoBoundary', {
 				'type': 'geojson',
@@ -167,37 +126,7 @@
 					'line-width': 1,
 					'line-opacity': 1
 				}
-			}, 'admin-0-boundary-disputed');
-
-			map.addSource('zoneYellowRes', {
-				'type': 'geojson',
-				'data': zoneYellowRes
 			});
-			map.addLayer({
-				'id': 'zoneYellowRes',
-				'type': 'fill',
-				'source': 'zoneYellowRes',
-				'layout': {},
-				'paint': {
-					'fill-color': '#1a2d3b',
-					'fill-opacity': 0
-				}
-			}, 'land-structure-line');
-
-			map.addSource('zoneOtherRes', {
-				'type': 'geojson',
-				'data': zoneOtherRes
-			});
-			map.addLayer({
-				'id': 'zoneOtherRes',
-				'type': 'fill',
-				'source': 'zoneOtherRes',
-				'layout': {},
-				'paint': {
-					'fill-color': '#2e4e66',
-					'fill-opacity': 0
-				}
-			}, 'land-structure-line');
 
 			map.addSource('income2020', {
 				'type': 'geojson',
@@ -212,62 +141,145 @@
 					'fill-color': ["step",["get","i"],"#506b80",75000,"#2e4e66",100000,"#1a2d3b"],
 					'fill-opacity': 0
 				}
-			}, 'land-structure-line');
+			});
+
+			map.addSource('zoneYellowRes', {
+				'type': 'geojson',
+				'data': zoneYellowRes
+			});
+			map.addLayer({
+				'id': 'zoneYellowRes',
+				'type': 'fill',
+				'source': 'zoneYellowRes',
+				'layout': {},
+				'paint': {
+					'fill-color': '#1a2d3b',
+					'fill-opacity': 0
+				}
+			});
+
+			map.addSource('zoneOtherRes', {
+				'type': 'geojson',
+				'data': zoneOtherRes
+			});
+			map.addLayer({
+				'id': 'zoneOtherRes',
+				'type': 'fill',
+				'source': 'zoneOtherRes',
+				'layout': {},
+				'paint': {
+					'fill-color': '#2e4e66',
+					'fill-opacity': 0
+				}
+			},'zoneYellowRes');
+
+			map.addSource('transitLines', {
+				'type': 'geojson',
+				'data': transitLines
+			});
+			map.addLayer({
+				'id': 'transitLines',
+				'type': 'line',
+				'source': 'transitLines',
+				'layout': {},
+				'paint': {
+					'line-color': '#1d4667',
+					'line-width': 2,
+					'line-opacity': 1
+				}
+			});
+
+			map.addSource('transitStops', {
+				'type': 'geojson',
+				'data': transitStops
+			});
+			map.addLayer({
+				'id': 'transitStops',
+				'type': 'circle',
+				'source': 'transitStops',
+				'layout': {},
+				'paint': {
+					'circle-color': '#1d4667'
+				}
+			});
+
+			map.addLayer({
+				'id': 'transitStopsWhite',
+				'type': 'circle',
+				'source': 'transitStops',
+				'layout': {},
+				'paint': {
+					'circle-color': '#fff',
+					'circle-radius': 2,
+					'circle-opacity': 0.42
+				}
+			});
 
 			map.addSource('suitesSecondaryActive', {
 				'type': 'geojson',
 				'data': suitesSecondaryActive
-			}); 
-			map.addLayer({
-				'id': 'suitesSecondaryActive',
-				'type': 'symbol',
-				'source': 'suitesSecondaryActive',
-				'layout': {
-					"icon-image": 'x-secondary',
-					"icon-size": [
-						"interpolate",
-						["linear"],
-						["zoom"],
-						11,
-						0.45,
-						16,
-						1.3
-						],
-					"icon-allow-overlap": true   
-				},
-				'paint': {
-					'icon-color': '#fff',
-					'icon-opacity': 0
-
-				}
 			});
+			let xSecondaryImage = new Image();
+			xSecondaryImage.src = xSecondary;
+			xSecondaryImage.onload = function() {
+				map.addImage('x-secondary', xSecondaryImage);
+ 
+				map.addLayer({
+					'id': 'suitesSecondaryActive',
+					'type': 'symbol',
+					'source': 'suitesSecondaryActive',
+					'layout': {
+						"icon-image": 'x-secondary',
+						"icon-size": [
+							"interpolate",
+							["linear"],
+							["zoom"],
+							11,
+							0.45,
+							16,
+							1.3
+							],
+						"icon-allow-overlap": true   
+					},
+					'paint': {
+						'icon-color': '#fff',
+						'icon-opacity': 0
+
+					}
+				});
+			};
 	
 			map.addSource('suitesLanewayActive', {
 				'type': 'geojson',
 				'data': suitesLanewayActive
 			}); 
-			map.addLayer({
-				'id': 'suitesLanewayActive',
-				'type': 'symbol',
-				'source': 'suitesLanewayActive',
-				'layout': {
-					"icon-image": 'x-rearyard',
-					"icon-size": [
-						"interpolate",
-						["linear"],
-						["zoom"],
-						11,
-						0.45,
-						16,
-						1.3
-						],
-					"icon-allow-overlap": true
-				},
-				'paint': {
-					'icon-color': '#fff',
-					'icon-opacity': 0
-				}
-			});
+			let xRearYardImage = new Image();
+        	xRearYardImage.src = xRearYard;
+        	xRearYardImage.onload = function() {
+				map.addImage('x-rearyard', xRearYardImage);
+				map.addLayer({
+					'id': 'suitesLanewayActive',
+					'type': 'symbol',
+					'source': 'suitesLanewayActive',
+					'layout': {
+						"icon-image": 'x-rearyard',
+						"icon-size": [
+							"interpolate",
+							["linear"],
+							["zoom"],
+							11,
+							0.45,
+							16,
+							1.3
+							],
+						"icon-allow-overlap": true
+					},
+					'paint': {
+						'icon-color': '#fff',
+						'icon-opacity': 0
+					}
+				});
+			};
 
 
 			map.addSource('suitesSecondary', {
@@ -686,7 +698,7 @@
 	}
 	#options p {
 		color: white;
-		font-size: 17px;
+		font-size: 14.3px;
 		font-family: UbuntuMonoRegular, monospace;
 		max-width: 620px;
 		width: inheret;
@@ -704,7 +716,7 @@
 		padding: 10px;
 		padding-left: 16px;
 		padding-bottom: 1px;
-		font-size: 17px;
+		font-size: 14.3px;
 		font-family: UbuntuMonoRegular, monospace;
 		font-weight: 400;
 		overflow: hidden;
