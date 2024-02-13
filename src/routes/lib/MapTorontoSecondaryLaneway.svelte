@@ -43,11 +43,19 @@
 
 	const layerOpacity = 0.69;
 	let message = " ";    
-	// let map = null;
+
 	const maxBounds = [
-		[-79.6772, 43.4400], // SW coords
+		[-79.6772, 43.320], // SW coords
 		[-79.04763, 44.03074] // NE coords
 	];
+
+	// const maxBounds = [
+	// 	[-79.6772, 43.440], // SW coords
+	// 	[-79.04763, 44.03074] // NE coords
+	// ];
+	// const maxBounds = [
+	// [-80.159436,43.261441],[-78.583885,44.329666]
+	// ];
 	onMount(() => {
 
 		map = new maplibregl.Map({
@@ -67,10 +75,10 @@
 						}
 					]
 				},
-			center: [-79.37, 43.715],
-			zoom: 10,
-			maxZoom: 16,
-			minZoom: 8.5,
+			center: [-79.369,43.717],
+			zoom: 10.5,
+			maxZoom: 15,
+			minZoom: 6.5,
 			bearing: -17.1,
 			projection: 'globe',
 			scrollZoom: true,
@@ -80,6 +88,7 @@
 		map.addControl(new maplibregl.NavigationControl(), 'top-left');
 		map.addControl(new maplibregl.ScaleControl(), 'bottom-left');
 		map.scrollZoom.disable();
+
 
 		let protoLayers = BaseLayer;
 
@@ -139,7 +148,7 @@
 					'fill-color': ["step",["get","i"],"#506b80",75000,"#2e4e66",100000,"#1a2d3b"],
 					'fill-opacity': 0
 				}
-			});
+			}, 'roads_tunnels_medium_casing');
 
 			map.addSource('zoneYellowRes', {
 				'type': 'geojson',
@@ -154,7 +163,7 @@
 					'fill-color': '#1a2d3b',
 					'fill-opacity': 0
 				}
-			});
+			},'roads_tunnels_medium_casing');
 
 			map.addSource('zoneOtherRes', {
 				'type': 'geojson',
