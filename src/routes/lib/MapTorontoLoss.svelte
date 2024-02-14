@@ -1,7 +1,6 @@
 <script>
 	
 	import { onMount } from 'svelte';
-	// import mapboxgl from "mapbox-gl";
     import maplibregl from 'maplibre-gl';
     import * as pmtiles from 'pmtiles';
 	import torontoBoundary from '../assets/toronto/toronto-boundary.geo.json';
@@ -26,7 +25,6 @@
 	let unitDateCompleted = "_";
 	let unitDescription = "_";
 
-	// mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xqOG0zbTQ1MTAzdTNkbnY2OGluMHJ0byJ9.yX_EB8JqRsIRufOOu8LjeQ';
 	
 
 	let pageHeight;
@@ -41,9 +39,10 @@
 	const layerOpacity = 0.69;
 	let message = " ";    
 	const maxBounds = [
-		[-79.6772, 43.4400], // SW coords
-		[-79.04763, 44.03074] // NE coords
+		[-79.771200, 43.440000], // SW coords
+		[-78.914763, 43.930740] // NE coords
 	];
+
 	onMount(() => {
 		map = new maplibregl.Map({
 			container: "map", 
@@ -70,7 +69,7 @@
 			projection: 'globe',
 			scrollZoom: true,
 			maxBounds: maxBounds,
-			attributionControl: true
+			attributionControl: false
 		});
 		map.addControl(new maplibregl.NavigationControl(), 'top-left');
 		map.addControl(new maplibregl.ScaleControl(), 'bottom-left');
@@ -296,11 +295,12 @@
 		width: 100%;
 		margin: 0 auto;
 		padding-bottom: 4px;
+		font-size: 14px;
 	}
 
 	.category {
 		color: #F1C500;
-		font-size: 18px;
+		font-size: 16px;
 	}
 	
 </style>
