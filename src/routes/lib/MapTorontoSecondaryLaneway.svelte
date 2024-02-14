@@ -1,8 +1,10 @@
 <script>
 	
 	import { onMount } from 'svelte';
-	import mapboxgl from "mapbox-gl";
 	import RangeSlider from "svelte-range-slider-pips";
+    import maplibregl from 'maplibre-gl';
+    import * as pmtiles from 'pmtiles';
+	import BaseLayer from "../assets/toronto/toronto.json";
 
 	import torontoBoundary from '../assets/toronto/toronto-boundary.geo.json';
 	import laneways from '../assets/toronto/laneways.geo.json';
@@ -19,11 +21,16 @@
 	import xSecondary from '../assets/toronto/x-secondary.svg';
 	import xRearYard from '../assets/toronto/x-rearyard.svg';
 
-	let values = [2020,2023];
+	let values = [2022,2023];
 
 	let load = 0;
+	
+	let map;
+	let PMTILES_URL = "/gentle-density/toronto.pmtiles";
 
-	mapboxgl.accessToken = 'pk.eyJ1Ijoic2Nob29sb2ZjaXRpZXMiLCJhIjoiY2xqOG0zbTQ1MTAzdTNkbnY2OGluMHJ0byJ9.yX_EB8JqRsIRufOOu8LjeQ';
+	let protocol = new pmtiles.Protocol();
+	maplibregl.addProtocol('pmtiles', protocol.tile);
+
 	
 	let pageHeight;
 	let pageWidth;
@@ -34,35 +41,61 @@
 		mapHeight = 760
 	}
 
-	const layerOpacity = 0.69;
-	let message = " ";    
-	let map = null;
+
 	const maxBounds = [
-		[-79.6772, 43.4400], // SW coords
-		[-79.04763, 44.03074] // NE coords
+		[-80.0, 42.0], // SW coords
+		[-78.6, 49.5] // NE coords
 	];
+
 	onMount(() => {
 
-		map = new mapboxgl.Map({
+		map = new maplibregl.Map({
 			container: "map", 
-			style: 'mapbox://styles/schoolofcities/clbxv21c4000414n2hcio6l5o',
-			center: [-79.37, 43.715],
+			style: {
+					"version": 8,
+					"name": "Empty",
+					"glyphs": "https://schoolofcities.github.io/fonts/fonts/{fontstack}/{range}.pbf",
+					"sources": {},
+					"layers": [
+						{
+							"id": "background",
+							"type": "background",
+							"paint": {
+								"background-color": "rgba(0,0,0,0)"
+							}
+						}
+					]
+				},
+			center: [-79.36,43.71],
 			zoom: 10,
-			maxZoom: 16,
-			minZoom: 8.5,
+			maxZoom: 15,
+			minZoom: 8,
 			bearing: -17.1,
-			projection: 'globe',
-			scrollZoom: true,
 			maxBounds: maxBounds,
-			attributionControl: true
+			boxZoom: false,
+			touchPitch: false,
+			attributionControl: false
 		});
-		map.addControl(new mapboxgl.NavigationControl(), 'top-left');
-		map.addControl(new mapboxgl.ScaleControl(), 'bottom-left');
+
+		map.dragRotate.disable();
+		map.touchZoomRotate.disableRotation();
+		map.addControl(new maplibregl.NavigationControl(), 'top-left');
+		map.addControl(new maplibregl.ScaleControl(), 'bottom-left');
 		map.scrollZoom.disable();
+
+		let protoLayers = BaseLayer;
 
 		map.on('load', function() {
 
-			
+
+			map.addSource('protomaps', {
+				type: "vector",
+				url: "pmtiles://" + PMTILES_URL,
+			});
+
+			protoLayers.forEach(e => {
+				map.addLayer(e);
+			});
 
 			map.addSource('laneways', {
 				'type': 'geojson',
@@ -78,48 +111,7 @@
 					'line-width': 1,
 					'line-opacity': 0
 				}
-			}, 'admin-0-boundary-disputed');
-
-			map.addSource('transitLines', {
-				'type': 'geojson',
-				'data': transitLines
 			});
-			map.addLayer({
-				'id': 'transitLines',
-				'type': 'line',
-				'source': 'transitLines',
-				'layout': {},
-				'paint': {
-					'line-color': '#1d4667',
-					'line-width': 2,
-					'line-opacity': 1
-				}
-			}, 'admin-0-boundary-disputed');
-
-			map.addSource('transitStops', {
-				'type': 'geojson',
-				'data': transitStops
-			});
-			map.addLayer({
-				'id': 'transitStops',
-				'type': 'circle',
-				'source': 'transitStops',
-				'layout': {},
-				'paint': {
-					'circle-color': '#1d4667'
-				}
-			}, 'admin-0-boundary-disputed');
-			map.addLayer({
-				'id': 'transitStopsWhite',
-				'type': 'circle',
-				'source': 'transitStops',
-				'layout': {},
-				'paint': {
-					'circle-color': '#fff',
-					'circle-radius': 2,
-					'circle-opacity': 0.42
-				}
-			}, 'admin-0-boundary-disputed');
 
 			map.addSource('torontoBoundary', {
 				'type': 'geojson',
@@ -135,37 +127,7 @@
 					'line-width': 1,
 					'line-opacity': 1
 				}
-			}, 'admin-0-boundary-disputed');
-
-			map.addSource('zoneYellowRes', {
-				'type': 'geojson',
-				'data': zoneYellowRes
 			});
-			map.addLayer({
-				'id': 'zoneYellowRes',
-				'type': 'fill',
-				'source': 'zoneYellowRes',
-				'layout': {},
-				'paint': {
-					'fill-color': '#1a2d3b',
-					'fill-opacity': 0
-				}
-			}, 'land-structure-line');
-
-			map.addSource('zoneOtherRes', {
-				'type': 'geojson',
-				'data': zoneOtherRes
-			});
-			map.addLayer({
-				'id': 'zoneOtherRes',
-				'type': 'fill',
-				'source': 'zoneOtherRes',
-				'layout': {},
-				'paint': {
-					'fill-color': '#2e4e66',
-					'fill-opacity': 0
-				}
-			}, 'land-structure-line');
 
 			map.addSource('income2020', {
 				'type': 'geojson',
@@ -180,62 +142,145 @@
 					'fill-color': ["step",["get","i"],"#506b80",75000,"#2e4e66",100000,"#1a2d3b"],
 					'fill-opacity': 0
 				}
-			}, 'land-structure-line');
+			}, 'roads_tunnels_medium_casing');
+
+			map.addSource('zoneYellowRes', {
+				'type': 'geojson',
+				'data': zoneYellowRes
+			});
+			map.addLayer({
+				'id': 'zoneYellowRes',
+				'type': 'fill',
+				'source': 'zoneYellowRes',
+				'layout': {},
+				'paint': {
+					'fill-color': '#1a2d3b',
+					'fill-opacity': 0
+				}
+			},'roads_tunnels_medium_casing');
+
+			map.addSource('zoneOtherRes', {
+				'type': 'geojson',
+				'data': zoneOtherRes
+			});
+			map.addLayer({
+				'id': 'zoneOtherRes',
+				'type': 'fill',
+				'source': 'zoneOtherRes',
+				'layout': {},
+				'paint': {
+					'fill-color': '#2e4e66',
+					'fill-opacity': 0
+				}
+			},'zoneYellowRes');
+
+			map.addSource('transitLines', {
+				'type': 'geojson',
+				'data': transitLines
+			});
+			map.addLayer({
+				'id': 'transitLines',
+				'type': 'line',
+				'source': 'transitLines',
+				'layout': {},
+				'paint': {
+					'line-color': '#1d4667',
+					'line-width': 2,
+					'line-opacity': 1
+				}
+			});
+
+			map.addSource('transitStops', {
+				'type': 'geojson',
+				'data': transitStops
+			});
+			map.addLayer({
+				'id': 'transitStops',
+				'type': 'circle',
+				'source': 'transitStops',
+				'layout': {},
+				'paint': {
+					'circle-color': '#1d4667'
+				}
+			});
+
+			map.addLayer({
+				'id': 'transitStopsWhite',
+				'type': 'circle',
+				'source': 'transitStops',
+				'layout': {},
+				'paint': {
+					'circle-color': '#fff',
+					'circle-radius': 2,
+					'circle-opacity': 0.42
+				}
+			});
 
 			map.addSource('suitesSecondaryActive', {
 				'type': 'geojson',
 				'data': suitesSecondaryActive
-			}); 
-			map.addLayer({
-				'id': 'suitesSecondaryActive',
-				'type': 'symbol',
-				'source': 'suitesSecondaryActive',
-				'layout': {
-					"icon-image": 'x-secondary',
-					"icon-size": [
-						"interpolate",
-						["linear"],
-						["zoom"],
-						11,
-						0.45,
-						16,
-						1.3
-						],
-					"icon-allow-overlap": true   
-				},
-				'paint': {
-					'icon-color': '#fff',
-					'icon-opacity': 0
-
-				}
 			});
+			let xSecondaryImage = new Image();
+			xSecondaryImage.src = xSecondary;
+			xSecondaryImage.onload = function() {
+				map.addImage('x-secondary', xSecondaryImage);
+ 
+				map.addLayer({
+					'id': 'suitesSecondaryActive',
+					'type': 'symbol',
+					'source': 'suitesSecondaryActive',
+					'layout': {
+						"icon-image": 'x-secondary',
+						"icon-size": [
+							"interpolate",
+							["linear"],
+							["zoom"],
+							11,
+							0.45,
+							16,
+							1.3
+							],
+						"icon-allow-overlap": true   
+					},
+					'paint': {
+						'icon-color': '#fff',
+						'icon-opacity': 0
+
+					}
+				});
+			};
 	
 			map.addSource('suitesLanewayActive', {
 				'type': 'geojson',
 				'data': suitesLanewayActive
 			}); 
-			map.addLayer({
-				'id': 'suitesLanewayActive',
-				'type': 'symbol',
-				'source': 'suitesLanewayActive',
-				'layout': {
-					"icon-image": 'x-rearyard',
-					"icon-size": [
-						"interpolate",
-						["linear"],
-						["zoom"],
-						11,
-						0.45,
-						16,
-						1.3
-						],
-					"icon-allow-overlap": true
-				},
-				'paint': {
-					'icon-color': '#fff',
-					'icon-opacity': 0
-				}
-			});
+			let xRearYardImage = new Image();
+        	xRearYardImage.src = xRearYard;
+        	xRearYardImage.onload = function() {
+				map.addImage('x-rearyard', xRearYardImage);
+				map.addLayer({
+					'id': 'suitesLanewayActive',
+					'type': 'symbol',
+					'source': 'suitesLanewayActive',
+					'layout': {
+						"icon-image": 'x-rearyard',
+						"icon-size": [
+							"interpolate",
+							["linear"],
+							["zoom"],
+							11,
+							0.45,
+							16,
+							1.3
+							],
+						"icon-allow-overlap": true
+					},
+					'paint': {
+						'icon-color': '#fff',
+						'icon-opacity': 0
+					}
+				});
+			};
 
 
 			map.addSource('suitesSecondary', {
@@ -321,40 +366,17 @@
 			}); 
 			
 			if (pageHeight > 700 && pageWidth > 800) {
-				map.zoomTo(10.75)
+				map.zoomTo(10.75);
+				
 			}
+
+
+			
 
 			load = 1
 			filterPoints(values)
 
 		});
-		
-		// map.on('mousemove', 'VotingSubDivisionsFill', (e) => {
-		//     if (candidate === "margin") {
-		//         message = "Ward: " + e.features[0].properties.ward + " --- Poll: " + e.features[0].properties.vsd + " --- Margin: " + Math.round(100 * e.features[0].properties[candidates[candidate].column]) + "%"
-		//     } else if (candidate === "race") {
-		//         let name = "1) Tory 2) Peñalosa"
-		//         if (e.features[0].properties.contest === "Tory-Brown") {
-		//             name = "1) Tory 2) Brown"
-		//         }
-		//         if (e.features[0].properties.contest === "Penalosa-Brown") {
-		//             name = "1) Peñalosa 2) Brown"
-		//         }
-		//         if (e.features[0].properties.contest === "Penalosa-Tory") {
-		//             name = "1) Peñalosa 2) Tory"
-		//         }
-		//         if (e.features[0].properties.contest === "Brown-Penalosa") {
-		//             name = "1) Brown 2) Peñalosa"
-		//         }
-		//         message = "Ward: " + e.features[0].properties.ward + " --- Poll: " + e.features[0].properties.vsd + " --- Top-two finishers: " + name
-		//     } else {
-		//         message = "Ward: " + e.features[0].properties.ward + " --- Poll: " + e.features[0].properties.vsd + " --- Total Votes: " + e.features[0].properties.total + " --- Votes for " + candidates[candidate].name + ": " + e.features[0].properties[candidates[candidate].column] +  " --- % for " + candidates[candidate].name + ": " + Math.round(100 * e.features[0].properties[candidates[candidate].column] / e.features[0].properties.total) + "%"  
-		//     }
-				  
-		// });
-		// map.on('mouseleave', 'VotingSubDivisionsFill', () => {
-		//     message = " "
-		// });
 
 	});
 
@@ -652,7 +674,7 @@
 		background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
 		color: white;
 		font-size: 17px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: UbuntuMonoRegular, monospace;
 		padding: 18px;
 		padding-top: 28px;
 		padding-bottom: 8px;
@@ -661,6 +683,7 @@
 	#top-bar p {
 		max-width: 720px;
 		width: 100%;
+		font-size: 14px;
 		margin: 0 auto;
 	}
 
@@ -681,8 +704,8 @@
 	}
 	#options p {
 		color: white;
-		font-size: 17px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-size: 14.3px;
+		font-family: UbuntuMonoRegular, monospace;
 		max-width: 620px;
 		width: inheret;
 		margin: 0 auto;
@@ -699,8 +722,8 @@
 		padding: 10px;
 		padding-left: 16px;
 		padding-bottom: 1px;
-		font-size: 17px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-size: 14.3px;
+		font-family: UbuntuMonoRegular, monospace;
 		font-weight: 400;
 		overflow: hidden;
 	}

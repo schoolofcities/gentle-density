@@ -29,7 +29,7 @@
 		content="width=device-width, initial-scale=1, minimum-scale=1"
 	/>
 
-	<link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+	<link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
 
 	<title>Reno-ductions: Loss of Gentle Density in Toronto</title>
     <meta name="description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes">
@@ -128,7 +128,7 @@
 	<div class="text">
 		<h3>Data & Methods</h3>
 		<p>
-			Our filtered building permit dataset can be downloaded <a href="./lost-units-2017-2023.geojson" target="_blank">here</a>. The code used to create this webpage is on <a href="https://github.com/schoolofcities/gentle-density" target="_blank">GitHub</a>. It was built with the help of Python (pandas, geopandas), Svelte, Mapbox, and D3.
+			Our filtered building permit dataset can be downloaded <a href="./lost-units-2017-2023.geojson" target="_blank">here</a>. The code used to create this webpage is on <a href="https://github.com/schoolofcities/gentle-density" target="_blank">GitHub</a>. It was built with the help of Python (pandas, geopandas), Svelte, Maplibre, and D3.
 		</p>
 		<p>
 			The data filtering process was conducted as follows: After taking the original permit data, it was filtered out through Python to only show residential units. Since many buildings had several permits for the same project, all multiples were removed to only show one permit per project. To identify loss in units we used the current and proposed use columns in the permits file. These columns don't seem to have a system to them so it proved difficult to write a script to identify them. For this reason we had to manually go through each row and look at whether or not the permit changed into anything else, and if that change led to a loss in units. For example, a permit may have a current use as “triplex” but its proposed use is “single family home”, in this case there was a loss of 2 units. A new column was also added to show the apparent decrease in units, and all other permits that did not have a loss of units were then removed. There was a column already in the dataset noting change in units, but it was very sparse and unreliable upon initial inspection, so we created our own.
