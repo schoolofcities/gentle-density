@@ -38,9 +38,10 @@
 
 	const layerOpacity = 0.69;
 	let message = " ";    
+
 	const maxBounds = [
-		[-79.771200, 43.440000], // SW coords
-		[-78.914763, 43.930740] // NE coords
+		[-80.0, 42.0], // SW coords
+		[-78.6, 49.5] // NE coords
 	];
 
 	onMount(() => {
@@ -61,18 +62,23 @@
 						}
 					]
 				},
-			center: [-79.37, 43.715],
+			center: [-79.36,43.71],
 			zoom: 10,
-			maxZoom: 16,
-			minZoom: 8.5,
+			maxZoom: 15,
+			minZoom: 8,
 			bearing: -17.1,
-			projection: 'globe',
-			scrollZoom: true,
 			maxBounds: maxBounds,
+			boxZoom: false,
+			touchPitch: false,
 			attributionControl: false
 		});
 		map.addControl(new maplibregl.NavigationControl(), 'top-left');
 		map.addControl(new maplibregl.ScaleControl(), 'bottom-left');
+
+		// disable map rotation using right click + drag
+		map.dragRotate.disable();
+		map.touchZoomRotate.disableRotation();
+
 		map.scrollZoom.disable();
 
 		let protoLayers = BaseLayer;
@@ -208,7 +214,7 @@
 			map.setFilter('lostDwellingsSelected', ['==', ['get', '_id'], '']);
 			
 			if (pageHeight > 700 && pageWidth > 800) {
-				map.zoomTo(10.75)
+				map.zoomTo(10.5)
 			}
 
 
