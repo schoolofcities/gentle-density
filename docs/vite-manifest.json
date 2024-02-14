@@ -1,11 +1,11 @@
 {
-  "src/routes/assets/isometric-laneway.svg": {
-    "file": "_app/immutable/assets/isometric-laneway-16b82c84.svg",
-    "src": "src/routes/assets/isometric-laneway.svg"
-  },
   "src/routes/assets/isometric-secondary.svg": {
     "file": "_app/immutable/assets/isometric-secondary-3d24ae8f.svg",
     "src": "src/routes/assets/isometric-secondary.svg"
+  },
+  "src/routes/assets/isometric-laneway.svg": {
+    "file": "_app/immutable/assets/isometric-laneway-16b82c84.svg",
+    "src": "src/routes/assets/isometric-laneway.svg"
   },
   "src/routes/assets/toronto/x-secondary.svg": {
     "file": "_app/immutable/assets/x-secondary-5d09d70d.svg",
@@ -19,13 +19,29 @@
     "file": "_app/immutable/assets/top-logo-full-e60044c8.svg",
     "src": "src/routes/assets/top-logo-full.svg"
   },
+  "src/routes/assets/Trade Gothic LT Bold.ttf": {
+    "file": "_app/immutable/assets/Trade Gothic LT Bold-d851713b.ttf",
+    "src": "src/routes/assets/Trade Gothic LT Bold.ttf"
+  },
+  "src/routes/assets/UbuntuMono-Regular.ttf": {
+    "file": "_app/immutable/assets/UbuntuMono-Regular-3b83b9ca.ttf",
+    "src": "src/routes/assets/UbuntuMono-Regular.ttf"
+  },
+  "src/routes/assets/UbuntuMono-Italic.ttf": {
+    "file": "_app/immutable/assets/UbuntuMono-Italic-7644342e.ttf",
+    "src": "src/routes/assets/UbuntuMono-Italic.ttf"
+  },
+  "src/routes/assets/UbuntuMono-Bold.ttf": {
+    "file": "_app/immutable/assets/UbuntuMono-Bold-1130b307.ttf",
+    "src": "src/routes/assets/UbuntuMono-Bold.ttf"
+  },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-9a672f0f.js",
+    "file": "_app/immutable/start-d0e22668.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
-      "_singletons-338d599d.js"
+      "_singletons-42124941.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -43,16 +59,16 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-412104b4.js",
+    "file": "_app/immutable/components/error.svelte-56a9c773.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-359d1197.js",
-      "_singletons-338d599d.js"
+      "_singletons-42124941.js"
     ]
   },
   "src/routes/toronto-building-permits/+page.svelte": {
-    "file": "_app/immutable/components/pages/toronto-building-permits/_page.svelte-c7e7aa09.js",
+    "file": "_app/immutable/components/pages/toronto-building-permits/_page.svelte-353f3eb8.js",
     "src": "src/routes/toronto-building-permits/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -61,7 +77,7 @@
       "_index-4b83e0f7.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-22dff7cd.css"
+      "_app/immutable/assets/_page-cb08b84a.css"
     ],
     "assets": [
       "_app/immutable/assets/x-secondary-5d09d70d.svg",
@@ -71,7 +87,7 @@
     ]
   },
   "src/routes/toronto-renoductions/+page.svelte": {
-    "file": "_app/immutable/components/pages/toronto-renoductions/_page.svelte-8b24ad2c.js",
+    "file": "_app/immutable/components/pages/toronto-renoductions/_page.svelte-da3516f1.js",
     "src": "src/routes/toronto-renoductions/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -79,7 +95,7 @@
       "_styles-cc965ebd.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-d215078e.css"
+      "_app/immutable/assets/_page-13b6722d.css"
     ]
   },
   "src/routes/+layout.js": {
@@ -106,8 +122,8 @@
       "__page-0701c8a9.js"
     ]
   },
-  "_singletons-338d599d.js": {
-    "file": "_app/immutable/chunks/singletons-338d599d.js",
+  "_singletons-42124941.js": {
+    "file": "_app/immutable/chunks/singletons-42124941.js",
     "imports": [
       "_index-4b83e0f7.js"
     ]
@@ -130,10 +146,14 @@
       "_index-359d1197.js"
     ],
     "css": [
-      "_app/immutable/assets/styles-425d3a08.css"
+      "_app/immutable/assets/styles-b8d500fd.css"
     ],
     "assets": [
-      "_app/immutable/assets/top-logo-full-e60044c8.svg"
+      "_app/immutable/assets/top-logo-full-e60044c8.svg",
+      "_app/immutable/assets/Trade Gothic LT Bold-d851713b.ttf",
+      "_app/immutable/assets/UbuntuMono-Regular-3b83b9ca.ttf",
+      "_app/immutable/assets/UbuntuMono-Italic-7644342e.ttf",
+      "_app/immutable/assets/UbuntuMono-Bold-1130b307.ttf"
     ]
   },
   "__page-f015c9b7.js": {
@@ -152,7 +172,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-133e4949.js",
+    "file": "_app/immutable/chunks/1-328bc775.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -160,7 +180,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-32494426.js",
+    "file": "_app/immutable/chunks/2-ab821ae3.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -169,7 +189,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-641b2034.js",
+    "file": "_app/immutable/chunks/3-1591bbff.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
@@ -177,16 +197,16 @@
       "src/routes/toronto-renoductions/+page.svelte"
     ]
   },
-  "src/routes/toronto-renoductions/+page.css": {
-    "file": "_app/immutable/assets/_page-d215078e.css",
-    "src": "src/routes/toronto-renoductions/+page.css"
-  },
   "styles.css": {
-    "file": "_app/immutable/assets/styles-425d3a08.css",
+    "file": "_app/immutable/assets/styles-b8d500fd.css",
     "src": "styles.css"
   },
+  "src/routes/toronto-renoductions/+page.css": {
+    "file": "_app/immutable/assets/_page-13b6722d.css",
+    "src": "src/routes/toronto-renoductions/+page.css"
+  },
   "src/routes/toronto-building-permits/+page.css": {
-    "file": "_app/immutable/assets/_page-22dff7cd.css",
+    "file": "_app/immutable/assets/_page-cb08b84a.css",
     "src": "src/routes/toronto-building-permits/+page.css"
   }
 }
