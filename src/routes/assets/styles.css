@@ -1,18 +1,18 @@
 @font-face {
     font-family: TradeGothicBold;
-    src: url("./assets/Trade Gothic LT Bold.ttf");
+    src: url("./Trade Gothic LT Bold.ttf");
 }
 @font-face {
     font-family: UbuntuMonoRegular;
-    src: url("./assets/UbuntuMono-Regular.ttf"); 
+    src: url("./UbuntuMono-Regular.ttf"); 
 }
 @font-face {
     font-family: UbuntuMonoItalic;
-    src: url("./assets/UbuntuMono-Italic.ttf"); 
+    src: url("./UbuntuMono-Italic.ttf"); 
 }
 @font-face {
     font-family: UbuntuMonoBold;
-    src: url("./assets/UbuntuMono-Bold.ttf"); 
+    src: url("./UbuntuMono-Bold.ttf"); 
 }
 
 :root {
@@ -131,10 +131,10 @@ b {
 
 .title h1 {
     margin: 0 auto;
-    font-family: 'Ubuntu Mono', monospace;
-    font-weight: 700;
+    font-family: UbuntuMonoBold;
+    /* font-weight: 700; */
     max-width: 430px;
-    font-size: 60px;
+    font-size: 45px;
     color: var(--brandDarkBlue);
     padding: 0px;
 }
@@ -142,7 +142,7 @@ b {
 .title h2 {
     padding-top: 20px;
     margin: 0 auto;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: UbuntuMonoRegular;
     font-weight: 400;
     max-width: 450px;
     font-size: 28px;
@@ -162,10 +162,10 @@ b {
 
 .title p {
     margin: 0 auto;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: UbuntuMonoRegular;
     font-weight: 400;
     font-size: 18px;
-    width: 380px;
+    max-width: 380px;
     text-align: center;
     color: var(--brandDarkBlue);
     line-height: 30px;
@@ -183,7 +183,7 @@ b {
     max-width: 720px;
     margin: 0 auto;
     color: var(--brandDarkBlue);
-    font-family:  'Ubuntu Mono', monospace;
+    font-family:  UbuntuMonoRegular;
     font-weight: 400px;
     font-size: 19px;
     line-height: 30px;
@@ -192,10 +192,14 @@ b {
     padding-right: 20px;
 }
 
+.text h3 {
+    font-family: UbuntuMonoBold;
+}
+
 
 .rangeSlider {
     height: 2px;
-    font-family:  'Ubuntu Mono', monospace;
+    font-family:  UbuntuMonoRegular;
     font-weight: 400px;
     font-size: 15px;
 }

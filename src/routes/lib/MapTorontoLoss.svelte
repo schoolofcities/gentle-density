@@ -301,12 +301,13 @@
 		width: 100%;
 		margin: 0 auto;
 		padding-bottom: 4px;
-		font-size: 14px;
+		/* font-size: 14px; */
 	}
 
 	.category {
 		color: #F1C500;
-		font-size: 16px;
+		font-family: UbuntuMonoBold;
+		/* font-size: 16px; */
 	}
 	
 </style>
