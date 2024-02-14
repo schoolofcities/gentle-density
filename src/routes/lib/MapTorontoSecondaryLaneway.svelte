@@ -673,7 +673,7 @@
 		background-size: 13px 13px;
 		background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
 		color: white;
-		font-size: 17px;
+		/* font-size: 17px; */
 		font-family: UbuntuMonoRegular, monospace;
 		padding: 18px;
 		padding-top: 28px;
@@ -683,7 +683,7 @@
 	#top-bar p {
 		max-width: 720px;
 		width: 100%;
-		font-size: 14px;
+		/* font-size: 14px; */
 		margin: 0 auto;
 	}
 
@@ -704,7 +704,6 @@
 	}
 	#options p {
 		color: white;
-		font-size: 14.3px;
 		font-family: UbuntuMonoRegular, monospace;
 		max-width: 620px;
 		width: inheret;
@@ -722,7 +721,7 @@
 		padding: 10px;
 		padding-left: 16px;
 		padding-bottom: 1px;
-		font-size: 14.3px;
+		/* font-size: 14.3px; */
 		font-family: UbuntuMonoRegular, monospace;
 		font-weight: 400;
 		overflow: hidden;
