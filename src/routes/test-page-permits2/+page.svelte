@@ -2,7 +2,7 @@
 
 	import BarChartSecondary from "../lib/BarChartSecondary.svelte";
 	import BarChartLaneway from "../lib/BarChartLaneway.svelte";
-    import CanadianCitiesMap from '../lib/MapSecondaryLaneway.svelte';
+    import CanadianCitiesMap from '../lib/MapCanadianCities.svelte';
 
     import Top from "../lib/TopSofC.svelte";
 	import '../assets/styles.css';
