@@ -2,7 +2,7 @@
 
 	import BarChartSecondary from "../lib/BarChartSecondary.svelte";
 	import BarChartLaneway from "../lib/BarChartLaneway.svelte";
-    import CanadianCitiesMap from '../lib/MapTorontoLoss.svelte';
+    import CanadianCitiesMap from '../lib/MapCanadianCities.svelte';
 
     import Top from "../lib/TopSofC.svelte";
 	import '../assets/styles.css';
@@ -32,7 +32,7 @@
 
 	<link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
 
-    <title>Tracking Gentle Density in Toronto</title>
+    <title>Gentle Density in Canadian Cities</title>
     <meta name="description" content="Visualizing a decade (2013 to 2023) of Secondary Suite and Laneway / Garden Suite building permits in Toronto">
     <meta name="author" content="Jeff Allen">
 
@@ -172,20 +172,16 @@
 		
 	</div>
 
-	<div id="top-bar">
+    <div id="top-bar">
         <div class="buttons">
 			<button class:selected={selectedCity === 'Victoria'} on:click={() => selectedCity = 'Victoria'}>City of Victoria</button>
 			<button class:selected={selectedCity === 'Edmonton'} on:click={() => selectedCity = 'Edmonton'}>City of Edmonton</button>
 			<button class:selected={selectedCity === 'Calgary'} on:click={() => selectedCity = 'Calgary'}>City of Calgary</button>
 			<button class:selected={selectedCity === 'Toronto'} on:click={() => selectedCity = 'Toronto'}>City of Toronto</button>
-			<!-- {#each cities as city}
-				<button class:selected={selectedCity === city} on:click={() => selectedCity = city}>City of {city}</button>
-			{/each} -->
 		</div>
     </div>
 
 	<CanadianCitiesMap city={selectedCity}/>
-
 
 	<div class="text">
 		<p>
