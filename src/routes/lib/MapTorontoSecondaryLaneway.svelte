@@ -8,8 +8,8 @@
 
 	import torontoBoundary from '../assets/toronto/toronto-boundary.geo.json';
 	import laneways from '../assets/toronto/laneways.geo.json';
-	import transitLines from '../assets/toronto/transitLines.geo.json';
-	import transitStops from '../assets/toronto/transitStops.geo.json';
+	import transitLines from '../assets/toronto/transitLines-toronto.geo.json';
+	import transitStops from '../assets/toronto/transitStops-toronto.geo.json';
 	import suitesLaneway from '../assets/toronto/laneway-garden-suites.geo.json';
 	import suitesSecondary from '../assets/toronto/secondary-suites.geo.json';
 	import suitesLanewayActive from '../assets/toronto/laneway-suites-active-subset-012024update.geo.json';
