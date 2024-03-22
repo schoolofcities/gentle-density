@@ -4,8 +4,8 @@
 
 	import Top from "../lib/TopSofC.svelte";
 
-	import BarChartLoss from "../lib/BarChartLoss.svelte";
-	import Map from "../lib/MapTorontoLoss.svelte";
+	import BarChartLoss from "./lib/BarChartLoss.svelte";
+	import Map from "./lib/MapTorontoLoss.svelte";
 
 
 

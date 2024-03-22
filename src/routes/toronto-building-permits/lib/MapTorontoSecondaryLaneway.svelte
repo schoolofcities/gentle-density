@@ -4,22 +4,22 @@
 	import RangeSlider from "svelte-range-slider-pips";
     import maplibregl from 'maplibre-gl';
     import * as pmtiles from 'pmtiles';
-	import BaseLayer from "../assets/toronto/toronto.json";
+	import BaseLayer from "../../assets/toronto/toronto.json";
 
-	import torontoBoundary from '../assets/toronto/toronto-boundary.geo.json';
-	import laneways from '../assets/toronto/laneways.geo.json';
-	import transitLines from '../assets/toronto/transitLines-toronto.geo.json';
-	import transitStops from '../assets/toronto/transitStops-toronto.geo.json';
-	import suitesLaneway from '../assets/toronto/laneway-garden-suites.geo.json';
-	import suitesSecondary from '../assets/toronto/secondary-suites.geo.json';
-	import suitesLanewayActive from '../assets/toronto/laneway-suites-active-subset-012024update.geo.json';
-	import suitesSecondaryActive from '../assets/toronto/secondary-suites-active-subset-012024update.geo.json';
-	import zoneYellowRes from '../assets/toronto/zone-yellow.geo.json';
-	import zoneOtherRes from '../assets/toronto/zone-otherres.geo.json';
-	import income2020 from '../assets/toronto/2020.geo.json';
+	import torontoBoundary from '../../assets/toronto/toronto-boundary.geo.json';
+	import laneways from '../../assets/toronto/laneways.geo.json';
+	import transitLines from '../../assets/toronto/transitLines-toronto.geo.json';
+	import transitStops from '../../assets/toronto/transitStops-toronto.geo.json';
+	import suitesLaneway from '../../assets/toronto/laneway-garden-suites.geo.json';
+	import suitesSecondary from '../../assets/toronto/secondary-suites.geo.json';
+	import suitesLanewayActive from '../../assets/toronto/laneway-suites-active-subset-012024update.geo.json';
+	import suitesSecondaryActive from '../../assets/toronto/secondary-suites-active-subset-012024update.geo.json';
+	import zoneYellowRes from '../../assets/toronto/zone-yellow.geo.json';
+	import zoneOtherRes from '../../assets/toronto/zone-otherres.geo.json';
+	import income2020 from '../../assets/toronto/2020.geo.json';
 
-	import xSecondary from '../assets/toronto/x-secondary.svg';
-	import xRearYard from '../assets/toronto/x-rearyard.svg';
+	import xSecondary from '../../assets/toronto/x-secondary.svg';
+	import xRearYard from '../../assets/toronto/x-rearyard.svg';
 
 	let values = [2022,2023];
 

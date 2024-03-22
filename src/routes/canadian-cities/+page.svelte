@@ -1,8 +1,8 @@
 <script>
 
-	import BarChartSecondary from "../lib/BarChartSecondaryCities.svelte";
-	import BarChartLaneway from "../lib/BarChartLanewayCities.svelte";
-    import CanadianCitiesMap from '../lib/MapCanadianCities.svelte';
+	import BarChartSecondary from "./lib/BarChartSecondaryCities.svelte";
+	import BarChartLaneway from "./lib/BarChartLanewayCities.svelte";
+    import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
 
     import Top from "../lib/TopSofC.svelte";
 	import '../assets/styles.css';

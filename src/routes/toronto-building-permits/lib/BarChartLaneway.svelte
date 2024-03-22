@@ -3,7 +3,7 @@
     import {rollup} from 'd3-array';
     import {scaleBand} from 'd3-scale';
 
-    import suitesLaneway from '../assets/toronto/laneway-garden-suites.geo.json';
+    import suitesLaneway from '../../assets/toronto/laneway-garden-suites.geo.json';
     
     let divWidth;
     
