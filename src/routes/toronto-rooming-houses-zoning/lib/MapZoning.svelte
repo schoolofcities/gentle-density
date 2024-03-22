@@ -166,6 +166,9 @@
 
 <div id="map" style="height: {mapHeight}px"></div>
 
+
+
+
 <style>
 	#map {
 		width: 100%;
@@ -186,18 +189,13 @@
 		padding-bottom: 8px;
 		font-weight: bold;
 	}
+
 	#top-bar p {
 		max-width: 720px;
 		width: 100%;
 		margin: 0 auto;
 		padding-bottom: 4px;
 		/* font-size: 14px; */
-	}
-
-	.category {
-		color: #F1C500;
-		font-family: UbuntuMonoBold;
-		/* font-size: 16px; */
 	}
 	
 </style>

@@ -139,14 +139,14 @@
 
 	#label {
 		font-size: 15px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: UbuntuMonoRegular, monospace;
 		font-weight: 400;
 		fill: rgba(255, 255, 255, 0.803);
 	}
 
 	#labelBar {
 		font-size: 15px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: UbuntuMonoRegular, monospace;
 		font-weight: 400;
 		fill: rgba(255, 255, 255, 0.803);
 		
@@ -154,13 +154,13 @@
 
 	#yearLabelWeb {
 		font-size: 15px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: UbuntuMonoRegular, monospace;
 		font-weight: 400;
 		fill: rgba(255, 255, 255, 0.803);
 	}
 	#yearLabelMobile {
 		font-size: 15px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: UbuntuMonoRegular, monospace;
 		font-weight: 400;
 		fill: rgba(255, 255, 255, 0.803);
 		opacity: 0;
@@ -176,7 +176,7 @@
 
 	#title {
 		font-size: 17px;
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: UbuntuMonoBold, monospace;
 		font-weight: 700;
 		fill: rgba(255, 255, 255, 0.99);
 	}
