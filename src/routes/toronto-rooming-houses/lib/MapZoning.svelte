@@ -3,10 +3,10 @@
 	import { onMount } from 'svelte';
     import maplibregl from 'maplibre-gl';
     import * as pmtiles from 'pmtiles';
-	import torontoBoundary from '../../assets/toronto/toronto-boundary.geo.json';
-	import transitLines from '../../assets/toronto/transitLines-toronto.geo.json';
-	import transitStops from '../../assets/toronto/transitStops-toronto.geo.json';
-	import BaseLayer from "../../assets/toronto/toronto.json";
+	import torontoBoundary from '../../../assets/toronto/toronto-boundary.geo.json';
+	import transitLines from '../../../assets/toronto/transitLines-toronto.geo.json';
+	import transitStops from '../../../assets/toronto/transitStops-toronto.geo.json';
+	import BaseLayer from "../../../assets/toronto/toronto.json";
 
 
 

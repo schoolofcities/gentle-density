@@ -1,8 +1,8 @@
 <script>
 
-	import "../assets/styles.css";
+	import "../../assets/styles.css";
 
-	import Top from "../lib/TopSofC.svelte";
+	import Top from "../../lib/TopSofC.svelte";
 
 	import BarChartLoss from "./lib/BarChartLoss.svelte";
 	import Map from "./lib/MapTorontoLoss.svelte";

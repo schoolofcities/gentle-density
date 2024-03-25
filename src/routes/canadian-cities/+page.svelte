@@ -4,11 +4,11 @@
 	import BarChartLaneway from "./lib/BarChartLanewayCities.svelte";
     import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
 
-    import Top from "../lib/TopSofC.svelte";
-	import '../assets/styles.css';
+    import Top from "../../lib/TopSofC.svelte";
+	import '../../assets/styles.css';
 
-	import isometricSecondary from '../assets/isometric-secondary.svg';
-	import isometricLaneway from '../assets/isometric-laneway.svg';
+	import isometricSecondary from '../../assets/isometric-secondary.svg';
+	import isometricLaneway from '../../assets/isometric-laneway.svg';
 
     let selectedCity = 'Victoria'; // Set the default city
 </script>

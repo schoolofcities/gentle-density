@@ -4,11 +4,11 @@
 	import BarChartLaneway from "./lib/BarChartLaneway.svelte";
 	import Map from "./lib/MapTorontoSecondaryLaneway.svelte";
 
-	import Top from "../lib/TopSofC.svelte";
-	import '../assets/styles.css';
+	import Top from "../../lib/TopSofC.svelte";
+	import '../../assets/styles.css';
 
-	import isometricSecondary from '../assets/isometric-secondary.svg';
-	import isometricLaneway from '../assets/isometric-laneway.svg';
+	import isometricSecondary from '../../assets/isometric-secondary.svg';
+	import isometricLaneway from '../../assets/isometric-laneway.svg';
 
 </script>
 

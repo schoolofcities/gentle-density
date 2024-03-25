@@ -3,7 +3,7 @@
 	import {rollup} from 'd3-array';
 	import {scaleBand, scaleLinear} from 'd3-scale';
 
-	import lostUnits from '../../assets/toronto/lost-units-2017-2023.geo.json';
+	import lostUnits from '../../../assets/toronto/lost-units-2017-2023.geo.json';
 	
 	let divWidth;
 	$: width = divWidth - 22;

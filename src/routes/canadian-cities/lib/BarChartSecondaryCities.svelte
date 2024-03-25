@@ -3,8 +3,8 @@
 	import {rollup} from 'd3-array';
 	import {scaleBand} from 'd3-scale';
 
-	import torontoSecondary from '../../assets/toronto/secondary-suites.geo.json';
-	import edmontonSecondary from '../../assets/edmonton/ss-edmonton.geo.json';
+	import torontoSecondary from '../../../assets/toronto/secondary-suites.geo.json';
+	import edmontonSecondary from '../../../assets/edmonton/ss-edmonton.geo.json';
 
 	
 	let divWidth;

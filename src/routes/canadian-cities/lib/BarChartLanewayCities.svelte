@@ -2,8 +2,8 @@
     import { rollup } from 'd3-array';
     import { scaleBand } from 'd3-scale';
 
-    import torontoLaneway from '../../assets/toronto/laneway-garden-suites.geo.json';
-    import edmontonLaneway from '../../assets/edmonton/gs-edmonton.geo.json';
+    import torontoLaneway from '../../../assets/toronto/laneway-garden-suites.geo.json';
+    import edmontonLaneway from '../../../assets/edmonton/gs-edmonton.geo.json';
 
     let divWidth;
     

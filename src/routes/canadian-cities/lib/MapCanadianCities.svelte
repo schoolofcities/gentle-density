@@ -4,35 +4,35 @@
 	import RangeSlider from "svelte-range-slider-pips";
     import maplibregl from 'maplibre-gl';
     import * as pmtiles from 'pmtiles';
-	import BaseLayer from "../../assets/toronto/toronto.json";
+	import BaseLayer from "../../../assets/toronto/toronto.json";
 
     // Toronto
-    import torontoBoundary from '../../assets/toronto/toronto-boundary.geo.json';
-    import torontoTransitLines from '../../assets/toronto/transitLines-toronto.geo.json';
-    import torontoTransitStops from '../../assets/toronto/transitStops-toronto.geo.json';
+    import torontoBoundary from '../../../assets/toronto/toronto-boundary.geo.json';
+    import torontoTransitLines from '../../../assets/toronto/transitLines-toronto.geo.json';
+    import torontoTransitStops from '../../../assets/toronto/transitStops-toronto.geo.json';
 	// import torontoSuitesLaneway from '../assets/toronto/laneway-garden-suites.geo.json'; 
 	// import torontoSuitesSecondary from '../assets/toronto/secondary-suites.geo.json'; 
-    import torontoSuitesLaneway from '../../assets/toronto/gs-toronto.geo.json';
-    import torontoSuitesSecondary from '../../assets/toronto/ss-toronto.geo.json';
+    import torontoSuitesLaneway from '../../../assets/toronto/gs-toronto.geo.json';
+    import torontoSuitesSecondary from '../../../assets/toronto/ss-toronto.geo.json';
     
     // Victoria
-    import victoriaBoundary from '../../assets/victoria/victoria-boundary.geo.json';
-    import victoriaTransitLines from '../../assets/victoria/transitLines-victoria.geo.json';
-    import victoriaTransitStops from '../../assets/victoria/transitStops-victoria.geo.json';
+    import victoriaBoundary from '../../../assets/victoria/victoria-boundary.geo.json';
+    import victoriaTransitLines from '../../../assets/victoria/transitLines-victoria.geo.json';
+    import victoriaTransitStops from '../../../assets/victoria/transitStops-victoria.geo.json';
     // import victoriaSuitesLaneway from '../assets/victoria/gs-victoria.geo.json';
     // import victoriaSuitesSecondary from '../assets/victoria/ss-victoria.geo.json';
     
     // Edmonton
-    import edmontonBoundary from '../../assets/edmonton/edmonton-boundary.geo.json';
-    import edmontonTransitLines from '../../assets/edmonton/transitLines-edmonton.geo.json';
-    import edmontonTransitStops from '../../assets/edmonton/transitStops-edmonton.geo.json';
-    import edmontonSuitesLaneway from '../../assets/edmonton/gs-edmonton.geo.json';
-    import edmonotnSuitesSecondary from '../../assets/edmonton/ss-edmonton.geo.json';
+    import edmontonBoundary from '../../../assets/edmonton/edmonton-boundary.geo.json';
+    import edmontonTransitLines from '../../../assets/edmonton/transitLines-edmonton.geo.json';
+    import edmontonTransitStops from '../../../assets/edmonton/transitStops-edmonton.geo.json';
+    import edmontonSuitesLaneway from '../../../assets/edmonton/gs-edmonton.geo.json';
+    import edmonotnSuitesSecondary from '../../../assets/edmonton/ss-edmonton.geo.json';
 
     // Calgary
-    import calgaryBoundary from '../../assets/calgary/calgary-boundary.geo.json';
-    import calgaryTransitLines from '../../assets/calgary/transitLines-calgary.geo.json';
-    import calgaryTransitStops from '../../assets/calgary/transitStops-calgary.geo.json';
+    import calgaryBoundary from '../../../assets/calgary/calgary-boundary.geo.json';
+    import calgaryTransitLines from '../../../assets/calgary/transitLines-calgary.geo.json';
+    import calgaryTransitStops from '../../../assets/calgary/transitStops-calgary.geo.json';
     // import calgarySuitesLaneway from '../assets/calgary/gs-calgary.geo.json';
     // import calgarySuitesSecondary from '../assets/calgary/ss-calgary.geo.json';
 
