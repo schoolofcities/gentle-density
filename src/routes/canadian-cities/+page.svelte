@@ -1,7 +1,10 @@
 <script>
 
-	import BarChartSecondary from "./lib/BarChartSecondaryCities.svelte";
-	import BarChartLaneway from "./lib/BarChartLanewayCities.svelte";
+	// import BarChartSecondary from "./lib/BarChartSecondaryCities.svelte";
+	// import BarChartLaneway from "./lib/BarChartLanewayCities.svelte";
+
+	import BarChartSecondary from "./lib/BarChartSecondaryAllCities.svelte";
+
     import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
 
     import Top from "../../lib/TopSofC.svelte";
@@ -11,6 +14,7 @@
 	import isometricLaneway from '../../assets/isometric-laneway.svg';
 
     let selectedCity = 'Victoria'; // Set the default city
+
 </script>
 
 
@@ -53,10 +57,10 @@
 
 		<div class="title">
 			<h1>
-				<span class="italic">Gentle Density</span> Across Four Canadian Cities
+				<span class="italic">Gentle Density</span> Across Five Canadian Cities
 			</h1>
 			<h2>
-				Visualizing building permit data in Victoria, Edmonton, Calgary, and Toronto
+				Secondary & Backyard Suites in Victoria, Edmonton, Calgary, Toronto, & Halifax
 			</h2>
 			<h2>
 				
@@ -67,49 +71,52 @@
 
 	</div>
 
-	<div class="background-white">
 
-		<div class="arrow">
-			<p>▼</p>
-		</div>
+	<div class="arrow">
+		<p>▼</p>
+	</div>
 
-		<div class="text">
+	<div class="text">
 
-			<p>
-				Hello I am some introductory text
+		<p>
+			Hello I am some introductory text
+		</p>
+		
+		
+		<h3><span class="textSecondary">Secondary Suites</span></h3>
+		<div class="typeWrapper">
+			<div class="isometric-mobile"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
+			<div class="typeText"><p>
+				Are “self-contained living accommodation for an additional person or persons living together as a separate single housekeeping unit, in which both food preparation and sanitary facilities are provided for the exclusive use of the occupants of the suite, located in and subordinate to a dwelling unit.” (Click <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/secondary-suites/overview-secondary-suites/">here</a> for further information from the City of Toronto)
 			</p>
-			
-			
-			<h3><span class="textSecondary">Secondary Suites</span></h3>
-			<div class="typeWrapper">
-				<div class="isometric-mobile"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
-				<div class="typeText"><p>
-					Are “self-contained living accommodation for an additional person or persons living together as a separate single housekeeping unit, in which both food preparation and sanitary facilities are provided for the exclusive use of the occupants of the suite, located in and subordinate to a dwelling unit.” (Click <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/secondary-suites/overview-secondary-suites/">here</a> for further information from the City of Toronto)
-				</p>
-				</div>
-				<div class="isometric"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
 			</div>
-
-			<h3><span class="textLaneway">Rear-Yard Suites</span></h3>
-			<div class="typeWrapper">
-				<div class="isometric-mobile"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
-				<div class="typeText"><p>
-					Building a small detached dwelling unit that is located on the same property as a single-family home. They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, or Laneway Houses. Toronto legalized rear yard suites that abut laneways in 06/2018, called Laneway Suites in city bylaws (these are often garage conversions), and then legalized them in all other residential zones in 02/2022 without the need to abut a laneway. The latter are often called Garden Suites. DESCRIBE DATES ON OTHER CITIES,
- 
-				</p></div>
-				<div class="isometric"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
-			</div>
-
-			
-
-			
-
+			<div class="isometric"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
 		</div>
+
+
 	</div>
 
 	<div class="line-chart">
 		<BarChartSecondary/>
-		<BarChartLaneway/>
+	</div>
+
+
+	<div class="text">
+
+		<h3><span class="textLaneway">Rear-Yard Suites</span></h3>
+		<div class="typeWrapper">
+			<div class="isometric-mobile"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
+			<div class="typeText"><p>
+				Building a small detached dwelling unit that is located on the same property as a single-family home. They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, or Laneway Houses. Toronto legalized rear yard suites that abut laneways in 06/2018, called Laneway Suites in city bylaws (these are often garage conversions), and then legalized them in all other residential zones in 02/2022 without the need to abut a laneway. The latter are often called Garden Suites. DESCRIBE DATES ON OTHER CITIES,
+
+			</p></div>
+			<div class="isometric"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
+		</div>
+	</div>
+
+	<div class="line-chart">
+		<!-- <BarChartSecondary/>
+		<BarChartLaneway/> -->
 	</div>
 
 	<div class="background-white">
@@ -133,7 +140,7 @@
 		</div>
     </div>
 
-	<CanadianCitiesMap city={selectedCity}/>
+	<!-- <CanadianCitiesMap city={selectedCity}/> -->
 
 	<div class="text">
 		<p>
