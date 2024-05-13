@@ -21,6 +21,7 @@
 	},
 	"dependencies": {
 		"d3-array": "^3.2.1",
+		"d3-dsv": "^3.0.1",
 		"d3-scale": "^4.0.2",
 		"mapbox-gl": "^2.10.0",
 		"maplibre-gl": "^4.0.0",

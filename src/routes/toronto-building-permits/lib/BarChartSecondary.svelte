@@ -182,8 +182,4 @@
 		fill: rgba(255, 255, 255, 0.99);
 	}
 
-	#svgChart {
-		/* border: solid 1px white; */
-	}
-
 </style>

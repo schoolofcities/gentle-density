@@ -1,6 +1,0 @@
-{
-"type": "FeatureCollection",
-"features": [
-{ "type": "Feature", "properties": { "PERMIT_NUM": "18 237177 BLD" }, "geometry": { "type": "Point", "coordinates": [ 0.0, 0.0 ] } }
-]
-}
