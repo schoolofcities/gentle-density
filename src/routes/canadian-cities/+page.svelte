@@ -87,7 +87,7 @@
 		<div class="typeWrapper">
 			<div class="isometric-mobile"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
 			<div class="typeText"><p>
-				Are “self-contained living accommodation for an additional person or persons living together as a separate single housekeeping unit, in which both food preparation and sanitary facilities are provided for the exclusive use of the occupants of the suite, located in and subordinate to a dwelling unit.” (Click <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/secondary-suites/overview-secondary-suites/">here</a> for further information from the City of Toronto)
+				Are self-contained living accommodation for an additional person or persons living together as a separate single housekeeping unit, in which both food preparation and sanitary facilities are provided for the exclusive use of the occupants of the suite, located in and subordinate to a dwelling unit.
 			</p>
 			</div>
 			<div class="isometric"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
@@ -96,11 +96,7 @@
 
 	</div>
 
-	<div class="line-chart">
-		<BarChartSecondary/>
-	</div>
-
-
+	
 	<div class="text">
 
 		<h3><span class="textLaneway">Rear-Yard Suites</span></h3>
@@ -114,22 +110,27 @@
 		</div>
 	</div>
 
+	<div class="text">
+		<p>
+			Hello I am some more text maybe also showing a simple regulation timeline of different cities (when things were approved)
+		</p>
+	</div>
+
 	<div class="line-chart">
-		<!-- <BarChartSecondary/>
-		<BarChartLaneway/> -->
+		<BarChartSecondary/>
 	</div>
 
-	<div class="background-white">
-
-		<div class="text">
-
-			<p>
-				more text
-			</p>
-			
-		</div>
-		
+	<div class="text">
+		<p>
+			I think in here we need another graphic that is the above, ore maybe incorporated into the above, of units per overall population or households (2021 data) to standardize in some way
+		</p>
 	</div>
+
+
+	<!-- <div class="line-chart">
+		<BarChartSecondary/>
+		<BarChartLaneway/>
+	</div> -->
 
     <div id="top-bar">
         <div class="buttons">
@@ -140,7 +141,7 @@
 		</div>
     </div>
 
-	<!-- <CanadianCitiesMap city={selectedCity}/> -->
+	<CanadianCitiesMap city={selectedCity}/>
 
 	<div class="text">
 		<p>
