@@ -3,20 +3,25 @@
 	import maplibregl from "maplibre-gl";
 	import * as pmtiles from "pmtiles";
 	import torontoBoundary from "../../../assets/toronto/toronto-boundary.geo.json";
+	import formerBoundary from "../../../assets/toronto/former_municipalities_boundaries_data.geo.json";
+	import formerCentroids from "../../../assets/toronto/former_municipalities_centroids.geo.json";
 	import transitLines from "../../../assets/toronto/transitLines-toronto.geo.json";
 	import transitStops from "../../../assets/toronto/transitStops-toronto.geo.json";
 	import BaseLayer from "../../../assets/toronto/toronto.json";
 
 	// import rooming house data layers based on map input
 	export let layer;
-		let layername = "old";
-		if (layer === "new") {
-			layername = "new";
-		};
-	
-	import oldOverlay from "../../../assets/toronto/zoning_rooming_house_overlay_old.geo.json";
-	import newOverlay from "../../../assets/toronto/zoning_rooming_house_overlay_Qnew.geo.json";
+	let layername = "Old";
+	if (layer === "new") {
+		layername = "New";
+	} else if (layer === "change") {
+		layername = "Change";
+	} else {
+		layername = "Old";
+	}
 
+	import oldOverlay from "../../../assets/toronto/zoning_rooming_house_overlay_old.geo.json";
+	import newOverlay from "../../../assets/toronto/rooming_house_overlay_new_mapshaper30.geo.json";
 
 	let map;
 	let PMTILES_URL = "/gentle-density/toronto.pmtiles";
@@ -58,7 +63,7 @@
 			},
 			center: [-79.36, 43.71],
 			zoom: 10,
-			maxZoom: 15,
+			maxZoom: 12, // max zoom 12 or 13
 			minZoom: 8,
 			bearing: -17.1,
 			maxBounds: maxBounds,
@@ -128,30 +133,29 @@
 				},
 			});
 
-			map.addSource("torontoBoundary", {
-				type: "geojson",
-				data: torontoBoundary,
-			});
-			map.addLayer({
-				id: "torontoBoundary",
-				type: "line",
-				source: "torontoBoundary",
-				layout: {},
-				paint: {
-					"line-color": "#fff",
-					"line-width": 1,
-					"line-opacity": 1,
-				},
-			});
+			// map.addSource("torontoBoundary", {
+			// 	type: "geojson",
+			// 	data: torontoBoundary,
+			// });
+			// map.addLayer({
+			// 	id: "torontoBoundary",
+			// 	type: "line",
+			// 	source: "torontoBoundary",
+			// 	layout: {},
+			// 	paint: {
+			// 		"line-color": "#fff",
+			// 		"line-width": 1,
+			// 		"line-opacity": 1,
+			// 	},
+			// });
 
-
-			// load old or new zoning overlay
-			if (layername === "old") {
+			// load old or new or change zoning overlay
+			if (layername === "Old") {
 				map.addSource("oldOverlay", {
 					type: "geojson",
 					data: oldOverlay,
 				});
-				
+
 				map.addLayer({
 					id: "oldOverlay",
 					type: "fill",
@@ -185,51 +189,133 @@
 						// ]
 					},
 				});
-
-			}	else if (layername === "new") {
-				map.addSource('newOverlay', {
-					'type': 'geojson',
-					'data': newOverlay,
+			} else if (layername === "New") {
+				map.addSource("newOverlay", {
+					type: "geojson",
+					data: newOverlay,
 				});
 				map.addLayer({
-					'id': 'newOverlay',
-					'type': 'fill',
-					'source': 'newOverlay',
-					'layout': {},
-					'paint': {
-						'fill-color': [
-							'step',
-							['get', 'MAX_ROOMS'], '#fff',
-							6, '#feebe2',
-							10, '#fbb4b9',
-							12, '#f768a1',
-							25, '#ae017e',
-						]
-					}
+					id: "newOverlay",
+					type: "fill",
+					source: "newOverlay",
+					layout: {},
+					paint: {
+						"fill-color": [
+							"step",
+							["get", "m"],
+							"#fff",
+							6,
+							"#feebe2",
+							10,
+							"#fbb4b9",
+							12,
+							"#f768a1",
+							25,
+							"#ae017e",
+						],
+					},
 				});
-			};
+			} else if (layername === "Change") {
+				map.addSource("newOverlay", {
+					type: "geojson",
+					data: newOverlay,
+				});
+				map.addLayer({
+					id: "newOverlay",
+					type: "fill",
+					source: "newOverlay",
+					layout: {},
+					paint: {
+						"fill-color": [
+							"step",
+							["get", "c"],
+							"#000",
+							-19,
+							"#8e0152",
+							-6,
+							"#c51b7d",
+							-4,
+							"#de77ae",
+							0,
+							"#ffffcc",
+							2,
+							"#d9f0a3",
+							6,
+							"#addd8e",
+							12,
+							"#78c679",
+							13,
+							"#41ab5d",
+							19,
+							"#238b45",
+							25,
+							"#005a32"
+						],
+					},
+				});
+			}
 
+			map.addSource("formerBoundary", {
+				type: "geojson",
+				data: formerBoundary,
+			});
+			map.addLayer({
+				id: "formerBoundary",
+				type: "line",
+				source: "formerBoundary",
+				layout: {},
+				paint: {
+					"line-color": "#fff",
+					"line-width": 1,
+					"line-opacity": 1,
+				},
+			});
 
+			// centroids for text labels of former cities
+			map.addSource("formerCentroids", {
+				type: "geojson",
+				data: formerCentroids,
+			});
+			map.addLayer({
+				id: "formerCentroids",
+				type: "symbol",
+				source: "formerCentroids",
+				paint: {
+					"text-color": "#ffffff",
+					"text-halo-color": "#000000",
+					"text-halo-width": 1.5,
+					"text-halo-blur": 0,
+				},
+				layout: {
+					"text-field": ["get", "AREA_NAME"],
+					"text-font": [
+						"TradeGothic LT Bold"
+					],
+					"text-offset": [0, -0.2],
+					"text-anchor": "center",
+					"text-size": 14,
+				},
+			});
 
 			if (pageHeight > 700 && pageWidth > 800) {
 				map.zoomTo(10.5);
 			}
-
-
 		});
 	});
 </script>
 
 <svelte:window bind:innerHeight={pageHeight} bind:innerWidth={pageWidth} />
 
+<!-- Svelte if else logic for displaying which map and legend -->
+{#if layer === "old"}
 <div id="top-bar">
-	<p>Zoning for Multi-Tenant Houses</p>
+	<p>{layername} Zoning for Multi-Tenant Houses</p>
 </div>
 
 <div id={"map" + layername} class="map" style="height: {mapHeight}px"></div>
 
 <div style="position: relative">
-	<div id="rooms-legend" class="legend">
+	<div id={"legend-" + layername} class="legend">
 		<h4>Max Rooms</h4>
 		<div><span style="background-color: #feebe2"></span>6</div>
 		<div><span style="background-color: #fbb4b9"></span>10</div>
@@ -237,6 +323,47 @@
 		<div><span style="background-color: #ae017e"></span>25</div>
 	</div>
 </div>
+
+{:else if layer === "new"}
+<div id="top-bar">
+	<p>{layername} Zoning for Multi-Tenant Houses</p>
+</div>
+
+<div id={"map" + layername} class="map" style="height: {mapHeight}px"></div>
+
+<div style="position: relative">
+	<div id={"legend-" + layername} class="legend">
+		<h4>Max Rooms</h4>
+		<div><span style="background-color: #feebe2"></span>6</div>
+		<div><span style="background-color: #f768a1"></span>12</div>
+		<div><span style="background-color: #ae017e"></span>25</div>
+	</div>
+</div>
+
+{:else}
+<div id="top-bar">
+	<p>{layername} in Zoning for Multi-Tenant Houses</p>
+</div>
+
+<div id={"map" + layername} class="map" style="height: {mapHeight}px"></div>
+
+<div style="position: relative">
+	<div id={"legend-" + "change"} class="legend">
+		<h4>Change in Max Rooms</h4>
+		<div><span style="background-color: #8e0152"></span>-19</div>
+		<div><span style="background-color: #c51b7d"></span>-6</div>
+		<div><span style="background-color: #de77ae"></span>-4</div>
+		<div><span style="background-color: #ffffcc"></span>0</div>
+		<div><span style="background-color: #d9f0a3"></span>2</div>
+		<div><span style="background-color: #addd8e"></span>6</div>
+		<div><span style="background-color: #78c679"></span>12</div>
+		<div><span style="background-color: #41ab5d"></span>13</div>
+		<div><span style="background-color: #238b45"></span>19</div>
+		<div><span style="background-color: #005a32"></span>25</div>
+	</div>
+</div>
+{/if}
+
 
 <style>
 	.map {
@@ -274,30 +401,30 @@
 	}
 
 	.legend {
-        background-color: #fff;
-        border-radius: 3px;
-        bottom: 25px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        font:
-            12px/20px 'Helvetica Neue',
-            Arial,
-            Helvetica,
-            sans-serif;
-        padding: 10px;
-        position: absolute;
-        right: 20px;
-        z-index: 1;
-    }
+		background-color: #fff;
+		border-radius: 3px;
+		bottom: 25px;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+		font:
+			12px/20px "Helvetica Neue",
+			Arial,
+			Helvetica,
+			sans-serif;
+		padding: 10px;
+		position: absolute;
+		right: 20px;
+		z-index: 1;
+	}
 
-    .legend h4 {
-        margin: 0 0 10px;
-    }
+	.legend h4 {
+		margin: 0 0 10px;
+	}
 
-    .legend div span {
-        /* border-radius: 50%; */
-        display: inline-block;
-        height: 10px;
-        margin-right: 5px;
-        width: 10px;
-    }
+	.legend div span {
+		/* border-radius: 50%; */
+		display: inline-block;
+		height: 10px;
+		margin-right: 5px;
+		width: 10px;
+	}
 </style>
