@@ -1,0 +1,7 @@
+permit group - residential
+dwelling units created - more than 1
+For Secondary Suites, permits include YES or YES ATTACHED to "includes secondary suite" column in main data sheet
+For Secondary Suites, permits include YES to "adding secondary suite"
+For Detached Suites, permits explicitly state YES DETACHED to "includes secondary suite"
+filter colour to highlight duplicate addresses
+data correct as of 13 June

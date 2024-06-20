@@ -1,0 +1,5 @@
+permits in [Secondary Suite] excel document include those that are indicated as SECONDARY SUITE for "Occupancy Type" column in main data sheet, or those that indicated that end residential unit count is greater than existing residential unit count
+permits in [Detached Suite] excel document include those that are indicated as DWELLING - BACKYARD SUITE for "Type of Structure" column in main data sheet
+highlighted pink are those that house no is already not filled correctly in the main data sheet, unable to figure out the original house number
+data correct as of June 17, 2024
+no coordinates provided in the original data sheet given by the city
