@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Former Municipality Boundaries Centroids",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "_id": 1, "AREA_ID": 49884.0, "DATE_EFFEC": null, "AREA_ATTR_": 49884.0, "PARENT_ARE": 49886.0, "AREA_SHORT": "14", "AREA_LONG_": "14", "AREA_NAME": "YORK", "AREA_DESC": "YORK", "OBJECTID": 11093905 }, "geometry": { "type": "Point", "coordinates": [ -79.47756, 43.685072 ] } },
+{ "type": "Feature", "properties": { "_id": 2, "AREA_ID": 643704.0, "DATE_EFFEC": null, "AREA_ATTR_": 643704.0, "PARENT_ARE": 49886.0, "AREA_SHORT": "08", "AREA_LONG_": "08", "AREA_NAME": "NORTH YORK", "AREA_DESC": "NORTH YORK", "OBJECTID": 11678465 }, "geometry": { "type": "Point", "coordinates": [ -79.430505, 43.751853 ] } },
+{ "type": "Feature", "properties": { "_id": 3, "AREA_ID": 49887.0, "DATE_EFFEC": null, "AREA_ATTR_": 49887.0, "PARENT_ARE": 49886.0, "AREA_SHORT": "06", "AREA_LONG_": "06", "AREA_NAME": "EAST YORK", "AREA_DESC": "EAST YORK", "OBJECTID": 12266929 }, "geometry": { "type": "Point", "coordinates": [ -79.337049, 43.700614 ] } },
+{ "type": "Feature", "properties": { "_id": 4, "AREA_ID": 435732.99999999994, "DATE_EFFEC": null, "AREA_ATTR_": 435732.99999999994, "PARENT_ARE": 49886.0, "AREA_SHORT": "01", "AREA_LONG_": "01", "AREA_NAME": "SCARBOROUGH", "AREA_DESC": "SCARBOROUGH", "OBJECTID": 12852625 }, "geometry": { "type": "Point", "coordinates": [ -79.236971, 43.778083 ] } },
+{ "type": "Feature", "properties": { "_id": 5, "AREA_ID": 1094349.0, "DATE_EFFEC": null, "AREA_ATTR_": 1094349.0, "PARENT_ARE": 49886.0, "AREA_SHORT": "19", "AREA_LONG_": "19", "AREA_NAME": "ETOBICOKE", "AREA_DESC": "ETOBICOKE", "OBJECTID": 14035025 }, "geometry": { "type": "Point", "coordinates": [ -79.554866, 43.671978 ] } },
+{ "type": "Feature", "properties": { "_id": 6, "AREA_ID": 760645.0, "DATE_EFFEC": null, "AREA_ATTR_": 760645.0, "PARENT_ARE": 49886.0, "AREA_SHORT": "04", "AREA_LONG_": "04", "AREA_NAME": "TORONTO", "AREA_DESC": "TORONTO", "OBJECTID": 14035041 }, "geometry": { "type": "Point", "coordinates": [ -79.391835, 43.665818 ] } }
+]
+}
