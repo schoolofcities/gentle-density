@@ -71,7 +71,7 @@
 		{#each years as year}
 
 			<rect 
-				id="bar" 
+				id="bar"
 				x="{xScale(year)}" 
 				y="{yScale(yearCountsLostUnits[year])}" 
 				height="{yScale(0) - yScale(yearCountsLostUnits[year])}" 
