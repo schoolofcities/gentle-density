@@ -1,6 +1,9 @@
 data/toronto-only/building-permits
 data/toronto-only/video
 data/toronto-only/site-maps/data
+data/stats-can-building-permits-survey/input-data
 node_modules
 .svelte-kit
+.ipynb_checkpoints
+.DS_store
 
