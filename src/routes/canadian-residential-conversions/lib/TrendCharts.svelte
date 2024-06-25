@@ -31,14 +31,35 @@
 	$: console.log(summedData);
 
 	$: xScale = scaleTime()
-		.domain([parseDate("2018-01"),parseDate("2023-12")])
+		.domain([parseDate("2019-01"),parseDate("2023-12")])
 		.range([6,144]);
 
 	$: console.log(xScale(parseDate("2023-03")))
 
 	let yScale;
 
-	let maxValue;
+
+	
+	$: summedData.forEach((d) => {
+		const yearlyData = {};
+
+		// Iterate over each data point
+		d.sums.forEach((e) => {
+			const date = new Date(e.date);
+			const year = date.getUTCFullYear();
+
+			// Update yearly sums and counts
+			if (!yearlyData[year]) {
+			yearlyData[year] = { sum: 0, count: 0 };
+			}
+			yearlyData[year].sum += e.sumValue;
+			yearlyData[year].count++;
+		});
+
+		// Save yearlyData within the data object
+		d.yearlyData = yearlyData;
+	});
+
 
 </script>
 
@@ -51,49 +72,6 @@
 
 			<svg height={145} width={145} id="svgChart">
 				
-				<text 
-					x="5"
-					y="{10}"
-					id="cityLabel"
-					text-anchor="start" 
-					font-size="15"
-				>{city.split(',')[0]}</text>
-				<line 
-					x1="5" 
-					y1="115" 
-					x2="5" 
-					y2="120" 
-					style="stroke:#1470ad;stroke-width:1;" 
-				/>
-				<line 
-					x1="144" 
-					y1="115" 
-					x2="144" 
-					y2="120" 
-					style="stroke:#1470ad;stroke-width:1;" 
-				/>
-				<line 
-					x1="5" 
-					y1="115" 
-					x2="145" 
-					y2="115" 
-					style="stroke:#1470ad;stroke-width:1;" 
-				/>
-				<text 
-					x="5"
-					y="132"
-					id="cityLabel"
-					text-anchor="start" 
-					font-size="15"
-				>01/18</text>
-				<text 
-					x="145"
-					y="132"
-					id="cityLabel"
-					text-anchor="end" 
-					font-size="15"
-				>12/23</text>
-
 				{#each summedData as d}
 
 					{#if (city === d.GEO)}
@@ -112,20 +90,93 @@
 								y1="{yScale(c.sumValue)}" 
 								x2="{xScale(c.date)}" 
 								y2="{115}" 
-								style="stroke:#F1C500;stroke-width:1;" 
+								style="stroke:#F1C500; stroke-width:3; opacity: 0.75" 
 							/>
-							<circle 
-								r="1.5" 
+							<!-- <circle 
+								r="1" 
 								cx="{xScale(c.date)}" 
 								cy="{yScale(c.sumValue)}" 
 								fill="#ab1269" 
-							/>
+							/> -->
 
 						{/each}
+
+						{#each ["2019", "2020", "2021", "2022", "2023"] as y} 
+
+							<line
+								x1="{xScale(parseDate(y + "-01"))}" 
+								y1="{yScale(d.yearlyData[y].sum / d.yearlyData[y].count)}" 
+								x2="{xScale(parseDate(y + "-12"))}" 
+								y2="{yScale(d.yearlyData[y].sum / d.yearlyData[y].count)}" 
+								style="stroke: #ab1269; stroke-width: 2;" 
+							/>
+
+							<text
+								x="{xScale(parseDate(y + "-01")) + 27.6 / 2}" 
+								y="{yScale(d.yearlyData[y].sum / d.yearlyData[y].count) - 2}" 
+								text-anchor="middle" 
+								id="avgLabel"
+								font-size="12"
+							>{Math.round(d.yearlyData[y].sum / d.yearlyData[y].count)}</text>
+
+
+						{/each}
+				
 
 					{/if}
 
 				{/each}
+
+				<text 
+					x="5"
+					y="{10}"
+					id="cityLabel"
+					text-anchor="start" 
+					font-size="15"
+				>{city.split(',')[0]}</text>
+			
+				{#each [0,1,2,3,4,5] as l}
+
+					<line 
+						x1="{6 + l * 27.6}" 
+						y1="115" 
+						x2="{6 + l * 27.6}" 
+						y2="120" 
+						style="stroke:#1470ad;stroke-width:1;" 
+					/>
+
+				{/each}
+
+				{#each [19,20,21,22,23] as y, i}
+
+					<text 
+						x="{6 + 14 + i * 27.6}"
+						y="127"
+						id="cityLabel"
+						text-anchor="middle" 
+						font-size="15"
+					>{y}</text>
+
+				{/each}
+
+				
+				
+<!-- 
+				<line 
+					x1="5" 
+					y1="115" 
+					x2="145" 
+					y2="115" 
+					style="stroke:#1470ad;stroke-width:1;" 
+				/>
+				<text 
+					x="5"
+					y="132"
+					id="cityLabel"
+					text-anchor="start" 
+					font-size="15"
+				>01/18</text>
+				 -->
 				
 			</svg>
 
@@ -163,6 +214,10 @@
 
 	#cityLabel {
 		fill: var(--brandDarkBlue);
+	}
+
+	#avgLabel {
+		fill: var(--brandRed);
 	}
 
 </style>

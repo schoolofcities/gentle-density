@@ -17,6 +17,7 @@
             const csvData = await response.text();
             data = csvParse(csvData);
 			data = data.filter((d) => !d.REF_DATE.includes("2024"));
+			data = data.filter((d) => !d.REF_DATE.includes("2018"));
 			data.forEach((d) => {
 				d.VALUE = parseFloat(d.VALUE);
 			});
@@ -118,7 +119,7 @@
 				Tracking Residential Conversions Across Canada
 			</h1>
 			<h2>
-				Exploring Building Permit Survey Data (2018 to 2023)
+				Exploring Building Permit Survey Data (2019 to 2023)
 			</h2>
 			<h2>
 				
@@ -162,6 +163,12 @@
 			<p>
 				The chart above gives a sense of overall totals during this period, it's pretty clear that the cities at the top are simply those with more people and housing overall. Let's try to normalize by population, and rank cities by how they're doing at 
 			</p>
+
+		</div>
+
+		<div class="text">
+
+			<h3>New dwellings from residential conversions by month</h3>
 
 		</div>
 
