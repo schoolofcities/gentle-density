@@ -119,7 +119,6 @@
 								font-size="12"
 							>{Math.round(d.yearlyData[y].sum / d.yearlyData[y].count)}</text>
 
-
 						{/each}
 				
 
@@ -129,7 +128,7 @@
 
 				<text 
 					x="5"
-					y="{10}"
+					y="{20}"
 					id="cityLabel"
 					text-anchor="start" 
 					font-size="15"
@@ -159,25 +158,7 @@
 
 				{/each}
 
-				
-				
-<!-- 
-				<line 
-					x1="5" 
-					y1="115" 
-					x2="145" 
-					y2="115" 
-					style="stroke:#1470ad;stroke-width:1;" 
-				/>
-				<text 
-					x="5"
-					y="132"
-					id="cityLabel"
-					text-anchor="start" 
-					font-size="15"
-				>01/18</text>
-				 -->
-				
+
 			</svg>
 
 		</div>

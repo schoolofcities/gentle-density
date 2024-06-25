@@ -170,6 +170,26 @@
 
 			<h3>New dwellings from residential conversions by month</h3>
 
+			<p style="font-size: 15px">
+				<svg height={15} width={28} id="svgChart">
+					<text
+						x="14" 
+						y="11" 
+						text-anchor="middle" 
+						font-size="12"
+						style="fill: #ab1269;"
+					>42</text>
+					<line
+						x1="0" 
+						y1="14"
+						x2="28" 
+						y2="14" 
+						style="stroke: #ab1269; stroke-width: 3;" 
+					/>
+				</svg>
+				Monthly averages for each year
+			</p>
+
 		</div>
 
 		<TrendCharts data={data} cities={cities}/>
