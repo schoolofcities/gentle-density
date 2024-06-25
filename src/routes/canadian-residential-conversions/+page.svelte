@@ -4,6 +4,7 @@
 
 	import Top from "../../lib/TopSofC.svelte";
 	import BarTotal from "./lib/BarTotal.svelte";
+	import TrendCharts from "./lib/TrendCharts.svelte";
 
 	import { onMount } from 'svelte';
 	import { csvParse } from 'd3-dsv';
@@ -163,6 +164,8 @@
 			</p>
 
 		</div>
+
+		<TrendCharts data={data} cities={cities}/>
 
 	</div>
 
