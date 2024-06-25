@@ -194,6 +194,8 @@ b {
 
 .text h3 {
     font-family: UbuntuMonoBold;
+    font-size: 23px;
+    text-decoration: underline;
 }
 
 

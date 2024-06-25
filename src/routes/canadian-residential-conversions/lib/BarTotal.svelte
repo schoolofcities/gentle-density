@@ -63,28 +63,34 @@
 		};
 	}).sort((a, b) => b.conv - a.conv);
 
-	$: console.log(result);
 
 
 	let chartWidth;
-	let chartHeight = 25 + 40 * 25
+	let chartHeight = 300 + 40 * 25
 
-	$: console.log(chartWidth);
 
-	let maxXvalue = 100000;
-	// $: maxXvalue = Math.max(...result.map(entry => entry.conv));
-	
+	// let maxXvalue = 100000;
+	// // $: maxXvalue = Math.max(...result.map(entry => entry.conv));
+
+	let gridLines;
+	let gridLabels;
 	let xScale;
 	$: if(selectedScale === "Log Scale") {
 		xScale = scaleLog()
-		.domain([100, 150000])
+		.domain([100, 65000])
 		.range([0, chartWidth]);
+		gridLines = [500,1000,5000,10000,50000];
 	} else {
 		xScale = scaleLinear()
-		.domain([1, 45000])
+		.domain([1, 42000])
 		.range([0, chartWidth]);
+		gridLines = [10000,20000,30000,40000];
 	}
 	
+
+	function kFormatter(num) {
+		return num > 999 ? num % 1000 === 0 ? (num / 1000).toFixed(0) + 'k' : (num / 1000).toFixed(1) + 'k' : num;
+	}
 
 
 </script>
@@ -100,8 +106,77 @@
 	{/each}
 </div> -->
 
-<h3>New dwellings from building conversions (2018 - 2023)</h3>
+<h3>Total and percent of new dwellings from building conversions</h3>
 
+<!-- <p>Percent of all new dwelling units that are from conversions</p> -->
+
+<svg id="legend" height="50" width={chartWidth}>
+
+	<text 
+		x="0"
+		y="12"
+		id="labelBar"
+		text-anchor="start" 
+		font-size="16"
+	>% of new dwelling units from conversions</text>
+
+	<rect 
+		id="legendBar"
+		x="{0}" 
+		y="{20}" 
+		height="{10}" 
+		width="{99}"
+		fill="#F1C500"
+	/>
+
+	<rect 
+		id="legendBar"
+		x="{101}" 
+		y="{20}" 
+		height="{10}" 
+		width="{99}"
+		fill="#ce6c35"
+	/>
+
+	<rect 
+		id="legendBar"
+		x="{202}" 
+		y="{20}" 
+		height="{10}" 
+		width="{99}"
+		fill="#ab1269"
+	/>
+
+	<text 
+		x="100"
+		y="44"
+		id="labelBar"
+		text-anchor="middle" 
+		font-size="16"
+	>5%</text>
+
+	<text 
+		x="200"
+		y="44"
+		id="labelBar"
+		text-anchor="middle" 
+		font-size="16"
+	>10%</text>
+
+
+</svg>
+
+<svg id="legend" height="15" width={chartWidth}>
+
+	<text 
+		x="0"
+		y="12"
+		id="labelBar"
+		text-anchor="start" 
+		font-size="16"
+	>Number of new dwelling units from conversions</text>
+
+</svg>
 
 <div class="options-container">
 	{#each selectScaleOptions as option}
@@ -113,22 +188,29 @@
 	{/each}
 </div>
 
-<p>% of all new dwelling units that are from conversions</p>
 
 
 <div class="chart-wrapper" bind:offsetWidth={chartWidth}>
 	
 	<svg height={chartHeight} width={chartWidth} id="svgChart">
 	
-		{#each [1,500,1000,5000,10000,50000] as l}
+		{#each gridLines as l}
 
 			<line 
 				x1="{xScale(l)}" 
-				y1="5" 
+				y1="25" 
 				x2="{xScale(l)}" 
 				y2="{chartHeight}" 
 				style="stroke:#8EB6DC;stroke-width:1;opacity:0.5" 
 			/>
+
+			<text 
+				x="{xScale(l)}"
+				y="20"
+				id="labelBar"
+				text-anchor="middle" 
+				font-size="16"
+			>{kFormatter(l)}</text>
 
 		{/each}
 
@@ -136,7 +218,7 @@
 
 			<text 
 				x="0"
-				y="{i * 32 + 22}"
+				y="{i * 32 + 43}"
 				id="labelBar"
 				text-anchor="start" 
 				font-size="16"
@@ -145,7 +227,7 @@
 			<rect 
 				id="bar"
 				x="{0}" 
-				y="{i * 32 + 25}" 
+				y="{i * 32 + 45}" 
 				height="{7}" 
 				width="{xScale(city.conv)}"
 				fill="{city.colour}"
@@ -160,11 +242,16 @@
 
 <style>
 
+	#legend {
+		padding-left: 5px;
+	}
+
 	.options-container {
 		display: grid;
 		max-width: 310px;
 		grid-template-columns: repeat(2, 1fr); 
 		gap: 0px;
+		font-size: 14px;
 	}
 
 	.option-not-selected {

@@ -143,12 +143,15 @@
 				Summary of Stats Can survey data
 			</p>
 			<p>
-				Here, I take a look at the 5 years of this data. Overall across Canada there were 107,800 new dwelling units created via conversions. This is about 7% of all new residential dwelling units created during this period, based on this building permit data.
+				Here, I take a look at the 5 years of this data. 
 			</p>
 			<p>
 				Of the new units created via building conversions. YY from single-to-multiple dwellings, YY from multiple-to-multiple conversions, and YY previous non-residential buildings converted to residential units. The chart below shows, by urban region, the total number of new dwelling units created from these types of conversions.
 			</p>
-			
+			<p>
+				Overall across Canada there were 107,800 new dwelling units created via conversions. This is about 7% of all new residential dwelling units created during this period, based on this building permit data. Here's a distribution, where each square is an urban region.
+			</p>
+
 			<BarTotal data={data} cities={cities}/>
 
 		</div>
