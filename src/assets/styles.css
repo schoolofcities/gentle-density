@@ -133,7 +133,7 @@ b {
     margin: 0 auto;
     font-family: UbuntuMonoBold;
     /* font-weight: 700; */
-    max-width: 430px;
+    max-width: 470px;
     font-size: 45px;
     color: var(--brandDarkBlue);
     padding: 0px;
@@ -185,8 +185,8 @@ b {
     color: var(--brandDarkBlue);
     font-family:  UbuntuMonoRegular;
     font-weight: 400px;
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 26px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
