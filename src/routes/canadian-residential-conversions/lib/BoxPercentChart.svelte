@@ -67,7 +67,7 @@
 
 		<div class="chart">
 
-			<svg height={145} width={145} id="svgChart">
+			<svg height={145} width={126} id="svgChart">
 
 				<text 
 					x="5"
@@ -133,7 +133,7 @@
 		min-width: 300px;
 		min-height: 150px;
 		width: 100%;
-		max-width: 1300px;
+		max-width: 1200px;
 		margin-bottom: 50px;
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(146px, 1fr));
@@ -147,18 +147,16 @@
 	}
 
 	.chart {
-		width: 145px;
+		width: 127px;
 		height: 145px;
 		margin-bottom: 7px;
 		overflow: hidden;
 	}
 
+	
+
 	#cityLabel {
 		fill: var(--brandDarkBlue);
-	}
-
-	#avgLabel {
-		fill: var(--brandRed);
 	}
 
 </style>

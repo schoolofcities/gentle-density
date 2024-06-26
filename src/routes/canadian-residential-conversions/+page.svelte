@@ -33,8 +33,9 @@
     });
 
 	let cities = [
+		"Abbotsford-Mission, British Columbia",
 		"Barrie, Ontario",
-		"Belleville - Quinte West, Ontario",
+		"Belleville-Quinte West, Ontario",
 		"Brantford, Ontario",
 		"Calgary, Alberta",
 		"Chilliwack, British Columbia",
@@ -55,8 +56,7 @@
 		"Montréal, Quebec",
 		"Nanaimo, British Columbia",
 		"Oshawa, Ontario",
-		"Ottawa-Gatineau, Ontario part",
-		"Ottawa-Gatineau, Québec part",
+		"Ottawa-Gatineau, Ontario-Quebec",
 		"Peterborough, Ontario",
 		"Red Deer, Alberta",
 		"Regina, Saskatchewan",
@@ -141,7 +141,10 @@
 		<div class="text">
 
 			<p>
-				Canada needs housing. Sprawl is generally bad. Intensificaiton better. One form, on the lower end of the density scale, is coversions and expansion of existing housing to hold more dwelling units. This can take the form of a  single-family home adding a basement apartment or a du-plex undergoing additions to be converted into a tri-plex or four-plex, or a previously non-residential building being converted into residential units. Using much of the existing built/construction material to create new units.
+				Canada needs housing. Sprawl is generally bad. Intensificaiton better. One form, on the lower end of the density scale, is coversions and expansion of existing housing to hold more dwelling units. 
+			</p>
+			<p>
+				This can take the form of a  single-family home adding a basement apartment or a du-plex undergoing additions to be converted into a tri-plex or four-plex, or a previously non-residential building being converted into residential units. Using much of the existing built/construction material to create new units.
 			</p>
 			<p>
 				Summary of Stats Can survey data
@@ -161,10 +164,6 @@
 		</div>
 
 		<div class="text">
-
-			<p>
-				The chart above gives a sense of overall totals during this period, it's pretty clear that the cities at the top are simply those with more people and housing overall. Let's try to normalize by population, and rank cities by how they're doing at 
-			</p>
 
 			<h3>New dwellings from building conversions, 01/2019 to 12/2023</h3>
 
@@ -226,33 +225,42 @@
 
 		<div class="text">
 
-			<p>
-				Some more text of descriptive results 
-			</p>
-
 			<h3>Proportion of new dwellings by type of building conversion</h3>
 
+			<div style="margin-top: -15px">
+				<svg height="25" width="300">
+					<text 
+						x="0"
+						y="12"
+						id="years" 
+						text-anchor="start" 
+						font-size="16"
+					>01/2018 to 12/2023 (5 years total)</text>
+				</svg>
+			</div>
+
 			<p style="font-size: 15px; margin-bottom: -25px">
-				<svg height={100} width={340}>
+				
+				<svg height={100} width={400}>
 					
 					<text
 						x="0" 
-						y="10" 
+						y="12" 
 						text-anchor="start" 
 						font-size="16"
 						style="fill: #1470ad;"
-					>One square = 1% of new dwellings 2019-2023</text>
+					>One square = 1% of new dwellings from conversions</text>
 
 					<rect 
 						x="0" 
-						y="25" 
+						y="27" 
 						width="9" 
 						height="9" 
 						fill="#1470ad" 
 					/>
 					<text
 						x="15" 
-						y="35" 
+						y="37" 
 						text-anchor="start" 
 						font-size="16"
 						style="fill: #1470ad;"
@@ -260,14 +268,14 @@
 
 					<rect 
 						x="0" 
-						y="50" 
+						y="52" 
 						width="9" 
 						height="9" 
 						fill="#F1C500" 
 					/>
 					<text
 						x="15" 
-						y="60" 
+						y="62" 
 						text-anchor="start" 
 						font-size="16"
 						style="fill: #1470ad;"
@@ -275,14 +283,14 @@
 
 					<rect 
 						x="0" 
-						y="75" 
+						y="77" 
 						width="9" 
 						height="9" 
 						fill="#ab1269" 
 					/>
 					<text
 						x="15" 
-						y="85" 
+						y="87" 
 						text-anchor="start" 
 						font-size="16"
 						style="fill: #1470ad;"
@@ -304,5 +312,9 @@
 
 
 <style>
+
+	#years {
+		fill: var(--brandDarkBlue);
+	}
 
 </style>

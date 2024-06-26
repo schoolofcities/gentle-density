@@ -82,6 +82,17 @@
 
 <h3>Total and percent of new dwellings from building conversions</h3>
 
+<svg id="years" height="35" width={chartWidth}>
+
+	<text 
+		x="0"
+		y="12"
+		id="labelBar"
+		text-anchor="start" 
+		font-size="16"
+	>01/2018 to 12/2023 (5 years total)</text>
+</svg>
+
 <svg id="legend" height="50" width={chartWidth}>
 
 	<text 
@@ -90,12 +101,12 @@
 		id="labelBar"
 		text-anchor="start" 
 		font-size="16"
-	>% of new dwelling units from conversions</text>
+	>% of all new dwelling units from conversions</text>
 
 	<rect 
 		id="legendBar"
 		x="{0}" 
-		y="{20}" 
+		y="{22}" 
 		height="{10}" 
 		width="{99}"
 		fill="#F1C500"
@@ -104,7 +115,7 @@
 	<rect 
 		id="legendBar"
 		x="{101}" 
-		y="{20}" 
+		y="{22}" 
 		height="{10}" 
 		width="{99}"
 		fill="#ce6c35"
@@ -113,7 +124,7 @@
 	<rect 
 		id="legendBar"
 		x="{202}" 
-		y="{20}" 
+		y="{22}" 
 		height="{10}" 
 		width="{99}"
 		fill="#ab1269"
@@ -214,8 +225,12 @@
 
 <style>
 
+	#years {
+		margin-top: -15px;
+	}
+
 	#legend {
-		padding-left: 5px;
+		padding-left: 0px;
 	}
 
 	.options-container {
