@@ -121,7 +121,7 @@
 				Tracking Residential Conversions Across Canada
 			</h1>
 			<h2>
-				Exploring Building Permit Survey Data (2019 to 2023)
+				An Exploration Building Permit Survey Data (2019 to 2023)
 			</h2>
 			<h2>
 				

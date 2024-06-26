@@ -107,7 +107,7 @@
 		id="legendBar"
 		x="{0}" 
 		y="{22}" 
-		height="{10}" 
+		height="{8}" 
 		width="{99}"
 		fill="#F1C500"
 	/>
@@ -116,7 +116,7 @@
 		id="legendBar"
 		x="{101}" 
 		y="{22}" 
-		height="{10}" 
+		height="{8}" 
 		width="{99}"
 		fill="#ce6c35"
 	/>
@@ -125,7 +125,7 @@
 		id="legendBar"
 		x="{202}" 
 		y="{22}" 
-		height="{10}" 
+		height="{8}" 
 		width="{99}"
 		fill="#ab1269"
 	/>
@@ -210,8 +210,8 @@
 			<rect 
 				id="bar"
 				x="{0}" 
-				y="{i * 32 + 45}" 
-				height="{7}" 
+				y="{i * 32 + 47}" 
+				height="{8}" 
 				width="{xScale(city.conv)}"
 				fill="{city.colour}"
 			/>
