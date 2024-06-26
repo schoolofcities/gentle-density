@@ -198,11 +198,15 @@
 		width: 100%;
 		max-width: 1300px;
 		margin-bottom: 50px;
-		/* margin-left: 5px;
-		margin-right: 5px; */
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(146px, 1fr));
 		gap: 2px;
+	}
+
+	@media only screen and (max-width: 440px) {
+		#chartWrapper {
+			margin-left: 25px;
+		}
 	}
 
 	.chart {
@@ -210,8 +214,6 @@
 		height: 145px;
 		margin-bottom: 7px;
 		overflow: hidden;
-		/* background-color: white; */
-		/* border: solid 1px var(--brandLightBlue); */
 	}
 
 	#cityLabel {

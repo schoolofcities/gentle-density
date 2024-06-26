@@ -166,9 +166,7 @@
 				The chart above gives a sense of overall totals during this period, it's pretty clear that the cities at the top are simply those with more people and housing overall. Let's try to normalize by population, and rank cities by how they're doing at 
 			</p>
 
-
-
-			<h3>New dwellings from building conversions 01/2019 to 12/2023</h3>
+			<h3>New dwellings from building conversions, 01/2019 to 12/2023</h3>
 
 			<p style="font-size: 15px">
 				<svg height={15} width={28}>
@@ -232,7 +230,66 @@
 				Some more text of descriptive results 
 			</p>
 
-			<h3>Proportion of different types of conversions</h3>
+			<h3>Proportion of new dwellings by type of building conversion</h3>
+
+			<p style="font-size: 15px; margin-bottom: -25px">
+				<svg height={100} width={340}>
+					
+					<text
+						x="0" 
+						y="10" 
+						text-anchor="start" 
+						font-size="16"
+						style="fill: #1470ad;"
+					>One square = 1% of new dwellings 2019-2023</text>
+
+					<rect 
+						x="0" 
+						y="25" 
+						width="9" 
+						height="9" 
+						fill="#1470ad" 
+					/>
+					<text
+						x="15" 
+						y="35" 
+						text-anchor="start" 
+						font-size="16"
+						style="fill: #1470ad;"
+					>Non-residential to residential</text>
+
+					<rect 
+						x="0" 
+						y="50" 
+						width="9" 
+						height="9" 
+						fill="#F1C500" 
+					/>
+					<text
+						x="15" 
+						y="60" 
+						text-anchor="start" 
+						font-size="16"
+						style="fill: #1470ad;"
+					>Single dwelling to multiple dwellings</text>
+
+					<rect 
+						x="0" 
+						y="75" 
+						width="9" 
+						height="9" 
+						fill="#ab1269" 
+					/>
+					<text
+						x="15" 
+						y="85" 
+						text-anchor="start" 
+						font-size="16"
+						style="fill: #1470ad;"
+					>Multiple dwellings to multiple dwellings</text>
+					
+				</svg>
+			</p>
 
 		</div>
 
