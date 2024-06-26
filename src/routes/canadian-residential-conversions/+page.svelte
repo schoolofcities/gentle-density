@@ -5,6 +5,8 @@
 	import Top from "../../lib/TopSofC.svelte";
 	import BarTotal from "./lib/BarTotal.svelte";
 	import TrendCharts from "./lib/TrendCharts.svelte";
+	import BoxPercentChart from "./lib/BoxPercentChart.svelte";
+
 
 	import { onMount } from 'svelte';
 	import { csvParse } from 'd3-dsv';
@@ -164,21 +166,19 @@
 				The chart above gives a sense of overall totals during this period, it's pretty clear that the cities at the top are simply those with more people and housing overall. Let's try to normalize by population, and rank cities by how they're doing at 
 			</p>
 
-		</div>
 
-		<div class="text">
 
-			<h3>New dwellings from residential conversions by month</h3>
+			<h3>New dwellings from building conversions 01/2019 to 12/2023</h3>
 
 			<p style="font-size: 15px">
-				<svg height={15} width={28} id="svgChart">
+				<svg height={15} width={28}>
 					<text
 						x="14" 
 						y="11" 
 						text-anchor="middle" 
 						font-size="12"
 						style="fill: #ab1269;"
-					>42</text>
+					>100</text>
 					<line
 						x1="0" 
 						y1="14"
@@ -187,12 +187,56 @@
 						style="stroke: #ab1269; stroke-width: 3;" 
 					/>
 				</svg>
-				Monthly averages for each year
+				Yearly totals
+				<svg height={25} width={25}>
+					<line
+						x1="{5}" 
+						y1="{20}" 
+						x2="{5}" 
+						y2="{25}" 
+						style="stroke:#F1C500; stroke-width:5; opacity: 0.42" 
+					/>
+					<line 
+						x1="{10}" 
+						y1="{15}" 
+						x2="{10}" 
+						y2="{25}" 
+						style="stroke:#F1C500; stroke-width:5; opacity: 0.42" 
+					/>
+					<line 
+						x1="{15}" 
+						y1="{5}" 
+						x2="{15}" 
+						y2="{25}" 
+						style="stroke:#F1C500; stroke-width:5; opacity: 0.42" 
+					/>
+					<line 
+						x1="{20}" 
+						y1="{10}" 
+						x2="{20}" 
+						y2="{25}" 
+						style="stroke:#F1C500; stroke-width:5; opacity: 0.42" 
+					/>
+					
+				</svg>
+				Monthly trends
 			</p>
 
 		</div>
 
 		<TrendCharts data={data} cities={cities}/>
+
+		<div class="text">
+
+			<p>
+				Some more text of descriptive results 
+			</p>
+
+			<h3>Proportion of different types of conversions</h3>
+
+		</div>
+
+		<BoxPercentChart data={data} cities={cities}/>
 
 	</div>
 

@@ -6,21 +6,6 @@
 	import {group, sum} from 'd3-array';
 	import {scaleLinear, scaleLog} from 'd3-scale';
 
-	// let selected = "All Conversions"
-
-	// let selectOptions = [
-	// 	"All Conversions",
-	// 	"Non-Residential to Residential",
-	// 	"Single Dwelling to Multiple",
-	// 	"Multiple to Multiple"
-	// ]
-
-	// function updateSelected(option) {
-	// 	selected = option;
-	// }
-
-	// $: console.log(selected);
-
 
 	let selectedScale = "Log Scale";
 	let selectScaleOptions = ["Linear Scale", "Log Scale"];
@@ -69,9 +54,6 @@
 	let chartHeight = 300 + 40 * 25
 
 
-	// let maxXvalue = 100000;
-	// // $: maxXvalue = Math.max(...result.map(entry => entry.conv));
-
 	let gridLines;
 	let gridLabels;
 	let xScale;
@@ -92,25 +74,13 @@
 		return num > 999 ? num % 1000 === 0 ? (num / 1000).toFixed(0) + 'k' : (num / 1000).toFixed(1) + 'k' : num;
 	}
 
-	$: console.log(xScale(126))
-
 
 </script>
 
 
-<!-- <div class="options-container">
-	{#each selectOptions as option}
-		<div 
-			class="{option === selected ? 'option-selected' : 'option-not-selected'}"
-			on:click={() => updateSelected(option)} >
-			{option}
-		</div>
-	{/each}
-</div> -->
+
 
 <h3>Total and percent of new dwellings from building conversions</h3>
-
-<!-- <p>Percent of all new dwelling units that are from conversions</p> -->
 
 <svg id="legend" height="50" width={chartWidth}>
 

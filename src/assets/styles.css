@@ -19,7 +19,7 @@
     font-family: UbuntuMonoRegular, sans-serif;
     --brandDarkBlue: #1470ad;
     --brandLightBlue: #8EB6DC;
-    --brandRed: #ab1269; 
+    --brandRed: #ab1269;
     --brandYellow: #F1C500;
 
     --range-slider:          #8EB6DC; /* slider main background color */
@@ -193,8 +193,9 @@ b {
 }
 
 .text h3 {
-    font-family: UbuntuMonoBold;
-    font-size: 23px;
+    font-family: UbuntuMonoRegular;
+    font-size: 22px;
+    color: #002b8f;
     text-decoration: underline;
 }
 
