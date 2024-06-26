@@ -153,8 +153,6 @@
 		overflow: hidden;
 	}
 
-	
-
 	#cityLabel {
 		fill: var(--brandDarkBlue);
 	}

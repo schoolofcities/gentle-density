@@ -33,13 +33,14 @@
     });
 
 	let cities = [
+		"All Canada",
 		"Abbotsford-Mission, British Columbia",
 		"Barrie, Ontario",
 		"Belleville-Quinte West, Ontario",
 		"Brantford, Ontario",
 		"Calgary, Alberta",
 		"Chilliwack, British Columbia",
-		"Drummondville, Quebec",
+		// "Drummondville, Quebec",
 		"Edmonton, Alberta",
 		"Fredericton, New Brunswick",
 		"Greater Sudbury, Ontario",
@@ -57,8 +58,9 @@
 		"Nanaimo, British Columbia",
 		"Oshawa, Ontario",
 		"Ottawa-Gatineau, Ontario-Quebec",
+		"Québec, Quebec",
 		"Peterborough, Ontario",
-		"Red Deer, Alberta",
+		// "Red Deer, Alberta",
 		"Regina, Saskatchewan",
 		"Saguenay, Quebec",
 		"Saint John, New Brunswick",
@@ -114,7 +116,7 @@
 
 <main>
 
-	<div class="blueprint" style="background-image: url('../gentle-density/blueprint-background-loss.png');">
+	<div class="blueprint" style="background-image: url('../gentle-density/blueprint-background-conv.png');">
 
 		<div class="title">
 			<h1>
@@ -156,7 +158,7 @@
 				Of the new units created via building conversions. YY from single-to-multiple dwellings, YY from multiple-to-multiple conversions, and YY previous non-residential buildings converted to residential units. The chart below shows, by urban region, the total number of new dwelling units created from these types of conversions.
 			</p>
 			<p>
-				Overall across Canada there were 107,800 new dwelling units created via conversions. This is about 7% of all new residential dwelling units created during this period, based on this building permit data. Here's a distribution, where each square is an urban region.
+				Overall across Canada there were 104,425 new dwelling units created via conversions. This is about 7% of all new residential dwelling units created during this period, based on the data recorded in the building permit survey. Here's a distribution, where each square is an urban region.
 			</p>
 
 			<BarTotal data={data} cities={cities}/>
@@ -235,7 +237,7 @@
 						id="years" 
 						text-anchor="start" 
 						font-size="16"
-					>01/2018 to 12/2023 (5 years total)</text>
+					>01/2019 to 12/2023 (5 years total)</text>
 				</svg>
 			</div>
 

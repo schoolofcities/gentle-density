@@ -6,7 +6,6 @@
 	import {group, sum} from 'd3-array';
 	import {scaleLinear, scaleLog} from 'd3-scale';
 
-
 	let selectedScale = "Log Scale";
 	let selectScaleOptions = ["Linear Scale", "Log Scale"];
 	function updateSelectedScale(option) {
@@ -24,7 +23,7 @@
 			sumValue: sum(records, (d) => d.VALUE),
 		})),
 	}));
-	$: summedData = summedData.filter((record) => cities.includes(record.GEO));
+	$: summedData = summedData.filter((record) => cities.slice(1).includes(record.GEO));
 	
 	$: result = summedData.map(d => {
 		const convSum = d.sums
@@ -90,7 +89,7 @@
 		id="labelBar"
 		text-anchor="start" 
 		font-size="16"
-	>01/2018 to 12/2023 (5 years total)</text>
+	>01/2019 to 12/2023 (5 years total)</text>
 </svg>
 
 <svg id="legend" height="50" width={chartWidth}>
@@ -205,7 +204,7 @@
 				id="labelBar"
 				text-anchor="start" 
 				font-size="16"
-			>{city.GEO.split(',')[0]} = {city.conv}</text>
+			>{city.GEO.split(',')[0]}: {city.conv}</text>
 
 			<rect 
 				id="bar"
