@@ -258,7 +258,7 @@
 						y="27" 
 						width="9" 
 						height="9" 
-						fill="#1470ad" 
+						fill="#3597CE" 
 					/>
 					<text
 						x="15" 
@@ -288,7 +288,7 @@
 						y="77" 
 						width="9" 
 						height="9" 
-						fill="#ab1269" 
+						fill="#ce6c35" 
 					/>
 					<text
 						x="15" 

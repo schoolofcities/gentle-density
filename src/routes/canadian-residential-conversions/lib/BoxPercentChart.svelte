@@ -89,7 +89,7 @@
 										y="{25 + boxOuterSize * r}" 
 										width="{boxInnerSize}" 
 										height="{boxInnerSize}" 
-										fill="#1470ad" 
+										fill="#3597CE" 
 									/>
 								{:else if (j + i*10 < d.PerNtoR + d.PerStoM)}
 									<rect 
@@ -105,7 +105,7 @@
 										y="{25 + boxOuterSize * r}" 
 										width="{boxInnerSize}" 
 										height="{boxInnerSize}" 
-										fill="#ab1269" 
+										fill="#ce6c35" 
 									/>
 								{/if}
 							{/each}
