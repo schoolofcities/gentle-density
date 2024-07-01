@@ -6,22 +6,6 @@
 	import {group, sum} from 'd3-array';
 	import {scaleLinear, scaleLog} from 'd3-scale';
 
-	// let selected = "All Conversions"
-
-	// let selectOptions = [
-	// 	"All Conversions",
-	// 	"Non-Residential to Residential",
-	// 	"Single Dwelling to Multiple",
-	// 	"Multiple to Multiple"
-	// ]
-
-	// function updateSelected(option) {
-	// 	selected = option;
-	// }
-
-	// $: console.log(selected);
-
-
 	let selectedScale = "Log Scale";
 	let selectScaleOptions = ["Linear Scale", "Log Scale"];
 	function updateSelectedScale(option) {
@@ -39,7 +23,7 @@
 			sumValue: sum(records, (d) => d.VALUE),
 		})),
 	}));
-	$: summedData = summedData.filter((record) => cities.includes(record.GEO));
+	$: summedData = summedData.filter((record) => cities.slice(1).includes(record.GEO));
 	
 	$: result = summedData.map(d => {
 		const convSum = d.sums
@@ -69,9 +53,6 @@
 	let chartHeight = 300 + 40 * 25
 
 
-	// let maxXvalue = 100000;
-	// // $: maxXvalue = Math.max(...result.map(entry => entry.conv));
-
 	let gridLines;
 	let gridLabels;
 	let xScale;
@@ -92,25 +73,24 @@
 		return num > 999 ? num % 1000 === 0 ? (num / 1000).toFixed(0) + 'k' : (num / 1000).toFixed(1) + 'k' : num;
 	}
 
-	$: console.log(xScale(126))
-
 
 </script>
 
 
-<!-- <div class="options-container">
-	{#each selectOptions as option}
-		<div 
-			class="{option === selected ? 'option-selected' : 'option-not-selected'}"
-			on:click={() => updateSelected(option)} >
-			{option}
-		</div>
-	{/each}
-</div> -->
+
 
 <h3>Total and percent of new dwellings from building conversions</h3>
 
-<!-- <p>Percent of all new dwelling units that are from conversions</p> -->
+<svg id="years" height="35" width={chartWidth}>
+
+	<text 
+		x="0"
+		y="12"
+		id="labelBar"
+		text-anchor="start" 
+		font-size="16"
+	>01/2019 to 12/2023 (5 years total)</text>
+</svg>
 
 <svg id="legend" height="50" width={chartWidth}>
 
@@ -120,13 +100,13 @@
 		id="labelBar"
 		text-anchor="start" 
 		font-size="16"
-	>% of new dwelling units from conversions</text>
+	>% of all new dwelling units from conversions</text>
 
 	<rect 
 		id="legendBar"
 		x="{0}" 
-		y="{20}" 
-		height="{10}" 
+		y="{22}" 
+		height="{8}" 
 		width="{99}"
 		fill="#F1C500"
 	/>
@@ -134,8 +114,8 @@
 	<rect 
 		id="legendBar"
 		x="{101}" 
-		y="{20}" 
-		height="{10}" 
+		y="{22}" 
+		height="{8}" 
 		width="{99}"
 		fill="#ce6c35"
 	/>
@@ -143,8 +123,8 @@
 	<rect 
 		id="legendBar"
 		x="{202}" 
-		y="{20}" 
-		height="{10}" 
+		y="{22}" 
+		height="{8}" 
 		width="{99}"
 		fill="#ab1269"
 	/>
@@ -224,13 +204,13 @@
 				id="labelBar"
 				text-anchor="start" 
 				font-size="16"
-			>{city.GEO.split(',')[0]} = {city.conv}</text>
+			>{city.GEO.split(',')[0]}: {city.conv}</text>
 
 			<rect 
 				id="bar"
 				x="{0}" 
-				y="{i * 32 + 45}" 
-				height="{7}" 
+				y="{i * 32 + 47}" 
+				height="{8}" 
 				width="{xScale(city.conv)}"
 				fill="{city.colour}"
 			/>
@@ -244,8 +224,12 @@
 
 <style>
 
+	#years {
+		margin-top: -15px;
+	}
+
 	#legend {
-		padding-left: 5px;
+		padding-left: 0px;
 	}
 
 	.options-container {
