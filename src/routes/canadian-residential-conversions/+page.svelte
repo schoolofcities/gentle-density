@@ -91,22 +91,22 @@
 	/>
 
 	<title>Residential Conversions Across Canada | School of Cities</title>
-    <meta name="description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes">
+    <meta name="description" content="Tracking residential dwelling conversions. An exploration of Canadian building permit survey data">
     <meta name="author" content="Jeff Allen">
 
-	<meta property="og:title" content="Reno-ductions: Loss of Gentle Density in Toronto" />
-    <meta property="og:description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes" />
+	<meta property="og:title" content="Residential Conversions Across Canada" />
+    <meta property="og:description" content="Tracking residential dwelling conversions. An exploration of Canadian building permit survey data" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-renoductions-toronto.png" />
+    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/canadian-residential-conversions" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-conversions.png" />
     <meta property="og:locale" content="en_CA">
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />
+    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/canadian-residential-conversions" />
     <meta name="twitter:creator" content="@JeffAllenMaps" />
-    <meta name="twitter:title" content="Reno-ductions: Loss of Gentle Density in Toronto" />
-    <meta name="twitter:description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes" />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-renoductions-toronto.png" /> 
+    <meta name="twitter:title" content="Residential Conversions Across Canada" />
+    <meta name="twitter:description" content="Tracking residential dwelling conversions. An exploration of Canadian building permit survey data" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-conversions.png" /> 
 
 </svelte:head>
 
@@ -143,19 +143,19 @@
 		<div class="text">
 
 			<p>
-				Many Canadian cities need more housing, both now and in the near future. While urban sprawl consumes green spaces and strains resources, the conversion and expansion of existing buildings offer a more sustainable path forward. <a href="https://imfg.org/research/doc/?doc_id=637" target="_blank">Urban sprawl has far worse impacts on climate change than infill development</a>. Moreover, using existing building stock and material to create new units saves on needing to procure and transport more building material.
+				Many Canadian cities need more housing, both now and in the near future. While urban sprawl consumes green spaces and strains resources, the conversion and expansion of existing buildings offer a more sustainable path forward. Research in Canada has shown that <a href="https://imfg.org/research/doc/?doc_id=637" target="_blank">urban sprawl has far worse impacts on climate change than infill development</a>. Moreover, using existing building stock to partially create new units can save on needing to procure and transport some percent of building material.
 			</p>
 			<p>
-				Building conversions can include altering a single-family home to create additional dwelling units like a basement apartment, a duplex expanding into a triplex or fourplex, or a previously non-residential building being converted into residential units.
+				There is a variety of different types of building conversions; altering a single-family home to create additional dwelling units like a basement apartment, a duplex expanding into a triplex or fourplex, or a previously non-residential building being converted into residential units.
 			</p>
 			<p>
 				On this page, we chart how different Canadian urban regions are doing in terms of creating new residential dwelling units from building conversions, over a five year period of 2019 to 2023.
 			</p>
 			<p>
-				The data are sourced from Statistics Canada's <a href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=418552&" target="_blank">Building Permit Survey</a>. This survey tracks attributes of building permits by Census Metropolitan Area (CMA) on a monthly basis. The survey includes the number of new dwelling units that were created due to building conversions, as well as has categories for three types of conversions (non-residential to residential, single dwelling to multiple dwellings, and multiple to multiple).
+				The data are sourced from Statistics Canada's <a href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=418552&" target="_blank">Building Permit Survey</a>. This survey tracks attributes of building permits by Census Metropolitan Area (CMA) on a monthly basis. The survey includes the number of new dwelling units that were created due to building conversions, as well as has categories for three types of conversions (a. non-residential to residential, b. single dwelling to multiple dwellings, and c. multiple to multiple).
 			</p>
 			<p>
-				Overall across Canada there were <b>104,425</b> new dwelling units created via conversions from 01/2019 to 12/2023. This is <b>7.9%</b> of all new residential dwelling units created during this period, based on the data recorded in the building permit survey. Below we chart how this varies by CMA, trends over time, as well as different types of building conversions.
+				Overall across Canada there were <b>104,425</b> new dwelling units created via conversions in the five-year period from 01/2019 to 12/2023. This accounts for <b>7.9%</b> of all new residential dwelling units created during this period, based on the data recorded in the building permit survey. Below we chart how this varies by CMA, trends over time, as well as different types of building conversions.
 			</p>
 			<br>
 

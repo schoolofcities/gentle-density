@@ -21,15 +21,15 @@
 		content="width=device-width, initial-scale=1, minimum-scale=1"
 	/>
 
-	<title>Toronto Rooming House Zoning | School of Cities</title>
-    <meta name="description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes">
+	<title>Toronto Multi-Tenant Zoning | School of Cities</title>
+    <meta name="description" content="Toronto's Opening Up to Multi-Tenant Houses - Zoning for multi-tenant houses as part of the solution to Toronto's housing crisis">
     <meta name="author" content="Jeff Allen">
 
 	<meta property="og:title" content="Reno-ductions: Loss of Gentle Density in Toronto" />
     <meta property="og:description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-renoductions-toronto.png" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-multi-tenant.png" />
     <meta property="og:locale" content="en_CA">
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -37,7 +37,7 @@
     <meta name="twitter:creator" content="@JeffAllenMaps" />
     <meta name="twitter:title" content="Reno-ductions: Loss of Gentle Density in Toronto" />
     <meta name="twitter:description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes" />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-renoductions-toronto.png" /> 
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-multi-tenant.png" /> 
 
 	<link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
 
@@ -55,14 +55,9 @@
 
 		<div class="title">
 			<h1>
-				Toronto's Opening Up to Multi-Tenant Houses
+				Zoning for Multi-Tenant Housing in Toronto
 			</h1>
-			<h2>
-				Zoning for multi-tenant houses as part of the solution to Toronto's housing crisis
-			</h2>
-			<h2>
-				
-			</h2>
+			<br>
 			<p>Qi-Sheng Chen</p>
 			<p>May 2024</p>
 		</div>
@@ -231,7 +226,8 @@
 	</div>
 
 	<div class="text">
-		<h3>---</h3>
+		<h3>___ ___ ___ ___ ___</h3>
+		<p>Data shown on these maps are from the City of Toronto and OpenStreetMap. <a href="https://jamaps.github.io" target="_blank">Jeff Allen</a> helped edit the maps and graphics on this page. Code for this page is hosted on <a href="" target="_blank">GitHub</a>
 	</div>
 
 </main>
