@@ -30,8 +30,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="2.0785072"
-     inkscape:cx="285.78203"
-     inkscape:cy="234.54333"
+     inkscape:cx="272.79194"
+     inkscape:cy="186.43188"
      inkscape:window-width="2560"
      inkscape:window-height="1403"
      inkscape:window-x="0"
@@ -913,5 +913,12 @@
        height="100.00001"
        x="604.65204"
        y="75" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:0.42051977;fill-rule:evenodd;stroke:none;stroke-width:0.75;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect1"
+       width="614.40002"
+       height="345.60001"
+       x="0"
+       y="0" />
   </g>
 </svg>

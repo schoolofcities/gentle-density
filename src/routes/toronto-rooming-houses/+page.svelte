@@ -55,17 +55,15 @@
 	<div class="text">
 		<p>
 			On March 31, 2024, a new regulatory framework for Multi-Tenant Houses, or Rooming Houses, came into effect.
-			This new regulatory framework was adopted by the Toronto City Council on December 14, 2022, and the Zoning
+			This <a href="https://www.toronto.ca/community-people/housing-shelter/multi-tenant-rooming-houses/new-framework-for-multi-tenant-rooming-houses/" target="_blank">new regulatory framework</a> was adopted by the Toronto City Council on December 14, 2022, and the Zoning
 			Bylaw was amended to permit multi-tenant houses across Toronto. As part of this new framework, all operators
 			of multi-tenant houses are now required to obtain a license and must meet consistent standards as described
 			in the new Multi-Tenant Houses Licensing Bylaw, which also introduces regular oversight and effective enforcement.
-			You can read more about the new regulatory framework
-			<a href="https://www.toronto.ca/community-people/housing-shelter/multi-tenant-rooming-houses/new-framework-for-multi-tenant-rooming-houses/">here</a>. 
 		</p>
 		<p>
 			Before the implementation of this new framework, multi-tenant houses were only permitted in the former cities of
 			Toronto, York, and Etobicoke (as lodging houses). Multi-tenant and lodging houses in the former City of Toronto
-			and Etobicoke were required to be licensed, while York did not require such licencing. The former cities of East
+			and Etobicoke were required to be licensed, while York did not require such licensing. The former cities of East
 			York, North York, and Scarborough did not permit multi-tenant houses at all. 
 		</p>
 		<p>
@@ -81,7 +79,11 @@
 			must have their own separate room for living accommodation, it is assumed that areas A and C have a maximum of 
 			10 rooms, as the buildings in these areas are defined to have no more than 10 occupants. 
 		</p>
+		<h3>Old zoning for multi-tenant housing</h3>
+		<i>Before March 31, 2024</i>
 	</div>
+
+	
 
 	<Map layer="old"/>
 
@@ -92,6 +94,8 @@
 			6, 12, or 25 rooms depending on the zoning code and other variables. The map below shows the updates to the zoning
 			by maximum number of rooms permitted in a multi-tenant house (based on city staff description). 
 		</p>
+		<h3>New zoning for multi-tenant housing</h3>
+		<i>After March 31, 2024</i>
 	</div>
 
 	<Map layer="new"/>
@@ -105,7 +109,7 @@
 			The largest and most visible change is that multi-tenant houses are now permitted in the residential areas in the
 			former cities of North York, East York, and Scarborough, all of which previously did not permit multi-tenant houses.
 			The inclusion of the residential areas of these 3 former cities increased the total land permitting multi-tenant
-			houses up by 192.3 km<sup>2</sup>. Both North York and Scarborough now permit multi-tenant houses with a maximum of
+			houses up by 192.3 km². Both North York and Scarborough now permit multi-tenant houses with a maximum of
 			6 rooms. For East York, in addition to permitting up to 6 rooms, some areas were also zoned to permit up to 12 and 25 rooms. 
 		</p>
 		<p>
@@ -116,6 +120,7 @@
 			and York compared to Toronto, and these can be seen in the map below, which visualizes the change in max rooms between
 			the old zoning bylaw and new zoning bylaw. 
 		</p>
+		<h3>Change in zoning for multi-tenant housing</h3>
 	</div>
 	
 	<Map layer="change"/>
@@ -130,7 +135,7 @@
 		</p>
 		<p>
 			Of particular interest is Etobicoke, which saw a net total increase in residential areas permitting multi-tenant houses,
-			from 4.3 km<sup>2</sup> to 56.3 km<sup>2</sup>, but this appeared to be at the cost of reducing all of its max 10 room
+			from 4.3 km² to 56.3 km², but this appeared to be at the cost of reducing all of its max 10 room
 			areas to 6 rooms. At this time, it is not clear as to why all the max 10 room areas in Etobicoke were reduced by 4 rather
 			than having some increased by 2 to match the new cap intervals of the new regulatory framework. It would not be unprecedented
 			as in York, those areas previously allowing a maximum of 10 rooms saw both increases and decreases in the cap. 
@@ -150,16 +155,16 @@
 		</div>
 
 		<p>
-			Overall, there was an increase of total area zoned to permit multi-tenant houses, from 46.7 km<sup>2</sup> to 323.1 km<sup>2</sup>,
+			Overall, there was an increase of total area zoned to permit multi-tenant houses, from 46.7 km² to 323.1 km²,
 			or by almost 600% (591.8%). The area permitting up to a maximum of 6 rooms increased by 1072.2%, max 12 rooms by 30.6%,
 			and max 25 rooms by 23.9%. Multi-tenant houses with up to 10 rooms were eliminated entirely, either converted up to
 			12 rooms or down to 6 rooms, most notably in Etobicoke where all max 10 rooms were reduced to max 6 rooms, meaning 100%
 			of the max 10 rooms areas were lost. 
 		</p>
 
-		<h1>
+		<h3>
 			Implications
-		</h1>
+		</h3>
 		<p>
 			With the dramatic increase in area available to license as multi-tenant housing, it appears that the City of Toronto is
 			looking to enrich the diversity of housing options available across the city, namely to increase the amount of low-income

@@ -368,15 +368,16 @@
 
 <!-- Svelte if else logic for displaying which map and legend -->
 {#if layer === "old"}
-<div id="top-bar">
+<!-- <div id="top-bar">
 	<p>{layername} Zoning for Multi-Tenant Houses</p>
-</div>
+</div> -->
 
 <div id={"map" + layername} class="map" style="height: {mapHeight}px"></div>
 
-<div style="position: relative">
+<div class="legend-wrapper">
 	<div id={"legend-" + layername} class="legend">
-		<h4>Max Rooms</h4>
+		<h4>Max rooms</h4>
+		<h4>allowable</h4>
 		<div><span style="background-color: #feebe2"></span>6</div>
 		<div><span style="background-color: #fbb4b9"></span>10</div>
 		<div><span style="background-color: #f768a1"></span>12</div>
@@ -385,31 +386,34 @@
 </div>
 
 {:else if layer === "new"}
-<div id="top-bar">
+<!-- <div id="top-bar">
 	<p>{layername} Zoning for Multi-Tenant Houses</p>
-</div>
+</div> -->
 
 <div id={"map" + layername} class="map" style="height: {mapHeight}px"></div>
 
-<div style="position: relative">
+<div class="legend-wrapper">
 	<div id={"legend-" + layername} class="legend">
-		<h4>Max Rooms</h4>
+		<h4>Max rooms</h4>
+		<h4>allowable</h4>
 		<div><span style="background-color: #feebe2"></span>6</div>
 		<div><span style="background-color: #f768a1"></span>12</div>
 		<div><span style="background-color: #ae017e"></span>25</div>
 	</div>
 </div>
 
+
 {:else}
-<div id="top-bar">
+<!-- <div id="top-bar">
 	<p>{layername} in Zoning for Multi-Tenant Houses</p>
-</div>
+</div> -->
 
 <div id={"map" + layername} class="map" style="height: {mapHeight}px"></div>
 
-<div style="position: relative">
+<div class="legend-wrapper">
 	<div id={"legend-" + "change"} class="legend">
-		<h4>Change in Max Rooms</h4>
+		<h4>Change in max</h4>
+		<h4>rooms allowable</h4>
 		<div><span style="background-color: #8e0152"></span>-19</div>
 		<div><span style="background-color: #c51b7d"></span>-6</div>
 		<div><span style="background-color: #de77ae"></span>-4</div>
@@ -428,6 +432,9 @@
 <style>
 	.map {
 		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		margin-top: -20px;
 		border-top: 1px solid var(--brandLightBlue);
 		border-bottom: 1px solid var(--brandLightBlue);
 	}
@@ -460,24 +467,31 @@
 		/* font-size: 14px; */
 	}
 
+	.legend-wrapper {
+		position: relative;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
 	.legend {
 		background-color: #fff;
 		border-radius: 3px;
 		bottom: 25px;
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-		font:
-			12px/20px "Helvetica Neue",
-			Arial,
-			Helvetica,
-			sans-serif;
+		font-family: UbuntuMonoRegular;
+		font-size: 14px;
 		padding: 10px;
 		position: absolute;
 		right: 20px;
 		z-index: 1;
+		color: var(--brandDarkBlue);
 	}
 
 	.legend h4 {
 		margin: 0 0 10px;
+		margin-bottom: 5px;
+		margin-top: -5px;
 	}
 
 	.legend div span {
