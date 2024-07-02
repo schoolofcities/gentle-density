@@ -29,7 +29,7 @@
 
 <main>
 
-	<div class="blueprint" style="background-image: url('../gentle-density/blueprint-background-loss.png');">
+	<div class="blueprint" style="background-image: url('../gentle-density/blueprint-background.png');">
 
 		<div class="title">
 			<h1>

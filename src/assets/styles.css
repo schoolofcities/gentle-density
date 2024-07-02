@@ -55,9 +55,8 @@ main {
 }
 
 a {
-    color: #002b8f;
-    font-weight: bold;
-    opacity: 0.95;
+    color: var(--brandDarkBlue);
+    opacity: 1;
 }
 a:hover {
     opacity: 1;
@@ -65,8 +64,9 @@ a:hover {
 }
 
 b {
-    color: #1a2d3b;
-    font-style: italic;
+    color: #002b8f;
+    font-family: UbuntuMonoBold;
+    /* font-style: italic; */
 }
 
 

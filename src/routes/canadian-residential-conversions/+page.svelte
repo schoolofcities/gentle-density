@@ -116,14 +116,14 @@
 
 <main>
 
-	<div class="blueprint" style="background-image: url('../gentle-density/blueprint-background-conv.png');">
+	<div class="blueprint" style="background-image: url('../gentle-density/blueprint-background-convert.png');">
 
 		<div class="title">
 			<h1>
-				Tracking Residential Conversions Across Canada
+				Tracking Residential Dwelling Conversions
 			</h1>
 			<h2>
-				An Exploration Building Permit Survey Data (2019 to 2023)
+				An Exploration of Canadian Building Permit Survey Data
 			</h2>
 			<h2>
 				
@@ -143,23 +143,21 @@
 		<div class="text">
 
 			<p>
-				Canada needs housing. Sprawl is generally bad. Intensificaiton better. One form, on the lower end of the density scale, is coversions and expansion of existing housing to hold more dwelling units. 
+				Many Canadian cities need more housing, both now and in the near future. While urban sprawl consumes green spaces and strains resources, the conversion and expansion of existing buildings offer a more sustainable path forward. <a href="https://imfg.org/research/doc/?doc_id=637" target="_blank">Urban sprawl has far worse impacts on climate change than infill development</a>. Moreover, using existing building stock and material to create new units saves on needing to procure and transport more building material.
 			</p>
 			<p>
-				This can take the form of a  single-family home adding a basement apartment or a du-plex undergoing additions to be converted into a tri-plex or four-plex, or a previously non-residential building being converted into residential units. Using much of the existing built/construction material to create new units.
+				Building conversions can include altering a single-family home to create additional dwelling units like a basement apartment, a duplex expanding into a triplex or fourplex, or a previously non-residential building being converted into residential units.
 			</p>
 			<p>
-				Summary of Stats Can survey data
+				On this page, we chart how different Canadian urban regions are doing in terms of creating new residential dwelling units from building conversions, over a five year period of 2019 to 2023.
 			</p>
 			<p>
-				Here, I take a look at the 5 years of this data. 
+				The data are sourced from Statistics Canada's <a href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=418552&" target="_blank">Building Permit Survey</a>. This survey tracks attributes of building permits by Census Metropolitan Area (CMA) on a monthly basis. The survey includes the number of new dwelling units that were created due to building conversions, as well as has categories for three types of conversions (non-residential to residential, single dwelling to multiple dwellings, and multiple to multiple).
 			</p>
 			<p>
-				Of the new units created via building conversions. YY from single-to-multiple dwellings, YY from multiple-to-multiple conversions, and YY previous non-residential buildings converted to residential units. The chart below shows, by urban region, the total number of new dwelling units created from these types of conversions.
+				Overall across Canada there were <b>104,425</b> new dwelling units created via conversions from 01/2019 to 12/2023. This is <b>7.9%</b> of all new residential dwelling units created during this period, based on the data recorded in the building permit survey. Below we chart how this varies by CMA, trends over time, as well as different types of building conversions.
 			</p>
-			<p>
-				Overall across Canada there were 104,425 new dwelling units created via conversions. This is about 7% of all new residential dwelling units created during this period, based on the data recorded in the building permit survey. Here's a distribution, where each square is an urban region.
-			</p>
+			<br>
 
 			<BarTotal data={data} cities={cities}/>
 

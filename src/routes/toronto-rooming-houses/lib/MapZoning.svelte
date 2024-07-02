@@ -2,12 +2,14 @@
 	import { onMount } from "svelte";
 	import maplibregl from "maplibre-gl";
 	import * as pmtiles from "pmtiles";
+	import notTorontoBoundary from "../../../assets/toronto/not-toronto.geo.json";
 	import torontoBoundary from "../../../assets/toronto/toronto-boundary.geo.json";
 	import formerBoundary from "../../../assets/toronto/former_municipalities_boundaries_data.geo.json";
 	import formerCentroids from "../../../assets/toronto/former_municipalities_centroids.geo.json";
 	import transitLines from "../../../assets/toronto/transitLines-toronto.geo.json";
 	import transitStops from "../../../assets/toronto/transitStops-toronto.geo.json";
-	import BaseLayer from "../../../assets/toronto/toronto.json";
+	import BaseLayer from "../../../assets/toronto/toronto-white.json";
+
 
 	// import rooming house data layers based on map input
 	export let layer;
@@ -83,70 +85,42 @@
 		let protoLayers = BaseLayer;
 
 		map.on("load", function () {
+
+			map.addSource("torontoBoundary", {
+				type: "geojson",
+				data: torontoBoundary,
+			});
+			map.addLayer({
+				id: "torontoBoundary",
+				type: "fill",
+				source: "torontoBoundary",
+				layout: {},
+				paint: {
+					"fill-color": "#fff",
+					"fill-opacity": 1
+				},
+			});
+
 			map.addSource("protomaps", {
 				type: "vector",
 				url: "pmtiles://" + PMTILES_URL,
 			});
 
-			protoLayers.forEach((e) => {
-				map.addLayer(e);
-			});
-
-			map.addSource("transitLines", {
-				type: "geojson",
-				data: transitLines,
-			});
 			map.addLayer({
-				id: "transitLines",
-				type: "line",
-				source: "transitLines",
-				layout: {},
-				paint: {
-					"line-color": "#1d4667",
-					"line-width": 2,
-					"line-opacity": 1,
-				},
-			});
+				"id": "water",
+				"type": "fill",
+				"source": "protomaps",
+				"source-layer": "water",
+				"paint": {
+					"fill-color": "#8EB6DC",
+					"fill-opacity": 0.25
+				}
+			})
 
-			map.addSource("transitStops", {
-				type: "geojson",
-				data: transitStops,
-			});
-			map.addLayer({
-				id: "transitStops",
-				type: "circle",
-				source: "transitStops",
-				layout: {},
-				paint: {
-					"circle-color": "#1d4667",
-				},
-			});
-			map.addLayer({
-				id: "transitStopsWhite",
-				type: "circle",
-				source: "transitStops",
-				layout: {},
-				paint: {
-					"circle-color": "#fff",
-					"circle-radius": 2,
-					"circle-opacity": 0.42,
-				},
-			});
+			
 
-			// map.addSource("torontoBoundary", {
-			// 	type: "geojson",
-			// 	data: torontoBoundary,
-			// });
-			// map.addLayer({
-			// 	id: "torontoBoundary",
-			// 	type: "line",
-			// 	source: "torontoBoundary",
-			// 	layout: {},
-			// 	paint: {
-			// 		"line-color": "#fff",
-			// 		"line-width": 1,
-			// 		"line-opacity": 1,
-			// 	},
+			// protoLayers.forEach((e) => {
+			// 	map.addLayer(e);
 			// });
 
 			// load old or new or change zoning overlay
@@ -255,18 +229,101 @@
 				});
 			}
 
+
+			map.addLayer({
+				"id": "roads",
+				"type": "line",
+				"source": "protomaps",
+				"source-layer": "roads",
+				"paint": {
+					"line-color": "#8EB6DC",
+					"line-opacity": 0.2,
+					"line-width": 1
+				}
+			})
+
+
+			map.addSource("transitLines", {
+				type: "geojson",
+				data: transitLines,
+			});
+			map.addLayer({
+				id: "transitLines",
+				type: "line",
+				source: "transitLines",
+				layout: {},
+				paint: {
+					"line-color": "#8EB6DC",
+					"line-width": 1,
+					"line-opacity": 0.75,
+				},
+			});
+
+			map.addSource("transitStops", {
+				type: "geojson",
+				data: transitStops,
+			});
+			map.addLayer({
+				id: "transitStops",
+				type: "circle",
+				source: "transitStops",
+				layout: {},
+				paint: {
+					"circle-radius": 2,
+					"circle-color": "#8EB6DC",
+				},
+			});
+			map.addLayer({
+				id: "transitStopsWhite",
+				type: "circle",
+				source: "transitStops",
+				layout: {},
+				paint: {
+					"circle-color": "#fff",
+					"circle-radius": 1,
+					"circle-opacity": 0.42,
+				},
+			});
+
+			
+			map.addSource("notTorontoBoundary", {
+				type: "geojson",
+				data: notTorontoBoundary,
+			});
+			map.addLayer({
+				"id": "notTorontoBoundary",
+				"type": "fill",
+				"source": "notTorontoBoundary",
+				"paint": {
+					"fill-color": "#fff",
+					"fill-opacity": 0.65
+				}
+			})
+			
 			map.addSource("formerBoundary", {
 				type: "geojson",
 				data: formerBoundary,
 			});
 			map.addLayer({
-				id: "formerBoundary",
+				id: "formerBoundaryLine",
 				type: "line",
 				source: "formerBoundary",
 				layout: {},
 				paint: {
-					"line-color": "#fff",
+					"line-color": "#002b8f",
 					"line-width": 1,
+					"line-opacity": 0.42,
+				},
+			});
+
+			map.addLayer({
+				id: "torontoBoundaryLine",
+				type: "line",
+				source: "torontoBoundary",
+				layout: {},
+				paint: {
+					"line-color": "#002b8f",
+					"line-width": 1.5,
 					"line-opacity": 1,
 				},
 			});
@@ -281,21 +338,24 @@
 				type: "symbol",
 				source: "formerCentroids",
 				paint: {
-					"text-color": "#ffffff",
-					"text-halo-color": "#000000",
+					"text-color": "#002b8f",
+					"text-halo-color": "#fff",
 					"text-halo-width": 1.5,
 					"text-halo-blur": 0,
+					"text-opacity": 1
 				},
 				layout: {
 					"text-field": ["get", "AREA_NAME"],
 					"text-font": [
-						"TradeGothic LT Bold"
+						"UbuntuMono Regular"
 					],
 					"text-offset": [0, -0.2],
 					"text-anchor": "center",
 					"text-size": 14,
 				},
 			});
+
+			
 
 			if (pageHeight > 700 && pageWidth > 800) {
 				map.zoomTo(10.5);
