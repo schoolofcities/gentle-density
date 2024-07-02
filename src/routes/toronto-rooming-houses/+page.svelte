@@ -9,7 +9,7 @@
 	import svgMap from "../../assets/toronto/rooming-houses-etobicoke-york.svg";
 
 	import oldOverlay from "../../assets/toronto/zoning_rooming_house_overlay_old.geo.json";
-	import newOverlay from "../../assets/toronto/rooming_house_overlay_new_mapshaper30.geo.json";
+	import newOverlay from "../../assets/toronto/zoning_rooming_house_overlay_new_mapshaper30.geo.json";
 
 </script>
 
@@ -51,7 +51,7 @@
 
 <main>
 
-	<div class="blueprint" style="background-image: url('../gentle-density/blueprint-background.png');">
+	<div class="blueprint" style="background-image: url('../gentle-density/blueprint-background-multit.png');">
 
 		<div class="title">
 			<h1>
@@ -228,6 +228,10 @@
 			<a href="http://neighbourhoodchange.ca/documents/2018/04/campsie-toronto-rooming-houses.pdf">Neighbourhood Change Research
 				Partnership research paper by Philippa Campsie from 2018</a>.
 		</p>
+	</div>
+
+	<div class="text">
+		<h3>---</h3>
 	</div>
 
 </main>
