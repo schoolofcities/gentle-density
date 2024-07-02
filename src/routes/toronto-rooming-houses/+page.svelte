@@ -6,10 +6,12 @@
 
 	import Map from "./lib/MapZoning.svelte";
 
+	import svgMap from "../../assets/toronto/rooming-houses-etobicoke-york.svg";
 
+	import oldOverlay from "../../assets/toronto/zoning_rooming_house_overlay_old.geo.json";
+	import newOverlay from "../../assets/toronto/rooming_house_overlay_new_mapshaper30.geo.json";
 
 </script>
-
 
 
 <svelte:head>
@@ -19,9 +21,29 @@
 		content="width=device-width, initial-scale=1, minimum-scale=1"
 	/>
 
+	<title>Toronto Rooming House Zoning | School of Cities</title>
+    <meta name="description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes">
+    <meta name="author" content="Jeff Allen">
+
+	<meta property="og:title" content="Reno-ductions: Loss of Gentle Density in Toronto" />
+    <meta property="og:description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-renoductions-toronto.png" />
+    <meta property="og:locale" content="en_CA">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />
+    <meta name="twitter:creator" content="@JeffAllenMaps" />
+    <meta name="twitter:title" content="Reno-ductions: Loss of Gentle Density in Toronto" />
+    <meta name="twitter:description" content="Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-renoductions-toronto.png" /> 
+
 	<link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
 
 </svelte:head>
+
+
 
 
 
@@ -85,7 +107,7 @@
 
 	
 
-	<Map layer="old"/>
+	<Map layer="old" oldOverlay={oldOverlay} newOverlay={newOverlay}/>
 
 	<div class="text">
 		<p>
@@ -98,7 +120,7 @@
 		<i>After March 31, 2024</i>
 	</div>
 
-	<Map layer="new"/>
+	<Map layer="new" oldOverlay={oldOverlay} newOverlay={newOverlay}/>
 
 	<div class="text">
 		<p>
@@ -123,7 +145,7 @@
 		<h3>Change in zoning for multi-tenant housing</h3>
 	</div>
 	
-	<Map layer="change"/>
+	<Map layer="change" oldOverlay={oldOverlay} newOverlay={newOverlay}/>
 	
 	<div class="text">
 		<p>
@@ -145,14 +167,16 @@
 			for a maximum of 10 rooms in their multi-tenant houses. 
 		</p>
 		
-		<img src="both_change.svg"/>
+		
 		<div style="position: relative">
 			<div id={"legend-" + "etobicoke-york-change"} class="legend">
-				<h4>Change in Max Rooms</h4>
-				<div><span style="background-color: #e369b4"></span>-4 (10 became 6)</div>
-				<div><span style="background-color: #acdb7b"></span>+2 (10 became 12)</div>
+				<h4>Change in max</h4>
+				<h4>rooms allowable</h4>
+				<div><span style="background-color: #e369b4"></span>-4 (10 → 6)</div>
+				<div><span style="background-color: #acdb7b"></span>+2 (10 → 12)</div>
 			</div>
 		</div>
+		<img src="{svgMap}"/>
 
 		<p>
 			Overall, there was an increase of total area zoned to permit multi-tenant houses, from 46.7 km² to 323.1 km²,
@@ -219,26 +243,29 @@
 		margin-right: auto;
 		max-width: 75%;
 		height: auto;
-		}
+	}
 
 	.legend {
 		background-color: #fff;
+		height: 70px;
 		border-radius: 3px;
 		bottom: 25px;
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-		font:
-			12px/20px "Helvetica Neue",
-			Arial,
-			Helvetica,
-			sans-serif;
+		font-family: UbuntuMonoRegular;
+		font-size: 14px;
 		padding: 10px;
 		position: absolute;
-		right: 20px;
+		right: 10px;
+		top: 10px;
 		z-index: 1;
+		color: var(--brandDarkBlue);
+		line-height: 17px;
 	}
 
 	.legend h4 {
 		margin: 0 0 10px;
+		margin-bottom: 5px;
+		margin-top: -5px;
 	}
 
 	.legend div span {

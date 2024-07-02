@@ -13,6 +13,8 @@
 
 	// import rooming house data layers based on map input
 	export let layer;
+	export let oldOverlay;
+	export let newOverlay;
 	let layername = "Old";
 	if (layer === "new") {
 		layername = "New";
@@ -22,8 +24,7 @@
 		layername = "Old";
 	}
 
-	import oldOverlay from "../../../assets/toronto/zoning_rooming_house_overlay_old.geo.json";
-	import newOverlay from "../../../assets/toronto/rooming_house_overlay_new_mapshaper30.geo.json";
+	
 
 	let map;
 	let PMTILES_URL = "/gentle-density/toronto.pmtiles";
@@ -457,14 +458,6 @@
 		padding-top: 28px;
 		padding-bottom: 8px;
 		font-weight: bold;
-	}
-
-	#top-bar p {
-		max-width: 720px;
-		width: 100%;
-		margin: 0 auto;
-		padding-bottom: 4px;
-		/* font-size: 14px; */
 	}
 
 	.legend-wrapper {
