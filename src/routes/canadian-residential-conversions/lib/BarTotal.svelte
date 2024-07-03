@@ -12,6 +12,19 @@
 		selectedScale = option;
 	}
 
+	let selectedSort = "Sort by #";
+	let selectedSortOptions = ["Sort by #", "Sort by %"];
+	// let result;
+	function updateSelectedSort(option) {
+		selectedSort = option;
+		if (option === "Sort by #") {
+			result = result.sort((a, b) => b.conv - a.conv || b.per - a.per)
+		} else {
+			result = result.sort((a, b) => b.per - a.per || b.conv - a.conv)
+		}
+		console.log(result);
+	}
+
 
 	$: groupedData = group(data, 
 		(d) => d.GEO, (d) => d.Type
@@ -170,6 +183,16 @@
 	{/each}
 </div>
 
+<div class="options-container">
+	{#each selectedSortOptions as option}
+		<div 
+			class="{option === selectedSort ? 'option-selected' : 'option-not-selected'}"
+			on:click={() => updateSelectedSort(option)} >
+			{option}
+		</div>
+	{/each}
+</div>
+
 
 
 <div class="chart-wrapper" bind:offsetWidth={chartWidth}>
@@ -204,7 +227,7 @@
 				id="labelBar"
 				text-anchor="start" 
 				font-size="16"
-			>{city.GEO.split(',')[0]}: {city.conv}</text>
+			>{city.GEO.split(',')[0]}: {city.conv} ({Math.round(100 * city.per)}%)</text>
 
 			<rect 
 				id="bar"

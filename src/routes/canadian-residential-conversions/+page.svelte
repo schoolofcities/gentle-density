@@ -313,6 +313,16 @@
 
 <style>
 
+.background-white {
+    width: 100%;
+    max-width: 1920px;
+    background-color: #ffffff;
+    opacity: 1;
+    background-size: 13px 13px;
+    background-image: repeating-linear-gradient(45deg, #fcfeff 0, #eaf5ff 1.3px, #ffffff 0, #ffffff 50%);
+    border-top: solid 1px var(--brandLightBlue);
+}
+
 	#years {
 		fill: var(--brandDarkBlue);
 	}
