@@ -34,12 +34,6 @@
 
 	let pageHeight;
 	let pageWidth;
-	let mapHeight = 650;
-	$: if (pageHeight < 650) {
-		mapHeight = pageHeight - 200;
-	} else {
-		mapHeight = 650;
-	}
 
 	const maxBounds = [
 		[-80.0, 42.0], // SW coords
@@ -367,13 +361,10 @@
 
 <svelte:window bind:innerHeight={pageHeight} bind:innerWidth={pageWidth} />
 
-<!-- Svelte if else logic for displaying which map and legend -->
-{#if layer === "old"}
-<!-- <div id="top-bar">
-	<p>{layername} Zoning for Multi-Tenant Houses</p>
-</div> -->
 
-<div id={"map" + layername} class="map" style="height: {mapHeight}px"></div>
+{#if layer === "old"}
+
+<div id={"map" + layername} class="map"></div>
 
 <div class="legend-wrapper">
 	<div id={"legend-" + layername} class="legend">
@@ -387,11 +378,8 @@
 </div>
 
 {:else if layer === "new"}
-<!-- <div id="top-bar">
-	<p>{layername} Zoning for Multi-Tenant Houses</p>
-</div> -->
 
-<div id={"map" + layername} class="map" style="height: {mapHeight}px"></div>
+<div id={"map" + layername} class="map"></div>
 
 <div class="legend-wrapper">
 	<div id={"legend-" + layername} class="legend">
@@ -405,11 +393,8 @@
 
 
 {:else}
-<!-- <div id="top-bar">
-	<p>{layername} in Zoning for Multi-Tenant Houses</p>
-</div> -->
 
-<div id={"map" + layername} class="map" style="height: {mapHeight}px"></div>
+<div id={"map" + layername} class="map"></div>
 
 <div class="legend-wrapper">
 	<div id={"legend-" + "change"} class="legend">
@@ -434,6 +419,9 @@
 	.map {
 		width: 100%;
 		max-width: 1200px;
+		max-height: 800px;
+		height: 60vh;
+		min-height: 200px;
 		margin: 0 auto;
 		margin-top: -20px;
 		border-top: 1px solid var(--brandLightBlue);

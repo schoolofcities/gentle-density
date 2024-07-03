@@ -37,8 +37,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    /* background-color: #e5e5f7; */
-    /* opacity: 0.8; */
+    overflow-x: hidden;
     background-color: #ffffff;
     opacity: 1;
     background-size: 13px 13px;
