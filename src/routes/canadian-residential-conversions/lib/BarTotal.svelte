@@ -113,7 +113,7 @@
 		id="labelBar"
 		text-anchor="start" 
 		font-size="16"
-	>% of all new dwelling units from conversions</text>
+	>% of all new units from conversions</text>
 
 	<rect 
 		id="legendBar"
@@ -169,7 +169,7 @@
 		id="labelBar"
 		text-anchor="start" 
 		font-size="16"
-	>Number of new dwelling units from conversions</text>
+	># of new units from conversions</text>
 
 </svg>
 
