@@ -143,7 +143,7 @@
 		<div class="text">
 
 			<p>
-				Many Canadian cities need more housing, both now and in the near future. While urban sprawl consumes green spaces and strains resources, the conversion and expansion of existing buildings offer a more sustainable path forward. Research in Canada has shown that <a href="https://imfg.org/research/doc/?doc_id=637" target="_blank">urban sprawl has far worse impacts on climate change than infill development</a>. Moreover, using existing building stock to partially create new units can save on needing to procure and transport some percent of building material.
+				Many Canadian cities need more housing, both now and in the near future. While urban sprawl consumes green spaces and strains resources, the conversion and expansion of existing buildings offer a more sustainable path forward. Research in Canada has shown that <a href="https://imfg.org/research/doc/?doc_id=637" target="_blank">urban sprawl has far worse impacts on climate change than infill development</a>. Moreover, <a href="https://csbe.civmin.utoronto.ca/wp-content/uploads/2023/11/khr_Saxe_FIG2023.pdf" target="_blank">maintaining existing building stock</a> to help construct new units can reduce emissions related to procuring and transporting new building material.
 			</p>
 			<p>
 				There is a variety of different types of building conversions; altering a single-family home to create additional dwelling units like a basement apartment, a duplex expanding into a triplex or fourplex, or a previously non-residential building being converted into residential units.
