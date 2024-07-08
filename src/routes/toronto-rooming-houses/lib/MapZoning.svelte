@@ -426,6 +426,8 @@
 		margin-top: -20px;
 		border-top: 1px solid var(--brandLightBlue);
 		border-bottom: 1px solid var(--brandLightBlue);
+		border-right: 1px solid #8eb6dc39;
+		border-left: 1px solid #8eb6dc39;
 	}
 
 	#top-bar {
