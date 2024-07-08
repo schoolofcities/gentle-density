@@ -3,6 +3,7 @@
 	import "../../assets/styles.css";
 
 	import Top from "../../lib/TopSofC.svelte";
+	import ReadMore from "../../lib/ReadMore.svelte";
 	import BarTotal from "./lib/BarTotal.svelte";
 	import TrendCharts from "./lib/TrendCharts.svelte";
 	import BoxPercentChart from "./lib/BoxPercentChart.svelte";
@@ -311,7 +312,11 @@
 
 		</div>
 
+		<ReadMore currentPage = "canadian-residential-conversions"/>
+
 	</div>
+
+	
 
 
 </main>
@@ -321,15 +326,15 @@
 
 <style>
 
-.background-white {
-    width: 100%;
-    max-width: 1920px;
-    background-color: #ffffff;
-    opacity: 1;
-    background-size: 13px 13px;
-    background-image: repeating-linear-gradient(45deg, #fcfeff 0, #eaf5ff 1.3px, #ffffff 0, #ffffff 50%);
-    border-top: solid 1px var(--brandLightBlue);
-}
+	.background-white {
+		width: 100%;
+		max-width: 1920px;
+		background-color: #ffffff;
+		opacity: 1;
+		background-size: 13px 13px;
+		background-image: repeating-linear-gradient(45deg, #fcfeff 0, #eaf5ff 1.3px, #ffffff 0, #ffffff 50%);
+		border-top: solid 1px var(--brandLightBlue);
+	}
 
 	#years {
 		fill: var(--brandDarkBlue);
