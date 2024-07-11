@@ -5,6 +5,7 @@
 	import Map from "./lib/MapTorontoSecondaryLaneway.svelte";
 
 	import Top from "../../lib/TopSofC.svelte";
+	import ReadMore from "../../lib/ReadMore.svelte";
 	import '../../assets/styles.css';
 
 	import isometricSecondary from '../../assets/isometric-secondary.svg';
@@ -194,6 +195,8 @@
 		</div>
 		
 	</div>
+
+	<ReadMore currentPage = "toronto-building-permits"/>
 
 </main>
 

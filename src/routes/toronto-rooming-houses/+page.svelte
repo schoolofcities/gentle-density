@@ -3,6 +3,7 @@
 	import "../../assets/styles.css";
 
 	import Top from "../../lib/TopSofC.svelte";
+	import ReadMore from "../../lib/ReadMore.svelte";
 
 	import Map from "./lib/MapZoning.svelte";
 
@@ -229,6 +230,8 @@
 		<h3>___ ___ ___ ___ ___</h3>
 		<p>Data shown on the maps on this page are from the City of Toronto and OpenStreetMap. <a href="https://jamaps.github.io" target="_blank">Jeff Allen</a> helped edit the maps and graphics on this page. Code for this page is hosted on <a href="https://github.com/schoolofcities/gentle-density/" target="_blank">GitHub</a>
 	</div>
+
+	<ReadMore currentPage = "toronto-rooming-houses"/>
 
 </main>
 

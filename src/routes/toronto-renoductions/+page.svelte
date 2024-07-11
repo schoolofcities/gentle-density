@@ -3,6 +3,7 @@
 	import "../../assets/styles.css";
 
 	import Top from "../../lib/TopSofC.svelte";
+	import ReadMore from "../../lib/ReadMore.svelte";
 
 	import BarChartLoss from "./lib/BarChartLoss.svelte";
 	import Map from "./lib/MapTorontoLoss.svelte";
@@ -126,6 +127,7 @@
 		</p>
 	</div>
 
+	<ReadMore currentPage = "toronto-renoductions"/>
 
 </main>
 
