@@ -8,12 +8,14 @@
     import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
 
     import Top from "../../lib/TopSofC.svelte";
+	import ReadMore from "../../lib/ReadMore.svelte";
+
 	import '../../assets/styles.css';
 
 	import isometricSecondary from '../../assets/isometric-secondary.svg';
 	import isometricLaneway from '../../assets/isometric-laneway.svg';
 
-    let selectedCity = 'Victoria'; // Set the default city
+    // let selectedCity = 'Victoria'; // Set the default city
 
 </script>
 
@@ -57,16 +59,16 @@
 
 		<div class="title">
 			<h1>
-				<span class="italic">Gentle Density</span> Across Five Canadian Cities
+				Growth of <span class="italic">Gentle Density</span> across Canada
 			</h1>
 			<h2>
-				Secondary & Backyard Suites in Victoria, Edmonton, Calgary, Toronto, & Halifax
+				Tracking secondary and detached suites from local building permit data
 			</h2>
 			<h2>
 				
 			</h2>
 			<p>Author Names</p>
-			<p>April 2024</p>
+			<p>August 2024</p>
 		</div>
 
 	</div>
@@ -132,16 +134,16 @@
 		<BarChartLaneway/>
 	</div> -->
 
-    <div id="top-bar">
+    <!-- <div id="top-bar">
         <div class="buttons">
 			<button class:selected={selectedCity === 'Victoria'} on:click={() => selectedCity = 'Victoria'}>City of Victoria</button>
 			<button class:selected={selectedCity === 'Edmonton'} on:click={() => selectedCity = 'Edmonton'}>City of Edmonton</button>
 			<button class:selected={selectedCity === 'Calgary'} on:click={() => selectedCity = 'Calgary'}>City of Calgary</button>
 			<button class:selected={selectedCity === 'Toronto'} on:click={() => selectedCity = 'Toronto'}>City of Toronto</button>
 		</div>
-    </div>
+    </div> -->
 
-	<CanadianCitiesMap city={selectedCity}/>
+	<!-- <CanadianCitiesMap city={selectedCity}/> -->
 
 	<div class="text">
 		<p>
@@ -161,6 +163,8 @@
 				All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python (pandas, geopandas), Svelte, Maplibre, and D3.
 			</p>
 		</div>
+
+		<ReadMore currentPage = "canadian-cities"/>
 		
 	</div>
 

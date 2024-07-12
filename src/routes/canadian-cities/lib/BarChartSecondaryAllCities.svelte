@@ -125,8 +125,6 @@
 		margin: 0 auto;
 		width: calc(100% - 30px);
 		max-width: 650px;
-		/* height: 370px; */
-		/* border: solid 1px var(--brandLightBlue); */
 	}
 
 	#title {
