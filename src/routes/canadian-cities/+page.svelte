@@ -5,7 +5,7 @@
 
 	import BarChartSecondary from "./lib/BarChartSecondaryAllCities.svelte";
 
-    import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
+    // import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
 
     import Top from "../../lib/TopSofC.svelte";
 	import ReadMore from "../../lib/ReadMore.svelte";
@@ -14,6 +14,28 @@
 
 	import isometricSecondary from '../../assets/isometric-secondary.svg';
 	import isometricLaneway from '../../assets/isometric-laneway.svg';
+
+	import { onMount } from 'svelte';
+	import { csvParse } from 'd3-dsv';
+
+
+	let citySummaryData = [];
+
+	async function loadData() {
+		try {
+			const response = await fetch('canadian-cities-gentle-density-summary.csv');
+			const csvData = await response.text();
+			citySummaryData = csvParse(csvData);
+		} catch (error) {
+			console.error('Error loading CSV data:', error);
+		}
+	}
+
+	onMount(() => {
+		loadData();
+	});
+
+	// $: console.log(citySummaryData);
 
     // let selectedCity = 'Victoria'; // Set the default city
 
@@ -118,15 +140,35 @@
 		</p>
 	</div>
 
+	OKAY 4 charts showing (buttons totals / per capita) of issued/completed and secondary/detached
+
 	<div class="line-chart">
-		<BarChartSecondary/>
+		<h3>Completed Suites</h3>
+		<BarChartSecondary 
+			citySummaryData = {citySummaryData}
+			type = "Secondary"
+			date = "Issued"
+		/>
+		<BarChartSecondary 
+			citySummaryData = {citySummaryData}
+			type = "Secondary"
+			date = "Issued"
+		/>
 	</div>
 
-	<div class="text">
-		<p>
-			I think in here we need another graphic that is the above, ore maybe incorporated into the above, of units per overall population or households (2021 data) to standardize in some way
-		</p>
-	</div>
+	
+	OKAY! small multiple by city trends of detached (lines for completed and issued)
+
+	--
+
+	OKAY! small multiple by city trends of secondary (lines for completed and issued) - highlight missing data, maybe line for when policy allowed?
+
+
+	Dropdown select city and zoom to map
+	- on map?
+	- - toggles for completed and issued
+	- - two colours for two types
+	Note about policy?
 
 
 	<!-- <div class="line-chart">

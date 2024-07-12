@@ -3,8 +3,11 @@
 	import {rollup, group, sum, max} from 'd3-array';
 	import {scaleLinear} from 'd3-scale';
 
-	import citySummaryData from '../assets/city-summary-data.json';
+	export let citySummaryData;
+	export let type;
+	export let date;
 
+	$: console.log(citySummaryData);
 
 	let divWidth;
 	$: width = divWidth;
@@ -15,11 +18,18 @@
 	const marginBottom = 20;
 	const marginLeft = 75;
 
-	const groupedData = Array.from(
-		group(citySummaryData.filter(e => e.Type === "Secondary"), d => d.City).entries(), ([city, values]) => ({
-			city,
-			sumCompleted: sum(values, d => d.Completed)
-	}));
+
+	// would probably need to filter by Year here too eventually
+	$: groupedData = Array.from(
+		group(
+			citySummaryData.filter(e => e.Type === type), d => d.City
+		).entries(), ([city, values]) => ({
+				city,
+				sumCompleted: sum(values, d => d[date])
+			})
+		);
+
+	$: console.log(groupedData);
 
 	
 	let maxXvalue = 100;
@@ -48,7 +58,7 @@
 			y="{15}"
 			id="title"
 			text-anchor="start" 
-		>Total Number* of Secondary Suites</text>
+		>Total Number* of {type} Suites</text>
 
 		<line
 			x1="{marginLeft}"	
@@ -109,7 +119,7 @@
 	</svg>
 
 	<p id = "footnote">
-		*Total number of completed secondary suites based on building permits issued in 2021, 2022, and 2023.
+		*Total number completed in 2021, 2022, and 2023
 	</p>
 
 </div>
