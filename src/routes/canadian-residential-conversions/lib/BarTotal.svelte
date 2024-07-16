@@ -169,7 +169,7 @@
 		id="labelBar"
 		text-anchor="start" 
 		font-size="16"
-	># of new units from conversions</text>
+	># of new units just from conversions</text>
 
 </svg>
 

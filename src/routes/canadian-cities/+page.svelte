@@ -5,15 +5,39 @@
 
 	import BarChartSecondary from "./lib/BarChartSecondaryAllCities.svelte";
 
-    import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
+    // import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
 
     import Top from "../../lib/TopSofC.svelte";
+	import ReadMore from "../../lib/ReadMore.svelte";
+
 	import '../../assets/styles.css';
 
 	import isometricSecondary from '../../assets/isometric-secondary.svg';
 	import isometricLaneway from '../../assets/isometric-laneway.svg';
 
-    let selectedCity = 'Victoria'; // Set the default city
+	import { onMount } from 'svelte';
+	import { csvParse } from 'd3-dsv';
+
+
+	let citySummaryData = [];
+
+	async function loadData() {
+		try {
+			const response = await fetch('canadian-cities-gentle-density-summary.csv');
+			const csvData = await response.text();
+			citySummaryData = csvParse(csvData);
+		} catch (error) {
+			console.error('Error loading CSV data:', error);
+		}
+	}
+
+	onMount(() => {
+		loadData();
+	});
+
+	// $: console.log(citySummaryData);
+
+    // let selectedCity = 'Victoria'; // Set the default city
 
 </script>
 
@@ -57,16 +81,16 @@
 
 		<div class="title">
 			<h1>
-				<span class="italic">Gentle Density</span> Across Five Canadian Cities
+				Growth of <span class="italic">Gentle Density</span> across Canada
 			</h1>
 			<h2>
-				Secondary & Backyard Suites in Victoria, Edmonton, Calgary, Toronto, & Halifax
+				Tracking secondary and detached suites from local building permit data
 			</h2>
 			<h2>
 				
 			</h2>
 			<p>Author Names</p>
-			<p>April 2024</p>
+			<p>August 2024</p>
 		</div>
 
 	</div>
@@ -116,15 +140,35 @@
 		</p>
 	</div>
 
+	OKAY 4 charts showing (buttons totals / per capita) of issued/completed and secondary/detached
+
 	<div class="line-chart">
-		<BarChartSecondary/>
+		<h3>Completed Suites</h3>
+		<BarChartSecondary 
+			citySummaryData = {citySummaryData}
+			type = "Secondary"
+			date = "Issued"
+		/>
+		<BarChartSecondary 
+			citySummaryData = {citySummaryData}
+			type = "Secondary"
+			date = "Issued"
+		/>
 	</div>
 
-	<div class="text">
-		<p>
-			I think in here we need another graphic that is the above, ore maybe incorporated into the above, of units per overall population or households (2021 data) to standardize in some way
-		</p>
-	</div>
+	
+	OKAY! small multiple by city trends of detached (lines for completed and issued)
+
+	--
+
+	OKAY! small multiple by city trends of secondary (lines for completed and issued) - highlight missing data, maybe line for when policy allowed?
+
+
+	Dropdown select city and zoom to map
+	- on map?
+	- - toggles for completed and issued
+	- - two colours for two types
+	Note about policy?
 
 
 	<!-- <div class="line-chart">
@@ -132,16 +176,16 @@
 		<BarChartLaneway/>
 	</div> -->
 
-    <div id="top-bar">
+    <!-- <div id="top-bar">
         <div class="buttons">
 			<button class:selected={selectedCity === 'Victoria'} on:click={() => selectedCity = 'Victoria'}>City of Victoria</button>
 			<button class:selected={selectedCity === 'Edmonton'} on:click={() => selectedCity = 'Edmonton'}>City of Edmonton</button>
 			<button class:selected={selectedCity === 'Calgary'} on:click={() => selectedCity = 'Calgary'}>City of Calgary</button>
 			<button class:selected={selectedCity === 'Toronto'} on:click={() => selectedCity = 'Toronto'}>City of Toronto</button>
 		</div>
-    </div>
+    </div> -->
 
-	<CanadianCitiesMap city={selectedCity}/>
+	<!-- <CanadianCitiesMap city={selectedCity}/> -->
 
 	<div class="text">
 		<p>
@@ -161,6 +205,8 @@
 				All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python (pandas, geopandas), Svelte, Maplibre, and D3.
 			</p>
 		</div>
+
+		<ReadMore currentPage = "canadian-cities"/>
 		
 	</div>
 
