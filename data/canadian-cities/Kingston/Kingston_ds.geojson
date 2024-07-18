@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+"name": "Kingston_ds",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-1568-2023", "DATE OF ISSUE": "4/10/2023", "DATE OF COMPLETION": "", "STATUS": "0", "ADDRESS": "2952 6TH CONCESSION RD" }, "geometry": { "type": "Point", "coordinates": [ -76.308406, 44.3694433, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-1130-2023", "DATE OF ISSUE": "6/9/2023", "DATE OF COMPLETION": "", "STATUS": "0", "ADDRESS": "180 MORENZ CRES" }, "geometry": { "type": "Point", "coordinates": [ -76.4860496, 44.2671107, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-0496-2021", "DATE OF ISSUE": "12/5/2021", "DATE OF COMPLETION": "", "STATUS": "1", "ADDRESS": "347 ALBERT ST" }, "geometry": { "type": "Point", "coordinates": [ -76.499945, 44.2322572, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-0257-2021", "DATE OF ISSUE": "27/4/2021", "DATE OF COMPLETION": "", "STATUS": "1", "ADDRESS": "230 FRONTENAC ST" }, "geometry": { "type": "Point", "coordinates": [ -76.498652, 44.2289994, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-0451-2021", "DATE OF ISSUE": "6/4/2021", "DATE OF COMPLETION": "", "STATUS": "1", "ADDRESS": "256 VICTORIA ST" }, "geometry": { "type": "Point", "coordinates": [ -76.5028479, 44.2292266, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-2120-2020", "DATE OF ISSUE": "26/3/2021", "DATE OF COMPLETION": "", "STATUS": "1", "ADDRESS": "662 PORTSMOUTH AVE" }, "geometry": { "type": "Point", "coordinates": [ -76.5295458, 44.2428286, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-2412-2020", "DATE OF ISSUE": "26/1/2021", "DATE OF COMPLETION": "", "STATUS": "1", "ADDRESS": "133 MACK ST" }, "geometry": { "type": "Point", "coordinates": [ -76.5025975, 44.2341812, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-1992-2020", "DATE OF ISSUE": "12/1/2021", "DATE OF COMPLETION": "", "STATUS": "1", "ADDRESS": "51 DALGLEISH AVE" }, "geometry": { "type": "Point", "coordinates": [ -76.4541147, 44.2606653, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-1067-2020", "DATE OF ISSUE": "12/8/2020", "DATE OF COMPLETION": "", "STATUS": "0", "ADDRESS": "290 FRONTENAC ST" }, "geometry": { "type": "Point", "coordinates": [ -76.4987831, 44.2306385, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-0040-2020", "DATE OF ISSUE": "11/5/2020", "DATE OF COMPLETION": "", "STATUS": "0", "ADDRESS": "218 ALBERT ST" }, "geometry": { "type": "Point", "coordinates": [ -76.5001661, 44.2283636, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-0067-2024", "DATE OF ISSUE": "9/2/2024", "DATE OF COMPLETION": "", "STATUS": "0", "ADDRESS": "6 HOWARD CRES" }, "geometry": { "type": "Point", "coordinates": [ -76.5300528, 44.2484646, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-0366-2021", "DATE OF ISSUE": "18/3/2022", "DATE OF COMPLETION": "", "STATUS": "0", "ADDRESS": "200 SIBBIT AVE" }, "geometry": { "type": "Point", "coordinates": [ -76.4169682, 44.2444397, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-0551-2020", "DATE OF ISSUE": "4/5/2020", "DATE OF COMPLETION": "", "STATUS": "0", "ADDRESS": "1202 MONTREAL ST" }, "geometry": { "type": "Point", "coordinates": [ -76.4789235, 44.2660471, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-1130-2023", "DATE OF ISSUE": "6/9/2023", "DATE OF COMPLETION": "", "STATUS": "0", "ADDRESS": "180 MORENZ CRES" }, "geometry": { "type": "Point", "coordinates": [ -76.4860496, 44.2671107, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "PRBD20171744", "DATE OF ISSUE": "5/10/2017", "DATE OF COMPLETION": "", "STATUS": "1", "ADDRESS": "90 ARAGON RD" }, "geometry": { "type": "Point", "coordinates": [ -76.4383787, 44.3179966, 0.0 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "D30-1623-2020", "DATE OF ISSUE": "3/11/2020", "DATE OF COMPLETION": "", "STATUS": "0", "ADDRESS": "2 COUPER ST" }, "geometry": { "type": "Point", "coordinates": [ -76.5005705, 44.2284172, 0.0 ] } }
+]
+}
