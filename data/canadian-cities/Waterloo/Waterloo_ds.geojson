@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Waterloo_ds",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "PERMIT ID": "2016 011322 000 00 RE", "DATE OF ISSUE": "31/5/2016", "DATE OF COMPLETION": "", "STATUS": "1", "ADDRESS": "323 GREY SILO RD" }, "geometry": { "type": "Point", "coordinates": [ -80.49311214, 43.52565153 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "2013 007080 000 00 RE", "DATE OF ISSUE": "6/5/2013", "DATE OF COMPLETION": "", "STATUS": "1", "ADDRESS": "657 MONTPELLIER DR" }, "geometry": { "type": "Point", "coordinates": [ -80.5789841, 43.45035946 ] } },
+{ "type": "Feature", "properties": { "PERMIT ID": "2024 003889 000 00 RE", "DATE OF ISSUE": "30/5/2024", "DATE OF COMPLETION": "", "STATUS": "0", "ADDRESS": "38 ALLEN ST E" }, "geometry": { "type": "Point", "coordinates": [ -80.51800711, 43.46175684 ] } }
+]
+}
