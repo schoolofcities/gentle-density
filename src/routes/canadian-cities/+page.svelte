@@ -19,6 +19,11 @@
 	import { csvParse } from 'd3-dsv';
 
 
+	let buttonSelected = "Totals";
+	function buttonClick(input) {
+		buttonSelected = input;
+	};
+
 	let citySummaryData = [];
 
 	async function loadData() {
@@ -37,7 +42,7 @@
 
 	// $: console.log(citySummaryData);
 
-    // let selectedCity = 'Victoria'; // Set the default city
+    let selectedCity = 'Victoria'; // Set the default city
 
 </script>
 
@@ -81,16 +86,16 @@
 
 		<div class="title">
 			<h1>
-				Growth of <span class="italic">Gentle Density</span> across Canada
+				<span class="italic">Gentle Density</span> Across Canada
 			</h1>
 			<h2>
-				Tracking secondary and detached suites from local building permit data
+				Tracking development of secondary and detached suites from local building permit data
 			</h2>
 			<h2>
 				
 			</h2>
 			<p>Author Names</p>
-			<p>August 2024</p>
+			<p>September 2024</p>
 		</div>
 
 	</div>
@@ -103,7 +108,7 @@
 	<div class="text">
 
 		<p>
-			Hello I am some introductory text
+			Hello I am some introductory text about what this page is all aboooot.
 		</p>
 		
 		
@@ -123,12 +128,11 @@
 	
 	<div class="text">
 
-		<h3><span class="textLaneway">Rear-Yard Suites</span></h3>
+		<h3><span class="textLaneway">Detached Suites</span></h3>
 		<div class="typeWrapper">
 			<div class="isometric-mobile"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
 			<div class="typeText"><p>
-				Building a small detached dwelling unit that is located on the same property as a single-family home. They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, or Laneway Houses. Toronto legalized rear yard suites that abut laneways in 06/2018, called Laneway Suites in city bylaws (these are often garage conversions), and then legalized them in all other residential zones in 02/2022 without the need to abut a laneway. The latter are often called Garden Suites. DESCRIBE DATES ON OTHER CITIES,
-
+				Building a small detached dwelling unit that is located on the same property with an existing dwelling (e.g. a single family home). They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, Coach Houses, or Laneway Houses. 
 			</p></div>
 			<div class="isometric"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
 		</div>
@@ -136,39 +140,84 @@
 
 	<div class="text">
 		<p>
-			Hello I am some more text maybe also showing a simple regulation timeline of different cities (when things were approved)
+			Hello I am some more text
 		</p>
+		<p>
+			OKAY 4 charts showing (buttons totals / per capita) of issued/completed and secondary/detached for a set time period - 2021, 2022 and 2023? I guess
+		</p>
+
+		<h3>Completed Permits</h3>
+
+		<div class="buttons-wrapper">
+			<button 
+				class="{buttonSelected === "Totals" ? 'buttonSelected' : 'buttonNotSelected'}"
+				on:click={() => buttonClick('Totals')}>
+				Totals
+			</button>
+			<button 
+				class="{buttonSelected === "Per Capita" ? 'buttonSelected' : 'buttonNotSelected'}"
+				on:click={() => buttonClick('Per Capita')}>
+				Per Capita
+			</button>
+		</div>
+
 	</div>
-
-	OKAY 4 charts showing (buttons totals / per capita) of issued/completed and secondary/detached
-
-	<div class="line-chart">
-		<h3>Completed Suites</h3>
+		
 		<BarChartSecondary 
 			citySummaryData = {citySummaryData}
 			type = "Secondary"
-			date = "Issued"
+			date = "Completed"
 		/>
+		<br>
 		<BarChartSecondary 
 			citySummaryData = {citySummaryData}
-			type = "Secondary"
-			date = "Issued"
+			type = "Detached"
+			date = "Completed"
 		/>
+
+	<div class="text">
+
+		<h3>Issued Permits</h3>
+		<p>2021 to 2023 (3 year total)</p>
+
 	</div>
 
+	<BarChartSecondary 
+		citySummaryData = {citySummaryData}
+		type = "Secondary"
+		date = "Issued"
+	/>
+	<br>
+	<BarChartSecondary 
+		citySummaryData = {citySummaryData}
+		type = "Detached"
+		date = "Issued"
+	/>
+
+
+
+	<div class="text">
+
+	<p>
+
+		OKAY! small multiple by city trends of detached (lines for completed and issued)
+
+		--
+
+		OKAY! small multiple by city trends of secondary (lines for completed and issued) - highlight missing data, maybe line for when policy allowed?
+
+
+		Dropdown select city and zoom to map
+		- on map?
+		- - toggles for completed and issued
+		- - two colours for two types
+		Note about policy?
+
+	</p>
+		
+	</div>
 	
-	OKAY! small multiple by city trends of detached (lines for completed and issued)
-
-	--
-
-	OKAY! small multiple by city trends of secondary (lines for completed and issued) - highlight missing data, maybe line for when policy allowed?
-
-
-	Dropdown select city and zoom to map
-	- on map?
-	- - toggles for completed and issued
-	- - two colours for two types
-	Note about policy?
+	
 
 
 	<!-- <div class="line-chart">
@@ -215,6 +264,46 @@
 
 
 <style>
+
+	.buttons-wrapper {
+		display: flex;
+	}
+
+	.buttonSelected {
+		height: 30px;
+		width: 150px;
+		border: solid 1px var(--brandLightBlue);
+		border-radius: 5px;
+		background-color: var(--brandDarkBlue);;
+		text-align: center;
+		margin-right: 10px;
+		color: white;
+		font-size: 16px;
+		font-family: UbuntuMonoRegular;
+		font-weight: 400;
+	}
+	
+	.buttonNotSelected {
+		height: 30px;
+		width: 150px;
+		border: solid 1px var(--brandLightBlue);
+		border-radius: 5px;
+		background-color: white;
+		text-align: center;
+		margin-right: 10px;
+		color: var(--brandDarkBlue);
+		font-size: 16px;
+		font-family: UbuntuMonoRegular;
+		font-weight: 400;
+		opacity: 1;
+	}
+	.buttonSelected:hover {
+		cursor: pointer;
+	}
+	.buttonNotSelected:hover {
+		cursor: pointer;
+		background-color: #eaf5ff;
+	}
 	
 	.typeWrapper {
 		overflow: hidden;
@@ -256,9 +345,9 @@
 		}
 	}
 
-    .selected {
-    background-color: var(--brandLightBlue);
-    color: white;
+    /* .selected {
+		background-color: var(--brandLightBlue);
+		color: white;
     }
 
 	.buttons {
@@ -294,19 +383,8 @@
 		opacity: 1;
 		color: white;
 		background-color: var(--brandLightBlue);
-	}
+	} */
 
-    #top-bar {
-        width: 100%;
-		/* width: calc(100% - 36px); */
-		background-color: var(--brandDarkBlue);
-		background-size: 13px 13px;
-		background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
-		color: white;
-		font-size: 17px;
-		font-family: UbuntuMonoRegular, monospace;
-		padding-top: 10px;
-		padding-bottom: 8px;
-		font-weight: bold;
-	}
+
+	
 </style>
