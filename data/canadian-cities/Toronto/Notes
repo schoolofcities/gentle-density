@@ -1,2 +1,3 @@
 all permits are correct as of July 31, 2024
 permits are classified based on work type, hence risk of undercounting is low
+UPDATE CAA August 10: I have since redownloaded the data from OpenData Toronto, and filtered it based on "Second Suites (New)" and "New Laneway/Rear Yard Suite" for work type, "Permit Issued" and "Closed" for Status, and "00" for Revisions to exclude later revisions of the same permit. The updated data could therefore be regarded as the most accurate
