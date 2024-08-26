@@ -153,10 +153,10 @@
 				On this page, we chart how different Canadian urban regions are doing in terms of creating new residential dwelling units from building conversions, over the five year period of 2019 to 2023.
 			</p>
 			<p>
-				The data are sourced from Statistics Canada's <a href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=418552&" target="_blank">Building Permit Survey</a>. This survey tracks attributes of building permits by Census Metropolitan Area (CMA) on a monthly basis. The survey includes the number of new dwelling units that were created due to building conversions, and has categories for three types of conversions (a. non-residential to residential, b. single dwelling to multiple dwellings, and c. multiple to multiple).
+				The data are sourced from Statistics Canada's <a href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=418552&" target="_blank">Building Permit Survey</a>. This survey tracks attributes of building permits issued in Census Metropolitan Areas (CMA) on a monthly basis. The survey includes the number of new dwelling units to be created from building conversions, based on building permits issued in each month. The survey also has categories for three types of conversions (a. non-residential to residential, b. single dwelling to multiple dwellings, and c. multiple to multiple).
 			</p>
 			<p>
-				Overall across Canada there were <b>104,425</b> new dwelling units created via conversions in the five-year period from 01/2019 to 12/2023. This accounts for <b>7.9%</b> of all new residential dwelling units created during this period, based on the data recorded in the building permit survey. Below we chart how this varies by CMA, trends over time, as well as different types of building conversions.
+				Overall across Canada there were <b>104,425</b> new dwelling units being created via conversions based on building permits issued in the five-year period from 01/2019 to 12/2023. This accounts for <b>7.9%</b> of all new residential dwelling units. Below we chart how this varies by CMA, trends over time, as well as different types of building conversions.
 			</p>
 			<br>
 
@@ -167,6 +167,7 @@
 		<div class="text">
 
 			<h3>New dwellings from building conversions, 01/2019 to 12/2023</h3>
+			<p style="margin-top: -20px; font-size: 16px;">(based on issued building permits)</p>
 
 			<p style="font-size: 15px">
 				<svg height={15} width={28}>
@@ -217,7 +218,7 @@
 					/>
 					
 				</svg>
-				Monthly trends
+				Monthly trends (scaled)
 			</p>
 
 		</div>
@@ -227,6 +228,8 @@
 		<div class="text">
 
 			<h3>Proportion of new dwellings by type of building conversion</h3>
+			<p style="margin-top: -20px; font-size: 16px;">(based on issued building permits)</p>
+			<br>
 
 			<div style="margin-top: -15px">
 				<svg height="25" width="300">

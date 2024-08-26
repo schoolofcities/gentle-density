@@ -93,6 +93,8 @@
 
 
 <h3>Total and percent of new dwellings from building conversions</h3>
+<p style="margin-top: -20px; font-size: 16px;">(based on issued building permits)</p>
+<br>
 
 <svg id="years" height="35" width={chartWidth}>
 
