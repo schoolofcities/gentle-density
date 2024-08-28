@@ -13,6 +13,7 @@
 
 	const marginRight = 75;
 	const marginLeft = 100;
+	const marginTop = 100;
 
 	let height = 200;
 
@@ -27,7 +28,6 @@
 
 	$: height = 75 + data.length * 40
 
-	
 	let maxXvalue = 0;
 	if (type === "Detached") {
 		maxXvalue = 300
@@ -38,7 +38,6 @@
 	$: xScale = scaleLinear()
 		.domain([0, maxXvalue])
 		.range([0, width - marginRight - marginLeft]);
-
 
 </script>
 
@@ -54,18 +53,49 @@
 		</pattern>
 
 		<text 
-			x="{marginLeft - 3}" 
-			y="{15}"
+			x="{marginLeft}" 
+			y="{18}"
 			id="title"
 			text-anchor="start" 
-		>Total {" "} {type} Suites</text>
+		>{" "} {type} Suites</text>
+
+		<rect 
+			id="bar"
+			x="{marginLeft}" 
+			y="32" 
+			height="15" 
+			width="15"
+			fill="url(#{"pattern-lines-"+type})"
+		/>
+		<text 
+			x="{marginLeft + 17}" 
+			y="44"
+			id="labelBar"
+			text-anchor="start" 
+		>Completed Building Permits (2023)</text>
+
+		<rect 
+			id="bar"
+			x="{marginLeft}" 
+			y="52" 
+			height="15" 
+			width="15"
+			fill="#F1C500"
+		/>
+		<text 
+			x="{marginLeft + 17}" 
+			y="64"
+			id="labelBar"
+			text-anchor="start" 
+		>Issued Building Permits (2023)</text>
 
 		<line
 			x1="{marginLeft}"	
 			x2="{width - marginRight}"
-			y1="40"
-			y2="40"
+			y1="{marginTop}"
+			y2="{marginTop}"
 			stroke="#002b8f"
+			opacity="0.667"
 			stroke-width="1"
 		/>
 
@@ -74,17 +104,19 @@
 			<line
 				x1="{marginLeft + xScale(i * maxXvalue / 4) }"	
 				x2="{marginLeft + xScale(i * maxXvalue / 4) }"
-				y1="35"
-				y2="45"
+				y1="{marginTop - 5}"
+				y2="{marginTop + 5}"
 				stroke="#002b8f"
+				opacity="0.667"
 				stroke-width="1"
 			/>
 
 			<text 
 				x="{marginLeft + xScale(i * maxXvalue / 4)}" 
-				y="{60}"
+				y="{marginTop - 7}"
 				id="labelBar"
 				text-anchor="start" 
+				opacity="0.667"
 			>{maxXvalue * i / 4}</text>
 
 		{/each}
@@ -94,7 +126,7 @@
 			<rect 
 				id="bar"
 				x="{marginLeft}" 
-				y="{i * 40 + 75}" 
+				y="{i * 40 + marginTop + 15}" 
 				height="{15}" 
 				width="{xScale(d.COMPLETED)}"
 				fill="url(#{"pattern-lines-"+type})"
@@ -102,7 +134,7 @@
 			<rect 
 				id="bar"
 				x="{marginLeft}" 
-				y="{i * 40 + 90}" 
+				y="{i * 40 + marginTop + 30}" 
 				height="{15}" 
 				width="{xScale(d.ISSUED)}"
 				fill="#F1C500"
@@ -110,7 +142,7 @@
 
 			<text 
 				x="{marginLeft - 5}" 
-				y="{i * 40 + 93}"
+				y="{i * 40 + marginTop + 33}"
 				id="labelBar"
 				text-anchor="end" 
 			>{d.CITY}</text>
@@ -118,7 +150,7 @@
 			{#if d.COMPLETED === ""}
 				<text 
 					x="{xScale(d.COMPLETED) + marginLeft + 3}" 
-					y="{i * 40 + 87}"
+					y="{i * 40 + marginTop + 26}"
 					text-anchor="start" 
 					font-size="14"
 					fill="#0D534D"
@@ -127,7 +159,7 @@
 			{:else}
 				<text 
 					x="{xScale(d.COMPLETED) + marginLeft + 3}" 
-					y="{i * 40 + 87}"
+					y="{i * 40 + marginTop + 26}"
 					fill="#0D534D"
 					text-anchor="start"
 					font-size="14"
@@ -137,7 +169,7 @@
 			{#if d.ISSUED === ""}
 				<text 
 					x="{xScale(d.ISSUED) + marginLeft + 3}" 
-					y="{i * 40 + 102}"
+					y="{i * 40 + marginTop + 43}"
 					text-anchor="start" 
 					font-size="14"
 					fill="#d2ac00"
@@ -146,7 +178,7 @@
 			{:else}
 				<text 
 					x="{xScale(d.ISSUED) + marginLeft + 3}" 
-					y="{i * 40 + 102}"
+					y="{i * 40 + marginTop + 43}"
 					fill="#d2ac00"
 					text-anchor="start"
 					font-size="14"

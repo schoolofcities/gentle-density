@@ -109,12 +109,37 @@
 	</div>
 
 	<div class="text">
-
 		<p>
-			Hello I am some introductory text about what this page is all aboooot.
+			Some intro text here
 		</p>
-		
-		
+	</div>
+
+	<div class="text">
+		<h3><span class="textLaneway">Detached Suites</span></h3>
+		<p>
+			Some intro text here
+		</p>
+		<div class="typeWrapper">
+			<div class="isometric-mobile"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
+			<div class="typeText"><p>
+				Building a small detached dwelling unit that is located on the same property with an existing dwelling (e.g. a single family home). They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, Coach Houses, or Laneway Houses. 
+			</p></div>
+			<div class="isometric"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
+		</div>
+		<p>
+			Some more text here
+		</p>
+	</div>
+
+	<BarChartDouble
+		citySummaryData = {citySummaryData}
+		type = "Detached"
+	/>
+
+	<br><br><br>
+
+	<div class="text">
+
 		<h3><span class="textSecondary">Secondary Suites</span></h3>
 		<div class="typeWrapper">
 			<div class="isometric-mobile"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
@@ -125,35 +150,26 @@
 			<div class="isometric"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
 		</div>
 
-
 	</div>
+
+	<BarChartDouble
+		citySummaryData = {citySummaryData}
+		type = "Secondary"
+	/>
 
 	
-	<div class="text">
-
-		<h3><span class="textLaneway">Detached Suites</span></h3>
-		<div class="typeWrapper">
-			<div class="isometric-mobile"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
-			<div class="typeText"><p>
-				Building a small detached dwelling unit that is located on the same property with an existing dwelling (e.g. a single family home). They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, Coach Houses, or Laneway Houses. 
-			</p></div>
-			<div class="isometric"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
-		</div>
-	</div>
+	
 
 	<div class="text">
 		<p>
 			Hello I am some more text
 		</p>
-		<p>
+		<!-- <p>
 			OKAY 4 charts showing (buttons totals / per capita) of issued/completed and secondary/detached for a set time period - 2021, 2022 and 2023? I guess
 		</p>
-
-		<h3>Completed Permits</h3>
-
 		<p>
 			Here we show the total completed building permits, over a three year period of 2021 to 2023. We are only showing cities that A) note the completed or closing date in their building permit data, many do not, and B) have at least 1 building permit for the specified category. Moncton, for example, includes completed date, but has no detached suites in their data.
-		</p>
+		</p> -->
 
 		<!-- <div class="buttons-wrapper">
 			<button 
@@ -182,7 +198,7 @@
 			date = "COMPLETED"
 		/> -->
 
-
+<!-- 
 	<div class="text">
 
 		<h3>Issued Permits</h3>
@@ -190,7 +206,7 @@
 			Here we show the total issued building permits, over a three year period of 2021 to 2023. There are more cities here than above, simply because issued date is the main date that are included in city data, usually.
 		</p>
 
-	</div>
+	</div> -->
 
 	<!-- <BarChartSecondary 
 		citySummaryData = {citySummaryData}
@@ -204,34 +220,12 @@
 		date = "ISSUED"
 	/> -->
 
-	<br>
-	<br>
-
-	<BarChartDouble
-			citySummaryData = {citySummaryData}
-			type = "Detached"
-	/>
-		<br>
-
-	<BarChartDouble
-		citySummaryData = {citySummaryData}
-		type = "Secondary"
-	/>
+	
 	<!-- <BarChartDouble 
 		citySummaryData = {citySummaryData}
 		type = "Detached"
 		date = "COMPLETED"
 	/> -->
-
-
-	<br>
-	<br>
-
-
-	<MiniCharts 
-		citySummaryData = {citySummaryData}
-		type = "Detached"
-	/>
 
 	<!-- <MiniCharts 
 		citySummaryData = {citySummaryData}
