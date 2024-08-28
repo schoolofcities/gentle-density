@@ -97,12 +97,15 @@
 			<h2>
 				
 			</h2>
-			<p>Author Names</p>
-			<p>September 2024</p>
+			<p>
+				Author Names
+			</p>
+			<p>
+				September 2024
+			</p>
 		</div>
 
 	</div>
-
 
 	<div class="arrow">
 		<p>▼</p>
@@ -156,9 +159,6 @@
 		citySummaryData = {citySummaryData}
 		type = "Secondary"
 	/>
-
-	
-	
 
 	<div class="text">
 		<p>
@@ -235,7 +235,7 @@
 	<div class="text">
 
 	<p>
-
+		"svelte-range-slider-pips": "^2.1.1"
 		OKAY! small multiple by city trends of detached (lines for completed and issued)
 
 		--

@@ -22,7 +22,7 @@
 		"d3-scale": "^4.0.2",
 		"maplibre-gl": "^4.3.1",
 		"pmtiles": "^3.0.5",
-		"svelte-range-slider-pips": "^2.1.1"
+		"svelte-range-slider-pips": "^2.3.1"
 	},
 	"type": "module"
 }
