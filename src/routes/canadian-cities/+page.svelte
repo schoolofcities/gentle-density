@@ -3,7 +3,10 @@
 	// import BarChartSecondary from "./lib/BarChartSecondaryCities.svelte";
 	// import BarChartLaneway from "./lib/BarChartLanewayCities.svelte";
 
-	import BarChartSecondary from "./lib/BarChartSecondaryAllCities.svelte";
+	import BarChartSecondary from "./lib/BarChartSummaryAllCities.svelte";
+	import BarChartDouble from "./lib/BarChartSummaryAllCitiesDouble.svelte";
+
+	import MiniCharts from "./lib/MiniCharts.svelte";
 
     // import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
 
@@ -28,7 +31,7 @@
 
 	async function loadData() {
 		try {
-			const response = await fetch('canadian-cities-gentle-density-summary.csv');
+			const response = await fetch('municipality-summary-count.csv');
 			const csvData = await response.text();
 			citySummaryData = csvParse(csvData);
 		} catch (error) {
@@ -40,7 +43,7 @@
 		loadData();
 	});
 
-	// $: console.log(citySummaryData);
+	$: console.log(citySummaryData);
 
     let selectedCity = 'Victoria'; // Set the default city
 
@@ -148,7 +151,11 @@
 
 		<h3>Completed Permits</h3>
 
-		<div class="buttons-wrapper">
+		<p>
+			Here we show the total completed building permits, over a three year period of 2021 to 2023. We are only showing cities that A) note the completed or closing date in their building permit data, many do not, and B) have at least 1 building permit for the specified category. Moncton, for example, includes completed date, but has no detached suites in their data.
+		</p>
+
+		<!-- <div class="buttons-wrapper">
 			<button 
 				class="{buttonSelected === "Totals" ? 'buttonSelected' : 'buttonNotSelected'}"
 				on:click={() => buttonClick('Totals')}>
@@ -159,42 +166,77 @@
 				on:click={() => buttonClick('Per Capita')}>
 				Per Capita
 			</button>
-		</div>
+		</div> -->
 
 	</div>
 		
-		<BarChartSecondary 
+		<!-- <BarChartSecondary 
 			citySummaryData = {citySummaryData}
 			type = "Secondary"
-			date = "Completed"
+			date = "COMPLETED"
 		/>
 		<br>
 		<BarChartSecondary 
 			citySummaryData = {citySummaryData}
 			type = "Detached"
-			date = "Completed"
-		/>
+			date = "COMPLETED"
+		/> -->
+
 
 	<div class="text">
 
 		<h3>Issued Permits</h3>
-		<p>2021 to 2023 (3 year total)</p>
+		<p>
+			Here we show the total issued building permits, over a three year period of 2021 to 2023. There are more cities here than above, simply because issued date is the main date that are included in city data, usually.
+		</p>
 
 	</div>
 
-	<BarChartSecondary 
+	<!-- <BarChartSecondary 
 		citySummaryData = {citySummaryData}
 		type = "Secondary"
-		date = "Issued"
+		date = "ISSUED"
 	/>
 	<br>
 	<BarChartSecondary 
 		citySummaryData = {citySummaryData}
 		type = "Detached"
-		date = "Issued"
+		date = "ISSUED"
+	/> -->
+
+	<br>
+	<br>
+
+	<BarChartDouble
+			citySummaryData = {citySummaryData}
+			type = "Detached"
+	/>
+		<br>
+
+	<BarChartDouble
+		citySummaryData = {citySummaryData}
+		type = "Secondary"
+	/>
+	<!-- <BarChartDouble 
+		citySummaryData = {citySummaryData}
+		type = "Detached"
+		date = "COMPLETED"
+	/> -->
+
+
+	<br>
+	<br>
+
+
+	<MiniCharts 
+		citySummaryData = {citySummaryData}
+		type = "Detached"
 	/>
 
-
+	<!-- <MiniCharts 
+		citySummaryData = {citySummaryData}
+		type = "Secondary"
+	/> -->
 
 	<div class="text">
 

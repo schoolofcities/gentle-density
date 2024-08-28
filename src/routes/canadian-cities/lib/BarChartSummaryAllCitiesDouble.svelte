@@ -5,48 +5,36 @@
 
 	export let citySummaryData;
 	export let type;
-	export let date;
 
-
-
-	$: console.log(colour);
 
 	let divWidth;
 	$: width = divWidth;
 
-	let colour;
-	if (type === "Secondary") {
-		colour = "#AB1368"
-	} else if (type === "Detached") {
-		colour = "#0D534D";
-	} else {
-		colour = "grey"
-	}
 
-	const height = 220;
-	const marginTop = 80;
-	const marginRight = 50;
-	const marginBottom = 20;
-	const marginLeft = 75;
+	const marginRight = 75;
+	const marginLeft = 100;
+
+	let height = 200;
+
+	
+	let data =[];
 
 
 	// would probably need to filter by Year here too eventually
-	$: groupedData = Array.from(
-		group(
-			citySummaryData.filter(e => e.Type === type), d => d.City
-		).entries(), ([city, values]) => ({
-				city,
-				sumCompleted: sum(values, d => d[date])
-			})
-		);
+	$: data = citySummaryData.filter(d => d.TYPE === type && d.YEAR === "2023");
 
-	$: console.log(groupedData);
+	$: console.log(data);
+
+	$: height = 75 + data.length * 40
 
 	
-	let maxXvalue = 100;
-	$: maxXvalue = Math.ceil(max(groupedData, d => d.sumCompleted) / 1000) * 1000
+	let maxXvalue = 0;
+	if (type === "Detached") {
+		maxXvalue = 300
+	} else {
+		maxXvalue = 1000
+	}
 	
-
 	$: xScale = scaleLinear()
 		.domain([0, maxXvalue])
 		.range([0, width - marginRight - marginLeft]);
@@ -61,16 +49,16 @@
 	<svg height={height} width={width} id="svgChart">
 
 		<pattern id={"pattern-lines-"+type} x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
-			<rect x="0" y="0" height="10" width="10" style="fill:{colour};" />
+			<rect x="0" y="0" height="10" width="10" style="fill:#0D534D;" />
 			<line x1="0" y1="0" x2="10" y2="10" style="stroke:white;stroke-width:1;stroke-opacity:0.2" />
 		</pattern>
 
 		<text 
-			x="{5}" 
+			x="{marginLeft - 3}" 
 			y="{15}"
 			id="title"
 			text-anchor="start" 
-		>Total {date} {" "} {type} Suites</text>
+		>Total {" "} {type} Suites</text>
 
 		<line
 			x1="{marginLeft}"	
@@ -101,32 +89,71 @@
 
 		{/each}
 	
-		{#each groupedData as d, i}
+		{#each data as d, i}
 
 			<rect 
 				id="bar"
 				x="{marginLeft}" 
-				y="{i * 30 + 75}" 
-				height="{20}" 
-				width="{xScale(d.sumCompleted)}"
+				y="{i * 40 + 75}" 
+				height="{15}" 
+				width="{xScale(d.COMPLETED)}"
 				fill="url(#{"pattern-lines-"+type})"
+			/>
+			<rect 
+				id="bar"
+				x="{marginLeft}" 
+				y="{i * 40 + 90}" 
+				height="{15}" 
+				width="{xScale(d.ISSUED)}"
+				fill="#F1C500"
 			/>
 
 			<text 
 				x="{marginLeft - 5}" 
-				y="{i * 30 + 90}"
+				y="{i * 40 + 93}"
 				id="labelBar"
 				text-anchor="end" 
-			>{d.city}</text>
+			>{d.CITY}</text>
 
-			<text 
-				x="{xScale(d.sumCompleted) + marginLeft + 3}" 
-				y="{i * 30 + 90}"
-				id="labelBar"
-				text-anchor="start" 
-			>{d.sumCompleted}</text>
+			{#if d.COMPLETED === ""}
+				<text 
+					x="{xScale(d.COMPLETED) + marginLeft + 3}" 
+					y="{i * 40 + 87}"
+					text-anchor="start" 
+					font-size="14"
+					fill="#0D534D"
+					opacity="0.333"
+				>no data on completions</text>
+			{:else}
+				<text 
+					x="{xScale(d.COMPLETED) + marginLeft + 3}" 
+					y="{i * 40 + 87}"
+					fill="#0D534D"
+					text-anchor="start"
+					font-size="14"
+				>{d.COMPLETED}</text>
+			{/if}
 
-		{/each}
+			{#if d.ISSUED === ""}
+				<text 
+					x="{xScale(d.ISSUED) + marginLeft + 3}" 
+					y="{i * 40 + 102}"
+					text-anchor="start" 
+					font-size="14"
+					fill="#d2ac00"
+					opacity="0.4"
+				>no data on issued permits</text>
+			{:else}
+				<text 
+					x="{xScale(d.ISSUED) + marginLeft + 3}" 
+					y="{i * 40 + 102}"
+					fill="#d2ac00"
+					text-anchor="start"
+					font-size="14"
+				>{d.ISSUED}</text>
+			{/if}
+
+	{/each}
 
 	</svg>
 
@@ -149,7 +176,7 @@
 		/* padding-left: 10px; */
 		margin: 0 auto;
 		width: calc(100% - 70px);
-		max-width: 920px;
+		max-width: 720px;
 	}
 
 	#title {
