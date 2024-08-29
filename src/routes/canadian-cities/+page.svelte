@@ -118,24 +118,17 @@
 
 	<div class="text">
 		<p>
-			Some intro text here
+			Lorem ipsum odor amet, consectetuer adipiscing elit. Neque rutrum arcu interdum ante maecenas. Auctor pretium iaculis quisque porttitor condimentum facilisi tristique. Aptent ligula placerat eu litora urna tincidunt dis. Lacus taciti id; pretium est vitae erat taciti dictumst. Fusce lectus litora iaculis eros hendrerit mi. Curae justo dis ad; nisi dapibus ad ultrices. Aliquet conubia dignissim luctus phasellus habitasse maecenas.
+		</p>
+		<p>
+			Fermentum ex aliquam consequat vulputate elit class tortor vehicula. Tortor mi faucibus, rutrum hendrerit facilisi orci facilisi. Curae etiam per varius tellus quisque feugiat vestibulum. Etiam quisque diam imperdiet nam libero nibh lectus dapibus. Facilisis aliquam donec tempor ornare; nibh platea placerat. Nullam massa phasellus sociosqu risus diam sem habitant euismod. Etiam arcu sollicitudin sit hendrerit ac suscipit. Etiam fermentum mi aliquet leo turpis ultricies. Dolor ante morbi aliquet vulputate, blandit vestibulum neque consectetur.
 		</p>
 	</div>
 
 	<div class="text">
 		<h3><span class="textLaneway">Detached Suites</span></h3>
 		<p>
-			Some intro text here
-		</p>
-		<div class="typeWrapper">
-			<div class="isometric-mobile"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
-			<div class="typeText"><p>
-				Building a small detached dwelling unit that is located on the same property with an existing dwelling (e.g. a single family home). They are sometimes called Accessory Dwelling Units (ADUs), Garden Suites, Coach Houses, or Laneway Houses. 
-			</p></div>
-			<div class="isometric"><img src = {isometricLaneway} alt="isometricLaneway"/></div>
-		</div>
-		<p>
-			Some more text here
+			Nec rhoncus consequat elit libero viverra aptent accumsan ullamcorper. Lorem praesent hendrerit est pellentesque nullam dolor elementum vestibulum. Lobortis aliquam suspendisse congue nulla sagittis lacinia est massa? Tristique ante tincidunt cras curabitur finibus mollis. Varius quisque ad neque lacinia congue. Nisl class pulvinar sem ultricies mollis laoreet hendrerit curae. Luctus adipiscing ultricies facilisis convallis viverra ultricies fringilla. Suscipit laoreet commodo habitasse sed conubia. Scelerisque ultricies vehicula vulputate luctus tristique taciti vitae donec lacinia.
 		</p>
 	</div>
 
@@ -147,16 +140,10 @@
 	<br><br><br>
 
 	<div class="text">
-
-		<h3><span class="textSecondary">Secondary Suites</span></h3>
-		<div class="typeWrapper">
-			<div class="isometric-mobile"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
-			<div class="typeText"><p>
-				Are self-contained living accommodation for an additional person or persons living together as a separate single housekeeping unit, in which both food preparation and sanitary facilities are provided for the exclusive use of the occupants of the suite, located in and subordinate to a dwelling unit.
-			</p>
-			</div>
-			<div class="isometric"><img src = {isometricSecondary} alt="isometricSecondary"/></div>
-		</div>
+		<h3><span class="textLaneway">Secondary Suites</span></h3>
+		<p>
+			Lorem ipsum odor amet, consectetuer adipiscing elit. Neque rutrum arcu interdum ante maecenas. Auctor pretium iaculis quisque porttitor condimentum facilisi tristique. Aptent ligula placerat eu litora urna tincidunt dis. Lacus taciti id; pretium est vitae erat taciti dictumst. Fusce lectus litora iaculis eros hendrerit mi. Curae justo dis ad; nisi dapibus ad ultrices. Aliquet conubia dignissim luctus phasellus habitasse maecenas.
+		</p>
 
 	</div>
 
@@ -166,8 +153,9 @@
 	/>
 
 	<div class="text">
+		<br>
 		<p>
-			Hello I am some more text
+			Nec rhoncus consequat elit libero viverra aptent accumsan ullamcorper. Lorem praesent hendrerit est pellentesque nullam dolor elementum vestibulum. Lobortis aliquam suspendisse congue nulla sagittis lacinia est massa? Tristique ante tincidunt cras curabitur finibus mollis. Varius quisque ad neque lacinia congue. Nisl class pulvinar sem ultricies mollis laoreet hendrerit curae. Luctus adipiscing ultricies facilisis convallis viverra ultricies fringilla. Suscipit laoreet commodo habitasse sed conubia. Scelerisque ultricies vehicula vulputate luctus tristique taciti vitae donec lacinia.
 		</p>
 		<!-- <p>
 			OKAY 4 charts showing (buttons totals / per capita) of issued/completed and secondary/detached for a set time period - 2021, 2022 and 2023? I guess
@@ -243,7 +231,7 @@
 	<div class="background-white">
 
 		<div class="text">
-
+			<br>
 			<br>
 
 			<h3>City-By-City View</h3>
@@ -264,7 +252,7 @@
 
 			<p>
 				
-				Discuss the city and its policy here, etc.
+				Lorem ipsum odor amet, consectetuer adipiscing elit. Neque rutrum arcu interdum ante maecenas. Auctor pretium iaculis quisque porttitor condimentum facilisi tristique. Aptent ligula placerat eu litora urna tincidunt dis. Lacus taciti id; pretium est vitae erat taciti dictumst. Fusce lectus litora iaculis eros hendrerit mi. Curae justo dis ad; nisi dapibus ad ultrices. Aliquet conubia dignissim luctus phasellus habitasse maecenas.
 
 			</p>
 
@@ -281,7 +269,7 @@
 		<div class="text">
 
 			<p>
-				meow meow meow
+				Felis arcu amet vitae lectus duis arcu purus nascetur. Cursus taciti tortor magnis tempor netus tortor! Sem vestibulum commodo posuere condimentum euismod euismod. Curae mattis maecenas a viverra maximus orci porttitor phasellus dolor. Inceptos imperdiet eleifend id lobortis varius per integer lobortis. Aptent vulputate eros inceptos scelerisque lacus nam vitae felis. Gravida libero auctor dignissim cubilia nam, porttitor inceptos eget.
 			</p>
 
 		</div>
@@ -295,12 +283,12 @@
 		<div class="text">
 
 			<p>
-				meow meow meow
+				Ad nam varius dignissim vehicula pellentesque cubilia tempus eros etiam. Donec in pharetra parturient id, cubilia eget ad. Sit venenatis dictum himenaeos enim iaculis blandit libero. Leo facilisis himenaeos sit auctor auctor penatibus. Finibus dictum est justo, tincidunt id ultrices auctor dignissim. Dictum morbi dis volutpat amet congue. Nibh placerat habitasse efficitur est praesent mollis porta inceptos. Duis et primis pharetra; purus urna mi.
 			</p>
 
 		</div>
 
-
+		<br>
 
 	</div>
 	
@@ -326,6 +314,7 @@
 
 	<div class="background-white">
 
+		<br>
 		<div class="text">
 			<h3>Data & Code</h3>
 			<p>

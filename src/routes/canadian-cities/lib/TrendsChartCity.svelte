@@ -91,7 +91,7 @@
 				id="labelBar"
 				text-anchor="start" 
 				opacity="0.35"
-			>No Data Issued Building Permits</text>
+			>No Data On Issued Building Permits</text>
 		{/if}
 
 		{#if (data.filter(d => d.COMPLETED !== "").length > 0)}
@@ -116,7 +116,7 @@
 				id="labelBar"
 				text-anchor="start" 
 				opacity="0.35"
-			>No Data Completed Building Permits</text>
+			>No Data On Completed Building Permits</text>
 		{/if}
 
 		
@@ -150,28 +150,7 @@
 			stroke-width="1"
 		/>
 
-		{#each years as year}
-
-			<line
-				x1="{xScale(year)}"	
-				x2="{xScale(year)}"
-				y1="{height - marginBottom + 8}"
-				y2="{height - marginBottom + 12}"
-				stroke="#002b8f"
-				opacity="0.667"
-				stroke-width="1"
-			/>
-			<text
-				x="{xScale(year)}"
-				y="{height - marginBottom + 24}"
-				text-anchor="middle"
-				fill="#002b8f"
-				font-size="12"
-			>
-				{year}
-			</text>
-
-		{/each}
+		
 
 		<path d={pathDataIssued} fill="none" stroke="#F1C500" stroke-width="2" />
 
@@ -216,6 +195,43 @@
 					{d.COMPLETED}
 				</text>
 			{/if}
+
+			{#if (d.COMPLETED === "" && d.ISSUED === "")}
+				<text
+					x="{xScale(d.YEAR) + 7}"
+					y="{yScale(0) + 6}"
+					text-anchor="start"
+					fill="#002b8f"
+					font-size="13"
+					opacity="0.35"
+					transform="rotate(-90 {xScale(d.YEAR)} {yScale(0) + 2})"
+				>
+					{"No Data Available"}
+				</text>
+			{/if}
+
+		{/each}
+
+		{#each years as year}
+
+			<line
+				x1="{xScale(year)}"	
+				x2="{xScale(year)}"
+				y1="{height - marginBottom + 8}"
+				y2="{height - marginBottom + 12}"
+				stroke="#002b8f"
+				opacity="0.667"
+				stroke-width="1"
+			/>
+			<text
+				x="{xScale(year)}"
+				y="{height - marginBottom + 24}"
+				text-anchor="middle"
+				fill="#002b8f"
+				font-size="12"
+			>
+				{year}
+			</text>
 
 		{/each}
 
