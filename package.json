@@ -20,9 +20,11 @@
 		"d3-array": "^3.2.1",
 		"d3-dsv": "^3.0.1",
 		"d3-scale": "^4.0.2",
+		"d3-shape": "^3.2.0",
 		"maplibre-gl": "^4.3.1",
 		"pmtiles": "^3.0.5",
-		"svelte-range-slider-pips": "^2.3.1"
+		"svelte-range-slider-pips": "^2.3.1",
+		"svelte-select": "^5.8.3"
 	},
 	"type": "module"
 }

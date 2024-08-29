@@ -3,12 +3,12 @@
 	// import BarChartSecondary from "./lib/BarChartSecondaryCities.svelte";
 	// import BarChartLaneway from "./lib/BarChartLanewayCities.svelte";
 
-	import BarChartSecondary from "./lib/BarChartSummaryAllCities.svelte";
 	import BarChartDouble from "./lib/BarChartSummaryAllCitiesDouble.svelte";
-
-	import MiniCharts from "./lib/MiniCharts.svelte";
+	import TrendsChartCity from "./lib/TrendsChartCity.svelte";
 
     // import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
+
+	import Select from 'svelte-select';
 
     import Top from "../../lib/TopSofC.svelte";
 	import ReadMore from "../../lib/ReadMore.svelte";
@@ -28,6 +28,7 @@
 	};
 
 	let citySummaryData = [];
+	let filteredData = [];
 
 	async function loadData() {
 		try {
@@ -43,9 +44,13 @@
 		loadData();
 	});
 
-	$: console.log(citySummaryData);
+	let cityNames = []
+	$: cityNames = [...new Set(citySummaryData.map(item => item.CITY))];
 
-    let selectedCity = 'Victoria'; // Set the default city
+    let selectedCity = 'Victoria'; 
+	
+	$: filteredData = citySummaryData.filter(row => row.CITY === selectedCity);
+
 
 </script>
 
@@ -232,25 +237,57 @@
 		type = "Secondary"
 	/> -->
 
-	<div class="text">
-
-	<p>
-		"svelte-range-slider-pips": "^2.1.1"
-		OKAY! small multiple by city trends of detached (lines for completed and issued)
-
-		--
-
-		OKAY! small multiple by city trends of secondary (lines for completed and issued) - highlight missing data, maybe line for when policy allowed?
 
 
-		Dropdown select city and zoom to map
-		- on map?
-		- - toggles for completed and issued
-		- - two colours for two types
-		Note about policy?
 
-	</p>
-		
+	<div class="background-white">
+
+		<div class="text">
+
+			<br>
+
+			<h3>City-By-City View</h3>
+
+			<Select 	
+				items={cityNames}
+				value={selectedCity}
+				on:input={e => selectedCity = e.detail.value}
+				clearable={false}
+				searchable={false}
+				showChevron={true}
+				--width="350px"
+				--font-size="18px"
+				--height="24px"
+				--selected-item-color="#ab1269"
+				--item-active-background="#F1C500"
+			/>
+
+			<p>
+				
+				Discuss the city and its policy here, etc.
+
+			</p>
+
+			
+			
+		</div>
+
+		<TrendsChartCity
+				citySummaryData = {citySummaryData}
+				type = "Detached"
+				city = {selectedCity}
+			/>
+
+		<div class="text">
+
+			<p>
+				meow meow meow
+			</p>
+			
+		</div>
+
+
+
 	</div>
 	
 	
@@ -272,12 +309,6 @@
 
 	<!-- <CanadianCitiesMap city={selectedCity}/> -->
 
-	<div class="text">
-		<p>
-			Final text
- 
-		</p>
-	</div>
 
 	<div class="background-white">
 
@@ -287,7 +318,7 @@
 				List sources for the data here.
 			</p>
 			<p>
-				All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python (pandas, geopandas), Svelte, Maplibre, and D3.
+				All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python (pandas, geopandas), Svelte, Maplibre, and D3. "svelte-range-slider-pips": "^2.1.1"
 			</p>
 		</div>
 

@@ -1,6 +1,5 @@
 <script>
 
-	import {group, sum, max} from 'd3-array';
 	import {scaleLinear} from 'd3-scale';
 
 	export let citySummaryData;
@@ -15,18 +14,22 @@
 	const marginLeft = 100;
 	const marginTop = 100;
 
+	let titleMarginLeft = marginLeft;
+	$: if (width < 500) {
+		titleMarginLeft = 10
+	} else {
+		titleMarginLeft = marginLeft;
+	}
+
 	let height = 200;
 
-	
 	let data =[];
 
 
 	// would probably need to filter by Year here too eventually
 	$: data = citySummaryData.filter(d => d.TYPE === type && d.YEAR === "2023");
 
-	$: console.log(data);
-
-	$: height = 75 + data.length * 40
+	$: height = marginTop + data.length * 40 + 10
 
 	let maxXvalue = 0;
 	if (type === "Detached") {
@@ -53,7 +56,7 @@
 		</pattern>
 
 		<text 
-			x="{marginLeft}" 
+			x="{titleMarginLeft}" 
 			y="{18}"
 			id="title"
 			text-anchor="start" 
@@ -61,14 +64,14 @@
 
 		<rect 
 			id="bar"
-			x="{marginLeft}" 
+			x="{titleMarginLeft}" 
 			y="32" 
 			height="15" 
 			width="15"
-			fill="url(#{"pattern-lines-"+type})"
+			fill="#002b8f"
 		/>
 		<text 
-			x="{marginLeft + 17}" 
+			x="{titleMarginLeft + 17}" 
 			y="44"
 			id="labelBar"
 			text-anchor="start" 
@@ -76,14 +79,14 @@
 
 		<rect 
 			id="bar"
-			x="{marginLeft}" 
+			x="{titleMarginLeft}" 
 			y="52" 
 			height="15" 
 			width="15"
 			fill="#F1C500"
 		/>
 		<text 
-			x="{marginLeft + 17}" 
+			x="{titleMarginLeft + 17}" 
 			y="64"
 			id="labelBar"
 			text-anchor="start" 
@@ -129,7 +132,7 @@
 				y="{i * 40 + marginTop + 15}" 
 				height="{15}" 
 				width="{xScale(d.COMPLETED)}"
-				fill="url(#{"pattern-lines-"+type})"
+				fill="#002b8f"
 			/>
 			<rect 
 				id="bar"
@@ -155,7 +158,7 @@
 					font-size="14"
 					fill="#0D534D"
 					opacity="0.333"
-				>no data on completions</text>
+				>no data on completed permits</text>
 			{:else}
 				<text 
 					x="{xScale(d.COMPLETED) + marginLeft + 3}" 
@@ -185,7 +188,7 @@
 				>{d.ISSUED}</text>
 			{/if}
 
-	{/each}
+		{/each}
 
 	</svg>
 
@@ -208,7 +211,7 @@
 		/* padding-left: 10px; */
 		margin: 0 auto;
 		width: calc(100% - 70px);
-		max-width: 720px;
+		max-width: 700px;
 	}
 
 	#title {
