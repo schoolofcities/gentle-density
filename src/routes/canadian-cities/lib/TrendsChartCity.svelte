@@ -15,7 +15,7 @@
 
 	const marginRight = 40;
 	const marginLeft = 25;
-	const marginTop = 50;
+	const marginTop = 80;
 	const marginBottom = 50;
 
 	const years = Array.from({ length: 2023 - 2014 + 1 }, (_, index) => 2014 + index);
@@ -62,24 +62,65 @@
 
 	<svg height={height} width={width} id="svgChart">
 
-		<!-- <line
-			x1="{marginLeft}"	
-			x2="{marginLeft}"
-			y1="{marginTop}"
-			y2="{height - marginBottom}"
-			stroke="#002b8f"
-			opacity="0.667"
-			stroke-width="1"
-		/> -->
-		<!-- <line
-			x1="{marginLeft}"	
-			x2="{width - marginRight}"
-			y1="{height - marginBottom}"
-			y2="{height - marginBottom}"
-			stroke="#002b8f"
-			opacity="0.667"
-			stroke-width="1"
-		/> -->
+		<text 
+			x="{10}" 
+			y="{18}"
+			id="title"
+			text-anchor="start" 
+		>{type} Suites In {city}</text>
+
+		{#if (data.filter(d => d.ISSUED !== "").length > 0)}
+			<rect 
+				id="bar"
+				x="{10}" 
+				y="37" 
+				height="5" 
+				width="15"
+				fill="#F1C500"
+			/>
+			<text 
+				x="{10 + 20}" 
+				y="44"
+				id="labelBar"
+				text-anchor="start" 
+			>Issued Building Permits</text>
+		{:else}
+			<text 
+				x="{10}" 
+				y="44"
+				id="labelBar"
+				text-anchor="start" 
+				opacity="0.35"
+			>No Data Issued Building Permits</text>
+		{/if}
+
+		{#if (data.filter(d => d.COMPLETED !== "").length > 0)}
+			<rect 
+				id="bar"
+				x="{10}" 
+				y="57" 
+				height="5" 
+				width="15"
+				fill="#002b8f"
+			/>
+			<text 
+				x="{10 + 20}" 
+				y="64"
+				id="labelBar"
+				text-anchor="start" 
+			>Completed Building Permits</text>
+		{:else}
+			<text 
+				x="{10}" 
+				y="64"
+				id="labelBar"
+				text-anchor="start" 
+				opacity="0.35"
+			>No Data Completed Building Permits</text>
+		{/if}
+
+		
+
 
 		<line
 			x1="{marginLeft}"	
@@ -138,7 +179,7 @@
 
 		{#each data as d}
 
-			{#if yScale(d.ISSUED) !== ""}
+			{#if (d.ISSUED !== "")}
 				<circle
 					cx={xScale(d.YEAR)}
 					cy={yScale(d.ISSUED)}
@@ -157,7 +198,7 @@
 				</text>
 			{/if}
 
-			{#if yScale(d.COMPLETED) !== ""}
+			{#if (d.COMPLETED !== "")}
 				<circle
 					cx={xScale(d.YEAR)}
 					cy={yScale(d.COMPLETED)}
@@ -197,5 +238,20 @@
 		max-width: 700px;
 		min-height: 200px;
 	}
+
+	#title {
+		font-size: 18px;
+		font-family: UbuntuMonoBold, monospace;
+		font-weight: 500;
+		fill: #002b8f;
+	}
+
+	#labelBar {
+		font-size: 15px;
+		font-family: UbuntuMonoRegular, monospace;
+		font-weight: 400;
+		fill: #002b8f;
+	}
+
 
 </style>

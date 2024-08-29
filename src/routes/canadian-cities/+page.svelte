@@ -273,17 +273,31 @@
 		</div>
 
 		<TrendsChartCity
-				citySummaryData = {citySummaryData}
-				type = "Detached"
-				city = {selectedCity}
-			/>
+			citySummaryData = {citySummaryData}
+			type = "Detached"
+			city = {selectedCity}
+		/>
 
 		<div class="text">
 
 			<p>
 				meow meow meow
 			</p>
-			
+
+		</div>
+
+		<TrendsChartCity
+			citySummaryData = {citySummaryData}
+			type = "Secondary"
+			city = {selectedCity}
+		/>
+
+		<div class="text">
+
+			<p>
+				meow meow meow
+			</p>
+
 		</div>
 
 
