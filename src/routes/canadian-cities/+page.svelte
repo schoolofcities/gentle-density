@@ -16,9 +16,20 @@
 	import '../../assets/styles.css';
 
 	const chartColours = {
-		"Completed": "#002b8f",
-		"Issued": "#F1C500"
+		"Secondary": {
+			"Completed": "#002b8f",
+			"Issued": "#ac8edc"
+		},
+		"Detached": {
+			"Completed": "#0D534D",
+			"Issued": "#6fc8c2"
+		}
 	}
+
+	// const chartColours = {
+	// 	"Completed": "#002b8f",
+	// 	"Issued": "#ac8edc"
+	// }
 
 	let buttonSelected = "Totals";
 	function buttonClick(input) {

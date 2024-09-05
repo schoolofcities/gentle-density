@@ -77,7 +77,7 @@
 				y="37" 
 				height="5" 
 				width="15"
-				fill="#F1C500"
+				fill="{chartColours[type].Issued}"
 			/>
 			<text 
 				x="{10 + 20}" 
@@ -102,7 +102,7 @@
 				y="57" 
 				height="5" 
 				width="15"
-				fill="#002b8f"
+				fill="{chartColours[type].Completed}"
 			/>
 			<text 
 				x="{10 + 20}" 
@@ -119,9 +119,6 @@
 				opacity="0.35"
 			>No Data On Completed Building Permits</text>
 		{/if}
-
-		
-
 
 		<line
 			x1="{marginLeft}"	
@@ -151,11 +148,9 @@
 			stroke-width="1"
 		/>
 
-		
+		<path d={pathDataIssued} fill="none" stroke="{chartColours[type].Issued}" stroke-width="2" />
 
-		<path d={pathDataIssued} fill="none" stroke="{chartColours.Issued}" stroke-width="2" />
-
-		<path d={pathDataCompleted} fill="none" stroke="{chartColours.Completed}" stroke-width="2" />
+		<path d={pathDataCompleted} fill="none" stroke="{chartColours[type].Completed}" stroke-width="2" />
 
 		{#each data as d}
 
@@ -171,7 +166,7 @@
 					x="{xScale(d.YEAR)}"
 					y="{yScale(d.ISSUED) + 4}"
 					text-anchor="middle"
-					fill="#ce6c35"
+					fill="{chartColours[type].Issued}"
 					font-size="13"
 				>
 					{d.ISSUED}
@@ -190,7 +185,7 @@
 					x="{xScale(d.YEAR)}"
 					y="{yScale(d.COMPLETED) + 4}"
 					text-anchor="middle"
-					fill="#002b8f"
+					fill="{chartColours[type].Completed}"
 					font-size="13"
 				>
 					{d.COMPLETED}
@@ -235,9 +230,6 @@
 			</text>
 
 		{/each}
-
-		
-
 
 	</svg>
 

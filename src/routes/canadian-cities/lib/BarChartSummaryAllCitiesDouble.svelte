@@ -69,7 +69,7 @@
 			y="32" 
 			height="15" 
 			width="15"
-			fill="{chartColours.Completed}"
+			fill="{chartColours[type].Completed}"
 		/>
 		<text 
 			x="{titleMarginLeft + 17}" 
@@ -84,7 +84,7 @@
 			y="52" 
 			height="15" 
 			width="15"
-			fill="{chartColours.Issued}"
+			fill="{chartColours[type].Issued}"
 		/>
 		<text 
 			x="{titleMarginLeft + 17}" 
@@ -133,7 +133,7 @@
 				y="{i * 40 + marginTop + 15}" 
 				height="{15}" 
 				width="{xScale(d.COMPLETED)}"
-				fill="{chartColours.Completed}"
+				fill="{chartColours[type].Completed}"
 			/>
 			<rect 
 				id="bar"
@@ -141,7 +141,7 @@
 				y="{i * 40 + marginTop + 30}" 
 				height="{15}" 
 				width="{xScale(d.ISSUED)}"
-				fill="{chartColours.Issued}"
+				fill="{chartColours[type].Issued}"
 			/>
 
 			<text 
@@ -157,14 +157,14 @@
 					y="{i * 40 + marginTop + 26}"
 					text-anchor="start" 
 					font-size="14"
-					fill="{chartColours.Completed}"
+					fill="{chartColours[type].Completed}"
 					opacity="0.333"
 				>no data on completed permits</text>
 			{:else}
 				<text 
 					x="{xScale(d.COMPLETED) + marginLeft + 3}" 
 					y="{i * 40 + marginTop + 26}"
-					fill="{chartColours.Completed}"
+					fill="{chartColours[type].Completed}"
 					text-anchor="start"
 					font-size="14"
 				>{d.COMPLETED}</text>
@@ -176,14 +176,14 @@
 					y="{i * 40 + marginTop + 43}"
 					text-anchor="start" 
 					font-size="14"
-					fill="{chartColours.Issued}"
+					fill="{chartColours[type].Issued}"
 					opacity="0.4"
 				>no data on issued permits</text>
 			{:else}
 				<text 
 					x="{xScale(d.ISSUED) + marginLeft + 3}" 
 					y="{i * 40 + marginTop + 43}"
-					fill="{chartColours.Issued}"
+					fill="{chartColours[type].Issued}"
 					text-anchor="start"
 					font-size="14"
 				>{d.ISSUED}</text>
