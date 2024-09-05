@@ -183,7 +183,7 @@
 			{option}
 		</div>
 	{/each}
-</div>
+</div>	
 
 <div class="options-container">
 	{#each selectedSortOptions as option}

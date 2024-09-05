@@ -4,6 +4,7 @@
 
 	export let citySummaryData;
 	export let type;
+	export let chartColours;
 
 
 	let divWidth;
@@ -68,7 +69,7 @@
 			y="32" 
 			height="15" 
 			width="15"
-			fill="#002b8f"
+			fill="{chartColours.Completed}"
 		/>
 		<text 
 			x="{titleMarginLeft + 17}" 
@@ -83,7 +84,7 @@
 			y="52" 
 			height="15" 
 			width="15"
-			fill="#F1C500"
+			fill="{chartColours.Issued}"
 		/>
 		<text 
 			x="{titleMarginLeft + 17}" 
@@ -132,7 +133,7 @@
 				y="{i * 40 + marginTop + 15}" 
 				height="{15}" 
 				width="{xScale(d.COMPLETED)}"
-				fill="#002b8f"
+				fill="{chartColours.Completed}"
 			/>
 			<rect 
 				id="bar"
@@ -140,7 +141,7 @@
 				y="{i * 40 + marginTop + 30}" 
 				height="{15}" 
 				width="{xScale(d.ISSUED)}"
-				fill="#F1C500"
+				fill="{chartColours.Issued}"
 			/>
 
 			<text 
@@ -156,14 +157,14 @@
 					y="{i * 40 + marginTop + 26}"
 					text-anchor="start" 
 					font-size="14"
-					fill="#0D534D"
+					fill="{chartColours.Completed}"
 					opacity="0.333"
 				>no data on completed permits</text>
 			{:else}
 				<text 
 					x="{xScale(d.COMPLETED) + marginLeft + 3}" 
 					y="{i * 40 + marginTop + 26}"
-					fill="#0D534D"
+					fill="{chartColours.Completed}"
 					text-anchor="start"
 					font-size="14"
 				>{d.COMPLETED}</text>
@@ -175,14 +176,14 @@
 					y="{i * 40 + marginTop + 43}"
 					text-anchor="start" 
 					font-size="14"
-					fill="#d2ac00"
+					fill="{chartColours.Issued}"
 					opacity="0.4"
 				>no data on issued permits</text>
 			{:else}
 				<text 
 					x="{xScale(d.ISSUED) + marginLeft + 3}" 
 					y="{i * 40 + marginTop + 43}"
-					fill="#d2ac00"
+					fill="{chartColours.Issued}"
 					text-anchor="start"
 					font-size="14"
 				>{d.ISSUED}</text>

@@ -2,25 +2,23 @@
 
 	// import BarChartSecondary from "./lib/BarChartSecondaryCities.svelte";
 	// import BarChartLaneway from "./lib/BarChartLanewayCities.svelte";
+	// import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
 
+	import Top from "../../lib/TopSofC.svelte";
 	import BarChartDouble from "./lib/BarChartSummaryAllCitiesDouble.svelte";
 	import TrendsChartCity from "./lib/TrendsChartCity.svelte";
-
-    // import CanadianCitiesMap from './lib/MapCanadianCities.svelte';
-
-	import Select from 'svelte-select';
-
-    import Top from "../../lib/TopSofC.svelte";
 	import ReadMore from "../../lib/ReadMore.svelte";
-
-	import '../../assets/styles.css';
-
-	import isometricSecondary from '../../assets/isometric-secondary.svg';
-	import isometricLaneway from '../../assets/isometric-laneway.svg';
 
 	import { onMount } from 'svelte';
 	import { csvParse } from 'd3-dsv';
+	import Select from 'svelte-select';
 
+	import '../../assets/styles.css';
+
+	const chartColours = {
+		"Completed": "#002b8f",
+		"Issued": "#F1C500"
+	}
 
 	let buttonSelected = "Totals";
 	function buttonClick(input) {
@@ -53,6 +51,7 @@
 
 
 </script>
+
 
 
 <svelte:head>
@@ -135,6 +134,7 @@
 	<BarChartDouble
 		citySummaryData = {citySummaryData}
 		type = "Detached"
+		chartColours = {chartColours}
 	/>
 
 	<br><br><br>
@@ -150,6 +150,7 @@
 	<BarChartDouble
 		citySummaryData = {citySummaryData}
 		type = "Secondary"
+		chartColours = {chartColours}
 	/>
 
 	<div class="text">
@@ -264,6 +265,7 @@
 			citySummaryData = {citySummaryData}
 			type = "Detached"
 			city = {selectedCity}
+			chartColours = {chartColours}
 		/>
 
 		<div class="text">
@@ -278,6 +280,7 @@
 			citySummaryData = {citySummaryData}
 			type = "Secondary"
 			city = {selectedCity}
+			chartColours = {chartColours}
 		/>
 
 		<div class="text">

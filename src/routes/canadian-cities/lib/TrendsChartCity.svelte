@@ -7,6 +7,7 @@
 	export let citySummaryData;
 	export let type;
 	export let city;
+	export let chartColours;
 
 	let divWidth;
 	$: width = divWidth;
@@ -152,9 +153,9 @@
 
 		
 
-		<path d={pathDataIssued} fill="none" stroke="#F1C500" stroke-width="2" />
+		<path d={pathDataIssued} fill="none" stroke="{chartColours.Issued}" stroke-width="2" />
 
-		<path d={pathDataCompleted} fill="none" stroke="#002b8f" stroke-width="2" />
+		<path d={pathDataCompleted} fill="none" stroke="{chartColours.Completed}" stroke-width="2" />
 
 		{#each data as d}
 
@@ -170,7 +171,7 @@
 					x="{xScale(d.YEAR)}"
 					y="{yScale(d.ISSUED) + 4}"
 					text-anchor="middle"
-					fill="#d2ac00"
+					fill="#ce6c35"
 					font-size="13"
 				>
 					{d.ISSUED}
@@ -206,7 +207,7 @@
 					opacity="0.35"
 					transform="rotate(-90 {xScale(d.YEAR)} {yScale(0) + 2})"
 				>
-					{"No Data Available"}
+					No Data Available
 				</text>
 			{/if}
 
