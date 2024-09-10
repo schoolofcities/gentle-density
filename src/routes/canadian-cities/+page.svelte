@@ -7,6 +7,8 @@
 	import Top from "../../lib/TopSofC.svelte";
 	import BarChartDouble from "./lib/BarChartSummaryAllCitiesDouble.svelte";
 	import TrendsChartCity from "./lib/TrendsChartCity.svelte";
+	import ProvinceText from "./lib/ProvinceText.svelte";
+	import CityMap from "./lib/CityMap.svelte";
 	import ReadMore from "../../lib/ReadMore.svelte";
 
 	import { onMount } from 'svelte';
@@ -26,10 +28,9 @@
 		}
 	}
 
-	// const chartColours = {
-	// 	"Completed": "#002b8f",
-	// 	"Issued": "#ac8edc"
-	// }
+	const provinceNames = ["British Columbia","Alberta","Saskatchewan","Manitoba","Ontario","New Brunswick","Nova Scotia"]
+	let selectedProvince = 'British Columbia'; 
+
 
 	let buttonSelected = "Totals";
 	function buttonClick(input) {
@@ -237,7 +238,35 @@
 		type = "Secondary"
 	/> -->
 
+	<div class="background-white">
 
+		<div class="text">
+			<br>
+			<br>
+
+			<h3>Provincial Policy</h3>
+
+			<Select 	
+				items={provinceNames}
+				value={selectedProvince}
+				on:input={e => selectedProvince = e.detail.value}
+				clearable={false}
+				searchable={false}
+				showChevron={true}
+				--width="350px"
+				--font-size="18px"
+				--height="24px"
+				--selected-item-color="#ab1269"
+				--item-active-background="#F1C500"
+			/>
+
+			<ProvinceText
+				selectedProvince = {selectedProvince}
+			/>
+
+		</div>
+	
+	</div>
 
 
 	<div class="background-white">
@@ -304,6 +333,13 @@
 
 		<br>
 
+		<CityMap
+			city = {selectedCity}
+		/>
+
+		<br>
+		<br>
+
 	</div>
 	
 	
@@ -340,6 +376,9 @@
 		</div>
 
 		<ReadMore currentPage = "canadian-cities"/>
+
+		
+		
 		
 	</div>
 

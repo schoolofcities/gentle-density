@@ -169,7 +169,6 @@
 
 		map.on('load', function() {
 
-
 			map.addSource('protomaps', {
 				type: "vector",
 				url: "pmtiles://" + cityData[cityname].PMTILES_URL,
