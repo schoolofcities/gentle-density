@@ -4,6 +4,7 @@ import maplibregl from 'maplibre-gl';
 import { onMount } from 'svelte';
 
 export let city;
+export let colours;
 
 let map;
 
@@ -152,7 +153,8 @@ const cityData = {
 		bearing: 0
 	},
 	'Victoria': {
-		secondary: "../../../../data/canadian-cities/Victoria/Victoria_ss.geojson",
+		secondary: "./canadian-cities/Victoria/Victoria_ss.geojson",
+		detached: "./canadian-cities/Victoria/Victoria_ds.geojson",
 		maxBounds: [
 			[-123.43, 48.39], // SW coords
 			[-123.27, 48.47] // NE coords
@@ -187,22 +189,93 @@ const cityData = {
 	}
 }
 
-
+let detachedGeo;
+let secondaryGeo;
 $: fetchGeoJSON(city);
 
 async function fetchGeoJSON(city) {
-	const url = `https://example.com/geojson/${city}.geojson`; // Construct the URL using the city name
 	try {
-		const response = await fetch(url);
+		const response = await fetch("./canadian-cities/" + city + "/" + city + "_ss.geojson");
 		if (response.ok) {
-		geojsonData = await response.json();
+			secondaryGeo = await response.json();
 		} else {
 		console.error('Failed to load GeoJSON:', response.status);
 		}
 	} catch (error) {
 		console.error('Error fetching GeoJSON:', error);
 	}
+	try {
+		const response2 = await fetch("./canadian-cities/" + city + "/" + city + "_ds.geojson");
+		if (response2.ok) {
+			detachedGeo = await response2.json();
+		} else {
+		console.error('Failed to load GeoJSON:', response2.status);
+		}
+	} catch (error) {
+		console.error('Error fetching GeoJSON:', error);
+	}
+
+	if (load === 1) {
+
+	
+	if (map.getSource('suitesSecondary')) {
+		map.removeLayer('suitesSecondary')
+		map.removeSource('suitesSecondary')
+
+		map.addSource('suitesSecondary', {
+			'type': 'geojson',
+			'data': secondaryGeo
+		}); 
+		map.addLayer({
+			'id': 'suitesSecondary',
+			'type': 'circle',
+			'source': 'suitesSecondary',
+			'layout': {},
+			'paint': {
+				'circle-radius': [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					11,
+					3,
+					16,
+					8
+					],
+				'circle-color': colours.Secondary.Issued,
+			}
+		});
+	} 
+	if (map.getSource('suitesDetached')) {
+		map.removeLayer('suitesDetached')
+		map.removeSource('suitesDetached')
+		map.addSource('suitesDetached', {
+			'type': 'geojson',
+			'data': detachedGeo
+		}); 
+		map.addLayer({
+			'id': 'suitesDetached',
+			'type': 'circle',
+			'source': 'suitesDetached',
+			'layout': {},
+			'paint': {
+				'circle-radius': [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					11,
+					3,
+					16,
+					8
+					],
+				'circle-color': colours.Detached.Completed,
+			}
+		});
+	}
+
+};
+
 }
+
 
 let load = 0;
 
@@ -262,14 +335,68 @@ onMount(() => {
 		})
 
 		map.addLayer({
+			"id": "buildings",
+			"type": "fill",
+			"source": "protomaps",
+			"source-layer": "buildings",
+			"minzoom": 14,
+			"paint": {
+				"fill-color": "#dee5ec",
+				"fill-opacity": 1
+			}
+		}),
+
+		map.addLayer({
 			"id": "roads_major",
+			"type": "line",
+			"source": "protomaps",
+			"source-layer": "roads",
+			"filter": [
+				"any",
+				[
+					"in",
+					"pmap:kind",
+					"highway",
+					"major_road",
+					"medium_road"
+				]
+			],
+			"paint": {
+				"line-color": "#8EB6DC",
+				"line-opacity": 0.65,
+				"line-width": 1.25
+			}
+		});
+
+		map.addLayer({
+			"id": "roads_residential",
+			"type": "line",
+			"source": "protomaps",
+			"source-layer": "roads",
+			"filter": [
+				"any",
+				[
+					"in",
+					"pmap:kind_detail",
+					"residential"
+				]
+			],
+			"paint": {
+				"line-color": "#8EB6DC",
+				"line-opacity": 0.65,
+				"line-width": 0.75
+			}
+		});
+
+		map.addLayer({
+			"id": "roads_minor",
 			"type": "line",
 			"source": "protomaps",
 			"source-layer": "roads",
 			"paint": {
 				"line-color": "#8EB6DC",
 				"line-opacity": 0.65,
-				"line-width": 1
+				"line-width": 0.15
 			}
 		});
 
@@ -288,7 +415,7 @@ onMount(() => {
 			],
 			"paint": {
 				"line-color": "#8EB6DC",
-				"line-opacity": 0.65,
+				"line-opacity": 0.25,
 				"line-width": [
 					"interpolate",
 					[
@@ -301,12 +428,97 @@ onMount(() => {
 					6, 1, 10, 1.5
 				]
 			}
-		
+		});
+
+		map.addLayer({
+			"id": "roads_labels_major",
+			"type": "symbol",
+			"source": "protomaps",
+			"source-layer": "roads",
+			"minzoom": 6,
+			"filter": [
+				"any",
+				[
+					"in",
+					"pmap:kind",
+					"highway",
+					"major_road",
+					"medium_road"
+				]
+			],
+			"layout": {
+				"symbol-sort-key": [
+					"get",
+					"pmap:min_zoom"
+				],
+				"symbol-placement": "line",
+				"text-font": [
+					"TradeGothic LT Bold"
+				],
+				"text-field": [
+					"get",
+					"name"
+				],
+				"text-size": 12
+			},
+			"paint": {
+				"text-color": "#8EB6DC",
+				"text-halo-color": "#ffffff",
+				"text-halo-width": 2
+       		}
+		});
+
+		map.addSource('suitesSecondary', {
+			'type': 'geojson',
+			'data': secondaryGeo
+		}); 
+		map.addLayer({
+			'id': 'suitesSecondary',
+			'type': 'circle',
+			'source': 'suitesSecondary',
+			'layout': {},
+			'paint': {
+				'circle-radius': [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					11,
+					3,
+					16,
+					8
+					],
+				'circle-color': colours.Secondary.Issued,
+			}
+		});
+
+		map.addSource('suitesDetached', {
+			'type': 'geojson',
+			'data': detachedGeo
+		}); 
+		map.addLayer({
+			'id': 'suitesDetached',
+			'type': 'circle',
+			'source': 'suitesDetached',
+			'layout': {},
+			'paint': {
+				'circle-radius': [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					11,
+					3,
+					16,
+					8
+					],
+				'circle-color': colours.Detached.Completed,
+			}
 		});
 
 	})
 
 	load = 1;
+
+	fetchGeoJSON(city);
 
 });
 

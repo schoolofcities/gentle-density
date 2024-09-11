@@ -335,6 +335,7 @@
 
 		<CityMap
 			city = {selectedCity}
+			colours = {chartColours}
 		/>
 
 		<br>
@@ -376,9 +377,6 @@
 		</div>
 
 		<ReadMore currentPage = "canadian-cities"/>
-
-		
-		
 		
 	</div>
 
