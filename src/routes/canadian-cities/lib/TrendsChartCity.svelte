@@ -91,7 +91,7 @@
 				y="44"
 				id="labelBar"
 				text-anchor="start" 
-				opacity="0.35"
+				opacity="0.45"
 			>No Data On Issued Building Permits</text>
 		{/if}
 
@@ -116,7 +116,7 @@
 				y="64"
 				id="labelBar"
 				text-anchor="start" 
-				opacity="0.35"
+				opacity="0.45"
 			>No Data On Completed Building Permits</text>
 		{/if}
 
@@ -125,8 +125,8 @@
 			x2="{width - marginRight}"
 			y1="{yScale(maxValue)}"
 			y2="{yScale(maxValue)}"
-			stroke="#002b8f"
-			opacity="0.1"
+			stroke="#ffffff"
+			opacity="0.21"
 			stroke-width="1"
 		/>
 		<line
@@ -134,8 +134,8 @@
 			x2="{width - marginRight}"
 			y1="{yScale(maxValue / 2)}"
 			y2="{yScale(maxValue / 2)}"
-			stroke="#002b8f"
-			opacity="0.1"
+			stroke="#ffffff"
+			opacity="0.21"
 			stroke-width="1"
 		/>
 		<line
@@ -143,8 +143,8 @@
 			x2="{width - marginRight}"
 			y1="{yScale(0)}"
 			y2="{yScale(0)}"
-			stroke="#002b8f"
-			opacity="0.1"
+			stroke="#ffffff"
+			opacity="0.21"
 			stroke-width="1"
 		/>
 
@@ -155,13 +155,17 @@
 		{#each data as d}
 
 			{#if (d.ISSUED !== "")}
-				<circle
-					cx={xScale(d.YEAR)}
-					cy={yScale(d.ISSUED)}
-					r={10}
-					fill="white"
-					stroke-width="0" 
-				/>
+				<text
+					x="{xScale(d.YEAR)}"
+					y="{yScale(d.ISSUED) + 4}"
+					text-anchor="middle"
+					fill="#1470ad"
+					font-size="13"
+					stroke="#1470ad"
+					stroke-width="5"
+				>
+					{d.ISSUED}
+				</text>
 				<text
 					x="{xScale(d.YEAR)}"
 					y="{yScale(d.ISSUED) + 4}"
@@ -174,13 +178,17 @@
 			{/if}
 
 			{#if (d.COMPLETED !== "")}
-				<circle
-					cx={xScale(d.YEAR)}
-					cy={yScale(d.COMPLETED)}
-					r={10}
-					fill="white"
-					stroke-width="0" 
-				/>
+				<text
+					x="{xScale(d.YEAR)}"
+					y="{yScale(d.COMPLETED) + 4}"
+					text-anchor="middle"
+					fill="#1470ad"
+					font-size="13"
+					stroke="#1470ad"
+					stroke-width="5"
+				>
+					{d.COMPLETED}
+				</text>
 				<text
 					x="{xScale(d.YEAR)}"
 					y="{yScale(d.COMPLETED) + 4}"
@@ -197,9 +205,9 @@
 					x="{xScale(d.YEAR) + 7}"
 					y="{yScale(0) + 6}"
 					text-anchor="start"
-					fill="#002b8f"
+					fill="#fff"
 					font-size="13"
-					opacity="0.35"
+					opacity="0.45"
 					transform="rotate(-90 {xScale(d.YEAR)} {yScale(0) + 2})"
 				>
 					No Data Available
@@ -215,7 +223,7 @@
 				x2="{xScale(year)}"
 				y1="{height - marginBottom + 8}"
 				y2="{height - marginBottom + 12}"
-				stroke="#002b8f"
+				stroke="#fff"
 				opacity="0.667"
 				stroke-width="1"
 			/>
@@ -223,7 +231,7 @@
 				x="{xScale(year)}"
 				y="{height - marginBottom + 24}"
 				text-anchor="middle"
-				fill="#002b8f"
+				fill="#fff"
 				font-size="12"
 			>
 				{year}
@@ -239,8 +247,10 @@
 <style>
 
 	#trendChart {
-		background-color: rgba(255, 255, 255, 0.71);
-		border: solid 1px lightgrey;
+		background-color: var(--brandDarkBlue);
+		background-size: 13px 13px;
+		background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
+		border: solid 1px #fff;
 		padding: 10px;
 		margin: 0 auto;
 		width: calc(100% - 70px);
@@ -252,14 +262,14 @@
 		font-size: 18px;
 		font-family: UbuntuMonoBold, monospace;
 		font-weight: 500;
-		fill: #002b8f;
+		fill: #ffffff;
 	}
 
 	#labelBar {
 		font-size: 15px;
 		font-family: UbuntuMonoRegular, monospace;
 		font-weight: 400;
-		fill: #002b8f;
+		fill: #ffffff;
 	}
 
 

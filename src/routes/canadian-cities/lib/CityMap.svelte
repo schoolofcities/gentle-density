@@ -331,7 +331,7 @@ onMount(() => {
 			"source-layer": "water",
 			"paint": {
 				"fill-color": "#1470ad",
-				"fill-outline-color": "#cbd4df",
+				"fill-outline-color": "#7b9aae",
 				"fill-opacity": 1
 			}
 		})
@@ -343,7 +343,7 @@ onMount(() => {
 			"source-layer": "buildings",
 			"minzoom": 14,
 			"paint": {
-				"fill-color": "#dee5ec",
+				"fill-color": "#235c83",
 				"fill-opacity": 1
 			}
 		}),

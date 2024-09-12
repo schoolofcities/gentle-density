@@ -158,7 +158,7 @@
 					text-anchor="start" 
 					font-size="14"
 					fill="{chartColours[type].Completed}"
-					opacity="0.333"
+					opacity="0.5"
 				>no data on completed permits</text>
 			{:else}
 				<text 
@@ -177,7 +177,7 @@
 					text-anchor="start" 
 					font-size="14"
 					fill="{chartColours[type].Issued}"
-					opacity="0.4"
+					opacity="0.7"
 				>no data on issued permits</text>
 			{:else}
 				<text 
@@ -193,10 +193,6 @@
 
 	</svg>
 
-	<!-- <p id = "footnote">
-		*Total number completed in 2021, 2022, and 2023
-	</p> -->
-
 </div>
 
 
@@ -205,8 +201,8 @@
 <style>
 
 	#barChart {
-		background-color: rgba(255, 255, 255, 0.71);
-		border: solid 1px lightgrey;
+		background-color: var(--brandDarkBlue);
+		border: solid 1px #fff;
 		padding: 10px;
 		/* padding-right: 45px; */
 		/* padding-left: 10px; */
@@ -219,14 +215,14 @@
 		font-size: 18px;
 		font-family: UbuntuMonoBold, monospace;
 		font-weight: 500;
-		fill: #002b8f;
+		fill: #fff;
 	}
 
 	#labelBar {
 		font-size: 16px;
 		font-family: UbuntuMonoRegular, monospace;
 		font-weight: 400;
-		fill: #002b8f;
+		fill: #fff;
 	}
 
 	#footnote {
@@ -238,7 +234,7 @@
 	}
 
 	#bar {
-		stroke: white;
+		stroke: #1470ad;
 		stroke-width:1;
 		opacity: 1;
 	}
