@@ -131,7 +131,7 @@
 				id="bar"
 				x="{marginLeft}" 
 				y="{i * 40 + marginTop + 15}" 
-				height="{15}" 
+				height="{12}" 
 				width="{xScale(d.COMPLETED)}"
 				fill="{chartColours[type].Completed}"
 			/>
@@ -139,7 +139,7 @@
 				id="bar"
 				x="{marginLeft}" 
 				y="{i * 40 + marginTop + 30}" 
-				height="{15}" 
+				height="{12}" 
 				width="{xScale(d.ISSUED)}"
 				fill="{chartColours[type].Issued}"
 			/>
@@ -154,7 +154,7 @@
 			{#if d.COMPLETED === ""}
 				<text 
 					x="{xScale(d.COMPLETED) + marginLeft + 3}" 
-					y="{i * 40 + marginTop + 26}"
+					y="{i * 40 + marginTop + 25}"
 					text-anchor="start" 
 					font-size="14"
 					fill="{chartColours[type].Completed}"
@@ -163,7 +163,7 @@
 			{:else}
 				<text 
 					x="{xScale(d.COMPLETED) + marginLeft + 3}" 
-					y="{i * 40 + marginTop + 26}"
+					y="{i * 40 + marginTop + 25}"
 					fill="{chartColours[type].Completed}"
 					text-anchor="start"
 					font-size="14"
@@ -173,7 +173,7 @@
 			{#if d.ISSUED === ""}
 				<text 
 					x="{xScale(d.ISSUED) + marginLeft + 3}" 
-					y="{i * 40 + marginTop + 43}"
+					y="{i * 40 + marginTop + 40}"
 					text-anchor="start" 
 					font-size="14"
 					fill="{chartColours[type].Issued}"
@@ -182,7 +182,7 @@
 			{:else}
 				<text 
 					x="{xScale(d.ISSUED) + marginLeft + 3}" 
-					y="{i * 40 + marginTop + 43}"
+					y="{i * 40 + marginTop + 40}"
 					fill="{chartColours[type].Issued}"
 					text-anchor="start"
 					font-size="14"

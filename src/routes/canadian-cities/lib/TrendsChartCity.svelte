@@ -160,7 +160,7 @@
 					y="{yScale(d.ISSUED) + 4}"
 					text-anchor="middle"
 					fill="#1470ad"
-					font-size="13"
+					font-size="16"
 					stroke="#1470ad"
 					stroke-width="5"
 				>
@@ -171,7 +171,7 @@
 					y="{yScale(d.ISSUED) + 4}"
 					text-anchor="middle"
 					fill="{chartColours[type].Issued}"
-					font-size="13"
+					font-size="16"
 				>
 					{d.ISSUED}
 				</text>
@@ -183,7 +183,7 @@
 					y="{yScale(d.COMPLETED) + 4}"
 					text-anchor="middle"
 					fill="#1470ad"
-					font-size="13"
+					font-size="16"
 					stroke="#1470ad"
 					stroke-width="5"
 				>
@@ -194,7 +194,7 @@
 					y="{yScale(d.COMPLETED) + 4}"
 					text-anchor="middle"
 					fill="{chartColours[type].Completed}"
-					font-size="13"
+					font-size="16"
 				>
 					{d.COMPLETED}
 				</text>
@@ -232,7 +232,7 @@
 				y="{height - marginBottom + 24}"
 				text-anchor="middle"
 				fill="#fff"
-				font-size="12"
+				font-size="13"
 			>
 				{year}
 			</text>
