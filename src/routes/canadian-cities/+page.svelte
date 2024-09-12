@@ -20,7 +20,7 @@
 	const chartColours = {
 		"Secondary": {
 			"Completed": "#5cffd9",
-			"Issued": "#ceecdc"
+			"Issued": "#d1fdf3"
 		},
 		"Detached": {
 			"Completed": "#FFD700",

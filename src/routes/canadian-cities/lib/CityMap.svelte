@@ -253,10 +253,20 @@ async function fetchGeoJSON(city) {
 				}
 			});
 		} else {
-		console.error('Failed to load GeoJSON:', response2.status);
+			console.error('Failed to load GeoJSON:', response2.status);
+			if (load === 1 && map.getSource('suitesDetached')) {
+				map.removeLayer('suitesDetached');
+				map.removeLayer('suitesDetachedWhite');
+				map.removeSource('suitesDetached');
+			};
 		}
 	} catch (error) {
 		console.error('Error fetching GeoJSON:', error);
+		if (load === 1 && map.getSource('suitesDetached')) {
+			map.removeLayer('suitesDetached');
+			map.removeLayer('suitesDetachedWhite');
+			map.removeSource('suitesDetached');
+		};
 	}
 
 	if (load === 1) {
@@ -318,7 +328,7 @@ async function fetchGeoJSON(city) {
 						['<=', ['get', 'Year'], values[1]]
 					]
 			});
-		} 
+		};
 		if (map.getSource('suitesDetached')) {
 			map.removeLayer('suitesDetached');
 			map.removeLayer('suitesDetachedWhite');
@@ -699,9 +709,11 @@ let onDetached = true;
 	function filterDetached() {
 		if (onDetached) {
 			map.setPaintProperty('suitesDetached', 'circle-opacity', 0);
+			map.setPaintProperty('suitesDetachedWhite', 'circle-opacity', 0);
 			onDetached = false
 		} else {
 			map.setPaintProperty('suitesDetached', 'circle-opacity', 1);
+			map.setPaintProperty('suitesDetachedWhite', 'circle-opacity', 1);
 			onDetached = true
 		}
 	}
@@ -710,9 +722,11 @@ let onSecondary = true;
 function filterSecondary() {
 	if (onSecondary) {
 		map.setPaintProperty('suitesSecondary', 'circle-opacity', 0);
+		map.setPaintProperty('suitesSecondaryWhite', 'circle-opacity', 0);
 		onSecondary = false
 	} else {
 		map.setPaintProperty('suitesSecondary', 'circle-opacity', 1);
+		map.setPaintProperty('suitesSecondaryWhite', 'circle-opacity', 1);
 		onSecondary = true
 	}
 }
