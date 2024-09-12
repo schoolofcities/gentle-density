@@ -632,7 +632,7 @@ function filterSecondary() {
 					cy="5"
 					r="4" />
 			</svg>
-			Rear-Yard Suites
+			Detached Suites
 		</button>
 
 		<button id="secondaryButton"  on:click={filterSecondary} class="{onSecondary ? 'layerOn' : 'layerOff'}">
@@ -683,7 +683,7 @@ function filterSecondary() {
     	background-size: 13px 13px;
     	background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
 		/* max-width: 700px; */
-		height: 220px;
+		height: 240px;
 	}
 
 	#pointLayers {
@@ -728,6 +728,15 @@ function filterSecondary() {
 		margin-bottom: 10px;
 		background-color: #2a5e89;
 		cursor: pointer;
+	}
+
+	@media screen and (max-width: 600px) {
+		#pointLayers {
+			width: 300px;
+		}
+		#detachedButton {
+			margin-left: 25px;
+		}
 	}
 
 	.layerOn {
