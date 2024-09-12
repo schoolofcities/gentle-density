@@ -736,6 +736,11 @@ function filterSecondary() {
 </script>
 
 
+<div id="map-title">
+
+	<p>Location of Building Permits in {city}</p>
+
+</div>
 
 <div id="map"></div>
 
@@ -787,6 +792,24 @@ function filterSecondary() {
 
 
 <style>
+
+	#map-title {
+		margin: 0 auto;
+		max-width: 1400px;
+		background-color: var(--brandDarkBlue);
+    	background-size: 13px 13px;
+    	background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
+		/* max-width: 700px; */
+		height: 40px;
+	}
+	#map-title p {
+		color: white;
+		padding-top: 10px;
+		font-size: 18px;
+		font-family: UbuntuMonoBold, monospace;
+		font-weight: 500;
+		text-align: center;
+	}
 
 	#map {
 		margin: 0 auto;
