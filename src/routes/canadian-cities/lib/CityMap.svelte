@@ -586,6 +586,27 @@ $: if (load === 1) {
 	});
 }
 
+let onDetached = true;
+	function filterDetached() {
+		if (onDetached) {
+			map.setPaintProperty('suitesDetached', 'circle-opacity', 0);
+			onDetached = false
+		} else {
+			map.setPaintProperty('suitesDetached', 'circle-opacity', 1);
+			onDetached = true
+		}
+	}
+
+let onSecondary = true;
+function filterSecondary() {
+	if (onSecondary) {
+		map.setPaintProperty('suitesSecondary', 'circle-opacity', 0);
+		onSecondary = false
+	} else {
+		map.setPaintProperty('suitesSecondary', 'circle-opacity', 1);
+		onSecondary = true
+	}
+}
 
 
 
@@ -596,6 +617,36 @@ $: if (load === 1) {
 <div id="map"></div>
 
 <div id="options">
+
+	
+		
+	<div id="pointLayers">
+
+		<p>Filter by construction type:</p>
+		
+		<button id="detachedButton" on:click={filterDetached} class="{onDetached ? 'layerOn' : 'layerOff'}" >
+			<svg width=10 height=10>
+				<circle
+					style="fill:#F1C500;stroke-width:2;stroke:#fff"
+					cx="5"
+					cy="5"
+					r="4" />
+			</svg>
+			Rear-Yard Suites
+		</button>
+
+		<button id="secondaryButton"  on:click={filterSecondary} class="{onSecondary ? 'layerOn' : 'layerOff'}">
+			<svg width=10 height=10>
+				<circle
+					style="fill:#ab1269;stroke-width:2;stroke:#fff"
+					cx="5"
+					cy="5"
+					r="4" />
+			</svg>
+			Secondary Suites
+		</button>
+
+	</div>
 
 	<br>
 
@@ -632,7 +683,58 @@ $: if (load === 1) {
     	background-size: 13px 13px;
     	background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
 		/* max-width: 700px; */
-		height: 400px;
+		height: 220px;
+	}
+
+	#pointLayers {
+		margin: 0 auto;
+		max-width: 570px;
+		color: white;
+		padding: 10px;
+		padding-left: 16px;
+		margin-bottom: -30px;
+		font-family: UbuntuMonoRegular, monospace;
+		font-weight: 400;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	#detachedButton {
+		float: left;
+		margin-left: 20px;
+		margin-right: 20px;
+		width: 250px;
+		border: solid 1px #fff;
+		color: white;
+		font-family: UbuntuMonoRegular, monospace;
+		font-weight: 400;
+		font-size: 16px;
+		border: solid 1px #fff;
+		padding: 4px;
+		margin-bottom: 10px;
+		background-color: #2a5e89;
+		cursor: pointer;
+	}
+
+	#secondaryButton {
+		overflow: hidden;
+		width: 250px;
+		border: solid 1px #fff;
+		color: white;
+		font-family: UbuntuMonoRegular, monospace;
+		font-weight: 400;
+		font-size: 16px;
+		padding: 4px;
+		margin-bottom: 10px;
+		background-color: #2a5e89;
+		cursor: pointer;
+	}
+
+	.layerOn {
+		opacity: 1;
+	}
+	.layerOff {
+		opacity: 0.42;
 	}
 
 	#range-wrapper {
