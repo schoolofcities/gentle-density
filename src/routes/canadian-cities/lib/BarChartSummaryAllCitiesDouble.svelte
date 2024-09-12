@@ -98,8 +98,8 @@
 			x2="{width - marginRight}"
 			y1="{marginTop}"
 			y2="{marginTop}"
-			stroke="#002b8f"
-			opacity="0.667"
+			stroke="#fff"
+			opacity="0.8"
 			stroke-width="1"
 		/>
 
@@ -110,8 +110,8 @@
 				x2="{marginLeft + xScale(i * maxXvalue / 4) }"
 				y1="{marginTop - 5}"
 				y2="{marginTop + 5}"
-				stroke="#002b8f"
-				opacity="0.667"
+				stroke="#fff"
+				opacity="0.8"
 				stroke-width="1"
 			/>
 

@@ -8,7 +8,9 @@ export let city;
 export let colours;
 
 let map;
-let values = [2022,2023];
+let values = [2021,2023];
+
+$: console.log(values);
 
 const cityData = {
 	'Calgary': {
@@ -195,11 +197,36 @@ let detachedGeo;
 let secondaryGeo;
 $: fetchGeoJSON(city);
 
+$: console.log(detachedGeo);
+
+$: if (detachedGeo && map.getSource('suitesDetached')) {
+	map.setFilter('suitesDetached', [
+		'all',
+		['>=', ['get', 'Year'], values[0]],
+		['<=', ['get', 'Year'], values[1]]
+	]);
+}
+
+$: if (secondaryGeo && map.getSource('suitesSecondary')) {
+	map.setFilter('suitesSecondary', [
+		'all',
+		['>=', ['get', 'Year'], values[0]],
+		['<=', ['get', 'Year'], values[1]]
+	]);
+}
+
+
+
 async function fetchGeoJSON(city) {
 	try {
 		const response = await fetch("./canadian-cities/" + city + "/" + city + "_ss.geojson");
 		if (response.ok) {
 			secondaryGeo = await response.json();
+			secondaryGeo.features.forEach(feature => {
+				if (feature.properties && feature.properties["DATE OF ISSUE"]) {
+					feature.properties.Year = parseInt(feature.properties["DATE OF ISSUE"].slice(-4));
+				}
+			});
 		} else {
 		console.error('Failed to load GeoJSON:', response.status);
 		}
@@ -210,6 +237,11 @@ async function fetchGeoJSON(city) {
 		const response2 = await fetch("./canadian-cities/" + city + "/" + city + "_ds.geojson");
 		if (response2.ok) {
 			detachedGeo = await response2.json();
+			detachedGeo.features.forEach(feature => {
+				if (feature.properties && feature.properties["DATE OF ISSUE"]) {
+					feature.properties.Year = parseInt(feature.properties["DATE OF ISSUE"].slice(-4));
+				}
+			});
 		} else {
 		console.error('Failed to load GeoJSON:', response2.status);
 		}
@@ -219,64 +251,73 @@ async function fetchGeoJSON(city) {
 
 	if (load === 1) {
 
-	
-	if (map.getSource('suitesSecondary')) {
-		map.removeLayer('suitesSecondary')
-		map.removeSource('suitesSecondary')
+		if (map.getSource('suitesSecondary')) {
+			map.removeLayer('suitesSecondary')
+			map.removeSource('suitesSecondary')
 
-		map.addSource('suitesSecondary', {
-			'type': 'geojson',
-			'data': secondaryGeo
-		}); 
-		map.addLayer({
-			'id': 'suitesSecondary',
-			'type': 'circle',
-			'source': 'suitesSecondary',
-			'layout': {},
-			'paint': {
-				'circle-radius': [
-					"interpolate",
-					["linear"],
-					["zoom"],
-					11,
-					3,
-					16,
-					8
-					],
-				'circle-color': colours.Secondary.Issued,
-			}
-		});
-	} 
-	if (map.getSource('suitesDetached')) {
-		map.removeLayer('suitesDetached')
-		map.removeSource('suitesDetached')
-		map.addSource('suitesDetached', {
-			'type': 'geojson',
-			'data': detachedGeo
-		}); 
-		map.addLayer({
-			'id': 'suitesDetached',
-			'type': 'circle',
-			'source': 'suitesDetached',
-			'layout': {},
-			'paint': {
-				'circle-radius': [
-					"interpolate",
-					["linear"],
-					["zoom"],
-					11,
-					3,
-					16,
-					8
-					],
-				'circle-color': colours.Detached.Completed,
-			}
-		});
-	}
-
+			map.addSource('suitesSecondary', {
+				'type': 'geojson',
+				'data': secondaryGeo
+			}); 
+			map.addLayer({
+				'id': 'suitesSecondary',
+				'type': 'circle',
+				'source': 'suitesSecondary',
+				'layout': {},
+				'paint': {
+					'circle-radius': [
+						"interpolate",
+						["linear"],
+						["zoom"],
+						11,
+						3,
+						16,
+						8
+						],
+					'circle-color': colours.Secondary.Issued,
+				},
+				'filter': 
+					[
+						'all',
+						['>=', ['get', 'Year'], values[0]],
+						['<=', ['get', 'Year'], values[1]]
+					]
+			});
+		} 
+		if (map.getSource('suitesDetached')) {
+			map.removeLayer('suitesDetached')
+			map.removeSource('suitesDetached')
+			map.addSource('suitesDetached', {
+				'type': 'geojson',
+				'data': detachedGeo
+			}); 
+			map.addLayer({
+				'id': 'suitesDetached',
+				'type': 'circle',
+				'source': 'suitesDetached',
+				'layout': {},
+				'paint': {
+					'circle-radius': [
+						"interpolate",
+						["linear"],
+						["zoom"],
+						11,
+						3,
+						16,
+						8
+						],
+					'circle-color': colours.Detached.Completed,
+				},
+				'filter': 
+					[
+						'all',
+						['>=', ['get', 'Year'], values[0]],
+						['<=', ['get', 'Year'], values[1]]
+					]
+			});
+		}
+	}	
 };
-
-}
 
 
 let load = 0;
@@ -365,7 +406,7 @@ onMount(() => {
 			],
 			"paint": {
 				"line-color": "#8EB6DC",
-				"line-opacity": 0.65,
+				"line-opacity": 0.55,
 				"line-width": 1.25
 			}
 		});
@@ -385,7 +426,7 @@ onMount(() => {
 			],
 			"paint": {
 				"line-color": "#8EB6DC",
-				"line-opacity": 0.65,
+				"line-opacity": 0.55,
 				"line-width": 0.75
 			}
 		});
@@ -397,7 +438,7 @@ onMount(() => {
 			"source-layer": "roads",
 			"paint": {
 				"line-color": "#8EB6DC",
-				"line-opacity": 0.65,
+				"line-opacity": 0.15,
 				"line-width": 0.15
 			}
 		});
@@ -490,7 +531,13 @@ onMount(() => {
 					8
 					],
 				'circle-color': colours.Secondary.Issued,
-			}
+			},
+			'filter': 
+				[
+					'all',
+					['>=', ['get', 'Year'], values[0]],
+					['<=', ['get', 'Year'], values[1]]
+				]
 		});
 
 		map.addSource('suitesDetached', {
@@ -513,7 +560,13 @@ onMount(() => {
 					8
 					],
 				'circle-color': colours.Detached.Completed,
-			}
+			},
+			'filter': 
+				[
+					'all',
+					['>=', ['get', 'Year'], values[0]],
+					['<=', ['get', 'Year'], values[1]]
+				]
 		});
 
 	})
@@ -532,6 +585,8 @@ $: if (load === 1) {
 		zoom: cityData[city].zoom, 
 	});
 }
+
+
 
 
 </script>
