@@ -826,5 +826,7 @@
 	.layerOff {
 		opacity: 0.42;
 	}
+
+	
 	
 </style>

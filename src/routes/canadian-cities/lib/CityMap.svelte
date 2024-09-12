@@ -2,11 +2,13 @@
 
 import maplibregl from 'maplibre-gl';
 import { onMount } from 'svelte';
+import RangeSlider from "svelte-range-slider-pips";
 
 export let city;
 export let colours;
 
 let map;
+let values = [2022,2023];
 
 const cityData = {
 	'Calgary': {
@@ -298,7 +300,7 @@ onMount(() => {
 					"id": "background",
 					"type": "background",
 					"paint": {
-						"background-color": "rgba(0,0,0,0)"
+						"background-color": "#3a74aa"
 					}
 				}
 			]
@@ -328,9 +330,9 @@ onMount(() => {
 			"source": "protomaps",
 			"source-layer": "water",
 			"paint": {
-				"fill-color": "#8EB6DC",
-				"fill-outline-color": "#dedede",
-				"fill-opacity": 0.3
+				"fill-color": "#1470ad",
+				"fill-outline-color": "#cbd4df",
+				"fill-opacity": 1
 			}
 		})
 
@@ -453,7 +455,7 @@ onMount(() => {
 				],
 				"symbol-placement": "line",
 				"text-font": [
-					"TradeGothic LT Bold"
+					"UbuntuMono Regular"
 				],
 				"text-field": [
 					"get",
@@ -462,8 +464,8 @@ onMount(() => {
 				"text-size": 12
 			},
 			"paint": {
-				"text-color": "#8EB6DC",
-				"text-halo-color": "#ffffff",
+				"text-color": "#cbd4df",
+				"text-halo-color": "#1470ad",
 				"text-halo-width": 2
        		}
 		});
@@ -538,6 +540,21 @@ $: if (load === 1) {
 
 <div id="map"></div>
 
+<div id="options">
+
+	<br>
+
+	<div id="range-wrapper">
+
+		<p>Filter by permit issue date:</p>
+
+		<RangeSlider bind:values range pips all='label' step={1} min={2013} max={2023} hoverable={false}/>
+
+	</div>
+
+</div>
+
+
 
 
 <style>
@@ -548,9 +565,27 @@ $: if (load === 1) {
 		max-width: 1400px;
 		height: 600px;
 		background-color: #fff;
-		opacity: 0.8;
+		opacity: 1;
 		border-top: 1px solid var(--brandLightBlue);
 		border-bottom: 1px solid var(--brandLightBlue);
 	}
+
+	#options {
+		margin: 0 auto;
+		max-width: 1400px;
+		background-color: var(--brandDarkBlue);
+    	background-size: 13px 13px;
+    	background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
+		/* max-width: 700px; */
+		height: 400px;
+	}
+
+	#range-wrapper {
+		margin: 0 auto;
+		max-width: 700px;
+		color: white;
+		text-align: center;
+	}
+
 
 </style>
