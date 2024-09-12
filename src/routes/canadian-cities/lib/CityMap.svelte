@@ -199,16 +199,26 @@ $: fetchGeoJSON(city);
 
 $: console.log(detachedGeo);
 
-$: if (detachedGeo && map.getSource('suitesDetached')) {
+$: if (detachedGeo && map.getLayer('suitesDetached') && map.getLayer('suitesDetachedWhite')) {
 	map.setFilter('suitesDetached', [
+		'all',
+		['>=', ['get', 'Year'], values[0]],
+		['<=', ['get', 'Year'], values[1]]
+	]);
+	map.setFilter('suitesDetachedWhite', [
 		'all',
 		['>=', ['get', 'Year'], values[0]],
 		['<=', ['get', 'Year'], values[1]]
 	]);
 }
 
-$: if (secondaryGeo && map.getSource('suitesSecondary')) {
+$: if (secondaryGeo && map.getLayer('suitesSecondary') && map.getLayer('suitesSecondaryWhite')) {
 	map.setFilter('suitesSecondary', [
+		'all',
+		['>=', ['get', 'Year'], values[0]],
+		['<=', ['get', 'Year'], values[1]]
+	]);
+	map.setFilter('suitesSecondaryWhite', [
 		'all',
 		['>=', ['get', 'Year'], values[0]],
 		['<=', ['get', 'Year'], values[1]]
@@ -252,13 +262,38 @@ async function fetchGeoJSON(city) {
 	if (load === 1) {
 
 		if (map.getSource('suitesSecondary')) {
-			map.removeLayer('suitesSecondary')
-			map.removeSource('suitesSecondary')
+			map.removeLayer('suitesSecondary');
+			map.removeLayer('suitesSecondaryWhite');
+			map.removeSource('suitesSecondary');
 
 			map.addSource('suitesSecondary', {
 				'type': 'geojson',
 				'data': secondaryGeo
 			}); 
+			map.addLayer({
+				'id': 'suitesSecondaryWhite',
+				'type': 'circle',
+				'source': 'suitesSecondary',
+				'layout': {},
+				'paint': {
+					'circle-radius': [
+						"interpolate",
+						["linear"],
+						["zoom"],
+						11,
+						5,
+						16,
+						10
+						],
+					'circle-color': '#fff',
+				},
+				'filter': 
+					[
+						'all',
+						['>=', ['get', 'Year'], values[0]],
+						['<=', ['get', 'Year'], values[1]]
+					]
+			});
 			map.addLayer({
 				'id': 'suitesSecondary',
 				'type': 'circle',
@@ -274,7 +309,7 @@ async function fetchGeoJSON(city) {
 						16,
 						8
 						],
-					'circle-color': colours.Secondary.Issued,
+					'circle-color': colours.Secondary.Completed,
 				},
 				'filter': 
 					[
@@ -285,12 +320,37 @@ async function fetchGeoJSON(city) {
 			});
 		} 
 		if (map.getSource('suitesDetached')) {
-			map.removeLayer('suitesDetached')
-			map.removeSource('suitesDetached')
+			map.removeLayer('suitesDetached');
+			map.removeLayer('suitesDetachedWhite');
+			map.removeSource('suitesDetached');
 			map.addSource('suitesDetached', {
 				'type': 'geojson',
 				'data': detachedGeo
 			}); 
+			map.addLayer({
+				'id': 'suitesDetachedWhite',
+				'type': 'circle',
+				'source': 'suitesDetached',
+				'layout': {},
+				'paint': {
+					'circle-radius': [
+						"interpolate",
+						["linear"],
+						["zoom"],
+						11,
+						5,
+						16,
+						10
+						],
+					'circle-color': '#fff',
+				},
+				'filter': 
+					[
+						'all',
+						['>=', ['get', 'Year'], values[0]],
+						['<=', ['get', 'Year'], values[1]]
+					]
+			});
 			map.addLayer({
 				'id': 'suitesDetached',
 				'type': 'circle',
@@ -516,6 +576,30 @@ onMount(() => {
 			'data': secondaryGeo
 		}); 
 		map.addLayer({
+			'id': 'suitesSecondaryWhite',
+			'type': 'circle',
+			'source': 'suitesSecondary',
+			'layout': {},
+			'paint': {
+				'circle-radius': [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					11,
+					5,
+					16,
+					10
+					],
+				'circle-color': '#fff',
+			},
+			'filter': 
+				[
+					'all',
+					['>=', ['get', 'Year'], values[0]],
+					['<=', ['get', 'Year'], values[1]]
+				]
+		});
+		map.addLayer({
 			'id': 'suitesSecondary',
 			'type': 'circle',
 			'source': 'suitesSecondary',
@@ -530,7 +614,7 @@ onMount(() => {
 					16,
 					8
 					],
-				'circle-color': colours.Secondary.Issued,
+				'circle-color': colours.Secondary.Completed,
 			},
 			'filter': 
 				[
@@ -544,6 +628,30 @@ onMount(() => {
 			'type': 'geojson',
 			'data': detachedGeo
 		}); 
+		map.addLayer({
+			'id': 'suitesDetachedWhite',
+			'type': 'circle',
+			'source': 'suitesDetached',
+			'layout': {},
+			'paint': {
+				'circle-radius': [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					11,
+					5,
+					16,
+					10
+					],
+				'circle-color': '#fff',
+			},
+			'filter': 
+				[
+					'all',
+					['>=', ['get', 'Year'], values[0]],
+					['<=', ['get', 'Year'], values[1]]
+				]
+		});
 		map.addLayer({
 			'id': 'suitesDetached',
 			'type': 'circle',
@@ -568,6 +676,7 @@ onMount(() => {
 					['<=', ['get', 'Year'], values[1]]
 				]
 		});
+		
 
 	})
 
@@ -627,7 +736,7 @@ function filterSecondary() {
 		<button id="detachedButton" on:click={filterDetached} class="{onDetached ? 'layerOn' : 'layerOff'}" >
 			<svg width=10 height=10>
 				<circle
-					style="fill:#F1C500;stroke-width:2;stroke:#fff"
+					style="fill:{colours.Detached.Completed};stroke-width:2;stroke:#fff"
 					cx="5"
 					cy="5"
 					r="4" />
@@ -638,7 +747,7 @@ function filterSecondary() {
 		<button id="secondaryButton"  on:click={filterSecondary} class="{onSecondary ? 'layerOn' : 'layerOff'}">
 			<svg width=10 height=10>
 				<circle
-					style="fill:#ab1269;stroke-width:2;stroke:#fff"
+					style="fill:{colours.Secondary.Completed};stroke-width:2;stroke:#fff"
 					cx="5"
 					cy="5"
 					r="4" />
@@ -728,6 +837,16 @@ function filterSecondary() {
 		margin-bottom: 10px;
 		background-color: #2a5e89;
 		cursor: pointer;
+	}
+
+	#detachedButton:hover {
+		opacity: 1;
+		background-color: var(--brandDarkBlue);
+	}
+
+	#secondaryButton:hover {
+		opacity: 1;
+		background-color: var(--brandDarkBlue);
 	}
 
 	@media screen and (max-width: 600px) {
