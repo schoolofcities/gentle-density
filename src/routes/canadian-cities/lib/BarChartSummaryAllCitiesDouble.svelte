@@ -6,10 +6,8 @@
 	export let type;
 	export let chartColours;
 
-
 	let divWidth;
 	$: width = divWidth;
-
 
 	const marginRight = 75;
 	const marginLeft = 100;
