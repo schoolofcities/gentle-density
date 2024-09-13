@@ -156,7 +156,7 @@
 					text-anchor="start" 
 					font-size="14"
 					fill="{chartColours[type].Completed}"
-					opacity="0.5"
+					opacity="0.9"
 				>no data on completed permits</text>
 			{:else}
 				<text 
@@ -175,7 +175,7 @@
 					text-anchor="start" 
 					font-size="14"
 					fill="{chartColours[type].Issued}"
-					opacity="0.7"
+					opacity="0.9"
 				>no data on issued permits</text>
 			{:else}
 				<text 

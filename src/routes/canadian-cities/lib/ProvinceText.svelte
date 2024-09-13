@@ -95,6 +95,5 @@
 		Nova Scotia defines secondary and backyard suites as self-contained dwelling units located within or on the same property as an existing house (or main dwelling unit) and are registered under the same title. Piloted in 2023, the Province made an $8-million investment over three years for <a href="https://beta.novascotia.ca/documents/secondary-and-backyard-suite-incentive-program-guidelines" target="_blank">Secondary and Backyard Suite Incentive Program</a>. This program offers financial incentives to eligible homeowners who plan to build a housing unit within or on the property of their primary residence. Homeowners may receive up to 50% of the eligible project costs, to a maximum of $40,000. Homeowners that continue to live in their primary residence and meet the tenant eligibility requirements over the 5-year term of the loan do not need to repay the loan. As of April 2024, the Province had received more than 500 inquiries about the program, received 48 applications and approved 25 forgivable loans.v The homeowner and tenant eligibility criteria, eligible costs and process are outlined in <a href="https://beta.novascotia.ca/sites/default/files/documents/1-3589/secondary-and-backyard-suite-incentive-program-guide-en.pdf" target="_blank">this guide</a>.  
 	</p>
 
-
 {/if}
 
