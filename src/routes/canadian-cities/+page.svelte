@@ -8,6 +8,7 @@
 	import BarChartDouble from "./lib/BarChartSummaryAllCitiesDouble.svelte";
 	import TrendsChartCity from "./lib/TrendsChartCity.svelte";
 	import ProvinceText from "./lib/ProvinceText.svelte";
+	import CityContent from "./lib/CityContent.svelte";
 	import CityMap from "./lib/CityMap.svelte";
 	import ReadMore from "../../lib/ReadMore.svelte";
 
@@ -290,46 +291,15 @@
 				--selected-item-color="#ab1269"
 				--item-active-background="#F1C500"
 			/>
-
-			<p>
-				
-				Lorem ipsum odor amet, consectetuer adipiscing elit. Neque rutrum arcu interdum ante maecenas. Auctor pretium iaculis quisque porttitor condimentum facilisi tristique. Aptent ligula placerat eu litora urna tincidunt dis. Lacus taciti id; pretium est vitae erat taciti dictumst. Fusce lectus litora iaculis eros hendrerit mi. Curae justo dis ad; nisi dapibus ad ultrices. Aliquet conubia dignissim luctus phasellus habitasse maecenas.
-
-			</p>
-
-			
 			
 		</div>
 
-		<TrendsChartCity
+		<CityContent
 			citySummaryData = {citySummaryData}
 			type = "Detached"
 			city = {selectedCity}
 			chartColours = {chartColours}
 		/>
-
-		<div class="text">
-
-			<p>
-				Felis arcu amet vitae lectus duis arcu purus nascetur. Cursus taciti tortor magnis tempor netus tortor! Sem vestibulum commodo posuere condimentum euismod euismod. Curae mattis maecenas a viverra maximus orci porttitor phasellus dolor. Inceptos imperdiet eleifend id lobortis varius per integer lobortis. Aptent vulputate eros inceptos scelerisque lacus nam vitae felis. Gravida libero auctor dignissim cubilia nam, porttitor inceptos eget.
-			</p>
-
-		</div>
-
-		<TrendsChartCity
-			citySummaryData = {citySummaryData}
-			type = "Secondary"
-			city = {selectedCity}
-			chartColours = {chartColours}
-		/>
-
-		<div class="text">
-
-			<p>
-				Ad nam varius dignissim vehicula pellentesque cubilia tempus eros etiam. Donec in pharetra parturient id, cubilia eget ad. Sit venenatis dictum himenaeos enim iaculis blandit libero. Leo facilisis himenaeos sit auctor auctor penatibus. Finibus dictum est justo, tincidunt id ultrices auctor dignissim. Dictum morbi dis volutpat amet congue. Nibh placerat habitasse efficitur est praesent mollis porta inceptos. Duis et primis pharetra; purus urna mi.
-			</p>
-
-		</div>
 
 		<br>
 
@@ -343,25 +313,6 @@
 
 	</div>
 	
-	
-
-
-	<!-- <div class="line-chart">
-		<BarChartSecondary/>
-		<BarChartLaneway/>
-	</div> -->
-
-    <!-- <div id="top-bar">
-        <div class="buttons">
-			<button class:selected={selectedCity === 'Victoria'} on:click={() => selectedCity = 'Victoria'}>City of Victoria</button>
-			<button class:selected={selectedCity === 'Edmonton'} on:click={() => selectedCity = 'Edmonton'}>City of Edmonton</button>
-			<button class:selected={selectedCity === 'Calgary'} on:click={() => selectedCity = 'Calgary'}>City of Calgary</button>
-			<button class:selected={selectedCity === 'Toronto'} on:click={() => selectedCity = 'Toronto'}>City of Toronto</button>
-		</div>
-    </div> -->
-
-	<!-- <CanadianCitiesMap city={selectedCity}/> -->
-
 
 	<div class="background-white">
 
@@ -369,10 +320,7 @@
 		<div class="text">
 			<h3>Data & Code</h3>
 			<p>
-				List sources for the data here.
-			</p>
-			<p>
-				All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python (pandas, geopandas), Svelte, Maplibre, and D3. "svelte-range-slider-pips": "^2.1.1"
+				For each municipality, we downloaded building permit data from their respective open data portals or elsewhere on their websites. Other data for the map (streets, transit, etc.) are from OpenStreetMap. All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python, Svelte, MapLibre, and D3.
 			</p>
 		</div>
 
