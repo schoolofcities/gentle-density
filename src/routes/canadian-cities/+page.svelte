@@ -101,7 +101,7 @@
 
 <main>
 
-	<div class="blueprint" style="background-image: url('https://schoolofcities.github.io/gentle-density/blueprint-background.png');">
+	<div class="blueprint" style="background-image: url('./blueprint-background-20cities.png');">
 
 		<div class="title">
 			<h1>
