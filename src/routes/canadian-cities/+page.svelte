@@ -130,17 +130,31 @@
 
 	<div class="text">
 		<p>
-			Lorem ipsum odor amet, consectetuer adipiscing elit. Neque rutrum arcu interdum ante maecenas. Auctor pretium iaculis quisque porttitor condimentum facilisi tristique. Aptent ligula placerat eu litora urna tincidunt dis. Lacus taciti id; pretium est vitae erat taciti dictumst. Fusce lectus litora iaculis eros hendrerit mi. Curae justo dis ad; nisi dapibus ad ultrices. Aliquet conubia dignissim luctus phasellus habitasse maecenas.
-		</p>
-		<p>
-			Fermentum ex aliquam consequat vulputate elit class tortor vehicula. Tortor mi faucibus, rutrum hendrerit facilisi orci facilisi. Curae etiam per varius tellus quisque feugiat vestibulum. Etiam quisque diam imperdiet nam libero nibh lectus dapibus. Facilisis aliquam donec tempor ornare; nibh platea placerat. Nullam massa phasellus sociosqu risus diam sem habitant euismod. Etiam arcu sollicitudin sit hendrerit ac suscipit. Etiam fermentum mi aliquet leo turpis ultricies. Dolor ante morbi aliquet vulputate, blandit vestibulum neque consectetur.
+			Residential neighbourhoods in major Canadian cities are dominated by single-family homes due to zoning regulations restricting everything from a building's height to the number of units permitted on a single-family lot.i Today, 8.1 million homes in Canada (54.1% of existing development) are single-family. The preference for single-family buildings has contributed to a massive supply shortfall in major cities, with rising demand putting upward pressure on prices.ii Housing typologies that use land efficiently and provide housing to more than one family on a single-family lot are urgently needed to bring prices down and provide more choice in well-located areas. 
 		</p>
 	</div>
 
 	<div class="text">
-		<h3><span class="textLaneway">Detached Suites</span></h3>
+		<h3><span class="textLaneway">Missing Middle and Missing Little </span></h3>
 		<p>
-			Nec rhoncus consequat elit libero viverra aptent accumsan ullamcorper. Lorem praesent hendrerit est pellentesque nullam dolor elementum vestibulum. Lobortis aliquam suspendisse congue nulla sagittis lacinia est massa? Tristique ante tincidunt cras curabitur finibus mollis. Varius quisque ad neque lacinia congue. Nisl class pulvinar sem ultricies mollis laoreet hendrerit curae. Luctus adipiscing ultricies facilisis convallis viverra ultricies fringilla. Suscipit laoreet commodo habitasse sed conubia. Scelerisque ultricies vehicula vulputate luctus tristique taciti vitae donec lacinia.
+			In 2010, Daniel Parolek coined the term “Missing Middle” to describe medium-density housing—duplexes, triplexes, bungalows, townhouses, cottage court, and more—that could be built between detached single-family homes and mid-rise apartments in order to restore housing affordability and address the need for walkable urban living. 
+		</p>
+		<p>
+			At the smaller-scale of the missing middle is "missing little", a term coined by Michael Piper, which refers to owner-led efforts to build additional dwellings within their existing parcel of land as citizen developers. These strategies are also known as gentle density; they can increase property value and provide supplementary income for owners, but importantly, in aggregate, can incrementally scale up the density of a neighbourhood, allow for intergenerational living, and provide needed housing, particularly for those unable to afford larger homes. Relative to larger developments (e.g. larger multi-unit apartments and condominiums), gentle density is more compatible with the scale and character of existing neighbourhoods. Gentle density development is thus often seen as an approach to increase the housing supply in a way that is less disruptive to existing communities but can still help create more walkable, liveable neighbourhoods, that use existing infrastructure and services, which can save taxpayers' money and reduce harmful urban sprawl. 
+		</p>
+	</div>
+
+	<div class="text">
+		<h3><span class="textLaneway">What is an ADU? </span></h3>
+		<p>
+			Accessory dwelling units (ADUs), sometimes known as the ‘Missing Little’, are additional units on a lot already occupied by a main building.iii They are self-contained, with a kitchen and bathroom, and generally have a separate entrance. ADUs can be added to the main property or can be built separately
+		</p>
+	</div>
+
+	<div class="text">
+		<h3><span class="textLaneway">Detached Suites </span></h3>
+		<p>
+			These units are annexes or external suites at the rear end of a detached home, semidetached home, or townhome. They are generally smaller than the primary building. They can be a detached garage conversion, built on top of an existing detached garage, or a newly built independent unit in the yard. The design must include all code requirements, and considerations of access, tree protection, distances to other built structures and utility hookups.  
 		</p>
 	</div>
 
@@ -153,11 +167,10 @@
 	<br><br><br>
 
 	<div class="text">
-		<h3><span class="textLaneway">Secondary Suites</span></h3>
+		<h3><span class="textLaneway">Secondary Suites </span></h3>
 		<p>
-			Lorem ipsum odor amet, consectetuer adipiscing elit. Neque rutrum arcu interdum ante maecenas. Auctor pretium iaculis quisque porttitor condimentum facilisi tristique. Aptent ligula placerat eu litora urna tincidunt dis. Lacus taciti id; pretium est vitae erat taciti dictumst. Fusce lectus litora iaculis eros hendrerit mi. Curae justo dis ad; nisi dapibus ad ultrices. Aliquet conubia dignissim luctus phasellus habitasse maecenas.
+			They are units attached to the primary dwelling unit. A common form is horizontal splitting of the building i.e. converting the basement or second floor into separate suite(s). Other types of conversions can include vertical splitting, rear or side additions, attached garage conversions etc. or a combination. The design must include all code requirements, and considerations of height, access, floor levels, and utility hook ups. 
 		</p>
-
 	</div>
 
 	<BarChartDouble
@@ -168,150 +181,84 @@
 
 	<div class="text">
 		<br>
+		<br>
+		<h3><span class="textLaneway">Advantages</span></h3>
 		<p>
-			Nec rhoncus consequat elit libero viverra aptent accumsan ullamcorper. Lorem praesent hendrerit est pellentesque nullam dolor elementum vestibulum. Lobortis aliquam suspendisse congue nulla sagittis lacinia est massa? Tristique ante tincidunt cras curabitur finibus mollis. Varius quisque ad neque lacinia congue. Nisl class pulvinar sem ultricies mollis laoreet hendrerit curae. Luctus adipiscing ultricies facilisis convallis viverra ultricies fringilla. Suscipit laoreet commodo habitasse sed conubia. Scelerisque ultricies vehicula vulputate luctus tristique taciti vitae donec lacinia.
-		</p>
-		<!-- <p>
-			OKAY 4 charts showing (buttons totals / per capita) of issued/completed and secondary/detached for a set time period - 2021, 2022 and 2023? I guess
+			<b>Affordability:</b> Single-family homes are nearly three times more expensive in overall price than multiplex units that could be built by upzoning.v Adding a unit to an existing property has the potential to cover mortgage payments if the costs of construction, including costs of financing and development taxes, are less than what that property owner could charge in rent.vi Property owner landlords are more likely to charge below-market rent,vii particularly if the tenant is a family member or friend. For seniors who are homeowners, even if they have paid off their mortgage, renting a unit may assist in paying for home maintenance and supplementing pension income as well as providing companionship and possible assistance, a significant enabler for aging in place. 
 		</p>
 		<p>
-			Here we show the total completed building permits, over a three year period of 2021 to 2023. We are only showing cities that A) note the completed or closing date in their building permit data, many do not, and B) have at least 1 building permit for the specified category. Moncton, for example, includes completed date, but has no detached suites in their data.
-		</p> -->
+			<b>Housing Diversity and Sociability:</b> It is argued that smaller scale apartment buildings, multiplexes, cottage clusters and ADUs encourage social interaction, thereby creating a sense of belonging, community and support among residents.ix They can offer opportunities to integrate and serve multiple generations or households (co-housing): i.e., these units enable people of all ages to live together and share space in different ways. Accessible ADUs allow seniors to ‘age in place’, grow older without moving to bigger scale or institutional settings.
+		</p>
+		<p>
+			<b>Environment, Local Economies, and Health:</b> ‘Smart growth’ or intensification of existing communities has been advocated by all levels of government since the 1990s.xi On average, Missing Middle buildings have significantly lower embodied greenhouse gas (GHG) emissions per bedroom when compared to single-family and mid/high-rise buildings.xii The closer families are to schools and playgrounds, and the closer seniors are to green spaces and health services, the more that transportation costs and time can be saved.xiii Walkability can also improve mental and physical health through improved ‘sense of place’ and local economic vitality.
+		</p>
+	</div>
 
-		<!-- <div class="buttons-wrapper">
-			<button 
-				class="{buttonSelected === "Totals" ? 'buttonSelected' : 'buttonNotSelected'}"
-				on:click={() => buttonClick('Totals')}>
-				Totals
-			</button>
-			<button 
-				class="{buttonSelected === "Per Capita" ? 'buttonSelected' : 'buttonNotSelected'}"
-				on:click={() => buttonClick('Per Capita')}>
-				Per Capita
-			</button>
-		</div> -->
+	<div class="text">
+		
+		<h3>Provincial Policy</h3>
+
+		<Select 	
+			items={provinceNames}
+			value={selectedProvince}
+			on:input={e => selectedProvince = e.detail.value}
+			clearable={false}
+			searchable={false}
+			showChevron={true}
+			--width="350px"
+			--font-size="18px"
+			--height="24px"
+			--selected-item-color="#ab1269"
+			--item-active-background="#F1C500"
+		/>
+
+		<ProvinceText
+			selectedProvince = {selectedProvince}
+		/>
 
 	</div>
-		
-		<!-- <BarChartSecondary 
-			citySummaryData = {citySummaryData}
-			type = "Secondary"
-			date = "COMPLETED"
-		/>
-		<br>
-		<BarChartSecondary 
-			citySummaryData = {citySummaryData}
-			type = "Detached"
-			date = "COMPLETED"
-		/> -->
+	
 
-<!-- 
+
+
+
 	<div class="text">
 
-		<h3>Issued Permits</h3>
-		<p>
-			Here we show the total issued building permits, over a three year period of 2021 to 2023. There are more cities here than above, simply because issued date is the main date that are included in city data, usually.
-		</p>
+		<h3>City-By-City Analysis</h3>
 
-	</div> -->
+		<Select 	
+			items={cityNames}
+			value={selectedCity}
+			on:input={e => selectedCity = e.detail.value}
+			clearable={false}
+			searchable={false}
+			showChevron={true}
+			--width="350px"
+			--font-size="18px"
+			--height="24px"
+			--selected-item-color="#ab1269"
+			--item-active-background="#F1C500"
+		/>
+		
+	</div>
 
-	<!-- <BarChartSecondary 
+	<CityContent
 		citySummaryData = {citySummaryData}
-		type = "Secondary"
-		date = "ISSUED"
+		type = "Detached"
+		city = {selectedCity}
+		chartColours = {chartColours}
 	/>
+
 	<br>
-	<BarChartSecondary 
-		citySummaryData = {citySummaryData}
-		type = "Detached"
-		date = "ISSUED"
-	/> -->
 
-	
-	<!-- <BarChartDouble 
-		citySummaryData = {citySummaryData}
-		type = "Detached"
-		date = "COMPLETED"
-	/> -->
+	<CityMap
+		city = {selectedCity}
+		colours = {chartColours}
+	/>
 
-	<!-- <MiniCharts 
-		citySummaryData = {citySummaryData}
-		type = "Secondary"
-	/> -->
+	<br>
+	<br>
 
-	<div class="background-white">
-
-		<div class="text">
-			<br>
-			<br>
-
-			<h3>Provincial Policy</h3>
-
-			<Select 	
-				items={provinceNames}
-				value={selectedProvince}
-				on:input={e => selectedProvince = e.detail.value}
-				clearable={false}
-				searchable={false}
-				showChevron={true}
-				--width="350px"
-				--font-size="18px"
-				--height="24px"
-				--selected-item-color="#ab1269"
-				--item-active-background="#F1C500"
-			/>
-
-			<ProvinceText
-				selectedProvince = {selectedProvince}
-			/>
-
-		</div>
-	
-	</div>
-
-
-	<div class="background-white">
-
-		<div class="text">
-			<br>
-			<br>
-
-			<h3>City-By-City View</h3>
-
-			<Select 	
-				items={cityNames}
-				value={selectedCity}
-				on:input={e => selectedCity = e.detail.value}
-				clearable={false}
-				searchable={false}
-				showChevron={true}
-				--width="350px"
-				--font-size="18px"
-				--height="24px"
-				--selected-item-color="#ab1269"
-				--item-active-background="#F1C500"
-			/>
-			
-		</div>
-
-		<CityContent
-			citySummaryData = {citySummaryData}
-			type = "Detached"
-			city = {selectedCity}
-			chartColours = {chartColours}
-		/>
-
-		<br>
-
-		<CityMap
-			city = {selectedCity}
-			colours = {chartColours}
-		/>
-
-		<br>
-		<br>
-
-	</div>
 	
 
 	<div class="background-white">
