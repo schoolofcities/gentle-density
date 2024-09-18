@@ -3,3 +3,4 @@ all permits are under the type "Residential Improvement Project"
 all permits are classified as 1 for "HousingUnits"
 permits were categorised based on "PermitClass", hence risk of undercounting is low
 filter by colour to find duplicate addresses in the excel documents
+UPDATE SEP 17, 2024: Filtered out all permit, which "Work Class Group" is labeled as "Improvement"
