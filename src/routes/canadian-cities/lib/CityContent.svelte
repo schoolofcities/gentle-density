@@ -36,6 +36,9 @@
 	/>
 
 	<div class="text">
+		<div class="definition">
+			Hello I am a definition
+		</div>
 		<p>
 			Edmonton built over 9,000 secondary suites over the past decade by streamlining as-of-right ADU development. Under Zoning Bylaw 12800 a Secondary Suite is defined as a dwelling that is subordinate to, and located within, a building in the form of Single Detached Housing, Semi-detached Housing, Row Housing, or Backyard Housing. Backyard house is defined as a building containing 1 or more Dwellings, that is located within the Rear Yard, and partially or wholly within the Rear Setback of the applicable Zone, of a Residential Site. The Bylaw also refers to backyard housing as garden suites. Under the bylaw the definition of a garden suite means an accessory building containing a dwelling which is located separate from the principal use which is single Detached Housing, Semi-detached Housing, or Multi-unit Housing in the form of row housing.  
 		</p>
@@ -52,6 +55,9 @@
 	/>
 
 	<div class="text">
+		<div class="definition">
+			Hello I am a definition
+		</div>
 		<p>
 			The application process for both secondary suites and backyard homes is straightforward as the City’s website walks applicants through the process. Applications can be submitted online or in person and a detailed list of permits and fees are explained to aid in the completion of the application. Currently, it is unclear if Edmonton has an incentive program for secondary suites or backyard housing as their Secondary Suites Grant Program is not available on the website anymore.   
 		</p>
@@ -78,9 +84,13 @@
 	/>
 
 	<div class="text">
+		<div class="definition">
+			Hello I am a definition
+		</div>
 		<p>
 			Guelph's <a href="https://guelph.ca/wp-content/uploads/Guelph-Zoning-Bylaw-2023.pdf" target="_blank">zoning bylaw</a> is regulated by the number of units, allowing up to three units on any given residential property. This means that homeowners can have a combination of primary dwelling, attached ARDU and a detached ARDU on their property. However, specific regulations and requirements, including building codes (area and height restrictions in relation to primary dwelling), parking requirements (at least one parking space per unit), and design standards (maximum of two bedrooms) must be met. All additional residential dwelling units are required to be registered with the City and must get a <a href="https://gpas.guelph.ca/smartlets/do.aspx?interviewID=login" target="_blank">building permit</a> before construction.  
 		</p>
+		
 	</div>
 
 	<TrendsChartCity
@@ -91,8 +101,11 @@
 	/>
 
 	<div class="text">
+		<div class="definition">
+			Hello I am a definition
+		</div>
 		<p>
-			The City provides about $5.5 million every year in development fee reductions to contribute to new housing supply, primarily related to creating accessory dwelling units. Guelph has released a powerful <a href="https://storymaps.arcgis.com/stories/08bde3e420e641cb978bbd91f3723aa5" target="_blank">storymap</a> to share back the efforts they have taken and a call to action for their community. The City offers homeowners online services including a building permitting system, appointment booking tool and process automation. The City has also appointed new permanent staff to accelerate the pace of development approvals, including a development advisor and a housing stability advisor, project managers, technicians and engineers. 
+			The City provides about $5.5 million every year in development fee reductions to contribute to new housing supply, primarily related to creating accessory dwelling units. Guelph has released a powerful <a href="https://storymaps.arcgis.com/stories/08bde3e420e641cb978bbd91f3723aa5" target="_blank">storymap</a> to share back the efforts they have taken and a call to action for their community. The City offers homeowners online services including a building permitting system, appointment booking tool and process automation. The City has also appointed new permanent staff to accelerate the pace of development approvals, including a development advisor and a housing stability advisor, project managers, technicians and engineers<sup>iv</sup>.
 		</p>
 	</div>
 
@@ -130,4 +143,15 @@
 
 
 
+<style>
 
+	.definition {
+		background-color: #ffffffb6;
+		border: solid 1px var(--brandDarkBlue);
+		padding: 10px;
+		padding-left: 15px;
+		margin-top: 15px;
+		font-style: italic;
+	}
+
+</style>

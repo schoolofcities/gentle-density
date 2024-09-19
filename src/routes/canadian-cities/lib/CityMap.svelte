@@ -3,6 +3,7 @@
 import maplibregl from 'maplibre-gl';
 import { onMount } from 'svelte';
 import RangeSlider from "svelte-range-slider-pips";
+import csdBoundary from '../assets/csd.geo.json'; 
 
 export let city;
 export let colours;
@@ -197,7 +198,6 @@ let detachedGeo;
 let secondaryGeo;
 $: fetchGeoJSON(city);
 
-$: console.log(detachedGeo);
 
 $: if (detachedGeo && map.getLayer('suitesDetached') && map.getLayer('suitesDetachedWhite')) {
 	map.setFilter('suitesDetached', [
@@ -581,6 +581,27 @@ onMount(() => {
        		}
 		});
 
+		map.addSource('csdBoundary', {
+			'type': 'geojson',
+			'data': csdBoundary
+		}); 
+		map.addLayer({
+			"id": "csdBoundary",
+			"type": "line",
+			"source": "csdBoundary",
+			"paint": {
+				"line-color": "#f6fffd",
+				"line-opacity": 1,
+				"line-width": 2,
+				'line-dasharray': [2, 1]
+			},
+			'filter': 
+				[
+					'all',
+					['==', ['get', 'N'], city]
+				]
+		});
+
 		map.addSource('suitesSecondary', {
 			'type': 'geojson',
 			'data': secondaryGeo
@@ -704,6 +725,13 @@ $: if (load === 1) {
 		zoom: cityData[city].zoom, 
 	});
 }
+
+$: if (load === 1 && map.getSource('csdBoundary')) {
+	console.log("meow:")
+	map.setFilter('csdBoundary', 
+		['==', ['get', 'N'], city]
+	)
+};
 
 let onDetached = true;
 	function filterDetached() {
