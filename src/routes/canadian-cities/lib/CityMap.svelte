@@ -4,6 +4,8 @@ import maplibregl from 'maplibre-gl';
 import { onMount } from 'svelte';
 import RangeSlider from "svelte-range-slider-pips";
 import csdBoundary from '../assets/csd.geo.json'; 
+import transitLines from "../assets/transit-lines-canada.geo.json";
+import transitStops from "../assets/transit-stops-canada.geo.json";
 
 export let city;
 export let colours;
@@ -543,6 +545,46 @@ onMount(() => {
 			}
 		});
 
+		map.addSource('transitLines', {
+			'type': 'geojson',
+			'data': transitLines
+		});
+		map.addLayer({
+			'id': 'transitLines',
+			'type': 'line',
+			'source': 'transitLines',
+			'layout': {},
+			'paint': {
+				'line-color': '#273f75',
+				'line-width': [
+					'interpolate', ['linear'], ['zoom'],
+					8, 1,  
+					15, 2  
+				],
+				'line-opacity': 1,
+				'line-dasharray': [6, 2]
+			}
+		});
+
+		map.addSource('transitStops', {
+			'type': 'geojson',
+			'data': transitStops
+		});
+		map.addLayer({
+			'id': 'transitStops',
+			'type': 'circle',
+			'source': 'transitStops',
+			'layout': {},
+			'paint': {
+				'circle-radius': [
+					'interpolate', ['linear'], ['zoom'],
+					8, 3,  
+					15, 7  
+				],
+				'circle-color': '#273f75'
+			}
+		});
+
 		map.addLayer({
 			"id": "roads_labels_major",
 			"type": "symbol",
@@ -580,6 +622,8 @@ onMount(() => {
 				"text-halo-width": 2
        		}
 		});
+
+		
 
 		map.addSource('csdBoundary', {
 			'type': 'geojson',
