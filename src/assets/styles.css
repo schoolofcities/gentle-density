@@ -21,7 +21,7 @@
     --brandLightBlue: #8EB6DC;
     --brandRed: #ab1269;
     --brandYellow: #F1C500;
-    --brandTest: #f6fffd;
+    --brandTest: #273f75;
 
     --range-slider:          #8EB6DC; /* slider main background color */
     --range-handle-inactive: #ffffff; /* inactive handle color */
@@ -42,7 +42,7 @@ body {
     background-color: #ffffff;
     opacity: 1;
     background-size: 13px 13px;
-    background-image: repeating-linear-gradient(45deg, #eaf5ff 0, #eaf5ff 1.3px, #ffffff 0, #ffffff 50%);
+    background-image: repeating-linear-gradient(45deg, #eff5fc 0, #eff5fc 1.3px, #ffffff 0, #ffffff 50%);
     border-top: solid 1px var(--brandLightBlue);
 }
 

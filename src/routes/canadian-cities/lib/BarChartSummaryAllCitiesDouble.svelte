@@ -9,15 +9,15 @@
 	let divWidth;
 	$: width = divWidth;
 
-	const marginRight = 75;
-	const marginLeft = 100;
+	const marginRight = 85;
+	const marginLeft = 95;
 	const marginTop = 100;
 
 	let titleMarginLeft = marginLeft;
 	$: if (width < 500) {
 		titleMarginLeft = 10
 	} else {
-		titleMarginLeft = marginLeft;
+		titleMarginLeft = 10;
 	}
 
 	let height = 200;
@@ -34,7 +34,7 @@
 	if (type === "Detached") {
 		maxXvalue = 300
 	} else {
-		maxXvalue = 1000
+		maxXvalue = 800
 	}
 	
 	$: xScale = scaleLinear()
@@ -92,12 +92,22 @@
 		>Issued Building Permits (2023)</text>
 
 		<line
+			x1="{0}"	
+			x2="{width}"
+			y1="{20}"
+			y2="{20}"
+			stroke="#fff"
+			opacity="0.2"
+			stroke-width="1"
+		/>
+
+		<line
 			x1="{marginLeft}"	
-			x2="{width - marginRight}"
+			x2="{width}"
 			y1="{marginTop}"
 			y2="{marginTop}"
 			stroke="#fff"
-			opacity="0.8"
+			opacity="0.2"
 			stroke-width="1"
 		/>
 
@@ -107,9 +117,9 @@
 				x1="{marginLeft + xScale(i * maxXvalue / 4) }"	
 				x2="{marginLeft + xScale(i * maxXvalue / 4) }"
 				y1="{marginTop - 5}"
-				y2="{marginTop + 5}"
+				y2="{height}"
 				stroke="#fff"
-				opacity="0.8"
+				opacity="0.2"
 				stroke-width="1"
 			/>
 
@@ -200,6 +210,8 @@
 
 	#barChart {
 		background-color: var(--brandDarkBlue);
+		background-size: 13px 13px;
+		background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
 		border: solid 1px #fff;
 		padding: 10px;
 		/* padding-right: 45px; */
