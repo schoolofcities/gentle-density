@@ -1,8 +1,9 @@
 <script>
 
-import maplibregl from 'maplibre-gl';
 import { onMount } from 'svelte';
 import RangeSlider from "svelte-range-slider-pips";
+import maplibregl from 'maplibre-gl';
+import * as pmtiles from "pmtiles";
 import csdBoundary from '../assets/csd.geo.json'; 
 import transitLines from "../assets/transit-lines-canada.geo.json";
 import transitStops from "../assets/transit-stops-canada.geo.json";
@@ -11,9 +12,11 @@ export let city;
 export let colours;
 
 let map;
+
+let daTilesURL = "./canadian-cities/da.pmtiles";
+
 let values = [2021,2023];
 
-$: console.log(values);
 
 const cityData = {
 	'Calgary': {
@@ -330,6 +333,12 @@ async function fetchGeoJSON(city) {
 						['<=', ['get', 'Year'], values[1]]
 					]
 			});
+
+			if (!onSecondary) {
+				map.setPaintProperty('suitesSecondary', 'circle-opacity', 0);
+				map.setPaintProperty('suitesSecondaryWhite', 'circle-opacity', 0);
+			}
+
 		};
 		if (map.getSource('suitesDetached')) {
 			map.removeLayer('suitesDetached');
@@ -387,7 +396,14 @@ async function fetchGeoJSON(city) {
 						['<=', ['get', 'Year'], values[1]]
 					]
 			});
+
+			if (!onDetached) {
+				map.setPaintProperty('suitesDetached', 'circle-opacity', 0);
+				map.setPaintProperty('suitesDetachedWhite', 'circle-opacity', 0);
+			}
+
 		}
+
 	}	
 };
 
@@ -395,6 +411,9 @@ async function fetchGeoJSON(city) {
 let load = 0;
 
 onMount(() => {
+
+	let protocol = new pmtiles.Protocol();
+	maplibregl.addProtocol("pmtiles", protocol.tile);
 	
 	map = new maplibregl.Map({
 		container: "map", 
@@ -460,6 +479,27 @@ onMount(() => {
 				"fill-opacity": 1
 			}
 		}),
+
+		map.addSource("disseminationAreas", {
+			type: "vector",
+			url: "pmtiles://" + daTilesURL,
+		});
+		map.addLayer({
+			"id": "disseminationAreas",
+			"type": "fill",
+			"source": "disseminationAreas",
+			"source-layer": "da",
+			"paint": {
+				"fill-opacity": 0.13,
+				"fill-color": "black",
+				"fill-outline-color": "#8EB6DC"
+			},
+			'filter': 
+				[
+					'all',
+					['==', ['get', 'City'], city]
+				]
+		})
 
 		map.addLayer({
 			"id": "roads_major",
@@ -544,6 +584,8 @@ onMount(() => {
 				]
 			}
 		});
+
+		
 
 		map.addSource('transitLines', {
 			'type': 'geojson',
@@ -751,7 +793,6 @@ onMount(() => {
 					['<=', ['get', 'Year'], values[1]]
 				]
 		});
-		
 
 	})
 
@@ -763,7 +804,6 @@ onMount(() => {
 
 
 $: if (load === 1) {
-	console.log(city);
 	map.flyTo({
 		center: cityData[city].center, 
 		zoom: cityData[city].zoom, 
@@ -771,9 +811,14 @@ $: if (load === 1) {
 }
 
 $: if (load === 1 && map.getSource('csdBoundary')) {
-	console.log("meow:")
 	map.setFilter('csdBoundary', 
 		['==', ['get', 'N'], city]
+	)
+};
+
+$: if (load === 1 && map.getSource("disseminationAreas")) {
+	map.setFilter("disseminationAreas", 
+		['==', ['get', 'City'], city]
 	)
 };
 
@@ -804,13 +849,53 @@ function filterSecondary() {
 }
 
 
+let onIncome = false;
+function filterIncome() {
+	onPop = false;
+	onIncome = !onIncome;
+	if (onIncome) {
+		map.setPaintProperty("disseminationAreas", 'fill-opacity', 0.95);
+		map.setPaintProperty("disseminationAreas", "fill-color", 
+			["step",["get","median_income"],"#506b80",70000,"#2e4e66",90000,"#1a2d3b"]
+		);
+		map.setPaintProperty("disseminationAreas", "fill-outline-color", 
+			["step",["get","median_income"],"#506b80",70000,"#2e4e66",90000,"#1a2d3b"]
+		);
+	} else {
+		map.setPaintProperty("disseminationAreas", 'fill-opacity', 0.2);
+		map.setPaintProperty("disseminationAreas", "fill-color", "black");
+		map.setPaintProperty("disseminationAreas", "fill-outline-color","#8EB6DC");
+	}
+}
+
+let onPop = false;
+function filterPop() {
+	onPop = !onPop;
+	onIncome = false;
+	if (onPop) {
+		map.setPaintProperty("disseminationAreas", 'fill-opacity', 0.95);
+		map.setPaintProperty("disseminationAreas", "fill-color", 
+			["step",["get","pop_density"],"#506b80",2000,"#2e4e66",6000,"#1a2d3b"]
+		);
+		map.setPaintProperty("disseminationAreas", "fill-outline-color", 
+			["step",["get","pop_density"],"#506b80",2000,"#2e4e66",6000,"#1a2d3b"]
+		);
+	} else {
+		map.setPaintProperty("disseminationAreas", 'fill-opacity', 0.2);
+		map.setPaintProperty("disseminationAreas", "fill-color", "black");
+		map.setPaintProperty("disseminationAreas", "fill-outline-color","#8EB6DC");
+	}
+}
+
+
+
 
 </script>
 
 
 <div id="map-title">
 
-	<p>Location of Building Permits in {city}</p>
+	<p>Building Permits in {city}</p>
 
 </div>
 
@@ -858,6 +943,75 @@ function filterSecondary() {
 
 	</div>
 
+	<br>
+
+	<div id="pointLayers">
+
+		<p>Add reference layer:</p>
+	
+		<button id="incomeButton" on:click={filterIncome} class="{onIncome ? 'layerOn' : 'layerOff'}" >
+			<svg width=0 height=10></svg>
+			Household Income:<br>Low
+			<svg width=10 height=10>
+				<rect
+				style="fill:#506b80;stroke-width:1;stroke:#8EB6DC"
+				x=0
+				y=0
+				width=10
+				height=10/>
+			</svg>
+			<svg width=10 height=10>
+				<rect
+				style="fill:#2e4e66;stroke-width:1;stroke:#8EB6DC"
+				x=0
+				y=0
+				width=10
+				height=10/>
+			</svg>
+			<svg width=10 height=10>
+				<rect
+				style="fill:#1a2d3b;stroke-width:1;stroke:#8EB6DC"
+				x=0
+				y=0
+				width=10
+				height=10/>
+			</svg>
+			High
+		</button> 
+		<!-- "#506b80",75000,"#2e4e66",100000,"#1a2d3b" -->
+
+		<button id="popButton" on:click={filterPop} class="{onPop ? 'layerOn' : 'layerOff'}" >
+			<svg width=0 height=10></svg>
+			Population Density:<br>Low
+			<svg width=10 height=10>
+				<rect
+				style="fill:#506b80;stroke-width:1;stroke:#8EB6DC"
+				x=0
+				y=0
+				width=10
+				height=10/>
+			</svg>
+			<svg width=10 height=10>
+				<rect
+				style="fill:#2e4e66;stroke-width:1;stroke:#8EB6DC"
+				x=0
+				y=0
+				width=10
+				height=10/>
+			</svg>
+			<svg width=10 height=10>
+				<rect
+				style="fill:#1a2d3b;stroke-width:1;stroke:#8EB6DC"
+				x=0
+				y=0
+				width=10
+				height=10/>
+			</svg>
+			High
+		</button> 
+
+	</div>
+
 </div>
 
 
@@ -901,7 +1055,7 @@ function filterSecondary() {
     	background-size: 13px 13px;
     	background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff05 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
 		/* max-width: 700px; */
-		height: 240px;
+		height: 300px;
 	}
 
 	#pointLayers {
@@ -917,7 +1071,7 @@ function filterSecondary() {
 		text-align: center;
 	}
 
-	#detachedButton {
+	#detachedButton, #incomeButton {
 		float: left;
 		margin-left: 20px;
 		margin-right: 20px;
@@ -934,7 +1088,7 @@ function filterSecondary() {
 		cursor: pointer;
 	}
 
-	#secondaryButton {
+	#secondaryButton, #popButton {
 		overflow: hidden;
 		width: 250px;
 		border: solid 1px #fff;
@@ -948,21 +1102,24 @@ function filterSecondary() {
 		cursor: pointer;
 	}
 
-	#detachedButton:hover {
+	#detachedButton:hover, #incomeButton:hover {
 		opacity: 1;
 		background-color: var(--brandDarkBlue);
 	}
 
-	#secondaryButton:hover {
+	#secondaryButton:hover, #popButton:hover {
 		opacity: 1;
 		background-color: var(--brandDarkBlue);
 	}
 
 	@media screen and (max-width: 600px) {
+		#options {
+			height: 400px;
+		}
 		#pointLayers {
 			width: 300px;
 		}
-		#detachedButton {
+		#detachedButton, #incomeButton {
 			margin-left: 25px;
 		}
 	}
@@ -977,6 +1134,7 @@ function filterSecondary() {
 	#range-wrapper {
 		margin: 0 auto;
 		max-width: 700px;
+		height: 50px;
 		color: white;
 		text-align: center;
 	}

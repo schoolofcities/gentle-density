@@ -111,7 +111,7 @@
 			stroke-width="1"
 		/>
 
-		{#each [0,1,2,3,4] as i}
+		{#each [0,1,2,3,4,5,6,7,8] as i}
 
 			<line
 				x1="{marginLeft + xScale(i * maxXvalue / 4) }"	
@@ -119,19 +119,27 @@
 				y1="{marginTop - 5}"
 				y2="{height}"
 				stroke="#fff"
-				opacity="0.2"
+				opacity="0.12"
 				stroke-width="1"
 			/>
 
-			<text 
-				x="{marginLeft + xScale(i * maxXvalue / 4)}" 
-				y="{marginTop - 7}"
-				id="labelBar"
-				text-anchor="start" 
-				opacity="0.667"
-			>{maxXvalue * i / 4}</text>
-
 		{/each}
+
+		{#if width > 420}
+
+			{#each [0,1,2,3,4] as i}
+
+				<text 
+					x="{marginLeft + xScale(i * maxXvalue / 4)}" 
+					y="{marginTop - 7}"
+					id="labelBar"
+					text-anchor="start" 
+					opacity="0.667"
+				>{maxXvalue * i / 4}</text>
+
+			{/each}
+
+		{/if}
 	
 		{#each data as d, i}
 
