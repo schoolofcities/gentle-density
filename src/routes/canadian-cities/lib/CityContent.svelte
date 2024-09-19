@@ -13,8 +13,19 @@
 
 {#if city === "Calgary"}
 
-	<!-- Insert Calgary info here ... -->
+	<TrendsChartCity
+		citySummaryData = {citySummaryData}
+		type = "Detached"
+		city = {city}
+		chartColours = {chartColours}
+	/>
 
+	<TrendsChartCity
+		citySummaryData = {citySummaryData}
+		type = "Secondary"
+		city = {city}
+		chartColours = {chartColours}
+	/>
 
 
 {:else if city === "Edmonton"}
@@ -136,6 +147,22 @@
 
 {:else if city === "Toronto"}
 
+
+{:else if city === "Vancouver"}
+
+	<TrendsChartCity
+		citySummaryData = {citySummaryData}
+		type = "Detached"
+		city = {city}
+		chartColours = {chartColours}
+	/>
+
+	<TrendsChartCity
+		citySummaryData = {citySummaryData}
+		type = "Secondary"
+		city = {city}
+		chartColours = {chartColours}
+	/>
 
 {/if}
 
