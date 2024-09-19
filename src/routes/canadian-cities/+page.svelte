@@ -205,7 +205,7 @@
 			clearable={false}
 			searchable={false}
 			showChevron={true}
-			--width="350px"
+			--width="250px"
 			--font-size="18px"
 			--height="24px"
 			--selected-item-color="#ab1269"
@@ -233,7 +233,7 @@
 			clearable={false}
 			searchable={false}
 			showChevron={true}
-			--width="350px"
+			--width="250px"
 			--font-size="18px"
 			--height="24px"
 			--selected-item-color="#ab1269"
