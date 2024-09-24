@@ -6,9 +6,9 @@
 
 	import Top from "../../lib/TopSofC.svelte";
 	import BarChartDouble from "./lib/BarChartSummaryAllCitiesDouble.svelte";
-	import TrendsChartCity from "./lib/TrendsChartCity.svelte";
-	import ProvinceText from "./lib/ProvinceText.svelte";
-	import CityContent from "./lib/CityContent.svelte";
+	// import TrendsChartCity from "./lib/TrendsChartCity.svelte";
+	import ProvinceText from "./lib/ProvinceText_Priyav3.svelte";
+	import CityContent from "./lib/CityContent_Priyav3.svelte";
 	import CityMap from "./lib/CityMap.svelte";
 	import ReadMore from "../../lib/ReadMore.svelte";
 
@@ -258,8 +258,6 @@
 
 	<br>
 	<br>
-
-	
 
 	<div class="background-white">
 
