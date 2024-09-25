@@ -199,6 +199,14 @@ b {
     text-decoration: underline;
 }
 
+.construction {
+    color: var(--brandRed);
+    background-color: rgba(255, 255, 255, 0.591);
+    font-size: 24px;
+    border: solid 1px var(--brandRed);
+    padding: 10px;
+}
+
 
 .rangeSlider {
     height: 2px;

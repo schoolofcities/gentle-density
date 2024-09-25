@@ -130,6 +130,12 @@
 	</div>
 
 	<div class="text">
+		<p class="construction">
+			Page under construction <br><br> Feel free to take a look, but please do not share without permission :)
+		</p>
+	</div>
+
+	<div class="text">
 		<p>
 			The research focuses on accessory or additional dwelling units (ADUs) across various municipalities in Canada. The purpose of the research is to track ADU permit data in order to locate their uptake, and simultaneously, to push municipalities to track relevant data to further aid in uptake.   
 		</p>
