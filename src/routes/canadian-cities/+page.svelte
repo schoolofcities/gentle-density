@@ -115,8 +115,9 @@
 				
 			</h2>
 			<p>
-				Author Names
+				Ahmad Al-Musa, Priya Perwani, Muhammad Khalis Bin Samion Jeff Allen
 			</p>
+			<br>
 			<p>
 				September 2024
 			</p>
@@ -130,24 +131,27 @@
 
 	<div class="text">
 		<p>
-			Residential neighbourhoods in major Canadian cities are dominated by single-family homes due to zoning regulations restricting everything from a building's height to the number of units permitted on a single-family lot.i Today, 8.1 million homes in Canada (54.1% of existing development) are single-family. The preference for single-family buildings has contributed to a massive supply shortfall in major cities, with rising demand putting upward pressure on prices.ii Housing typologies that use land efficiently and provide housing to more than one family on a single-family lot are urgently needed to bring prices down and provide more choice in well-located areas. 
+			The research focuses on accessory or additional dwelling units (ADUs) across various municipalities in Canada. The purpose of the research is to track ADU permit data in order to locate their uptake, and simultaneously, to push municipalities to track relevant data to further aid in uptake.   
+		</p>
+		<p>
+			A scan of the 63 Housing Accelerator Fund (HAF) cities was conducted. Based on population and national coverage, larger cities were selected. The final list of cities included is those with publicly available permit data dated i.e. with issue and/or closing dates for ADU permit applications, for the period 2014-2023. A few cities are mentioned to honour their recent work towards ADU uptake, despite the lack of data.
 		</p>
 	</div>
 
 	<div class="text">
 		<h3><span class="textLaneway">Missing Middle and Missing Little </span></h3>
 		<p>
-			In 2010, Daniel Parolek coined the term “Missing Middle” to describe medium-density housing—duplexes, triplexes, bungalows, townhouses, cottage court, and more—that could be built between detached single-family homes and mid-rise apartments in order to restore housing affordability and address the need for walkable urban living. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 		</p>
 		<p>
-			At the smaller-scale of the missing middle is "missing little", a term coined by Michael Piper, which refers to owner-led efforts to build additional dwellings within their existing parcel of land as citizen developers. These strategies are also known as gentle density; they can increase property value and provide supplementary income for owners, but importantly, in aggregate, can incrementally scale up the density of a neighbourhood, allow for intergenerational living, and provide needed housing, particularly for those unable to afford larger homes. Relative to larger developments (e.g. larger multi-unit apartments and condominiums), gentle density is more compatible with the scale and character of existing neighbourhoods. Gentle density development is thus often seen as an approach to increase the housing supply in a way that is less disruptive to existing communities but can still help create more walkable, liveable neighbourhoods, that use existing infrastructure and services, which can save taxpayers' money and reduce harmful urban sprawl. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 		</p>
 	</div>
 
 	<div class="text">
 		<h3><span class="textLaneway">What is an ADU? </span></h3>
 		<p>
-			Accessory dwelling units (ADUs), sometimes known as the ‘Missing Little’, are additional units on a lot already occupied by a main building.iii They are self-contained, with a kitchen and bathroom, and generally have a separate entrance. ADUs can be added to the main property or can be built separately
+			Accessory dwelling units (ADUs), sometimes known as the ‘Missing Little’, are additional units on a lot already occupied by a main building. They are self-contained, with a kitchen and bathroom, and generally have a separate entrance. ADUs can be added to the main property or can be built separately
 		</p>
 	</div>
 
@@ -179,20 +183,6 @@
 		chartColours = {chartColours}
 	/>
 
-	<div class="text">
-		<br>
-		<br>
-		<h3><span class="textLaneway">Advantages</span></h3>
-		<p>
-			<b>Affordability:</b> Single-family homes are nearly three times more expensive in overall price than multiplex units that could be built by upzoning.v Adding a unit to an existing property has the potential to cover mortgage payments if the costs of construction, including costs of financing and development taxes, are less than what that property owner could charge in rent.vi Property owner landlords are more likely to charge below-market rent,vii particularly if the tenant is a family member or friend. For seniors who are homeowners, even if they have paid off their mortgage, renting a unit may assist in paying for home maintenance and supplementing pension income as well as providing companionship and possible assistance, a significant enabler for aging in place. 
-		</p>
-		<p>
-			<b>Housing Diversity and Sociability:</b> It is argued that smaller scale apartment buildings, multiplexes, cottage clusters and ADUs encourage social interaction, thereby creating a sense of belonging, community and support among residents.ix They can offer opportunities to integrate and serve multiple generations or households (co-housing): i.e., these units enable people of all ages to live together and share space in different ways. Accessible ADUs allow seniors to ‘age in place’, grow older without moving to bigger scale or institutional settings.
-		</p>
-		<p>
-			<b>Environment, Local Economies, and Health:</b> ‘Smart growth’ or intensification of existing communities has been advocated by all levels of government since the 1990s.xi On average, Missing Middle buildings have significantly lower embodied greenhouse gas (GHG) emissions per bedroom when compared to single-family and mid/high-rise buildings.xii The closer families are to schools and playgrounds, and the closer seniors are to green spaces and health services, the more that transportation costs and time can be saved.xiii Walkability can also improve mental and physical health through improved ‘sense of place’ and local economic vitality.
-		</p>
-	</div>
 
 	<div class="text">
 		
