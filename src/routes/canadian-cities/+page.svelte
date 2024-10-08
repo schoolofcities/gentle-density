@@ -258,8 +258,7 @@
 					For each municipality, we downloaded building permit data from their respective open data portals or elsewhere on their websites, filtering the data to only ADUs. The specifics of this process varied by city, since each city has differences in how they code and structure their building permit data.
 				</p>
 				<p>
-					For the maps, the data on population density and income are from the 2021 Canadian Census (Statistics Canada), at the Dissemination Area geography. Low population density is less than 2,000 people per square kilometre, high population density is greater than 6,000. Low income is 
-					Other data shown on the map (streets, transit, buildings, etc.) are from OpenStreetMap. 
+					For the maps, the data on population density and income are from the 2021 Canadian Census (Statistics Canada), at the Dissemination Area geography. Low population density is less than 2,000 people per square kilometre, high population density is greater than 6,000. Low income is an after-tax median household income of less than $70,000 in 2020, while high-income is greater than $90,000. All other data shown on the map (streets, transit, buildings, etc.) are from OpenStreetMap. 
 				</p>
 				<p>
 					All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python, Svelte, MapLibre, and D3.
