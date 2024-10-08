@@ -7,8 +7,8 @@
 	import Top from "../../lib/TopSofC.svelte";
 	import BarChartDouble from "./lib/BarChartSummaryAllCitiesDouble.svelte";
 	// import TrendsChartCity from "./lib/TrendsChartCity.svelte";
-	import ProvinceText from "./lib/ProvinceText.svelte";
-	import CityContent from "./lib/CityContent.svelte";
+	import ProvinceText from "./lib/ProvinceText_Priyav3.svelte";
+	import CityContent from "./lib/CityContent_Priyav3.svelte";
 	import CityMap from "./lib/CityMap.svelte";
 	import ReadMore from "../../lib/ReadMore.svelte";
 
@@ -109,17 +109,16 @@
 				<span class="italic">Gentle Density</span> Across Canada
 			</h1>
 			<h2>
-				Tracking development of accessory dwelling units from local building permit data
+				Tracking development of attached and detached ADUs from local building permit data
 			</h2>
 			<h2>
 				
 			</h2>
 			<p>
-				Ahmad Al-Musa, Priya Perwani, Muhammad Khalis Bin Samion, Jeff Allen
+				Author Names
 			</p>
-			<br>
 			<p>
-				October 2024
+				September 2024
 			</p>
 		</div>
 
@@ -130,16 +129,9 @@
 	</div>
 
 	<div class="text">
-		<p class="construction">
-			Page under construction <br><br> Feel free to take a look, but please do not share without permission :)
-		</p>
-	</div>
-
-	<div class="text">
 		<p>
 			The research focuses on Accessory or Additional Dwelling Units (ADUs) across various municipalities in Canada. The purpose of the research is to track ADU permit data in order to locate their uptake, and simultaneously, to push municipalities to track relevant data to further aid in uptake.   
-		</p>
-		<p>
+
 			We conducted a scan of the 63 Housing Accelerator Fund (HAF) recipient cities under the large/urban stream, and selected cities based on population and national coverage. The final list of cities in this article are those with publicly available permit data i.e. with issue and/or closing dates for ADU permit applications, for the period 2014-2023. A few cities are mentioned to honour their recent work towards ADU uptake, despite the lack of available data.
 		</p>
 	</div>
@@ -180,44 +172,14 @@
 		chartColours = {chartColours}
 	/>
 
-	<br>
-	<br>
-	<br>
-	
-
-
-	<div class="text">
-		
-		<h3>Provincial Policy</h3>
-
-		<Select 	
-			items={provinceNames}
-			value={selectedProvince}
-			on:input={e => selectedProvince = e.detail.value}
-			clearable={false}
-			searchable={false}
-			showChevron={true}
-			--width="250px"
-			--font-size="18px"
-			--height="24px"
-			--selected-item-color="#ab1269"
-			--item-active-background="#F1C500"
-		/>
-
-		<ProvinceText
-			selectedProvince = {selectedProvince}
-		/>
-
-	</div>
-	
-
-
 
 
 	<div class="text">
 
 		<h3>City-By-City Analysis</h3>
-
+		<p>
+			Select a city from the dropdown list to view an overview of municipal policies, see charts illustrating the uptake of detached and attached ADUs, and explore a map showing the location of the units for the selected city. 
+		</p>
 		<Select 	
 			items={cityNames}
 			value={selectedCity}
@@ -255,25 +217,42 @@
 
 		<br>
 		<div class="text">
-			<h3>Methodology</h3>
+			<h3>Data & Code</h3>
 			<p>
-				For each municipality, we downloaded building permit data from their respective open data portals or elsewhere on their websites, filtering the data to only ADUs. 
-			</p>
-			<p>
-				The data on population density and income are from the 2001 Canadian Census (Statistics Canada). Low population density is less than 2,000 people per square kilometre, high population density is greater than 6,000. Low income is 
-				Other data shown on the map (streets, transit, buildings, etc.) are from OpenStreetMap. 
-			</p>
-			<p>
-				All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python, Svelte, MapLibre, and D3.
-			</p>
-			<p>
-				Big thanks as well to Irene Chang who helped with an early draft of the maps and Remus Herteg who helped compile the census data (on population and income) for the maps.
+				For each municipality, we downloaded building permit data from their respective open data portals or elsewhere on their websites. Other data for the map (streets, transit, etc.) are from OpenStreetMap. All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python, Svelte, MapLibre, and D3.
 			</p>
 		</div>
 
 		<ReadMore currentPage = "canadian-cities"/>
 		
 	</div>
+
+	<div class="text">
+		
+		<h3>Provincial Policy</h3>
+		<p>
+			Provincial legislation plays a crucial role in directing municipal policy, and sometimes impactful change cannot happen without provincial direction. As such, we are listing how different provinces are encouraging ADUs in their jurisdictions. Select a province from the dropdown menu to explore its ADU policy.
+		</p>
+		<Select 	
+			items={provinceNames}
+			value={selectedProvince}
+			on:input={e => selectedProvince = e.detail.value}
+			clearable={false}
+			searchable={false}
+			showChevron={true}
+			--width="250px"
+			--font-size="18px"
+			--height="24px"
+			--selected-item-color="#ab1269"
+			--item-active-background="#F1C500"
+		/>
+
+		<ProvinceText
+			selectedProvince = {selectedProvince}
+		/>
+
+	</div>
+	
 
 </main>
 
