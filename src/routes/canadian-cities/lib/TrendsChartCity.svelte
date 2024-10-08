@@ -9,6 +9,13 @@
 	export let city;
 	export let chartColours;
 
+	let title = "";
+	$: if (type === "Secondary") {
+		title = "Attached ADU"
+	} else {
+		title = "Detached ADU"
+	}
+
 	let divWidth;
 	$: width = divWidth;
 
@@ -68,7 +75,7 @@
 			y="{18}"
 			id="title"
 			text-anchor="start" 
-		>{type} Suites In {city}</text>
+		>{title}s In {city}</text>
 
 		{#if (data.filter(d => d.ISSUED !== "").length > 0)}
 			<rect 

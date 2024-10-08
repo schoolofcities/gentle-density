@@ -9,6 +9,13 @@
 	let divWidth;
 	$: width = divWidth;
 
+	let title = "";
+	$: if (type === "Secondary") {
+		title = "Attached ADU"
+	} else {
+		title = "Detached ADU"
+	}
+
 	const marginRight = 85;
 	const marginLeft = 95;
 	const marginTop = 100;
@@ -59,7 +66,7 @@
 			y="{18}"
 			id="title"
 			text-anchor="start" 
-		>{" "} {type} Suites</text>
+		>{" "} {title}s</text>
 
 		<rect 
 			id="bar"

@@ -917,7 +917,7 @@ function filterPop() {
 					cy="5"
 					r="4" />
 			</svg>
-			Detached Suites
+			Detached ADU
 		</button>
 
 		<button id="secondaryButton"  on:click={filterSecondary} class="{onSecondary ? 'layerOn' : 'layerOff'}">
@@ -928,7 +928,7 @@ function filterPop() {
 					cy="5"
 					r="4" />
 			</svg>
-			Secondary Suites
+			Attached ADU
 		</button>
 
 	</div>
