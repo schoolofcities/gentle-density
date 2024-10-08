@@ -199,12 +199,30 @@ b {
     text-decoration: underline;
 }
 
+.text h4 {
+    font-family: UbuntuMonoRegular;
+    font-size: 18px;
+    color: #002b8f;
+    text-decoration: underline;
+}
+
 .construction {
     color: var(--brandRed);
     background-color: rgba(255, 255, 255, 0.591);
     font-size: 24px;
     border: solid 1px var(--brandRed);
     padding: 10px;
+}
+
+.definition {
+    background-color: #ffffffb6;
+    opacity: 0.9;
+    border: solid 1px var(--brandLightBlue);
+    padding: 10px;
+    padding-left: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 

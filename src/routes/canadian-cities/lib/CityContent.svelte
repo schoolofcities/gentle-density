@@ -755,16 +755,8 @@
 	
 
 
-
 <style>
 
-	.definition {
-		background-color: #ffffffb6;
-		border: solid 1px var(--brandDarkBlue);
-		padding: 10px;
-		padding-left: 15px;
-		margin-top: 15px;
-		font-style: italic;
-	}
+
 
 </style>

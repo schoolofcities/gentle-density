@@ -251,29 +251,30 @@
 	<br>
 	<br>
 
-	<div class="background-white">
+		<div class="text">
+			<div class="definition">
+				<h4>Data & Methodology</h4>
+				<p>
+					For each municipality, we downloaded building permit data from their respective open data portals or elsewhere on their websites, filtering the data to only ADUs. The specifics of this process varied by city, since each city has differences in how they code and structure their building permit data.
+				</p>
+				<p>
+					For the maps, the data on population density and income are from the 2021 Canadian Census (Statistics Canada), at the Dissemination Area geography. Low population density is less than 2,000 people per square kilometre, high population density is greater than 6,000. Low income is 
+					Other data shown on the map (streets, transit, buildings, etc.) are from OpenStreetMap. 
+				</p>
+				<p>
+					All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python, Svelte, MapLibre, and D3.
+				</p>
+				<p>
+					Big thanks to Remus Herteg who helped compile the census data (on population and income) for the maps, and to Irene Chang who helped with early conceptual versions of the visualizations shown on this page.
+				</p>
+			</div>
+		</div>
 
 		<br>
-		<div class="text">
-			<h3>Methodology</h3>
-			<p>
-				For each municipality, we downloaded building permit data from their respective open data portals or elsewhere on their websites, filtering the data to only ADUs. 
-			</p>
-			<p>
-				The data on population density and income are from the 2001 Canadian Census (Statistics Canada). Low population density is less than 2,000 people per square kilometre, high population density is greater than 6,000. Low income is 
-				Other data shown on the map (streets, transit, buildings, etc.) are from OpenStreetMap. 
-			</p>
-			<p>
-				All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python, Svelte, MapLibre, and D3.
-			</p>
-			<p>
-				Big thanks as well to Irene Chang who helped with an early draft of the maps and Remus Herteg who helped compile the census data (on population and income) for the maps.
-			</p>
-		</div>
+		<br>
 
 		<ReadMore currentPage = "canadian-cities"/>
 		
-	</div>
 
 </main>
 
