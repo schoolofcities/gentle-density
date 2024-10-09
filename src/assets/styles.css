@@ -225,6 +225,25 @@ b {
     line-height: 22px;
 }
 
+.photograph960 {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    color: var(--brandDarkBlue);
+    font-family:  UbuntuMonoRegular;
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+}
+
+.photograph960 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
 
 .rangeSlider {
     height: 2px;

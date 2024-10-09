@@ -16,6 +16,8 @@
 	import { csvParse } from 'd3-dsv';
 	import Select from 'svelte-select';
 
+	import aduPics from "./assets/4pics.png";
+
 	import '../../assets/styles.css';
 
 	const chartColours = {
@@ -129,11 +131,11 @@
 		<p>▼</p>
 	</div>
 
-	<div class="text">
+	<!-- <div class="text">
 		<p class="construction">
 			Page under construction <br><br> Feel free to take a look, but please do not share without permission :)
 		</p>
-	</div>
+	</div> -->
 
 	<div class="text">
 		<p>
@@ -144,7 +146,15 @@
 		</p>
 	</div>
 
+	
 
+	<div class="photograph960">
+		<p>Four ADUs in Toronto</p>
+		<img src={aduPics} alt="Photographs of four ADUs in Toronto">
+		<br><br><br>
+		
+	</div>
+	
 	<div class="text">
 		<h3><span class="textLaneway">What is an ADU? </span></h3>
 		<p>
