@@ -18,6 +18,13 @@
 
 	import aduPics from "./assets/4pics.png";
 
+	import aduDetachedGarage from "./assets/adu-detached-garage.svg";
+	import aduGarden from "./assets/adu-garden.svg";
+	import aduAttachedGarage from "./assets/adu-attached-garage.svg";
+	import aduBasement from "./assets/adu-basement.svg";
+	import aduSplit from "./assets/adu-corner-split.svg";
+	import aduAddition from "./assets/adu-rearside-addition.svg";
+
 	import '../../assets/styles.css';
 
 	const chartColours = {
@@ -144,22 +151,17 @@
 		<p>
 			We conducted a scan of the 63 Housing Accelerator Fund (HAF) recipient cities under the large/urban stream, and selected cities based on population and national coverage. The final list of cities in this article are those with publicly available permit data i.e. with issue and/or closing dates for ADU permit applications, for the period 2014-2023. A few cities are mentioned to honour their recent work towards ADU uptake, despite the lack of available data.
 		</p>
+		<br>
+		<h3><span class="textLaneway">What is an ADU? </span></h3>
+		<p>
+			ADUs, sometimes known as the ‘Missing Little’, are additional units on a lot already occupied by a main dwelling. They are self-contained, with a kitchen and bathroom, and generally have a separate entrance. ADUs can be added to the main dwelling or can be built as a seperate unit on the same lot, usually on the yard. ADUs can be added to a house, for example a basement suite, or they can be added on the yard as a detached suite, such as a laneway house.
+		</p>
 	</div>
-
-	
 
 	<div class="photograph960">
 		<p>Four ADUs in Toronto</p>
 		<img src={aduPics} alt="Photographs of four ADUs in Toronto">
 		<br><br><br>
-		
-	</div>
-	
-	<div class="text">
-		<h3><span class="textLaneway">What is an ADU? </span></h3>
-		<p>
-			ADUs, sometimes known as the ‘Missing Little’, are additional units on a lot already occupied by a main dwelling. They are self-contained, with a kitchen and bathroom, and generally have a separate entrance. ADUs can be added to the main dwelling or can be built as a seperate unit on the same lot, usually on the yard. ADUs can be added to a house, for example a basement suite, or they can be added on the yard as a detached suite, such as a laneway house.
-		</p>
 	</div>
 
 	<div class="text">
@@ -167,6 +169,17 @@
 		<p>
 			These units are annexes or external suites at the rear end of a detached home, semidetached home, or townhome. They are generally smaller than the primary building. They can be a detached garage conversion, built on top of an existing detached garage, or a newly built independent unit in the yard. The design must include all code requirements, and considerations of access, tree protection, distances to other built structures and utility hookups.  
 		</p>
+	</div>
+
+	<div class="schematic-diagrams">
+		<div class="diagram">
+			<img src="{aduDetachedGarage}" alt="Diagram of an detached garage-conversion ADU">
+			<p>Converted Garage ADU</p>
+		  </div>
+		  <div class="diagram">
+			<img src="{aduGarden}" alt="Diagram of a garden suite">
+			<p>Garden Suite ADU</p>
+		  </div>
 	</div>
 
 	<BarChartDouble
@@ -178,10 +191,29 @@
 	<br><br><br>
 
 	<div class="text">
-		<h3><span class="textLaneway">Attached ADUs </span></h3>
+		<h3><span class="textLaneway">Attached ADUs</span></h3>
 		<p>
 			They are units attached to the primary dwelling unit. A common form is horizontal splitting of the building i.e. converting the basement or second floor into separate suite(s). Other types of conversions can include vertical splitting, rear or side additions, attached garage conversions etc. or a combination. The design must include all code requirements, and considerations of height, access, floor levels, and utility hook ups. 
 		</p>
+	</div>
+
+	<div class="schematic-diagrams">
+		<div class="diagram">
+			<img src="{aduBasement}" alt="Diagram of a basement suite ADU">
+			<p>Basement ADU</p>
+		  </div>
+		  <div class="diagram">
+			<img src="{aduAttachedGarage}" alt="Diagram of an attached garage ADU">
+			<p>Attached Garage ADU</p>
+		  </div>
+		  <div class="diagram">
+			<img src="{aduSplit}" alt="Diagram of a split dwelling ADU">
+			<p>Split Dwelling ADU</p>
+		  </div>
+		  <div class="diagram">
+			<img src="{aduAddition}" alt="Diagram of an addition to a dwelling for an ADU">
+			<p>Addition ADU</p>
+		  </div>
 	</div>
 
 	<BarChartDouble
@@ -283,7 +315,6 @@
 		<br>
 
 		<ReadMore currentPage = "canadian-cities"/>
-		
 
 </main>
 
@@ -291,125 +322,38 @@
 
 <style>
 
-	.buttons-wrapper {
-		display: flex;
-	}
-
-	.buttonSelected {
-		height: 30px;
-		width: 150px;
-		border: solid 1px var(--brandLightBlue);
-		border-radius: 5px;
-		background-color: var(--brandDarkBlue);;
-		text-align: center;
-		margin-right: 10px;
-		color: white;
-		font-size: 16px;
-		font-family: UbuntuMonoRegular;
-		font-weight: 400;
-	}
-	
-	.buttonNotSelected {
-		height: 30px;
-		width: 150px;
-		border: solid 1px var(--brandLightBlue);
-		border-radius: 5px;
-		background-color: white;
-		text-align: center;
-		margin-right: 10px;
-		color: var(--brandDarkBlue);
-		font-size: 16px;
-		font-family: UbuntuMonoRegular;
-		font-weight: 400;
-		opacity: 1;
-	}
-	.buttonSelected:hover {
-		cursor: pointer;
-	}
-	.buttonNotSelected:hover {
-		cursor: pointer;
-		background-color: #eaf5ff;
-	}
-	
-	.typeWrapper {
-		overflow: hidden;
-		display: flex;
-	}
-
-	.isometric {
-		float: left;
-		width: 300px;
-	}
-	.isometric-mobile {
-		display: none;
-		width: 300px;
-	}
-
-	.typeText {
-		float: left;
-		max-width: 500px;
-
-	}
-
-	@media only screen and (max-width: 692px) {
-		.typeWrapper {
-			overflow: hidden;
-			display: contents;
-		}
-		
-		.isometric {
-			display: none;
-		}
-		.isometric-mobile {
-			display: contents
-		}
-		
-		.typeText {
-			float: none;
-			max-width: 700px;
-		
-		}
-	}
-
-    /* .selected {
-		background-color: var(--brandLightBlue);
-		color: white;
-    }
-
-	.buttons {
-		max-width: 685px;
-		width: 100%;
+	.schematic-diagrams {
 		margin: 0 auto;
-		padding-bottom: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+		background-color: none;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 0px;
+		max-width: 701px;
+		margin-bottom: 20px;
 	}
-	@media screen and (max-width: 500px) {
-		.buttons {
-			max-width: 250px;
+
+	.diagram {
+		margin: 0 auto;
+		max-width: 351px;
+	}
+
+	.diagram p {
+		font-size: 15px;
+		text-align: center;
+		margin-top: -15px;
+		color: var(--brandDarkBlue);
+    	font-family: UbuntuMonoItalic;
+	}
+
+
+	@media (max-width: 700px) {
+		.schematic-diagrams {
+			grid-template-columns: 1fr;
 		}
 	}
 
-	button {
-		font-family: UbuntuMonoBold;
-		text-align: center;
-		font-size:18px;
-		width: 165px;
-		color: var(--brandLightBlue);
-        background-color: var(--brandDarkBlue);
-        border: 1px solid var(--brandGray);
-		padding: 10px;
-		margin-bottom: 1px;
-		margin-top: 10px;
-		cursor: pointer;
-	}
 
-	button:hover {
-		opacity: 1;
-		color: white;
-		background-color: var(--brandLightBlue);
-	} */
+
 
 
 	
