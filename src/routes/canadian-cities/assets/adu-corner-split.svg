@@ -23,15 +23,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="223.09219"
-     inkscape:cy="190.3885"
-     inkscape:window-width="1276"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="211.95526"
+     inkscape:cy="146.45949"
+     inkscape:window-width="2560"
      inkscape:window-height="1403"
-     inkscape:window-x="26"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="_4_horizontal_split::house" />
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg94" />
   <defs
      id="defs1">
     <style
@@ -76,6 +76,10 @@
      id="_4_horizontal_split::house"
      data-name="4 horizontal split::house"
      transform="translate(0,-62.959615)">
+    <path
+       style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 152.98,235.14999 34.055,-19.68404 v 27.88403 l -34.04499,19.38003 0.01,-27.58002"
+       id="path98" />
     <polygon
        class="cls-4"
        points="205.95,189.89 205.95,198.74 201.06,201.56 201.06,192.72 "
@@ -108,22 +112,6 @@
        id="polygon11" />
     <polygon
        class="cls-5"
-       points="173.02,228.37 173.02,237.21 173.02,237.22 168.13,240.04 168.13,231.19 "
-       id="polygon13" />
-    <polygon
-       class="cls-5"
-       points="201.06,212.25 201.06,221.09 196.17,223.91 196.17,215.07 "
-       id="polygon14" />
-    <polygon
-       class="cls-5"
-       points="173.02,228.37 177.92,225.55 177.92,234.39 173.02,237.22 173.02,237.21 "
-       id="polygon15" />
-    <polygon
-       class="cls-5"
-       points="201.06,212.24 205.95,209.42 205.95,218.26 201.06,221.09 201.06,212.25 "
-       id="polygon16" />
-    <polygon
-       class="cls-5"
        points="114.77,249.9 131.35,259.47 131.35,261.62 114.77,252.06 "
        id="polygon17" />
     <polygon
@@ -154,10 +142,6 @@
        class="cls-5"
        points="138,229.51 138,247.62 129.07,242.46 129.07,224.35 "
        id="polygon24" />
-    <path
-       class="cls-5"
-       d="M 216.61,198.43 V 226 L 153,262.73 V 235.15 Z M 206,218.26 v -8.84 l -4.89,2.82 v 0 l -4.89,2.82 v 8.84 l 4.89,-2.82 z m -28,16.13 v -8.84 l -4.9,2.82 -4.89,2.82 V 240 l 4.89,-2.82 z"
-       id="path24" />
     <polygon
        class="cls-5"
        points="141.21,251.62 141.21,249.47 138,247.62 138,229.51 139.32,227.23 152.99,235.15 152.99,262.73 141.21,255.93 141.21,253.78 "
@@ -263,6 +247,16 @@
        class="cls-6"
        points="129.07 242.52 129.07 242.46 129.07 224.35 138 229.51 138 247.62 138 247.68"
        id="polyline39" />
+    <path
+       style="fill:#5cffd9;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="M 187.035,215.46595 216.59,198.43 216.6,226 187.035,243.34999 v -27.88404"
+       id="path97" />
+    <path
+       id="polyline39-5"
+       style="fill:none;stroke:#1470ad;stroke-width:0.3px;stroke-linecap:round;stroke-linejoin:round"
+       class="cls-6"
+       d="m 190.5055,240.71619 v -18.11 l 6.92075,-4.14945 v 18.38673 0.06"
+       sodipodi:nodetypes="ccccc" />
     <line
        class="cls-6"
        x1="106.28"
@@ -295,17 +289,6 @@
        x2="141.21001"
        y2="253.78"
        id="line42" />
-    <line
-       class="cls-6"
-       x1="201.06"
-       y1="212.25"
-       x2="201.06"
-       y2="221.09"
-       id="line43" />
-    <polygon
-       class="cls-6"
-       points="201.06,212.25 196.17,215.07 196.17,223.91 201.06,221.09 205.95,218.26 205.95,209.42 201.06,212.24 "
-       id="polygon43" />
     <polygon
        class="cls-6"
        points="177.92,214.86 177.92,206.02 173.02,208.85 168.13,211.67 168.13,220.51 173.02,217.69 "
@@ -688,16 +671,9 @@
      id="_4_horizontal_split::split"
      data-name="4 horizontal split::split"
      transform="translate(0,-62.959615)">
-    <line
-       class="cls-7"
-       x1="152.98"
-       y1="235.14999"
-       x2="216.60001"
-       y2="198.42999"
-       id="line94" />
     <path
        style="fill:none;stroke:#1470ad;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 152.98,235.14999 120.425,216.25923 V 194.66 l 15.845,-35 37.97001,-21.91999"
+       d="M 174.24001,137.74001 136.27,159.66 l -15.845,35 v 21.59923 l 32.555,18.89076 34.055,-19.68403 V 243.35"
        id="path95" />
   </g>
   <g
