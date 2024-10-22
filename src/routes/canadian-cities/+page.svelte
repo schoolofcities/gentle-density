@@ -115,10 +115,10 @@
 
 		<div class="title">
 			<h1>
-				<span class="italic">Gentle Density</span> Across Canada
+				Gentle Density Across Canada
 			</h1>
 			<h2>
-				Tracking development of accessory dwelling units from local building permit data
+				Tracking development of accessory dwelling units
 			</h2>
 			<h2>
 				
@@ -146,7 +146,7 @@
 
 	<div class="text">
 		<p>
-			The research focuses on Accessory or Additional Dwelling Units (ADUs) across various municipalities in Canada. The purpose of the research is to track ADU permit data in order to locate their uptake, and simultaneously, to push municipalities to track relevant data to further aid in uptake.   
+			The research focuses on Accessory or Additional Dwelling Units (ADUs) across various municipalities in Canada. The purpose of the research is to track ADU local building permit data in order to locate their uptake, and simultaneously, to push municipalities to track relevant data to further aid in uptake.   
 		</p>
 		<p>
 			We conducted a scan of the 63 Housing Accelerator Fund (HAF) recipient cities under the large/urban stream, and selected cities based on population and national coverage. The final list of cities in this article are those with publicly available permit data i.e. with issue and/or closing dates for ADU permit applications, for the period 2014-2023. A few cities are mentioned to honour their recent work towards ADU uptake, despite the lack of available data.
@@ -159,7 +159,7 @@
 	</div>
 
 	<div class="photograph960">
-		<p>Four ADUs in Toronto</p>
+		<p>Four ADUs in Ontario</p>
 		<img src={aduPics} alt="Photographs of four ADUs in Toronto">
 		<br><br><br>
 	</div>
@@ -238,6 +238,10 @@
 
 		<h3>City-By-City Analysis</h3>
 
+		<p>
+			Select a city from the dropdown list to view an overview of municipal policies, see charts illustrating the uptake of detached and attached ADUs, and explore a map showing the location of the units for the selected city.
+        </p>
+
 		<Select 	
 			items={cityNames}
 			value={selectedCity}
@@ -274,6 +278,10 @@
 	<div class="text">
 		
 		<h3>Provincial Policy</h3>
+
+		<p>
+            Provincial legislation plays a crucial role in directing municipal policy, and sometimes impactful change cannot happen without provincial direction. As such, we are listing how different provinces are encouraging ADUs in their jurisdictions. Select a province from the dropdown menu to explore its ADU policy.
+        </p>
 
 		<Select 	
 			items={provinceNames}
