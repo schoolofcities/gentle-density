@@ -178,7 +178,7 @@
 		  </div>
 		  <div class="diagram">
 			<img src="{aduGarden}" alt="Diagram of a garden suite">
-			<p>Garden Suite ADU</p>
+			<p>Garden/Laneway Suite ADU</p>
 		  </div>
 	</div>
 
@@ -212,7 +212,7 @@
 		  </div>
 		  <div class="diagram">
 			<img src="{aduAddition}" alt="Diagram of an addition to a dwelling for an ADU">
-			<p>Addition ADU</p>
+			<p>Side/Rear Addition ADU</p>
 		  </div>
 	</div>
 
@@ -228,29 +228,7 @@
 	
 
 
-	<div class="text">
-		
-		<h3>Provincial Policy</h3>
-
-		<Select 	
-			items={provinceNames}
-			value={selectedProvince}
-			on:input={e => selectedProvince = e.detail.value}
-			clearable={false}
-			searchable={false}
-			showChevron={true}
-			--width="250px"
-			--font-size="18px"
-			--height="24px"
-			--selected-item-color="#ab1269"
-			--item-active-background="#F1C500"
-		/>
-
-		<ProvinceText
-			selectedProvince = {selectedProvince}
-		/>
-
-	</div>
+	
 	
 
 
@@ -292,6 +270,32 @@
 
 	<br>
 	<br>
+
+	<div class="text">
+		
+		<h3>Provincial Policy</h3>
+
+		<Select 	
+			items={provinceNames}
+			value={selectedProvince}
+			on:input={e => selectedProvince = e.detail.value}
+			clearable={false}
+			searchable={false}
+			showChevron={true}
+			--width="250px"
+			--font-size="18px"
+			--height="24px"
+			--selected-item-color="#ab1269"
+			--item-active-background="#F1C500"
+		/>
+
+		<ProvinceText
+			selectedProvince = {selectedProvince}
+		/>
+
+	</div>
+
+	
 
 		<div class="text">
 			<div class="definition">

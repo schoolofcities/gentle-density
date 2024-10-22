@@ -23,15 +23,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="211.95526"
-     inkscape:cy="146.45949"
-     inkscape:window-width="2560"
-     inkscape:window-height="1403"
+     inkscape:zoom="2.0377573"
+     inkscape:cx="134.21618"
+     inkscape:cy="162.92421"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg94" />
+     inkscape:current-layer="_4_horizontal_split::split" />
   <defs
      id="defs1">
     <style
@@ -50,9 +50,14 @@
        id="polygon1" />
   </g>
   <path
+     style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="m 92.33,137.07038 60.67001,35.12 -0.02,27.58001 -60.65,-35.02001 z"
+     id="path1" />
+  <path
      style="fill:#5cffd9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 120.425,131.70038 v 21.59924 l 32.555,18.89076 0.02,-21.68999 -32.575,-18.80001"
-     id="path94" />
+     d="m 120.425,131.70038 v 49.28313 l 32.555,18.78688 0.02,-27.59158 -32.575,-18.87919"
+     id="path94"
+     sodipodi:nodetypes="ccccc" />
   <g
      id="lot"
      transform="translate(0,-62.959615)">
@@ -70,8 +75,9 @@
   </g>
   <path
      style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 92.33,137.07039 28.095,16.22923 V 131.70038 L 136.27,96.700385 c 0,0 -48.430001,16.200005 -48.42,16.200005 0.01,0 4.48,2.58 4.48,2.58 v 21.59"
-     id="path96" />
+     d="m 92.33,137.07039 28.095,17.15367 V 131.70038 L 136.27,96.700385 c 0,0 -48.430001,16.200005 -48.42,16.200005 0.01,0 4.48,2.58 4.48,2.58 v 22.74576"
+     id="path96"
+     sodipodi:nodetypes="ccccscc" />
   <g
      id="_4_horizontal_split::house"
      data-name="4 horizontal split::house"
@@ -80,133 +86,100 @@
        style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 152.98,235.14999 34.055,-19.68404 v 27.88403 l -34.04499,19.38003 0.01,-27.58002"
        id="path98" />
-    <polygon
-       class="cls-4"
-       points="205.95,189.89 205.95,198.74 201.06,201.56 201.06,192.72 "
-       id="polygon6" />
-    <polygon
-       class="cls-4"
-       points="177.92,206.02 177.92,214.86 173.02,217.69 173.02,208.85 "
-       id="polygon7" />
-    <polygon
-       class="cls-4"
-       points="201.06,192.72 201.06,201.56 196.17,204.38 196.17,195.54 "
-       id="polygon8" />
-    <polygon
-       class="cls-4"
-       points="173.02,208.85 173.02,217.69 168.13,220.51 168.13,211.67 "
-       id="polygon9" />
     <path
        class="cls-4"
-       d="m 173,208.85 -4.89,2.82 v 8.84 l 4.89,-2.82 4.9,-2.83 V 206 Z m 43.59,-32.11 v 21.69 L 153,235.15 v -21.69 l 63.62,-36.73 z m -10.66,22 v -8.85 l -4.89,2.83 -4.89,2.82 v 8.84 l 4.89,-2.82 z"
-       id="path10" />
+       d="M 216.59,176.74 216.61,226 152.98,262.73 153,235.13843 216.61,198.43 Z"
+       id="path10"
+       sodipodi:nodetypes="cccccc" />
     <path
        id="polygon10"
        class="cls-4"
-       style="fill:#5cffd9"
+       style="fill:#ffffff;fill-opacity:1"
        d="m 136.27,159.66 16.72,53.8 -32.565,-18.8 z"
        sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="M 120.425,194.65999 152.99001,213.46 216.59,176.74 216.61,198.43 153,235.13842 120.425,216.25923 Z"
+       id="path2" />
     <polygon
        class="cls-4"
        points="174.24,137.74 221.08,174.15 216.61,176.73 152.99,213.46 136.27,159.66 "
-       id="polygon11" />
+       id="polygon11"
+       style="fill:#ffffff;fill-opacity:1" />
     <polygon
        class="cls-5"
        points="114.77,249.9 131.35,259.47 131.35,261.62 114.77,252.06 "
-       id="polygon17" />
+       id="polygon17"
+       transform="translate(-25.530012,-14.831862)" />
     <polygon
        class="cls-5"
        points="117.01,248.61 117.01,246.45 133.59,256.02 133.59,258.18 "
-       id="polygon18" />
+       id="polygon18"
+       transform="translate(-25.530012,-14.831862)" />
     <polygon
        class="cls-5"
        points="133.59,256.02 117.01,246.45 119.43,245.06 135.93,254.59 "
-       id="polygon19" />
+       id="polygon19"
+       transform="translate(-25.530012,-14.831862)" />
     <polygon
        class="cls-5"
-       points="133.59,258.18 133.59,256.02 135.93,254.59 135.93,252.43 141.21,249.47 141.21,251.62 141.21,253.78 141.21,255.93 131.35,261.62 131.35,259.47 "
-       id="polygon20" />
+       points="141.21,249.47 141.21,251.62 141.21,253.78 141.21,255.93 131.35,261.62 131.35,259.47 133.59,258.18 133.59,256.02 135.93,254.59 135.93,252.43 "
+       id="polygon20"
+       transform="translate(-25.530012,-14.831862)" />
     <polygon
        class="cls-5"
-       points="119.36,245.02 119.36,243.31 119.36,242.86 135.93,252.43 135.93,254.59 119.43,245.06 "
-       id="polygon21" />
+       points="135.93,254.59 119.43,245.06 119.36,245.02 119.36,243.31 119.36,242.86 135.93,252.43 "
+       id="polygon21"
+       transform="translate(-25.530012,-14.831862)" />
     <polygon
        class="cls-5"
-       points="119.36,242.86 124.63,239.9 129.07,242.46 138,247.62 141.21,249.47 135.93,252.43 "
-       id="polygon22" />
+       points="141.21,249.47 135.93,252.43 119.36,242.86 124.63,239.9 129.07,242.46 138,247.62 "
+       id="polygon22"
+       transform="translate(-25.530012,-14.831862)" />
     <polygon
        class="cls-5"
        points="117.01,248.61 133.59,258.18 131.35,259.47 114.77,249.9 "
-       id="polygon23" />
+       id="polygon23"
+       transform="translate(-25.530012,-14.831862)" />
     <polygon
        class="cls-5"
        points="138,229.51 138,247.62 129.07,242.46 129.07,224.35 "
-       id="polygon24" />
-    <polygon
-       class="cls-5"
-       points="141.21,251.62 141.21,249.47 138,247.62 138,229.51 139.32,227.23 152.99,235.15 152.99,262.73 141.21,255.93 141.21,253.78 "
-       id="polygon25" />
-    <polygon
-       class="cls-5"
-       points="106.16,211.74 106.16,220.23 99.71,216.51 99.71,208.01 "
-       id="polygon26" />
-    <polygon
-       class="cls-5"
-       points="106.16,220.23 106.16,228.72 99.71,225 99.71,216.51 "
-       id="polygon27" />
-    <polygon
-       class="cls-5"
-       points="112.6,223.95 112.6,232.44 106.16,228.72 106.16,220.23 "
-       id="polygon28" />
-    <polygon
-       class="cls-5"
-       points="112.6,215.46 112.6,223.95 106.16,220.23 106.16,211.74 "
-       id="polygon29" />
-    <path
-       class="cls-5"
-       d="m 92.33,200 47,27.2 -1.33,2.31 -8.93,-5.16 v 18.11 l -4.44,-2.56 -5.27,3 v 0.45 l -27,-15.6 z m 20.27,32.41 v -17 l -6.44,-3.72 -6.45,-3.69 v 17 l 6.45,3.72 z"
-       id="path29" />
+       id="polygon24"
+       transform="translate(-25.530012,-14.831862)" />
     <line
        class="cls-6"
-       x1="117.01"
-       y1="248.61"
-       x2="133.59"
-       y2="258.17999"
+       x1="91.479996"
+       y1="233.77814"
+       x2="108.05999"
+       y2="243.34813"
        id="line29" />
     <line
        class="cls-6"
-       x1="133.59"
-       y1="258.17999"
-       x2="133.59"
-       y2="256.01999"
+       x1="108.05999"
+       y1="243.34813"
+       x2="108.05999"
+       y2="241.18813"
        id="line30" />
     <line
        class="cls-6"
-       x1="117.01"
-       y1="248.61"
-       x2="117.01"
-       y2="246.45"
+       x1="91.479996"
+       y1="233.77814"
+       x2="91.479996"
+       y2="231.61813"
        id="line31" />
     <line
        class="cls-6"
-       x1="141.21001"
-       y1="253.78"
-       x2="141.21001"
-       y2="251.62"
+       x1="115.68"
+       y1="238.94814"
+       x2="115.68"
+       y2="236.78813"
        id="line32" />
     <line
        class="cls-6"
-       x1="92.330002"
-       y1="227.71001"
-       x2="119.36"
-       y2="243.31"
-       id="line33" />
-    <line
-       class="cls-6"
-       x1="114.77"
-       y1="249.89999"
-       x2="131.35001"
-       y2="259.47"
+       x1="89.23999"
+       y1="235.06813"
+       x2="105.82"
+       y2="244.63814"
        id="line34" />
     <polyline
        class="cls-6"
@@ -222,10 +195,6 @@
        id="polygon35" />
     <polygon
        class="cls-6"
-       points="99.71,216.51 99.71,225 106.16,228.72 112.6,232.44 112.6,223.95 112.6,215.46 106.16,211.74 99.71,208.01 "
-       id="polygon36" />
-    <polygon
-       class="cls-6"
        points="101.4,188.52 101.4,197.19 106.28,200.01 111.16,202.82 111.16,194.16 106.28,191.34 "
        id="polygon37" />
     <line
@@ -237,25 +206,14 @@
        id="line37" />
     <polyline
        class="cls-6"
-       points="99.71 216.51 106.16 220.23 112.6 223.95"
-       id="polyline37" />
-    <polyline
-       class="cls-6"
-       points="106.16 211.74 106.16 220.23 106.16 228.72"
-       id="polyline38" />
-    <polyline
-       class="cls-6"
        points="129.07 242.52 129.07 242.46 129.07 224.35 138 229.51 138 247.62 138 247.68"
-       id="polyline39" />
-    <path
-       style="fill:#5cffd9;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="M 187.035,215.46595 216.59,198.43 216.6,226 187.035,243.34999 v -27.88404"
-       id="path97" />
+       id="polyline39"
+       transform="translate(-25.530012,-14.831862)" />
     <path
        id="polyline39-5"
        style="fill:none;stroke:#1470ad;stroke-width:0.3px;stroke-linecap:round;stroke-linejoin:round"
        class="cls-6"
-       d="m 190.5055,240.71619 v -18.11 l 6.92075,-4.14945 v 18.38673 0.06"
+       d="m 199.58315,235.41787 v -18.11 l 6.92075,-4.14945 v 18.38673 0.06"
        sodipodi:nodetypes="ccccc" />
     <line
        class="cls-6"
@@ -275,19 +233,33 @@
        x2="173.02"
        y2="237.21001"
        id="line40" />
+    <polygon
+       class="cls-6"
+       points="177.92,225.55 173.02,228.37 168.13,231.19 168.13,240.04 173.02,237.22 177.92,234.39 "
+       id="polygon39-3"
+       style="fill:none;stroke:#1470ad;stroke-width:0.3px;stroke-linecap:round;stroke-linejoin:round"
+       transform="translate(9.8049915,-5.6809194)" />
     <line
        class="cls-6"
-       x1="131.35001"
-       y1="259.47"
-       x2="133.59"
-       y2="258.17999"
+       x1="182.825"
+       y1="222.68907"
+       x2="182.825"
+       y2="231.52908"
+       id="line40-5"
+       style="fill:none;stroke:#1470ad;stroke-width:0.3px;stroke-linecap:round;stroke-linejoin:round" />
+    <line
+       class="cls-6"
+       x1="105.82"
+       y1="244.63814"
+       x2="108.05999"
+       y2="243.34813"
        id="line41" />
     <line
        class="cls-6"
-       x1="141.21001"
-       y1="255.92999"
-       x2="141.21001"
-       y2="253.78"
+       x1="115.68"
+       y1="241.09813"
+       x2="115.68"
+       y2="238.94814"
        id="line42" />
     <polygon
        class="cls-6"
@@ -310,38 +282,38 @@
        id="polygon45" />
     <line
        class="cls-6"
-       x1="117.01"
-       y1="248.61"
-       x2="114.77"
-       y2="249.89999"
+       x1="91.479996"
+       y1="233.77814"
+       x2="89.23999"
+       y2="235.06813"
        id="line45" />
     <line
        class="cls-6"
-       x1="131.35001"
-       y1="261.62"
-       x2="141.21001"
-       y2="255.92999"
+       x1="105.82"
+       y1="246.78813"
+       x2="115.68"
+       y2="241.09813"
        id="line46" />
     <line
        class="cls-6"
-       x1="114.77"
-       y1="252.06"
-       x2="114.77"
-       y2="249.89999"
+       x1="89.23999"
+       y1="237.22813"
+       x2="89.23999"
+       y2="235.06813"
        id="line47" />
     <line
        class="cls-6"
-       x1="131.35001"
-       y1="261.62"
-       x2="131.35001"
-       y2="259.47"
+       x1="105.82"
+       y1="246.78813"
+       x2="105.82"
+       y2="244.63814"
        id="line48" />
     <line
        class="cls-6"
-       x1="133.59"
-       y1="256.01999"
-       x2="135.92999"
-       y2="254.59"
+       x1="108.05999"
+       y1="241.18813"
+       x2="110.39998"
+       y2="239.75813"
        id="line49" />
     <line
        class="cls-6"
@@ -359,35 +331,36 @@
        id="line51" />
     <line
        class="cls-6"
-       x1="117.01"
-       y1="246.45"
-       x2="133.59"
-       y2="256.01999"
+       x1="91.479996"
+       y1="231.61813"
+       x2="108.05999"
+       y2="241.18813"
        id="line52" />
     <line
        class="cls-6"
-       x1="135.92999"
-       y1="254.59"
-       x2="135.92999"
-       y2="252.42999"
+       x1="110.39998"
+       y1="239.75813"
+       x2="110.39998"
+       y2="237.59813"
        id="line53" />
     <line
        class="cls-6"
-       x1="141.21001"
-       y1="251.62"
-       x2="141.21001"
-       y2="249.47"
+       x1="115.68"
+       y1="236.78813"
+       x2="115.68"
+       y2="234.63814"
        id="line54" />
     <polyline
        class="cls-6"
        points="141.21 249.47 138 247.62 129.07 242.46 124.63 239.9"
-       id="polyline54" />
+       id="polyline54"
+       transform="translate(-25.530012,-14.831862)" />
     <line
        class="cls-6"
-       x1="124.63"
-       y1="239.89999"
-       x2="119.36"
-       y2="242.86"
+       x1="99.099983"
+       y1="225.06813"
+       x2="93.829994"
+       y2="228.02814"
        id="line55" />
     <line
        class="cls-6"
@@ -405,17 +378,17 @@
        id="line57" />
     <line
        class="cls-6"
-       x1="119.43"
-       y1="245.06"
-       x2="117.01"
-       y2="246.45"
+       x1="93.899994"
+       y1="230.22813"
+       x2="91.479996"
+       y2="231.61813"
        id="line58" />
     <line
        class="cls-6"
-       x1="114.77"
-       y1="252.06"
-       x2="131.35001"
-       y2="261.62"
+       x1="89.23999"
+       y1="237.22813"
+       x2="105.82"
+       y2="246.78813"
        id="line59" />
     <polyline
        class="cls-6"
@@ -424,18 +397,12 @@
     <polyline
        class="cls-6"
        points="119.36 245.02 119.43 245.06 135.93 254.59"
-       id="polyline60" />
+       id="polyline60"
+       transform="translate(-25.530012,-14.831862)" />
     <polyline
        class="cls-6"
        points="87.86 175.86 92.33 178.44 152.99 213.46"
        id="polyline61" />
-    <path
-       id="polyline61-6"
-       style="fill:none;stroke:#1470ad;stroke-width:0.3px;stroke-linecap:round;stroke-linejoin:round"
-       class="cls-6"
-       transform="translate(4.47,24.17)"
-       d="M 115.955,192.08923 148.53,210.98"
-       sodipodi:nodetypes="cc" />
     <line
        class="cls-6"
        x1="174.24001"
@@ -463,15 +430,16 @@
        id="line63" />
     <line
        class="cls-6"
-       x1="119.36"
-       y1="242.86"
-       x2="135.92999"
-       y2="252.42999"
+       x1="93.829994"
+       y1="228.02814"
+       x2="110.39998"
+       y2="237.59813"
        id="line64" />
     <polyline
        class="cls-6"
        points="119.36 245.02 119.36 243.31 119.36 242.86"
-       id="polyline64" />
+       id="polyline64"
+       transform="translate(-25.530012,-14.831862)" />
     <line
        class="cls-6"
        x1="152.99001"
@@ -481,11 +449,29 @@
        id="line65" />
     <line
        class="cls-6"
-       x1="135.92999"
-       y1="252.42999"
-       x2="141.21001"
-       y2="249.47"
+       x1="110.39998"
+       y1="237.59813"
+       x2="115.68"
+       y2="234.63814"
        id="line66" />
+    <polygon
+       class="cls-6"
+       points="99.71,216.51 99.71,225 106.16,228.72 112.6,232.44 112.6,223.95 112.6,215.46 106.16,211.74 99.71,208.01 "
+       id="polygon36"
+       transform="translate(27.831846,16.428138)"
+       style="fill:none;stroke:#1470ad;stroke-width:0.3px;stroke-linecap:round;stroke-linejoin:round" />
+    <polyline
+       class="cls-6"
+       points="99.71 216.51 106.16 220.23 112.6 223.95"
+       id="polyline37"
+       transform="translate(27.831846,16.428138)"
+       style="fill:none;stroke:#1470ad;stroke-width:0.3px;stroke-linecap:round;stroke-linejoin:round" />
+    <polyline
+       class="cls-6"
+       points="106.16 211.74 106.16 220.23 106.16 228.72"
+       id="polyline38"
+       transform="translate(27.831846,16.428138)"
+       style="fill:none;stroke:#1470ad;stroke-width:0.3px;stroke-linecap:round;stroke-linejoin:round" />
   </g>
   <g
      id="_4_horizontal_split::garage"
@@ -673,16 +659,19 @@
      transform="translate(0,-62.959615)">
     <path
        style="fill:none;stroke:#1470ad;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 174.24001,137.74001 136.27,159.66 l -15.845,35 v 21.59923 l 32.555,18.89076 34.055,-19.68403 V 243.35"
-       id="path95" />
+       d="M 216.61,198.43 153,235.13842 120.425,216.25923 v 6.17501 7.4189 14.08999"
+       id="path95"
+       sodipodi:nodetypes="cccccc" />
   </g>
   <g
      id="outline"
      transform="translate(0,-62.959615)">
-    <polygon
+    <path
+       id="polygon94"
        class="cls-7"
-       points="216.6,226 216.6,176.74 221.08,174.15 174.24,137.74 155.95,136.55 87.85,175.86 92.33,178.44 92.33,227.71 119.35,243.31 119.35,245.02 119.42,245.06 117.01,246.45 117.01,248.61 114.77,249.9 114.77,252.06 131.35,261.62 141.21,255.93 152.98,262.73 "
-       id="polygon94" />
+       style="fill:none;stroke:#1470ad;stroke-linecap:round;stroke-linejoin:round"
+       d="m 216.6,226 v -49.26 l 4.48,-2.59 -46.84,-36.41 -18.29,-1.19 -68.1,39.31 4.48,2.58 v 49.27 l 1.499988,0.76814 v 1.71 l -2.349992,1.42999 v 2.16001 l -2.240006,1.28999 -2e-6,2.16001 16.580002,9.56 9.86,-5.69 L 152.98,262.73 Z"
+       sodipodi:nodetypes="cccccccccccccccccc" />
   </g>
   <metadata
      id="metadata96">
