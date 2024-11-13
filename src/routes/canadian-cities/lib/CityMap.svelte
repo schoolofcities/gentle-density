@@ -5,7 +5,7 @@ import RangeSlider from "svelte-range-slider-pips";
 import maplibregl from 'maplibre-gl';
 import * as pmtiles from "pmtiles";
 import csdBoundary from '../assets/csd.geo.json'; 
-import transitLines from "../assets/transit-lines-canada.geo.json";
+import transitLines from "../assets/transit-lines-canada-2.geo.json";
 import transitStops from "../assets/transit-stops-canada.geo.json";
 
 export let city;
