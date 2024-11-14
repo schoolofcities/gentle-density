@@ -233,6 +233,7 @@ $: if (secondaryGeo && map.getLayer('suitesSecondary') && map.getLayer('suitesSe
 
 
 async function fetchGeoJSON(city) {
+	console.log("meow", city);
 	try {
 		const response = await fetch("./canadian-cities/" + city + "/" + city + "_ss.geojson");
 		if (response.ok) {
@@ -267,11 +268,11 @@ async function fetchGeoJSON(city) {
 		}
 	} catch (error) {
 		console.error('Error fetching GeoJSON:', error);
-		if (load === 1 && map.getSource('suitesDetached')) {
-			map.removeLayer('suitesDetached');
-			map.removeLayer('suitesDetachedWhite');
-			map.removeSource('suitesDetached');
-		};
+		// if (load === 1 && map.getSource('suitesDetached')) {
+		// 	map.removeLayer('suitesDetached');
+		// 	map.removeLayer('suitesDetachedWhite');
+		// 	map.removeSource('suitesDetached');
+		// };
 	}
 
 	if (load === 1) {
@@ -411,8 +412,6 @@ async function fetchGeoJSON(city) {
 let load = 0;
 
 onMount(() => {
-
-	fetchGeoJSON(city);
 
 	let protocol = new pmtiles.Protocol();
 	maplibregl.addProtocol("pmtiles", protocol.tile);
@@ -800,7 +799,7 @@ onMount(() => {
 
 	load = 1;
 
-	
+	fetchGeoJSON(city);
 
 });
 
