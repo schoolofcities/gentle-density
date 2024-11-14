@@ -412,6 +412,8 @@ let load = 0;
 
 onMount(() => {
 
+	fetchGeoJSON(city);
+
 	let protocol = new pmtiles.Protocol();
 	maplibregl.addProtocol("pmtiles", protocol.tile);
 	
@@ -798,7 +800,7 @@ onMount(() => {
 
 	load = 1;
 
-	fetchGeoJSON(city);
+	
 
 });
 
