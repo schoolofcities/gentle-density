@@ -8,7 +8,7 @@
 	import BarChartDouble from "./lib/BarChartSummaryAllCitiesDouble.svelte";
 	// import TrendsChartCity from "./lib/TrendsChartCity.svelte";
 	import ProvinceText from "./lib/ProvinceText.svelte";
-	import CityContent from "./lib/CityContent.svelte";
+	import CityContent from "./lib/CityContent1.svelte";
 	import CityMap from "./lib/CityMap.svelte";
 	import ReadMore from "../../lib/ReadMore.svelte";
 
@@ -305,7 +305,7 @@
 									
 			</p>
 			<p>
-				For the maps, the data on population density and income are from the 2021 Census (Statistics Canada), at the dissemination area level. Low population density is less than 2,000 people per km2; high population density is greater than 6,000 per km2. Low income is after-tax median household income of less than $70,000 in 2020; high income is greater than $90,000. All other data shown on the maps (streets, transit, buildings, etc.) is from OpenStreetMap.
+				For the maps, the data on population density and income are from the 2021 Census (Statistics Canada), at the dissemination area level. Low population density is less than 2,000 people per km2; high population density is greater than 6,000 per km2. Low income is after-tax median household income of less than $70,000 in 2020; high income is greater than $90,000. All other data shown on the maps (streets, transit, buildings, etc.) are from OpenStreetMap.
 									
 			</p>
 			<p>
@@ -313,7 +313,7 @@
 				
 			</p>
 			<p>
-				Big thanks to Ali Qureshey and Lauren Shiga for helping with research and writing the city profiles; to Remus Herteg for helping to compile census data on population and income for the maps; to Mia Wang for creating the schematic examples of ADUs; and to Irene Chang for helping with early conceptual versions of the visualizations.
+				Big thanks to Ali Qureshey and Lauren Shiga for helping with research and writing the city profiles; to Remus Herteg for helping to compile census data on population and income for the maps; to Mia Wang for creating the schematic examples of ADUs; and to Irene Chang for helping with early conceptual versions of the maps and charts.
 									
 			</p>
 		</div>
