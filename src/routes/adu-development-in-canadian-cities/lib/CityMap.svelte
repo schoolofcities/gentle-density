@@ -260,11 +260,11 @@ async function fetchGeoJSON(city) {
 			});
 		} else {
 			console.error('Failed to load GeoJSON:', response2.status);
-			if (load === 1 && map.getSource('suitesDetached')) {
-				map.removeLayer('suitesDetached');
-				map.removeLayer('suitesDetachedWhite');
-				map.removeSource('suitesDetached');
-			};
+			// if (load === 1 && map.getSource('suitesDetached')) {
+			// 	map.removeLayer('suitesDetached');
+			// 	map.removeLayer('suitesDetachedWhite');
+			// 	map.removeSource('suitesDetached');
+			// };
 		}
 	} catch (error) {
 		console.error('Error fetching GeoJSON:', error);
