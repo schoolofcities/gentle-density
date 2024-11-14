@@ -86,22 +86,22 @@
 	<link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
 
     <title>Gentle Density in Canadian Cities | School of Cities</title>
-    <!-- <meta name="description" content="Visualizing a decade (2013 to 2023) of Secondary Suite and Laneway / Garden Suite building permits in Toronto">
+    <meta name="description" content="Tracking development of accessory dwelling units across Canada via visualizing and mapping building permit data">
     <meta name="author" content="Jeff Allen">
 
-	<meta property="og:title" content="Tracking Gentle Density in Toronto" />
-    <meta property="og:description" content="Visualizing a decade (2013 to 2023) of Secondary Suite and Laneway / Garden Suite building permits in Toronto" />
+	<meta property="og:title" content="Gentle Density in Canadian Cities" />
+    <meta property="og:description" content="Tracking development of accessory dwelling across Canada units via visualizing and mapping building permit data" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-building-permits" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card.png" />
+    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/canadian-cities" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-mulit-city.png" />
     <meta property="og:locale" content="en_CA">
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-building-permits" />
+    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/canadian-cities" />
     <meta name="twitter:creator" content="@JeffAllenMaps" />
-    <meta name="twitter:title" content="Tracking Gentle Density in Toronto" />
-    <meta name="twitter:description" content="Visualizing a decade (2013 to 2023) of Secondary Suite and Laneway / Garden Suite building permits in Toronto" />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card.png" />  -->
+    <meta name="twitter:title" content="Gentle Density in Canadian Cities" />
+    <meta name="twitter:description" content="Tracking development of accessory dwelling units across Canada via visualizing and mapping building permit data" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-multi-city.png" /> 
 
 </svelte:head>
 
