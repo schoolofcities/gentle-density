@@ -128,7 +128,7 @@
 			</p>
 			<br>
 			<p>
-				October 2024
+				November 2024
 			</p>
 		</div>
 
@@ -146,15 +146,14 @@
 
 	<div class="text">
 		<p>
-			The research focuses on Accessory or Additional Dwelling Units (ADUs) across various municipalities in Canada. The purpose of the research is to track ADU local building permit data in order to locate their uptake, and simultaneously, to push municipalities to track relevant data to further aid in uptake.   
-		</p>
+			Our research focuses on accessory dwelling units (ADUs) in major urban centres across Canada. Many Canadian cities received federal <a href="https://www.cmhc-schl.gc.ca/professionals/project-funding-and-mortgage-financing/funding-programs/all-funding-programs/housing-accelerator-fund" target="_blank">Housing Accelerator Fund (HAF)</a> funding to increase its housing stock in light of population growth and the housing affordability crisis. We track the types, take-up, and location of ADUs using permit data, and examine provincial and local planning policies and zoning regulations, to provide a foundation for on-going analysis and to encourage municipalities to consider ADUs as part of the solution and to track relevant data. 
 		<p>
-			We conducted a scan of the 63 Housing Accelerator Fund (HAF) recipient cities under the large/urban stream, and selected cities based on population and national coverage. The final list of cities in this article are those with publicly available permit data i.e. with issue and/or closing dates for ADU permit applications, for the period 2014-2023. A few cities are mentioned to honour their recent work towards ADU uptake, despite the lack of available data.
+			We conducted a scan of the 63 cities that received federal HAF funding under its “large/urban” stream. We then developed a shortlist based on population size and location across Canada, and with publicly available permit data (issued and closed) from 2014 to 2023. Several additional cities are included to honour their recent work to encourage ADU uptake, despite the lack of available data to-date. The 16 shortlisted cities that were included in this analysis are: Calgary, Edmonton, Guelph, Halifax, Hamilton, Kingston, Kitchener, Mississauga, Moncton, Ottawa, Regina, Toronto, Vancouver, Victoria, Waterloo, and Winnipeg.  
 		</p>
 		<br>
-		<h3><span class="textLaneway">What is an ADU? </span></h3>
+		<h3><span class="textLaneway">What are ADUs? </span></h3>
 		<p>
-			ADUs, sometimes known as the ‘Missing Little’, are additional units on a lot already occupied by a main dwelling. They are self-contained, with a kitchen and bathroom, and generally have a separate entrance. ADUs can be added to the main dwelling or can be built as a seperate unit on the same lot, usually on the yard. ADUs can be added to a house, for example a basement suite, or they can be added on the yard as a detached suite, such as a laneway house.
+			ADUs, sometimes known as the “Missing Little,” are additional units on a lot already occupied by a main dwelling. They are self-contained units with a kitchen and bathroom, and generally have a separate entrance. ADUs can be attached to the main dwelling (e.g. a basement suite) or a separate, detached unit on the same lot, usually in the backyard (e.g. a laneway house). 
 		</p>
 	</div>
 
@@ -167,7 +166,7 @@
 	<div class="text">
 		<h3><span class="textLaneway">Detached ADUs </span></h3>
 		<p>
-			These units are annexes or external suites at the rear end of a detached home, semidetached home, or townhome. They are generally smaller than the primary building. They can be a detached garage conversion, built on top of an existing detached garage, or a newly built independent unit in the yard. The design must include all code requirements, and considerations of access, tree protection, distances to other built structures and utility hookups.  
+			Detached ADUs are annexes or external suites, usually located at the rear of a detached or semi-detached house or townhouse, and generally smaller than the primary building. They may also be a detached garage conversion, built on top of an existing detached garage, or a newly built independent unit in the yard. The design must meet all building code requirements and other requirements related to access, tree protection, distances to other built structures, and utility hookups.  
 		</p>
 	</div>
 
@@ -193,7 +192,7 @@
 	<div class="text">
 		<h3><span class="textLaneway">Attached ADUs</span></h3>
 		<p>
-			They are units attached to the primary dwelling unit. A common form is horizontal splitting of the building i.e. converting the basement or second floor into separate suite(s). Other types of conversions can include vertical splitting, rear or side additions, attached garage conversions etc. or a combination. The design must include all code requirements, and considerations of height, access, floor levels, and utility hook ups. 
+			Attached ADUs are attached to a primary dwelling unit. A common form is a horizontal split of a house, in a basement or on a second floor, providing a separate unit(s). Other types of conversions include vertical splitting, rear or side additions, attached garage conversions, or a combination thereof. The design must meet all building code requirements and other requirements related to access, tree protection, distances to other built structures, and utility hookups. 
 		</p>
 	</div>
 
@@ -227,19 +226,12 @@
 	<br>
 	
 
-
-	
-	
-
-
-
-
 	<div class="text">
 
 		<h3>City-By-City Analysis</h3>
 
 		<p>
-			Select a city from the dropdown list to view an overview of municipal policies, see charts illustrating the uptake of detached and attached ADUs, and explore a map showing the location of the units for the selected city.
+			Select a city from the dropdown list for an overview of municipal policies, charts illustrating the uptake of detached and attached ADUs (2014–2023), and maps showing the locations of the units for the selected city.
         </p>
 
 		<Select 	
@@ -280,7 +272,7 @@
 		<h3>Provincial Policy</h3>
 
 		<p>
-            Provincial legislation plays a crucial role in directing municipal policy, and sometimes impactful change cannot happen without provincial direction. As such, we are listing how different provinces are encouraging ADUs in their jurisdictions. Select a province from the dropdown menu to explore its ADU policy.
+            Provincial legislation plays a crucial role in directing municipal policy, and sometimes, impactful change cannot happen without provincial direction. While municipalities are encouraging ADUs through changes in zoning, approvals processes, incentives, raising awareness, and more, the importance of provincial policy to encourage and support local adoption cannot be understated. Across Canada, provincial policies vary. Select a province from the dropdown menu to explore its ADU policy.
         </p>
 
 		<Select 	
@@ -305,23 +297,27 @@
 
 	
 
-		<div class="text">
-			<div class="definition">
-				<h4>Data & Methodology</h4>
-				<p>
-					For each municipality, we downloaded building permit data from their respective open data portals or elsewhere on their websites, filtering the data to only ADUs. The specifics of this process varied by city, since each city has differences in how they code and structure their building permit data.
-				</p>
-				<p>
-					For the maps, the data on population density and income are from the 2021 Canadian Census (Statistics Canada), at the Dissemination Area geography. Low population density is less than 2,000 people per square kilometre, high population density is greater than 6,000. Low income is an after-tax median household income of less than $70,000 in 2020, while high-income is greater than $90,000. All other data shown on the map (streets, transit, buildings, etc.) are from OpenStreetMap. 
-				</p>
-				<p>
-					All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with the help of Python, Svelte, MapLibre, and D3.
-				</p>
-				<p>
-					Big thanks to Remus Herteg who helped compile the census data (on population and income) for the maps, and to Irene Chang who helped with early conceptual versions of the visualizations shown on this page.
-				</p>
-			</div>
+	<div class="text">
+		<div class="definition">
+			<h4>Data & Methodology</h4>
+			<p>
+				For each municipality, we downloaded building permit data from the respective open data portals or elsewhere on their websites, filtering the data to focus exclusively on ADUs. The specifics of this process varied by city, as each has differences in how it codes and structures building permit data.
+									
+			</p>
+			<p>
+				For the maps, the data on population density and income are from the 2021 Census (Statistics Canada), at the dissemination area level. Low population density is less than 2,000 people per km2; high population density is greater than 6,000 per km2. Low income is after-tax median household income of less than $70,000 in 2020; high income is greater than $90,000. All other data shown on the maps (streets, transit, buildings, etc.) is from OpenStreetMap.
+									
+			</p>
+			<p>
+				All code used to analyze this data and make this website and its graphics are on <a href="https://github.com/schoolofcities/gentle-density">GitHub</a>. It was built with Python, Svelte, MapLibre, and D3.
+				
+			</p>
+			<p>
+				Big thanks to Ali Qureshey and Lauren Shiga for helping with research and writing the city profiles; to Remus Herteg for helping to compile census data on population and income for the maps; to Mia Wang for creating the schematic examples of ADUs; and to Irene Chang for helping with early conceptual versions of the visualizations.
+									
+			</p>
 		</div>
+	</div>
 
 		<br>
 		<br>
