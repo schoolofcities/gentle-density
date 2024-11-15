@@ -233,7 +233,6 @@ $: if (secondaryGeo && map.getLayer('suitesSecondary') && map.getLayer('suitesSe
 
 
 async function fetchGeoJSON(city) {
-	
 	try {
 		const response = await fetch("./canadian-cities/" + city + "/" + city + "_ss.geojson");
 		if (response.ok) {
@@ -260,13 +259,20 @@ async function fetchGeoJSON(city) {
 			});
 		} else {
 			console.error('Failed to load GeoJSON:', response2.status);
+			// if (load === 1 && map.getSource('suitesDetached')) {
+			// 	map.removeLayer('suitesDetached');
+			// 	map.removeLayer('suitesDetachedWhite');
+			// 	map.removeSource('suitesDetached');
+			// };
 		}
 	} catch (error) {
 		console.error('Error fetching GeoJSON:', error);
+		// if (load === 1 && map.getSource('suitesDetached')) {
+		// 	map.removeLayer('suitesDetached');
+		// 	map.removeLayer('suitesDetachedWhite');
+		// 	map.removeSource('suitesDetached');
+		// };
 	}
-
-	console.log(detachedGeo);
-	console.log(secondaryGeo);
 
 	if (load === 1) {
 
@@ -274,128 +280,130 @@ async function fetchGeoJSON(city) {
 			map.removeLayer('suitesSecondary');
 			map.removeLayer('suitesSecondaryWhite');
 			map.removeSource('suitesSecondary');
-
-			map.addSource('suitesSecondary', {
-				'type': 'geojson',
-				'data': secondaryGeo
-			}); 
-			map.addLayer({
-				'id': 'suitesSecondaryWhite',
-				'type': 'circle',
-				'source': 'suitesSecondary',
-				'layout': {},
-				'paint': {
-					'circle-radius': [
-						"interpolate",
-						["linear"],
-						["zoom"],
-						11,
-						5,
-						16,
-						10
-						],
-					'circle-color': '#fff',
-				},
-				'filter': 
-					[
-						'all',
-						['>=', ['get', 'Year'], values[0]],
-						['<=', ['get', 'Year'], values[1]]
-					]
-			});
-			map.addLayer({
-				'id': 'suitesSecondary',
-				'type': 'circle',
-				'source': 'suitesSecondary',
-				'layout': {},
-				'paint': {
-					'circle-radius': [
-						"interpolate",
-						["linear"],
-						["zoom"],
-						11,
-						3,
-						16,
-						8
-						],
-					'circle-color': colours.Secondary.Completed,
-				},
-				'filter': 
-					[
-						'all',
-						['>=', ['get', 'Year'], values[0]],
-						['<=', ['get', 'Year'], values[1]]
-					]
-			});
-
-			if (!onSecondary) {
-				map.setPaintProperty('suitesSecondary', 'circle-opacity', 0);
-				map.setPaintProperty('suitesSecondaryWhite', 'circle-opacity', 0);
-			}
-
 		};
+
+		map.addSource('suitesSecondary', {
+			'type': 'geojson',
+			'data': secondaryGeo
+		}); 
+		map.addLayer({
+			'id': 'suitesSecondaryWhite',
+			'type': 'circle',
+			'source': 'suitesSecondary',
+			'layout': {},
+			'paint': {
+				'circle-radius': [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					11,
+					5,
+					16,
+					10
+					],
+				'circle-color': '#fff',
+			},
+			'filter': 
+				[
+					'all',
+					['>=', ['get', 'Year'], values[0]],
+					['<=', ['get', 'Year'], values[1]]
+				]
+		});
+		map.addLayer({
+			'id': 'suitesSecondary',
+			'type': 'circle',
+			'source': 'suitesSecondary',
+			'layout': {},
+			'paint': {
+				'circle-radius': [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					11,
+					3,
+					16,
+					8
+					],
+				'circle-color': colours.Secondary.Completed,
+			},
+			'filter': 
+				[
+					'all',
+					['>=', ['get', 'Year'], values[0]],
+					['<=', ['get', 'Year'], values[1]]
+				]
+		});
+
+		if (!onSecondary) {
+			map.setPaintProperty('suitesSecondary', 'circle-opacity', 0);
+			map.setPaintProperty('suitesSecondaryWhite', 'circle-opacity', 0);
+		}
+
+		
+
 		if (map.getSource('suitesDetached')) {
 			map.removeLayer('suitesDetached');
 			map.removeLayer('suitesDetachedWhite');
 			map.removeSource('suitesDetached');
-			map.addSource('suitesDetached', {
-				'type': 'geojson',
-				'data': detachedGeo
-			}); 
-			map.addLayer({
-				'id': 'suitesDetachedWhite',
-				'type': 'circle',
-				'source': 'suitesDetached',
-				'layout': {},
-				'paint': {
-					'circle-radius': [
-						"interpolate",
-						["linear"],
-						["zoom"],
-						11,
-						5,
-						16,
-						10
-						],
-					'circle-color': '#fff',
-				},
-				'filter': 
-					[
-						'all',
-						['>=', ['get', 'Year'], values[0]],
-						['<=', ['get', 'Year'], values[1]]
-					]
-			});
-			map.addLayer({
-				'id': 'suitesDetached',
-				'type': 'circle',
-				'source': 'suitesDetached',
-				'layout': {},
-				'paint': {
-					'circle-radius': [
-						"interpolate",
-						["linear"],
-						["zoom"],
-						11,
-						3,
-						16,
-						8
-						],
-					'circle-color': colours.Detached.Completed,
-				},
-				'filter': 
-					[
-						'all',
-						['>=', ['get', 'Year'], values[0]],
-						['<=', ['get', 'Year'], values[1]]
-					]
-			});
+		};
 
-			if (!onDetached) {
-				map.setPaintProperty('suitesDetached', 'circle-opacity', 0);
-				map.setPaintProperty('suitesDetachedWhite', 'circle-opacity', 0);
-			}
+		map.addSource('suitesDetached', {
+			'type': 'geojson',
+			'data': detachedGeo
+		}); 
+		map.addLayer({
+			'id': 'suitesDetachedWhite',
+			'type': 'circle',
+			'source': 'suitesDetached',
+			'layout': {},
+			'paint': {
+				'circle-radius': [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					11,
+					5,
+					16,
+					10
+					],
+				'circle-color': '#fff',
+			},
+			'filter': 
+				[
+					'all',
+					['>=', ['get', 'Year'], values[0]],
+					['<=', ['get', 'Year'], values[1]]
+				]
+		});
+		map.addLayer({
+			'id': 'suitesDetached',
+			'type': 'circle',
+			'source': 'suitesDetached',
+			'layout': {},
+			'paint': {
+				'circle-radius': [
+					"interpolate",
+					["linear"],
+					["zoom"],
+					11,
+					3,
+					16,
+					8
+					],
+				'circle-color': colours.Detached.Completed,
+			},
+			'filter': 
+				[
+					'all',
+					['>=', ['get', 'Year'], values[0]],
+					['<=', ['get', 'Year'], values[1]]
+				]
+		});
 
+		if (!onDetached) {
+			map.setPaintProperty('suitesDetached', 'circle-opacity', 0);
+			map.setPaintProperty('suitesDetachedWhite', 'circle-opacity', 0);
 		}
 
 	}	
@@ -405,6 +413,8 @@ async function fetchGeoJSON(city) {
 let load = 0;
 
 onMount(() => {
+
+	// fetchGeoJSON(city);
 
 	let protocol = new pmtiles.Protocol();
 	maplibregl.addProtocol("pmtiles", protocol.tile);
@@ -682,117 +692,117 @@ onMount(() => {
 				]
 		});
 
-		map.addSource('suitesSecondary', {
-			'type': 'geojson',
-			'data': secondaryGeo
-		}); 
-		map.addLayer({
-			'id': 'suitesSecondaryWhite',
-			'type': 'circle',
-			'source': 'suitesSecondary',
-			'layout': {},
-			'paint': {
-				'circle-radius': [
-					"interpolate",
-					["linear"],
-					["zoom"],
-					11,
-					5,
-					16,
-					10
-					],
-				'circle-color': '#fff',
-			},
-			'filter': 
-				[
-					'all',
-					['>=', ['get', 'Year'], values[0]],
-					['<=', ['get', 'Year'], values[1]]
-				]
-		});
-		map.addLayer({
-			'id': 'suitesSecondary',
-			'type': 'circle',
-			'source': 'suitesSecondary',
-			'layout': {},
-			'paint': {
-				'circle-radius': [
-					"interpolate",
-					["linear"],
-					["zoom"],
-					11,
-					3,
-					16,
-					8
-					],
-				'circle-color': colours.Secondary.Completed,
-			},
-			'filter': 
-				[
-					'all',
-					['>=', ['get', 'Year'], values[0]],
-					['<=', ['get', 'Year'], values[1]]
-				]
-		});
+		// map.addSource('suitesSecondary', {
+		// 	'type': 'geojson',
+		// 	'data': secondaryGeo
+		// }); 
+		// map.addLayer({
+		// 	'id': 'suitesSecondaryWhite',
+		// 	'type': 'circle',
+		// 	'source': 'suitesSecondary',
+		// 	'layout': {},
+		// 	'paint': {
+		// 		'circle-radius': [
+		// 			"interpolate",
+		// 			["linear"],
+		// 			["zoom"],
+		// 			11,
+		// 			5,
+		// 			16,
+		// 			10
+		// 			],
+		// 		'circle-color': '#fff',
+		// 	},
+		// 	'filter': 
+		// 		[
+		// 			'all',
+		// 			['>=', ['get', 'Year'], values[0]],
+		// 			['<=', ['get', 'Year'], values[1]]
+		// 		]
+		// });
+		// map.addLayer({
+		// 	'id': 'suitesSecondary',
+		// 	'type': 'circle',
+		// 	'source': 'suitesSecondary',
+		// 	'layout': {},
+		// 	'paint': {
+		// 		'circle-radius': [
+		// 			"interpolate",
+		// 			["linear"],
+		// 			["zoom"],
+		// 			11,
+		// 			3,
+		// 			16,
+		// 			8
+		// 			],
+		// 		'circle-color': colours.Secondary.Completed,
+		// 	},
+		// 	'filter': 
+		// 		[
+		// 			'all',
+		// 			['>=', ['get', 'Year'], values[0]],
+		// 			['<=', ['get', 'Year'], values[1]]
+		// 		]
+		// });
 
-		map.addSource('suitesDetached', {
-			'type': 'geojson',
-			'data': detachedGeo
-		}); 
-		map.addLayer({
-			'id': 'suitesDetachedWhite',
-			'type': 'circle',
-			'source': 'suitesDetached',
-			'layout': {},
-			'paint': {
-				'circle-radius': [
-					"interpolate",
-					["linear"],
-					["zoom"],
-					11,
-					5,
-					16,
-					10
-					],
-				'circle-color': '#fff',
-			},
-			'filter': 
-				[
-					'all',
-					['>=', ['get', 'Year'], values[0]],
-					['<=', ['get', 'Year'], values[1]]
-				]
-		});
-		map.addLayer({
-			'id': 'suitesDetached',
-			'type': 'circle',
-			'source': 'suitesDetached',
-			'layout': {},
-			'paint': {
-				'circle-radius': [
-					"interpolate",
-					["linear"],
-					["zoom"],
-					11,
-					3,
-					16,
-					8
-					],
-				'circle-color': colours.Detached.Completed,
-			},
-			'filter': 
-				[
-					'all',
-					['>=', ['get', 'Year'], values[0]],
-					['<=', ['get', 'Year'], values[1]]
-				]
-		});
+		// map.addSource('suitesDetached', {
+		// 	'type': 'geojson',
+		// 	'data': detachedGeo
+		// }); 
+		// map.addLayer({
+		// 	'id': 'suitesDetachedWhite',
+		// 	'type': 'circle',
+		// 	'source': 'suitesDetached',
+		// 	'layout': {},
+		// 	'paint': {
+		// 		'circle-radius': [
+		// 			"interpolate",
+		// 			["linear"],
+		// 			["zoom"],
+		// 			11,
+		// 			5,
+		// 			16,
+		// 			10
+		// 			],
+		// 		'circle-color': '#fff',
+		// 	},
+		// 	'filter': 
+		// 		[
+		// 			'all',
+		// 			['>=', ['get', 'Year'], values[0]],
+		// 			['<=', ['get', 'Year'], values[1]]
+		// 		]
+		// });
+		// map.addLayer({
+		// 	'id': 'suitesDetached',
+		// 	'type': 'circle',
+		// 	'source': 'suitesDetached',
+		// 	'layout': {},
+		// 	'paint': {
+		// 		'circle-radius': [
+		// 			"interpolate",
+		// 			["linear"],
+		// 			["zoom"],
+		// 			11,
+		// 			3,
+		// 			16,
+		// 			8
+		// 			],
+		// 		'circle-color': colours.Detached.Completed,
+		// 	},
+		// 	'filter': 
+		// 		[
+		// 			'all',
+		// 			['>=', ['get', 'Year'], values[0]],
+		// 			['<=', ['get', 'Year'], values[1]]
+		// 		]
+		// });
 
 	})
 
 	load = 1;
 
-	fetchGeoJSON(city);
+	
 
 });
 
