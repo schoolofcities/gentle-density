@@ -812,6 +812,8 @@ $: if (load === 1) {
 		center: cityData[city].center, 
 		zoom: cityData[city].zoom, 
 	});
+	fetchGeoJSON(city);
+	console.log("meow");
 }
 
 $: if (load === 1 && map.getSource('csdBoundary')) {
