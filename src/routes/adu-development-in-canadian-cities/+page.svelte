@@ -313,7 +313,7 @@
 				
 			</p>
 			<p>
-				Big thanks to Ali Qureshey and Lauren Shiga for helping with research and writing the city profiles; to Remus Herteg for helping to compile census data on population and income for the maps; to Mia Wang for creating the schematic examples of ADUs; and to Irene Chang for helping with early conceptual versions of the maps and charts.
+				Big thanks to Ali Qureshey and Lauren Shiga for helping with research and writing the city profiles; to Remus Herteg for helping to compile census data on population and income for the maps; to Mia Wang for creating the schematic examples of ADUs; and to Irene Chang for helping with early conceptual versions of the maps and charts. We also extend our sincere gratitude to Cherise Burda for providing direction and feedback on this work.
 									
 			</p>
 		</div>
