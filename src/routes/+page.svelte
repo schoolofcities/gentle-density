@@ -4,11 +4,38 @@ import "../assets/styles.css";
 import Top from "$lib/TopSofC.svelte";
 import pages from "$lib/pages.json";
 
-
-console.log(pages);
-
-
 </script>
+
+
+
+<svelte:head>
+
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1"
+	/>
+
+    <title>Gentle Density in Canadian Cities | School of Cities</title>
+    <meta name="description" content="Maps, data, and policy discussion.">
+    <meta name="author" content="Jeff Allen">
+
+	<meta property="og:title" content="Gentle Density in Canadian Cities" />
+    <meta property="og:description" content="Maps, data, and policy discussion." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-mulit-city.png" />
+    <meta property="og:locale" content="en_CA">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density" />
+    <meta name="twitter:creator" content="@JeffAllenMaps" />
+    <meta name="twitter:title" content="Gentle Density in Canadian Cities" />
+    <meta name="twitter:description" content="Maps, data, and policy discussion." />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-multi-city.png" /> 
+
+</svelte:head>
+
+
 
 
 <Top/>
