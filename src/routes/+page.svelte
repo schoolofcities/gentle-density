@@ -43,17 +43,6 @@ console.log(pages);
 
 <style>
 
-	body {
-		padding: 0px;
-		margin: 0px;
-		overflow-x: hidden;
-		background-color: #ffffff;
-		opacity: 1;
-		background-color: var(--brandDarkBlue);
-		background-size: 13px 13px;
-		background-image: repeating-linear-gradient(-45deg, #eaf5ff05 0, #eaf5ff13 1.3px, var(--brandDarkBlue) 0, var(--brandDarkBlue) 50%);
-	}
-
 	.home {
 		width: 100vw;
 		height: 100vh;
