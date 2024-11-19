@@ -2,30 +2,9 @@
 
 	import "../assets/styles.css";
 
-	export let currentPage;
+	import pages from "./pages.json";
 
-	let pages = [
-		{
-			"name": "canadian-residential-conversions",
-			"title": "Tracking Residential Dwelling Conversions: An Exploration of Canadian Building Permit Survey Data",
-			"date": "07/2024"
-		},
-		{
-			"name": "toronto-rooming-houses",
-			"title": "Zoning for Multi-Tenant Housing in Toronto",
-			"date": "05/2024"
-		},
-		{
-			"name": "toronto-renoductions",
-			"title": "Reno-ductions: Loss of Gentle Density in Toronto",
-			"date": "01/2024"
-		},
-		{
-			"name": "toronto-building-permits",
-			"title": "Tracking Gentle Density in Toronto: Visualizing Building Permit Data From 2013 To 2023",
-			"date": "01/2024"
-		}
-	]
+	export let currentPage;
 
 </script>
 
@@ -43,9 +22,9 @@
 				{#if currentPage !== page.name}
 
 					<p>
-					<a href={"./" + page.name}>
-						{page.title}
-					</a>
+						<a href={"./" + page.name}>
+							{page.title}
+						</a>
 					</p>
 
 				{/if}
