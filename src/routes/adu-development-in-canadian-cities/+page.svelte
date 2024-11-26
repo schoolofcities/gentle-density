@@ -319,6 +319,15 @@
 		</div>
 	</div>
 
+	<div class="text">
+		<div class="definition">
+			<h4>Disclaimer</h4>
+			<p>
+				The School of Cities received funding from CMHC to support the Level-Up Round of the Housing Supply Challenge. However, School of Cities bears sole responsibility for the accuracy and appropriateness of this publication. CMHC accepts no responsibility for the content, interpretations, conclusions, or opinions expressed in this publication or other materials resulting from the supported work.
+			</p>
+		</div>
+	</div>
+
 		<br>
 		<br>
 
