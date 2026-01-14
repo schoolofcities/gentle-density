@@ -31,15 +31,15 @@
 	<meta property="og:title" content="Backyard housing in Toronto" />
     <meta property="og:description" content="Mapping laneway and garden suite development, 2018–2025" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-building-permits" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card.png" />
+    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-backyard-housing" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-laneway.png" />
     <meta property="og:locale" content="en_CA">
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-building-permits" />
+    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-backyard-housing" />
     <meta name="twitter:title" content="Backyard housing in Toronto" />
     <meta name="twitter:description" content="Mapping laneway and garden suite development, 2018–2025" />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card.png" /> 
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-laneway.png" /> 
 
 </svelte:head>
 
@@ -76,7 +76,7 @@
 		<div class="text">
 
 			<p>
-				Small, self-contained dwelling units built in the backyards of existing houses are increasingly a form of housing. They are typically owner-led and incrementally increase housing and density in a neighbourhood.
+				Small, self-contained dwelling units built in the backyards of existing houses are increasingly a form of housing in Toronto. They are typically owner-led and can incrementally increase housing and density in a neighbourhood.
 			</p>
 			<p>
 				In Toronto, these units are often known as laneway suites when they back onto a public laneway, and garden suites otherwise. In other cities and planning contexts, similar housing is often referred to as accessory dwelling units (ADUs), backyard units, or rear-yard housing.
