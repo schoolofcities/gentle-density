@@ -76,13 +76,16 @@
 		<div class="text">
 
 			<p>
-				Small, self-contained dwelling units built in the backyards of existing houses are increasingly a form of housing in Toronto. In Toronto they are often known as laneway suites when they front onto a public laneway, and garden suites otherwise. In other cities and planning contexts, similar housing is often referred to as accessory dwelling units (ADUs), backyard units, or rear-yard housing.
+				Small, self-contained dwelling units built in the backyards of existing houses are increasingly a form of housing. They are typically owner-led and incrementally increase housing and density in a neighbourhood.
 			</p>
 			<p>
-				Toronto’s approach to permitting these units has expanded through the City’s <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/" target="_blank">Expanding Housing Options in Neighbourhoods</a> (EHON) program, which has aimed to reduce exclusive zoning and increase density in residential areas. In 2018, these types of units were permitted in parts of the former Toronto and East York District, limited to properties adjacent to laneways. This permission was extended city-wide in 2019 for all laneway-adjacent lots. In 2022, the City took a further step by allowing garden suites across most low-density residential zones, even where no laneway is present, significantly broadening where small backyard homes could be built.
+				In Toronto, these units are often known as laneway suites when they back onto a public laneway, and garden suites otherwise. In other cities and planning contexts, similar housing is often referred to as accessory dwelling units (ADUs), backyard units, or rear-yard housing.
 			</p>
 			<p>
-				Together, laneway and garden suites represent a form of <a href="https://affordablemissingmiddle.ca/" target="_blank">gentle density</a>: small-scale, incremental additions to existing neighbourhoods that do not fundamentally alter their built form. These units can provide rental income or flexible living arrangements for homeowners, support intergenerational households, and expand housing options for people who may not need or be able to afford larger homes. For cities facing housing shortages, they offer a way to add supply within established neighbourhoods while making more efficient use of existing land and infrastructure.
+				Toronto’s approach to permitting these units has expanded through the City’s <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/" target="_blank">Expanding Housing Options in Neighbourhoods</a> (EHON) program, which is a broader set of strategies aiming to reduce exclusive zoning and increase density in residential areas. In 2018, these types of backyard units were permitted in parts of the former Toronto and East York District, limited to properties adjacent to laneways. This permission was extended city-wide in 2019 for all laneway-adjacent lots. In 2022, the City took a further step by allowing garden suites across most low-density residential zones, even where no laneway is present, significantly broadening where small backyard homes could be built.
+			</p>
+			<p>
+				Together, laneway and garden suites represent a form of <a href="https://affordablemissingmiddle.ca/" target="_blank">gentle density</a>: small-scale, incremental additions to existing neighbourhoods that do not substantially alter their built form. These units can provide rental income or flexible living arrangements for homeowners, support intergenerational households, and expand housing options for people who may not need or be able to afford larger homes. For cities facing housing shortages, they offer a way to add housing supply within established neighbourhoods while making more efficient use of existing land, parcel geography, and infrastructure.
 			</p>
 
 		</div>
