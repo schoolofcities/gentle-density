@@ -142,7 +142,7 @@
         margin: 0 auto;
         width: calc(100% - 30px);
         max-width: 650px;
-        height: 320px;
+        height: 310px;
         /* border: solid 1px var(--brandLightBlue); */
     }
 

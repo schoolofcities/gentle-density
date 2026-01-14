@@ -15,14 +15,14 @@
 
     let years = ["2018", "2019","2020","2021","2022", "2023", "2024", "2025"];
 
-    let yLabels = [0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
+    let yLabels = [0, 100, 200, 300, 400, 500]
 
     function barHeight(amount) {
-        return amount * 200 / 200
+        return amount * 150 / 200
     }
 
     function barY(amount) {
-        return 500 - barHeight(amount)
+        return 500 * 0.75 - barHeight(amount)
     }
 
     $: xScale = scaleBand()
@@ -69,8 +69,8 @@
             <line
                 x1="{50 + xScale(year) + xScale.bandwidth() / 2}"
                 x2="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-                y1="580"
-                y2="585"
+                y1="455"
+                y2="460"
                 style="stroke:white;stroke-width:1"
             />
 
@@ -83,14 +83,14 @@
 
             <text 
                 x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-                y="600"
+                y="475"
                 id="yearLabelWeb"
                 text-anchor="middle"
             >{year}</text>
 
             <text 
                 x="{50 + xScale(year) + xScale.bandwidth() / 2}" 
-                y="600"
+                y="475"
                 id="yearLabelMobile"
                 text-anchor="middle"
             >{year}</text>
@@ -100,12 +100,12 @@
 
         {#each yLabels as yLabel}
 
-            <line x1="70" y1="{580 - yLabel}" x2="{svgWidth}" y2="{580 - yLabel}" style="stroke:white;stroke-width:1;opacity:0.2" />
-            <text x=60 y={585 - yLabel} id="label">{yLabel}</text>
+            <line x1="70" y1="{455 - yLabel * 0.75}" x2="{svgWidth}" y2="{455 - yLabel * 0.75}" style="stroke:white;stroke-width:1;opacity:0.2" />
+            <text x=60 y={455 - yLabel * 0.75} id="label">{yLabel}</text>
 
         {/each}
         
-		<line x1="70" y1="580" x2="{svgWidth}" y2="580" style="stroke:white;stroke-width:1;opacity:0.89" />
+		<line x1="70" y1="455" x2="{svgWidth}" y2="455" style="stroke:white;stroke-width:1;opacity:0.89" />
 
 		<!-- <line x1="50" y1="216" x2="{svgWidth}" y2="216" style="stroke:white;stroke-width:1;opacity:0.3" />
 		<text x=25 y=200 id="label">100</text>
@@ -134,7 +134,7 @@
         margin: 0 auto;
         width: calc(100% - 30px);
         max-width: 650px;
-        height: 600px;
+        height: 480px;
         /* border: solid 1px var(--brandLightBlue); */
     }
 
