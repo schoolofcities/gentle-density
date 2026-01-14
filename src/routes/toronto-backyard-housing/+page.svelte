@@ -108,7 +108,7 @@
 				A few years ago, we looked at both <a href="toronto-building-permits" target="_blank">growth</a> and <a href="toronto-renoductions" target="_blank">decline</a> of different types of gentle density in Toronto (including secondary suites and multiplexes), and also <a href="adu-development-in-canadian-cities" target="_blank">compared cities across Canada</a>.
 			</p>
 			<p> 
-				This page takes an updated and more in-depth look at laneway and garden suites using the City's building permit data. First we chart out trends of how many "New Laneway / Rear Yard Suite" have been built over time based on counting 'closed' (i.e. completed) building permits in the data. We then chart out how many are currently active (i.e. have not been completed or cancelled) to show how many might be completed in the coming year or two.
+				This page takes an updated and more in-depth look at laneway and garden suites using the City's building permit data. First we chart out trends of how many "New Laneway / Rear Yard Suite" have been built over time based on counting "closed" (i.e. completed) building permits in the data. We then chart out how many are currently active (i.e. have not been completed or cancelled) to show how many might be completed in the coming year or two.
 			</p>
 			<p>	
 				Note that building permit data isn't a perfectly accurate representation of construction – there can be the occasional error in how the data are classified based on permit type, as well as varying lag when a project is complete and when the permit closes. However, it is probably the best open data we have to track this type of development.
@@ -136,13 +136,13 @@
 			</div>
 			<br>
 			<p>
-				Overall, while the rate of increase is substantive year-over-year, it is still only scratching the surface of what could be built. According to <a href="https://adusearch.ca/" target="_blank">ADUsearch.ca</a> the estimated number of properties within Toronto that could add internal or external ADUs ranges between 261,000 to 317,000 lots. The current uptake (as of 01/2026) of 621 complete and 1,082 in-progress is far less than even 1% of properties. However, <a href="https://reframehousing.org/why-zoning-reform-takes-time" target="_blank">zoning reform (like permitting backyard housing in residential) does not instantly lead to construction – there are a number of factors at play</a>. So it will be important to continue to track this type of data going forward.
+				Overall, while the rate of increase is substantive year-over-year, it is still only scratching the surface of what could be built. According to <a href="https://adusearch.ca/" target="_blank">ADUsearch.ca</a> the estimated number of properties within Toronto that could add internal or external ADUs ranges between 261,000 to 317,000 lots. The current uptake (as of 01/2026) of 621 complete and 1,082 in-progress is far less than even 1% of properties. However, <a href="https://reframehousing.org/why-zoning-reform-takes-time" target="_blank">zoning reform (like permitting backyard housing in residential neighbourhoods) does not instantly lead to construction – there are a number of factors that influence when and where development occurs</a> (demand, market conditions, design regulations and building costs, labour and materials, etc.).
 			</p>
 			<p>
 				Note as well that not all issued and active permits will lead to completions. Likely some of those permits issued in earlier years may have stalled out, even if the permit is still active. As well, a number of permits (265 in total) were cancelled, and so are not included in our charts even though they were issued between 2018 and 2025. Based on these trends, it would be expected that up to 30% of the active permits in the chart above won't be completed.
 			</p>
 			<p>
-				Of those that are complete, the median time it takes from when a permit for a new laneway or garden suite is issued to when it is 'closed' (i.e. complete) is just over 1 year (385 days), but this can vary quite a bit with approximately 15% taking more than 2 years.
+				Of those that are complete, the median time it takes from when a permit for a new laneway or garden suite is issued to when it is "closed" (i.e. complete) is just over 1 year (385 days), but this can vary quite a bit with approximately 15% taking more than 2 years.
 			</p>
 			<p>
 				Another question is where these housing units are built across the city. Development is constrained by residential zoning and historically, prior to 2022, by needing to be adjacent to a laneway. But beyond that, there is some variation in where units have been built, as well as in those that are in progress. Check out the map below to explore. Below the map is a time slider and layers to toggle what is being shown on the map. 
@@ -178,7 +178,7 @@
 		
 	</div>
 
-	<ReadMore currentPage = "toronto-building-permits"/>
+	<ReadMore currentPage = "toronto-backyard-housing"/>
 
 </main>
 

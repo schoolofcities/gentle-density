@@ -38,7 +38,7 @@
 
 <div id="barChart" bind:offsetWidth={divWidth}>
 
-    <svg height=800 width={svgWidth} id="svgChart">
+    <svg height=480 width={svgWidth} id="svgChart">
 
         <text 
             x="20" 
@@ -107,18 +107,6 @@
         
 		<line x1="70" y1="455" x2="{svgWidth}" y2="455" style="stroke:white;stroke-width:1;opacity:0.89" />
 
-		<!-- <line x1="50" y1="216" x2="{svgWidth}" y2="216" style="stroke:white;stroke-width:1;opacity:0.3" />
-		<text x=25 y=200 id="label">100</text>
-
-		<line x1="50" y1="148" x2="{svgWidth}" y2="148" style="stroke:white;stroke-width:1;opacity:0.3" />
-		<text x=25 y=150 id="label">150</text>
-
-		<line x1="50" y1="80" x2="{svgWidth}" y2="80" style="stroke:white;stroke-width:1;opacity:0.3" />
-		<text x=25 y=100 id="label">200</text>
-
-		<line x1="350" y1="12" x2="{svgWidth}" y2="12" style="stroke:white;stroke-width:1;opacity:0.3" /> -->
-
-        
 
     </svg>
 
