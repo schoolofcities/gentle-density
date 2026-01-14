@@ -964,6 +964,7 @@
         "type": "fill",
         "source": "protomaps",
         "source-layer": "buildings",
+        "minzoom": 14,
         "paint": {
             "fill-color": "#3B7FBF",
             "fill-opacity": 0.5,

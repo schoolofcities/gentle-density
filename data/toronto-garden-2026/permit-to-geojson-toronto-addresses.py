@@ -6,8 +6,11 @@ import geopandas as gpd
 typename = "rear"
 typecode = "New Laneway / Rear Yard Suite"
 
-# typename = "laneway-garden-suites"
-# typecode = "New Laneway / Rear Yard Suite"
+file_name = "building-permits/building-permits-active-permits.csv"
+year_col = "ISSUED_DATE"
+
+# file_name = "building-permits/clearedpermits2017to2025.csv"
+# year_col = "COMPLETED_DATE"
 
 addresses = gpd.read_file("building-permits/address-points.gpkg")
 
@@ -25,15 +28,13 @@ def geocode(address_id):
 
 def read_permit_data_by_year(year):
 
-	file_name = "building-permits/clearedpermits2017to2025.csv"
-
 	df = pd.read_csv(file_name)
 
 	df = df.loc[df["WORK"] == typecode]
 
-	df = df.loc[df["STATUS"] == "Closed"]
+	# df = df.loc[df["STATUS"] == "Closed"]
 
-	df = df[df['COMPLETED_DATE'].astype(str).str[:4] == year]
+	df = df[df[year_col].astype(str).str[:4] == year]
 
 	coords = []
 	unique_permits = []

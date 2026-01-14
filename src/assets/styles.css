@@ -17,6 +17,7 @@
 
 :root {
     font-family: UbuntuMonoRegular, sans-serif;
+    --brandVeryDarkBlue: #002b8f;
     --brandDarkBlue: #1470ad;
     --brandLightBlue: #8EB6DC;
     --brandRed: #ab1269;
