@@ -81,15 +81,8 @@
 			<p>
 				In Toronto, these units are often known as laneway suites when they back onto a public laneway, and garden suites otherwise. In other cities and planning contexts, similar housing is often referred to as accessory dwelling units (ADUs), backyard units, or rear-yard housing.
 			</p>
-			<p>
-				Toronto’s approach to permitting these units has expanded through the City’s <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/" target="_blank">Expanding Housing Options in Neighbourhoods</a> (EHON) program, which is a broader set of strategies aiming to reduce exclusive zoning and increase density in residential areas. In 2018, these types of backyard units were permitted in parts of the former Toronto and East York District, limited to properties adjacent to laneways. This permission was extended city-wide in 2019 for all laneway-adjacent lots. In 2022, the City took a further step by allowing garden suites across most low-density residential zones, even where no laneway is present, significantly broadening where small backyard homes could be built.
-			</p>
-			<p>
-				Together, laneway and garden suites represent a form of <a href="https://affordablemissingmiddle.ca/" target="_blank">gentle density</a>: small-scale, incremental additions to existing neighbourhoods that do not substantially alter their built form. These units can provide rental income or flexible living arrangements for homeowners, support intergenerational households, and expand housing options for people who may not need or be able to afford larger homes. For cities facing housing shortages, they offer a way to add housing supply within established neighbourhoods while making more efficient use of existing land, parcel geography, and infrastructure.
-			</p>
 
 		</div>
-
 
 		<div class="schematic-diagrams">
 			<div class="diagram">
@@ -105,6 +98,14 @@
 		<div class="text">
 
 			<p>
+				Toronto’s approach to permitting these units has expanded through the City’s <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/" target="_blank">Expanding Housing Options in Neighbourhoods</a> (EHON) program, which is a broader set of strategies aiming to reduce exclusive zoning and increase density in residential areas. In 2018, these types of backyard units were permitted in parts of the former Toronto and East York District, limited to properties adjacent to laneways. This permission was extended city-wide in 2019 for all laneway-adjacent lots. In 2022, the City took a further step by allowing garden suites across most low-density residential zones, even where no laneway is present, significantly broadening where small backyard homes could be built.
+			</p>
+			<p>
+				Together, laneway and garden suites represent a form of <a href="https://affordablemissingmiddle.ca/" target="_blank">gentle density</a>: small-scale, incremental additions to existing neighbourhoods that do not substantially alter their built form. These units can provide rental income or flexible living arrangements for homeowners, support intergenerational households, and expand housing options for people who may not need or be able to afford larger homes. For cities facing housing shortages, they offer a way to add housing supply within established neighbourhoods while making more efficient use of existing land, parcel geography, and infrastructure.
+			</p>
+
+
+			<p>
 				A few years ago, we looked at both <a href="toronto-building-permits" target="_blank">growth</a> and <a href="toronto-renoductions" target="_blank">decline</a> of different types of gentle density in Toronto (including secondary suites and multiplexes), and also <a href="adu-development-in-canadian-cities" target="_blank">compared cities across Canada</a>.
 			</p>
 			<p> 
@@ -117,7 +118,10 @@
 			<h3>
 				<span style="background-color: var(--brandVeryDarkBlue); color: white; padding-left: 5px; padding-right: 5px;padding-bottom: 3px; padding-top: 2px;">621</span> laneway and garden suites have been completed in the City of Toronto from 2019 to 2025.
 			</h3>
-			<div class="line-chart">
+			<div 
+				class="line-chart"
+				role="img"
+				aria-label="Vertical bar chart showing annual completions of laneway and garden suites. Totals increase steadily year over year.">
 				<BarChartLanewayCompleted />
 			</div>
 		
@@ -131,7 +135,10 @@
 				There are <span style="background-color: var(--brandVeryDarkBlue); color: white; padding-left: 5px; padding-right: 5px; padding-bottom: 3px; padding-top: 2px;">1,082</span> in-progress laneway and garden suite building permits in the City of Toronto (as of 01/2026)
 			</h3>
 
-			<div class="line-chart">
+			<div 
+				class="line-chart"
+				role="img"
+				aria-label="Vertical bar chart showing in-progress laneway and garden suites by year of permit issue date. Totals increase steadily year over year.">
 				<BarChartLanewayActive />
 			</div>
 			<br>
@@ -152,7 +159,11 @@
 
 	</div>
 
-	<Map/>
+	<div 
+		role="img"
+		aria-label="Interactive map showing location of completed and in-progress laneway and garden suites in Toronto, with reference layers for zoning permissions, neighbourhood income, and location of laneways.">
+		<Map/>
+	</div>
 
 	<div class="background-white">
 
