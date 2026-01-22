@@ -76,10 +76,11 @@
 		<div class="text">
 
 			<p>
-				Small, self-contained dwelling units built in the backyards of existing houses are increasingly a form of housing in Toronto. They are typically owner-led and can incrementally increase housing and density in a neighbourhood.
+				Small, self-contained dwelling units built in the backyards of existing residential properties are growing in number in Toronto. These units are typically owner-led and can incrementally increase housing and density in a neighbourhood.
+				In Toronto, these units are often known as laneway suites when they back onto a public laneway, and garden suites otherwise. In other cities and planning contexts, similar housing is often referred to as accessory dwelling units (ADUs), backyard units, or rear-yard housing. 
 			</p>
-			<p>
-				In Toronto, these units are often known as laneway suites when they back onto a public laneway, and garden suites otherwise. In other cities and planning contexts, similar housing is often referred to as accessory dwelling units (ADUs), backyard units, or rear-yard housing.
+			<p>	
+				On this page, we use query building permit data to track how many of these dwelling units have been built over time, and map where they are located.
 			</p>
 
 		</div>
@@ -103,8 +104,6 @@
 			<p>
 				Together, laneway and garden suites represent a form of <a href="https://affordablemissingmiddle.ca/" target="_blank">gentle density</a>: small-scale, incremental additions to existing neighbourhoods that do not substantially alter their built form. These units can provide rental income or flexible living arrangements for homeowners, support intergenerational households, and expand housing options for people who may not need or be able to afford larger homes. For cities facing housing shortages, they offer a way to add housing supply within established neighbourhoods while making more efficient use of existing land, parcel geography, and infrastructure.
 			</p>
-
-
 			<p>
 				A few years ago, we looked at both <a href="toronto-building-permits" target="_blank">growth</a> and <a href="toronto-renoductions" target="_blank">decline</a> of different types of gentle density in Toronto (including secondary suites and multiplexes), and also <a href="adu-development-in-canadian-cities" target="_blank">compared cities across Canada</a>.
 			</p>
