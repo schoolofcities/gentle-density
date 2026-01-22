@@ -80,7 +80,7 @@
 				In Toronto, these units are often known as laneway suites when they back onto a public laneway, and garden suites otherwise. In other cities and planning contexts, similar housing is often referred to as accessory dwelling units (ADUs), backyard units, or rear-yard housing. 
 			</p>
 			<p>	
-				On this page, we use query building permit data to track how many of these dwelling units have been built over time, and map where they are located.
+				On this page, we query building permit data to track how many of these dwelling units have been built over time, and map where they are located.
 			</p>
 
 		</div>
