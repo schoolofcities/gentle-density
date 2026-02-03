@@ -131,7 +131,7 @@
 			
 			<br>
 			<h3>
-				There are <span style="background-color: var(--brandVeryDarkBlue); color: white; padding-left: 5px; padding-right: 5px; padding-bottom: 3px; padding-top: 2px;">1,082</span> in-progress laneway and garden suite building permits in the City of Toronto (as of 01/2026)
+				There are <span style="background-color: var(--brandVeryDarkBlue); color: white; padding-left: 5px; padding-right: 5px; padding-bottom: 3px; padding-top: 2px;">986</span> in-progress laneway and garden suite building permits in the City of Toronto (as of 01/2026)
 			</h3>
 
 			<div 

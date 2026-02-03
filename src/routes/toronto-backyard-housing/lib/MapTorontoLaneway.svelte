@@ -11,12 +11,12 @@
 	import laneways from '../../../assets/toronto/laneways.geo.json';
 	import transitLines from '../assets/transitLines-toronto.geo.json';
 	import transitStops from '../assets/transitStops-toronto.geo.json';
-	import suitesLaneway from '../assets/Completed-rear-2018-2025.geo.json';
+	import suitesLaneway from '../assets/rear_closed_v2.geo.json';
 	// import suitesSecondary from '../../../assets/toronto/secondary-suites.geo.json';
-	import suitesLanewayActive from '../assets/Active-rear-2018-2025.geo.json';
+	import suitesLanewayActive from '../assets/rear_active_v2.geo.json';
 	// import suitesSecondaryActive from '../../../assets/toronto/secondary-suites-active-subset-012024update.geo.json';
 	import zoneAllow from '../assets/zoning-rear.geo.json';
-	import zoneOtherRes from '../../../assets/toronto/zone-otherres.geo.json';
+	// import zoneOtherRes from '../../../assets/toronto/zone-otherres.geo.json';
 	import income2020 from '../../../assets/toronto/2020.geo.json';
 
 	// import xSecondary from '../../../assets/toronto/x-secondary.svg';

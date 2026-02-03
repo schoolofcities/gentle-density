@@ -3,7 +3,7 @@
     import {rollup} from 'd3-array';
     import {scaleBand} from 'd3-scale';
 
-    import suitesLaneway from '../assets/Active-rear-2018-2025.geo.json';
+    import suitesLaneway from '../assets/rear_active_v2.geo.json';
     
     let divWidth;
     
