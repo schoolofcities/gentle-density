@@ -3,7 +3,7 @@ import geopandas as gpd
 
 
 
-typename = "rear"
+typename = "rear_active_v2"
 typecode = "New Laneway / Rear Yard Suite"
 
 file_name = "building-permits/building-permits-active-permits.csv"
