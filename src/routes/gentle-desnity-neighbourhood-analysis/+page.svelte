@@ -27,8 +27,8 @@
 
 	<!-- <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' /> -->
 
-    <title>Backyard housing in Toronto</title>
-    <meta name="description" content="Mapping laneway and garden suite development, 2018–2025">
+    <title>Gentle density neighbourhood analysis</title>
+    <!-- <meta name="description" content="Mapping laneway and garden suite development, 2018–2025">
     <meta name="author" content="Jeff Allen">
 
 	<meta property="og:title" content="Backyard housing in Toronto" />
@@ -42,7 +42,7 @@
     <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-backyard-housing" />
     <meta name="twitter:title" content="Backyard housing in Toronto" />
     <meta name="twitter:description" content="Mapping laneway and garden suite development, 2018–2025" />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-laneway.png" /> 
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-laneway.png" />  -->
 
 </svelte:head>
 
@@ -150,7 +150,7 @@
 			</p>
 
 			<p>
-				We find that neighbourhoods with higher levels of non-car accessibility, a mix of housing types, a greater percentage of older housing stock, and higher proportions of young dependents and single-parent households are related to ADU rates. However, when the influence of ADU rates in surrounding neighbourhoods are controlled via a spatial lag model, the effect of non-car accessibility on ADU rates becomes statistically insignificant. For more information and technical details of this data, modelling, and results, check out this <a href="https://github.com/mkbs-mkbs2000/Toronto-Gentle-Density/" target="_blank">GitHub repository</a>.
+				Through these models, we find that neighbourhoods with higher levels of non-car accessibility, a mix of housing types, a greater percentage of older housing stock, and higher proportions of young dependents and single-parent households are related to ADU rates. However, when the influence of ADU rates in surrounding neighbourhoods are controlled via a spatial lag model, the effect of non-car accessibility on ADU rates becomes statistically insignificant. For more information and technical details of this data, modelling, and results, check out this <a href="https://github.com/mkbs-mkbs2000/Toronto-Gentle-Density/" target="_blank">GitHub repository</a>.
 			</p>
 
 			<p>
