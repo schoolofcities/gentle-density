@@ -58,7 +58,7 @@
 
 		<div class="title">
 			<h1>
-				Keeping Up With The Neighbours: 
+				Keeping up with the neighbours: 
 			</h1>
 			<h2>
 				Quantitative analysis of additional dwelling unit permits in Toronto
