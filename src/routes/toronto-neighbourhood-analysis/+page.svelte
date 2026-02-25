@@ -14,6 +14,8 @@
 	import aduSplit from "./assets/adu-corner-split.svg";
 	import aduAddition from "./assets/adu-rearside-addition.svg";
 
+	import neighbourhoodMapADU from "./assets/toronto-neighbourhoods-adu-rate.png";
+
 </script>
 
 
@@ -56,7 +58,7 @@
 
 		<div class="title">
 			<h1>
-				Gentle Density, Rough Reality
+				Keeping Up With The Neighbours: 
 			</h1>
 			<h2>
 				Quantitative analysis of additional dwelling unit permits in Toronto
@@ -122,7 +124,7 @@
 				Permit activity also steadily increased during this period, from 375 issued permits in 2022 to 550 issued in 2025, <a href="https://schoolofcities.github.io/gentle-density/adu-development-in-canadian-cities" target="_blank">continuing the trend</a> from before COVID-19. 
 			</p>
 			<p>
-				However, they show clustering in some areas, with the densest cluster of 562 permits located west of Downtown Toronto, stretching all the way to High Park and Lawrence Avenue. Although there is a larger cluster of 643 permits, it spans a much larger area from the Don River all the way to Scarborough. Conspicuously, there is little ADU permit activity, and therefore no clusters identified, in Midtown Toronto. 
+				However, they show clustering in some areas, with the densest cluster being just west of Downtown Toronto.
 			</p>
 			
 		</div>
@@ -142,19 +144,25 @@
 			</p>
 
 			<p>
-				To explore this, for each neighbourhood in Toronto, we calculated a proportion of ADU permits to all eligible dwellings (single-detached, semi-detached, row houses, and duplexes). We then compared this proportion to a set of accessibility, housing stock, and demographic indicators. We specifically inputting these characteristics into ordinary least squares regression models suggest that several neighbourhood characteristics are strongly associated with ADU activity. 
+				To explore this, for each neighbourhood in Toronto, we calculated a proportion of ADU permits to all eligible dwellings (single-detached, semi-detached, row houses, and duplexes).
+			</p>
+
+			<img
+				src={neighbourhoodMapADU}
+				alt="My image"
+				style="display: block; width: 100%; height: auto; opacity: 0.8;"
+			/>
+
+			<p>
+				We then compared this proportion to a set of neighbourhood-level accessibility, housing stock, and demographic indicators. We specifically inputted these characteristics into ordinary least squares regression models to see which, all else being equal, are related to higher or lower rates of ADUs in neighbourhoods.
 			</p>
 
 			<p>
-				INSERT MAP HERE OF NEIGHBOURHOODS SHADED BY PROPORTION OF ADU TO DWELLINGS USED IN MODEL
+				Through these models, we find that neighbourhoods with higher levels of transit accessibility, a mix of housing types, a greater percentage of older housing stock, and higher proportions of young dependents and single-parent households are related to ADU rates. However, when the influence of ADU rates in surrounding neighbourhoods are controlled via a spatial lag model, the effect of transit accessibility on ADU rates becomes statistically insignificant. For more information and technical details of this data, modelling, and results, check out this <a href="https://github.com/mkbs-mkbs2000/Toronto-Gentle-Density/" target="_blank">GitHub repository</a>.
 			</p>
 
 			<p>
-				Through these models, we find that neighbourhoods with higher levels of non-car accessibility, a mix of housing types, a greater percentage of older housing stock, and higher proportions of young dependents and single-parent households are related to ADU rates. However, when the influence of ADU rates in surrounding neighbourhoods are controlled via a spatial lag model, the effect of non-car accessibility on ADU rates becomes statistically insignificant. For more information and technical details of this data, modelling, and results, check out this <a href="https://github.com/mkbs-mkbs2000/Toronto-Gentle-Density/" target="_blank">GitHub repository</a>.
-			</p>
-
-			<p>
-				What this means is that neighbourhoods with high ADU rates are also neighbourhoods that have:
+				In summary, we find that neighbourhoods with high ADU rates are also neighbourhoods that have:
 			</p>
 
 			<ul>
@@ -166,7 +174,7 @@
 			</ul>
 
 			<p>
-				The models suggest that ADU activity in the surrounding neighbourhoods has a strong influence on a neighbourhood’s ADU rates. This means the growth of ADUs in Toronto could be due to diffusion, learning-by-seeing, or other unmeasured-but-spatially-patterned factors, which intensifies when there is good transit accessibility. Non-car accessibility alone cannot be taken as a factor because Midtown Toronto is also well served by public transit, but no clusters are identified there.
+				The models suggest that ADU activity in the surrounding neighbourhoods has a strong influence on a neighbourhood’s ADU rates. This means the growth of ADUs in Toronto could be due to diffusion, learning-by-seeing, or other unmeasured-but-spatially-patterned factors, which intensifies when there is good transit accessibility. Transit accessibility alone cannot be taken as a factor because Midtown Toronto is also well served by public transit, but no clusters are identified there.
 			</p>
 
 			<p>

@@ -1,0 +1,37 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.40.13-Bratislava">
+  <identifier>citygcs.regional_mun_wgs84</identifier>
+  <parentidentifier></parentidentifier>
+  <language>EN</language>
+  <type>dataset</type>
+  <title>citygcs.regional_mun_wgs84</title>
+  <abstract>Data used for creating maps and map applications of the City of Toronto as well as for operational use within the City of Toronto
+
+This data is in an ESRI GIS shapefile that outlines the geographical administrrative boundary of the City of Toronto
+
+Data created by Information and Technology (I&amp;T), Geospatail Competency Centre. This is the final accepted and approved version of this data set and will not change unless Toronto Council authorizies the Boundary for the City of Toronto to change.</abstract>
+  <keywords vocabulary="Search keys">
+    <keyword>Regional Municipality</keyword>
+    <keyword>City of Toronto</keyword>
+  </keywords>
+  <links/>
+  <dates/>
+  <fees></fees>
+  <encoding></encoding>
+  <crs>
+    <spatialrefsys nativeFormat="Wkt">
+      <wkt></wkt>
+      <proj4></proj4>
+      <srsid>0</srsid>
+      <srid>0</srid>
+      <authid></authid>
+      <description></description>
+      <projectionacronym></projectionacronym>
+      <ellipsoidacronym></ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </crs>
+  <extent>
+    <spatial minz="0" dimensions="2" crs="EPSG:4326" minx="-79.63926800000000128" maxx="-79.11524599999999907" maxz="0" maxy="43.85546599999999984" miny="43.58100499999999755"/>
+  </extent>
+</qgis>

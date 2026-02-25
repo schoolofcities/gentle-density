@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="720"
+   height="420"
+   viewBox="0 0 720.00002 420"
+   sodipodi:docname="toronto-neighbourhoods-adu-rate.svg"
+   inkscape:version="1.4.2 (1:1.4.2+202505120738+ebf0e940d0)"
+   inkscape:export-filename="toronto-neighbourhoods-adu-rate.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="402"
+     inkscape:cy="173.5"
+     inkscape:window-width="1914"
+     inkscape:window-height="1011"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="false" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect2"
+       width="720"
+       height="420"
+       x="0"
+       y="0" />
+    <image
+       width="720"
+       height="400"
+       preserveAspectRatio="none"
+       xlink:href="toronto-neighbourhoods-adu-rate-qgis.png"
+       id="image1"
+       style="stroke-width:0.16"
+       x="0"
+       y="20" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:0.95;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1"
+       x="523.08716"
+       y="346.78101"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         x="523.08716"
+         y="346.78101"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#002b8f;fill-opacity:1;stroke-width:1">ADUs / dwellings</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;line-height:0.95;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono, Normal';font-variant-ligatures:none;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="509.12415"
+       y="388.3284"
+       id="text1-5"><tspan
+         sodipodi:role="line"
+         id="tspan1-7"
+         x="509.12415"
+         y="388.3284"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#002b8f;fill-opacity:1">0.25%</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;line-height:0.95;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono, Normal';font-variant-ligatures:none;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="564.70178"
+       y="387.97198"
+       id="text1-5-7"><tspan
+         sodipodi:role="line"
+         id="tspan1-7-2"
+         x="564.70178"
+         y="387.97198"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#002b8f;fill-opacity:1">0.50%</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;line-height:0.95;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono, Normal';font-variant-ligatures:none;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="625.57709"
+       y="387.97198"
+       id="text1-5-7-4"><tspan
+         sodipodi:role="line"
+         id="tspan1-7-2-1"
+         x="625.57709"
+         y="387.97198"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#002b8f;fill-opacity:1">1.00%</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;line-height:0.95;font-family:'Inter 24pt';-inkscape-font-specification:'Inter 24pt, Normal';font-variant-ligatures:none"
+       x="25.320023"
+       y="33.859978"
+       id="text1-9"><tspan
+         sodipodi:role="line"
+         id="tspan1-9"
+         x="25.320023"
+         y="33.859978"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#002b8f;fill-opacity:1">Toronto Neighbourhoods</tspan></text>
+    <rect
+       style="fill:#eef2f6;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect1"
+       width="52.822193"
+       height="13.04899"
+       x="478.71127"
+       y="358.50314" />
+    <rect
+       style="fill:#a5b6da;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect1-3"
+       width="52.822193"
+       height="13.04899"
+       x="531.53345"
+       y="358.50314" />
+    <rect
+       style="fill:#5270b4;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect1-1"
+       width="52.822193"
+       height="13.04899"
+       x="584.35559"
+       y="358.50314" />
+    <rect
+       style="fill:#002b8f;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect1-3-2"
+       width="52.822193"
+       height="13.04899"
+       x="637.1778"
+       y="358.50314" />
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#eef2f6;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3"
+       width="718.91016"
+       height="418.95312"
+       x="0.52734375"
+       y="0.515625" />
+  </g>
+</svg>
