@@ -67,7 +67,7 @@
 				
 			</h2>
 			<p><a href="https://mkbs-mkbs2000.github.io/Personal-Portfolio/" target="_blank">Muhammad Khalis bin Samion</a></p>
-			<p>February 2026</p>
+			<p>March 2026</p>
 		</div>
 
 	</div>
@@ -81,10 +81,10 @@
 		<div class="text">
 
 			<p>
-				Accessory dwelling units (ADUs) are often seen as <a href="https://globalnews.ca/news/9847663/housing-canada-secondary-units-demand/" target="_blank">‘the low-hanging fruit’</a> in addressing the housing crisis, but they are not materializing across all Toronto neighbourhoods. Some have witnessed substantial ADU growth, while others have little or none. We analyzed ADU permits issued between 2022 and 2025 in Toronto neighbourhoods, finding that growth is highly concentrated and related to local housing and household characteristics.
+				Accessory dwelling units (ADUs) are often seen as <a href="https://globalnews.ca/news/9847663/housing-canada-secondary-units-demand/" target="_blank">‘the low-hanging fruit’</a> in addressing the housing crisis, but they are not materializing across all Toronto neighbourhoods. Some have witnessed substantial ADU growth, while others have little or none. We analyzed ADU permits issued between 2022 and 2025 in Toronto neighbourhoods,  and found that that growth is highly concentrated and related to local housing and household characteristics.
 			</p>
 			<p>
-				As the name suggests, ADUs are dwelling units that exist as accessory to the primary residence on a residential lot. ADUs <a href="https://affordablemissingmiddle.ca/the-opportunity" target="_blank">promise to deliver more housing stock</a> at lower cost than units in new apartment complexes without radically changing the built character of a neighbourhood, hence the term ‘gentle density.’ Additionally, ADUs offer homeowners an <a href="https://theinnovativegroup.ca/unlocking-the-potential-exploring-additional-dwelling-units-in-ontario/" target="_blank">opportunity to monetise their asset</a> by converting parts of their property into dwellings for rent. These characteristics make ADUs a win-win for everyone, especially considering the dual post-pandemic crisis of the cost-of-living and housing unaffordability in Canada. 
+				As the name suggests, ADUs are dwelling units that exist as accessory to the primary residence on a residential lot. ADUs <a href="https://affordablemissingmiddle.ca/the-opportunity" target="_blank">promise to deliver more housing stock</a> at lower cost than units in new apartment complexes without radically changing the built character of a neighbourhood, hence the term ‘gentle density.’ Additionally, ADUs offer homeowners an <a href="https://theinnovativegroup.ca/unlocking-the-potential-exploring-additional-dwelling-units-in-ontario/" target="_blank">opportunity to monetise their asset</a> by converting parts of their property into dwellings for rent. These characteristics make ADUs a win-win for everyone, especially considering the dual post-pandemic crises of the cost of living and housing unaffordability in Canada. 
 			</p>
 			
 		</div>
@@ -119,8 +119,8 @@
 
 			<p>
 				<a href="https://affordablemissingmiddle.ca/missing-little-toronto" target="_blank">Legislation permitting ADUs picked up steam in Toronto in 2017</a>, following earlier adopters like California.
-				Permit activity picked up steadily during the period we analyzed,  from 375 issued permits in 2022 to 550 issued in 2025, <a href="https://schoolofcities.github.io/gentle-density/adu-development-in-canadian-cities" target="_blank">continuing the a pre-pandemic trend</a>. 
-				In total, there were <b>1,894 ADU permits</b> <a href="https://open.toronto.ca/dataset/building-permits-active-permits/" target="_blank">active</a> (i.e. in-progress) and <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits/" target="_blank">completed</a> permits issued between 2022 and 2025. 
+				Permit activity picked up steadily during the period we analyzed,  from 375 issued permits in 2022 to 550 issued in 2025, <a href="https://schoolofcities.github.io/gentle-density/adu-development-in-canadian-cities" target="_blank">continuing a pre-pandemic trend</a>. 
+				In total, there were <b>1,894 ADU </b> <a href="https://open.toronto.ca/dataset/building-permits-active-permits/" target="_blank">active</a> (i.e. in progress) and <a href="https://open.toronto.ca/dataset/building-permits-cleared-permits/" target="_blank">completed</a> permits issued between 2022 and 2025. 
 				However, they reveal clustering in some areas, with the densest cluster just west of downtown Toronto.
 			</p>
 			
@@ -152,7 +152,7 @@
 			</p>
 
 			<p>
-				Through these models, we found a mix of housing types, older housing stock, and higher proportions single-parent households are related to ADU rates. More younger dependents were associated with lower ADU rates.
+				Through these models, we found that a mix of housing types, older housing stock, and higher proportions of single-parent households are related to ADU rates. More younger dependents were associated with lower ADU rates.
 				Via a spatial lag model, we also found that ADU rates were positively associated with ADU rates in surrounding neighbourhoods are controlled. For more information and for the technical details of this data, modelling, and results, check out this <a href="https://github.com/mkbs-mkbs2000/Toronto-Gentle-Density/" target="_blank">GitHub repository</a>.
 			</p>
 
@@ -173,19 +173,19 @@
 			</p>
 
 			<p>
-				Further research might help to understand whether these patterns reflect the limited familiarity of homeowners, builders and/or planners in Toronto with ADU projects. This is likely the case when looking at detached ADUs. Prior to 2022, such ADUs had to be adjacent to laneways, which are more common in older neighbourhoods located closer to downtown (thus the monicker 'laneway suite'). <a href="https://affordablemissingmiddle.ca/missing-little-toronto" target="_blank">After 2022, that restriction was removed</a> and detached ADUs could be built anywhere on the same lot (thus the additional labels of ‘garden / rear-yard suite’). This should make detached ADUs possible even in newer neighbourhoods all over the City. However, the majority of <a href="./toronto-backyard-housing" target="_blank">backyard suites built</a> in 2024 and 2025 are still adjacent to laneways, even though the majority of residential properties do not have laneway access.
+				Further research might help to understand whether these patterns reflect the limited familiarity in Toronto of homeowners, builders and/or planners with ADU projects. This is likely the case when looking at detached ADUs. Prior to 2022, such ADUs had to be adjacent to laneways, which are more common in older neighbourhoods located closer to downtown (thus the monicker 'laneway suite'). <a href="https://affordablemissingmiddle.ca/missing-little-toronto" target="_blank">After 2022, that restriction was removed</a> and detached ADUs could be built anywhere on the same lot (thus the additional labels of ‘garden / rear-yard suite’). This should make detached ADUs possible even in newer neighbourhoods all over the city. However, the majority of <a href="./toronto-backyard-housing" target="_blank">backyard suites built</a> in 2024 and 2025 are still adjacent to laneways, even though the majority of residential properties do not have laneway access.
 			</p>
 
 			<p>
-				Neighbourhoods of households with more young dependents have fewer ADUs, signalling either that these families lack the resources to build or that families without young children are better able to spare some living space for ADU conversions. Meanwhile, the promise of additional rental income from ADUs, may explain the positive non-linear relationship between single parents and ADU rates. 
+				Neighbourhoods of households with more young dependents have fewer ADUs, signalling either that these families lack the resources to build or that families without young children are better able to spare some living space for ADU conversions. Meanwhile, the promise of additional rental income from ADUs may explain the positive non-linear relationship between single parents and ADU rates. 
 			</p>
 
 			<p>
-				These patterns differ from Californian cities, where it was found that many ADUs were concentrated in <a href="https://www.aducalifornia.org/previous-research/" target="_blank">‘diverse, transit-accessible neighbourhoods where… homeowners… still have a mortgage’</a> (e.g. the City of Los Angeles). In Toronto, concentrations of visible minority or owners with mortgages were not significantly associated with ADU permitting rates. This suggest that there may be structural barriers that constrain the uptake of ADUs by homeowners, <a href="https://www.aducalifornia.org/wp-content/uploads/2022/08/ADUs_for_All.pdf" target="_blank">which is also a concern in California</a>.
+				These patterns differ from Californian cities, where it was found that many ADUs were concentrated in <a href="https://www.aducalifornia.org/previous-research/" target="_blank">‘diverse, transit-accessible neighbourhoods where… homeowners… still have a mortgage’</a> (e.g. the City of Los Angeles). In Toronto, concentrations of visible minorities or owners with mortgages were not significantly associated with ADU permitting rates. This suggests that there may be structural barriers that constrain the uptake of ADUs by homeowners, <a href="https://www.aducalifornia.org/wp-content/uploads/2022/08/ADUs_for_All.pdf" target="_blank">which is also a concern in California</a>.
 			</p>
 
 			<p>
-				To an extent, the City of Toronto has worked to address some of the issues with low ADU take up in some neighbourhoods. As well as approval for ADUs of up to six units on one lot, the City has also published <a href="https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/pre-approved-garden-and-laneway-suite-plans/" target="_blank">pre-approved ADU plans</a> that homeowners and builders could easily adopt, and has undertaken <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/demonstration-plans-for-expanding-housing-options-in-neighbourhoods/" target="_blank">demonstration projects</a> to showcase the models–both proven methods to increase uptake. However,  to expand ADU permit activity across the City in the future, it will be important to expand education efforts to the many Toronto neighbourhoods underserved by ADUs.
+				To an extent, the City of Toronto has worked to address some of the issues with low ADU take up in some neighbourhoods. As well as approving ADUs to up to six units on one lot, the City has also published <a href="https://www.toronto.ca/services-payments/building-construction/building-permit/before-you-apply-for-a-building-permit/pre-approved-garden-and-laneway-suite-plans/" target="_blank">pre-approved ADU plans</a> that homeowners and builders could easily adopt, and has undertaken <a href="https://www.toronto.ca/city-government/planning-development/planning-studies-initiatives/expanding-housing-options/demonstration-plans-for-expanding-housing-options-in-neighbourhoods/" target="_blank">demonstration projects</a> to showcase the models – both proven methods to increase uptake. However, in order to expand ADU permit activity across the city, it will be important to expand education efforts in Toronto neighbourhoods underserved by ADUs.
 			</p>
 
 
