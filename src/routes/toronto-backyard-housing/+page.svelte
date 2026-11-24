@@ -34,6 +34,8 @@
     <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-backyard-housing" />
     <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-laneway.png" />
     <meta property="og:locale" content="en_CA">
+    <link rel="canonical" href="https://schoolofcities.github.io/gentle-density/toronto-backyard-housing" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Backyard housing in Toronto", "description": "Mapping laneway and garden suite development, 2018–2025", "url": "https://schoolofcities.github.io/gentle-density/toronto-backyard-housing", "image": "https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-laneway.png", "inLanguage": "en-CA", "author": {"@type": "Person", "name": "Jeff Allen"}, "publisher": {"@type": "Organization", "name": "School of Cities", "url": "https://www.schoolofcities.utoronto.ca/"}, "mainEntityOfPage": "https://schoolofcities.github.io/gentle-density/toronto-backyard-housing"}</script>
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-backyard-housing" />

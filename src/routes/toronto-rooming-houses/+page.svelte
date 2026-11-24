@@ -29,12 +29,14 @@
 	<meta property="og:title" content="Toronto Multi-Tenant Zoning" />
     <meta property="og:description" content="Toronto's Opening Up to Multi-Tenant Houses - Zoning for multi-tenant houses as part of the solution to Toronto's housing crisis" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />
+    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-rooming-houses" />
     <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-multi-tenant.png" />
     <meta property="og:locale" content="en_CA">
+    <link rel="canonical" href="https://schoolofcities.github.io/gentle-density/toronto-rooming-houses" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Toronto Multi-Tenant Zoning", "description": "Toronto's Opening Up to Multi-Tenant Houses - Zoning for multi-tenant houses as part of the solution to Toronto's housing crisis", "url": "https://schoolofcities.github.io/gentle-density/toronto-rooming-houses", "image": "https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-multi-tenant.png", "inLanguage": "en-CA", "author": {"@type": "Person", "name": "Jeff Allen"}, "publisher": {"@type": "Organization", "name": "School of Cities", "url": "https://www.schoolofcities.utoronto.ca/"}, "mainEntityOfPage": "https://schoolofcities.github.io/gentle-density/toronto-rooming-houses"}</script>
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />
+    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-rooming-houses" />
     <meta name="twitter:creator" content="@JeffAllenMaps" />
     <meta name="twitter:title" content="Toronto Multi-Tenant Zoning" />
     <meta name="twitter:description" content="Toronto's Opening Up to Multi-Tenant Houses - Zoning for multi-tenant houses as part of the solution to Toronto's housing crisis" />

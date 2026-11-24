@@ -23,8 +23,10 @@ import pages from "$lib/pages.json";
     <meta property="og:description" content="Maps, data, and policy discussion." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://schoolofcities.github.io/gentle-density" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-mulit-city.png" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-multi-city.png" />
     <meta property="og:locale" content="en_CA">
+    <link rel="canonical" href="https://schoolofcities.github.io/gentle-density/" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Gentle Density in Canadian Cities", "description": "Maps, data, and policy discussion.", "url": "https://schoolofcities.github.io/gentle-density/", "image": "https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-multi-city.png", "inLanguage": "en-CA", "author": {"@type": "Person", "name": "Jeff Allen"}, "publisher": {"@type": "Organization", "name": "School of Cities", "url": "https://www.schoolofcities.utoronto.ca/"}}</script>
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density" />

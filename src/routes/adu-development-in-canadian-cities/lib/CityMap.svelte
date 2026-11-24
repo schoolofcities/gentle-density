@@ -692,9 +692,11 @@ onMount(() => {
 				]
 		});
 
-	})
+		// only flag the map as ready once every base layer above exists, so the
+		// suites layers added in fetchGeoJSON() always land on top of them
+		load = 1;
 
-	load = 1;
+	})
 
 	
 

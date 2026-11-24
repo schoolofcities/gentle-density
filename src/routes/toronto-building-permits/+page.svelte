@@ -34,6 +34,8 @@
     <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-building-permits" />
     <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card.png" />
     <meta property="og:locale" content="en_CA">
+    <link rel="canonical" href="https://schoolofcities.github.io/gentle-density/toronto-building-permits" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Tracking Gentle Density in Toronto", "description": "Visualizing a decade (2013 to 2023) of Secondary Suite and Laneway / Garden Suite building permits in Toronto", "url": "https://schoolofcities.github.io/gentle-density/toronto-building-permits", "image": "https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card.png", "inLanguage": "en-CA", "author": {"@type": "Person", "name": "Jeff Allen"}, "publisher": {"@type": "Organization", "name": "School of Cities", "url": "https://www.schoolofcities.utoronto.ca/"}, "mainEntityOfPage": "https://schoolofcities.github.io/gentle-density/toronto-building-permits"}</script>
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-building-permits" />

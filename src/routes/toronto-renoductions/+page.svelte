@@ -33,6 +33,8 @@
     <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />
     <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-renoductions-toronto.png" />
     <meta property="og:locale" content="en_CA">
+    <link rel="canonical" href="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Reno-ductions: Loss of Gentle Density in Toronto", "description": "Analyzing how often Toronto is losing dwelling units due to reno-ductions of small multi-family structures such as duplexes and triplexes being converted into single-family homes", "url": "https://schoolofcities.github.io/gentle-density/toronto-renoductions", "image": "https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-renoductions-toronto.png", "inLanguage": "en-CA", "author": {"@type": "Person", "name": "Jeff Allen"}, "publisher": {"@type": "Organization", "name": "School of Cities", "url": "https://www.schoolofcities.utoronto.ca/"}, "mainEntityOfPage": "https://schoolofcities.github.io/gentle-density/toronto-renoductions"}</script>
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-renoductions" />

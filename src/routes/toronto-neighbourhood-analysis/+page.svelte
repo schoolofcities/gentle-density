@@ -39,6 +39,8 @@
     <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/toronto-neighbourhood-analysis" />
     <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-neighbourhoods.png" />
     <meta property="og:locale" content="en_CA">
+    <link rel="canonical" href="https://schoolofcities.github.io/gentle-density/toronto-neighbourhood-analysis" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Keeping up with the neighbours", "description": "Quantitative analysis of accessory dwelling unit permits in Toronto", "url": "https://schoolofcities.github.io/gentle-density/toronto-neighbourhood-analysis", "image": "https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-neighbourhoods.png", "inLanguage": "en-CA", "author": {"@type": "Organization", "name": "School of Cities"}, "publisher": {"@type": "Organization", "name": "School of Cities", "url": "https://www.schoolofcities.utoronto.ca/"}, "mainEntityOfPage": "https://schoolofcities.github.io/gentle-density/toronto-neighbourhood-analysis"}</script>
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/toronto-neighbourhood-analysis" />

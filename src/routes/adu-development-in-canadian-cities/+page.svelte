@@ -90,14 +90,16 @@
     <meta name="author" content="Jeff Allen">
 
 	<meta property="og:title" content="Gentle Density in Canadian Cities" />
-    <meta property="og:description" content="Tracking development of accessory dwelling across Canada units via visualizing and mapping building permit data" />
+    <meta property="og:description" content="Tracking development of accessory dwelling units across Canada via visualizing and mapping building permit data" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/canadian-cities" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-mulit-city.png" />
+    <meta property="og:url" content="https://schoolofcities.github.io/gentle-density/adu-development-in-canadian-cities" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-multi-city.png" />
     <meta property="og:locale" content="en_CA">
+    <link rel="canonical" href="https://schoolofcities.github.io/gentle-density/adu-development-in-canadian-cities" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Gentle Density in Canadian Cities", "description": "Tracking development of accessory dwelling units across Canada via visualizing and mapping building permit data", "url": "https://schoolofcities.github.io/gentle-density/adu-development-in-canadian-cities", "image": "https://raw.githubusercontent.com/schoolofcities/gentle-density/main/static/web-card-multi-city.png", "inLanguage": "en-CA", "author": {"@type": "Person", "name": "Jeff Allen"}, "publisher": {"@type": "Organization", "name": "School of Cities", "url": "https://www.schoolofcities.utoronto.ca/"}, "mainEntityOfPage": "https://schoolofcities.github.io/gentle-density/adu-development-in-canadian-cities"}</script>
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/canadian-cities" />
+    <meta name="twitter:site" content="https://schoolofcities.github.io/gentle-density/adu-development-in-canadian-cities" />
     <meta name="twitter:creator" content="@JeffAllenMaps" />
     <meta name="twitter:title" content="Gentle Density in Canadian Cities" />
     <meta name="twitter:description" content="Tracking development of accessory dwelling units across Canada via visualizing and mapping building permit data" />
