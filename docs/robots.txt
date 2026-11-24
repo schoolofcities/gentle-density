@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://schoolofcities.github.io/gentle-density/sitemap.xml
