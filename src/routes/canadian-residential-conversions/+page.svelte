@@ -143,6 +143,11 @@
 
 		<div class="text">
 
+			<div class="moved-box">
+				View updated School of Cities data and analysis (as of 11-2026) here:
+				<a href="https://schoolofcities.github.io/posts/residential-conversions-canada/">schoolofcities.github.io/posts/residential-conversions-canada</a>
+			</div>
+
 			<p>
 				Many Canadian cities need more housing, both now and in the near future. While urban sprawl consumes green spaces and strains resources, the conversion and expansion of existing buildings offer a more sustainable path forward. Research in Canada has shown that <a href="https://imfg.org/research/doc/?doc_id=637" target="_blank">urban sprawl has far worse impacts on climate change than infill development</a>. Moreover, <a href="https://csbe.civmin.utoronto.ca/wp-content/uploads/2023/11/khr_Saxe_FIG2023.pdf" target="_blank">maintaining existing building stock</a> to help construct new units can reduce emissions related to procuring and transporting new building material.
 			</p>
@@ -328,6 +333,14 @@
 
 
 <style>
+
+	.moved-box {
+		border: solid 1px var(--brandLightBlue);
+		background-color: #eaf5ff;
+		padding: 12px 16px;
+		margin-bottom: 20px;
+		border-radius: 4px;
+	}
 
 	.background-white {
 		width: 100%;

@@ -48,15 +48,19 @@ import pages from "$lib/pages.json";
 
 			<h3>Gentle Density</h3>
 
-			{#each pages as page}
+			<p class="blurb">
+				Gentle density is the gradual addition of housing within existing neighbourhoods, through accessory dwelling units, laneway and garden suites, rooming houses, and small multiplexes. This collection of maps, data, and analysis from the School of Cities tracks how it is permitted and built in Toronto and other Canadian cities, and what that means for housing policy.
+			</p>
 
-				<p>
-					<a href={"./" + page.name}>
-						{page.title}
-					</a>
-				</p>
-
-			{/each}
+			<ul>
+				{#each pages as page}
+					<li>
+						<a href={"./" + page.name}>
+							{page.title}
+						</a>
+					</li>
+				{/each}
+			</ul>
 
 		</div>
 
@@ -92,6 +96,24 @@ import pages from "$lib/pages.json";
 		font-size: 18px;
 		line-height: 24px;
 		padding-top: 10px;
+	}
+
+	.home ul {
+		color: white;
+		list-style: disc;
+		padding-left: 24px;
+		margin: 0;
+	}
+
+	.home li {
+		font-size: 18px;
+		line-height: 24px;
+		padding-top: 15px;
+	}
+
+	.home .blurb {
+		max-width: 700px;
+		margin-bottom: 20px;
 	}
 
 	.home a {

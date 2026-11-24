@@ -31,6 +31,10 @@
 
 			{/each}
 
+		<p>
+			<a href="./">← Back to Gentle Density home</a>
+		</p>
+
 		<br>
 
 	</div>
